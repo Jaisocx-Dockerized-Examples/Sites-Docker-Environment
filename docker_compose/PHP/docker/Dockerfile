@@ -169,10 +169,10 @@ RUN chmod -R ug+w  "/usr/local/bin"
 #       nor in docker console after $_ docker compose exec a_service bash
 #    keyword ENV for declaring variables available in both three: Dockerfile, entrypoint, terminal.
 #    other ways, however were documented, didn't work before and neither today, on 12th of mars in year AC 2026.
-ARG A_WHETHER_DEV_MODE
-ARG A_PHP_SOFTWARE_HOME
+# ARG A_WHETHER_DEV_MODE
+# ENV WHETHER_DEV_MODE="${A_WHETHER_DEV_MODE}"
 
-ENV WHETHER_DEV_MODE="${A_WHETHER_DEV_MODE}"
+ARG A_PHP_SOFTWARE_HOME
 ENV PHP_SOFTWARE_HOME="${A_PHP_SOFTWARE_HOME}"
 
 RUN mkdir -p "${a_backup_php_conf_folder}"
