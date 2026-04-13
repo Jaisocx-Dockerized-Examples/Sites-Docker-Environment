@@ -35,7 +35,7 @@
 
 
 
-# [![jaisocx logo](./workspace/cdn/favicons/Icon_Jaisocx.ico)](https://jaisocx.com/) A4DC 
+# ![workspace/cdn/favicons/Icon_Jaisocx.ico](workspace/cdn/favicons/Icon_Jaisocx.ico) A4DC 
   > **A4 Electronic Document** for printing or sending via email, by **Docker Compose** Technology.
 
   > Software of Company **Princexml.com** requires license. 
