@@ -1,0 +1,88 @@
+/.idea
+/build
+/security
+/unpublished
+
+/workspace/gen
+/workspace/published
+/workspace/temp
+# -- dynamic envs for dc start --
+/workspace/env_dc_dinamique/.env_a4dc
+/workspace/env_dc_dinamique/.env_jaisocx
+/workspace/env_dc_dinamique/.env_php
+
+/docker-compose.yml
+
+/.env*
+/**/.env*
+
+/**/tarballs
+
+/TASKS.md
+
+
+# -- SENSITIVE DATA, CREDENTIALS AND ENV VARIABLES --
+/command/security
+/command/.env
+/.env
+/.env_all_args
+/.env_beyond_yml
+
+
+# -- Jaisocx Sites Server --
+/docker_compose/Jaisocx_SitesServer/http/etc/server.properties
+/docker_compose/Jaisocx_SitesServer/http/etc/jwt/keys
+/docker_compose/Jaisocx_SitesServer/http/conf/idm-conf.xml
+/docker_compose/Jaisocx_SitesServer/http/conf/http-conf.xml
+/docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/blacklist.txt
+/docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/whitelist.txt
+/docker_compose/Jaisocx_SitesServer/docker/args_yml_Dockerfile
+
+
+# -- one same context, several services: unique service's env --
+/docker_compose/PHP/.env_php_composer
+/docker_compose/PHP/.env_php_fpm
+# php confs
+/docker_compose/PHP/docker/conf/php83/php.ini
+/docker_compose/PHP/docker/conf/php83/php-fpm.conf
+/docker_compose/PHP/docker/conf/php83/php-fpm.d/pool_workspace.conf
+# modules configs
+/docker_compose/PHP/docker/conf/php83/conf.d
+# compose.yml args
+/docker_compose/PHP/args_compose_yml_docker
+
+
+# -- Prince --
+/docker_compose/Prince/args_yml_docker
+
+
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php.ini
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php-fpm.conf
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php-fpm.d/pool_workspace.conf
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/conf.d/docker-php-ext-xdebug.ini
+
+
+/node_modules
+/**/node_modules
+
+/vendor
+/**/vendor
+
+/temp
+/**/temp
+
+/tmp
+/**/tmp
+
+/log
+/**/log
+
+/logs
+/**/logs
+
+/**/*.log
+
+/.DS_Store
+/**/.DS_Store
+
+
