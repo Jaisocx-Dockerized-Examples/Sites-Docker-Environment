@@ -32,6 +32,8 @@
 >    5. make folder `command/security` with passwords `.owner_pwd` and `.user_pwd` for the produced docs.
 > 
 > `INSTALL_copy_env_examples.sh` makes later copies `example_env's` to => `.env's`, since **all .env's are .gitignored**.
+>
+> hashed password in .envs hardcoded always "asd". 
 
 
 
