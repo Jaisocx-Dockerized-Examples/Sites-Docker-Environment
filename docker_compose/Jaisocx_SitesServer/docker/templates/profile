@@ -1,0 +1,5 @@
+# bash code block for .profile
+
+. "${IN_DOCKER_WORKSPACE_VOLUME}/env_dc_dinamique/.env_jaisocx"
+
+

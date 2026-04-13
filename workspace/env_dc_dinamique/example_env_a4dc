@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# -- DEVELOPMENT MODE --
+# turns on echo to console, seen in console on command: $_ docker compose -f <filename of compose.yml> logs <service name>
+WHETHER_DEV_MODE="true"
+
+A4DC_INSTALL_TARBALL_RELOAD=false
+
+

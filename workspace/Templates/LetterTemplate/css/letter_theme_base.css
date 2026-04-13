@@ -1,0 +1,34 @@
+
+html.jsx.letter_template {
+
+  --main-font-family: LibreFranklin;
+  /*--main-font-family: ArchivoBlack;*/
+  /*--main-font-family: Orbitron;*/
+  /*--main-font-family: PirataOne;*/
+  /* --main-font-family: RedHatDisplay; */
+  /*--main-font-family: Righteous;*/
+  /*--main-font-family: TitilliumWeb;*/
+  --theme-font-family: var(--main-font-family);
+
+
+
+  --jsx--css-clean-start-2--rem: 14px;
+
+  --jsx--css-clean-start-2--site--width: 57rem;
+  --jsx--css-clean-start-2--site--min-width: var(--jsx--css-clean-start-2--site--width);
+
+  --jsx--css-clean-start-2--site--margin: 0 auto 0 auto;
+
+  --jsx--css-clean-start-2--site--padding-top: 0;
+  --jsx--css-clean-start-2--site--padding-left: 5rem;
+  --jsx--css-clean-start-2--site--padding-right: 9rem;
+  --jsx--css-clean-start-2--site--padding-bottom: 5rem;
+
+  --jsx--css-clean-start-2--all-tags--font-family: var(--theme-font-family);
+
+  --jsx--css-clean-start-2--all-tags--font-size: 0.85rem;
+  --jsx--css-clean-start-2--all-tags--line-height: 1.2rem;
+
+}
+
+

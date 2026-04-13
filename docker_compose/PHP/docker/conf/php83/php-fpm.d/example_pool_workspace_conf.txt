@@ -1,0 +1,71 @@
+[workspace]
+
+; security.limit_extensions=".php .php3 .php4 .php5 .php7"
+security.limit_extensions=".php"
+
+prefix="${IN_DOCKER_WORKSPACE_VOLUME}"
+
+user="${USER_PHP_NAME}"
+group="${GROUP_PHP_NAME}"
+
+listen.owner="${USER_PHP_NAME}"
+listen.group="${GROUP_PHP_NAME}"
+listen.mode=$PHP_FPM_LISTEN_MODE
+
+listen="0.0.0.0:${PHP_FPM_FLAT_PORT}"
+; listen.allowed_clients="${JAISOCX_HTTP_IPv4}"
+listen.backlog=511
+
+listen.acl_users="${USER_NAME},${USER_PHP_NAME}"
+listen.acl_groups="${GROUP_PHP_NAME}"
+
+
+; Set the associated the route table (FIB). FreeBSD only
+; Default Value: -1
+;listen.setfib = 1
+
+process.priority=2
+
+process.dumpable=yes
+
+pm="ondemand"
+pm.max_children=12
+pm.process_idle_timeout="2s"
+
+pm.start_servers = 2
+pm.min_spare_servers = 1
+pm.max_spare_servers = 3
+pm.max_spawn_rate = 32
+pm.max_requests=120
+
+pm.status_path="/status"
+pm.status_listen="0.0.0.0:${PHP_FPM_STATUS_PORT}"
+ping.path="/ping"
+ping.response="pong"
+
+access.log="${PHP_SOFTWARE_LOGS}/php83/access_$pool_fpm_php83.log"
+access.format="[%n %P:%p %{%Y-%m-%dT%H:%M:%S}t.%{milli}t_%{micro}t GMT]: IP: %R | %m | %r | Time: %{micro}d mcs | CPU: %{total}C | RAM: %{bytes}M b | %f |"
+access.suppress_path[]="/ping"
+;access.suppress_path[] = /ping
+;access.suppress_path[] = /health_check.php
+
+; The log file for slow requests
+; Default Value: not set
+; Note: slowlog is mandatory if request_slowlog_timeout is set
+slowlog="${PHP_SOFTWARE_LOGS}/php83/slow_$pool_fpm_php83.log"
+request_slowlog_timeout="2s"
+request_slowlog_trace_depth=10
+request_terminate_timeout=20s
+request_terminate_timeout_track_finished=no
+
+rlimit_files=100
+rlimit_core=0
+
+chroot="${IN_DOCKER_WORKSPACE_VOLUME}"
+chdir="/"
+
+catch_workers_output=yes
+decorate_workers_output=no
+clear_env=no
+
+

@@ -1,0 +1,16 @@
+{
+    "name": "jsc_php_fpm/temp",
+    "require": {
+        "jaisocx/objdata": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "JscPhpFpm\\Temp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ILLIA POLIANSKYI"
+        }
+    ]
+}

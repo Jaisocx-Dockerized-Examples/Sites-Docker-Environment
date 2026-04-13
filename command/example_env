@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+Author="ILLIA POLIANSKYI"
+Creator="ILLIA POLIANSKYI"
+
+doc_name="2026_04_12_"
+letter_name="Bank/Template_for_Letter_to_a_Bank"
+
+letter_doc="index.html"
+# letter_doc="flat_doc.html"
+# letter_doc="powered_by_php_doc.php"
+page_margin="1mm"
+
+

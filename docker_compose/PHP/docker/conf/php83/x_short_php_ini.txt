@@ -1,0 +1,409 @@
+[PHP]
+
+; PHP INI Constants: | On | Off | True | False | Yes | No | None |
+
+; Boolean Flags:
+; | 1 | On  | True  | Yes |
+; | 0 | Off | False | No  |
+
+; Quoted String: "bar"
+
+; Empty String
+; setting=""
+; setting=""
+
+; reference: ${foo}
+
+
+; On | Off
+display_errors=On
+
+; On | Off
+display_startup_errors=On
+
+error_reporting=E_ALL
+
+; On | Off
+log_errors=On
+
+; max_input_time=60 (60 seconds)
+max_input_time=60
+
+;   Default Value: Off
+;   Development Value: 4096
+;   Production Value: 4096
+output_buffering=4096
+
+;   Default Value: On
+;   Development Value: Off
+;   Production Value: Off
+register_argc_argv=Off
+
+;   Default Value: None
+;   Development Value: "GP"
+;   Production Value: "GP"
+request_order="GP"
+
+;   Default Value: 100
+;   Development Value: 1000
+;   Production Value: 1000
+session.gc_divisor=1000
+
+;   Default Value: 4
+;   Development Value: 5
+;   Production Value: 5
+session.sid_bits_per_character=5
+
+;   Default Value: 32
+;   Development Value: 26
+;   Production Value: 26
+session.sid_length=32
+
+;   Default Value: On
+;   Development Value: Off
+;   Production Value: Off
+short_open_tag=Off
+
+;   Default Value: "EGPCS"
+;   Development Value: "GPCS"
+;   Production Value: "GPCS"
+variables_order="EGPCS"
+
+;   Default Value: 1
+;   Development Value: 1
+;   Production Value: -1
+zend.assertions=1
+
+;   Default Value: Off
+;   Development Value: Off
+;   Production Value: On
+zend.exception_ignore_args=Off
+
+;   Default Value: 15
+;   Development Value: 15
+;   Production Value: 0
+zend.exception_string_param_max_len=15
+
+;;;;;;;;;;;;;;;;;;;;
+; php.ini Options  ;
+;;;;;;;;;;;;;;;;;;;;
+; Name for user-defined php.ini (.htaccess) files. Default is ".user.ini"
+;user_ini.filename=".user.ini"
+
+; To disable this feature set this option to an empty value
+user_ini.filename=""
+
+; TTL for user-defined php.ini files (time-to-live) in seconds. Default is 300 seconds (5 minutes)
+user_ini.cache_ttl=300
+
+;;;;;;;;;;;;;;;;;;;;
+; Language Options ;
+;;;;;;;;;;;;;;;;;;;;
+
+; Enable the PHP scripting language engine under Apache.
+; https://php.net/engine
+engine=On
+
+; The number of significant digits displayed in floating point numbers.
+precision=14
+
+output_handler=""
+
+url_rewriter.tags=""
+url_rewriter.hosts=""
+
+; output_handler="zlib.output_compression"
+zlib.output_compression=Off
+zlib.output_compression_level = -1
+zlib.output_handler=zlib.output_compression
+
+implicit_flush=On
+
+unserialize_callback_func=""
+
+; A value of 0 disables the depth limit.
+unserialize_max_depth=2
+
+serialize_precision=14
+
+open_basedir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace"
+
+; comma-delimited list of function names.
+disable_functions=""
+
+; comma-delimited list of class names.
+disable_classes=""
+
+; Colors for Syntax Highlighting mode.  Anything that's acceptable in
+; <span style="color: ???????"> would work.
+; https://php.net/syntax-highlighting
+highlight.string  = #DD0000
+highlight.comment = #FF9900
+highlight.keyword = #007700
+highlight.default = #0000BB
+highlight.html    = #000000
+
+; If enabled, the request will be allowed to complete even if the user aborts
+; the request. Consider enabling it if executing long requests, which may end up
+; being interrupted by the user or a browser timing out. PHP's default behavior
+; is to disable this feature.
+; https://php.net/ignore-user-abort
+ignore_user_abort=Off
+
+; Note: if open_basedir is set, the cache is disabled
+realpath_cache_size=Off
+
+; cache ttl in seconds
+realpath_cache_ttl=2
+
+; Enables or disables the circular reference collector.
+zend.enable_gc=On
+
+; mbstring extension must be enabled.
+zend.multibyte=Off
+zend.script_encoding=utf8
+
+zend.exception_ignore_args=Off
+
+; between 0 and 1000000.
+; This has no effect when zend.exception_ignore_args is enabled.
+; Default Value: 15
+; Development Value: 15
+; Production Value: 0
+zend.exception_string_param_max_len=0
+
+; Decides whether PHP may expose the fact that it is installed on the server
+expose_php=On
+
+; Maximum execution time of each script, in seconds
+max_execution_time=30
+
+; Maximum amount of time each script may spend parsing request data.
+; Default Value: -1 (Unlimited)
+; Production Value: 60 (60 seconds)
+max_input_time=60
+
+; Maximum input variable nesting level
+max_input_nesting_level=2
+
+; How many GET/POST/COOKIE input variables may be accepted
+max_input_vars=3
+
+; How many multipart body parts combined input variable and file uploads.
+max_multipart_body_parts=5
+
+; Maximum amount of memory a script may consume
+memory_limit=120M
+
+
+
+ignore_repeated_errors=Off
+ignore_repeated_source=Off
+report_memleaks=On
+report_zend_debug=0
+xmlrpc_errors=On
+xmlrpc_error_number=3
+html_errors=Off
+
+docref_root="/phpmanual/"
+docref_ext=".html"
+
+; error_prepend_string="<span style='color: #ff0000'>"
+; error_append_string="</span>"
+error_prepend_string=""
+error_append_string=""
+
+error_log="php_error.log"
+
+syslog.ident="[php]: "
+;syslog.facility = user
+syslog.filter = ascii
+
+windows.show_crt_warning=3
+
+arg_separator.output="&"
+arg_separator.input="&#"
+
+variables_order="EGPCS"
+request_order="GP"
+register_argc_argv=Off
+auto_globals_jit=On
+enable_post_data_reading=On
+post_max_size=50M
+auto_prepend_file=""
+auto_append_file=""
+default_mimetype=""
+default_charset="UTF-8"
+internal_encoding="UTF-8"
+input_encoding="UTF-8"
+output_encoding="UTF-8"
+include_path=".:/usr/share/php83"
+
+doc_root="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace/"
+user_dir=""
+extension_dir="./conf.d/"
+sys_temp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp"
+enable_dl=Off
+cgi.force_redirect=Off
+cgi.nph=Off
+cgi.redirect_status_env=""
+cgi.fix_pathinfo=Off
+cgi.discard_path=Off
+fastcgi.impersonate=Off
+fastcgi.logging=On
+cgi.rfc2616_headers=0
+cgi.check_shebang_line=Off
+
+file_uploads=Off
+upload_tmp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp/upload"
+upload_max_filesize=1k
+max_file_uploads=1
+
+allow_url_fopen=Off
+allow_url_include=Off
+
+from="john@doe.com"
+user_agent="PHP"
+default_socket_timeout=1
+auto_detect_line_endings=On
+
+
+;;;;;;;;;;;;;;;;;;;
+; Module Settings ;
+;;;;;;;;;;;;;;;;;;;
+
+[Date]
+date.timezone = Europe/Paris
+
+[filter]
+filter.default=unsafe_raw
+;filter.default_flags =""
+
+
+[imap]
+imap.enable_insecure_rsh=Off
+
+[intl]
+intl.default_locale = en_us
+intl.error_level = E_WARNING
+intl.use_exceptions = On
+
+
+[Pdo]
+pdo_odbc.connection_pooling=strict
+
+[Pdo_mysql]
+pdo_mysql.default_socket=""
+
+[Phar]
+; https://php.net/phar.readonly
+;phar.readonly = On
+
+; https://php.net/phar.require-hash
+;phar.require_hash = On
+
+;phar.cache_list =""
+
+[mail function]
+;smtp_port=25
+;sendmail_from="me@example.com"
+;sendmail_path=""
+;mail.force_extra_parameters=""
+
+; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
+mail.add_x_header = Off
+mail.mixed_lf_and_crlf = Off
+;mail.log =""
+
+
+[MySQLi]
+
+mysqli.max_persistent=0
+mysqli.allow_persistent=Off
+mysqli.max_links=3
+mysqli.default_port = 3306
+mysqli.default_socket=""
+mysqli.default_host="mysql.basetasks.site"
+mysqli.default_user="user"
+mysqli.default_pw="<change-pwd>"
+mysqli.rollback_on_cached_plink=On
+
+[mysqlnd]
+mysqlnd.collect_statistics=On
+mysqlnd.collect_memory_statistics=On
+
+
+[PostgreSQL]
+pgsql.allow_persistent=Off
+pgsql.auto_reset_persistent=Off
+pgsql.max_persistent=0
+pgsql.max_links=3
+pgsql.ignore_notice=Off
+pgsql.log_notice=On
+
+[bcmath]
+bcmath.scale=14
+
+[Session]
+session.use_strict_mode=On
+session.auto_start=Off
+session.cookie_lifetime=1440
+session.use_cookies=On
+session.use_only_cookies=On
+session.cookie_secure=Off
+session.name="PHPSESSID"
+session.save_handler="files"
+;     session.save_path="N;MODE;/path"
+session.save_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp/session"
+;session.cookie_path="/"
+session.cookie_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace:/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp"
+session.cookie_domain="local.basetasks.site"
+
+; Whether or not to add the httpOnly flag to the cookie, which makes it
+; inaccessible to browser scripting languages such as JavaScript.
+; https://php.net/session.cookie-httponly
+session.cookie_httponly=On
+session.cookie_samesite="Strict"
+session.serialize_handler = php
+
+session.gc_probability=0
+session.gc_divisor=1
+session.gc_maxlifetime=1440
+session.referer_check=""
+session.cache_limiter = nocache
+; Document expires after n minutes.
+session.cache_expire=1
+session.use_trans_sid=0
+
+; Set session ID character length. This value could be between 22 to 256.
+session.sid_length = 22
+
+session.trans_sid_tags="a=href,area=href,frame=src,form="
+session.trans_sid_hosts=""
+session.sid_bits_per_character=2
+session.upload_progress.enabled=Off
+session.upload_progress.cleanup=On
+session.upload_progress.prefix="upload_progress_"
+session.upload_progress.name="PHP_SESSION_UPLOAD_PROGRESS"
+session.upload_progress.freq =  "25%"
+session.upload_progress.min_freq="1"
+session.lazy_write=Off
+
+
+
+[mbstring]
+mbstring.language="English"
+mbstring.internal_encoding="UTF-16LE"
+mbstring.encoding_translation=Off
+mbstring.http_input="UTF-8"
+mbstring.http_output="UTF-8"
+; mbstring.detect_order = auto
+;mbstring.substitute_character = none
+mbstring.strict_detection=On
+
+;mbstring.http_output_conv_mimetypes=^(text/|application/xhtml\+xml)
+mbstring.http_output_conv_mimetypes=None
+mbstring.regex_stack_limit=3
+mbstring.regex_retry_limit=2
+
+

@@ -1,0 +1,207 @@
+
+html.jsx.letter_template body main header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: stretch;
+
+  margin-bottom: 80px;
+}
+
+html.jsx.letter_template body main header .address-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+html.jsx.letter_template body main header .address-col div,
+html.jsx.letter_template body main header .address-col span {
+  font-family: var(--address-font-family);  
+  font-size: 0.72rem;
+}
+
+html.jsx.letter_template body main header .address-col .company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  box-sizing: border-box;
+}
+
+html.jsx.letter_template body main header .address-col .company .logo {
+  box-sizing: border-box;
+}
+
+html.jsx.letter_template body main header .address-col .company .logo img {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: 100%;
+}
+
+html.jsx.letter_template body main header .address-col .company .companyName {
+  flex-grow: 1;
+}
+
+html.jsx.letter_template body main header .address-col .contactPerson {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-color-bold-light);
+}
+
+html.jsx.letter_template body main header .address-col .company.letter_first,
+html.jsx.letter_template body main header .address-col .company.applicant,
+html.jsx.letter_template body main header .address-col .adress-col-second-margin {
+  height: var(--logo-height);
+  width: 100%;
+}
+
+html.jsx.letter_template body main header .address-col .company.letter_first .logo {
+  height: 100%;
+  width: 320px;
+  background-color: var(--letter_first-background-color);
+  padding: 8px;
+}
+
+html.jsx.letter_template body main header .address-col .company.applicant .logo {
+  height: 100%;
+  width: auto;
+  /*background-color: var(--zkb-background-color);*/
+  /*padding: 8px;*/
+}
+
+html.jsx.letter_template body main header .address-col .company.letter_first .companyName,
+html.jsx.letter_template body main header .address-col .company.applicant .companyName {
+  display: none;
+}
+
+html.jsx.letter_template body main header .address-col .postal-address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+
+  margin: 0;
+  line-height: 1rem;
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line span {
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line .street {
+  
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line .zip {
+  
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line .town {
+  
+}
+
+html.jsx.letter_template body main header .address-col .postal-address .postal-address-line .land {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-color-bold-light);
+}
+
+html.jsx.letter_template body main header .address-col .email {
+  margin-top: 0.4rem;
+}
+
+html.jsx.letter_template body main header .address-col .email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html.jsx.letter_template body main header .address-col-first {
+  width: 65%;
+}
+
+html.jsx.letter_template body main header .address-col-second {
+  width: 35%;
+}
+
+html.jsx.letter_template body main div.letter_content .paragraph.theme {
+  font-family: var(--theme-font-family);
+  color: var(--text-color-bold-light);
+  font-size: 1rem;
+  line-height: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+html.jsx.letter_template body main div.letter_content .text {
+  margin-bottom: 1.7rem;
+}
+
+html.jsx.letter_template body main div.letter_content .paragraph,
+html.jsx.letter_template body main div.letter_content .line {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.3rem;
+}
+
+html.jsx.letter_template body main div.letter_content .paragraph {
+  margin: 1.2rem 0;
+}
+html.jsx.letter_template body main div.letter_content .line {
+  margin: 0.2rem 0;
+}
+
+html.jsx.letter_template body main div.letter_content .regards,
+html.jsx.letter_template body main div.letter_content .name {
+  font-family: Satisfy;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+html.jsx.letter_template body main div.letter_content .signature {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+html.jsx.letter_template body main div.letter_content .signature .date-and-place {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+html.jsx.letter_template body main div.letter_content .signature .signature-img-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  height: 2.3rem;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html.jsx.letter_template body main div.letter_content .signature .signature-img-parent img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

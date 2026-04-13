@@ -1,0 +1,19 @@
+<conf-idm>
+
+  <user id="v"
+        password="a"
+        granted-roles="role_viewer"></user>
+
+
+
+  <role id="role_viewer">
+    <!-- with docker, here should be the port, set in the http-conf.xml (:443), and not the outer docker container port, when another, for example (:2291) -->
+    <granted-alias url="letter:2297/Letters/Konto/" methods="OPTIONS,HEAD,GET" />
+  </role>
+
+
+</conf-idm>
+
+
+
+

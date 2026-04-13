@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx jsc readme">
+<head>
+
+  <title> Readme php ini </title>
+
+  <base href="../../cdn/" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+
+    <!--# STYLES CssCodeSnippet and theme_base -->
+    <link
+        fetchpriority="medium"
+        rel="stylesheet"
+        type="text/css"
+        charset="utf-8"
+        href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-300.css"
+    />
+
+    <link
+      fetchpriority="medium"
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+    />
+
+
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        charset="utf-8"
+        href="node_modules/@jaisocx/media_tools_fonts_base/MediaAndStyles/JscFonts_main_resolved.css"
+    />
+
+
+
+  <style name="css clean start overrides for this site">
+
+    .jsx.readme {
+      --jsx--css-clean-start-2--h1--font-size: 1.0rem;
+      --jsx--css-clean-start-2--h1--line-height: 1.4rem;
+
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h2--line-height: 3rem;
+    }
+
+  </style>
+
+
+
+  <style name="css clean start lite mobile portrait">
+
+    @media only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: landscape) {
+
+      .jsx.readme {
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
+
+      }
+
+    }
+
+  </style>
+
+
+
+  <style>
+
+    .jsx.readme .CssCodeSnippet .CodeSnippetHolder#readme_logs {
+      --lines-number: 20;
+    }
+
+    .jsx.readme .CssCodeSnippet .CodeSnippetHolder#readme_php_ini {
+      --lines-number: 150;
+    }
+
+    .jsx.readme .CssCodeSnippet .CodeSnippetHolder {
+      --lines-numbers--content: var(--lines-numbers--content--300);
+
+      --code_snippet__font_family: Source_Code_Pro;
+
+      --code-snippet-tool--overflow-x: hidden;
+      --code-snippet-tool--width: 100%;
+
+      --code-snippet-tool--overflow-y: auto;
+      --code-snippet-tool--height: fit-content;
+
+      --code-snippet--line-height: 1.6rem;
+      --code-snippet--font-size: 0.95rem;
+      --code-snippet--padding-left: 1rem;
+
+      --code-snippet--padding-left: 1rem;
+
+      --code-snippet-tool--border-radius: 2rem;
+      --code-snippet-tool--border: 1px solid #32ea65;
+    }
+
+  </style>
+
+
+
+</head>
+
+  <body>
+
+    <main>
+
+      <content class="CssCodeSnippet">
+
+        <h1> README php-fpm v8.3 </h1>
+
+
+
+        <CodeSnippetHolder id="readme_logs" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+
+; Conf => docker_compose/PHP/docker/conf/php83/php.ini
+error_log="${PHP_SOFTWARE_LOGS}/php/php83_error.log"
+
+; Conf => docker_compose/PHP/docker/conf/php83/php-fpm.conf
+error_log="${PHP_SOFTWARE_LOGS}/php/fpm_php83_error.log"
+access.log="${PHP_SOFTWARE_LOGS}/php/php_fpm83_workspace_access.log"
+slowlog="${PHP_SOFTWARE_LOGS}/php/slow_php_fpm83_workspace.log"
+
+; Conf => docker_compose/PHP/docker/conf/php83/conf.d/docker-php-ext-xdebug.ini
+xdebug.trace_output_dir="${PHP_SOFTWARE_LOGS}/xdebug/trace/"
+xdebug.gc_stats.output_dir="${PHP_SOFTWARE_LOGS}/xdebug/gc_stats/"
+xdebug.profiler_output_dir="${PHP_SOFTWARE_LOGS}/xdebug/profiler/"
+xdebug.log="${PHP_SOFTWARE_LOGS}/xdebug/dbg/php_xdebug.log"
+
+          </pre>
+        </CodeSnippetHolder>
+
+
+        <h2> php.ini </h2>
+
+        <CodeSnippetHolder id="readme_php_ini" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+[PHP]
+
+engine=On
+short_open_tag=Off
+enable_post_data_reading=On
+file_uploads=Off
+register_argc_argv=Off
+precision=5
+expose_php=On
+
+date.timezone = Europe/Paris
+
+extension_dir="./conf.d/"
+include_path=".:/usr/share/php83"
+open_basedir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace"
+doc_root="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace/"
+upload_tmp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp/upload"
+sys_temp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp"
+error_log="php_error.log"
+user_dir=""
+
+default_charset="UTF-8"
+internal_encoding="UTF-8"
+input_encoding="UTF-8"
+output_encoding="UTF-8"
+
+default_mimetype=""
+
+auto_globals_jit=On
+implicit_flush=On
+auto_detect_line_endings=On
+allow_url_fopen=Off
+allow_url_include=Off
+
+memory_limit=120M
+
+max_input_vars=3
+max_input_nesting_level=2
+max_multipart_body_parts=1
+
+max_input_time=3
+max_execution_time=5
+
+post_max_size=5k
+upload_max_filesize=1k
+max_file_uploads=1
+
+display_errors=On
+display_startup_errors=On
+log_errors=On
+fastcgi.logging=On
+error_reporting=E_ALL
+html_errors=Off
+xmlrpc_errors=On
+xmlrpc_error_number=3
+ignore_repeated_errors=Off
+ignore_repeated_source=Off
+error_prepend_string=""
+error_append_string=""
+report_memleaks=On
+report_zend_debug=No
+windows.show_crt_warning=3
+syslog.ident="[php_v8.3]: "
+syslog.filter = ascii
+;syslog.facility = user
+
+ignore_user_abort=Off
+
+request_order="GP"
+variables_order="EGPCS"
+
+arg_separator.output="&"
+arg_separator.input="&#"
+
+from="john@doe.com"
+user_agent="PHP"
+default_socket_timeout=1
+
+realpath_cache_size=Off
+realpath_cache_ttl=2
+
+auto_prepend_file=""
+auto_append_file=""
+
+url_rewriter.tags=""
+url_rewriter.hosts=""
+
+disable_functions=""
+disable_classes=""
+
+output_handler=""
+output_buffering=4096
+
+;user_ini.filename=".user.ini"
+user_ini.filename=""
+user_ini.cache_ttl=300
+
+highlight.html    = #000000
+highlight.string  = #DD0000
+highlight.comment = #FF9900
+highlight.keyword = #007700
+highlight.default = #0000BB
+
+unserialize_callback_func=""
+unserialize_max_depth=2
+serialize_precision=4
+
+enable_dl=Off
+cgi.force_redirect=Off
+cgi.nph=Off
+cgi.redirect_status_env=""
+cgi.fix_pathinfo=Off
+cgi.discard_path=Off
+fastcgi.impersonate=Off
+cgi.rfc2616_headers=0
+cgi.check_shebang_line=Off
+
+filter.default=unsafe_raw
+filter.default_flags=""
+
+imap.enable_insecure_rsh=Off
+
+intl.default_locale = en_us
+intl.error_level = E_WARNING
+intl.use_exceptions = On
+
+docref_root="/phpmanual/"
+docref_ext=".html"
+
+zend.assertions=0
+zend.exception_ignore_args=On
+zend.exception_string_param_max_len=15
+
+zend.enable_gc=On
+
+; mbstring extension must be enabled.
+zend.multibyte=Off
+zend.script_encoding=utf8
+zend.exception_ignore_args=Off
+zend.exception_string_param_max_len=2
+
+; output_handler="zlib.output_compression"
+zlib.output_compression=Off
+zlib.output_compression_level = -1
+zlib.output_handler=zlib.output_compression
+
+          </pre>
+        </CodeSnippetHolder>
+
+
+      </content>
+
+
+
+    </main>
+
+  </body>
+</html>
+
+

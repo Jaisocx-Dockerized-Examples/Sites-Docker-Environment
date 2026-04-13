@@ -1,0 +1,30 @@
+[global]
+
+error_log="${PHP_SOFTWARE_LOGS}/php83/fpm_php83_error.log"
+syslog.facility="daemon"
+syslog.ident="[fpm_php83    %{%Y-%m-%dT%H:%M:%S.%z}t]: "
+log_level=notice
+log_limit=550
+log_buffering=yes
+
+emergency_restart_threshold=0
+emergency_restart_interval=5s
+process_control_timeout=5s
+process.max=5
+process.priority=2
+daemonize=no
+events.mechanism="epoll"
+
+rlimit_files=100
+rlimit_core=0
+
+pid="${PHP_SOFTWARE_HOME}/pids/php_fpm83.pid"
+
+
+;;;;;;;;;;;;;;;;;;;;
+; Pool Definitions ;
+;;;;;;;;;;;;;;;;;;;;
+
+include="/etc/php83/php-fpm.d/*.conf"
+
+

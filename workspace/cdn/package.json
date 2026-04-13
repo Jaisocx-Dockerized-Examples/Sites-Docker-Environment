@@ -1,0 +1,23 @@
+{
+  "author": "ILLIA POLIANSKYI",
+  "name": "@jaisocx/a4dc",
+  "version": "1.0.1",
+  "description": "readme in html for configuration of php fpm v8.3 by Docker Compose",
+  "main": "index.js",
+  "keywords": [
+    "docker",
+    "compose",
+    "php",
+    "php-fpm",
+    "php.ini",
+    "readme",
+    "docs"
+  ],
+  "dependencies": {
+    "@jaisocx/css_clean_start_lite": "^1.0.3",
+    "@jaisocx/css-code-snippet": "^1.4.3",
+    "@jaisocx/media_tools_fonts_base": "^1.2.2"
+  }
+}
+
+

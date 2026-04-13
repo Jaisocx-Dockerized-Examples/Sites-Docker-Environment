@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PHP_FPM_FLAT_PORT=9020
+
+dyn_pie_reload=false
+dyn_composer_reload=false
+
+dyn_composer_on=false
+dyn_xdebug_on=false
+
+

@@ -1,0 +1,175 @@
+name: "${WORKSPACE_NAME}"
+
+services:
+
+  a4dc:
+    build:
+      context: "./docker_compose/Prince/docker"
+      args:
+        A_TIME_ZONE: "${TIME_ZONE}"
+        A_CPU_ARCHITECTURE_A4DC: "${CPU_ARCHITECTURE_A4DC}"
+        A_A4DC_INSTALL_TARBALL_RELOAD: "${A4DC_INSTALL_TARBALL_RELOAD}"
+        A_A4DC_INSTALL_TARBALLS_VOLUME: "${A4DC_INSTALL_TARBALLS_VOLUME}"
+        A_A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME: "${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}"
+        A_DOMAIN_NAME: "${DOMAIN_NAME}"
+        A_JAISOCX_DOMAIN_NAME: "${JAISOCX_DOMAIN_NAME}"
+        A_WORKSPACE_VOLUME: "${WORKSPACE_VOLUME}"
+        A_IN_DOCKER_WORKSPACE_VOLUME: "${IN_DOCKER_WORKSPACE_VOLUME}"
+        A_A4DC_SOFTWARE_VERSION: "${A4DC_SOFTWARE_VERSION}"
+        A_A4DC_SOFTWARE_LATEST_LTS: "${A4DC_SOFTWARE_LATEST_LTS}"
+        A_A4DC_SOFTWARE_LATEST_RELEASE: "${A4DC_SOFTWARE_LATEST_RELEASE}"
+        A_A4DC_SOFTWARE_CONF_HOME: "${A4DC_SOFTWARE_CONF_HOME}"
+        A_GROUP_USERS_ID: "${GROUP_USERS_ID}"
+        A_GROUP_USERS_NAME: "${GROUP_USERS_NAME}"
+        A_GROUP_READER_ID: "${GROUP_READER_ID}"
+        A_GROUP_READER_NAME: "${GROUP_READER_NAME}"
+        A_USER_ID: "${USER_ID}"
+        A_USER_NAME: "${USER_NAME}"
+        A_USER_READER_ID: "${USER_READER_ID}"
+        A_USER_READER_NAME: "${USER_READER_NAME}"
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "${A4DC_INSTALL_TARBALLS_VOLUME}/:${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}/"
+      - "./pdf_doc/:/var/doc/"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      jaisocx_dck_local_network:
+        ipv6_address: "${A4DC_IPv6}"
+        ipv4_address: "${A4DC_IPv4}"
+
+
+
+  jaisocx:
+    build:
+      context: "./docker_compose/Jaisocx_SitesServer/docker"
+      args:
+        A_TIME_ZONE: "${TIME_ZONE}"
+        A_CPU_ARCHITECTURE_JAISOCX: "${CPU_ARCHITECTURE_JAISOCX}"
+        A_JAISOCX_SOFTWARE_HOME: "${JAISOCX_SOFTWARE_HOME}"
+        A_JAISOCX_SOFTWARE_VERSION: "${JAISOCX_SOFTWARE_VERSION}"
+        A_JAISOCX_SOFTWARE_LATEST_LTS: "${JAISOCX_SOFTWARE_LATEST_LTS}"
+        A_JAISOCX_SOFTWARE_LATEST_RELEASE: "${JAISOCX_SOFTWARE_LATEST_RELEASE}"
+        A_DOMAIN_NAME: "${DOMAIN_NAME}"
+        A_JAISOCX_DOMAIN_NAME: "${JAISOCX_DOMAIN_NAME}"
+        A_FORBROWSER_DOMAIN_NAME: "${FORBROWSER_DOMAIN_NAME}"
+        A_WORKSPACE_VOLUME: "${WORKSPACE_VOLUME}"
+        A_IN_DOCKER_WORKSPACE_VOLUME: "${IN_DOCKER_WORKSPACE_VOLUME}"
+        A_GROUP_USERS_ID: "${GROUP_USERS_ID}"
+        A_GROUP_USERS_NAME: "${GROUP_USERS_NAME}"
+        A_GROUP_READER_ID: "${GROUP_READER_ID}"
+        A_GROUP_READER_NAME: "${GROUP_READER_NAME}"
+        A_USER_ID: "${USER_ID}"
+        A_USER_NAME: "${USER_NAME}"
+        A_USER_READER_ID: "${USER_READER_ID}"
+        A_USER_READER_NAME: "${USER_READER_NAME}"
+    environment:
+      PHP_FPM_HOST: "${PHP_FPM_DOMAIN_NAME}:${PHP_FPM_FLAT_PORT}"
+      JAVA_XMS: "20m"
+      JAVA_XMX: "300m"
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "./docker_compose/Jaisocx_SitesServer/http/conf/:${JAISOCX_SOFTWARE_HOME}/conf/"
+      - "./docker_compose/Jaisocx_SitesServer/http/etc/:${JAISOCX_SOFTWARE_HOME}/etc/"
+      - "./docker_compose/Jaisocx_SitesServer/logs/:${JAISOCX_SOFTWARE_HOME}/logs/"
+    ports:
+      - "80:80"
+      - "${JAISOCX_HTTP_FLAT_PORT}:${JAISOCX_HTTP_FLAT_PORT}"
+      - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      jaisocx_dck_forbrowsers_network:
+        ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
+        ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
+      jaisocx_dck_local_network:
+        aliases:
+          - "${JAISOCX_DOMAIN_NAME}"
+        ipv6_address: "${JAISOCX_HTTP_IPv6}"
+        ipv4_address: "${JAISOCX_HTTP_IPv4}"
+
+
+
+  ### decomment on demand to program in php
+  php:
+    build:
+      context: "./docker_compose/PHP/docker"
+      args:
+          A_TIME_ZONE: "${TIME_ZONE}"
+          A_DOMAIN_NAME: "${DOMAIN_NAME}"
+          A_JAISOCX_DOMAIN_NAME: "${JAISOCX_DOMAIN_NAME}"
+          A_PHP_SOFTWARE_HOME: "${PHP_SOFTWARE_HOME}"
+          A_PHP_FPM_FLAT_PORT: "${PHP_FPM_FLAT_PORT}"
+          A_PHP_FPM_STATUS_PORT: "${PHP_FPM_STATUS_PORT}"
+          A_PHP_SOFTWARE_LOGS: "${PHP_SOFTWARE_LOGS}"
+          A_PHP_SOFTWARE_VERSION: "${PHP_SOFTWARE_VERSION}"
+          A_PHP_SOFTWARE_LATEST_LTS: "${PHP_SOFTWARE_LATEST_LTS}"
+          A_PHP_SOFTWARE_LATEST_RELEASE: "${PHP_SOFTWARE_LATEST_RELEASE}"
+          A_WORKSPACE_VOLUME: "${WORKSPACE_VOLUME}"
+          A_IN_DOCKER_WORKSPACE_VOLUME: "${IN_DOCKER_WORKSPACE_VOLUME}"
+          A_GROUP_USERS_ID: "${GROUP_USERS_ID}"
+          A_GROUP_USERS_NAME: "${GROUP_USERS_NAME}"
+          A_GROUP_PHP_ID: "${GROUP_PHP_ID}"
+          A_GROUP_PHP_NAME: "${GROUP_PHP_NAME}"
+          A_GROUP_READER_ID: "${GROUP_READER_ID}"
+          A_GROUP_READER_NAME: "${GROUP_READER_NAME}"
+          A_USER_ID: "${USER_ID}"
+          A_USER_NAME: "${USER_NAME}"
+          A_USER_PHP_ID: "${USER_PHP_ID}"
+          A_USER_PHP_NAME: "${USER_PHP_NAME}"
+          A_USER_READER_ID: "${USER_READER_ID}"
+          A_USER_READER_NAME: "${USER_READER_NAME}"
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "./docker_compose/PHP/logs/:${PHP_SOFTWARE_LOGS}/"
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
+    ports:
+      - "${PHP_FPM_STATUS_PORT}:${PHP_FPM_STATUS_PORT}"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      jaisocx_dck_local_network:
+        aliases:
+          - "${PHP_FPM_DOMAIN_NAME}"
+        ipv6_address: "${PHP_FPM_IPv6}"
+        ipv4_address: "${PHP_FPM_IPv4}"
+
+
+
+secrets:
+  beyond_yml_env:
+    file: "./.beyond_yml_env"
+
+
+
+networks:
+  jaisocx_dck_forbrowsers_network:
+    name: "${OPEN_NETWORK_NAME}"
+    driver: ipvlan
+    enable_ipv6: true
+    external: false
+    internal: false
+    attachable: false
+    ipam:
+      config:
+        - subnet: "${OPENED_SUBNET_IPv6}"
+          ip_range: "${OPENED_IP_RANGE_IPv6}"
+        - subnet: "${OPENED_SUBNET_IPv4}"
+          ip_range: "${OPENED_IP_RANGE_IPv4}"
+  jaisocx_dck_local_network:
+    name: "${INTERNAL_NETWORK_NAME}"
+    driver: ipvlan
+    enable_ipv6: true
+    external: false
+    internal: true
+    attachable: false
+    ipam:
+      config:
+        - subnet: "${SUBNET_IPv6}"
+          ip_range: "${IP_RANGE_IPv6}"
+        - subnet: "${SUBNET_IPv4}"
+          ip_range: "${IP_RANGE_IPv4}"
+#          gateway: 172.19.252.240
+
+

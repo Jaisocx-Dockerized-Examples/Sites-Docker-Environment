@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# -- DEVELOPMENT MODE --
+# turns on echo to console, seen in console on command: $_ docker compose -f <filename of compose.yml> logs <service name>
+WHETHER_DEV_MODE="true"
+
+# Docker, php development mode: debug | notice, Production mode: warning | error
+PHP_LOG_LEVEL=debug
+
+
+#dyn_pie_reload=true
+#dyn_composer_reload=true
+#dyn_composer_on=true
+#dyn_xdebug_on=true
+
+### not dynamic for now, for trying out some day later.
+# export dyn_xdebug_client_port=9052
+
+

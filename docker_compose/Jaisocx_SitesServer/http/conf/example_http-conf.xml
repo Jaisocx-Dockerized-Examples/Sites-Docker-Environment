@@ -1,0 +1,255 @@
+<conf>
+  <conf-idm path="/opt/jaisocx/a4dc/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http/conf/idm-conf.xml" />
+  <conf-http>
+    <servers>
+
+      <server
+          port="8447"
+          alternative-port="8448"
+          secure="true">
+
+        <domain
+            name="local.basetasks.site"
+            document-root="/opt/jaisocx/a4dc/workspace"
+            jks-path="/opt/jaisocx/a4dc/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http/etc/ssl/2026_2027_basetasks_site.jks"
+            jks-alias="basetasks.site"
+            jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
+            publish-charset="UTF-8" src-charset="UTF-8">
+
+          <alias art="folder"
+                 url="/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 cache="cache"
+                 list="true"
+                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
+
+          <alias art="file"
+                 url="/favicon.ico"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
+                 cache="cache"
+          />
+
+          <alias art="folder"
+                 url="/readme/"
+                 path="/opt/jaisocx/a4dc/workspace/readme"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/node_modules/@jaisocx"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="index.html" />
+
+          <alias art="folder"
+                 url="/Letters/letter_first/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/letter_first"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+          <alias art="folder"
+                 url="/Letters/LetterTemplate/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/LetterTemplate"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+        </domain>
+
+
+
+        <domain
+            name="dck.basetasks.site"
+            document-root="/opt/jaisocx/a4dc/workspace"
+            jks-path="/opt/jaisocx/a4dc/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http/etc/ssl/2026_2027_basetasks_site.jks"
+            jks-alias="basetasks.site"
+            jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
+            publish-charset="UTF-8" src-charset="UTF-8">
+
+          <alias art="folder"
+                 url="/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 cache="cache"
+                 list="true"
+                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
+
+          <alias art="file"
+                 url="/favicon.ico"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
+                 cache="cache"
+          />
+
+          <alias art="folder"
+                 url="/readme/"
+                 path="/opt/jaisocx/a4dc/workspace/readme"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/node_modules/@jaisocx"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="index.html" />
+
+          <alias art="folder"
+                 url="/Letters/letter_first/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/letter_first"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+          <alias art="folder"
+                 url="/Letters/LetterTemplate/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/LetterTemplate"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+        </domain>
+
+      </server>
+
+
+
+      <server
+          port="2297"
+          alternative-port="2288">
+
+        <domain
+            name="local.basetasks.site"
+            document-root="/opt/jaisocx/a4dc/workspace"
+            publish-charset="UTF-8" src-charset="UTF-8">
+
+          <alias art="folder"
+                 url="/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 cache="cache"
+                 list="true"
+                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
+
+          <alias art="file"
+                 url="/favicon.ico"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
+                 cache="cache"
+          />
+
+          <alias art="folder"
+                 url="/readme/"
+                 path="/opt/jaisocx/a4dc/workspace/readme"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/node_modules/@jaisocx"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="index.html" />
+
+          <alias art="folder"
+                 url="/Letters/letter_first/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/letter_first"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+          <alias art="folder"
+                 url="/Letters/LetterTemplate/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/LetterTemplate"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+        </domain>
+
+
+
+        <domain
+            name="dck.basetasks.site"
+            document-root="/opt/jaisocx/a4dc/workspace"
+            publish-charset="UTF-8" src-charset="UTF-8">
+
+          <alias art="folder"
+                 url="/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 cache="cache"
+                 list="true"
+                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
+
+          <alias art="file"
+                 url="/favicon.ico"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
+                 cache="cache"
+          />
+
+          <alias art="folder"
+                 url="/readme/"
+                 path="/opt/jaisocx/a4dc/workspace/readme"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/a4dc/workspace/cdn/node_modules/@jaisocx"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="index.html" />
+
+          <alias art="folder"
+                 url="/Letters/letter_first/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/letter_first"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+          <alias art="folder"
+                 url="/Letters/LetterTemplate/"
+                 path="/opt/jaisocx/a4dc/workspace/Templates/LetterTemplate"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="nope" />
+
+        </domain>
+
+      </server>
+
+    </servers>
+  </conf-http>
+</conf>
+
+

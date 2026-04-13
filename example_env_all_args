@@ -1,0 +1,184 @@
+#!/bin/bash
+
+# -------------------------
+# -- env for compose.yml --
+
+  WORKSPACE_NAME="a4dc_e352"
+
+  LOGIN=user
+
+
+# -- VOLUMES --
+  WORKSPACE_VOLUME="./workspace"
+  IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/a4dc/workspace"
+
+# -- Prince docs --
+  A4DC_INSTALL_TARBALLS_VOLUME="./docker_compose/Prince/tarballs"
+  A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME="/tarballs"
+
+
+
+# -- DOMAINS --
+  DOMAIN_NAME="basetasks.site"
+  FORBROWSER_DOMAIN_NAME="local.basetasks.site"
+  JAISOCX_DOMAIN_NAME="dck.basetasks.site"
+  PHP_FPM_DOMAIN_NAME="fpm.basetasks.site"
+
+
+# -- DNS --
+  DNS_SERVER_IPv4="8.8.8.8"
+
+
+# --------------
+# -- NETWORKS --
+  OPENED_NETWORK_NAME="jaisocx_opened_dockr_network_a4dc_e352"
+  INTERNAL_NETWORK_NAME="jaisocx_internal_dockr_network_a4dc_e352"
+
+# -- subnets --
+  OPENED_SUBNET_IPv6="fdae:f122:9df5:4::/64"
+  OPENED_IP_RANGE_IPv6="fdae:f122:9df5:4::/64"
+
+  OPENED_SUBNET_IPv4="172.19.250.0/24"
+  OPENED_IP_RANGE_IPv4="172.19.250.240/30"
+
+
+  SUBNET_IPv6="fdae:f122:9df5:5::/64"
+  IP_RANGE_IPv6="fdae:f122:9df5:5::/64"
+
+  SUBNET_IPv4="172.19.251.0/24"
+  IP_RANGE_IPv4="172.19.251.240/30"
+
+
+# -- ip addresses --
+  A4DC_IPv6="fdae:f122:9df5:5::2"
+  A4DC_IPv4="172.19.251.242"
+
+  OPENED_JAISOCX_HTTP_IPv6="fdae:f122:9df5:4::3"
+  OPENED_JAISOCX_HTTP_IPv4="172.19.250.243"
+
+  JAISOCX_HTTP_IPv6="fdae:f122:9df5:5::3"
+  JAISOCX_HTTP_IPv4="172.19.251.243"
+
+  PHP_FPM_IPv6="fdae:f122:9df5:5::4"
+  PHP_FPM_IPv4="172.19.251.244"
+
+
+# -- ports --
+  JAISOCX_HTTP_FLAT_PORT=2297
+  JAISOCX_HTTPS_PORT=8445
+
+  PHP_FPM_FLAT_PORT=9020
+  PHP_FPM_STATUS_PORT=9022
+
+
+
+  SOFTWARE_NAMESPACE="jaisocx"
+  SOFTWARE_NAME="a4_dc"
+  SOFTWARE_VERSION="1.0.1"
+  SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home"
+  LOGS_HOME="/opt/jaisocx/a4dc/v1_0_1/logs"
+
+  A4DC_SOFTWARE_HOME="${SOFTWARE_HOME}/prince/v16_2"
+  JAISOCX_SOFTWARE_HOME="${SOFTWARE_HOME}/jaisocx/v3_0_16/jaisocx-http"
+  NODE_SOFTWARE_HOME="${SOFTWARE_HOME}/node/v24_11_0"
+  PHP_SOFTWARE_HOME="${SOFTWARE_HOME}/php/v8_3"
+
+  A4DC_SOFTWARE_LOGS="${LOGS_HOME}/prince"
+  JAISOCX_SOFTWARE_LOGS="${LOGS_HOME}/jaisocx"
+  NODE_SOFTWARE_LOGS="${LOGS_HOME}/node"
+  PHP_SOFTWARE_LOGS="${LOGS_HOME}/php"
+
+
+
+# ---------------------
+# -- env beyond compose.yml --
+
+  TIME_ZONE="Europe/Paris"
+
+  ALPINE_IMAGE="3.23"
+
+
+
+# -- CPU --
+  # Intel: x86_64 |  Apple MacBook: aarch64
+  CPU_ARCHITECTURE_A4DC="aarch64"
+
+  # AMD: amd64 | Apple MacBook: mac
+  CPU_ARCHITECTURE_JAISOCX="mac"
+
+
+
+  A4DC_SOFTWARE_VERSION="16.2"
+  JAISOCX_SOFTWARE_VERSION="3.0.16"
+  NODE_SOFTWARE_VERSION="24.11.0"
+  PHP_SOFTWARE_VERSION="8.3"
+
+
+
+  A4DC_SOFTWARE_LATEST_LTS="16.2"
+  A4DC_SOFTWARE_LATEST_RELEASE="16.2"
+
+  JAISOCX_SOFTWARE_LATEST_LTS="3.0.16"
+  JAISOCX_SOFTWARE_LATEST_RELEASE="3.0.16"
+
+  NODE_LATEST_LTS="24.11.0"
+  NODE_LATEST_RELEASE="25.2.0"
+
+  PHP_SOFTWARE_LATEST_LTS="8.5"
+  PHP_SOFTWARE_LATEST_RELEASE="8.5"
+
+
+
+# -- USERS' GROUPS, USERS --
+# -- groups --
+  GROUP_SUDIER_ID=3299
+  GROUP_SUDIER_NAME=privileged
+
+  GROUP_USERS_ID=3425
+  GROUP_USERS_NAME=unpriv
+
+  GROUP_READER_ID=2752
+  GROUP_READER_NAME=reader
+
+  GROUP_NODE_ID=4212
+  GROUP_NODE_NAME=node
+
+  GROUP_PHP_ID=4211
+  GROUP_PHP_NAME=g_jsc_php_fpm
+
+
+# -- users --
+  USER_SUDIER_ID=1004
+  USER_SUDIER_NAME=admin
+
+  USER_ID=2002
+  USER_NAME=user
+
+  USER_READER_ID=2005
+  USER_READER_NAME=reader
+
+  USER_NODE_ID=3025
+  USER_NODE_NAME=node
+
+  USER_PHP_ID=3024
+  USER_PHP_NAME=jsc_php_fpm
+
+
+
+# ---------
+# -- Prince docs --
+  A4DC_INSTALL_TARBALL_RELOAD=false
+
+
+
+# -- SITES SERVER --
+  PHP_FPM_HOST="${PHP_FPM_DOMAIN_NAME}:${PHP_FPM_FLAT_PORT}"
+  JAVA_XMS="20m"
+  JAVA_XMX="300m"
+
+
+
+# -- PHP FPM --
+  PHP_FPM_LISTEN_MODE=0660
+
+

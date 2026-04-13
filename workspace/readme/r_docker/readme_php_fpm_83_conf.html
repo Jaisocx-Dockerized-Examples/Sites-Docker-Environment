@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx jsc readme">
+<head>
+
+  <title> Readme php-fpm v8.3 conf </title>
+
+  <base href="../../cdn/" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+
+    <!--# STYLES CssCodeSnippet and theme_base -->
+    <link
+        fetchpriority="medium"
+        rel="stylesheet"
+        type="text/css"
+        charset="utf-8"
+        href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-300.css"
+    />
+
+    <link
+      fetchpriority="medium"
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+    />
+
+
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        charset="utf-8"
+        href="node_modules/@jaisocx/media_tools_fonts_base/MediaAndStyles/JscFonts_main_resolved.css"
+    />
+
+
+
+  <style name="css clean start overrides for this site">
+
+    .jsx.readme {
+      --jsx--css-clean-start-2--h1--font-size: 1.0rem;
+      --jsx--css-clean-start-2--h1--line-height: 1.4rem;
+
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h2--line-height: 3rem;
+    }
+
+  </style>
+
+
+
+  <style name="css clean start lite mobile portrait">
+
+    @media only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: landscape) {
+
+      .jsx.readme {
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
+
+      }
+
+    }
+
+  </style>
+
+
+
+  <style>
+
+    .jsx.readme .CssCodeSnippet .CodeSnippetHolder#readme_php_fpm_conf {
+      --lines-number: 32;
+    }
+
+    .jsx.readme .CssCodeSnippet .CodeSnippetHolder#readme_pool_workspace_conf {
+      --lines-number: 72;
+    }
+
+
+    .jsx .CssCodeSnippet .CodeSnippetHolder#readme_php_fpm_conf,
+    .jsx .CssCodeSnippet .CodeSnippetHolder#readme_pool_workspace_conf {
+      --lines-numbers--content: var(--lines-numbers--content--300);
+
+      --code_snippet__font_family: Source_Code_Pro;
+
+      --code-snippet-tool--overflow-x: hidden;
+      --code-snippet-tool--width: 100%;
+
+      --code-snippet-tool--overflow-y: auto;
+      --code-snippet-tool--height: fit-content;
+
+      --code-snippet--line-height: 1.6rem;
+      --code-snippet--font-size: 0.95rem;
+      --code-snippet--padding-left: 1rem;
+
+      --code-snippet--padding-left: 1rem;
+
+      --code-snippet-tool--border-radius: 2rem;
+      --code-snippet-tool--border: 1px solid #32ea65;
+    }
+
+  </style>
+
+
+
+</head>
+
+  <body>
+
+    <main>
+
+      <content class="CssCodeSnippet">
+
+        <h1> README php-fpm v8.3 </h1>
+
+
+
+        <h2> php-fpm.conf </h2>
+
+        <CodeSnippetHolder id="readme_php_fpm_conf" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+[global]
+
+error_log="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/logs/php/fpm_php83_error.log"
+syslog.facility="daemon"
+syslog.ident="[php_fpm_v8.3]: "
+log_level="error"
+log_limit=63
+log_buffering=yes
+
+emergency_restart_threshold=0
+emergency_restart_interval=5s
+process_control_timeout=5s
+process.max=5
+process.priority=2
+daemonize=no
+
+rlimit_files=32
+rlimit_core=100
+
+events.mechanism="port"
+
+systemd_interval=10s
+pid="/var/run/php_fpm83.pid"
+
+
+;;;;;;;;;;;;;;;;;;;;
+; Pool Definitions ;
+;;;;;;;;;;;;;;;;;;;;
+
+include="/etc/php83/php-fpm.d/*.conf"
+
+          </pre>
+        </CodeSnippetHolder>
+
+
+        <h2> pool_workspace.conf </h2>
+
+        <CodeSnippetHolder id="readme_pool_workspace_conf" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+[workspace]
+
+prefix="/opt/jaisocx/portable_printable_a4_jaisocx_dc/${pool}"
+
+user="jsc_php_fpm"
+group="g_jsc_php_fpm"
+
+listen.owner="jsc_php_fpm"
+listen.group="g_jsc_php_fpm"
+listen.mode=0440
+
+listen = 127.0.0.1:9020
+listen.backlog = 511
+
+listen.acl_users="user,jsc_php_fpm"
+listen.acl_groups="g_jsc_php_fpm"
+
+;listen.allowed_clients = 127.0.0.1
+listen.allowed_clients="any"
+
+; Set the associated the route table (FIB). FreeBSD only
+; Default Value: -1
+;listen.setfib = 1
+
+process.priority=3
+
+process.dumpable=yes
+
+pm="ondemand"
+pm.max_children=12
+pm.process_idle_timeout="2s"
+
+pm.start_servers = 2
+pm.min_spare_servers = 1
+pm.max_spare_servers = 3
+pm.max_spawn_rate = 32
+pm.max_requests=120
+
+pm.status_path="/status"
+pm.status_listen="127.0.0.1:9021"
+ping.path="/ping"
+ping.response="pong"
+
+;access.log = log/php83/$pool.access.log
+;access.format = "%R - %u %t \"%m %r%Q%q\" %s %f %{milli}d %{kilo}M %C%%"
+
+;access.suppress_path[] = /ping
+;access.suppress_path[] = /health_check.php
+
+; The log file for slow requests
+; Default Value: not set
+; Note: slowlog is mandatory if request_slowlog_timeout is set
+slowlog="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/logs/php/slow_php_fpm83_${pool}.log"
+request_slowlog_timeout="2s"
+request_slowlog_trace_depth=10
+request_terminate_timeout=20s
+request_terminate_timeout_track_finished=no
+
+rlimit_files=20
+rlimit_core=10M
+
+chroot="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace"
+chdir="/"
+
+catch_workers_output=yes
+decorate_workers_output=no
+clear_env=yes
+
+# security.limit_extensions=".php .php3 .php4 .php5 .php7"
+security.limit_extensions=".php"
+
+          </pre>
+        </CodeSnippetHolder>
+
+
+      </content>
+
+
+
+    </main>
+
+  </body>
+</html>
+
+
