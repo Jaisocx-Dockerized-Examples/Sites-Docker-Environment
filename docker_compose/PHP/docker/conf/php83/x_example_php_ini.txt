@@ -23,7 +23,7 @@ doc_root="${IN_DOCKER_WORKSPACE_VOLUME}/"
 upload_tmp_dir="${PHP_SOFTWARE_HOME}/tmp/upload"
 sys_temp_dir="${PHP_SOFTWARE_HOME}/tmp"
 
-error_log="${PHP_SOFTWARE_LOGS}/${local_service_name}/php83/php83_error.log"
+error_log="${PHP_SOFTWARE_LOGS}/php83/php83_error.log"
 user_dir=""
 
 

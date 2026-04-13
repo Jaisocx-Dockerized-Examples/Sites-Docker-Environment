@@ -2,7 +2,7 @@
 
 error_log="${PHP_SOFTWARE_LOGS}/php83/fpm_php83_error.log"
 syslog.facility="daemon"
-syslog.ident="[fpm_php83    %{%Y-%m-%dT%H:%M:%S.%z}t]: "
+syslog.ident="[fpm_php83    %{%Y-%m-%dT%H:%M:%S}t.%{milli}t_%{micro}t GMT]: "
 log_level=notice
 log_limit=550
 log_buffering=yes
