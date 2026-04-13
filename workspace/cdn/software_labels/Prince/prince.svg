@@ -7,7 +7,7 @@
     width="253"
     fill="#222222"
     xmlns="http://www.w3.org/2000/svg">
-        <title>Prince 15.4.1</title>
+        <title>Prince 16.2</title>
 
 
 
@@ -71,11 +71,11 @@
               </text>
 
               <text
-                  x="1150"
+                  x="1250"
                   y="148"
                   fill="#782287"
-                  textLength="357" >
-                    15.4.1
+                  textLength="290" >
+                    16.2
               </text>
 
         </g>
