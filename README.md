@@ -12,6 +12,9 @@
 
 
 `12th of April 2026`
+
+**Not 100% ready** `INSTALL_copy_env_examples.sh`. needs backups counter, or overwrites all saved .envs to => example_env's.
+
 > **In reconstruction**, the very nice **docker compose update**. 
 > 
 > In plan 2 projects: Sites Docker Environment and the html|php SPA for A4 docs viewed in Acrobat Viewer or Browsers.
