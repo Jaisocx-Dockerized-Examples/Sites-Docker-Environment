@@ -134,18 +134,17 @@ RUN chmod -R a+rx  "/usr/local/bin"
 RUN chmod -R ug+w  "/usr/local/bin"
 
 
-# -- one .env variable accessed --
+# -- .env variables accessed --
 # Docker, docker-compose.yml and Dockerfile,
 #    for the finer Docker Security feature,
 #    are planned and designed,
 #    not to have too wide grants or privilegs.
 # After several weeks of engineering research before,
 #    and several testing coding sessions in diferent years in 2020ths,
-#    I code this only way,
+#    in this way,
 #    the command line shell variable from .env file,
-#    may be the nice way, always working, accessed in Dockerfile.
+#    may be the nice way accessed in Dockerfile.
 # How to: (\n for new line)
-#    path to .env file:   compose.yml: services:\n   a_service:\n   env_file:\n    - "./.env_for_yml"
 #    declare variable:    compose.yml: services:\n   a_service:\n   build:\n   args:\n   - "A_USER_NAME=${USER_NAME}"
 #    where:
 #       ${USER_NAME} is variable from .env like this: USER_NAME=user
@@ -153,11 +152,6 @@ RUN chmod -R ug+w  "/usr/local/bin"
 #       not available neither in entrypoint,
 #       nor in docker console after $_ docker compose exec a_service bash
 #    keyword ENV for declaring variables available in both three: Dockerfile, entrypoint, terminal.
-#    other ways, however were documented, didn't work before and neither today, on 12th of mars in year AC 2026.
-# ARG A_WHETHER_DEV_MODE
-# ENV WHETHER_DEV_MODE="${A_WHETHER_DEV_MODE}"
-
-
 ENV USER_NAME="${A_USER_NAME}"
 ENV USER_HOME="/home/${USER_NAME}"
 

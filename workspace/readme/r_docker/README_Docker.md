@@ -13,7 +13,7 @@
   1. ✅ [**Network**](./README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
   2. ✅ [**Users**](./README_Docker_Users.md), groups, name, id, password, privilegs.
   3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
-  4. [NOT WRITTEN] **Tarballs** for reuse on reinstall.
+  4. ✅ **Tarballs** for reuse on reinstall.
   5. ✅ [**Docker Env Theories**](./README_Docker_Env.md).
 
 

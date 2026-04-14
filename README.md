@@ -17,13 +17,13 @@
 
 > **In reconstruction**, the very nice **docker compose update**. 
 > 
+> [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
+> 
 > In plan 2 projects: Sites Docker Environment and the html|php SPA for A4 docs viewed in Acrobat Viewer or Browsers.
 > 
 > I work in the moment, 13.04.2026, on
 >    1. installation script `INSTALL_copy_env_examples.sh` for `.env's`
 >    2. and the updated `README.md` documentation.
-> 
->   Hope to push the updated README's tonight.
 > 
 > The documentation in the moment might not be 100% the right one.
 > 
