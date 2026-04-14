@@ -114,7 +114,7 @@
   - **NoSQL Database** for json,
   - **Email** Sender,
   - **SMS** Sender,
-  - **Queueing** Service,
+  - **Messages Queue**,
   - **Caching** Service.
 
 ---
