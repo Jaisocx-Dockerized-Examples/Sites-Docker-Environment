@@ -17,7 +17,7 @@ default_mimetype=""
 extension_dir="/usr/lib/php83/modules/"
 include_path="./conf.d/*.ini:/usr/lib/*.so*:/usr/lib/php83/modules/*.so"
 
-open_basedir="${IN_DOCKER_WORKSPACE_VOLUME}/:${USER_HOME}/:${PHP_SOFTWARE_HOME}/tmp/:/usr/bin/:/usr/local/bin/:/etc/"
+open_basedir="${IN_DOCKER_WORKSPACE_VOLUME}/:${USER_HOME}/:${USER_PHP_HOME}/:${PHP_SOFTWARE_HOME}/tmp/:/usr/bin/:/usr/local/bin/:/etc/"
 doc_root="${IN_DOCKER_WORKSPACE_VOLUME}/"
 
 upload_tmp_dir="${PHP_SOFTWARE_HOME}/tmp/upload"
@@ -67,7 +67,7 @@ error_append_string=""
 report_memleaks=On
 report_zend_debug=No
 windows.show_crt_warning=3
-syslog.ident="[php_v8.3    %{%Y-%m-%dT%H:%M:%S}t]: "
+syslog.ident="[php_v8.3    %{%Y-%m-%dT%H:%M:%S.%milli}t GMT]: "
 syslog.filter="ascii"
 ;syslog.facility = user
 
