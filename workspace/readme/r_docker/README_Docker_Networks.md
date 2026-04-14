@@ -24,7 +24,7 @@
 
 
 
-  ## 2. Aim of the Setup
+## 2. Aim of the Setup
   > Fine tuning Firewall, https, services' network confs.
 
   2.1. Known local docker network IPv4, IPv6 addresses, Domain names, set in `.env`.
