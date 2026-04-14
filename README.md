@@ -11,32 +11,7 @@
 
 
 
-`12th of April 2026`
-
 **Not 100% ready** `INSTALL_copy_env_examples.sh`. needs backups counter, or overwrites all saved .envs to => example_env's.
-
-> **In reconstruction**, the very nice **docker compose update**. 
-> 
-> [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
-> 
-> In plan 2 projects: Sites Docker Environment and the html|php SPA for A4 docs viewed in Acrobat Viewer or Browsers.
-> 
-> I work in the moment, 13.04.2026, on
->    1. installation script `INSTALL_copy_env_examples.sh` for `.env's`
->    2. and the updated `README.md` documentation.
-> 
-> The documentation in the moment might not be 100% the right one.
-> 
-> Please, see 
->    1. `example_docker-compose.yml` conf, 
->    2. `docker_compose` folder,
->    3. `INSTALL_copy_env_examples.sh` script, 
->    4. make copies of `example_'s` to => `.env's`, 
->    5. make folder `command/security` with passwords `.owner_pwd` and `.user_pwd` for the produced docs.
-> 
-> `INSTALL_copy_env_examples.sh` makes later copies `example_env's` to => `.env's`, since **all .env's are .gitignored**.
->
-> hashed password in .envs hardcoded always "asd". 
 
 
 
@@ -46,6 +21,24 @@
   > Software of Company **Princexml.com** requires license. 
   > 
   > This application is the example of producing A4 Electronic Documents from an `.html` page by Software like **Prince**.
+  
+  [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
+  
+  In plan 2 projects: 
+  - Sites Docker Environment 
+  - and the html|php SPA for A4 docs viewed in Acrobat Viewer or Browsers.
+  
+  Please, see
+  1. `example_docker-compose.yml` conf,
+  2. `docker_compose` folder,
+  3. `INSTALL_copy_env_examples.sh` script,
+  4. make copies of `example_'s` to => `.env's`,
+  5. make folder `command/security` with passwords `.owner_pwd` and `.user_pwd` for the produced docs.
+  
+  `INSTALL_copy_env_examples.sh` makes copies `example_env's` to => `.env's`, since **all .env's are .gitignored**.
+  
+  Hashed password in `.env's` hardcoded always "asd".
+
 
 
 `start, stop, restart, status, restartus))`
