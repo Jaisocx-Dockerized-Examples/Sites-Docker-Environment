@@ -15,7 +15,7 @@
 
 
 
-  #### 1.1. Env file path and name
+#### 1.1. Env file path and name
   1.1. the only filename and path: `${root}/.env`
 
   1.2. or, the command line arg for `docker compose`: 
@@ -26,7 +26,7 @@
 
 
 
-  #### 1.2. Example
+#### 1.2. Example
   `step 1`, **.env**
 
   ```bash

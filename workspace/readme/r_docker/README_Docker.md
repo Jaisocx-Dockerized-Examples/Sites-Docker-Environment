@@ -61,7 +61,7 @@
 
 ## 1. Network
 
-  ### Aim of the Setup
+### Aim of the Setup
   > Fine tuning 
   
   - Firewall
@@ -80,12 +80,12 @@
 
 ## 2. Users
   
-  ### Aim of the Setup
+### Aim of the Setup
   > For fine-tuning of privilegs to services on filesystem resources.
 
 
 
-  ### 2.1. Easy in development
+### 2.1. Easy in development
 
   - Known **Volume's Owner** `user:group`.
 
@@ -93,7 +93,7 @@
 
 
 
-  ### 2.2. Secure in deployment
+### 2.2. Secure in deployment
   > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./README_Docker_Users.md) )
 
   Once docker service deployed to production server machine,
