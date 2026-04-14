@@ -6,15 +6,20 @@
 
  > Refinements in the current February 2026 review after 3 months release before.
 
-  - [NEEDS REVIEW AND OTHER IMPROVALS DOCUMENTED] **Why coded what**. [**Ideas, why coded what**](./README_Ideas_why_coded_what.md).
+  - ✅ [**Ideas, Why Coded What**](./README_Ideas_why_coded_what.md).
   - ✅ **A. Aligned All Services**.
   - ✅ **B. Workarounds improve quality and easen work day**.
   - ✅ **C. Code snippets for reuse by copy-paste**.
 
+
   1. ✅ [**Network**](./README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
+
   2. ✅ [**Users**](./README_Docker_Users.md), groups, name, id, password, privilegs.
+
   3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
+
   4. ✅ **Tarballs** for reuse on reinstall.
+
   5. ✅ [**Docker Env Theories**](./README_Docker_Env.md).
 
 
