@@ -1,7 +1,7 @@
 
 <!-- software labels -->
-[![Prince badge](./workspace/cdn/software_labels/Prince/prince.svg)](https://www.princexml.com/)
-[![php-fpm badge](./workspace/cdn/software_labels/php/php.svg)](https://www.php.net/)
+[![Prince Software Label](./workspace/cdn/software_labels/Prince/prince.svg)](https://www.princexml.com/)
+[![php-fpm Software Label](./workspace/cdn/software_labels/php/php.svg)](https://www.php.net/)
 
 
 
