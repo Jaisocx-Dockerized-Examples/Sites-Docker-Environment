@@ -117,16 +117,20 @@
 ### BASH Examples for docker compose
   ```bash
   
+    docker network ls
+    docker network rm <a_docker_network_id_or_name>
+  
+    docker compose ps
+    docker compose -f "./docker-compose.yml" restart a4dc 
+
     docker compose -f "./docker-compose.yml" stop a4dc 
     docker compose -f "./docker-compose.yml" rm a4dc --volumes
+
     docker compose -f "./docker-compose.yml" build a4dc
     docker compose -f "./docker-compose.yml" create a4dc 
     docker compose -f "./docker-compose.yml" start a4dc 
-    docker compose -f "./docker-compose.yml" restart a4dc 
     docker compose -f "./docker-compose.yml" logs a4dc 
     docker compose -f "./docker-compose.yml" exec a4dc bash 
-    docker compose -f "./docker-compose.yml" ps
-    docker compose ps
   
   ```
 ---
