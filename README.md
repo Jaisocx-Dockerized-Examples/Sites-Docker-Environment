@@ -1,6 +1,6 @@
 
 
-![./workspace/cdn/software_labels/Prince/prince.svg](./workspace/cdn/software_labels/Prince/prince.svg)   ![./workspace/cdn/software_labels/php/php.svg](./workspace/cdn/software_labels/php/php.svg)   ![./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![workspace/cdn/software_labels/Prince/software_tm_label_prince.svg](workspace/cdn/software_labels/Prince/software_tm_label_prince.svg)   ![./workspace/cdn/software_labels/php/php.svg](./workspace/cdn/software_labels/php/php.svg)   ![./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 [README_software_labels.md](README_software_labels.md)
 

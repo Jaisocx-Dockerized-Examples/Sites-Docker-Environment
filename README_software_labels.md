@@ -20,7 +20,7 @@
 
 ![workspace/cdn/software_labels/Typescript/typescript_1.svg](workspace/cdn/software_labels/Typescript/typescript_1.svg)
 
-![workspace/cdn/software_labels/Typescript/typescript_1.svg](workspace/cdn/software_labels/Typescript/typescript_1.svg)
+![workspace/cdn/software_labels/Typescript/typescript_2.svg](workspace/cdn/software_labels/Typescript/typescript_2.svg)
 
 
 Jaisocx &#8482; &#169;
