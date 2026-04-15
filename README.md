@@ -1,5 +1,5 @@
 
-<!-- software labels -->
+
 [![Prince Software Label](./workspace/cdn/software_labels/Prince/prince.svg)](https://www.princexml.com/)
 [![php-fpm Software Label](./workspace/cdn/software_labels/php/php.svg)](https://www.php.net/)
 
@@ -11,92 +11,42 @@
 
 
 
-**Not 100% ready** `INSTALL_copy_env_examples.sh`. needs backups counter, or overwrites all saved .envs to => example_env's.
-
 
 
 # ![./workspace/cdn/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg](./workspace/cdn/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg) A4DC 
-  > **A4 Electronic Document** for printing or sending via email, by **Docker Compose** Technology.
 
-  > Software of Company **Princexml.com** requires license. 
-  > 
-  > This application is the example of producing A4 Electronic Documents from an `.html` page by Software like **Prince**.
+  > **A4 Electronic Document** for printing or sending via email,  from an `.html` page by Software like **Prince**.
+
   
-  [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
-  
-  In plan 2 projects: 
-  - Sites Docker Environment 
-  - and the html|php SPA for A4 docs viewed in Acrobat Viewer or Browsers.
-  
-  Please, see
+
+  1. **LICENSE Required**: for the [https://www.princexml.com/](https://www.princexml.com/) Software
+
+  2. **All ENVs are .gitignored**: `INSTALL_copy_env_examples.sh`
+
+  3. **WITH CAUTION**: `INSTALL_copy_env_examples.sh`. needs backups counter, or overwrites all backed-up real .envs with example_env's.
+
+  4. **USERs' Passwords**: asd
+
+  5. **Docker README**: [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
+
+---
+
+
+
+
+**Please, see**
+
   1. `example_docker-compose.yml` conf,
+
   2. `docker_compose` folder,
-  3. `INSTALL_copy_env_examples.sh` script,
-  4. make copies of `example_'s` to => `.env's`,
-  5. make folder `command/security` with passwords `.owner_pwd` and `.user_pwd` for the produced docs.
-  
-  `INSTALL_copy_env_examples.sh` makes copies `example_env's` to => `.env's`, since **all .env's are .gitignored**.
-  
-  Hashed password in `.env's` hardcoded always "asd".
+
+  3. `INSTALL_copy_env_examples.sh` script.
+
+---
 
 
 
-`start, stop, restart, status, restartus))`
-
-
-
-- dck.basetasks.site
-- local.basetasks.site
-- https: 8447
-- http: 2997
-
-
-
-https://local.basetasks.site:8447/
-
-https://local.basetasks.site:8447/favicon.ico
-
-https://local.basetasks.site:8447/Letters/letter_first/
-
-https://local.basetasks.site:8447/Letters/LetterTemplate/
-
-https://local.basetasks.site:8447/jaisocx/
-
-https://local.basetasks.site:8447/cdn/
-
-https://local.basetasks.site:8447/readme/
-
-
-
-```bash
-
-  cd "./workspace/cdn"
-  yarn install
-  # npm install
-
-  cd "./workspace/php_packages"
-  composer install
-
-```
-
-
-
-```bash
-
-  docker compose -f "./docker-compose.yml" stop a4dc 
-  docker compose -f "./docker-compose.yml" rm a4dc --volumes
-  docker compose -f "./docker-compose.yml" build a4dc
-  docker compose -f "./docker-compose.yml" create a4dc 
-  docker compose -f "./docker-compose.yml" start a4dc 
-  docker compose -f "./docker-compose.yml" restart a4dc 
-  docker compose -f "./docker-compose.yml" logs a4dc 
-  docker compose -f "./docker-compose.yml" exec a4dc bash 
-  docker compose -f "./docker-compose.yml" ps
-  docker compose ps
-
-```
-
-
+  > `start, stop, restart, status, restartus))`
 
 ![./workspace/readme/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg](./workspace/readme/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg)
 
@@ -107,12 +57,90 @@ https://local.basetasks.site:8447/readme/
 
 ![./workspace/readme/r_docker/r_a4dc_images/doc_in_browser_music.jpg](./workspace/readme/r_docker/r_a4dc_images/doc_in_browser_music.jpg)
 
+---
 
 
-#### Friendly greetings
 
-  Jaisocx Software Architect
+### Domains
+
+- dck.basetasks.site
+- local.basetasks.site
+- https: 8447
+- http: 2997
+---
+
+
+
+### Links local
+
+  https://local.basetasks.site:8447/
   
-  Elias
+  https://local.basetasks.site:8447/favicon.ico
   
+  https://local.basetasks.site:8447/Letters/letter_first/
+  
+  https://local.basetasks.site:8447/Letters/LetterTemplate/
+  
+  https://local.basetasks.site:8447/jaisocx/
+  
+  https://local.basetasks.site:8447/cdn/
+  
+  https://local.basetasks.site:8447/readme/
+
+---
+
+
+
+## POSTINSTALL after git clone
+
+### POSTINSTALL .envs 
+
+  1. make copies of `example_'s` to => `.env's`, like in `INSTALL_copy_env_examples.sh`, since **all .env's are .gitignored**.
+
+  2. make folder `command/security` with passwords `.owner_pwd` and `.user_pwd` for the produced docs.
+
+  3. Hashed password in `.env's` hardcoded always "asd".
+
+---
+
+
+
+### POSTINSTALL Javascript libraries
+  ```bash
+  
+    cd "./workspace/cdn"
+    yarn install
+    # npm install
+  
+    cd "./workspace/php_packages"
+    composer install
+  
+  ```
+---
+
+
+
+### BASH Examples for docker compose
+  ```bash
+  
+    docker compose -f "./docker-compose.yml" stop a4dc 
+    docker compose -f "./docker-compose.yml" rm a4dc --volumes
+    docker compose -f "./docker-compose.yml" build a4dc
+    docker compose -f "./docker-compose.yml" create a4dc 
+    docker compose -f "./docker-compose.yml" start a4dc 
+    docker compose -f "./docker-compose.yml" restart a4dc 
+    docker compose -f "./docker-compose.yml" logs a4dc 
+    docker compose -f "./docker-compose.yml" exec a4dc bash 
+    docker compose -f "./docker-compose.yml" ps
+    docker compose ps
+  
+  ```
+---
+
+
+
+**Friendly greetings,**
+
+  Jaisocx Software Architect, Elias
+
 
