@@ -1,14 +1,8 @@
 
 
-[![Prince Software Label](./workspace/cdn/software_labels/Prince/prince.svg)](https://www.princexml.com/)
-[![php-fpm Software Label](./workspace/cdn/software_labels/php/php.svg)](https://www.php.net/)
+![./workspace/cdn/software_labels/Prince/prince.svg](./workspace/cdn/software_labels/Prince/prince.svg)   ![./workspace/cdn/software_labels/php/php.svg](./workspace/cdn/software_labels/php/php.svg)   ![./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-
-
-![./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
-![./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
-
+[README_software_labels.md](README_software_labels.md)
 
 
 
@@ -27,7 +21,7 @@
 
   4. **USERs' Passwords**: asd
 
-  5. **Docker README**: [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
+  5. **README Docker Compose**: [workspace/readme/r_docker/README_Docker.md](workspace/readme/r_docker/README_Docker.md)
 
 ---
 
