@@ -1,4 +1,4 @@
-# Software Labels by Jaisocx &#174; &#8482;
+# Software Labels by Jaisocx &#8482;
 
 ![workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
