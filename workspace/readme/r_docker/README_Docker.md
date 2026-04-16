@@ -70,16 +70,16 @@
 ### Aim of the Setup
   > Fine tuning 
   
-  - Firewall
-  - ports
-  - ip
-  - domain names
-  - ssl
-  - https
-  - Services' network confs
-  - Signed Wildcard SSL Certificate for any subdomain of **basetasks.site**.
-  - Local and Open Docker Networks
-  - The option to set the **fine-grained security confs** like `allowed_clients`, for sure, of greate use for Databases confs. 
+  - ✅ Firewall
+  - ✅ ports
+  - ✅ ip
+  - ✅ domain names
+  - ✅ ssl
+  - ✅ https
+  - ✅ Services' network confs
+  - ✅ Signed Wildcard SSL Certificate for any subdomain of **basetasks.site**.
+  - ✅ Local and Open Docker Networks
+  - ✅ The option to set the **fine-grained security confs** like `allowed_clients`, for sure, of greate use for Databases confs. 
   > If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
 
 
@@ -114,12 +114,12 @@
 ## 3. Envs
   > The workarounds does with a single or several .env files
 
-  - .env ( shared for all services ) **build time**.
-  - .env ( for a docker service ) **build time**, in context folder of a service.
-  - .env ( shared for all services, dynamic ) in VOLUME, **start time**.
-  - User's **hashed password** example in .env USER's block.
-  - Service's software turns due to **dynamic .env** boolean variables ( XDebug for php-fpm ).
-  - Entrypoint prints to console due to **dynamic .env** boolean variable `WHETHER_IN_DEV_MODE`.
+  - ✅ .env ( shared for all services ) **build time**.
+  - ✅ .env ( for a docker service ) **build time**, in context folder of a service, for `ENTRYPOINT`, not in `Dockerfile`.
+  - ✅ .env ( shared for all services, dynamic ) in [VOLUME], **start time**.
+  - ✅ User's **hashed password** example in .env USER's block.
+  - ✅ Service's software turns due to **dynamic .env** boolean variables ( XDebug for php-fpm ).
+  - ✅ Entrypoint prints to console due to **dynamic .env** boolean variable `WHETHER_IN_DEV_MODE`.
 
 
 
