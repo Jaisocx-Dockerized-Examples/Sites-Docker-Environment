@@ -28,16 +28,16 @@
 
 ## Done
 
-  1. Users and Groups **set in .env** file, as bash-like `environment variables`.
-  2. The easy overview of all users and groups, set in one file, one code block.
-  3. Users and Groups **added in docker service** by Alpine OS docker image.
-  4. **Foreseen user**, `logged inn` to the docker service's `console`.
-  5. **Dedicated** `Users` and Groups for `Programm languages interpreting Engines` and `Processes` running.
-  6. **Admin** Users and Groups.
-  7. Users' **passwords**.
-  8. Users' **home** directory.
-  9. **OnLogin event** `bash` script run with user rights.
-  10. Environment variables available for user's docker service's console and scripts.
+  1. ✅ Users and Groups **set in .env** file, as bash-like `environment variables`.
+  2. ✅ The easy overview of all users and groups, set in one file, one code block.
+  3. ✅ Users and Groups **added in docker service** by Alpine OS docker image.
+  4. ✅ **Foreseen user**, `logged inn` to the docker service's `console`.
+  5. ✅ **Dedicated** `Users` and Groups for `Programm languages interpreting Engines` and `Processes` running.
+  6. ✅ **Admin** Users and Groups.
+  7. ✅ Users' **passwords**.
+  8. ✅ Users' **home** directory.
+  9. ✅ **OnLogin event** `bash` script run with user rights.
+  10. ✅ Environment variables available for user's docker service's console and scripts.
 
 
 
@@ -46,9 +46,9 @@
 
 ### 1. Easy in development
 
-  - Known **Volume's Owner** `user:group`.
+  - ✅ Known **Volume's Owner** `user:group`.
 
-  - Known Docker **Service's Owner** `user:group`.
+  - ✅ Known Docker **Service's Owner** `user:group`.
 
 
 

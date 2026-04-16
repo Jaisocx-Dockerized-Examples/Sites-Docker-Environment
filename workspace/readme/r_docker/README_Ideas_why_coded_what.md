@@ -45,25 +45,25 @@
 
 ### 1. Why installed bash
 
-  **Just to align all**: **bash** install, in order to foresee the command line shell dialect when entering console under a docker service, 
+✅  **Just to align all**: **bash** install, in order to foresee the command line shell dialect when entering console under a docker service, 
   just to align all own built docker services.
 
-  **Newer than sh**: **bash setup** costs **12MB** in addition, 
+✅  **Newer than sh**: **bash setup** costs **12MB** in addition, 
   but, the **bash** was **the newer** command line shell dialect after the **sh**.
 
-  **Most of 3rd parties software use bash scripts**: If You've chosen to save-up installs of bash, and have rewritten all Your scripts valid for SH (/bin/sh), many 3rd parties software libs still can have bash scripts, for installs, too, and their Docker Image's Docker console is set bash. We just install bash, since other 3rd parties might use bash for their system, and then we just align the console command line shell dialect always bash, not guessing later under review in, let's say, 10 months or 3 years, what service was previous time what command line shell dialect and due to what reasons)). 
+✅  **Most of 3rd parties software use bash scripts**: If You've chosen to save-up installs of bash, and have rewritten all Your scripts valid for SH (/bin/sh), many 3rd parties software libs still can have bash scripts, for installs, too, and their Docker Image's Docker console is set bash. We just install bash, since other 3rd parties might use bash for their system, and then we just align the console command line shell dialect always bash, not guessing later under review in, let's say, 10 months or 3 years, what service was previous time what command line shell dialect and due to what reasons)). 
 
   If remaining with SH, `it's just to document somewhere centrally` for Your own all Docker Images, 
   to have this somehow easier in programming work time.
   Nevertheless, the bash install and entering the Docker Console with bash, 
   are coded in this setup as `Dockerfile` and `bash` code blocks.
 
-  **Fewer errors**: due to known engine, running scripts. 
+✅  **Fewer errors**: due to known engine, running scripts. 
   Both, **sh** and **bash**, have own synthax and functions,
   and **sh scripts** run with **sh interpreting engine**,
   and **bash scripts** with **bash interpreting engine**.
 
-  Entrypoint and all other command line shell scripts,
+✅  Entrypoint and all other command line shell scripts,
   are being run with **sh** or **bash**,
   due to the first line as this:
 
@@ -120,7 +120,6 @@
       whoami
     
   ```
-
 
 
 

@@ -20,7 +20,7 @@
   - Signed Wildcard SSL Certificate for any subdomain of **basetasks.site**.
   - Local and Open Docker Networks
   - The option to set the **fine-grained security confs** like `allowed_clients`, for sure, of greate use for Databases confs.
-  > If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
+  > When You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
 
 
 
@@ -105,6 +105,6 @@ networks:
   2.8. Docker services can connect in the Local Docker Network by Domain names, with SSL Certs and SNI TLS Extension.
 
   2.9. The option to set the **fine-grained security confs** with the **allowed to connect clients** of the local docker network, by their IP address and port number, like in **php-fpm**: docker_compose/PHP/docker/conf/php83/**php-fpm.d/pool_workspace.conf**: ```listen.allowed_clients="${JAISOCX_HTTP_IPv6},${JAISOCX_HTTP_IPv4}"```. And, for sure, of greate use for Databases confs. 
-  > If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
+  > When You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
 
 

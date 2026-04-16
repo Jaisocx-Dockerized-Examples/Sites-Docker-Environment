@@ -42,13 +42,13 @@
 
 
 ## B. Workarounds improve quality and easen work day
-> knowledge, control and transparency
+  > knowledge, control and transparency
 
-1. Fine-grained filesystem structure for the **Docker Context** for `Dockerfile` and **Mounted Volumes** for `Workspace`.
+  1. Fine-grained filesystem structure for the **Docker Context** for `Dockerfile` and **Mounted Volumes** for `Workspace`.
 
-2. `ENTRYPOINT` saves USER's **bash profile** with env variables exports and **bash template inclusion**.
+  2. `ENTRYPOINT` saves USER's **bash profile** with env variables exports and **bash template inclusion**.
 
-3. **Markers** for `ENTRYPOINT` code blocks **run once the first time**.
+  3. **Markers** for `ENTRYPOINT` code blocks **run once the first time**.
 
 
 
@@ -80,13 +80,13 @@
   - ✅ Signed Wildcard SSL Certificate for any subdomain of **basetasks.site**.
   - ✅ Local and Open Docker Networks
   - ✅ The option to set the **fine-grained security confs** like `allowed_clients`, for sure, of greate use for Databases confs. 
-  > If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
+  > 💡 If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
 
 
 
 ## 2. Users
   
-### Aim of the Setup
+### 💡 Aim of the Setup
   > For fine-tuning of privilegs to services on filesystem resources.
 
 
