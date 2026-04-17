@@ -1,6 +1,10 @@
 
 `Docker for a Site`
 
+![r_dc_images/software_tm_label_dockerhub.svg](r_dc_images/software_tm_label_dockerhub.svg)    ![r_dc_images/software_tm_label_jaisocx.svg](r_dc_images/software_tm_label_jaisocx.svg)
+
+---
+
 # Docker for a Site
  > For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
 

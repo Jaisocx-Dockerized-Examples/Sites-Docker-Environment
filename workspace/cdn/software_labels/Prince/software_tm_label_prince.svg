@@ -79,8 +79,7 @@
        x="22"
        y="2"
        width="49.000000pt" height="12.000000pt"
-       viewBox="0 0 154.000000 48.000000"
-       preserveAspectRatio="xMidYMid meet">
+       viewBox="0 0 154.000000 48.000000">
 
     <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)"
        fill="white">
@@ -149,8 +148,7 @@
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
        x="6"
        y="2"
-       width="16.094000pt" height="16.000000pt" viewBox="0 0 2085.000000 1989.000000"
-       preserveAspectRatio="xMidYMid meet">
+       width="16.094000pt" height="16.000000pt" viewBox="0 0 2085.000000 1989.000000">
 
     <g transform="translate(0.000000,1989.000000) scale(0.100000,-0.100000)"
        fill="#fff3ad" stroke="none">

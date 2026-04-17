@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@jaisocx/css_clean_start_lite/-/css_clean_start_lite-1.0.3.tgz#20dd076c59835726541bf227493035f4f8996f9d"
   integrity sha512-GZnJstQR+qZEzhBTl5zOfMjo1+WWDpfuwHekIB7ClxJPjrUqIPYe30tRcZ4BHP7NEWguJuJUChQ/JqDojn4g+Q==
 
-"@jaisocx/jpath@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@jaisocx/jpath/-/jpath-1.2.3.tgz#6286c9a319f6e5021ff043b73137264613b02f00"
-  integrity sha512-QTfxWBvXpp+TTqsvyOAXHkhwQriyYZLGc1zSUNnr68TEc0qVAGWH+78dgA0hnjOG+SUY95ZLnK7nJCUWBdcqNg==
+"@jaisocx/jpath@~2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@jaisocx/jpath/-/jpath-2.0.1.tgz#78e85a272f9f3a7c8046bdd7f2ad6fc0821537c1"
+  integrity sha512-vMc8VZ6vt41f4zcKDFPMlOCmYvE1hd3cfnIReamT36w34rO7rc8pj3gUDflOSdJFJVnPKPWRmsOgYByU6VHzAQ==
 
 "@jaisocx/media_tools_fonts_base@^1.2.2":
   version "1.2.2"

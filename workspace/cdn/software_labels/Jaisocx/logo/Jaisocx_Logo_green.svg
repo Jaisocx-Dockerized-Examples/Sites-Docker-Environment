@@ -2,8 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="25pt" height="25pt" viewBox="0 0 25 25"
- preserveAspectRatio="xMidYMid meet">
+ width="25pt" height="25pt" viewBox="0 0 25 25">
 
 <g transform="translate(0, 25) scale(0.003,-0.003)" fill="#20ecc5" stroke="honeydew">
 <path d="M2880 6941 c-503 -291 -1214 -702 -1580 -913 l-665 -384 -3 -1831 -2
