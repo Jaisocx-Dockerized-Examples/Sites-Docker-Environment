@@ -1,0 +1,185 @@
+#!/bin/sh
+
+/workspace/ts/cloned_repos/
+/workspace/gen/
+/workspace/cdn/images/mini-images/mimetype/spreads/
+/workspace/cdn_data/json/flat-data/table-records_300.json
+/workspace/cdn_data/json/flat-data/table-records_3000.json
+
+
+/.idea
+
+/.vscode/*.code-profile
+/.vscode/*.json
+
+
+/build
+/env_backups
+/security
+
+
+
+# -- SENSITIVE DATA, CREDENTIALS AND ENV VARIABLES --
+/command/security
+/command/.env
+/.env
+/.env_all_args
+/.env_beyond_yml
+
+
+# -- dynamic envs for dc start --
+/workspace/env_dc_dinamique/.env_a4dc
+/workspace/env_dc_dinamique/.env_jaisocx
+/workspace/env_dc_dinamique/.env_php
+
+
+# -- Prince --
+/docker_compose/Prince/args_yml_docker
+
+
+
+# -- Jaisocx Sites Server --
+/docker_compose/Jaisocx_SitesServer/http/etc/server.properties
+/docker_compose/Jaisocx_SitesServer/http/etc/jwt/keys
+/docker_compose/Jaisocx_SitesServer/http/conf/idm-conf.xml
+/docker_compose/Jaisocx_SitesServer/http/conf/http-conf.xml
+/docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/blacklist.txt
+/docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/whitelist.txt
+/docker_compose/Jaisocx_SitesServer/docker/args_yml_Dockerfile
+
+
+
+# -- one same context, several services: unique service's env --
+/docker_compose/PHP/.env_php_composer
+/docker_compose/PHP/.env_php_fpm
+
+# php confs
+/docker_compose/PHP/docker/conf/php83/php.ini
+/docker_compose/PHP/docker/conf/php83/php-fpm.conf
+/docker_compose/PHP/docker/conf/php83/php-fpm.d/pool_workspace.conf
+# modules configs
+/docker_compose/PHP/docker/conf/php83/conf.d
+# compose.yml args
+/docker_compose/PHP/args_compose_yml_docker
+
+
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php.ini
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php-fpm.conf
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/php-fpm.d/pool_workspace.conf
+# /docker_compose/PHP/args_compose_yml_docker/conf/php83/conf.d/docker-php-ext-xdebug.ini
+
+
+
+# in the .env file in the root of this project are Your project's settings,
+# and therefore it is advised not to keep in open source repositories.
+# the .env file in .gitignore isn't published then in Your git repo.
+/.env
+/docker-compose.yml
+
+
+# -- ENVs --
+/.env
+/**/.env
+
+/.env*
+/**/.env*
+
+
+# -- TEMPORARY FOLDERS --
+/temp
+/**/temp
+
+/tmp
+/**/tmp
+
+/*_tmp.*
+/**/*_tmp.*
+
+
+# -- LOGS --
+/log
+/**/log
+
+/logs
+/**/logs
+
+/*.log
+/**/*.log
+
+
+
+# -- 3rd PARTIES SOFTWARE --
+# -- Javascript 3rd parties packs --
+/node_modules
+/**/node_modules
+
+# -- php 3rd parties packs --
+/vendor
+/**/vendor
+
+/tarballs
+/**/tarballs
+
+
+
+# node_modules by npm, yarn, or pnpm
+/cdn/node_cdn_installs/package.json
+/**/node_cdn_installs/package.json
+
+# npm
+/cdn/node_cdn_installs/package-lock.json
+/**/node_cdn_installs/package-lock.json
+
+# yarn
+/cdn/node_cdn_installs/yarn.lock
+/**/node_cdn_installs/yarn.lock
+
+# pnpm
+/cdn/node_cdn_installs/package.json5
+/**/node_cdn_installs/package.json5
+
+/cdn/node_cdn_installs/package.yml
+/**/node_cdn_installs/package.yml
+
+/cdn/node_cdn_installs/package.yaml
+/**/node_cdn_installs/package.yaml
+
+/cdn/node_cdn_installs/pnpm-workspace.yaml
+/**/node_cdn_installs/pnpm-workspace.yaml
+
+/cdn/node_cdn_installs/.pnpmfile.cjs
+/**/node_cdn_installs/.pnpmfile.cjs
+
+
+
+# vendor by composer
+/workspace/ts/cloned_repos/composer.json
+/workspace/ts/cloned_repos/composer.lock
+
+# node_modules by npm, yarn, or pnpm
+/workspace/ts/cloned_repos/package.json
+
+# npm
+/workspace/ts/cloned_repos/package-lock.json
+
+# yarn
+/workspace/ts/cloned_repos/yarn.lock
+
+# pnpm
+/workspace/ts/cloned_repos/package.json5
+/workspace/ts/cloned_repos/package.yml
+/workspace/ts/cloned_repos/package.yaml
+/workspace/ts/cloned_repos/pnpm-workspace.yaml
+/workspace/ts/cloned_repos/.pnpmfile.cjs
+
+
+
+/.DS_Store
+/**/.DS_Store
+
+
+# -- Linux OS Process IDs --
+/*.pid
+/**/*.pid
+
+
