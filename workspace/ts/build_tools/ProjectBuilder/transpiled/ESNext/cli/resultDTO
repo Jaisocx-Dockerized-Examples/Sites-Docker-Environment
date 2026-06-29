@@ -1,0 +1,2210 @@
+{
+  "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/clean-start-main-webpack.css",
+  "cssFileContents": {},
+  "rangesOrDtoOfImport": [
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-base/clean-start-theme-base.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        [
+          55,
+          71
+        ],
+        [
+          309,
+          342
+        ],
+        [
+          372,
+          374
+        ],
+        [
+          555,
+          606
+        ],
+        [
+          653,
+          699
+        ],
+        [
+          728,
+          778
+        ],
+        [
+          821,
+          872
+        ],
+        [
+          938,
+          995
+        ],
+        [
+          1030,
+          1033
+        ],
+        [
+          1070,
+          1075
+        ],
+        [
+          1150,
+          1480
+        ],
+        [
+          1510,
+          1623
+        ],
+        [
+          1634,
+          1857
+        ],
+        [
+          2085,
+          2138
+        ],
+        [
+          2346,
+          2351
+        ],
+        [
+          2384,
+          2909
+        ],
+        [
+          2968,
+          6800
+        ],
+        [
+          7404,
+          7545
+        ],
+        [
+          7594,
+          7608
+        ],
+        [
+          7634,
+          7637
+        ],
+        [
+          7714,
+          7943
+        ],
+        [
+          7994,
+          8165
+        ],
+        [
+          8318,
+          13061
+        ],
+        [
+          13116,
+          13255
+        ],
+        [
+          13306,
+          13459
+        ],
+        [
+          13614,
+          21177
+        ],
+        [
+          21212,
+          21217
+        ],
+        [
+          21248,
+          22910
+        ],
+        [
+          22948,
+          22956
+        ],
+        [
+          22978,
+          22981
+        ],
+        [
+          23218,
+          23261
+        ],
+        [
+          23440,
+          23809
+        ],
+        [
+          23838,
+          23847
+        ],
+        [
+          23865,
+          23866
+        ],
+        [
+          23992,
+          24401
+        ],
+        [
+          24824,
+          25213
+        ],
+        [
+          25732,
+          26148
+        ],
+        [
+          26207,
+          26210
+        ]
+      ]
+    },
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-base/clean-start-theme-base.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        [
+          55,
+          71
+        ],
+        [
+          309,
+          342
+        ],
+        [
+          372,
+          374
+        ],
+        [
+          555,
+          606
+        ],
+        [
+          653,
+          699
+        ],
+        [
+          728,
+          778
+        ],
+        [
+          821,
+          872
+        ],
+        [
+          938,
+          995
+        ],
+        [
+          1030,
+          1033
+        ],
+        [
+          1070,
+          1075
+        ],
+        [
+          1150,
+          1480
+        ],
+        [
+          1510,
+          1623
+        ],
+        [
+          1634,
+          1857
+        ],
+        [
+          2085,
+          2138
+        ],
+        [
+          2346,
+          2351
+        ],
+        [
+          2384,
+          2909
+        ],
+        [
+          2968,
+          6800
+        ],
+        [
+          7404,
+          7545
+        ],
+        [
+          7594,
+          7608
+        ],
+        [
+          7634,
+          7637
+        ],
+        [
+          7714,
+          7943
+        ],
+        [
+          7994,
+          8165
+        ],
+        [
+          8318,
+          13061
+        ],
+        [
+          13116,
+          13255
+        ],
+        [
+          13306,
+          13459
+        ],
+        [
+          13614,
+          21177
+        ],
+        [
+          21212,
+          21217
+        ],
+        [
+          21248,
+          22910
+        ],
+        [
+          22948,
+          22956
+        ],
+        [
+          22978,
+          22981
+        ],
+        [
+          23218,
+          23261
+        ],
+        [
+          23440,
+          23809
+        ],
+        [
+          23838,
+          23847
+        ],
+        [
+          23865,
+          23866
+        ],
+        [
+          23992,
+          24401
+        ],
+        [
+          24824,
+          25213
+        ],
+        [
+          25732,
+          26148
+        ],
+        [
+          26207,
+          26210
+        ]
+      ]
+    },
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start--responsive-imports-main-webpack.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              128
+            ],
+            [
+              175,
+              1179
+            ],
+            [
+              1220,
+              1337
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              128
+            ],
+            [
+              175,
+              1179
+            ],
+            [
+              1220,
+              1337
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              126
+            ],
+            [
+              173,
+              1168
+            ],
+            [
+              1209,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              126
+            ],
+            [
+              173,
+              1168
+            ],
+            [
+              1209,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              175,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              175,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              126
+            ],
+            [
+              173,
+              1158
+            ],
+            [
+              1199,
+              1315
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              126
+            ],
+            [
+              173,
+              1158
+            ],
+            [
+              1199,
+              1315
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              129
+            ],
+            [
+              176,
+              1182
+            ],
+            [
+              1223,
+              1340
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              129
+            ],
+            [
+              176,
+              1182
+            ],
+            [
+              1223,
+              1340
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              174,
+              1167
+            ],
+            [
+              1208,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              174,
+              1167
+            ],
+            [
+              1208,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              181,
+              1188
+            ],
+            [
+              1229,
+              1346
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              181,
+              1188
+            ],
+            [
+              1229,
+              1346
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              176,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              176,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              180,
+              865
+            ],
+            [
+              953,
+              1030
+            ],
+            [
+              1122,
+              1210
+            ],
+            [
+              1251,
+              1368
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              180,
+              865
+            ],
+            [
+              953,
+              1030
+            ],
+            [
+              1122,
+              1210
+            ],
+            [
+              1251,
+              1368
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              177,
+              1004
+            ],
+            [
+              1045,
+              1161
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              177,
+              1004
+            ],
+            [
+              1045,
+              1161
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              27,
+              133
+            ],
+            [
+              182,
+              1229
+            ],
+            [
+              1270,
+              1389
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              27,
+              133
+            ],
+            [
+              182,
+              1229
+            ],
+            [
+              1270,
+              1389
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              130
+            ],
+            [
+              179,
+              1212
+            ],
+            [
+              1253,
+              1370
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              130
+            ],
+            [
+              179,
+              1212
+            ],
+            [
+              1253,
+              1370
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              31,
+              137
+            ],
+            [
+              186,
+              1094
+            ],
+            [
+              1135,
+              1261
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              31,
+              137
+            ],
+            [
+              186,
+              1094
+            ],
+            [
+              1135,
+              1261
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              29,
+              134
+            ],
+            [
+              183,
+              1073
+            ],
+            [
+              1114,
+              1235
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              29,
+              134
+            ],
+            [
+              183,
+              1073
+            ],
+            [
+              1114,
+              1235
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              129
+            ],
+            [
+              178,
+              1014
+            ],
+            [
+              1055,
+              1170
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              129
+            ],
+            [
+              178,
+              1014
+            ],
+            [
+              1055,
+              1170
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              130
+            ],
+            [
+              179,
+              1024
+            ],
+            [
+              1065,
+              1181
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              130
+            ],
+            [
+              179,
+              1024
+            ],
+            [
+              1065,
+              1181
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              127
+            ],
+            [
+              176,
+              1003
+            ],
+            [
+              1044,
+              1158
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              127
+            ],
+            [
+              176,
+              1003
+            ],
+            [
+              1044,
+              1158
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              32,
+              138
+            ],
+            [
+              187,
+              1104
+            ],
+            [
+              1145,
+              1269
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              32,
+              138
+            ],
+            [
+              187,
+              1104
+            ],
+            [
+              1145,
+              1269
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              30,
+              135
+            ],
+            [
+              184,
+              1083
+            ],
+            [
+              1124,
+              1246
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              30,
+              135
+            ],
+            [
+              184,
+              1083
+            ],
+            [
+              1124,
+              1246
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              130
+            ],
+            [
+              179,
+              1015
+            ],
+            [
+              1056,
+              1171
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              130
+            ],
+            [
+              179,
+              1015
+            ],
+            [
+              1056,
+              1171
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              108
+            ],
+            [
+              157,
+              1002
+            ],
+            [
+              1043,
+              1162
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              108
+            ],
+            [
+              157,
+              1002
+            ],
+            [
+              1043,
+              1162
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              103
+            ],
+            [
+              152,
+              979
+            ],
+            [
+              1020,
+              1134
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              103
+            ],
+            [
+              152,
+              979
+            ],
+            [
+              1020,
+              1134
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start--responsive-imports-main-webpack.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              128
+            ],
+            [
+              175,
+              1179
+            ],
+            [
+              1220,
+              1337
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              128
+            ],
+            [
+              175,
+              1179
+            ],
+            [
+              1220,
+              1337
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              126
+            ],
+            [
+              173,
+              1168
+            ],
+            [
+              1209,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xs-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              126
+            ],
+            [
+              173,
+              1168
+            ],
+            [
+              1209,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              175,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              175,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              126
+            ],
+            [
+              173,
+              1158
+            ],
+            [
+              1199,
+              1315
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-s-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              126
+            ],
+            [
+              173,
+              1158
+            ],
+            [
+              1199,
+              1315
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              129
+            ],
+            [
+              176,
+              1182
+            ],
+            [
+              1223,
+              1340
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              129
+            ],
+            [
+              176,
+              1182
+            ],
+            [
+              1223,
+              1340
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              174,
+              1167
+            ],
+            [
+              1208,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-sm-mobile-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              174,
+              1167
+            ],
+            [
+              1208,
+              1325
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              181,
+              1188
+            ],
+            [
+              1229,
+              1346
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-landscape.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              181,
+              1188
+            ],
+            [
+              1229,
+              1346
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              176,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-md-tablet-portrait.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              127
+            ],
+            [
+              176,
+              1174
+            ],
+            [
+              1215,
+              1331
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              180,
+              865
+            ],
+            [
+              953,
+              1030
+            ],
+            [
+              1122,
+              1210
+            ],
+            [
+              1251,
+              1368
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              131
+            ],
+            [
+              180,
+              865
+            ],
+            [
+              953,
+              1030
+            ],
+            [
+              1122,
+              1210
+            ],
+            [
+              1251,
+              1368
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              177,
+              1004
+            ],
+            [
+              1045,
+              1161
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-lg-laptop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              128
+            ],
+            [
+              177,
+              1004
+            ],
+            [
+              1045,
+              1161
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              27,
+              133
+            ],
+            [
+              182,
+              1229
+            ],
+            [
+              1270,
+              1389
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              27,
+              133
+            ],
+            [
+              182,
+              1229
+            ],
+            [
+              1270,
+              1389
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              130
+            ],
+            [
+              179,
+              1212
+            ],
+            [
+              1253,
+              1370
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-xl-desktop-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              25,
+              130
+            ],
+            [
+              179,
+              1212
+            ],
+            [
+              1253,
+              1370
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              31,
+              137
+            ],
+            [
+              186,
+              1094
+            ],
+            [
+              1135,
+              1261
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              31,
+              137
+            ],
+            [
+              186,
+              1094
+            ],
+            [
+              1135,
+              1261
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              29,
+              134
+            ],
+            [
+              183,
+              1073
+            ],
+            [
+              1114,
+              1235
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-2xl-ultra-wide-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              29,
+              134
+            ],
+            [
+              183,
+              1073
+            ],
+            [
+              1114,
+              1235
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              129
+            ],
+            [
+              178,
+              1014
+            ],
+            [
+              1055,
+              1170
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              129
+            ],
+            [
+              178,
+              1014
+            ],
+            [
+              1055,
+              1170
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-3xl-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              130
+            ],
+            [
+              179,
+              1024
+            ],
+            [
+              1065,
+              1181
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              130
+            ],
+            [
+              179,
+              1024
+            ],
+            [
+              1065,
+              1181
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              127
+            ],
+            [
+              176,
+              1003
+            ],
+            [
+              1044,
+              1158
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-4xl-qhd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              127
+            ],
+            [
+              176,
+              1003
+            ],
+            [
+              1044,
+              1158
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              32,
+              138
+            ],
+            [
+              187,
+              1104
+            ],
+            [
+              1145,
+              1269
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              32,
+              138
+            ],
+            [
+              187,
+              1104
+            ],
+            [
+              1145,
+              1269
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              30,
+              135
+            ],
+            [
+              184,
+              1083
+            ],
+            [
+              1124,
+              1246
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-5xl-4k-ultra-hd-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              30,
+              135
+            ],
+            [
+              184,
+              1083
+            ],
+            [
+              1124,
+              1246
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              130
+            ],
+            [
+              179,
+              1015
+            ],
+            [
+              1056,
+              1171
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              23,
+              130
+            ],
+            [
+              179,
+              1015
+            ],
+            [
+              1056,
+              1171
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-6xl-8k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              21,
+              126
+            ],
+            [
+              175,
+              993
+            ],
+            [
+              1034,
+              1147
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              108
+            ],
+            [
+              157,
+              1002
+            ],
+            [
+              1043,
+              1162
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-horizontal.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              24,
+              108
+            ],
+            [
+              157,
+              1002
+            ],
+            [
+              1043,
+              1162
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              103
+            ],
+            [
+              152,
+              979
+            ],
+            [
+              1020,
+              1134
+            ]
+          ]
+        },
+        {
+          "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/responsive/clean-start-7xl-16k-vertical.css",
+          "cssFileContents": {},
+          "rangesOrDtoOfImport": [
+            [
+              22,
+              103
+            ],
+            [
+              152,
+              979
+            ],
+            [
+              1020,
+              1134
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/clean-start-main.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        [
+          0,
+          2439
+        ],
+        [
+          2478,
+          3069
+        ],
+        [
+          3108,
+          3500
+        ],
+        [
+          3529,
+          3589
+        ],
+        [
+          3627,
+          4061
+        ],
+        [
+          4084,
+          4485
+        ],
+        [
+          4506,
+          4560
+        ],
+        [
+          4581,
+          4650
+        ],
+        [
+          4671,
+          4754
+        ],
+        [
+          4778,
+          5251
+        ],
+        [
+          5272,
+          5727
+        ],
+        [
+          5754,
+          6428
+        ],
+        [
+          6584,
+          6942
+        ]
+      ]
+    },
+    {
+      "cssFilePath": "/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart/MediaAndStyles/clean-start-main.css",
+      "cssFileContents": {},
+      "rangesOrDtoOfImport": [
+        [
+          0,
+          2439
+        ],
+        [
+          2478,
+          3069
+        ],
+        [
+          3108,
+          3500
+        ],
+        [
+          3529,
+          3589
+        ],
+        [
+          3627,
+          4061
+        ],
+        [
+          4084,
+          4485
+        ],
+        [
+          4506,
+          4560
+        ],
+        [
+          4581,
+          4650
+        ],
+        [
+          4671,
+          4754
+        ],
+        [
+          4778,
+          5251
+        ],
+        [
+          5272,
+          5727
+        ],
+        [
+          5754,
+          6428
+        ],
+        [
+          6584,
+          6942
+        ]
+      ]
+    }
+  ]
+}

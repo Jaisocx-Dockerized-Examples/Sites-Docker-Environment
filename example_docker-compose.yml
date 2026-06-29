@@ -1,0 +1,171 @@
+name: "${WORKSPACE_NAME}"
+
+networks:
+  jaisocx_dc_opened_one_for_browsers_network:
+    name: "${OPENED_ONE_FOR_BROWSERS_NETWORK_NAME}"
+    driver: bridge
+  jaisocx_dc_opened_for_inet_installs_network:
+    name: "${OPENED_FOR_INET_INSTALLS_NETWORK_NAME}"
+    driver: bridge
+  jaisocx_dc_internal_connected_all_network:
+    name: "${INTERNAL_CONNECTED_ALL_NETWORK_NAME}"
+    driver: ipvlan
+    enable_ipv6: false
+    external: false
+    internal: true
+    attachable: false
+    ipam:
+      config:
+        - subnet: "${SUBNET_IPv4}"
+          ip_range: "${IP_RANGE_IPv4}"
+#        - subnet: "${SUBNET_IPv6}"
+#          ip_range: "${IP_RANGE_IPv6}"
+
+
+
+secrets:
+  for_yml:
+    file: "./.env"
+    external: false
+  beyond_yml:
+    file: "./.env_beyond_yml"
+    external: false
+  php_env:
+    # file: "./docker_compose/PHP/.env_php_fpm"
+    file: "./docker_compose/PHP/.env_php_composer"
+    external: false
+
+
+
+# --------------
+# -- SERVICES --
+services:
+
+  alpine:
+    build:
+      context: "./docker_compose/Alpine/docker"
+
+
+
+  a4dc:
+    build:
+      context: "./docker_compose/Prince/docker"
+      args:
+        - "A_GROUP_USERS_NAME=privileged"
+        - "A_USER_NAME=user"
+    secrets:
+      - for_yml
+      - beyond_yml
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "${A4DC_INSTALL_TARBALLS_VOLUME}/:${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}/"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      #      jaisocx_dc_opened_for_inet_installs_network:
+      #        aliases:
+      #          - "a4dc.basetasks.site"
+      jaisocx_dc_internal_connected_all_network:
+        ipv4_address: "${A4DC_IPv4}"
+  #        ipv6_address: "${A4DC_IPv6}"
+
+
+
+  jaisocx:
+    build:
+      context: "./docker_compose/Jaisocx_SitesServer/docker"
+      args:
+        - "A_GROUP_USERS_NAME=privileged"
+        - "A_USER_NAME=user"
+        - "A_JAISOCX_SOFTWARE_HOME=${JAISOCX_SOFTWARE_HOME}"
+    secrets:
+      - for_yml
+      - beyond_yml
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "./docker_compose/Jaisocx_SitesServer/http/conf/:${JAISOCX_SOFTWARE_HOME}/conf/"
+      - "./docker_compose/Jaisocx_SitesServer/http/etc/:${JAISOCX_SOFTWARE_HOME}/etc/"
+      - "./docker_compose/Jaisocx_SitesServer/logs/:${JAISOCX_SOFTWARE_HOME}/logs/"
+    ports:
+      - "2297:2297"
+      - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      jaisocx_dc_opened_one_for_browsers_network:
+        aliases:
+          - "${FORBROWSER_DOMAIN_NAME}"
+      #        ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
+      #        ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
+      jaisocx_dc_internal_connected_all_network:
+        aliases:
+          - "${JAISOCX_DOMAIN_NAME}"
+        ipv4_address: "${JAISOCX_HTTP_IPv4}"
+        # ipv6_address: "${JAISOCX_HTTP_IPv6}"
+  #      jaisocx_dc_opened_for_inet_installs_network:
+  #        aliases:
+  #          - "${JAISOCX_OPENED_DOMAIN_NAME}"
+
+
+
+  #  php_fpm:
+  #    build:
+  #      context: "./docker_compose/PHP/docker"
+  #      args:
+  #        - "A_GROUP_USERS_NAME=privileged"
+  #        - "A_USER_NAME=user"
+  #        - "A_PHP_SOFTWARE_HOME=${PHP_SOFTWARE_HOME}"
+  #    secrets:
+  #      - for_yml
+  #      - beyond_yml
+  #      - php_env
+  #    volumes:
+  #      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+  #      - "${PHP_TARBALLS_VOLUME}/:${PHP_TARBALLS_IN_DOCKER_VOLUME}/"
+  #      - "./docker_compose/PHP/logs/:${PHP_SOFTWARE_LOGS}/"
+  #    # dns:
+  #    #   - "${DNS_SERVER_IPv4}"
+  #    networks:
+  #      jaisocx_dc_internal_connected_all_network:
+  #        aliases:
+  #          - "${PHP_FPM_DOMAIN_NAME}"
+  #        ipv4_address: "${PHP_FPM_IPv4}"
+  #        # ipv6_address: "${PHP_FPM_IPv6}"
+  #    # extra_hosts:
+  #      # for XDebug configuration .ini
+  #      # - "host.docker.internal:host-gateway"
+
+
+
+  php_composer:
+    # -- installs, due to composer.json, php open source packages to folder "vendor", in the same workspace volume, like of [php_fpm], too --
+    build:
+      context: "./docker_compose/PHP/docker"
+      args:
+        - "A_GROUP_USERS_NAME=privileged"
+        - "A_USER_NAME=user"
+        - "A_PHP_SOFTWARE_HOME=${PHP_SOFTWARE_HOME}"
+    secrets:
+      - for_yml
+      - beyond_yml
+      - php_env
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "${PHP_TARBALLS_VOLUME}/:${PHP_TARBALLS_IN_DOCKER_VOLUME}/"
+      - "./docker_compose/PHP/logs/:${PHP_SOFTWARE_LOGS}/"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    networks:
+      jaisocx_dc_opened_for_inet_installs_network:
+        aliases:
+          - "${PHP_FPM_OPEN_DOMAIN_NAME}"
+      jaisocx_dc_internal_connected_all_network:
+        aliases:
+          - "${PHP_COMPOSER_DOMAIN_NAME}"
+        ipv4_address: "${PHP_COMPOSER_IPv4}"
+        # ipv6_address: "${PHP_COMPOSER_IPv6}"
+    extra_hosts:
+      # for XDebug configuration .ini
+      - "host.docker.internal:host-gateway"
+
+

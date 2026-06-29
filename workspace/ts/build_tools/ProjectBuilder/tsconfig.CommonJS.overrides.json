@@ -1,0 +1,19 @@
+{
+  "extends": "./../../tsconfig.CommonJS.json",
+  "compilerOptions": {
+    "outDir": "/opt/jaisocx/sites_tools/workspace/ts/build_tools/ProjectBuilder/transpiled/CommonJS",
+    "declarationDir": "/opt/jaisocx/sites_tools/workspace/ts/build_tools/ProjectBuilder/transpiled/CommonJS"
+  },
+  "include": [
+    "./src/**/*.ts",  // Include TypeScript files from the source directory
+    "./src/**/*.tsx",  // Include React JSX files if necessary
+    "./typings/**/*.d.ts"  // Optionally include any additional declaration files
+  ],
+  "exclude": [
+    "node_modules",  // Exclude dependencies from being compiled
+    "transpiled",  // Exclude the output directory from compilation
+    "**/*.spec.ts",  // Exclude test files from compilation (if applicable)
+    "**/*.test.ts",
+    "**/*.md"
+  ]
+}

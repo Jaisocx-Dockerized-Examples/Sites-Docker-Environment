@@ -1,0 +1,35 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/ts-tools",
+  "version": "2.1.2",
+  "description": "The Root catalog of the project, with central config files, package.json devDependencies and node_modules catalog, keeping central devDependencies files hard copies.",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "MediaAndStyles/",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "private": false,
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "scripts": {
+    "https": "export NODE_OPTIONS=--openssl-legacy-provider && http-server -U -d -S -C \"${ssl_cert_path}\" -K \"${private_key_path}\" -p \"${node_https_publish_port}\" \"${node_https_publish_folder}\"",
+    "http_flat": "http-server -U -d -p \"${node_http_flat_publish_port}\" \"${node_http_flat_publish_folder}\""
+  },
+  "dependencies": {
+    "@jaisocx/eslint-plugins": "1.3.2",
+    "@jaisocx/event-emitter": "^1.4.3",
+    "@types/node": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "eslint": "9.0.0",
+    "http-server": "14.1.1",
+    "typescript": "5.9.3"
+  }
+}

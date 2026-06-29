@@ -1,0 +1,7 @@
+example_cmd() {
+  ###  local node_version="$(cat "./.nvmrc")"
+  echo -e "" ### "nvmrc node_version ${node_version} \\n\\n"
+  ###  nvm exec "${node_version}" node npm "$@"
+}
+
+

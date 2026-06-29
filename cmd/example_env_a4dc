@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+Author="<Your Name>"
+Creator="<Your Name>"
+
+doc_name="2026_04_12_"
+letter_name="LetterTemplate"
+letter_doc="index.html"
+
+page_margin="1mm"
+
+

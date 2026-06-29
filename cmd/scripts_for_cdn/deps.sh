@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+npm install "@jaisocx/file-writer"
+npm install "@jaisocx/tokens-parser"
+npm install "@jaisocx/css-importer"
+npm install "@jaisocx/css-clean-start"
+npm install "@jaisocx/text"
+npm install "@jaisocx/css-html"
+npm install "@jaisocx/email-html-inliner"
+npm install "@jaisocx/css-code-snippet"
+npm install "@jaisocx/css-table"
+npm install "@jaisocx/objdata"
+npm install "@jaisocx/event-emitter"
+npm install "@jaisocx/template-renderer"
+npm install "@jaisocx/tree"
+npm install "@jaisocx/tooltip"
+npm install "@jaisocx/jpath"
+npm install "@jaisocx/cdn-datasets-base"
+npm install "@jaisocx/charcode-converter"
+npm install "@jaisocx/api"
+
+npm i "@jaisocx/example-built-with-webpack"
+npm i "@jaisocx/example-css-clean-start"

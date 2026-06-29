@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "be752c963dc675734ebb6e54b92a0ddf",
+    "packages": [
+        {
+            "name": "jaisocx/objdata",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jaisocx-Tools/objdata_php.git",
+                "reference": "e331c2cc0d938af44166c9e4600978678713ed2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jaisocx-Tools/objdata_php/zipball/e331c2cc0d938af44166c9e4600978678713ed2b",
+                "reference": "e331c2cc0d938af44166c9e4600978678713ed2b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaisocx\\ObjData\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Elias Jaisocx developer"
+                }
+            ],
+            "description": "ObjData format for objects and arrays in old good style of packets with fixed lengths and offsets fields.",
+            "keywords": [
+                "json",
+                "objdata",
+                "parser",
+                "serializer"
+            ],
+            "support": {
+                "issues": "https://github.com/Jaisocx-Tools/objdata_php/issues",
+                "source": "https://github.com/Jaisocx-Tools/objdata_php/tree/2.1.2-dev"
+            },
+            "time": "2025-03-09T21:40:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "jaisocx/objdata": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.2"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

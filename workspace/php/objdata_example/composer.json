@@ -1,0 +1,20 @@
+{
+  "authors": [
+    {
+      "name": "ILLIA POLIANSKYI"
+    }
+  ],
+  "name": "jaisocx/example-objdata",
+  "description": "The usage example of the ObjData format for objects and arrays in old good style of packets with fixed lengths and offsets fields.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+       "Jaisocx\\ExampleObjData\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.2",
+    "jaisocx/objdata": "dev-main"
+  }
+}

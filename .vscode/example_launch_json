@@ -1,0 +1,64 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JS Docker Server Side",
+      "type": "node",
+      "request": "attach",
+      "protocol": "inspector",
+      "address": "localhost",
+      "port": 9229,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/opt/jaisocx/sites_tools",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Debug Site",
+      "type": "php",
+      "request": "launch",
+      "port": 9007,
+      "pathMappings": {
+          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+      },
+      "profile": false,
+      "openProfile": true,
+      "stopOnEntry": true,
+      "externalConsole": true,
+      "runtimeExecutable": "/usr/local/bin/php",
+      "log": true
+    },
+    {
+      "name": "(Under development) Profile",
+      "type": "php",
+      "request": "launch",
+      "runtimeArgs": [
+          "-S", "sandbox.brightday.email/php/", "-t", "."
+      ],
+      "pathMappings": {
+          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+      },
+      "noDebug": true, // <-- disable debugging
+      "profile": true, // <-- enable profiling
+    },
+    {
+      "name": "(Under development) Debug CLI PHP",
+      "type": "php",
+      "request": "launch",
+      "cwd": "${fileDirname}",
+      "program": "${file}",
+      "stopOnEntry": true,
+      "profile": false,
+      "openProfile": true,
+      "externalConsole": false,
+      "runtimeExecutable": "/usr/local/bin/php",
+      "port": 9007,
+      "pathMappings": {
+          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+      },
+      "log": true
+    }
+  ]
+}
+

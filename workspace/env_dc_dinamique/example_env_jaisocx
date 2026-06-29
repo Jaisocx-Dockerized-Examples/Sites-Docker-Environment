@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+TYPING_PROMPT_SYMBOL='$ '
+PS1='\n\s_\v    docker ${WORKSPACE_NAME} jaisocx \u ${TYPING_PROMPT_SYMBOL}'
+# PS1='\s \$ '
+
+# -- DEVELOPMENT MODE --
+# turns on echo to console, seen in console on command: $_ docker compose -f <filename of compose.yml> logs <service name>
+WHETHER_DEV_MODE=true
+
+cd ~  && pwd
+# cd "${IN_DOCKER_WORKSPACE_VOLUME}" && pwd
+
+

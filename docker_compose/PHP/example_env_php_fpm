@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Jaisocx Sites Server doesn't set this env variable,
+#    needs to type inn, in the `docker_compose/Jaisocx_SitesServer/http/etc/server.properties`
+# -- php_fpm --
+# php.fpm.host=fpm.basetasks.site:9020
+
+# -- php_composer --
+# php.fpm.host=phpcomposer.basetasks.site:9025
+PHP_FPM_FLAT_PORT=9020
+
+# documentation purposes, xdebug.ini in this setup doesn't get env variables.
+#     maybe ENTRYPOINT needs $BASH_LOGIN to be not in USER_HOME, but a folder for all users, mod 755, like /etc/.bashrc
+#    `docker_compose/PHP/docker/conf/php83/conf.d/dc_xdebug.ini`
+# xdebug.client_port=9050
+PHP_XDEBUG_FLAT_PORT=9050
+
+# whether to reload tarballs from inet for php extensions on docker compose start
+dyn_pie_reload=false
+dyn_composer_reload=false
+
+# dynamic turns on php extensions on docker compose start
+dyn_composer_on=false
+dyn_xdebug_on=false
+
+

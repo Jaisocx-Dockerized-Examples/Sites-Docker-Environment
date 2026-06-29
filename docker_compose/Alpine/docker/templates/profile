@@ -1,0 +1,7 @@
+# bash code block for .profile
+
+PS1="Docker \s \u $ "
+
+. "${IN_DOCKER_WORKSPACE_VOLUME}/env_dc_dinamique/.env_php"
+
+

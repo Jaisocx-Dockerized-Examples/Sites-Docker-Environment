@@ -1,0 +1,12 @@
+{
+  "name": "@jaisocx/docker-express-example",
+  "version": "1.0.1",
+  "main": "secure_server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "secure_start": "node ./src/secure_server.js"
+  },
+  "dependencies": {
+    "express": "~5.1.0"
+  }
+}

@@ -1,0 +1,249 @@
+:root {
+  --letter_first-background-color: white;
+  --logo-height: 86px;
+  /*--main-font-family: Raleway;*/
+  /*--main-font-family: LilitaOne;*/
+  /*--main-font-family: AbrilFatface;*/
+  /*--main-font-family: ArchivoBlack;*/
+  /*--main-font-family: Orbitron;*/
+  /*--main-font-family: PirataOne;*/
+  --main-font-family: RedHatDisplay;
+  /*--main-font-family: Righteous;*/
+  /*--main-font-family: TitilliumWeb;*/
+  --address-font-family: var(--main-font-family);
+  --theme-font-family: var(--main-font-family);
+  --text-color-bold-light: #333;
+  --text-color-main: #222;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 800px;
+  /*border: 1px solid crimson;*/
+  padding-top: 8px;
+  padding-left: 110px;
+  padding-right: 60px;
+  padding-bottom: 0;
+}
+
+body, strong, div, span, p, li {
+  font-size: 0.9rem;
+  font-family: var(--main-font-family);
+  color: var(--text-color-main);
+}
+
+strong {
+  color: var(--text-color-bold-light);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: stretch;
+
+  margin-bottom: 80px;
+}
+
+header .address-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+header .address-col div,
+header .address-col span {
+  font-family: var(--address-font-family);  
+  font-size: 0.72rem;
+}
+
+header .address-col .company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  box-sizing: border-box;
+}
+
+header .address-col .company .logo {
+  box-sizing: border-box;
+}
+
+header .address-col .company .logo img {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: 100%;
+}
+
+header .address-col .company .companyName {
+  flex-grow: 1;
+}
+
+header .address-col .contactPerson {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-color-bold-light);
+}
+
+header .address-col .company.letter_first,
+header .address-col .company.applicant,
+header .address-col .adress-col-second-margin {
+  height: var(--logo-height);
+  width: 100%;
+}
+
+header .address-col .company.letter_first .logo {
+  height: 100%;
+  width: 320px;
+  background-color: var(--letter_first-background-color);
+  padding: 8px;
+}
+
+header .address-col .company.applicant .logo {
+  height: 100%;
+  width: auto;
+  /*background-color: var(--zkb-background-color);*/
+  /*padding: 8px;*/
+}
+
+header .address-col .company.letter_first .companyName,
+header .address-col .company.applicant .companyName {
+  display: none;
+}
+
+header .address-col .postal-address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+header .address-col .postal-address .postal-address-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+
+  margin: 0;
+  line-height: 1rem;
+}
+
+header .address-col .postal-address .postal-address-line span {
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+header .address-col .postal-address .postal-address-line .street {
+  
+}
+
+header .address-col .postal-address .postal-address-line .zip {
+  
+}
+
+header .address-col .postal-address .postal-address-line .town {
+  
+}
+
+header .address-col .postal-address .postal-address-line .land {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-color-bold-light);
+}
+
+header .address-col .email {
+  margin-top: 0.4rem;
+}
+
+header .address-col .email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header .address-col-first {
+  width: 65%;
+}
+
+header .address-col-second {
+  width: 35%;
+}
+
+main .paragraph.theme {
+  font-family: var(--theme-font-family);
+  color: var(--text-color-bold-light);
+  font-size: 1rem;
+  line-height: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+main .text {
+  margin-bottom: 1.7rem;
+}
+
+main .paragraph,
+main .line {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.3rem;
+}
+
+main .paragraph {
+  margin: 1.2rem 0;
+}
+main .line {
+  margin: 0.2rem 0;
+}
+
+main .regards,
+main .name {
+  font-family: Satisfy;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+main .signature {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+main .signature .date-and-place {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+main .signature .signature-img-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  height: 2.3rem;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+main .signature .signature-img-parent img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

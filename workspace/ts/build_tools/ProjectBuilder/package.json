@@ -1,0 +1,33 @@
+{
+  "name": "@jaisocx/project-builder",
+  "version": "1.3.3",
+  "author": "Jaisocx",
+  "private": false,
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "files": [
+    "example_root_files",
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "tsconfig.CommonJS.overrides.json",
+    "tsconfig.ESNext.overrides.json"
+  ],
+  "scripts": {
+    "watch": "tsc -w -p ./tsconfig.ESNext.overrides.json"
+  },
+  "dependencies": {
+    "@jaisocx/css-importer": "^1.4.1",
+    "@jaisocx/eslint-plugins": "^1.3.2",
+    "@jaisocx/file-writer": "^1.2.2",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/json5": "^0.0.30"
+  }
+}

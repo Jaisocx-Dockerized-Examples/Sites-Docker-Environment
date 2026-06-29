@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TYPING_PROMPT_SYMBOL='$ '
+# PS1='\n\s_\v    docker ${WORKSPACE_NAME} a4dc \u ${TYPING_PROMPT_SYMBOL}'
+# PS1='\s \$ '
+
+# -- DEVELOPMENT MODE --
+# turns on echo to console, seen in console on command: $_ docker compose -f <filename of compose.yml> logs <service name>
+WHETHER_DEV_MODE="true"
+
+A4DC_INSTALL_TARBALL_RELOAD=false
+
+# cd ~  && pwd
+cd "${IN_DOCKER_WORKSPACE_VOLUME}" && pwd
+
+

@@ -1,0 +1,74 @@
+{
+  "id": {
+    "title": "ID",
+    "type": "number",
+    "width": "50px",
+    "align": "right"
+  },
+  "is_active": {
+    "title": "Active",
+    "type": "boolean",
+    "width": "80px",
+    "align": "center"
+  },
+  "age": {
+    "title": "Age",
+    "type": "number",
+    "width": "60px",
+    "align": "right"
+  },
+  "name": {
+    "title": "Name",
+    "type": "text",
+    "width": "150px",
+    "align": "left"
+  },
+  "email": {
+    "title": "Email",
+    "type": "text",
+    "width": "200px",
+    "align": "left"
+  },
+  "phone": {
+    "title": "Phone",
+    "type": "text",
+    "width": "120px",
+    "align": "left"
+  },
+  "address": {
+    "title": "Address",
+    "type": "text",
+    "width": "1fr",
+    "align": "left"
+  },
+  "score": {
+    "title": "Score",
+    "type": "number",
+    "width": "80px",
+    "align": "right"
+  },
+  "settings": {
+    "title": "Settings",
+    "type": "json",
+    "width": "1fr",
+    "align": "left"
+  },
+  "website": {
+    "title": "Website",
+    "type": "url",
+    "width": "200px",
+    "align": "left"
+  },
+  "created_at": {
+    "title": "Created At",
+    "type": "text",
+    "width": "160px",
+    "align": "left"
+  },
+  "updated_at": {
+    "title": "Updated At",
+    "type": "text",
+    "width": "160px",
+    "align": "left"
+  }
+}

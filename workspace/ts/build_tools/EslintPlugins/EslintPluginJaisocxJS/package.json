@@ -1,0 +1,12 @@
+{
+  "name": "@jaisocx/eslint-plugins",
+  "version": "1.3.2",
+  "author": "Jaisocx",
+  "private": false,
+  "type": "module",
+  "main": "./src/index.js",
+  "files": [
+    "src/"
+  ]
+}
+

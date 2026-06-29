@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "white flowers",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/vecteezy_a-blue-background-with-white-flowers-on-it-the-flowers-are_48479251.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  },
+  {
+    "id": 2,
+    "title": "beautiful-blooming-flower-in-garden",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/vecteezy_beautiful-blooming-flower-in-garden_47697154.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  },
+  {
+    "id": 3,
+    "title": "beautiful-blooming-flower-in-garden",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/istockphoto-1317323736-612x612.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  },
+  {
+    "id": 4,
+    "title": "beautiful-blooming-flower-in-garden",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/istockphoto-1322277517-612x612.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  },
+  {
+    "id": 5,
+    "title": "beautiful-blooming-flower-in-garden",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/istockphoto-1696167872-612x612.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  },
+  {
+    "id": 6,
+    "title": "beautiful-blooming-flower-in-garden",
+    "description": "Learn how to develop APIs using Node.js and Express.",
+    "image_src": "imaged_data/images/istockphoto-2166282428-612x612.webp",
+    "updated_at": "2024-09-17 11:00:00",
+    "author": "Mark Lee"
+  }
+]
+
+
