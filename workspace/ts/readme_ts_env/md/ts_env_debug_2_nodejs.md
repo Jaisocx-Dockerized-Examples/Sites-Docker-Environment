@@ -54,7 +54,7 @@
 
   2. **bash** `command/base/js_invoke.sh`
 
-  3. **node** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/transpiled/ESNext/invokeCssImporter.js`
+  3. **node** `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/transpiled/ESNext/invokeCssImporter.js`
 
   4. **node** `"@jaisocx/css-importer"`
 
@@ -69,11 +69,11 @@
   and the **node library** `@jaisocx/command-line`.
 
 
-  1. **Stored Centrally**: Easy to get know One **console/JsInvoke folder** for all `typescript` files ( `workspace/ts/Jaisocx_SitesTools/console/JsInvoke` ), to invoke in terminal.
+  1. **Stored Centrally**: Easy to get know One **console/JsInvoke folder** for all `typescript` files ( `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke` ), to invoke in terminal.
 
   2. **Local node_modules as a sandbox just for console examples**: These scripts then can be debugged
   in the context of the local `node_modules`
-  and `package.json` and `package-lock.json` in this folder `${TypescriptEnvironment}/workspace/ts/Jaisocx_SitesTools/console/JsInvoke`,
+  and `package.json` and `package-lock.json` in this folder `${TypescriptEnvironment}/workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke`,
   for example to **link** other
   imported `js` libraries,
   **to navigate via symlink at debug time to source code** in this project,
@@ -89,7 +89,7 @@
   ```
     .env
         PROJECT_VOLUME="./workspace/ts"
-        IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
+        IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
             => docker-compose.yml
   ```
 
@@ -102,7 +102,7 @@
 ### 1. Writing a custom script to invoke in console.
 
   1. **write** in **console/JsInvoke** custom **typescript** code 
-     in a `.ts` file in folder `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/src/` 
+     in a `.ts` file in folder `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/src/` 
      like in example: `invokeCssImporter.ts`
 
   2. **transpile** on demand with ProjectBuilder.
@@ -170,8 +170,8 @@
     ### Line 55:
     
       "${jsInvokePath}" "$commandLineArgs" \
-        --Root="${IN_DOCKER_PROJECT_VOLUME}" \
-        --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
+        --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
+        --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
         --packagePath="Jaisocx_SitesTools/console/JsInvoke" \
         --script="invokeCssImporter.js" \
             --sitesToolPath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2" \
@@ -187,7 +187,7 @@
   Let's imagine, the task was to write and to invoke a custom `.js` file
   for test or debug purposes of `.js` package `@jaisocx/css-importer`.
   
-  For console scripts, I started folder **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`,
+  For console scripts, I started folder **JsInvoke** `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke`,
   where the first example for `@jaisocx/css-importer` resides:
   `src/invokeCssImporter.ts`.
   
@@ -212,9 +212,9 @@
   In order to invoke in terminal a .js file,
   there are 2 base Typescript packages:
 
-  1. **CommandLine** `workspace/ts/Jaisocx_SitesTools/packages/CommandLine`
+  1. **CommandLine** `workspace/ts/cloned_repos/jaisocx_sitestools/packages/CommandLine`
 
-  2. **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`
+  2. **JsInvoke** `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke`
 
 
 
@@ -273,7 +273,7 @@
   mouse over json object property name `"scripts"."start"` shows command option "debug". 
   Debug works really like a charm, without no having had need of plugins install in addition.
 
-  **Path in the Jaisocx Typescript Environment project**: `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/package.json`
+  **Path in the Jaisocx Typescript Environment project**: `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/package.json`
 
   **Runs | Debugs "invokeCssImporter.js" via node cli** in this `package.json` Line 17
   

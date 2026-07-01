@@ -22,8 +22,8 @@ NODE_SOFTWARE_VERSION="24.11.0"
 
 
 PROJECT_VOLUME="./workspace/ts"
-IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
-YARN_HOME="/opt/jaisocx/sites_tools/workspace/ts/build_tools/command/tsvm/yarn"
+IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
+YARN_HOME="/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/command/tsvm/yarn"
 
 
 
@@ -209,7 +209,7 @@ NODE_LATEST_RELEASE="26.3.0"
 # this variable sets, what ProjectBuilder compiled version will be called.
 # ESNext is preferred, when You have the Node version 23.3 and above, since this ESNext build was done with Node v23.3.0
 tsconfigVersion="ESNext"
-tsServicePathCdn="/opt/jaisocx/sites_tools/workspace/ts/cdn"
+tsServicePathCdn="/opt/jaisocx/sites_docker_environment/workspace/ts/cdn"
 
 # the constants for the docker compose and the ProjectBuilder used with buildPacks.sh
 # buildPacks.sh is to build the node projects, written in ts and js.
@@ -219,7 +219,7 @@ tsServicePathCdn="/opt/jaisocx/sites_tools/workspace/ts/cdn"
   #   build:
   #     context: ./docker/ts
   #   volumes:
-  #     - ./workspace/ts/:/opt/jaisocx/sites_tools/workspace/ts/
+  #     - ./workspace/ts/:/opt/jaisocx/sites_docker_environment/workspace/ts/
   #   volumes:
   #     - "${relativeProjectPathWithTsCode}:${tsServicePathInDockerVolume}"
 

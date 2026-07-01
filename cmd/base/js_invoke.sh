@@ -62,12 +62,12 @@ fi
 
 echo "debugInspectOption: ${debugInspectOption}"
 
-commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && node ${debugInspectOption} "./${transpiledJsSourcesLocalPathInPackage}/${script}""
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && node ${debugInspectOption} "./${transpiledJsSourcesLocalPathInPackage}/${script}""
 
 
 
 hostScriptPath="$(realpath "${PROJECT_VOLUME}")/${packagePath}/${transpiledJsSourcesLocalPathInPackage}/${script}"
-dockerScriptPath="${IN_DOCKER_PROJECT_VOLUME}/${packagePath}/${transpiledJsSourcesLocalPathInPackage}/${script}"
+dockerScriptPath="${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}/${transpiledJsSourcesLocalPathInPackage}/${script}"
 
 
 

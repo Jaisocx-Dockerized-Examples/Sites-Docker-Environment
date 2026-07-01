@@ -9,7 +9,7 @@
 
 ## THE WEBPACK EXAMPLE
 
-`workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree`
+`workspace/ts/cloned_repos/jaisocx_sitestools/webpack_builds/ExampleTree`
 
 ## Status of webpack support in this project
 
@@ -22,7 +22,7 @@
 
 ### what does Webpack produce?
 
-`workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree/transpiled/webpack/bundle.js`
+`workspace/ts/cloned_repos/jaisocx_sitestools/webpack_builds/ExampleTree/transpiled/webpack/bundle.js`
 
 is usable in a static `.html` page even, after each webpack rebuild, too.
 

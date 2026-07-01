@@ -1,8 +1,8 @@
 {
   "extends": "./../../tsconfig.ESNext.json",
   "compilerOptions": {
-    "outDir": "/opt/jaisocx/sites_tools/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext",
-    "declarationDir": "/opt/jaisocx/sites_tools/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext"
+    "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext",
+    "declarationDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext"
   },
   "include": [
     "src/*.ts",

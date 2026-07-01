@@ -9,11 +9,11 @@
 
 1. The infrastructure for **development of Typescript libraries**.
 
-2. The intercative **sites tools** packages in `workspace/ts/Jaisocx_SitesTools` catalog, however still under development.
+2. The intercative **sites tools** packages in `workspace/ts/cloned_repos/jaisocx_sitestools` catalog, however still under development.
 
 3. **Dockerized services**, to use in development:
 
-  3.1. HTTPS server, serving volumes `workspace/ts/Jaisocx_SitesTools` and `workspace/php`, with the **brightday.email** wildcard TLS cert, valid til November 2025. Locally, when set some subdomain entry of `brightday.email` domain in `/etc/hosts` file, this is helpful to test with valid **https endpoints**. And in the config file `docker/https/conf/http-conf.xml`, don't set the domain name `sandbox.brightday.email` for Your local tests, this is reserved already, here are the examples published.
+  3.1. HTTPS server, serving volumes `workspace/ts/cloned_repos/jaisocx_sitestools` and `workspace/php`, with the **brightday.email** wildcard TLS cert, valid til November 2025. Locally, when set some subdomain entry of `brightday.email` domain in `/etc/hosts` file, this is helpful to test with valid **https endpoints**. And in the config file `docker/https/conf/http-conf.xml`, don't set the domain name `sandbox.brightday.email` for Your local tests, this is reserved already, here are the examples published.
 
   3.2. **JWT protection** feature for **https** endpoints under **Jaisocx** dockerized service `https`.
 

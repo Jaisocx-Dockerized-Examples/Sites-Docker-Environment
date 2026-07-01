@@ -47,7 +47,7 @@
   # the constants from the .env, please don't use there hardcoed, the best to set in the .env file :
   # tsconfigVersion="ESNext"
   # relativeProjectPathWithTsCode="./workspace/ts"
-  # IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
+  # IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
 
   # the command line tool ProjectBuilder.ts is best to invoke in the dockerized node service,
 
@@ -71,9 +71,9 @@ set -a
   bash "${jsInvokePath}" "$commandLineArgs" \
     --packagePath="build_tools/ProjectBuilder" \
     --script="cli/run.js" \
-    --ProjectRoot="${IN_DOCKER_PROJECT_VOLUME}" \
-    --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
-    --PackagesPath="${IN_DOCKER_PROJECT_VOLUME}/Jaisocx_SitesTools/"
+    --ProjectRoot="${IN_DOCKER_WORKSPACE_VOLUME}" \
+    --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
+    --PackagesPath="${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"
 
 exit 0;
 

@@ -123,7 +123,7 @@ GitHub link:
 [sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
 
 The same link on local install:
-[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
+[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
 
 
 
@@ -147,7 +147,7 @@ GitHub link:
 [console/JsInvoke/README.md](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/console/JsInvoke/README.md)
 
 The same link on local install:
-[console/JsInvoke/README.md](./../../workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
+[console/JsInvoke/README.md](./../../workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/README.md)
 
 
 
@@ -253,7 +253,7 @@ Please, regard these sizes names for the site quality improves and bugfixes to k
 
 
 
-`workspace/ts/Jaisocx_SitesTools/packages/ResponsiveSizes`
+`workspace/ts/cloned_repos/jaisocx_sitestools/packages/ResponsiveSizes`
 
 [https://sandbox.brightday.email/ExampleSimple_ResponsiveSizes.html](https://sandbox.brightday.email/ExampleSimple_ResponsiveSizes.html)
 
@@ -277,7 +277,7 @@ The nice idea of an advice now, is not to adjust the sizes of `SitesToolAutomati
 ```
 
 
-the new package `workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation` produces .css file set, similar to CssCleanStart, however the responsive sizes are set in a .json file.
+the new package `workspace/ts/cloned_repos/jaisocx_sitestools/packages/SitesToolAutomation` produces .css file set, similar to CssCleanStart, however the responsive sizes are set in a .json file.
 
 [https://sandbox.brightday.email/packages/SitesToolAutomation/responsive_sizes_user_friendly_view.html](https://sandbox.brightday.email/packages/SitesToolAutomation/responsive_sizes_user_friendly_view.html)
 
@@ -328,7 +328,7 @@ docker compose up ts -d
 
 
 docker compose exec ts bash
-cd /opt/jaisocx/sites_tools/workspace/ts
+cd /opt/jaisocx/sites_docker_environment/workspace/ts
 npm install
 ```
 
@@ -362,7 +362,7 @@ To update Your project:
 
 ```
 docker compose exec ts bash
-cd /opt/jaisocx/sites_tools/workspace/ts
+cd /opt/jaisocx/sites_docker_environment/workspace/ts
 npm install
 ```
 
@@ -416,7 +416,7 @@ addEventHandler(
 ### 7. The new template "ResponsiveAndValidForWebpackWhenNpmInstall"
 
 
-`workspace/ts/Jaisocx_SitesTools/templates/ResponsiveAndValidForWebpackWhenNpmInstall`
+`workspace/ts/cloned_repos/jaisocx_sitestools/templates/ResponsiveAndValidForWebpackWhenNpmInstall`
 
 
 Just **copy paste** to start a **new** npm ts | js package **from scratch**. There are just package.json and .js files for the webpack feature.

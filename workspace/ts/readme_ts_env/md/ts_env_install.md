@@ -50,11 +50,11 @@
     YARN_VERSION="4.12.0-dev"
     
     PROJECT_VOLUME="./workspace/ts"
-    IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
-    YARN_HOME="/opt/jaisocx/sites_tools/workspace/ts/build_tools/command/tsvm/yarn"
+    IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
+    YARN_HOME="/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/command/tsvm/yarn"
     
     tsconfigVersion="ESNext"
-    tsServicePathCdn="/opt/jaisocx/sites_tools/workspace/ts/cdn"
+    tsServicePathCdn="/opt/jaisocx/sites_docker_environment/workspace/ts/cdn"
     
     JAISOCX_HTTP_FLAT_PORT=33223
     JAISOCX_HTTPS_PORT=9445
@@ -108,15 +108,15 @@
     # @path workspace/ts/.env.dynamic
     
     start_node_https=true
-    private_key_path="/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
-    ssl_cert_path="/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
+    private_key_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
+    ssl_cert_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
     
     node_https_publish_port=8445
-    node_https_publish_folder="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools"
+    node_https_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
     
     start_node_http_flat=true
     node_http_flat_publish_port=8085
-    node_http_flat_publish_folder="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools"
+    node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
     
     start_express_secure=true
     express_secure_publish_port=9443

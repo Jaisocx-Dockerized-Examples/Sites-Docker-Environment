@@ -11,7 +11,7 @@ node --inspect-brk=0.0.0.0:9229 "./transpiled/${tsconfigVersion}/cli/debug_and_t
 
 # to run in the debug terminal
 # node "./debug_and_test.js"  --ProjectRoot="/Users/illiapolianskyi/Projects/JAISOCX_SITES_TOOLS/workspace/workspace/ts"  --BuildData="BuildData.json"  --PackagesPath="Jaisocx_SitesTools"
-# node "./debug_and_test.js"  --ProjectRoot="/opt/jaisocx/sites_tools/workspace/ts"  --BuildData="BuildData.json"  --PackagesPath="Jaisocx_SitesTools"
+# node "./debug_and_test.js"  --ProjectRoot="/opt/jaisocx/sites_docker_environment/workspace/ts"  --BuildData="BuildData.json"  --PackagesPath="Jaisocx_SitesTools"
 
 
 

@@ -16,7 +16,7 @@
   set -a
   source "${projectPath}/.env"
 
-  commandToRun="${IN_DOCKER_PROJECT_VOLUME}/build_tools/cmd/tsvm/in_docker_install_node.sh"
+  commandToRun="${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/cmd/tsvm/in_docker_install_node.sh"
   docker compose exec ts bash -c "${commandToRun}"
 
 

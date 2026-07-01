@@ -20,7 +20,7 @@
       "request": "launch",
       "port": 9007,
       "pathMappings": {
-          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+          "/opt/jaisocx/sites_docker_environment/workspace/php": "${workspaceFolder}/workspace/php"
       },
       "profile": false,
       "openProfile": true,
@@ -37,7 +37,7 @@
           "-S", "sandbox.brightday.email/php/", "-t", "."
       ],
       "pathMappings": {
-          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+          "/opt/jaisocx/sites_docker_environment/workspace/php": "${workspaceFolder}/workspace/php"
       },
       "noDebug": true, // <-- disable debugging
       "profile": true, // <-- enable profiling
@@ -55,7 +55,7 @@
       "runtimeExecutable": "/usr/local/bin/php",
       "port": 9007,
       "pathMappings": {
-          "/opt/jaisocx/sites_tools/workspace/php": "${workspaceFolder}/workspace/php"
+          "/opt/jaisocx/sites_docker_environment/workspace/php": "${workspaceFolder}/workspace/php"
       },
       "log": true
     }

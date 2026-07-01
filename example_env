@@ -14,7 +14,7 @@ WHETHER_DEV_MODE="true"
 
 # -- VOLUMES --
 WORKSPACE_VOLUME="./workspace"
-IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/a4dc/workspace"
+IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace"
 
 # -- DOMAINS --
 DOMAIN_NAME="basetasks.site"
@@ -162,19 +162,19 @@ NODE_TARBALLS_IN_DOCKER_VOLUME="/tarballs"
 
 # -- SITES SERVER --
 SOFTWARE_NAMESPACE="jaisocx"
-SOFTWARE_NAME="a4_dc"
+SOFTWARE_NAME="a4dc"
 SOFTWARE_VERSION="1.0.1"
-SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home"
-LOGS_HOME="/opt/jaisocx/a4dc/v1_0_1/logs"
+SOFTWARE_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home"
+LOGS_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/logs"
 
-A4DC_SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home/prince/v16_2"
-JAISOCX_SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http"
-NODE_SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home/node/v24_11_0"
-PHP_SOFTWARE_HOME="/opt/jaisocx/a4dc/v1_0_1/soft_home/php/v8_3"
+A4DC_SOFTWARE_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home/prince/v16_2"
+JAISOCX_SOFTWARE_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http"
+NODE_SOFTWARE_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home/node/v24_11_0"
+PHP_SOFTWARE_HOME="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home/php/v8_3"
 
-A4DC_SOFTWARE_LOGS="/opt/jaisocx/a4dc/v1_0_1/logs/prince"
-JAISOCX_SOFTWARE_LOGS="/opt/jaisocx/a4dc/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http/logs"
-NODE_SOFTWARE_LOGS="/opt/jaisocx/a4dc/v1_0_1/logs/node"
-PHP_SOFTWARE_LOGS="/opt/jaisocx/a4dc/v1_0_1/logs/php"
+A4DC_SOFTWARE_LOGS="/opt/jaisocx/sites_docker_environment/v1_0_1/logs/prince"
+JAISOCX_SOFTWARE_LOGS="/opt/jaisocx/sites_docker_environment/v1_0_1/soft_home/jaisocx/v3_0_16/jaisocx-http/logs"
+NODE_SOFTWARE_LOGS="/opt/jaisocx/sites_docker_environment/v1_0_1/logs/node"
+PHP_SOFTWARE_LOGS="/opt/jaisocx/sites_docker_environment/v1_0_1/logs/php"
 
 

@@ -36,7 +36,7 @@
   the dependency line, e.g. "@jaisocx/event-emitter": "^1.0.x",
   You get from the local linked submodule catalog's package.json:
   
-  workspace/ts/Jaisocx_SitesTools/modules/EventEmitter/package.json
+  workspace/ts/cloned_repos/jaisocx_sitestools/modules/EventEmitter/package.json
 
   ```json
     {
@@ -167,10 +167,10 @@
   - **A library by Webpack**: building a `bundle.js` by **webpack**:
 
   ```sh
-    cd workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree
+    cd workspace/ts/cloned_repos/jaisocx_sitestools/webpack_builds/ExampleTree
     npm run webpack
   ```
 
-  - **reload** this `.html` page, opened in Your browser to see effect: `workspace/ts/Jaisocx_SitesTools/ExampleWebpack_Tree.html`
+  - **reload** this `.html` page, opened in Your browser to see effect: `workspace/ts/cloned_repos/jaisocx_sitestools/ExampleWebpack_Tree.html`
 
 

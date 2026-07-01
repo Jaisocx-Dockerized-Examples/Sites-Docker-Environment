@@ -49,7 +49,7 @@ cd "${projectPath}"
 set -a
 . "${pathToEnv}"
 
-docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && /bin/bash "${IN_DOCKER_PROJECT_VOLUME}/build_tools/command/buildProjectBuilder.sh" "${IN_DOCKER_PROJECT_VOLUME}""
+docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && /bin/bash "${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/command/buildProjectBuilder.sh" "${IN_DOCKER_WORKSPACE_VOLUME}""
 
 exit 0;
 

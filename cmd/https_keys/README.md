@@ -189,7 +189,7 @@ Script:
         jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
         jks-alias="basetasks.site"
         jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
-        document-root="/opt/jaisocx/sites_tools/workspace/php"
+        document-root="/opt/jaisocx/sites_docker_environment/workspace/php"
         publish-charset="UTF-8" src-charset="UTF-8">
   
         ...

@@ -1,9 +1,9 @@
 {
-  "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main_Webpack.css",
+  "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main_Webpack.css",
   "cssFileContents": {},
   "rangesOrDtoOfImport": [
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/MediaAndStyles/JscImages_mini_datatypes_base_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [

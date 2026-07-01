@@ -76,7 +76,7 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 `@jaisocx/css-clean-start`
 
 
-3. path: [./../../workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md](./../../workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md)
+3. path: [./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md](./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md)
 
 
 4. cdn folder example: [./../../cdn](./../../cdn)
@@ -91,7 +91,7 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 <alias comment="cdn for data, fonts and media"
   art="folder"
   url="/cdn/www/"
-  path="/opt/jaisocx/sites_tools/cdn/www/"
+  path="/opt/jaisocx/sites_docker_environment/cdn/www/"
   cache="update"
   list="true"
   each-folder-content-file-name="root.html" />
@@ -102,11 +102,11 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 
 
 7. code of this html page on GitHub:
-[https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/Jaisocx_SitesTools/examples_html/cdn_feature/ExampleCss_CssCodeSnippet_minimal.html](https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/Jaisocx_SitesTools/examples_html/cdn_feature/ExampleCss_CssCodeSnippet_minimal.html)
+[https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/cloned_repos/jaisocx_sitestools/examples_html/cdn_feature/ExampleCss_CssCodeSnippet_minimal.html](https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/cloned_repos/jaisocx_sitestools/examples_html/cdn_feature/ExampleCss_CssCodeSnippet_minimal.html)
 
 
 8. code of the CssCodeSnippet css sites tool on GitHub
-[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart)
+[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart)
 
 
 9. code on sandbox.brightday.email

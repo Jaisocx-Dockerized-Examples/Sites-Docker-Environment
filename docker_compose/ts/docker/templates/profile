@@ -3,9 +3,6 @@
 TYPING_PROMPT_SYMBOL='$ '
 PS1='\n\s_\v    docker ${WORKSPACE_NAME} ts \u ${TYPING_PROMPT_SYMBOL}'
 
-# cd ~
-cd "${IN_DOCKER_WORKSPACE_VOLUME}"
-
 . "${IN_DOCKER_WORKSPACE_VOLUME}/env_dc_dinamique/.env_ts"
 
 

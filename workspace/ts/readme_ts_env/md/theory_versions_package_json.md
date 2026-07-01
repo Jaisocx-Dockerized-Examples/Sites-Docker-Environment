@@ -119,14 +119,14 @@ When in that range there is the newest "2.8.5", then the "2.8.5" will be install
 ### To see the version gets installed:
 ```
 docker compose exec ts bash
-/opt/jaisocx/sites_tools/workspace/ts/express
+/opt/jaisocx/sites_docker_environment/workspace/ts/express
 # npm install express@^5.1.0
 npm update express
 npm list express
 ```
 response:
 ```
-docker-express-example@1.0.0 /opt/jaisocx/sites_tools/workspace/ts/express
+docker-express-example@1.0.0 /opt/jaisocx/sites_docker_environment/workspace/ts/express
 `-- express@5.1.0
 
 ```

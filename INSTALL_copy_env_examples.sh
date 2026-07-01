@@ -55,6 +55,7 @@
     ".env_a4dc"
     ".env_jaisocx"
     ".env_php"
+    ".env_ts"
   )
   cd "${this_folder}/${dyn_folder_envs}"
 

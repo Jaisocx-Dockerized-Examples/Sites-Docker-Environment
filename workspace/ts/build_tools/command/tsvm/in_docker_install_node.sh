@@ -1,6 +1,6 @@
 #!/bin/bash
 
-in_docker_env_node_install_path="${IN_DOCKER_PROJECT_VOLUME}/.env.node.install"
+in_docker_env_node_install_path="${IN_DOCKER_WORKSPACE_VOLUME}/.env.node.install"
 
 set -a
 source "${in_docker_env_node_install_path}"

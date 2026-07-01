@@ -7,7 +7,7 @@ loc_packagename="_"
 loc_dependency="_"
 
 # Find all package.json files recursively
-find "$SEARCH_DIR/workspace/ts/Jaisocx_SitesTools/packages" -type f -name "package.json" | while read -r pkgfile; do
+find "$SEARCH_DIR/workspace/ts/packages" -type f -name "package.json" | while read -r pkgfile; do
   pkgdir=$(dirname "$pkgfile")
   loc_packagename="$(echo "${pkgdir}" | awk -F'/' '{print $6}')"
   echo -e "\n--${loc_packagename}\n" >> written_packages.txt

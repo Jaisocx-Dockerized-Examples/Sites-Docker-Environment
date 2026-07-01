@@ -53,8 +53,8 @@ fi
 
 
 "${jsInvokePath}" "${commandLineArgs}" \
-  --Root="${IN_DOCKER_PROJECT_VOLUME}" \
-  --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
+  --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
+  --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
   --packagePath="Jaisocx_SitesTools/libraries/console/JsInvoke" \
   --script="invokeCssImporter.js" \
       --sitesToolPath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/css_flat/CssTable" \

@@ -3,7 +3,7 @@
   "cssFileContents": {},
   "rangesOrDtoOfImport": [
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/CssCleanStart_2_theme_base_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/CssCleanStart_2_theme_base_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_d05_very_small_xxs_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_d05_very_small_xxs_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -499,7 +499,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e02_mobile_xs_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e02_mobile_xs_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -933,7 +933,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e02_mobile_xs_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e02_mobile_xs_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -1375,7 +1375,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e04_mobile_s_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e04_mobile_s_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -1809,7 +1809,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e04_mobile_s_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e04_mobile_s_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -2251,7 +2251,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e06_mobile_sm_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e06_mobile_sm_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -2685,7 +2685,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e06_mobile_sm_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e06_mobile_sm_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -3127,7 +3127,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e08_mobile_md_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e08_mobile_md_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -3561,7 +3561,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e08_mobile_md_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_e08_mobile_md_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -4003,7 +4003,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h03_tablet_s_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h03_tablet_s_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -4437,7 +4437,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h05_tablet_sm_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h05_tablet_sm_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -4871,7 +4871,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h07_tablet_md_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h07_tablet_md_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -5305,7 +5305,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h09_tablet_lg_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_h09_tablet_lg_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -5739,7 +5739,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l02_laptop_sm_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l02_laptop_sm_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -6181,7 +6181,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l03_laptop_md_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l03_laptop_md_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -6623,7 +6623,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l07_laptop_lg_portrait__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_l07_laptop_lg_portrait__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7065,7 +7065,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_t99_tv_xxxl_landscape__CssCleanStart_2__theme_base.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive/responsive_size_t99_tv_xxxl_landscape__CssCleanStart_2__theme_base.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7515,7 +7515,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive_size_Imports_CssCleanStart_2_theme_base_Webpack_minimal.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_base/responsive_size_Imports_CssCleanStart_2_theme_base_Webpack_minimal.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7821,7 +7821,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_visible_height/theme_visible_height.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_visible_height/theme_visible_height.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7835,7 +7835,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_presets.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_presets.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7857,7 +7857,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_lightmode/CssCleanStart_2_theme_lightmode_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_lightmode/CssCleanStart_2_theme_lightmode_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7879,7 +7879,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_darkmode/CssCleanStart_2_theme_darkmode_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/themes/theme_darkmode/CssCleanStart_2_theme_darkmode_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7901,7 +7901,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_main.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_main.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [
@@ -7971,7 +7971,7 @@
       ]
     },
     {
-      "cssFilePath": "/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_main_Webpack_minimal.css",
+      "cssFilePath": "/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_main_Webpack_minimal.css",
       "cssFileContents": {},
       "rangesOrDtoOfImport": [
         [

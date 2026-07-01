@@ -79,7 +79,7 @@ const builder = new ProjectBuilder();
 builder
   .setIsLocalDevelopment(1)
   .setAbsolutePathToProjectRoot(commandArgs.ProjectRoot)
-  .setRelativePathFromRootTsConfigCatalogPath("/opt/jaisocx/sites_tools/workspace/ts")
+  .setRelativePathFromRootTsConfigCatalogPath("/opt/jaisocx/sites_docker_environment/workspace/ts")
   .setRelativePathFromRootLintCatalog(".")
   .setRelativePathFromRootWww("Jaisocx_SitesTools")
   .setBuildCjsCatalogName("transpiled/CommonJS")
