@@ -3,8 +3,8 @@
   "version": "1.0.1",
   "main": "secure_server.js",
   "scripts": {
-    "start": "node ./src/server.js",
-    "secure_start": "node ./src/secure_server.js"
+    "start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/server.js",
+    "secure_start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/secure_server.js"
   },
   "dependencies": {
     "express": "~5.1.0"

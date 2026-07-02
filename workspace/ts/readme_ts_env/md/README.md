@@ -4,7 +4,7 @@
 ![../../../cdn/software_labels/docker/softlabel_docker.svg](../../../cdn/software_labels/docker/softlabel_docker.svg)
 ![../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
-[HOME](../../README.md)
+[HOME](../../../../README_typescript_environment.md)
 
 # Typescript Environment Documentation
   >  🗓  **Updated**:  🌼  Summer 2026,  the 02th of July 2026, 18:20:00 CEST.
