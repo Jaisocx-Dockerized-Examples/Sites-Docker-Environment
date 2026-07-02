@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TYPING_PROMPT_SYMBOL='$ '
-# PS1='\n\s_\v    docker ${WORKSPACE_NAME} a4dc \u ${TYPING_PROMPT_SYMBOL}'
+PS1='\n\s_\v    docker ${WORKSPACE_NAME} a4dc \u ${TYPING_PROMPT_SYMBOL}'
 # PS1='\s \$ '
 
 # -- DEVELOPMENT MODE --

@@ -9,6 +9,17 @@ SHELL="/bin/bash"
 # CPU_ARCHITECTURE_A4DC="x86_64"
 CPU_ARCHITECTURE_A4DC="aarch64"
 
+
+### NODE ALWAYS LINUX, SINCE ALPINE IMAGE
+# os="darwin"
+# os="linux"
+
+# CPU_ARCHITECTURE_NODE="loong64"
+# CPU_ARCHITECTURE_NODE="x64"
+# CPU_ARCHITECTURE_NODE="arm64"
+CPU_ARCHITECTURE_NODE=arm64
+
+
 # AMD: amd64 | Apple MacBook: mac
 CPU_ARCHITECTURE_JAISOCX="mac"
 
@@ -17,15 +28,6 @@ CPU_ARCHITECTURE_JAISOCX="mac"
 A4DC_SOFTWARE_VERSION="16.2"
 JAISOCX_SOFTWARE_VERSION="3.0.16"
 PHP_SOFTWARE_VERSION="8.3"
-NODE_SOFTWARE_VERSION="24.11.0"
-
-
-
-PROJECT_VOLUME="./workspace/ts"
-IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
-YARN_HOME="/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/command/tsvm/yarn"
-
-
 
 A4DC_SOFTWARE_LATEST_LTS="16.2"
 A4DC_SOFTWARE_LATEST_RELEASE="16.2"
@@ -35,9 +37,6 @@ JAISOCX_SOFTWARE_LATEST_RELEASE="3.0.16"
 
 PHP_SOFTWARE_LATEST_LTS="8.5"
 PHP_SOFTWARE_LATEST_RELEASE="8.5"
-
-NODE_LATEST_LTS="24.16.0"
-NODE_LATEST_RELEASE="26.3.0"
 
 
 
@@ -151,23 +150,6 @@ PHP_LOG_LEVEL=E_NOTICE
 
 
 
-### THIS CONF BLOCK WITH HTTP PORTS DOESN'T DO AUTOMATIQUE,
-### SINCE 1. DOCKERFILE EXPOSE PORT NUMBER IS HARDCODED,
-###   2. AND DOCKER-COMPOSE.YML STANDARD PORTS MAPPINGS HAVE TO BE HARDCODED TO BE ABLE TO SEE
-###   3. AND SEVERAL OTHER TASKS, AND EXPRESS AND NODE_HTTPS START package.json:script EITHER
-###   4. MOREOVER, FOR .env TO TAKE EFFECT WITH PORTS, SINCE IN EXPOSE INSTRUCTIONS IN DOCKERFILE, NEW DOCKER BUILD IS REQUIRED, NOT JUST RESTART.
-### Sets here slowly NODE HTTP SERVICES PORTS thinking on ports opened and their amount.
-# NODE_HTTP_FLAT_PORT=80
-# NODE_HTTPS_PORT=443
-NODE_HTTP_FLAT_PORT=8085
-NODE_HTTPS_PORT=8445
-### EXPRESS_PORT is in js hardcoded
-EXPRESS_SECURE_PORT=9443
-EXPRESS_PORT=3000
-NODE_DEBUG_PORT=9229
-
-
-
 ### Force custom compatible npm ver. install
 NPM_VER_FORCE_INSTALL=true
 YARN_INSTALL=false
@@ -181,6 +163,7 @@ PROJECT_NODE_PACKAGE_MANAGER=npm
 ### this folder is in .gitignore file, and the saved tarballs are not pushed to GitHub,
 ### even when You publish Your own copy of this Alpine Image on Your GitServer.
 NODE_INSTALL_TARBALL_RELOAD=false
+YARN_HOME="/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/command/tsvm/yarn"
 
 
 
@@ -188,8 +171,8 @@ NODE_INSTALL_TARBALL_RELOAD=false
 ### for programming in TypeScript Programming Language,
 ### and to run ServerSide Scripts for Sites in NodeJS Programming Language
 ### on Express flat http endpoint on port 3000
-NODE_VERSION="24.11.0"
-NPM_VERSION="11.7.0"
+NODE_VERSION="26.4.0"
+NPM_VERSION="11.18.0"
 YARN_VERSION="4.12.0-dev"
 
 
@@ -199,7 +182,7 @@ YARN_VERSION="4.12.0-dev"
 ### and doesn't erase the tarball to install from Inet.
 # 22. December 2025
 NODE_LATEST_LTS="24.16.0"
-NODE_LATEST_RELEASE="26.3.0"
+NODE_LATEST_RELEASE="26.4.0"
 
 
 

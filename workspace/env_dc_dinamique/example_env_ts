@@ -1,5 +1,14 @@
 #!/bin/bash
 
+### Ports open in Dockerfile on lines 193
+# EXPOSE 80
+# EXPOSE 443
+# EXPOSE 3000
+# EXPOSE 8445
+# EXPOSE 8085
+
+
+
 TYPING_PROMPT_SYMBOL='$ '
 PS1='\n\s_\v    docker ${WORKSPACE_NAME} ts \u ${TYPING_PROMPT_SYMBOL}'
 # PS1='\s \$ '
@@ -12,7 +21,27 @@ WHETHER_DEV_MODE="true"
 
 NODE_INSTALL_TARBALL_RELOAD=false
 
-# cd ~ && pwd
-cd "${IN_DOCKER_WORKSPACE_VOLUME}" && pwd
+start_node_https=true
+private_key_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
+ssl_cert_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
+
+node_https_publish_port=8445
+node_https_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
+
+
+start_node_http_flat=true
+node_http_flat_publish_port=8085
+node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
+
+start_express_secure=true
+express_secure_publish_port=9443
+
+start_express_flat=true
+express_publish_port=3000
+
+
+
+cd ~ && pwd
+# cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts" && pwd
 
 

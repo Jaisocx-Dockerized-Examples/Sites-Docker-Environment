@@ -71,6 +71,41 @@ services:
 
 
 
+  ts:
+    build:
+      context: "./docker_compose/ts/docker"
+      args:
+        - "A_GROUP_USERS_NAME=privileged"
+        - "A_USER_NAME=user"
+        - "A_NODE_SOFTWARE_HOME=${NODE_SOFTWARE_HOME}"
+    secrets:
+      - for_yml
+      - beyond_yml
+    volumes:
+      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+      - "${NODE_TARBALLS_VOLUME}/:${NODE_TARBALLS_IN_DOCKER_VOLUME}/"
+      - "./docker_compose/ts/logs/:${NODE_SOFTWARE_LOGS}/"
+    dns:
+      - "${DNS_SERVER_IPv4}"
+    ports:
+      - "${EXPRESS_SECURE_PORT}:${EXPRESS_SECURE_PORT}"
+      - "${EXPRESS_PORT}:${EXPRESS_PORT}"
+      - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"
+      - "${NODE_HTTP_FLAT_PORT}:${NODE_HTTP_FLAT_PORT}"
+    networks:
+      jaisocx_dc_internal_connected_all_network:
+        aliases:
+          - "${EXPRESS_INTERNAL_DOMAIN_NAME}"
+          - "${NODE_INTERNAL_DOMAIN_NAME}"
+        ipv4_address: "${NODE_IPv4}"
+        # ipv6_address: "${NODE_IPv6}"
+      jaisocx_dc_opened_for_inet_installs_network:
+        aliases:
+          - "${EXPRESS_OPENED_DOMAIN_NAME}"
+          - "${NODE_OPENED_DOMAIN_NAME}"
+
+
+
   jaisocx:
     build:
       context: "./docker_compose/Jaisocx_SitesServer/docker"
@@ -86,25 +121,25 @@ services:
       - "./docker_compose/Jaisocx_SitesServer/http/conf/:${JAISOCX_SOFTWARE_HOME}/conf/"
       - "./docker_compose/Jaisocx_SitesServer/http/etc/:${JAISOCX_SOFTWARE_HOME}/etc/"
       - "./docker_compose/Jaisocx_SitesServer/logs/:${JAISOCX_SOFTWARE_HOME}/logs/"
+    dns:
+      - "${DNS_SERVER_IPv4}"
     ports:
       - "2297:2297"
       - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
-    dns:
-      - "${DNS_SERVER_IPv4}"
     networks:
       jaisocx_dc_opened_one_for_browsers_network:
         aliases:
           - "${FORBROWSER_DOMAIN_NAME}"
       #        ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
       #        ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
+      #      jaisocx_dc_opened_for_inet_installs_network:
+      #        aliases:
+      #          - "${JAISOCX_OPENED_DOMAIN_NAME}"
       jaisocx_dc_internal_connected_all_network:
         aliases:
           - "${JAISOCX_DOMAIN_NAME}"
         ipv4_address: "${JAISOCX_HTTP_IPv4}"
         # ipv6_address: "${JAISOCX_HTTP_IPv6}"
-  #      jaisocx_dc_opened_for_inet_installs_network:
-  #        aliases:
-  #          - "${JAISOCX_OPENED_DOMAIN_NAME}"
 
 
 
