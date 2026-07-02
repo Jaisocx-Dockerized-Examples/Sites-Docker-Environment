@@ -3,7 +3,7 @@
 
 # Workaround in this project to align Your projects with npm, github, webpack.
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

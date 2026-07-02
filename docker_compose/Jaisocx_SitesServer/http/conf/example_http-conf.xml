@@ -19,7 +19,7 @@
           <alias art="folder"
                  url="/"
                  path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
-                 cache="cache"
+                 cache="update"
                  list="true"
                  each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
 
@@ -31,38 +31,52 @@
 
           <alias art="folder"
                  url="/readme/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/readme"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="root.html" />
-
-          <alias art="folder"
-                 url="/cdn/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/readme/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_modules/@jaisocx"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_cdn_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
-                 each-folder-content-file-name="index.html" />
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/php/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/php/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first/"
                  cache="update"
                  list="true"
-                 each-folder-content-file-name="nope" />
+                 each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate/"
                  cache="update"
                  list="true"
-                 each-folder-content-file-name="nope" />
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/sites_tools/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
 
         </domain>
 
@@ -79,19 +93,13 @@
           <alias art="folder"
                  url="/"
                  path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
-                 cache="cache"
+                 cache="update"
                  list="true"
                  each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
 
-          <alias art="file"
-                 url="/favicon.ico"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
-                 cache="cache"
-          />
-
           <alias art="folder"
-                 url="/readme/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/readme"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_cdn_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
@@ -104,145 +112,18 @@
                  each-folder-content-file-name="root.html" />
 
           <alias art="folder"
-                 url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_modules/@jaisocx"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="index.html" />
-
-          <alias art="folder"
                  url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first/"
                  cache="update"
                  list="true"
-                 each-folder-content-file-name="nope" />
+                 each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="nope" />
-
-        </domain>
-
-      </server>
-
-
-
-      <server
-          port="2297"
-          alternative-port="2288">
-
-        <domain
-            name="local.basetasks.site"
-            document-root="/opt/jaisocx/sites_docker_environment/workspace"
-            publish-charset="UTF-8" src-charset="UTF-8">
-
-          <alias art="folder"
-                 url="/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
-                 cache="cache"
-                 list="true"
-                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
-
-          <alias art="file"
-                 url="/favicon.ico"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
-                 cache="cache"
-          />
-
-          <alias art="folder"
-                 url="/readme/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/readme"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
-
-          <alias art="folder"
-                 url="/cdn/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="root.html" />
-
-          <alias art="folder"
-                 url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_modules/@jaisocx"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="index.html" />
-
-          <alias art="folder"
-                 url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="nope" />
-
-          <alias art="folder"
-                 url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="nope" />
-
-        </domain>
-
-
-
-        <domain
-            name="dck.basetasks.site"
-            document-root="/opt/jaisocx/sites_docker_environment/workspace"
-            publish-charset="UTF-8" src-charset="UTF-8">
-
-          <alias art="folder"
-                 url="/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
-                 cache="cache"
-                 list="true"
-                 each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
-
-          <alias art="file"
-                 url="/favicon.ico"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/favicons/flaticon_com_flowers_ico/021_daisy.ico"
-                 cache="cache"
-          />
-
-          <alias art="folder"
-                 url="/readme/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/readme"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="root.html" />
-
-          <alias art="folder"
-                 url="/cdn/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="root.html" />
-
-          <alias art="folder"
-                 url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_modules/@jaisocx"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="index.html" />
-
-          <alias art="folder"
-                 url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/letter_first"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="nope" />
-
-          <alias art="folder"
-                 url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/Templates/LetterTemplate"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="nope" />
 
         </domain>
 

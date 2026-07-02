@@ -3,7 +3,7 @@
 
 # Alpine Linux Directories, relevant to software installs.
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

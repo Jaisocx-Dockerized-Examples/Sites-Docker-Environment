@@ -5,7 +5,7 @@
 
 # Command line tools in this Project
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

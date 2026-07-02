@@ -3,7 +3,7 @@
 
 # how to develop with webpack:
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

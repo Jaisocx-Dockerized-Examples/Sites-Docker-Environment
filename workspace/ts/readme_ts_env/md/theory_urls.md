@@ -4,7 +4,7 @@
 # URL 
   > URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 ## 1. Types Of URLs

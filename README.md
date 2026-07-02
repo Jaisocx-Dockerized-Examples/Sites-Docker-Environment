@@ -20,6 +20,27 @@
 
   >  🗓  **Updated**:  🌼 Summer 2026, Sun. 28 jun. 17:40:03
 
+---
+
+  ⛔  **Warning July 2026!!! don't update, first do backup!!! all project data could get lost, changed several configurations**.
+
+  > for js developers, first learned docker and databases
+
+  ⛔  **Warning Project Sync** ".env's Lost Unattended" after **git pull**.
+
+  ⛔  **Warning Project Sync** "Database Lost Unattended" if **Docker conf was updated**.
+
+  **Before** every `git pull` to **update** this project,
+  even without checking whether Docker settings were changed,
+  first do **MySQL db dump** and db dump **backup**,
+  since this project is with a dockerized MYSQL DATABASE Instance.
+  
+  **Databases** under Docker **recreate a fresh and clean db instance**,
+  when some Docker config file was changed,
+  and after `git pull && docker compose restart`, too.
+
+---
+
 
 
 # Docker for a Site
@@ -196,6 +217,6 @@
 
 
 ## 4. Tarballs
-  > Have to copy from TypescriptEnvironment our [ts] service's confs for node, Express, node-http, typescript, npm, yarn, webpack.
+  >  💡  saves programs installations, loaded from inet for the next docker builds.
 
 

@@ -3,7 +3,7 @@
 
 # 2 npm packages were built with webpack to bundle.js
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

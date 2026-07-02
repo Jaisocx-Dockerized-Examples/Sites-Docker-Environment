@@ -3,7 +3,7 @@
 
 # Computer calculations and data types
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 ## 1. Scientists idea to store Data in Computer
 

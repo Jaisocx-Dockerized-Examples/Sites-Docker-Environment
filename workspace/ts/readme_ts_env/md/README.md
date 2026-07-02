@@ -1,10 +1,13 @@
 
+`typescript environment`
+
+![../../../cdn/software_labels/docker/softlabel_docker.svg](../../../cdn/software_labels/docker/softlabel_docker.svg)
 ![../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
-# Typescript Environment Documentation
-  > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
+[HOME](../../README.md)
 
-  [📙 HOME](./../../README.md)
+# Typescript Environment Documentation
+  >  🗓  **Updated**:  🌼  Summer 2026,  the 02th of July 2026, 18:20:00 CEST.
 
   > I shall build later normal eBook ( .md | .html | .mht | .pdf ).
   >

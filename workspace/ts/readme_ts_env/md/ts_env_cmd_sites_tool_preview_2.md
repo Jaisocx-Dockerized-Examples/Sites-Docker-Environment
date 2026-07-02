@@ -4,7 +4,7 @@
 
 # PREVIEW Of Sites Tools, Published For Npm Or Yarn
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 ## The Aim Of The Setup

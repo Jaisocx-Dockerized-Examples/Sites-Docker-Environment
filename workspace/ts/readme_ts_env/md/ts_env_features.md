@@ -1,10 +1,14 @@
 
+`typescript environment`
+
+![../../../cdn/software_labels/docker/softlabel_docker.svg](../../../cdn/software_labels/docker/softlabel_docker.svg)
 ![../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
+[HOME](./README.md)
 
 # Features in this Project
+  >  🗓  **Updated**:  🌼  Summer 2026,  the 02th of July 2026, 16:20:00 UTC.
 
-[README.md HOME](./README.md)
 
 
 1. The infrastructure for **development of Typescript libraries**.
@@ -80,7 +84,13 @@
 
 ## Not tested features, however are in development tasks.
 
-  1. Base typescript classes inheritance considering the required methods and methods args in Base classes. For example, class ContextMenu extends Tooltip {}.
+  1. Base typescript classes extends, token into account the required methods, and methods args in Base classes. 
+
+  ```javascript 
+    class Context extends Tooltip {
+      ...
+    }
+  ```
 
   2. packages/Api. Used in one example .html, for now I didn't find no documented infos whether I tested this package with CORS and every other https feature and http request method and request payload art. Just an example for ObjData.
 

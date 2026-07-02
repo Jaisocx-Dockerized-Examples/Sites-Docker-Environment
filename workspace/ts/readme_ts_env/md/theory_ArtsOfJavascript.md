@@ -3,7 +3,7 @@
 
 # Arts Of Javascript
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 ## 1. Arts of Javascript, by JS Synthax Dialect

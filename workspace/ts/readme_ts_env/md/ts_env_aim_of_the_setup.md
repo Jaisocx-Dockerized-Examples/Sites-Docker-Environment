@@ -3,7 +3,7 @@
 
 # The Aim Of The Setup
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 #### QA Notice

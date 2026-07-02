@@ -3,7 +3,7 @@
 
 # Versions numbers in package.json
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 ## Understanding Version Symbols
 

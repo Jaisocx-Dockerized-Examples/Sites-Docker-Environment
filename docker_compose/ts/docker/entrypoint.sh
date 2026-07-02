@@ -361,9 +361,9 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       COMPANY_SOFTWARE_CONF_PATH="/etc/${SOFTWARE_NAMESPACE}"
       COMPANY_SOFTWARE_CACHE_PATH="/etc/cache/${SOFTWARE_NAMESPACE}"
 
-      fs_installed_software_path="${COMPANY_SOFTWARE_DIR}/${SOFTWARE_NAME}/V${SOFTWARE_VERSION}"
-      fs_conf_of_software_path="${COMPANY_SOFTWARE_CONF_PATH}/${SOFTWARE_NAME}/V${SOFTWARE_VERSION}"
-      fs_loaded_cache_path="${COMPANY_SOFTWARE_CACHE_PATH}/${SOFTWARE_NAME}/V${SOFTWARE_VERSION}"
+      fs_installed_software_path="${COMPANY_SOFTWARE_DIR}/${SOFTWARE_NAME}/v${SOFTWARE_VERSION}"
+      fs_conf_of_software_path="${COMPANY_SOFTWARE_CONF_PATH}/${SOFTWARE_NAME}/v${SOFTWARE_VERSION}"
+      fs_loaded_cache_path="${COMPANY_SOFTWARE_CACHE_PATH}/${SOFTWARE_NAME}/v${SOFTWARE_VERSION}"
 
       TSVM_JSC_HOME="${fs_installed_software_path}"
       TSVM_JSC_TMP="${fs_installed_software_path}/tmp"
@@ -732,7 +732,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       ### if in .env NPM_VER_FORCE_INSTALL=false, the NPM was installed nevertheless before with NODE install
       if [[ "${NPM_VER_FORCE_INSTALL}" == "true" ]]; then
           npm install -g "npm@${NPM_VERSION}"
-          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; npm install -g "npm@${NPM_VERSION}""
+          chown -R "${USER_NAME}:${GROUP_USERS_NAME}"  "${USER_HOME}/.npm"
       fi
 
 
@@ -767,8 +767,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodemodules_installed}" != "$YES" ) ]]; then
 
         if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-            echo "NOT WORKING: yarn install"
-            ### NOT WORKING
+            echo "DIDN'T test, didn't work with yarn install ..."
             # yarn install
             sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn install"
 
@@ -778,7 +777,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
           else
             echo "npm install"
             # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
-            /bin/bash -c  ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install --omit=dev "
         fi
 
     fi
@@ -795,10 +794,10 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
             exit 5
 
           else
-            echo "npm install"
+            echo "npm i "
             # npm install
-            # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm install"
-            /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm install"
+            # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i "
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i "
         fi
 
     fi
@@ -863,8 +862,8 @@ if [[ "${start_node_https}" == "true" ]]; then
 
         else
           echo -e "\n npm run https & "
-          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run https &
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
+          # npm run https &
   fi
 
 fi
@@ -886,8 +885,8 @@ if [[ "${start_node_http_flat}" == "true" ]]; then
 
         else
           echo -e "\n npm run http_flat & "
-          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run http_flat &"
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts";  run http_flat &"
+          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
 
   fi
 
@@ -911,8 +910,8 @@ if [[ "${start_express_secure}" == "true" ]]; then
 
         else
           echo -e "\n npm run secure_start & "
-          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &"
+          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
   fi
 
@@ -935,8 +934,8 @@ if [[ "${start_express_flat}" == "true" ]]; then
 
         else
           echo -e "\n npm run start "
-          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start &"
+          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
 fi
 

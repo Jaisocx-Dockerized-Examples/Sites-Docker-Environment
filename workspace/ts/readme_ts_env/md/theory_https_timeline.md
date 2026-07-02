@@ -3,7 +3,7 @@
 
 # HTTP Timeline
 
-  [README.md HOME](./README.md)
+  [HOME](./README.md)
 
 
 

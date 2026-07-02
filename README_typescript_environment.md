@@ -18,40 +18,29 @@
 
 ---
 
-  >  🗓  **Updated**:  🌼  Summer 2026, Sun. 28 jun. 17:40:03
-
----
-
-**⛔ Warning Project Sync** ".env's Lost Unattended" after **git pull**.
-
-**⛔ Warning Project Sync** "Database Lost Unattended" if **Docker conf was updated**.
-
-  > for js developers, first learned docker and databases
-
-  **Before** every `git pull` to **update** this project,
-  even without checking whether Docker settings were changed,
-  first do **MySQL db dump** and db dump **backup**,
-  since this project is with a dockerized MYSQL DATABASE Instance.
-
-  **Databases** under Docker **recreate a fresh and clean db instance**,
-  when some Docker config file was changed,
-  and after `git pull && docker compose restart`, too.
-
-
-
----
-
-![./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+  >  🗓  **Updated**:  🌼  Summer 2026,  the 02th of July 2026, 18:20:00 CEST.
 
 
 
 # TYPESCRIPT ENVIRONMENT®
-  > **Local link**: [🌐 https://local.basetasks.site:9445/](https://local.basetasks.site:9445/)
+  >  💡  echo -e "\n" >> /etc/hosts
+  >
+  >  💡  echo -e "127.0.0.1    local.basetasks.site" >> /etc/hosts
+  >
+  >  💡  echo -e "\n\n" >> /etc/hosts
+  >
+  >  **Local link**:  🌐  **Express**  [http://local.basetasks.site:3000/](http://local.basetasks.site:3000/)
+  > 
+  >  **Local link**:  🌐  **Express via https**  [https://local.basetasks.site:9443/](https://local.basetasks.site:9443/)
+  > 
+  >  **Local link**:  🌐  **Sites Tools via Statique http**  [http://local.basetasks.site:8085/](http://local.basetasks.site:8085/)
+  > 
+  >  **Local link**:  🌐  **Sites Tools via Statique https with Security**  [https://local.basetasks.site:8445/](https://local.basetasks.site:8445/)
+
 
 
 ## Aim Of The SetUp
-  > 💡 The configured workspace, templates and examples, for sites tools in typescript or javascript
+  >  💡 The configured workspace, templates and examples, for sites tools in typescript or javascript
 
 
 ### Set Up
@@ -65,27 +54,27 @@
 
 
 ## News
-  > **News**: [readme/md/ts_env_news.md](./readme/md/ts_env_news.md)
-
-  > **⛔ Warning Project Sync** ".env's Lost Unattended" after **git pull**.
-  - 🗓 26 April 2026 **Sites Tools updated**
+  > **News**: [workspace/ts/readme_ts_env/md/ts_env_news.md](./workspace/ts/readme_ts_env/md/ts_env_news.md)
+  -  🗓  26 April 2026 **Sites Tools updated**
 
 ---
 
 
 
-## 📚 READMEs
-  > **TS Environment Docs**:  [📚 readme/md/README.md](./readme/md/README.md)
+##  📚 READMEs
+  > **TS Environment Docs**:  📚  [workspace/ts/readme_ts_env/md/README.md](./workspace/ts/readme_ts_env/md/README.md)
 
 
-  - **Aim Of The SetUp**: [📙  readme/md/ts_env_aim_of_the_setup.md](./readme/md/ts_env_aim_of_the_setup.md)
+  - **Aim Of The SetUp**:  📙  [workspace/ts/readme_ts_env/md/ts_env_aim_of_the_setup.md](./workspace/ts/readme_ts_env/md/ts_env_aim_of_the_setup.md)
 
-  - **TLS**: [📙 cmd/https_keys/README.md](./cmd/https_keys/README.md)
+  - **TLS**:  📙  [cmd/https_keys/README.md](./cmd/https_keys/README.md)
 
-  - **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
+  - **Express Node Framework**:  📙  [workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - **Features**: [📙  readme/md/ts_env_features.md](./readme/md/ts_env_features.md)
+  - **Features**:  📙  [workspace/ts/readme_ts_env/md/ts_env_features.md](./workspace/ts/readme_ts_env/md/ts_env_features.md)
 
-  - **INSTALL**: [📙  readme/md/ts_env_install.md](./readme/md/ts_env_install.md)
+  - **INSTALL**:  📙  [workspace/ts/readme_ts_env/md/ts_env_install.md](./workspace/ts/readme_ts_env/md/ts_env_install.md)
+
+
 
 
