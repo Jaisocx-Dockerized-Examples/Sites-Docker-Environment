@@ -731,6 +731,9 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       ### when in .env NPM_VER_FORCE_INSTALL=true
       ### if in .env NPM_VER_FORCE_INSTALL=false, the NPM was installed nevertheless before with NODE install
       if [[ "${NPM_VER_FORCE_INSTALL}" == "true" ]]; then
+          # ENTRYPOINT invokes via super admin keyword "sudo".
+          #   in the Dockerfile: USER user; ENTRYPOINT sudo /bin/bash -c . entrypoint.sh
+          #   then the user "root" in /home/user/.npm becomes the owner.
           npm install -g "npm@${NPM_VERSION}"
           chown -R "${USER_NAME}:${GROUP_USERS_NAME}"  "${USER_HOME}/.npm"
       fi
@@ -776,8 +779,12 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
           else
             echo "npm install"
+            if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules" ]; then
+              rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules"
+            fi
+
             # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
-            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install --omit=dev "
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm i --omit=dev "
         fi
 
     fi
@@ -796,8 +803,12 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
           else
             echo "npm i "
             # npm install
+            if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules" ]; then
+              rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules"
+            fi
+
             # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i "
-            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i "
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i --omit=dev "
         fi
 
     fi
@@ -885,7 +896,7 @@ if [[ "${start_node_http_flat}" == "true" ]]; then
 
         else
           echo -e "\n npm run http_flat & "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts";  run http_flat &"
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; run http_flat &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
 
   fi
@@ -910,7 +921,7 @@ if [[ "${start_express_secure}" == "true" ]]; then
 
         else
           echo -e "\n npm run secure_start & "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &"
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
   fi
@@ -934,7 +945,7 @@ if [[ "${start_express_flat}" == "true" ]]; then
 
         else
           echo -e "\n npm run start "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc;  npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start &"
+          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
 fi
