@@ -60,82 +60,103 @@ NC="\033[0m"
 
 set -e
 source "./.env"
+source "./.env_beyond_yml"
 
 
 
 ### the temporary fast-n-dirty block of code to install npm deps for preview after have cloned SitesTools typescript code
 
-packagePath="ts/cloned_repos/jaisocx_sitestools"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+packagePath="ts"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/css_flat/CssCodeSnippet"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/css_flat/CssTable"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/examples/templates/templ_Css_SitesTool"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/examples/templates/templ_Responsive_n_Installable"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/examples/templates/templ_TypescriptPack"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscFonts_base"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscFonts_Orbitron"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/js_tools/CssTableOrdered"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/js_tools/EmailHtmlInliner"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/js_tools/Tooltip"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/json_styling_tools/Tree"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/json_styling_tools/Table"
-commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --omit=dev "
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
+
+
+
+packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/JPath"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
+
+packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/Preloader"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
+
+packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/ResponsiveSizes"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
+
+packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/ThemeTurnOn"
+commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; rm package-lock.json; rm -rf node_modules; npm install  --install-strategy=hoisted  --omit=dev "
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
+
+
 
 packagePath="ts/cloned_repos/jaisocx_sitestools/cdn/node_cdn_installs"
 commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; if [ ! -e "./package.json" ]; then cp "./example_package_json.txt"  "./package.json" && cp "./example_package_lock_json.txt"  "./package-lock.json" && npm init; fi; npm install -S  --install-strategy=hoisted  --omit=dev"
-docker compose exec -u user ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 
 

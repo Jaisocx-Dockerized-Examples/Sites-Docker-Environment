@@ -297,7 +297,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       #;   the folder resides in ts/cloned_repos folder.
       #;   shopt -s extglob allows excluding bash expression !(folder)
 
-      # chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/"!(ts)
+      # chown -R "${USER_NAME}:${GROUP_USERS_NAME}"  "${IN_DOCKER_WORKSPACE_VOLUME}/"!(ts)
       # chown -R "${USER_NAME}:${GROUP_NODE_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/"!(cloned_repos)
       # chown -R "${USER_NAME}:${GROUP_NODE_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"!(\.git)
       # chown "${USER_NAME}:${GROUP_NODE_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
@@ -308,6 +308,8 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
       #; shopt -u extglob
 
+      chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${NODE_TARBALLS_IN_DOCKER_VOLUME}"
+
 
 
       # -- Setting Read/Write privilegs to Owner and Group --
@@ -315,11 +317,11 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       chmod -R u+rwx  "${templates}"
       chmod -R u+rwx  "/dockr"
 
-      chmod -R u+rwx   "${USER_HOME}"
-      chmod u+rwx      "${BASH_LOGIN}"
+      chmod -R u+rwx  "${USER_HOME}"
+      chmod u+rwx     "${BASH_LOGIN}"
 
-      chmod -R g+rx  "${markers}"
-      chmod -R g+rx  "${templates}"
+      chmod -R g+rx   "${markers}"
+      chmod -R g+rx   "${templates}"
       chmod -R g+rx   "/dockr"
 
       chmod -R g-w    "/dockr"
@@ -332,7 +334,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       chmod -R o-rwx    "${templates}"
       chmod -R o-rwx    "/dockr"
 
-      chmod -R o-rwx   "${USER_HOME}"
+      chmod -R o-rwx    "${USER_HOME}"
       # chmod  o-rwx     "${BASH_LOGIN}"
 
 
@@ -392,7 +394,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       tarball_name="node-v${NODE_VERSION}-linux-${architectur}-musl"
       tarball_link="https://unofficial-builds.nodejs.org/download/release/v${NODE_VERSION}/${tarball_name}.tar.xz"
       tarball_path="/dockr/${tarball_name}.tar.xz"
-      tarballs_folder="${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/command/tsvm/tarballs"
+      tarballs_folder="${NODE_TARBALLS_IN_DOCKER_VOLUME}"
       ### in the tarballs folder, the tarball path is:
       tarball_cache_path="${tarballs_folder}/${tarball_name}.tar.xz"
 
@@ -421,13 +423,19 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
 
       ### for Companie's Software Namespace folder set fs privilegs
-      chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${tarballs_folder}"
+      #; changed the volume before. chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${tarballs_folder}"
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${TSVM_JSC_HOME}"
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_CONF_PATH}"
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_CACHE_PATH}"
 
-      chmod -R ug+rwx "${TSVM_JSC_HOME}"
-      chmod -R o-rwx  "${TSVM_JSC_HOME}"
+      chmod -R u+rwx  "${TSVM_JSC_HOME}"
+
+      chmod -R g-w    "${TSVM_JSC_HOME}"
+      chmod -R g+rx   "${TSVM_JSC_HOME}"
+
+      chmod -R o-w    "${TSVM_JSC_HOME}"
+      chmod -R o+rx   "${TSVM_JSC_HOME}"
+
 
       chmod -R ug+rwx "${COMPANY_SOFTWARE_CONF_PATH}"
       chmod -R o-rwx  "${COMPANY_SOFTWARE_CONF_PATH}"
@@ -469,19 +477,20 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
 
       # -- INSTALL FROM TARBALL --
-      cp -a "${tarballs_folder}/${tarball_name}.tar.xz"   "/dockr/${tarball_name}.tar.xz"
+      cp -a "${tarballs_folder}/${tarball_name}.tar.xz"   "${NODEJS_HOME}/${tarball_name}.tar.xz"
 
-      cd "/dockr"
-      tar -xf "${tarball_name}.tar.xz" -C "/dockr"
-      chown -R "${USER_NAME}:${GROUP_NAME}" "/dockr/${tarball_name}"
-      chmod -R 750  "/dockr/${tarball_name}"
+      cd "${NODEJS_HOME}"
+      tar -xf "${tarball_name}.tar.xz" -C "${NODEJS_HOME}"
+
+      chown -R "${USER_NODE_NAME}:${GROUP_NODE_NAME}" "${NODEJS_HOME}/${tarball_name}"
+      chmod -R 755  "${NODEJS_HOME}/${tarball_name}"
 
       if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-        echo -e "ls -lahrtsi \"/dockr\"\n"
-        ls -lahrtsi "/dockr"
+        echo -e "ls -lahrtsi \"${NODEJS_HOME}\"\n"
+        ls -lahrtsi "${NODEJS_HOME}"
 
-        echo -e "ls -lahrtsi \"/dockr/${tarball_name}\"\n"
-        ls -lahrtsi "/dockr/${tarball_name}"
+        echo -e "ls -lahrtsi \"${NODEJS_HOME}/${tarball_name}\"\n"
+        ls -lahrtsi "${NODEJS_HOME}/${tarball_name}"
       fi
 
       #      if []; then
@@ -504,7 +513,7 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       shell_declaration_line="#!/bin/bash"
       bash_login_content="${shell_declaration_line}\n\n"
 
-      PATH="/dockr/${tarball_name}/bin:${PATH}"
+      PATH="${NODEJS_HOME}/${tarball_name}/bin:${PATH}"
 
 
 
@@ -722,8 +731,8 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
       ### when in .env NPM_VER_FORCE_INSTALL=true
       ### if in .env NPM_VER_FORCE_INSTALL=false, the NPM was installed nevertheless before with NODE install
       if [[ "${NPM_VER_FORCE_INSTALL}" == "true" ]]; then
-          # npm install -g "npm@${NPM_VERSION}"
-          sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; npm install -g "npm@${NPM_VERSION}""
+          npm install -g "npm@${NPM_VERSION}"
+          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; npm install -g "npm@${NPM_VERSION}""
       fi
 
 
@@ -768,8 +777,8 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
           else
             echo "npm install"
-            # npm install
-            sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
+            # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
+            /bin/bash -c  ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
         fi
 
     fi
@@ -788,7 +797,8 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
           else
             echo "npm install"
             # npm install
-            sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm install"
+            # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm install"
+            /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm install"
         fi
 
     fi
@@ -843,21 +853,20 @@ if [[ "${start_node_https}" == "true" ]]; then
   echo -e "\n Node Secure Server starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn https & "
-          yarn https &
           # sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn https &"
+          yarn https &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
-          # pnpm --version
           sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+          # pnpm --version
 
         else
           echo -e "\n npm run https & "
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run https &
           # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
+          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run https &
   fi
 
-  # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}" run https &      # @explained &: Start in background every process to be able to start also other processes, every with the ampersand sing
 fi
 
 
@@ -867,22 +876,22 @@ if [[ "${start_node_http_flat}" == "true" ]]; then
   echo -e "\n Node http starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn http_flat & "
-          yarn http_flat &
           # sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn http_flat &"
+          yarn http_flat &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
-          # pnpm --version
           sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+          # pnpm --version
 
         else
           echo -e "\n npm run http_flat & "
-          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
           # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run http_flat &"
+          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
 
   fi
 
-  # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}" run http_flat &  # @explained without &: Starts and holds dockerized service working
+  # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &  # @explained without &: Starts and holds dockerized service working
 fi
 
 
@@ -902,8 +911,8 @@ if [[ "${start_express_secure}" == "true" ]]; then
 
         else
           echo -e "\n npm run secure_start & "
-          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
-          sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
+          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
+          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
   fi
 
@@ -926,24 +935,24 @@ if [[ "${start_express_flat}" == "true" ]]; then
 
         else
           echo -e "\n npm run start "
-          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
-          sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
+          # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
+          npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
 fi
 
 
 
-if [[ ( "${marker_first_start}" != "$YES" ) ]]; then
+if [[ ( "${marker_first_start}" == "$YES" ) ]]; then
   touch "${first_start_marker}"
+
+  # this is the first docker start.
+  #    with the marker set,
+  #    the next time on start,
+  #    the code isn't executed til this code block.
+  #; marker_first_start="$YES"
 fi
 
 
-
-# this is the first docker start.
-#    with the marker set,
-#    the next time on start,
-#    the code isn't executed til this code block.
-marker_first_start="$YES"
 
 exec "$@"
 
