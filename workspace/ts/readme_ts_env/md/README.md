@@ -21,21 +21,17 @@
 
   - **News**: [📙  ts_env_news.md](./ts_env_news.md)
 
+  -  💡 **Aim Of The SetUp**: [📙  ts_env_aim_of_the_setup.md](./ts_env_aim_of_the_setup.md)
 
+  - **TLS**: [📙 cmd/https_keys/README.md](../../../../cmd/https_keys/README.md)
 
-  - **💡 Aim Of The SetUp**: [📙  ts_env_aim_of_the_setup.md](./ts_env_aim_of_the_setup.md)
-
-  - **TLS**: [📙 cmd/https_keys/README.md](./../../cmd/https_keys/README.md)
-
-  - **Express Node Framework**: [📙 workspace/ts/express/README.md](./../../workspace/ts/express/README.md)
+  - **Express Node Framework**: [📙  workspace/ts/readme_ts_env/express/README.md](../../express/README.md)
 
   - **Features**: [📙  ts_env_features.md](./ts_env_features.md)
 
   - **INSTALL**: [📙  ts_env_install.md](./ts_env_install.md)
 
-
-
-  - **Software_Labels**: [📙 cdn/images/software_labels/README.md](./../../../cdn/software_labels/README.md)
+  - **Software_Labels**: [📙 cdn/images/software_labels/README.md](../../../../workspace/cdn/software_labels/README.md)
 
 
 

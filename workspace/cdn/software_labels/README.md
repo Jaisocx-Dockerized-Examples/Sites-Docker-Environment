@@ -1,79 +1,89 @@
 
+`Docker for a Site`
+
+[HOME](../../../README.md)
+
+---
+
+  >  🗓  **Updated**:  🌷  Spring 2026
+
+
+
 # Software Labels by Jaisocx &#8482;
 
-![Typescript/softlabel_typescript_1.svg](Typescript/softlabel_typescript_1.svg)
+![./workspace/cdn/software_labels/Typescript/softlabel_typescript_1svg](./workspace/cdn/software_labels/Typescript/softlabel_typescript_1.svg)
 
-![Typescript/softlabel_typescript_2.svg](Typescript/softlabel_typescript_2.svg)
-
-
-
-![Js/softlabel_javascript_1.svg](Js/softlabel_javascript_1.svg)
-
-![Js/softlabel_javascript_2.svg](Js/softlabel_javascript_2.svg)
+![./workspace/cdn/software_labels/Typescript/softlabel_typescript_2svg](./workspace/cdn/software_labels/Typescript/softlabel_typescript_2.svg)
 
 
 
-![Node/softlabel_nodejs_1.svg](Node/softlabel_nodejs_1.svg)
+![./workspace/cdn/software_labels/Js/softlabel_javascript_1svg](./workspace/cdn/software_labels/Js/softlabel_javascript_1.svg)
 
-![Node/softlabel_nodejs_2.svg](Node/softlabel_nodejs_2.svg)
-
-
-
-![Prince/softlabel_prince.svg](Prince/softlabel_prince.svg)
-
-![php/softlabel_php.svg](php/softlabel_php.svg)
-
-![docker/softlabel_docker.svg](docker/softlabel_docker.svg)
-
-![Jaisocx/softlabel_jaisocx.svg](Jaisocx/softlabel_jaisocx.svg)
+![./workspace/cdn/software_labels/Js/softlabel_javascript_2svg](./workspace/cdn/software_labels/Js/softlabel_javascript_2.svg)
 
 
 
-![Typescript/software_tm_label_typescript_1.svg](Typescript/software_tm_label_typescript_1.svg)
+![./workspace/cdn/software_labels/Node/softlabel_nodejs_1svg](./workspace/cdn/software_labels/Node/softlabel_nodejs_1.svg)
 
-![Typescript/software_tm_label_typescript_2.svg](Typescript/software_tm_label_typescript_2.svg)
-
-![Typescript/software_tm_label_typescript_1_ver_longtext.svg](Typescript/software_tm_label_typescript_1_ver_longtext.svg)
-
-![Typescript/software_tm_label_typescript_2_ver_longtext.svg](Typescript/software_tm_label_typescript_2_ver_longtext.svg)
+![./workspace/cdn/software_labels/Node/softlabel_nodejs_2svg](./workspace/cdn/software_labels/Node/softlabel_nodejs_2.svg)
 
 
 
-![Js/software_tm_label_javascript_1.svg](Js/software_tm_label_javascript_1.svg)
+![./workspace/cdn/software_labels/php/softlabel_phpsvg](./workspace/cdn/software_labels/php/softlabel_php.svg)
 
-![Js/software_tm_label_javascript_2.svg](Js/software_tm_label_javascript_2.svg)
+![./workspace/cdn/software_labels/docker/softlabel_dockersvg](./workspace/cdn/software_labels/docker/softlabel_docker.svg)
 
+![./workspace/cdn/software_labels/Prince/softlabel_princesvg](./workspace/cdn/software_labels/Prince/softlabel_prince.svg)
 
-
-![Node/software_tm_label_nodejs_1.svg](Node/software_tm_label_nodejs_1.svg)
-
-![Node/software_tm_label_nodejs_2.svg](Node/software_tm_label_nodejs_2.svg)
+![./workspace/cdn/software_labels/Jaisocx/softlabel_jaisocxsvg](./workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
 
 
-![Prince/software_tm_label_prince.svg](Prince/software_tm_label_prince.svg)
+![./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_1svg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_1.svg)
 
-![php/software_tm_label_php.svg](php/software_tm_label_php.svg)
+![./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2svg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2.svg)
 
-![docker/software_tm_label_docker.svg](docker/software_tm_label_docker.svg)
+![./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_1_ver_longtextsvg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_1_ver_longtext.svg)
 
-![Jaisocx/software_tm_label_jaisocx.svg](Jaisocx/software_tm_label_jaisocx.svg)
-
-
-
-![./Jaisocx/js_clientside_tm_label_jaisocx.svg](Jaisocx/js_clientside_tm_label_jaisocx.svg)
-
-![Jaisocx/js_serverside_tm_label_jaisocx.svg](Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_ver_longtextsvg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_ver_longtext.svg)
 
 
 
-![./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg](./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg)
+![./workspace/cdn/software_labels/Js/software_tm_label_javascript_1svg](./workspace/cdn/software_labels/Js/software_tm_label_javascript_1.svg)
 
-![./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg](./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg)
+![./workspace/cdn/software_labels/Js/software_tm_label_javascript_2svg](./workspace/cdn/software_labels/Js/software_tm_label_javascript_2.svg)
 
-![./Jaisocx/clientside/jaisocx_tree_2_2_22.svg](./Jaisocx/clientside/jaisocx_tree_2_2_22.svg)
 
-![./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg](./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg)
+
+![./workspace/cdn/software_labels/Node/software_tm_label_nodejs_1svg](./workspace/cdn/software_labels/Node/software_tm_label_nodejs_1.svg)
+
+![./workspace/cdn/software_labels/Node/software_tm_label_nodejs_2svg](./workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg)
+
+
+
+![./workspace/cdn/software_labels/php/software_tm_label_phpsvg](./workspace/cdn/software_labels/php/software_tm_label_php.svg)
+
+![./workspace/cdn/software_labels/docker/software_tm_label_dockersvg](./workspace/cdn/software_labels/docker/software_tm_label_docker.svg)
+
+![./workspace/cdn/software_labels/Prince/software_tm_label_princesvg](./workspace/cdn/software_labels/Prince/software_tm_label_prince.svg)
+
+![./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocxsvg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+
+
+
+![./workspace/cdn/software_labels/./Jaisocx/js_clientside_tm_label_jaisocxsvg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+
+![./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocxsvg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+
+
+
+![./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3svg](./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg)
+
+![./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2svg](./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg)
+
+![./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_tree_2_2_22svg](./workspace/cdn/software_labels/./Jaisocx/clientside/jaisocx_tree_2_2_22.svg)
+
+![./workspace/cdn/software_labels/./Jaisocx/serverside/jaisocx_command_line_1_2_4svg](./workspace/cdn/software_labels/./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg)
 
 
 

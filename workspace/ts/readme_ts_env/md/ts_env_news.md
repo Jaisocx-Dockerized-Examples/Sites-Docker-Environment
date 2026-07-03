@@ -4,7 +4,7 @@
 # NEWS
   > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
 
-  [📙 HOME](./../../README.md)
+  [📙 HOME](./README.md)
 
 ---
 
