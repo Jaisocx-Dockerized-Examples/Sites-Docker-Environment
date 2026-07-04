@@ -20,8 +20,8 @@
 
 
 # -- SENSITIVE DATA, CREDENTIALS AND ENV VARIABLES --
-/command/security
-/command/.env
+/cmd/security
+/cmd/.env
 /.env
 /.env_all_args
 /.env_beyond_yml
