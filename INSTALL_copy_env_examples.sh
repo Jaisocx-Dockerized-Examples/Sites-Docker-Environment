@@ -203,6 +203,32 @@
 
 
 
+  # Jaisocx example_Dockerfile
+  # docker_compose/Jaisocx_SitesServer/docker/example_Dockerfile
+  jaisocx_folder_docker="docker_compose/Jaisocx_SitesServer/docker"
+  jaisocx_docker=(
+    "Dockerfile"
+  )
+  cd "${this_folder}/${jaisocx_folder_docker}"
+
+  for fname_env in jaisocx_docker; do
+
+    fname_example="example_${fname_env}"
+
+    if [ ! -e "${backup_folder}/${jaisocx_folder_docker}" ]; then
+      mkdir -p "${backup_folder}/${jaisocx_folder_docker}"
+    fi
+
+    if [ -e "${this_folder}/${jaisocx_folder_docker}/${fname_env}" ]; then
+      cp "${this_folder}/${jaisocx_folder_docker}/${fname_env}"  "${backup_folder}/${jaisocx_folder_docker}/bckp${fname_env}"
+    fi
+
+    cp "${this_folder}/${jaisocx_folder_docker}/${fname_example}"  "${this_folder}/${jaisocx_folder_docker}/${fname_env}"
+
+  done;
+
+
+
   # "example_blacklist.txt"
   jaisocx_folder_ip_lists="docker_compose/Jaisocx_SitesServer/http/etc/ip-lists"
   jaisocx_ip_lists=(

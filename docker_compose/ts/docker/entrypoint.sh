@@ -92,13 +92,13 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
 # -- FINISHES ENTRYPOINT, IF ALREADY INSTALLED --
 # ts no, dynamique .env_ts tells whether to start express or node-http
-#if [[ "${marker_first_start}" != "$YES" ]]; then
-#
-#    exec "$@"
-#
-#    exit 0
-#
-#fi
+if [[ "${marker_first_start}" != "$YES" ]]; then
+
+  if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+    echo    -e "Several minutes to await on the first start, til js libraries are installed ... \n\n"
+  fi
+
+fi
 
 
 
@@ -863,17 +863,17 @@ if [[ "${start_node_https}" == "true" ]]; then
   echo -e "\n Node Secure Server starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn https & "
-          # sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn https &"
-          yarn https &
+          sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn https &"
+          # yarn https &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
-          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; pnpm --version"
           # pnpm --version
 
         else
           echo -e "\n npm run https & "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
+          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
           # npm run https &
   fi
 
@@ -886,17 +886,17 @@ if [[ "${start_node_http_flat}" == "true" ]]; then
   echo -e "\n Node http starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn http_flat & "
-          # sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn http_flat &"
-          yarn http_flat &
+          sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn http_flat &"
+          # yarn http_flat &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
-          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; pnpm --version"
           # pnpm --version
 
         else
           echo -e "\n npm run http_flat & "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; run http_flat &"
+          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run http_flat &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
 
   fi
@@ -912,16 +912,16 @@ if [[ "${start_express_secure}" == "true" ]]; then
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn secure_start & "
           # yarn secure_start &
-          sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn secure_start &"
+          sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn secure_start &"
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
           # pnpm --version
-          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+          sudo -u ${USER_PNPM_NAME} /bin/bash -c "pnpm --version"
 
         else
           echo -e "\n npm run secure_start & "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
+          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
   fi
@@ -936,16 +936,16 @@ if [[ "${start_express_flat}" == "true" ]]; then
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn start "
           # yarn run start
-          sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn run start &"
+          sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn run start &"
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
             echo -e "\n pnpm --version "
             # pnpm --version
-            sudo -u ${USER_PNPM_NAME} /bin/bash -c ". /home/${USER_PNPM_NAME}/.bashrc; pnpm --version"
+            sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; pnpm --version"
 
         else
           echo -e "\n npm run start "
-          sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
+          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
 fi

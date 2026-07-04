@@ -45,6 +45,7 @@
 /docker_compose/Jaisocx_SitesServer/http/conf/http-conf.xml
 /docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/blacklist.txt
 /docker_compose/Jaisocx_SitesServer/http/etc/ip-lists/whitelist.txt
+/docker_compose/Jaisocx_SitesServer/docker/Dockerfile
 /docker_compose/Jaisocx_SitesServer/docker/args_yml_Dockerfile
 
 

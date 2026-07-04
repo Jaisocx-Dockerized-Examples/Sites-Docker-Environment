@@ -219,6 +219,6 @@ https
       cert: fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
     },
     app
-  ).listen( https_port );
-
-
+  ).listen( https_port, () => {
+    console.log(`Express Framework server started on https://localhost:${https_port}`);
+});

@@ -145,14 +145,23 @@ ENV USER_HOME="/home/${USER_NAME}"
 
 
 # Expose the application's port
-EXPOSE 3000
 
+# http
 # EXPOSE 80
+
+# https
 # EXPOSE 443
+
+# Express framework
+EXPOSE 3000
+EXPOSE 9443
+
+# static node-http
 EXPOSE 8085
 EXPOSE 8445
+
+# debug
 EXPOSE 9229
-EXPOSE 9443
 
 
 # EXPOSE $A_EXPRESS_PORT

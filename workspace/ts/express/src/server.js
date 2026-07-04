@@ -11,5 +11,5 @@ app.get('/json/', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Express Framework server started on http://localhost:${PORT}`);
 });
