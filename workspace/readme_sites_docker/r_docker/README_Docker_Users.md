@@ -94,7 +94,7 @@
 
   `the not easy way, however .env vars are available for Dockerfile`
 
-  ![./r_dc_images/r_dc_yml_images/docker_compose_yml_args_540.png](./r_dc_images/r_dc_yml_images/docker_compose_yml_args_540.png)
+  ![r_dc_images/r_dc_yml_images/docker_compose_yml_args_540.png](./r_dc_images/r_dc_yml_images/docker_compose_yml_args_540.png)
 
 
   4.4. The other way, **secrets** or **configs** in `docker-compose.yml` are available in `ENTRYPOINT` after the Docker filesystem **was mounted**, there are **no** `.env` bash variables in `Dockerfile`.

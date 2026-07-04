@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e7309aae587ee829e6721e885d3d02cf",
+    "packages": [
+        {
+            "name": "jaisocx/objdata",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jaisocx-Tools/objdata_php.git",
+                "reference": "1e7425fd19c3a81fdd365c3abd88f4ea487d3ffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jaisocx-Tools/objdata_php/zipball/1e7425fd19c3a81fdd365c3abd88f4ea487d3ffe",
+                "reference": "1e7425fd19c3a81fdd365c3abd88f4ea487d3ffe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaisocx\\ObjData\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Elias Jaisocx developer"
+                }
+            ],
+            "description": "ObjData format for objects and arrays in old good style of packets with fixed lengths and offsets fields.",
+            "keywords": [
+                "json",
+                "objdata",
+                "parser",
+                "serializer"
+            ],
+            "support": {
+                "issues": "https://github.com/Jaisocx-Tools/objdata_php/issues",
+                "source": "https://github.com/Jaisocx-Tools/objdata_php/tree/2.2.1"
+            },
+            "time": "2025-03-10T04:01:42+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

@@ -154,6 +154,10 @@
 
 
 # vendor by composer
+/workspace/php/php_packages/src/
+/workspace/php/php_packages/composer.json
+/workspace/php/php_packages/composer.lock
+
 /workspace/ts/cloned_repos/composer.json
 /workspace/ts/cloned_repos/composer.lock
 
