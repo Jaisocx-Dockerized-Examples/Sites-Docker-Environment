@@ -20,6 +20,7 @@ WHETHER_DEV_MODE="true"
 # -- VOLUMES --
 WORKSPACE_VOLUME="./workspace"
 IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace"
+TYPESCRIPT_PACKAGES="ts/cloned_repos/jaisocx_sitestools"
 
 # -- DOMAINS --
 DOMAIN_NAME="basetasks.site"
