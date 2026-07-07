@@ -14,17 +14,18 @@
   fodlerName="$(basename "$thisPath")"
   projectPath=""
 
-  if [[ "${fodlerName}" == "command" ]]; then
+  if [[ "${fodlerName}" == "cmd" ]]; then
     projectPath="$(realpath "${thisPath}/..")"
   else
     projectPath="$(realpath "${thisPath}")"
   fi
 
   pathToEnv="${thisPath}/.env"
+  pathToEnv_beyond_yml="${thisPath}/.env_beyond_yml"
 
 
 
-  if [[ ! -e "${pathToEnv}" ]]; then
+  if [ ! -e "${pathToEnv}" ]; then
 
     # when no .env is in the Project,
     # this Exception text is written in the command line.
@@ -40,7 +41,25 @@
 
     exit 3;
 
-  fi;
+  fi
+
+  if [ ! -e "${pathToEnv_beyond_yml}" ]; then
+
+    # when no .env is in the Project,
+    # this Exception text is written in the command line.
+    exceptionNoticeLines=(
+      ".env_beyond_yml file is not set,"
+      "\n   the example of the .env_beyond_yml file is the example_env_beyond_yml"
+      "\n   in order to invoke PackageBuilder, You need copy the example_env_beyond_yml and rename to .env_beyond_yml,"
+      "\n   then to set in the new .env_beyond_yml the for Your Project other constants for the sensitive infos."
+      "\n"
+    )
+
+    echo -e "${exceptionNoticeLines[$'\052']}"
+
+    exit 3;
+
+  fi
 
 
 
@@ -51,7 +70,7 @@
 
   # the command line tool ProjectBuilder.ts is best to invoke in the dockerized node service,
 
-  jsInvokePath="${projectPath}/command/base/js_invoke.sh"
+  jsInvokePath="${projectPath}/cmd/base/js_invoke.sh"
 
   if [[ ! -e "${jsInvokePath}" ]]; then
     echo "Error: calling this script not in the root of this project."
@@ -66,14 +85,15 @@ cd "${projectPath}"
 # Obtaining the Project's settings from the .env
 set -a
 . "${pathToEnv}"
+. "${pathToEnv_beyond_yml}"
 
 
   bash "${jsInvokePath}" "$commandLineArgs" \
-    --packagePath="build_tools/ProjectBuilder" \
+    --packagePath="ts/build_tools/ProjectBuilder" \
     --script="cli/run.js" \
-    --ProjectRoot="${IN_DOCKER_WORKSPACE_VOLUME}" \
+    --ProjectRoot="${IN_DOCKER_WORKSPACE_VOLUME}/ts" \
     --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
-    --PackagesPath="${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"
+    --PackagesPath="${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/"
 
 exit 0;
 

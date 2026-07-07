@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" id="css_code_snippet_preview" class="jsx theme_visible_height salad">
+<head>
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicons/flaticon_com_flowers_ico/001_orchid.ico"
+  />
+
+  <title> CssCodeSnippet </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="../"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/media_tools_fonts_base/MediaAndStyles/JscFonts_main_resolved_minimal.css"
+  />
+
+
+  <!--# STYLES CssCodeSnippet and theme_base -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+  />
+
+
+
+  <style name="theme_turn_on">
+
+    .jsx {
+      --theme-button-width: fit-content;
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    .jsx themebuttons {
+      width: fit-content;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 3rem;
+      margin: 0.9rem 0px 1.6rem 0px;
+    }
+
+    .jsx themebuttons button {
+      width: var(--theme-button-width);
+    }
+
+    .current::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      border-bottom-width: 0.14rem;
+      border-bottom-style: solid;
+      border-bottom-color: var(--clean-start__text-color);
+    }
+
+  </style>
+
+
+
+  <style name="theme_visible_eight">
+
+    .jsx.theme_visible_height main > content {
+
+      overflow-y: hidden;
+
+      min-height: unset;
+      height: unset;
+
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      display: flex;
+      flex-direction: column;
+      flex-basis: auto;
+      justify-content: stretch;
+      align-items: stretch;
+    }
+
+    .jsx.theme_visible_height main > content > * {
+      flex-grow:       0;
+      flex-shrink:     1;
+    }
+
+    .jsx.theme_visible_height .CodeSnippetHolder {
+      --code-snippet-tool--overflow-y: auto;
+      --code-snippet-tool--height: unset;
+
+      min-height: 0;
+      max-height: unset;
+      height: unset;
+
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
+    .jsx.theme_visible_height main > page_signed {
+      flex-shrink:     1;
+
+      display:         flex;
+      flex-direction:  row;
+      justify-content: flex-start;
+      align-items:     center;
+
+      margin:     0 0 0 0;
+
+      height:     6rem;
+      min-height: 6rem;
+      max-height: 6rem;
+      width:      100%;
+    }
+
+    .jsx.theme_visible_height main > page_signed text {
+      display:         flex;
+      flex-direction:  row;
+      justify-content: flex-start;
+      align-items:     center;
+
+      height:     100%;
+      min-height: 100%;
+      max-height: 100%;
+
+      width:      100%;
+
+      padding:    0 1rem 0 1rem;
+
+      color:            var(--code-snippet--text-color);
+      background-color: var(--code-snippet-tool--border-color);
+    }
+
+  </style>
+
+
+
+  <style name="css clean start overrides for this site">
+
+    .jsx#css_code_snippet_preview {
+      --jsx--css-clean-start-2--h1--padding: 0.2rem 0 1rem 0;
+      --jsx--css-clean-start-2--h1--line-height: 1.9rem;
+      --jsx--css-clean-start-2--h1--font-size: 1.4rem;
+    }
+
+  </style>
+
+
+
+  <style name="css clean start lite mobile portrait">
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .jsx.theme_visible_height {
+
+        --responsive_size: responsive_size_til_h03_tablet_s_portrait;
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
+
+      }
+
+      .jsx.theme_visible_height h2,
+      .jsx.theme_visible_height h3,
+      .jsx.theme_visible_height description {
+        display: none;
+      }
+
+      .jsx.theme_visible_height main > page_signed {
+        height:     3rem;
+        min-height: 3rem;
+        max-height: 3rem;
+      }
+
+    }
+
+  </style>
+
+
+
+  <style>
+
+    .jsx .CodeSnippetHolder#code-snippet-example,
+    .jsx .CodeSnippetHolder#code-snippet-example-thin {
+      /* when a .css is loaded with hardcoded lines numbers in code-snippet-lines-numbers-99.css
+      on path MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css */
+      --lines-numbers--content: var(--lines-numbers--content--99);
+      --lines-number: 29;
+    }
+
+    .jsx .CodeSnippetHolder#code-snippet-example {
+      --code-snippet-tool--width: fit-content;
+      --code-snippet-tool--overflow-y: auto;
+    }
+
+    .jsx .CodeSnippetHolder#code-snippet-example-thin {
+      --code-snippet-tool--width:  28rem;
+      --code-snippet-tool--height: 22rem;
+      --code-snippet-tool--overflow-y: auto;
+    }
+
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .jsx .CodeSnippetHolder#code-snippet-example,
+      .jsx .CodeSnippetHolder#code-snippet-example-thin {
+
+        --code-snippet-tool--overflow-x: hidden;
+        --code-snippet-tool--width: 100%;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<main>
+
+  <content>
+
+    <h1> Css Code Snippet </h1>
+
+
+
+    <CodeSnippetHolder id="code-snippet-example" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+          </pre>
+    </CodeSnippetHolder>
+
+
+  </content>
+
+
+
+  <page_signed>
+    <text> CSS Code Snippet 1.3.7 2026 </text>
+  </page_signed>
+
+</main>
+
+</body>
+
+</html>
+
+

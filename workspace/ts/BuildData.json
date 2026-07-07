@@ -110,7 +110,7 @@
       "path": "libraries/base_packs/TokensParser",
       "name": "tokens-parser",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -121,7 +121,7 @@
       "path": "libraries/base_packs/JPath",
       "name": "jpath",
       "update-published": "3 mai 2026 20:24:20 UTC",
-      "build": true,
+      "build": false,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -314,7 +314,7 @@
       "build": false,
       "build-simple-enable": false,
       "css-importer": {
-        "build": true,
+        "build": false,
         "cssFilePath": "MediaAndStyles/CssTable_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssTable_main_resolved.css"
       },

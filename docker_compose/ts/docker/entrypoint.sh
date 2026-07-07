@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "ts starts ... \n"
+
 # -- ENVs --
 YES="YES"
 
@@ -34,8 +36,6 @@ fi
 
 # SOFTWARE_INSTALL_FOLDER="${PHP_SOFTWARE_HOME}"
 # php_software_logs="${PHP_SOFTWARE_LOGS}/${local_service_name}"
-
-
 
 # -------------
 # -- MARKERS --
@@ -90,14 +90,18 @@ if [ "${NODE_INSTALL_TARBALL_RELOAD}" == "true" ]; then NODE_INSTALL_TARBALL_REL
 
 
 
+if [[ "${marker_first_start}" == "$YES" ]]; then
+  echo -e "\n\n\n-------------------------------\n"
+  echo -e "The first start, several minutes to wait on the first start, til js libraries are installed ... \n"
+  echo -e "-------------------------------\n\n\n"
+fi
+
 # -- FINISHES ENTRYPOINT, IF ALREADY INSTALLED --
 # ts no, dynamique .env_ts tells whether to start express or node-http
 if [[ "${marker_first_start}" != "$YES" ]]; then
-
-  if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-    echo    -e "Several minutes to await on the first start, til js libraries are installed ... \n\n"
-  fi
-
+  echo -e "\n\n\n-------------------------------\n"
+  echo -e "ts docker service starts ... \n"
+  echo -e "-------------------------------\n\n\n"
 fi
 
 
@@ -112,6 +116,8 @@ fi
     # -- ADD GROUPS, USERS --
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_groups_n_users_added}" != "$YES" ) && ( "${ADD_SUDIERS}" == "true" ) ]]; then
 
+      echo -e "sudiers install starts ... \n"
+
       addgroup -g "${GROUP_SUDIER_ID}" "${GROUP_SUDIER_NAME}"
       if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
         echo -e "[$(date)]: new group GROUP_SUDIER ${GROUP_SUDIER_NAME}\n"
@@ -122,6 +128,10 @@ fi
 
       adduser -u "${USER_SUDIER_ID}"  -G "${GROUP_SUDIER_NAME}" -D "${USER_SUDIER_NAME}"
       echo "${USER_SUDIER_NAME}:${USER_SUDIER_HASHED_PWD}" | chpasswd -e
+
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_SUDIER "${USER_SUDIER_ID}" ${USER_SUDIER_NAME}\n"
+      fi
 
 
 
@@ -143,15 +153,15 @@ fi
 
       addgroup "${USER_SUDIER_NAME}" "${GROUP_USERS_NAME}"
 
-      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-        echo -e "[$(date)]: new user USER "${USER_SUDIER_ID}" ${USER_SUDIER_NAME}\n"
-      fi
+      echo -e "sudiers install finish. \n"
 
     fi
 
 
 
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_groups_n_users_added}" != "$YES" ) ]]; then
+
+      echo -e "users n groups install starts ... \n"
 
       # Admin user
       echo "root:${ROOT_HASHED_PWD}" | chpasswd -e
@@ -209,21 +219,45 @@ fi
       echo "${USER_NODE_NAME}:${USER_NODE_HASHED_PWD}" | chpasswd -e
       USER_NODE_HOME="/home/${USER_NODE_NAME}"
 
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_NODE "${USER_NODE_ID}" ${USER_NODE_NAME}\n"
+      fi
+
+
       adduser  -u "${USER_YARN_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_YARN_NAME}"
       echo "${USER_YARN_NAME}:${USER_YARN_HASHED_PWD}" | chpasswd -e
       USER_YARN_HOME="/home/${USER_YARN_NAME}"
+
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_YARN "${USER_YARN_ID}" ${USER_YARN_NAME}\n"
+      fi
+
 
       adduser  -u "${USER_NPX_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_NPX_NAME}"
       echo "${USER_NPX_NAME}:${USER_NPX_HASHED_PWD}" | chpasswd -e
       USER_NPX_HOME="/home/${USER_NPX_NAME}"
 
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_NPX "${USER_NPX_ID}" ${USER_NPX_NAME}\n"
+      fi
+
+
       adduser  -u "${USER_NPM_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_NPM_NAME}"
       echo "${USER_NPM_NAME}:${USER_NPM_HASHED_PWD}" | chpasswd -e
       USER_NPM_HOME="/home/${USER_NPM_NAME}"
 
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_NPM "${USER_NPM_ID}" ${USER_NPM_NAME}\n"
+      fi
+
+
       adduser  -u "${USER_PNPM_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_PNPM_NAME}"
       echo "${USER_PNPM_NAME}:${USER_PNPM_HASHED_PWD}" | chpasswd -e
       USER_PNPM_HOME="/home/${USER_PNPM_NAME}"
+
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_PNPM "${USER_PNPM_ID}" ${USER_PNPM_NAME}\n"
+      fi
 
 
 
@@ -233,12 +267,9 @@ fi
 #      addgroup "${USER_NPM_NAME}"  "${GROUP_READER_NAME}"
 #      addgroup "${USER_PNPM_NAME}" "${GROUP_READER_NAME}"
 
-      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-        echo -e "[$(date)]: new user USER_NODE "${USER_NODE_ID}" ${USER_NODE_NAME}\n"
-      fi
-
       # Reader user
       adduser  -u "${USER_READER_ID}"  -G "${GROUP_READER_NAME}" -D "${USER_READER_NAME}"
+
       if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
         echo -e "[$(date)]: new user USER_READER "${USER_READER_ID}" ${USER_READER_NAME}\n"
       fi
@@ -258,6 +289,8 @@ fi
       touch "${groups_n_users_added_marker}"
       marker_groups_n_users_added="${YES}"
 
+      echo -e "users n groups install finish. \n"
+
     fi
 
 
@@ -266,6 +299,8 @@ fi
     shopt -s extglob
     echo -e "extglob set\n"
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_owners_n_modes_set}" != "$YES" ) ]]; then
+
+      echo -e "owners n modes install starts ... \n"
 
       # --------------------------
       # -- new OnLogin bash script --
@@ -350,12 +385,16 @@ fi
         ls -lahrtsi "${IN_DOCKER_WORKSPACE_VOLUME}/ts"
       fi
 
+      echo -e "owners n modes install finish. \n"
+
     fi
     shopt -u extglob
 
 
 
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodejs_installed}" != "$YES" ) ]]; then
+
+      echo -e "nodejs install starts ... \n"
 
       COMPANY_SOFTWARE_DIR="/opt/${SOFTWARE_NAMESPACE}"
       COMPANY_SOFTWARE_CONF_PATH="/etc/${SOFTWARE_NAMESPACE}"
@@ -452,7 +491,11 @@ fi
       chmod -R ug+rwx "${yarn_conf_home}"
       chmod -R ug+rwx "${YARN_HOME}"
 
+    fi
 
+
+
+    if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodejs_tarball_saved}" != "$YES" ) ]]; then
 
       # -- TARBALL RELOAD --
       # --------------------
@@ -467,14 +510,27 @@ fi
             env_node_tarball_reload="$YES"
       fi
 
+
+
       # -- TARBALL RELOAD --
       if [[ "${env_node_tarball_reload}" == "$YES" ]]; then
+        echo -e "nodejs v${NODE_VERSION} tarball load starts ... \n"
         curl --output-dir "${tarballs_folder}"   -o "${tarball_name}.tar.xz"   "${tarball_link}"
-
-        touch "${nodejs_tarball_saved_marker}"
-        marker_nodejs_tarball_saved="$YES"
       fi
 
+      if [ -e "${tarballs_folder}/${tarball_name}.tar.xz" ]; then
+          touch "${nodejs_tarball_saved_marker}"
+          echo -e "nodejs v${NODE_VERSION} tarball saved. \n"
+        else
+          echo -e "didn't load nodejs v${NODE_VERSION} tarball. Exits docker setup ... \n"
+          exit 1
+      fi
+
+    fi
+
+
+
+    if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodejs_installed}" != "$YES" ) ]]; then
 
       # -- INSTALL FROM TARBALL --
       cp -a "${tarballs_folder}/${tarball_name}.tar.xz"   "${NODEJS_HOME}/${tarball_name}.tar.xz"
@@ -499,7 +555,7 @@ fi
       #      fi
 
       touch "${nodejs_installed_marker}"
-      marker_nodejs_installed="$YES"
+      echo -e "nodejs v${NODE_VERSION} install finish. \n"
 
     fi
 
@@ -508,7 +564,6 @@ fi
     # -- BASH LOGIN --
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_bash_login_written}" != "$YES" ) ]]; then
       ### BASH BASH_LOGIN FOR USER
-      #### the first line to the text variable with bash BASH_LOGIN
 
       shell_declaration_line="#!/bin/bash"
       bash_login_content="${shell_declaration_line}\n\n"
@@ -665,8 +720,8 @@ fi
 
       ### shows bash BASH_LOGIN's text
       if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-        echo    -e "USER_BASH_LOGIN: cat     \"${USER_BASH_LOGIN}\"\n---------------------\n"
-        cat     "${USER_BASH_LOGIN}"
+        echo  -e "USER_BASH_LOGIN \"${USER_BASH_LOGIN}\" \n"
+        ls -la "${USER_BASH_LOGIN}"
       fi
 
       if [[ ( "${ADD_SUDIERS}" == "true" ) ]]; then
@@ -691,26 +746,10 @@ fi
       chmod 700   "${USER_BASH_LOGIN}"
       chmod 700   "${USER_READER_BASH_LOGIN}"
 
-
-
-      ### SHOW INSTALLED PACKS VERSIONS
-      ### THE FIRST VERSIONS INSTALLED WITH THIS NODEJS PACK
-      echo -e "\n node --version "
-      node --version
-
-      echo -e "\n corepack --version "
-      corepack --version
-
-      echo -e "\n npx --version "
-      npx --version
-
-      echo -e "\n npm --version "
-      npm --version
-
-
-
       touch "${bash_login_written_marker}"
       marker_bash_login_written="$YES"
+
+      echo -e "command line shell users' onlogin scripts were written. \n"
 
     fi
 
@@ -731,11 +770,15 @@ fi
       ### when in .env NPM_VER_FORCE_INSTALL=true
       ### if in .env NPM_VER_FORCE_INSTALL=false, the NPM was installed nevertheless before with NODE install
       if [[ "${NPM_VER_FORCE_INSTALL}" == "true" ]]; then
+          echo -e "forced other npm v${NPM_VERSION} install starts ... \n"
+
           # ENTRYPOINT invokes via super admin keyword "sudo".
           #   in the Dockerfile: USER user; ENTRYPOINT sudo /bin/bash -c . entrypoint.sh
           #   then the user "root" in /home/user/.npm becomes the owner.
           npm install -g "npm@${NPM_VERSION}"
           chown -R "${USER_NAME}:${GROUP_USERS_NAME}"  "${USER_HOME}/.npm"
+
+          echo -e "forced other npm v${NPM_VERSION} install finish. \n"
       fi
 
 
@@ -768,6 +811,7 @@ fi
 
 ### @install express
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodemodules_installed}" != "$YES" ) ]]; then
+        echo -e "Express framework node_modules install starts ... \n"
 
         if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
             echo "DIDN'T test, didn't work with yarn install ..."
@@ -787,12 +831,15 @@ fi
             sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm i --omit=dev "
         fi
 
+        echo -e "Express framework node_modules install finish. \n"
     fi
 
 
 
 ### @install typescript and other
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodemodules_installed}" != "$YES" ) ]]; then
+
+        echo -e "Typescript transpiler node_modules install starts ... \n"
 
         if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
             sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn install"
@@ -811,6 +858,8 @@ fi
             sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i --omit=dev "
         fi
 
+        echo -e "Typescript transpiler node_modules install finish. \n"
+
     fi
 
 
@@ -825,27 +874,28 @@ fi
 
 ### SHOW INSTALLED PACKS VERSIONS
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${NPM_VER_FORCE_INSTALL}" == "true" ) ]]; then
-        echo -e "\n\n === NPM_VER_FORCE_INSTALL=${NPM_VER_FORCE_INSTALL}"
 
-        echo -e "\n node --version "
+        echo -e "NPM_VER_FORCE_INSTALL=${NPM_VER_FORCE_INSTALL}. v${NPM_VERSION} \n"
+
+        echo -e "\n node --version"
         node --version
 
-        echo -e "\n corepack --version "
-        corepack --version
+        # echo -e "\n corepack --version"
+        # corepack --version
 
-        echo -e "\n npx --version "
+        echo -e "\n npx --version"
         npx --version
 
-        echo -e "\n npm --version "
+        echo -e "\n npm --version"
         npm --version
 
         if [[ "${YARN_INSTALL}" == "true" ]]; then
-                echo -e "\n INSTALLED FINE, DIDN'T TEST NOR USE \n      ( I appolologize due to lack of experience ) \n yarn --version "
+                echo -e "\n INSTALLED FINE, DIDN'T TEST NOR USE \n      ( I appolologize due to lack of experience ) \n yarn --version"
                 yarn --version
         fi
 
         if [[ "${PNPM_INSTALL}" == "true" ]]; then
-                echo -e "\n pnpm --version "
+                echo -e "\n pnpm --version"
                 pnpm --version
         fi
 
@@ -860,19 +910,17 @@ fi
 
 if [[ "${start_node_https}" == "true" ]]; then
 
-  echo -e "\n Node Secure Server starts ... "
+  echo -e "\n  Node Secure Server starts ... \n"
+
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-          echo -e "\n yarn https & "
           sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn https &"
           # yarn https &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
-          echo -e "\n pnpm --version "
           sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; pnpm --version"
           # pnpm --version
 
         else
-          echo -e "\n npm run https & "
           sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run https &"
           # npm run https &
   fi
@@ -883,19 +931,17 @@ fi
 
 if [[ "${start_node_http_flat}" == "true" ]]; then
 
-  echo -e "\n Node http starts ... "
+  echo -e "\n  Node Server starts ... \n"
+
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-          echo -e "\n yarn http_flat & "
           sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn http_flat &"
           # yarn http_flat &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
-          echo -e "\n pnpm --version "
           sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; pnpm --version"
           # pnpm --version
 
         else
-          echo -e "\n npm run http_flat & "
           sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run http_flat &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts" run http_flat &
 
@@ -908,19 +954,17 @@ fi
 
 if [[ "${start_express_secure}" == "true" ]]; then
 
-  echo -e "\n Express Framework Secure starts ... "
+  echo -e "\n  Express Framework Secure starts ... \n"
+
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-          echo -e "\n yarn secure_start & "
-          # yarn secure_start &
           sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn secure_start &"
+          # yarn secure_start &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
-          echo -e "\n pnpm --version "
-          # pnpm --version
           sudo -u ${USER_PNPM_NAME} /bin/bash -c "pnpm --version"
+          # pnpm --version
 
         else
-          echo -e "\n npm run secure_start & "
           sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
@@ -932,19 +976,18 @@ fi
 
 
 if [[ "${start_express_flat}" == "true" ]]; then
-  echo -e "\n Express Framework starts ... "
+
+  echo -e "\n Express Framework starts ... \n"
+
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-          echo -e "\n yarn start "
-          # yarn run start
           sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn run start &"
+          # yarn run start
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
-            echo -e "\n pnpm --version "
-            # pnpm --version
             sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; pnpm --version"
+            # pnpm --version
 
         else
-          echo -e "\n npm run start "
           sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
@@ -953,13 +996,17 @@ fi
 
 
 if [[ ( "${marker_first_start}" == "$YES" ) ]]; then
-  touch "${first_start_marker}"
+    touch "${first_start_marker}"
+    chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${markers}"
 
-  # this is the first docker start.
-  #    with the marker set,
-  #    the next time on start,
-  #    the code isn't executed til this code block.
-  #; marker_first_start="$YES"
+    echo -e "\n\n\n-------------------------------\n"
+    echo -e "the first time ts docker service started. \n"
+    echo -e "-------------------------------\n\n\n"
+
+  else
+    echo -e "\n\n\n-------------------------------\n"
+    echo -e "ts docker service started. \n"
+    echo -e "-------------------------------\n\n\n"
 fi
 
 

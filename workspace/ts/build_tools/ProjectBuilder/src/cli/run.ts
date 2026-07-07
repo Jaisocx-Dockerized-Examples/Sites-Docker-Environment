@@ -81,7 +81,7 @@ builder
   .setAbsolutePathToProjectRoot(commandArgs.ProjectRoot)
   .setRelativePathFromRootTsConfigCatalogPath("/opt/jaisocx/sites_docker_environment/workspace/ts")
   .setRelativePathFromRootLintCatalog(".")
-  .setRelativePathFromRootWww("Jaisocx_SitesTools")
+  .setRelativePathFromRootWww("cloned_repos/jaisocx_sitestools")
   .setBuildCjsCatalogName("transpiled/CommonJS")
   .setBuildEsmCatalogName("transpiled/ESNext")
   .setBuildSimpleCatalogName("transpiled/Simple")

@@ -1,0 +1,168 @@
+/* Sites tool: CssTable, theme: theme_imaged & theme_imaged_base */
+
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base {
+
+/* exact outer size and padding */
+  --js-CssTable--cell--cell-value--name--background-image-holder--width:   1.4rem;
+  --js-CssTable--cell--cell-value--name--background-image-holder--height:  1.4rem;
+
+  --js-CssTable--cell--cell-value--name--background-image-holder--padding: 0 0 0 0;
+  --js-CssTable--cell--cell-value--name--background-image-holder--margin:  0 0 0 0.5rem;
+
+  --js-CssTable--cell--cell-value--name--background-image--width:          100%;
+  --js-CssTable--cell--cell-value--name--background-image--height:         100%;
+
+}
+
+/* =============== */
+
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* folder */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.folder .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/Folder.png");
+}
+
+/* image .jpeg */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_jpeg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .jpg */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_jpg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .png */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_png .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .ico */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_icon .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .webp */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_webp .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .gif */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_gif .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+/* image .svg */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.image_svg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/image_mime_type.png");
+}
+
+
+/* json */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.application_json .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/javascript_mime_type.png");
+}
+
+/* @jaisocx/objdata .od, with the purpose similar to json, however in packet format, faster parsed and serialized, and not transparently readable in text editors. */
+/* .jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.application_objdata .cell-mini-image .in-cell-mini-image {
+  background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/shutterstock_2447566655/Shutterstock_2447566655_raw.png");
+} */
+
+/* a mime type not handled by jaisocx server */
+/* .jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.null .cell-mini-image .in-cell-mini-image {
+  background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/shutterstock_2447566655/Shutterstock_2447566655_raw.png");
+} */
+
+
+/* .html */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_html .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/html_mime_type.png");
+}
+
+/* .xml */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_xml .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/html_mime_type.png");
+}
+
+/* .txt */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_plain .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/text_mime_type.png");
+}
+
+/* .scss */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_scss .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/Green2Css3.png");
+}
+
+/* .css */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_css .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/Green2Css3.png");
+}
+
+/* .js, .mjs, .cjs javascript */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_javascript .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/javascript_mime_type.png");
+}
+
+/* .ts typescript */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_typescript .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/javascript_mime_type.png");
+}
+
+/* .md README docs */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_markdown .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/text_mime_type.png");
+}
+
+/* .java Java code */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_java_source .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/text_mime_type.png");
+}
+
+/* .jsp Java Server Pages code */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.text_java_server_pages_source .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/text_mime_type.png");
+}
+
+/* .php PHP code */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.application_httpd_php .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/php_mime_type.png");
+}
+
+
+
+/* .mp4 video */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.video_mp4 .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+/* .mpeg video */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.video_mpeg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+/* .ogg video */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.video_ogg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+
+
+/* .mp3 audio */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.audio_mp3 .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+/* .mpeg audio */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.audio_mpeg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+/* .ogg audio */
+.jsx-css-table-holder.theme_imaged.theme_imaged_mimetypes_base .cell.name.audio_ogg .cell-mini-image .in-cell-mini-image {
+  background-image: url("/node_cdn_installs/node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+

@@ -21,10 +21,30 @@
   fi
 
   pathToEnv="${thisPath}/.env"
+  pathToEnv_beyond_yml="${thisPath}/.env_beyond_yml"
 
 
 
-  if [[ ! -e "${pathToEnv}" ]]; then
+  if [ ! -e "${pathToEnv}" ]; then
+
+    # when no .env is in the Project,
+    # this Exception text is written in the command line.
+    exceptionNoticeLines=(
+      ".env file is not set,"
+      "\n   the example of the .env file is the .env.example,"
+      "\n   in order to invoke PackageBuilder, You need copy the .env.example and rename to .env,"
+      "\n   then to set in the new .env the for Your Project other constants for the sensitive infos."
+      "\n"
+    )
+
+    echo -e "${exceptionNoticeLines[$'\052']}"
+
+    exit 3;
+
+  fi;
+
+
+  if [ ! -e "${pathToEnv_beyond_yml}" ]; then
 
     # when no .env is in the Project,
     # this Exception text is written in the command line.
@@ -49,7 +69,10 @@ cd "${projectPath}"
 set -a
 . "${pathToEnv}"
 
-docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && /bin/bash "${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/command/buildProjectBuilder.sh" "${IN_DOCKER_WORKSPACE_VOLUME}""
+. "${pathToEnv_beyond_yml}"
+
+
+docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && /bin/bash "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/command/buildProjectBuilder.sh" "${IN_DOCKER_WORKSPACE_VOLUME}/ts""
 
 exit 0;
 

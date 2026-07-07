@@ -26,12 +26,12 @@ private_key_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/
 ssl_cert_path="/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
 
 node_https_publish_port=8445
-node_https_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
+node_https_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/cdn"
 
 
 start_node_http_flat=true
 node_http_flat_publish_port=8085
-node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools"
+node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/cdn"
 
 start_express_secure=true
 express_secure_publish_port=9443

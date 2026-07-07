@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" id="js_tree_preview" class="jsx jsc">
+<head>
+
+
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicons/flaticon_com_flowers_ico/009_bird_of_paradise.ico"
+  />
+
+  <title> Jaisocx Tree </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="../"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/media_tools_fonts_base/MediaAndStyles/JscFonts_main_resolved_minimal.css"
+  />
+
+
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    charset="utf-8"
+    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/tree-styles-main.css"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    charset="utf-8"
+    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/theme-funny.css"
+  />
+
+
+
+  <style naame="styles_css_clean_start_overrides">
+
+    .jsx {
+      --jsx--css-clean-start-2--body-tag--background: white;
+      --jsx--css-clean-start-2--site--background: #fff5f0;
+
+      --jsx--css-clean-start-2--site--padding: 2rem 1rem 3rem 1rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
+
+      --theme-button--width: fit-content;
+      --theme-button--font-size: 0.795rem;
+    }
+
+    .jsx#js_tree_preview .tree,
+    .jsx#js_tree_preview .tree.theme-funny {
+      --node-label--font-family: v_LibreFranklin;
+    }
+
+
+
+    @media screen and ( min-width: 2px) and (max-width: 767px) {
+      .jsx {
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+      }
+
+      .jsx h2,
+      .jsx h3,
+      .jsx description {
+        display: none;
+      }
+    }
+
+  </style>
+
+
+  <style name="styles_textblock_tests">
+
+    .jsx main content {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    textblock.testing_html {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      line-break: break-all;
+      word-break: break-all;
+      height: 7rem;
+      min-height: fit-content;
+      overflow-y: visible;
+      padding: 1rem;
+      margin: 1rem 0 1rem 0;
+      border: 1px solid #e0e0e0;
+    }
+
+    textblock.testing_html img.mini_image {
+      display: inline-block;
+      width: 2rem;
+      height: auto;
+      max-height: 2rem;
+      margin-right: 1rem;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<main>
+
+    <content>
+
+        <h1> Tree </h1>
+        <label> @jaisocx/tree </label>
+
+        <textblock class="testing_html"></textblock>
+
+    </content>
+
+
+    <jstree id="tree_holder_1" class="theme-funny"></jstree>
+
+
+    <jstree id="tree_holder_2"></jstree>
+
+  </main>
+
+</body>
+
+
+
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/EventEmitter.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/ImprovedRenderEventEmitter.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPathData.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPath.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tokens-parser/transpiled/Simple/TokensParser.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/template-renderer/transpiled/Simple/TemplateRenderer.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/ArrayOrObjectPackage.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeConstants.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapter.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapterModeEase.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapterModeConf.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeConf.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/Tree.js"></script>
+
+
+
+<script>
+  // -------------------
+  // START TREE DATA
+  let glob_Data = [
+    {
+      "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/house.png",
+      "label": "Main",
+      "opened": false,
+      "text": "<h3>Main tree elem</h3>",
+      "subtree": [
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/google.png",
+          "label": "A Link to Google",
+          "href": "https://google.com/",
+          "cssClassName": "hyperlink"
+        },
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/github.png",
+          "label": "A Link to GitHub",
+          "href": "https://github.com/orgs/Jaisocx-Tools/repositories",
+          "cssClassName": "hyperlink"
+        },
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/track.png",
+          "label": "echo html",
+          "opened": false,
+          "subtree": [
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 1",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#26d;\">Have fun with styling and using JSTree tool.</p>"
+            },
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 2",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#d83;\">You can edit code easily, JSTree class is lightweight.</p>"
+            },
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 3",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#00bb00;\">Have a nice day.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ];
+
+</script>
+
+
+
+<script>
+
+  class TreeData {
+
+    id = "";
+    data = new Object();
+    dataLink = "";
+    htmlHolderId = "";
+    htmlElem = new Object();
+    dataIconBase = "";
+    renderingMode = "";
+    nodesOpenMode = "";
+
+
+
+    constructor (
+      id,
+      dataLink,
+      data,
+      htmlHolderId,
+      htmlElem,
+      dataIconBase,
+      renderingMode,
+      nodesOpenMode
+    ) {
+      this.id = id || "";
+
+      if ( this.id === "" ) {
+        throw new Error( "Required Data ID." );
+      }
+
+      this.dataLink = dataLink || "";
+      this.data = data || new Object();
+      this.htmlHolderId = htmlHolderId || "";
+      if ( this.htmlHolderId === "" ) {
+        throw new Error( "Required HtmlHolder ID." );
+      }
+
+      this.dataIconBase = dataIconBase || "";
+      this.renderingMode = renderingMode;
+      this.nodesOpenMode = nodesOpenMode;
+    }
+
+  }
+
+
+
+  class TreeExamples {
+
+    #treeInstances = new Object();
+    #treeData = new Object();
+    tsHtml = 1;
+
+    treeJsonDataIconBase = "";
+
+
+
+    constructor() {
+      this.#treeInstances = new Object();
+      this.#treeData = new Object();
+      this.tsHtml = 1;
+
+      this.treeJsonDataIconBase = "";
+    }
+
+
+
+    setDataItems ( treeData ) {
+      this.#treeData = treeData;
+
+      return this;
+    }
+
+    addDataItem( inData ) {
+      const treeDataId = inData.id;
+      this.#treeData[ treeDataId ] = inData;
+
+      return this;
+    }
+
+    getTreeData() {
+      return this.#treeData;
+    }
+
+    getDataItemById( treeDataId ) {
+      const dataItem = this.#treeData[ treeDataId ];
+      return dataItem;
+    }
+
+
+
+    exampleFunc( inSelector, jsonItem, eventPayload ) {
+
+      let text = ( jsonItem.text ) ?? "";
+      let tagImg_miniImage = eventPayload.treeHtmlNode.querySelector( ".jstree-html-node-holder-icon > img" );
+      let imgSrc = tagImg_miniImage.getAttribute( "src" );
+      let imgAlt = tagImg_miniImage.getAttribute( "alt" );
+
+      if ( this.tsHtml === 1 ) {
+          this.tsHtml = document.body.querySelector( inSelector );
+      }
+
+      this.tsHtml.innerHTML = `
+        <img class="mini_image" src="${imgSrc}" alt="${imgAlt}" />
+        <div>${text}</div>`;
+    }
+
+
+
+    renderTree( id, holderElemId, data, renderingMode, modeShownNodes ) {
+
+        this.#treeInstances[ id ] = new Tree();
+        let tree = this.#treeInstances[ id ];
+
+        tree
+          .setDebug( false )
+          .setMainHtmlNodeId( holderElemId )
+          .setNodesWithIcons( true )
+          .setRenderingMode( renderingMode )
+          .setNodesOpenedMode( modeShownNodes )
+          .setModifiable( false )
+          .addThisClassEventListener (
+            TreeConstants.TreeEventsNames.EVENT_NAME__BEFORE_RENDER_ONE_NODE,
+            ( eventName, eventPayload ) => {
+
+              if ( this.debug === true ) {
+                console.log( eventName, eventPayload );
+              }
+
+
+              let iconSrc = eventPayload.dataForRendering.iconSrc;
+              eventPayload.dataForRendering.iconSrc = [ this.treeJsonDataIconBase, iconSrc ].join("");
+
+              return { "value": eventPayload.dataForRendering };
+            }
+          ).addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
+              ( eventName, eventPayload ) => {
+                let locTree = this.#treeInstances[ id ];
+
+                  if ( this.debug === true ) {
+
+                    //# example to obtain of the current tree node the data that was used to render the tree.
+                    let treeNodeData = {
+                      "treeClassInstance": locTree,
+                      "eventName": eventName,
+                      "eventPayload": eventPayload,
+                      "flatClone": eventPayload.jsonNode._flatClone,
+                      "deepClone": locTree.getTreeDataByJPath( eventPayload.jsonNode._pathArray )
+                    };
+
+                    console.log( { treeNodeData } );
+                  }
+
+                this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
+
+              }
+           )
+          .render( data );
+
+    }
+
+
+
+    loadDataAndRenderTree( id, holderElemId, dataUrl, renderingMode, modeShownNodes ) {
+
+        // example to load by url
+        this.#treeInstances[ id ] = new Tree();
+        let tree = this.#treeInstances[ id ];
+
+        tree
+            .setDebug( false )
+            .setMainHtmlNodeId( holderElemId )
+            .setRenderingMode( renderingMode )
+            .setNodesOpenedMode( modeShownNodes )
+            .setNodesWithIcons( true )
+            .load( dataUrl );
+
+    }
+
+
+
+    renderExamples() {
+
+      let keys = Object.keys( this.#treeData );
+      let counter = 1;
+      let itemsNumber = keys.length;
+      let maxCounter = ( itemsNumber + 2 );
+
+      let elem = document.getElementsByTagName( "BODY" )[ 0 ];
+
+      loop: while( counter < maxCounter ) {
+        counter++;
+        if ( counter >= maxCounter ) {
+          break loop;
+        }
+
+        let itemCounter = ( counter - 2 );
+        let id = keys[ itemCounter ];
+        let dataItem = this.#treeData[ id ];
+
+        if ( dataItem[ "dataLink" ] && dataItem[ "dataLink" ].length > 1 ) {
+
+          this.loadDataAndRenderTree (
+            dataItem[ "id" ],
+            dataItem[ "htmlHolderId" ],
+            dataItem[ "dataLink" ],
+            dataItem[ "renderingMode" ],
+            dataItem[ "nodesOpenMode" ]
+          );
+
+        } else if ( ( dataItem[ "data" ] !== null ) && ( dataItem[ "data" ] !== undefined ) && ( Object.keys( dataItem[ "data" ] ).length !== 0 ) ) {
+
+          this.renderTree (
+            dataItem[ "id" ],
+            dataItem[ "htmlHolderId" ],
+            dataItem[ "data" ],
+            dataItem[ "renderingMode" ],
+            dataItem[ "nodesOpenMode" ]
+          );
+
+        }
+
+      }
+
+      return 2;
+
+    }
+
+  }
+
+</script>
+
+
+
+<script name="event_site_loaded">
+
+  let treeExamplesInstance = new Object();
+
+  let glob_oneDataItems = {
+    "tree_1": {
+      id: "tree_1",
+      dataLink: "",
+      data: glob_Data,
+      htmlHolderId: "tree_holder_1",
+      htmlElem: null,
+      dataIconBase: "tree-data-to-use-with-conf.json",
+      renderingMode: TreeConstants.RenderingMode.Conf,
+      nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
+    }
+  };
+
+  let glob_dataItems = {
+    "tree_1": {
+      id: "tree_1",
+      dataLink: "",
+      data: glob_Data,
+      htmlHolderId: "tree_holder_1",
+      htmlElem: null,
+      dataIconBase: "tree-data-to-use-with-conf.json",
+      renderingMode: TreeConstants.RenderingMode.Conf,
+      nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
+    },
+    "tree_2": {
+      id: "tree_2",
+      dataLink: "tree-data-to-use-with-conf.json",
+      data: new Object(),
+      htmlHolderId: "tree_holder_2",
+      htmlElem: null,
+      dataIconBase: "tree-data-to-use-with-conf.json",
+      renderingMode: TreeConstants.RenderingMode.Ease,
+      nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
+    }
+  };
+
+  document.addEventListener (
+    "DOMContentLoaded",
+    function ( evt ) {
+      treeExamplesInstance = new TreeExamples();
+      treeExamplesInstance
+        .setDataItems( glob_oneDataItems )
+        .renderExamples();
+    }
+  );
+
+</script>
+
+</html>
+
+

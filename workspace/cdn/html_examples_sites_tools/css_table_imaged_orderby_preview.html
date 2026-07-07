@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en" id="css_table_imaged" class="jsx theme_visible_height">
+<head>
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicons/flaticon_com_flowers_ico/008_dandelion.ico"
+  />
+
+  <title> Table Imaged Orderby </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="../"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/media_tools_fonts_base/MediaAndStyles/JscFonts_main_resolved_minimal.css"
+  />
+
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/CssTable_bright.css"
+  />
+
+
+
+  <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/CssTable_main_resolved.css"
+  />
+
+  
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/themes/theme_darkmode/css-table-theme-darkmode.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/themes/theme_lightmode/css-table-theme-lightmode.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/themes/theme_imaged/CssTable_theme_imaged_main.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="html_examples_sites_tools/css/CssTable_theme_imaged_mimetypes_base.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-table-ordered/MediaAndStyles/themes/theme_fixed_columns_labels/theme_fixed_columns_labels.css"
+  />
+
+
+
+  <style name="theme_turn_on">
+
+    .jsx {
+      --theme-button-width: fit-content;
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    .jsx themebuttons {
+      width: fit-content;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 3rem;
+      margin: 1.2rem 0 1.2rem 0;
+    }
+
+    .jsx themebuttons button {
+      width: var(--theme-button-width);
+    }
+
+    .current::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      border-bottom-width: 0.14rem;
+      border-bottom-style: solid;
+      border-bottom-color: var(--clean-start__text-color);
+    }
+
+  </style>
+
+
+
+  <style name="css clean start overrides for this site">
+
+    html#css_table_imaged.jsx {
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
+
+    }
+
+  </style>
+
+
+
+  <!-- the css_clean_start base theme spaces, for the table we set 1921px for big displays or TV -->
+  <style name="css clean start lite mobile portrait">
+
+    @media screen and ( ( min-width: 10px ) and ( max-width: 764px ) and ( orientation: portrait ) ),
+      ( ( min-width: 10px ) and ( max-width: 1021px ) and ( orientation: landscape ) ) {
+
+      html#css_table_imaged.jsx.theme_visible_height {
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
+        --jsx--css-clean-start-2--h1--line-height: 1.3rem;
+
+      }
+
+
+
+      .jsx.theme_visible_height h2,
+      .jsx.theme_visible_height h3,
+      .jsx.theme_visible_height description {
+        display: none;
+      }
+
+      .jsx themebuttons {
+        margin: 1rem 0 1rem 0;
+      }
+
+    }
+
+
+
+    @media screen and ( ( min-width: 10px ) and ( max-width: 1021px ) and ( orientation: landscape ) ) {
+
+      html#css_table_imaged.jsx.theme_visible_height {
+        --jsx--css-clean-start-2--site--padding: 0 1rem 0.2rem 1rem;
+      }
+
+      .jsx themebuttons {
+        margin: 0.3rem 0 0.3rem 0;
+      }
+
+    }
+
+
+
+    @media screen and ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: portrait ) ),
+      ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: landscape ) ) {
+
+      html#css_table_imaged.jsx.theme_visible_height {
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+      }
+
+    }
+
+
+
+    @media screen and ( ( min-width: 10px ) and ( max-width: 1022px ) and ( orientation: portrait ) ),
+      ( ( min-width: 10px ) and ( max-width: 1022px ) and ( orientation: landscape ) ) {
+
+        html#css_table_imaged.jsx.theme_visible_height {
+          --jsx--css-clean-start-2--site--padding: 1rem 1rem 0.3rem 1rem;
+        }
+
+    }
+
+
+
+    @media screen and ( ( min-width: 1023px ) and ( max-width: 1921px ) and ( orientation: portrait ) ),
+      ( ( min-width: 1023px ) and ( max-width: 1921px ) and ( orientation: landscape ) ) {
+
+        html#css_table_imaged.jsx.theme_visible_height {
+          --jsx--css-clean-start-2--site--padding: 1rem 2rem 1rem 2rem;
+        }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <main>
+
+    <content>
+
+      <h1> Css Table Imaged Orderby </h1>
+
+      <h2> @jaisocx/css-table-ordered </h2>
+
+      <description>
+        Css sites tool styling a server side rendered database table data to a grid view,
+        with solutions for sticky scroll and order by on columns via browser's js engine
+      </description>
+
+
+
+      <ThemeButtons>
+        <button id="button-turn-on-base" data-theme="">Base Theme</button>
+        <button id="button-turn-on-daymode" data-theme="theme_lightmode">Day Mode</button>
+        <button id="button-turn-on-nightmode" data-theme="theme_darkmode">Night Mode</button>
+      </ThemeButtons>
+
+    </content>
+
+
+
+        <!--starts markup of the table styled by @jaisocx/css-table-ordered npm package-->
+        <div class="jsx-css-table-holder   theme_fixed_columns_labels   theme_imaged   theme_imaged_mimetypes_base   jaisocx-folder-listing-columns">
+          <div class="jsx-css-table desktop-columns-labels-holder">
+            <!--the first table record with the names of the table columns, shown in the table bright mode-->
+            <div class="row">
+
+              <div class="cell" data-datatype="number" data-id="0"><span class="column-label">num.</span></div>
+
+              <div class="cell" data-datatype="string" data-id="1"><span class="column-label">Name</span></div>
+
+              <div class="cell" data-datatype="string" data-id="2"><span class="column-label">mime</span></div>
+
+              <div class="cell" data-datatype="number" data-id="3"><span class="column-label">size</span></div>
+
+              <div class="cell" data-datatype="string" data-id="4"><span class="column-label">last modified</span></div>
+
+              <div class="cell" data-datatype="string" data-id="5"><span class="column-label">url relative</span></div>
+
+            </div>
+          </div>
+          <div class="jsx-css-table records">
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row folder">
+
+              <div class="cell ix number folder table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">0</span>
+              </div>
+
+              <div class="cell name string folder  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">..</a></span>
+              </div>
+
+              <div class="cell mimeType string folder table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">folder</span>
+              </div>
+
+              <div class="cell size number folder table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">0</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string folder table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:14:53.814 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string folder table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row folder">
+
+              <div class="cell ix number folder table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1</span>
+              </div>
+
+              <div class="cell name string folder  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">subfolder</a></span>
+              </div>
+
+              <div class="cell mimeType string folder table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">folder</span>
+              </div>
+
+              <div class="cell size number folder table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">0</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string folder table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:29:30.264 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string folder table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/subfolder/</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">2</span>
+              </div>
+
+              <div class="cell name string image_webp  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">1.sm.webp</a></span>
+              </div>
+
+              <div class="cell mimeType string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/webp</span>
+              </div>
+
+              <div class="cell size number image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">10474</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:26:54.792 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/1.sm.webp</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_gif table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">3</span>
+              </div>
+
+              <div class="cell name string image_gif  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">app-icon-16x16.gif</a></span>
+              </div>
+
+              <div class="cell mimeType string image_gif table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/gif</span>
+              </div>
+
+              <div class="cell size number image_gif table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1039</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_gif table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:41:37.270 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_gif table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/app-icon-16x16.gif</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_png table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">4</span>
+              </div>
+
+              <div class="cell name string image_png  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">app-icon-16x16.png</a></span>
+              </div>
+
+              <div class="cell mimeType string image_png table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/png</span>
+              </div>
+
+              <div class="cell size number image_png table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1255</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_png table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:41:37.273 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_png table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/app-icon-16x16.png</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number video_mp4 table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">5</span>
+              </div>
+
+              <div class="cell name string video_mp4  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">music_video_clip.mp4</a></span>
+              </div>
+
+              <div class="cell mimeType string video_mp4 table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">video/mp4</span>
+              </div>
+
+              <div class="cell size number video_mp4 table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">14648889</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string video_mp4 table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:31:52.531 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string video_mp4 table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/music_video_clip.mp4</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number application_java_vm table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">6</span>
+              </div>
+
+              <div class="cell name string application_java_vm  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">ConfHttp.class</a></span>
+              </div>
+
+              <div class="cell mimeType string application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">application/java-vm</span>
+              </div>
+
+              <div class="cell size number application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">990</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:42:02.290 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string application_java_vm table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/ConfHttp.class</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_java_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">7</span>
+              </div>
+
+              <div class="cell name string text_java_source  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">ConfHttp.java</a></span>
+              </div>
+
+              <div class="cell mimeType string text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/x-java-source</span>
+              </div>
+
+              <div class="cell size number text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">552</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:40:27.274 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_java_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/ConfHttp.java</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_plain table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">8</span>
+              </div>
+
+              <div class="cell name string text_plain  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">data.txt</a></span>
+              </div>
+
+              <div class="cell mimeType string text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/plain</span>
+              </div>
+
+              <div class="cell size number text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">11</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:30:21.611 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_plain table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/data.txt</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_icon table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">9</span>
+              </div>
+
+              <div class="cell name string image_icon  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">favicon.ico</a></span>
+              </div>
+
+              <div class="cell mimeType string image_icon table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/x-icon</span>
+              </div>
+
+              <div class="cell size number image_icon table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">72308</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_icon table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:15:51.586 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_icon table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/favicon.ico</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number font_ttf table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">10</span>
+              </div>
+
+              <div class="cell name string font_ttf  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">font.ttf</a></span>
+              </div>
+
+              <div class="cell mimeType string font_ttf table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">font/ttf</span>
+              </div>
+
+              <div class="cell size number font_ttf table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">149608</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string font_ttf table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:22:56.938 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string font_ttf table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/font.ttf</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">11</span>
+              </div>
+
+              <div class="cell name string text_xml  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">http-conf.xml</a></span>
+              </div>
+
+              <div class="cell mimeType string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/xml</span>
+              </div>
+
+              <div class="cell size number text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">8831</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:21:11.148 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/http-conf.xml</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_jpeg table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">12</span>
+              </div>
+
+              <div class="cell name string image_jpeg  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">image_1.jpg</a></span>
+              </div>
+
+              <div class="cell mimeType string image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/jpeg</span>
+              </div>
+
+              <div class="cell size number image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">4375885</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:28:10.683 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_jpeg table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/image_1.jpg</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">13</span>
+              </div>
+
+              <div class="cell name string image_webp  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">image_2.webp</a></span>
+              </div>
+
+              <div class="cell mimeType string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/webp</span>
+              </div>
+
+              <div class="cell size number image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">578026</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:28:10.694 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/image_2.webp</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_jpeg table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">14</span>
+              </div>
+
+              <div class="cell name string image_jpeg  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">image_3.jpg</a></span>
+              </div>
+
+              <div class="cell mimeType string image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/jpeg</span>
+              </div>
+
+              <div class="cell size number image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">2020818</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_jpeg table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:28:10.699 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_jpeg table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/image_3.jpg</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">15</span>
+              </div>
+
+              <div class="cell name string image_webp  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">image_4.webp</a></span>
+              </div>
+
+              <div class="cell mimeType string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/webp</span>
+              </div>
+
+              <div class="cell size number image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1655732</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_webp table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:28:10.705 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_webp table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/image_4.webp</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_typescript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">16</span>
+              </div>
+
+              <div class="cell name string text_typescript  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">index.ts</a></span>
+              </div>
+
+              <div class="cell mimeType string text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/typescript</span>
+              </div>
+
+              <div class="cell size number text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">76</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:18:29.625 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_typescript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/index.ts</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number null table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">17</span>
+              </div>
+
+              <div class="cell name string null  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">jaisocx-css-clean-start-2-1.0.4.tgz</a></span>
+              </div>
+
+              <div class="cell mimeType string null table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">null</span>
+              </div>
+
+              <div class="cell size number null table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">27997</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string null table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:20:05.229 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string null table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/jaisocx-css-clean-start-2-1.0.4.tgz</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_plain table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">18</span>
+              </div>
+
+              <div class="cell name string text_plain  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">jaisocx-server.log</a></span>
+              </div>
+
+              <div class="cell mimeType string text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/plain</span>
+              </div>
+
+              <div class="cell size number text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">44385</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_plain table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:21:43.094 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_plain table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/jaisocx-server.log</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number application_java_archive table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">19</span>
+              </div>
+
+              <div class="cell name string application_java_archive  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">jaisocx_sites_server.jar</a></span>
+              </div>
+
+              <div class="cell mimeType string application_java_archive table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">application/java-archive</span>
+              </div>
+
+              <div class="cell size number application_java_archive table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">6369776</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string application_java_archive table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:39:14.728 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string application_java_archive table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/jaisocx_sites_server.jar</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number application_java_vm table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">20</span>
+              </div>
+
+              <div class="cell name string application_java_vm  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">list.class</a></span>
+              </div>
+
+              <div class="cell mimeType string application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">application/java-vm</span>
+              </div>
+
+              <div class="cell size number application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">7295</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string application_java_vm table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:43:27.123 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string application_java_vm table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/list.class</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_java_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">21</span>
+              </div>
+
+              <div class="cell name string text_java_source  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">list.java</a></span>
+              </div>
+
+              <div class="cell mimeType string text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/x-java-source</span>
+              </div>
+
+              <div class="cell size number text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">9096</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_java_source table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:43:27.126 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_java_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/list.java</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_java_server_pages_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">22</span>
+              </div>
+
+              <div class="cell name string text_java_server_pages_source  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">list.jsp</a></span>
+              </div>
+
+              <div class="cell mimeType string text_java_server_pages_source table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/java-server-pages-source</span>
+              </div>
+
+              <div class="cell size number text_java_server_pages_source table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">7871</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_java_server_pages_source table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:43:27.129 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_java_server_pages_source table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/list.jsp</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number image_png table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">23</span>
+              </div>
+
+              <div class="cell name string image_png  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">logo.png</a></span>
+              </div>
+
+              <div class="cell mimeType string image_png table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">image/png</span>
+              </div>
+
+              <div class="cell size number image_png table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">5277</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string image_png table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:38:54.387 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string image_png table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/logo.png</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number application_object_data table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">24</span>
+              </div>
+
+              <div class="cell name string application_object_data  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">objdata-example.od</a></span>
+              </div>
+
+              <div class="cell mimeType string application_object_data table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">application/object-data</span>
+              </div>
+
+              <div class="cell size number application_object_data table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">3891</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string application_object_data table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:23:11.542 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string application_object_data table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/objdata-example.od</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_markdown table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">25</span>
+              </div>
+
+              <div class="cell name string text_markdown  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">README.md</a></span>
+              </div>
+
+              <div class="cell mimeType string text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/markdown</span>
+              </div>
+
+              <div class="cell size number text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">6604</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:47:24.931 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_markdown table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/README.md</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number application_httpd_php table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">26</span>
+              </div>
+
+              <div class="cell name string application_httpd_php  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">root.php</a></span>
+              </div>
+
+              <div class="cell mimeType string application_httpd_php table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">application/x-httpd-php</span>
+              </div>
+
+              <div class="cell size number application_httpd_php table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">162</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string application_httpd_php table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:15:17.490 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string application_httpd_php table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/root.php</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">27</span>
+              </div>
+
+              <div class="cell name string text_javascript  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">script.js</a></span>
+              </div>
+
+              <div class="cell mimeType string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/javascript</span>
+              </div>
+
+              <div class="cell size number text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">4083</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:16:49.215 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/script.js</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number null table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">28</span>
+              </div>
+
+              <div class="cell name string null  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">sdf</a></span>
+              </div>
+
+              <div class="cell mimeType string null table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">null</span>
+              </div>
+
+              <div class="cell size number null table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">4809</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string null table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:45:22.273 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string null table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/sdf</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_css table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">29</span>
+              </div>
+
+              <div class="cell name string text_css  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">style.css</a></span>
+              </div>
+
+              <div class="cell mimeType string text_css table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/css</span>
+              </div>
+
+              <div class="cell size number text_css table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1468</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_css table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:17:11.739 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_css table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/style.css</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_scss table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">30</span>
+              </div>
+
+              <div class="cell name string text_scss  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">style.scss</a></span>
+              </div>
+
+              <div class="cell mimeType string text_scss table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/x-scss</span>
+              </div>
+
+              <div class="cell size number text_scss table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1808</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_scss table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:38:39.008 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_scss table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/style.scss</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">31</span>
+              </div>
+
+              <div class="cell name string text_xml  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">template-conf-list_overrides_cached_prod.xml</a></span>
+              </div>
+
+              <div class="cell mimeType string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/xml</span>
+              </div>
+
+              <div class="cell size number text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">879</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:43:39.784 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/template-conf-list_overrides_cached_prod.xml</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">32</span>
+              </div>
+
+              <div class="cell name string text_xml  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">template-conf-list_overrides_recompiling_updated_dev.xml</a></span>
+              </div>
+
+              <div class="cell mimeType string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/xml</span>
+              </div>
+
+              <div class="cell size number text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1157</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_xml table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:43:48.216 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_xml table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/template-conf-list_overrides_recompiling_updated_dev.xml</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_markdown table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">33</span>
+              </div>
+
+              <div class="cell name string text_markdown  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">watch_in_action.md</a></span>
+              </div>
+
+              <div class="cell mimeType string text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/markdown</span>
+              </div>
+
+              <div class="cell size number text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1620</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_markdown table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:19:36.498 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_markdown table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/watch_in_action.md</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">34</span>
+              </div>
+
+              <div class="cell name string text_javascript  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">webpack.aliases.cjs</a></span>
+              </div>
+
+              <div class="cell mimeType string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/javascript</span>
+              </div>
+
+              <div class="cell size number text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">577</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:18:29.627 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/webpack.aliases.cjs</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">35</span>
+              </div>
+
+              <div class="cell name string text_javascript  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">webpack.aliases.mjs</a></span>
+              </div>
+
+              <div class="cell mimeType string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/javascript</span>
+              </div>
+
+              <div class="cell size number text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">482</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_javascript table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:18:29.630 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_javascript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/webpack.aliases.mjs</a></span>
+              </div>
+
+            </div>
+
+
+            <!--table record with props of one file in the current folder-->
+            <div class="row ">
+
+              <div class="cell ix number text_typescript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">num.</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">36</span>
+              </div>
+
+              <div class="cell name string text_typescript  ">
+                <span class="column-label">Name</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">webpackAliases.ts</a></span>
+              </div>
+
+              <div class="cell mimeType string text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">mime</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">text/typescript</span>
+              </div>
+
+              <div class="cell size number text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">size</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">1231</span>
+              </div>
+
+              <div class="cell fileLastModifiedTimestampFormatted string text_typescript table-thin-field-hide-mobile ">
+                <span class="column-label">last modified</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value">Wed 30 Jul 2025 23:18:29.631 GMT</span>
+              </div>
+
+              <div class="cell fileUrlRelative string text_typescript table-thin-field-hide-mobile table-thin-field-hide-tablet">
+                <span class="column-label">url relative</span>
+                <span class="cell-mini-image"><span class="in-cell-mini-image"></span></span>
+                <span class="cell-value"><a href="javasscript: void(0);">/several_mime_types/webpackAliases.ts</a></span>
+              </div>
+
+            </div>
+
+
+          <!--table records finished-->
+
+          </div>
+        </div>
+        <!--@jaisocx/css-table-ordered markup finished-->
+
+</main>
+
+</body>
+
+
+
+<script src="node_cdn_installs/node_modules/@jaisocx/css-table-ordered/transpiled/Simple/scroll/CssTableScroll.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/css-table-ordered/transpiled/Simple/orderby/CssTableOrderby.js"></script>
+
+
+
+<script name="add_fixed_scroll">
+
+  let cssTableScrollInstance = new Object();
+
+  function addScrollEventHandlers() {
+    cssTableScrollInstance = new CssTableScroll();
+    cssTableScrollInstance.addScrollEventHandlers();
+  }
+
+  // DOCUMENT ONLOAD, FIXED SCROLL AND ORDERBY
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      addScrollEventHandlers();
+    }
+  );
+
+</script>
+
+
+
+<script name="add_orderby">
+
+  let orderbyInstance   = new Object();
+
+  function addOrderbyEventHandler() {
+    orderbyInstance = new CssTableOrderby();
+      orderbyInstance.setRowsNumberNotOrdered( 1 );
+    let eventHandlerRetval = orderbyInstance.addOrderbyEventHandler();
+  }
+
+  // DOCUMENT ONLOAD, FIXED SCROLL AND ORDERBY
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      addOrderbyEventHandler();
+    }
+  );
+
+</script>
+
+
+
+<script name="themes_turn_on">
+
+  const cssClassesNames = [
+    "jsx",
+    "theme_visible_height"
+  ];
+
+  const themeCssClassPrefix = "theme";
+
+  const buttonsIDs = [
+    "button-turn-on-base",
+    "button-turn-on-daymode",
+    "button-turn-on-nightmode"
+  ];
+
+  let currentButtonNodeClicked = null;
+
+
+
+  // declaring the function, this is used in the event handler of the theme turning button when clicked on this button.
+  function turnOnTheme ( buttonNodeClicked ) {
+
+    if ( currentButtonNodeClicked !==  null ) {
+      currentButtonNodeClicked.classList.remove( "current" );
+    }
+
+    const htmlNode = document.getElementsByTagName("html")[0];
+    const htmlNodeClassList = htmlNode.classList;
+
+    htmlNodeClassList.forEach (
+      (cssClassName) => {
+        if ( cssClassesNames.includes( cssClassName ) ) {
+          return;
+        }
+
+        if ( cssClassName.startsWith( themeCssClassPrefix ) === true ) {
+          htmlNodeClassList.remove( cssClassName );
+        }
+      }
+    );
+
+    const themeName = buttonNodeClicked.dataset.theme;
+    if ( themeName && ( themeName.length !== 0 ) ) {
+      htmlNode.classList.add( themeName );
+    }
+
+    currentButtonNodeClicked = buttonNodeClicked;
+    currentButtonNodeClicked.classList.add( "current" );
+
+  }
+
+  // declaring the function, this adds to buttons the event handler to turn on the theme.
+  // this function is invoked when the site loads in the browser,
+  // in the event handler for the event DOMContentLoaded
+  function addThemeButtonsEventHandlers() {
+
+    for ( let buttonId of buttonsIDs ) {
+
+      let buttonNode = document.getElementById( buttonId );
+
+      buttonNode.addEventListener (
+        "click",
+        (evt) => {
+          let buttonNodeClicked = evt.target;
+          turnOnTheme ( buttonNodeClicked );
+        }
+      );
+
+    }
+  }
+
+
+  // DOCUMENT ONLOAD
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      // adding to buttons the event handler to turn on the theme.
+      addThemeButtonsEventHandlers();
+    }
+  );
+
+</script>
+
+</html>
+
+

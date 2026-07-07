@@ -242,7 +242,7 @@ include_path=".:/usr/share/php83"
 doc_root="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace/"
 user_dir=""
 extension_dir="./conf.d/"
-sys_temp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp"
+sys_temp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_2_0/soft_home/php/v8_3/tmp"
 enable_dl=Off
 cgi.force_redirect=Off
 cgi.nph=Off
@@ -255,7 +255,7 @@ cgi.rfc2616_headers=0
 cgi.check_shebang_line=Off
 
 file_uploads=Off
-upload_tmp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp/upload"
+upload_tmp_dir="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_2_0/soft_home/php/v8_3/tmp/upload"
 upload_max_filesize=1k
 max_file_uploads=1
 
@@ -354,9 +354,9 @@ session.cookie_secure=Off
 session.name="PHPSESSID"
 session.save_handler="files"
 ;     session.save_path="N;MODE;/path"
-session.save_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp/session"
+session.save_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_2_0/soft_home/php/v8_3/tmp/session"
 ;session.cookie_path="/"
-session.cookie_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace:/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_0_1/soft_home/php/v8_3/tmp"
+session.cookie_path="/opt/jaisocx/portable_printable_a4_jaisocx_dc/workspace:/opt/jaisocx/portable_printable_a4_jaisocx_dc/v1_2_0/soft_home/php/v8_3/tmp"
 session.cookie_domain="local.basetasks.site"
 
 ; Whether or not to add the httpOnly flag to the cookie, which makes it
