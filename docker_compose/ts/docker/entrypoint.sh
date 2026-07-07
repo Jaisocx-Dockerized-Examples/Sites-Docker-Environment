@@ -339,8 +339,13 @@ fi
 
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/"!(ts)
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/"!(cloned_repos)
-      chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"!(\.git)
-      chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
+
+      if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}" ]; then
+        # chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"!(\.git)
+        # chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
+        chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/"!(\.git)
+        chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/.gitignore"
+      fi
       #; shopt -u extglob
 
       chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${NODE_TARBALLS_IN_DOCKER_VOLUME}"

@@ -236,6 +236,8 @@ fi
 
 
     # -- OWNERS AND CHANGE MODES --
+    shopt -s extglob
+
     if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_owners_n_modes_set}" != "$YES" ) ]]; then
 
       # --------------------------
@@ -287,13 +289,30 @@ fi
 
 
 
-      # -- README: I have to see whether the owner username was set --
-      chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${IN_DOCKER_WORKSPACE_VOLUME}"
+      #; shopt -s extglob before if block, or doesn't parse if block, since extglob didn't apply
+      #; didn't set owner of the system folder .git
+      #;   the folder resides in ts/cloned_repos folder.
+      #;   shopt -s extglob allows excluding bash expression !(folder)
+
+      chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/"!(ts)
+      chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/"!(cloned_repos)
+
+      if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}" ]; then
+        # chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"!(\.git)
+        # chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
+        chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/"!(\.git)
+        chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/.gitignore"
+      fi
+      #; shopt -u extglob
+
+
 
       touch "${owners_n_modes_set_marker}"
       marker_owners_n_modes_set="${YES}"
 
     fi
+
+    shopt -u extglob
 
 
 

@@ -64,6 +64,14 @@
                  list="true"
                  each-folder-content-file-name="root.html" />
 
+<!--          git: Jaisocx Sites Tools, needs git clone first. -->
+<!--          <alias art="folder"-->
+<!--                 url="/sites_tools/"-->
+<!--                 path="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/"-->
+<!--                 cache="update"-->
+<!--                 list="true"-->
+<!--                 each-folder-content-file-name="root.html" />-->
+
         </domain>
 
 

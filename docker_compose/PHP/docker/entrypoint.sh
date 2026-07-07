@@ -98,6 +98,9 @@ fi
 
 # Software install, only if marker "tarball_installed" wasn't set.
 #   This if-case bool bash variable "tarball_installed" has same name as the marker "tarball_installed"
+
+shopt -s extglob
+
 if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
 
   if [[ "${ADD_SUDIERS}" == "true" ]]; then
@@ -291,14 +294,32 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   chmod -R  o-rwx   "/usr/lib/php83"
 
 
-  # -- README: I have to see whether the owner username was set --
-  chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${IN_DOCKER_WORKSPACE_VOLUME}"
+
+  #; shopt -s extglob before if block, or doesn't parse if block, since extglob didn't apply
+  #; didn't set owner of the system folder .git
+  #;   the folder resides in ts/cloned_repos folder.
+  #;   shopt -s extglob allows excluding bash expression !(folder)
+
+  chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/"!(ts)
+  chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/"!(cloned_repos)
+
+  if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}" ]; then
+    # chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/"!(\.git)
+    # chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/ts/cloned_repos/jaisocx_sitestools/.gitignore"
+    chown -R "${USER_NAME}:${GROUP_USERS_NAME}"   "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/"!(\.git)
+    chown "${USER_NAME}:${GROUP_USERS_NAME}"      "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/.gitignore"
+  fi
+  #; shopt -u extglob
+
+
 
   # -- README: the filesystem privilegues set on volume in Host OS, may not be changed in the Dockerfile --
   #  chmod -R ug+rwx "${IN_DOCKER_WORKSPACE_VOLUME}"
   #  chmod -R o-wx   "${IN_DOCKER_WORKSPACE_VOLUME}"
 
 fi
+
+shopt -u extglob
 
 
 
