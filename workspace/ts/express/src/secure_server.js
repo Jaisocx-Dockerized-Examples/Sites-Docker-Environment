@@ -147,10 +147,10 @@ const readAndSendFileCompressed = function (
 
 app.get ('/', (req, resp) => {
 
-    let filePath = '/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/index_preview.html';
-    let contentType = 'text/html; charset=utf8';
+    let filePath = '/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/original_logo_left/Logo_of_Jaisocx_left_original.jpg';
+    let contentType = 'image/jpeg';
 
-    readAndSendFileCompressed (
+    readAndSendFileAsIs (
         req,
         resp,
         filePath,

@@ -56,7 +56,7 @@
 
   for fname_env in ${envs[@]}; do
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-    echo -e "[env] [${fname_env}]: cp ${this_folder}/${fname_example} => ${fname_env}"
+    echo -e "[env] [${fname_env}]: cp ./${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${fname_env}" ]; then
@@ -78,7 +78,7 @@
 
   for fname_env in ${ymls[@]}; do
     fname_example="example_${fname_env}"
-    echo -e "[Docker Compose] [${fname_env}]: cp ${this_folder}/${fname_example} => ${fname_env}"
+    echo -e "[Docker Compose] [${fname_env}]: cp ./${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${fname_env}" ]; then
@@ -110,7 +110,7 @@
   for fname_env in ${dyn_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-    echo -e "[dyn envs] [${fname_env}]: cp ${this_folder}/${dyn_folder_envs}/${fname_example} => ${fname_env}"
+    echo -e "[dyn envs] [${fname_env}]: cp ./${dyn_folder_envs}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${dyn_folder_envs}/${fname_env}" ]; then
@@ -138,7 +138,7 @@
   for fname_env in ${command_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-    echo -e "[A4DC] [${fname_env}]: cp ${this_folder}/${command_folder_envs}/${fname_example} => ${fname_env}"
+    echo -e "[A4DC] [${fname_env}]: cp ./${command_folder_envs}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${command_folder_envs}/${fname_env}" ]; then
@@ -166,7 +166,7 @@
   for fname_env in ${php_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-    echo -e "[PHP] [${fname_env}]: cp ${this_folder}/${php_folder_envs}/${fname_example} => ${fname_env}"
+    echo -e "[PHP] [${fname_env}]: cp ./${php_folder_envs}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${php_folder_envs}/${fname_env}" ]; then
@@ -197,7 +197,7 @@
 
     fname_ext="$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
     fname_example="x_example_$(printf "%s" "$fname_env" | cut -d'.' -f1 | xargs)_${fname_ext}.txt"
-    echo -e "[PHP] [${fname_env}]: cp ${this_folder}/${php_folder_ini}/${fname_example} => ${fname_env}"
+    echo -e "[PHP] [${fname_env}]: cp ./${php_folder_ini}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${php_folder_ini}/${fname_env}" ]; then
@@ -234,7 +234,7 @@
 
   for fname_env in ${php_conf_ini[@]}; do
 
-    echo -e "[PHP] [${fname_env}]: cp ${this_folder}/${php_folder}/${php_folder_example_conf_ini}/${fname_env} => ${fname_env}"
+    echo -e "[PHP] [${fname_env}]: cp ./${php_folder}/${php_folder_example_conf_ini}/${fname_env} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${php_folder}/${php_folder_conf_ini}/${fname_env}" ]; then
@@ -263,7 +263,7 @@
 
     fname_ext="$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f1 | xargs)_${fname_ext}.txt"
-    echo -e "[PHP] [${fname_env}]: cp ${this_folder}/${php_fpm_folder_confs}/${fname_example} => ${fname_env}"
+    echo -e "[PHP] [${fname_env}]: cp ./${php_fpm_folder_confs}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${php_fpm_folder_confs}/${fname_env}" ]; then
@@ -290,7 +290,7 @@
   for fname_env in ${jaisocx_docker[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ${this_folder}/${jaisocx_folder_docker}/${fname_example} => ${fname_env}"
+    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ./${jaisocx_folder_docker}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${jaisocx_folder_docker}/${fname_env}" ]; then
@@ -319,7 +319,7 @@
   for fname_env in ${jaisocx_ip_lists[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ${this_folder}/${jaisocx_folder_ip_lists}/${fname_example} => ${fname_env}"
+    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ./${jaisocx_folder_ip_lists}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${jaisocx_folder_ip_lists}/${fname_env}" ]; then
@@ -347,7 +347,7 @@
   for fname_env in ${jaisocx_etc[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ${this_folder}/${jaisocx_folder_etc}/${fname_example} => ${fname_env}"
+    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ./${jaisocx_folder_etc}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${jaisocx_folder_etc}/${fname_env}" ]; then
@@ -375,7 +375,7 @@
   for fname_env in ${jaisocx_confs[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ${this_folder}/${jaisocx_folder_confs}/${fname_example} => ${fname_env}"
+    echo -e "[Jaisocx_SitesServer] [${fname_env}]: cp ./${jaisocx_folder_confs}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${jaisocx_folder_confs}/${fname_env}" ]; then
@@ -397,6 +397,12 @@
 
 
 
+#; Express framework
+  echo -e "[Express framework] [.env.allow-origin]: cp ./workspace/ts/express/example_env_allow-origin => .env.allow-origin"
+  cp "${this_folder}/workspace/ts/express/example_env_allow-origin" "${this_folder}/workspace/ts/express/.env.allow-origin"
+
+
+
 #; js libraries: package.json from examples
   cdn_installs_folder="workspace/cdn/node_cdn_installs"
   package_json=(
@@ -411,7 +417,7 @@
   for fname_env in ${package_json[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[node_cdn_installs package.json] [${fname_env}]: cp ${this_folder}/${cdn_installs_folder}/${fname_example} => ${fname_env}"
+    echo -e "[node_cdn_installs package.json] [${fname_env}]: cp ./${cdn_installs_folder}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${cdn_installs_folder}/${fname_env}" ]; then
@@ -439,7 +445,7 @@
   for fname_env in ${composer_json[@]}; do
 
     fname_example="example_${fname_env}"
-    echo -e "[PHP composer.json] [${fname_env}]: cp ${this_folder}/${composer_installs_folder}/${fname_example} => ${fname_env}"
+    echo -e "[PHP composer.json] [${fname_env}]: cp ./${composer_installs_folder}/${fname_example} => ${fname_env}"
 
     #; confs backup
     if [ -e "${this_folder}/${composer_installs_folder}/${fname_env}" ]; then

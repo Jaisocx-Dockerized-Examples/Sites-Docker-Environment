@@ -18,7 +18,7 @@
 
 ---
 
-  >  🗓  **Updated**:  🌼 Summer 2026, Sun. 28 jun. 17:40:03
+  >  🗓  **Updated**:  🌼 Summer 2026, Tue. 07 jul. 20:18:45
 
 ---
 
@@ -45,6 +45,82 @@
 
 # Docker for a Site
  > For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
+
+
+## Set Up
+  >  💡  Advanced docker network settings, mightn't allocate IP addresses, just to encomment and to set `driver: bridge`.
+
+### 1. INSTALL.sh .envs from example_envs
+
+  ```bash
+    ./INSTALL_copy_env_examples.sh
+  ```
+
+  The last instruction "Yarn install", could work, if was set up on Host OS.
+
+  After yarn install, the `.html` examples in `workspace/cdn/html_examples_sites_tools` 
+  might render in browsers, before docker services set up.
+
+
+
+### 2. Advanced Docker Network Set Up
+
+  If the network couldn't be created, it's just to encomment and to set `driver: bridge` in `docker-compose.yml`.
+
+  Then, the command line shell instruction might tell the `subnet` and `IP ranges`, when the network was created.
+
+  After IP addresses in .env were set in available IP ranges, 
+  just to `docker network rm` the network, set driver: ipvlan,
+  then the advanced conf for docker network might secure Your docker services,
+  by known IP addresses.
+
+
+### Docker Networks
+
+  ```bash
+    docker network ls
+    
+    NETWORK ID     NAME                                                    DRIVER    SCOPE
+    ...
+    abc.......99   jaisocx_dc_a4dc_h523_inte.................._network     bridge    local
+    ...
+  ```
+
+
+### Network IP range
+  >  💡  saves to: `docker_network_conf_07_jul_10__tmp.json`
+
+  ```bash
+    conf_name="_07_jul_10_" && \
+    network_name="jaisocx_dc_a4dc_h523_internal_connected_all_network" && \
+    network_id="$(docker network ls | grep "${network_name}" | cut -d' ' -f1)" && \
+    docker network inspect --format json "${network_id}" > "docker_network_conf${conf_name}_tmp.json"
+  ```
+
+
+
+### Network in docker-compose.yml
+
+  ```yml
+    10:  jaisocx_dc_internal_connected_all_network:
+    11:    name: "${INTERNAL_CONNECTED_ALL_NETWORK_NAME}"
+    12:    driver: bridge
+    13:    # driver: ipvlan
+    14:    # enable_ipv6: false
+    15:    # external: false
+    16:    # internal: true
+    17:    # attachable: false
+    18:    # ipam:
+    19:    #   config:
+    20:    #     - subnet: "${SUBNET_IPv4}"
+    21:    #       ip_range: "${IP_RANGE_IPv4}"
+    22:    #     - subnet: "${SUBNET_IPv6}"
+    23:    #       ip_range: "${IP_RANGE_IPv6}"
+  ```
+
+
+
+## Refined all
 
  > Refinements in the current February 2026 review after 3 months release before.
 
