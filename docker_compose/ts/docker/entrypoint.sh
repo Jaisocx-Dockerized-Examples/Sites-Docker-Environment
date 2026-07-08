@@ -606,6 +606,7 @@ fi
         "SOFTWARE_INSTALL_FOLDER"
         "IN_DOCKER_WORKSPACE_VOLUME"
         "PATH"
+        "TYPESCRIPT_PACKAGES"
       )
 
 

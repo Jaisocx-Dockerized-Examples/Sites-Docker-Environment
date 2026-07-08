@@ -33,6 +33,9 @@ start_node_http_flat=true
 node_http_flat_publish_port=8085
 node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/cdn"
 
+node_https_sites_tools_publish_port=8449
+
+
 start_express_secure=true
 express_secure_publish_port=9443
 
