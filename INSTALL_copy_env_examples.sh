@@ -1,19 +1,8 @@
-#/usr/bin/env bash
+#/bin/bash
 
   this_folder="$(realpath "$(dirname "$0")")"
   backup_folder="${this_folder}/env_backups"
   fname_example=""
-
-  replace() {
-    local in_text_value="$1"
-    local in_to_replace="$2"
-    local in_replaced_with="$3"
-
-    # Transform the text value by replacing the delimiter with a newline
-    local transformed_value="$(echo "${in_text_value}" | tr "${in_to_replace}" "${in_replaced_with}")"
-
-    echo "${transformed_value}"
-  }
 
   mkdir -p "${backup_folder}"
 
@@ -25,8 +14,11 @@
   )
   cd "${this_folder}"
 
-  for fname_env in $envs; do
+  for fname_env in ${envs[@]}; do
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
+    echo -e "${this_folder}/${fname_example} \n"
+    echo -e "${this_folder}/${fname_env} \n"
+
     if [ -e "${this_folder}/${fname_env}" ]; then
       cp "${this_folder}/${fname_env}"  "${backup_folder}/bckp${fname_env}"
     fi
@@ -40,8 +32,10 @@
   )
   # cd "${this_folder}"
 
-  for fname_env in $ymls; do
+  for fname_env in ${ymls[@]}; do
     fname_example="example_${fname_env}"
+    echo -e "${this_folder}/${fname_example} \n"
+
     if [ -e "${this_folder}/${fname_env}" ]; then
       cp "${this_folder}/${fname_env}"  "${backup_folder}/bckp${fname_env}"
     fi
@@ -57,15 +51,17 @@
     ".env_php"
     ".env_ts"
   )
+
+  if [ ! -e "${backup_folder}/${dyn_folder_envs}" ]; then
+    mkdir -p "${backup_folder}/${dyn_folder_envs}"
+  fi
+
   cd "${this_folder}/${dyn_folder_envs}"
 
-  for fname_env in dyn_envs; do
+  for fname_env in ${dyn_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-
-    if [ ! -e "${backup_folder}/${dyn_folder_envs}" ]; then
-      mkdir -p "${backup_folder}/${dyn_folder_envs}"
-    fi
+    echo -e "${this_folder}/${dyn_folder_envs}/${fname_example} \n"
 
     if [ -e "${this_folder}/${dyn_folder_envs}/${fname_env}" ]; then
       cp "${this_folder}/${dyn_folder_envs}/${fname_env}"  "${backup_folder}/${dyn_folder_envs}/bckp${fname_env}"
@@ -77,15 +73,16 @@
 
 
 
-  command_folder_envs="command"
+  command_folder_envs="cmd"
   command_envs=(
-    ".env"
+    ".env_a4dc"
   )
   cd "${this_folder}/${command_folder_envs}"
 
-  for fname_env in command_envs; do
+  for fname_env in ${command_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
+    echo -e "${this_folder}/${command_folder_envs}/${fname_example} \n"
 
     if [ ! -e "${backup_folder}/${command_folder_envs}" ]; then
       mkdir -p "${backup_folder}/${command_folder_envs}"
@@ -108,9 +105,10 @@
   )
   cd "${this_folder}/${php_folder_envs}"
 
-  for fname_env in php_envs; do
+  for fname_env in ${php_envs[@]}; do
 
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
+    echo -e "${this_folder}/${php_folder_envs}/${fname_example} \n"
 
     if [ ! -e "${backup_folder}/${php_folder_envs}" ]; then
       mkdir -p "${backup_folder}/${php_folder_envs}"
@@ -133,16 +131,18 @@
     "php.ini"
     "php-fpm.conf"
   )
+
+  if [ ! -e "${backup_folder}/php83" ]; then
+    mkdir -p "${backup_folder}/php83"
+  fi
+
   cd "${this_folder}/${php_folder_ini}"
 
-  for fname_env in php_ini; do
+  for fname_env in ${php_ini[@]}; do
 
     fname_ext="$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
     fname_example="x_example_$(printf "%s" "$fname_env" | cut -d'.' -f1 | xargs)_${fname_ext}.txt"
-
-    if [ ! -e "${backup_folder}/php83" ]; then
-      mkdir -p "${backup_folder}/php83"
-    fi
+    echo -e "${this_folder}/${php_folder_ini}/${fname_example} \n"
 
     if [ -e "${this_folder}/${php_folder_ini}/${fname_env}" ]; then
       cp "${this_folder}/${php_folder_ini}/${fname_env}"  "${backup_folder}/${php_folder_ini}/bckp${fname_env}"
@@ -182,16 +182,19 @@
   php_fpm_confs=(
     "pool_workspace.conf"
   )
+
+
+  if [ ! -e "${backup_folder}/${php_fpm_folder_confs}" ]; then
+    mkdir -p "${backup_folder}/${php_fpm_folder_confs}"
+  fi
+
   cd "${this_folder}/${php_fpm_folder_confs}"
 
-  for fname_env in php_fpm_confs; do
+  for fname_env in ${php_fpm_confs[@]}; do
 
     fname_ext="$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
     fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f1 | xargs)_${fname_ext}.txt"
-
-    if [ ! -e "${backup_folder}/${php_fpm_folder_confs}" ]; then
-      mkdir -p "${backup_folder}/${php_fpm_folder_confs}"
-    fi
+    echo -e "${this_folder}/${php_fpm_folder_confs}/${fname_example} \n"
 
     if [ -e "${this_folder}/${php_fpm_folder_confs}/${fname_env}" ]; then
       cp "${this_folder}/${php_fpm_folder_confs}/${fname_env}"  "${backup_folder}/${php_fpm_folder_confs}/bckp${fname_env}"
@@ -209,15 +212,17 @@
   jaisocx_docker=(
     "Dockerfile"
   )
+
+  if [ ! -e "${backup_folder}/${jaisocx_folder_docker}" ]; then
+    mkdir -p "${backup_folder}/${jaisocx_folder_docker}"
+  fi
+
   cd "${this_folder}/${jaisocx_folder_docker}"
 
-  for fname_env in jaisocx_docker; do
+  for fname_env in ${jaisocx_docker[@]}; do
 
     fname_example="example_${fname_env}"
-
-    if [ ! -e "${backup_folder}/${jaisocx_folder_docker}" ]; then
-      mkdir -p "${backup_folder}/${jaisocx_folder_docker}"
-    fi
+    echo -e "${this_folder}/${jaisocx_folder_docker}/${fname_example} \n"
 
     if [ -e "${this_folder}/${jaisocx_folder_docker}/${fname_env}" ]; then
       cp "${this_folder}/${jaisocx_folder_docker}/${fname_env}"  "${backup_folder}/${jaisocx_folder_docker}/bckp${fname_env}"
@@ -237,9 +242,10 @@
   )
   cd "${this_folder}/${jaisocx_folder_ip_lists}"
 
-  for fname_env in jaisocx_ip_lists; do
+  for fname_env in ${jaisocx_ip_lists[@]}; do
 
     fname_example="example_${fname_env}"
+    echo -e "${this_folder}/${jaisocx_folder_ip_lists}/${fname_example} \n"
 
     if [ ! -e "${backup_folder}/${jaisocx_folder_ip_lists}" ]; then
       mkdir -p "${backup_folder}/${jaisocx_folder_ip_lists}"
@@ -260,15 +266,17 @@
   jaisocx_etc=(
     "server.properties"
   )
+
+  if [ ! -e "${backup_folder}/${jaisocx_folder_etc}" ]; then
+    mkdir -p "${backup_folder}/${jaisocx_folder_etc}"
+  fi
+
   cd "${this_folder}/${jaisocx_folder_etc}"
 
-  for fname_env in jaisocx_etc; do
+  for fname_env in ${jaisocx_etc[@]}; do
 
     fname_example="example_${fname_env}"
-
-    if [ ! -e "${backup_folder}/${jaisocx_folder_etc}" ]; then
-      mkdir -p "${backup_folder}/${jaisocx_folder_etc}"
-    fi
+    echo -e "${this_folder}/${jaisocx_folder_etc}/${fname_example} \n"
 
     if [ -e "${this_folder}/${jaisocx_folder_etc}/${fname_env}" ]; then
       cp "${this_folder}/${jaisocx_folder_etc}/${fname_env}"  "${backup_folder}/${jaisocx_folder_etc}/bckp${fname_env}"
@@ -285,15 +293,17 @@
     "http-conf.xml"
     "idm-conf.xml"
   )
+
+  if [ ! -e "${backup_folder}/${jaisocx_folder_confs}" ]; then
+    mkdir -p "${backup_folder}/${jaisocx_folder_confs}"
+  fi
+
   cd "${this_folder}/${jaisocx_folder_confs}"
 
-  for fname_env in jaisocx_confs; do
+  for fname_env in ${jaisocx_confs[@]}; do
 
     fname_example="example_${fname_env}"
-
-    if [ ! -e "${backup_folder}/${jaisocx_folder_confs}" ]; then
-      mkdir -p "${backup_folder}/${jaisocx_folder_confs}"
-    fi
+    echo -e "${this_folder}/${jaisocx_folder_confs}/${fname_example} \n"
 
     if [ -e "${this_folder}/${jaisocx_folder_confs}/${fname_env}" ]; then
       cp "${this_folder}/${jaisocx_folder_confs}/${fname_env}"  "${backup_folder}/${jaisocx_folder_confs}/bckp${fname_env}"
@@ -305,14 +315,14 @@
 
 
 
-  mkdir -p "command/security"
-  echo -e "#!/bin/bash\n  owner_pwd=\"<owner_password>\"\n\n" > "./command/security/.owner_pwd"
-  echo -e "<user_password>" > "./command/security/.user_pwd"
-  chmod -R 740 "command/security"
+  mkdir -p "cmd/security"
+  echo -e "#!/bin/bash\n  owner_pwd=\"<owner_password>\"\n\n" > "./cmd/security/.owner_pwd"
+  echo -e "<user_password>" > "./cmd/security/.user_pwd"
+  chmod -R 740 "cmd/security"
 
 
 
-  cd "${this_folder}/workspace/cdn/node_cdn_intall/"
+  cd "${this_folder}/workspace/cdn/node_cdn_installs/"
   yarn install
   # npm install
 
