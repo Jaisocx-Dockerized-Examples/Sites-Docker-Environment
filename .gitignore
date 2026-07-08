@@ -5,6 +5,7 @@
 /workspace/cdn/images/mini-images/mimetype/spreads/
 /workspace/cdn_data/json/flat-data/table-records_300.json
 /workspace/cdn_data/json/flat-data/table-records_3000.json
+/workspace/ts/build_tools/command/tsvm/yarn
 
 
 /.idea
@@ -31,6 +32,7 @@
 /workspace/env_dc_dinamique/.env_a4dc
 /workspace/env_dc_dinamique/.env_jaisocx
 /workspace/env_dc_dinamique/.env_php
+/workspace/env_dc_dinamique/.env_ts
 
 
 # -- Prince --
