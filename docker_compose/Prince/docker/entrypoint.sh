@@ -352,16 +352,21 @@ fi
             env_a4dc_reload="$YES"
       fi
 
+  fi
+
+
+
+  if [[ ( "${marker_first_start}" == "$YES" ) && ( "${env_a4dc_reload}" == "$YES" ) && ( "${marker_princexml_installed}" != "$YES" ) ]]; then
       # -- TARBALL RELOAD --
-      if [[ "${env_a4dc_reload}" == "$YES" ]]; then
-        curl --output-dir "${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}"   -o "${tarball_name}.tar.gz"   "${tarball_link}"
+      curl --output-dir "${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}"   -o "${tarball_name}.tar.gz"   "${tarball_link}"
 
-        touch "${princexml_tarball_saved_marker}"
-        marker_princexml_tarball_saved="$YES"
-
-      fi
+      touch "${princexml_tarball_saved_marker}"
+      marker_princexml_tarball_saved="$YES"
+  fi
 
 
+
+  if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_princexml_installed}" != "$YES" ) ]]; then
       # -- INSTALL FROM TARBALL --
       cp "${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}/${tarball_name}.tar.gz"   "/dockr/${tarball_name}.tar.gz"
 

@@ -93,6 +93,8 @@ services:
       - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"
       - "${NODE_HTTP_FLAT_PORT}:${NODE_HTTP_FLAT_PORT}"
       - "${NODE_DEBUG_PORT}:${NODE_DEBUG_PORT}"
+      #; Port of installed Jaisocx Sites Tools to workspace/ts/cloned_repos
+      # - "8449:8449"
     networks:
       jaisocx_dc_internal_connected_all_network:
         aliases:

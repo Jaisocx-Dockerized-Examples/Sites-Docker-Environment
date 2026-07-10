@@ -4,24 +4,28 @@ TIME_ZONE="Europe/Paris"
 
 SHELL="/bin/bash"
 
-# -- CPU --
-# Intel: x86_64 |  Apple MacBook: aarch64
-# CPU_ARCHITECTURE_A4DC="x86_64"
-CPU_ARCHITECTURE_A4DC="aarch64"
+#; -- CPU --
+#; Intel: x86_64 |  Apple MacBook: aarch64
+CPU_ARCHITECTURE_A4DC="x86_64"
+# CPU_ARCHITECTURE_A4DC="aarch64"
 
 
-### NODE ALWAYS LINUX, SINCE ALPINE IMAGE
-# os="darwin"
-# os="linux"
+#; NODE ALWAYS LINUX, SINCE ALPINE IMAGE
+#; os="darwin"
+#; os="linux"
 
 # CPU_ARCHITECTURE_NODE="loong64"
-# CPU_ARCHITECTURE_NODE="x64"
+CPU_ARCHITECTURE_NODE="x64"
 # CPU_ARCHITECTURE_NODE="arm64"
-CPU_ARCHITECTURE_NODE=arm64
 
 
-# AMD: amd64 | Apple MacBook: mac
-CPU_ARCHITECTURE_JAISOCX="mac"
+#; Documentation purposes, the setting takes effect in Dockerfile
+#; docker_compose/Jaisocx_SitesServer/docker/Dockerfile
+#; FROM jaisocx/webserver:amd64.3.0.16
+#; FROM jaisocx/webserver:amd64.latest
+#; AMD: amd64 | Apple MacBook: mac
+CPU_ARCHITECTURE_JAISOCX="amd64"
+# CPU_ARCHITECTURE_JAISOCX="mac"
 
 
 
@@ -151,7 +155,7 @@ PHP_LOG_LEVEL=E_NOTICE
 
 
 ### Force custom compatible npm ver. install
-NPM_VER_FORCE_INSTALL=true
+NPM_VER_FORCE_INSTALL=false
 YARN_INSTALL=false
 
 ### npm, pnpm or yarn. but for now works just npm
