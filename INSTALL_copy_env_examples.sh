@@ -30,14 +30,14 @@
     folder_rel_path="logs"
     folder_to_create="${this_folder}/${docker_compose_folder}/${folder_name}/${folder_rel_path}"
     if [ ! -e "${folder_to_create}" ]; then
-      echo -e "${fname_env}: ${folder_rel_path} in ${this_folder}/${docker_compose_folder}/${folder_name}"
+      echo -e "[Docker Compose] [${folder_name}]: ${folder_rel_path} in ${this_folder}/${docker_compose_folder}/${folder_name}"
       mkdir -p "${folder_to_create}"
     fi
 
     folder_rel_path="tarballs"
     folder_to_create="${this_folder}/${docker_compose_folder}/${folder_name}/${folder_rel_path}"
     if [ ! -e "${folder_to_create}" ]; then
-      echo -e "${fname_env}: ${folder_rel_path} in ${this_folder}/${docker_compose_folder}/${folder_name}"
+      echo -e "[Docker Compose] [${folder_name}]: ${folder_rel_path} in ${this_folder}/${docker_compose_folder}/${folder_name}"
       mkdir -p "${folder_to_create}"
 
       echo -e "\n"
