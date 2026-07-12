@@ -20,10 +20,10 @@ CPU_ARCHITECTURE_NODE="x64"
 
 
 #; Documentation purposes, the setting takes effect in Dockerfile
+#; AMD: amd64 | Apple MacBook: mac
 #; docker_compose/Jaisocx_SitesServer/docker/Dockerfile
 #; FROM jaisocx/webserver:amd64.3.0.16
 #; FROM jaisocx/webserver:amd64.latest
-#; AMD: amd64 | Apple MacBook: mac
 CPU_ARCHITECTURE_JAISOCX="amd64"
 # CPU_ARCHITECTURE_JAISOCX="mac"
 

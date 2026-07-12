@@ -29,10 +29,10 @@
     "src/**/*.ts",  // Include TypeScript files from the source directory
     "src/**/*.tsx",  // Include React JSX files if necessary
     "typings/**/*.d.ts",  // Optionally include any additional declaration files
-    "cloned_repos/jaisocx_sitestools/**/src/*.ts",
-    "cloned_repos/jaisocx_sitestools/**/src/*.tsx",
-    "cloned_repos/jaisocx_sitestools/**/src/**/*.ts",
-    "cloned_repos/jaisocx_sitestools/**/src/**/*.tsx",
+    "cloned_repos/**/src/*.ts",
+    "cloned_repos/**/src/*.tsx",
+    "cloned_repos/**/src/**/*.ts",
+    "cloned_repos/**/src/**/*.tsx",
     "build_tools/**/src/*.ts",
     "build_tools/**/src/*.tsx",
     "build_tools/**/src/**/*.ts",

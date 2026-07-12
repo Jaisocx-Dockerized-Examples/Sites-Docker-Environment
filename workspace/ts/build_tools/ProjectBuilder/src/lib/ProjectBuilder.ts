@@ -549,7 +549,7 @@ export class ProjectBuilder {
 
 
 
-  prettifyWithEslint(
+  (
     packagePath: any,
     pathToPrettify: any
   ): any {

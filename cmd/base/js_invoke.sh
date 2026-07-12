@@ -30,13 +30,21 @@ fi
 
 
 envPath="${projectPath}/.env"
+envBeyondYmlPath="${projectPath}/.env_beyond_yml"
 
 # echo "envPath: ${envPath}"
 
 if [[ -e "${envPath}" ]]; then
-  source "${envPath}"
+  . "${envPath}"
 else
   echo "Error: .env was not found."
+  exit 2;
+fi
+
+if [[ -e "${envBeyondYmlPath}" ]]; then
+  . "${envBeyondYmlPath}"
+else
+  echo "Error: .env_beyond_yml was not found."
   exit 2;
 fi
 
@@ -77,9 +85,6 @@ echo "Script Path in docker ts: ${dockerScriptPath}"
 
 
 cd "${projectPath}"
-docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun} $commandLineArgs"
-
-
-
+docker compose exec -u "${USER_NODE_NAME}" ts bash -c ". "/home/${USER_NODE_NAME}/.bashrc"; ${commandToRun} $commandLineArgs"
 
 
