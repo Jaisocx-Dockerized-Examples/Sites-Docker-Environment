@@ -1,19 +1,19 @@
 <conf-idm>
 
-  <user id="v"
-        password="a"
-        granted-roles="role_viewer"></user>
-
+  <user id="user"
+        password="2"
+        granted-roles="role_viewer">
+  </user>
 
 
   <role id="role_viewer">
     <!-- with docker, here should be the port, set in the http-conf.xml (:443), and not the outer docker container port, when another, for example (:2291) -->
-    <granted-alias url="letter:2297/Letters/LetterTemplate/" methods="OPTIONS,HEAD,GET" />
+    <granted-alias url="https://dck.basetasks.site:8447/Letters/LetterTemplate/${any}" methods="OPTIONS,HEAD,GET"></granted-alias>
+    <granted-alias url="https://dck.basetasks.site:8447/Letters/LetterTemplate/" methods="OPTIONS,HEAD,GET"></granted-alias>
+
+    <granted-alias url="https://dck.basetasks.site:8448/Letters/LetterTemplate/" methods="OPTIONS,HEAD,GET"></granted-alias>
   </role>
 
-
 </conf-idm>
-
-
 
 

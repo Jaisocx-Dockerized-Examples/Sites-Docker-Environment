@@ -127,8 +127,8 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     ports:
-      - "2297:2297"
       - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
+      - "8448:8448"
     networks:
       jaisocx_dc_opened_one_for_browsers_network:
         aliases:

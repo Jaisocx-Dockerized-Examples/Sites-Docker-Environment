@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#; Jaisocx Sites Server supports basic authentication.
+#; in this example, "docker_compose/Jaisocx_SitesServer/http/conf/example_http-conf.xml"
+#; under domain "dck.basetasks.site"
+
+# https_auth_method="basic"
+https_auth_method=""
+https_auth_user="user"
+https_auth_p="2"
