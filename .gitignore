@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/workspace/ts/cloned_repos/jaisocx_sitestools/
+/workspace/ts/cloned_repos/*
 /workspace/gen/
 /workspace/cdn/images/mini-images/mimetype/spreads/
 /workspace/cdn_data/json/flat-data/table-records_300.json
