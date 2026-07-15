@@ -167,6 +167,7 @@ PROJECT_NODE_PACKAGE_MANAGER=npm
 ### this folder is in .gitignore file, and the saved tarballs are not pushed to GitHub,
 ### even when You publish Your own copy of this Alpine Image on Your GitServer.
 NODE_INSTALL_TARBALL_RELOAD=false
+NODE_MODULES_FORCE_REINSTALL=false
 YARN_HOME="/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/command/tsvm/yarn"
 
 

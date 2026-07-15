@@ -829,8 +829,10 @@ fi
 
           else
             echo "npm install"
-            if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules" ]; then
-              rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules"
+            if [[ "${NODE_MODULES_FORCE_REINSTALL}" == "true" ]]; then
+              if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules" ]; then
+                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express/node_modules"
+              fi
             fi
 
             # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm install"
@@ -856,8 +858,10 @@ fi
           else
             echo "npm i "
             # npm install
-            if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules" ]; then
-              rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules"
+            if [[ "${NODE_MODULES_FORCE_REINSTALL}" == "true" ]]; then
+              if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules" ]; then
+                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/node_modules"
+              fi
             fi
 
             # sudo -u ${USER_NPM_NAME} /bin/bash -c ". /home/${USER_NPM_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm i "
@@ -865,6 +869,40 @@ fi
         fi
 
         echo -e "Typescript transpiler node_modules install finish. \n"
+
+    fi
+
+
+
+    if [[ ( "${marker_first_start}" == "$YES" ) && ( "${marker_nodemodules_installed}" != "$YES" ) ]]; then
+
+        echo -e "node_modules install starts ... \n"
+
+        if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
+            sudo -u ${USER_YARN_NAME} /bin/bash -c ". /home/${USER_YARN_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn install"
+
+          elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
+            exit 5
+
+          else
+            echo "npm i "
+            # npm install
+            if [[ "${NODE_MODULES_FORCE_REINSTALL}" == "true" ]]; then
+
+              if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder/node_modules" ]; then
+                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder/node_modules"
+
+                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/cdn/node_cdn_installs/node_modules"
+              fi
+
+            fi
+
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder"; npm i "
+
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/cdn/node_cdn_installs"; npm i --install-strategy=hoisted --omit=dev "
+        fi
+
+        echo -e "node_modules install finish. \n"
 
     fi
 
