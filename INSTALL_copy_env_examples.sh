@@ -170,6 +170,8 @@
     echo -e "# A4DC Security\n\n" >> "${this_folder}/cmd/security/README.md"
     echo -e "Passwords examples reside in folder `./cmd/example_a4dc_security` \n\n" >> "${this_folder}/cmd/security/README.md"
     echo -e "\n\n" >> "${this_folder}/cmd/security/README.md"
+
+    chmod -R 740 "${this_folder}/cmd/security"
   fi
 
 
@@ -437,14 +439,6 @@
 
   done;
   echo -e "\n"
-
-
-
-#; A4DC Security: passwords
-  mkdir -p "cmd/security"
-  echo -e "#!/bin/bash\n  owner_pwd=\"<owner_password>\"\n\n" > "./cmd/security/.owner_pwd"
-  echo -e "<user_password>" > "./cmd/security/.user_pwd"
-  chmod -R 740 "cmd/security"
 
 
 
