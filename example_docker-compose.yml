@@ -14,6 +14,7 @@ networks:
     name: "${INTERNAL_CONNECTED_ALL_NETWORK_NAME}"
     driver: ipvlan
     enable_ipv6: false
+    # enable_ipv6: true
     external: false
     internal: true
     attachable: false
@@ -21,8 +22,8 @@ networks:
       config:
         - subnet: "${SUBNET_IPv4}"
           ip_range: "${IP_RANGE_IPv4}"
-#        - subnet: "${SUBNET_IPv6}"
-#          ip_range: "${IP_RANGE_IPv6}"
+        # - subnet: "${SUBNET_IPv6}"
+        #   ip_range: "${IP_RANGE_IPv6}"
 
 
 
@@ -50,6 +51,30 @@ services:
 
 
 
+  #; -- a4dc for A4 electronique documents under docker compose, produced from inet pages, shown in browsers --
+  #;      no inet installs, try to load tarballs via browser.
+  # a4dc:
+  #   build:
+  #     context: "./docker_compose/Prince/docker"
+  #     args:
+  #       - "A_GROUP_USERS_NAME=privileged"
+  #       - "A_USER_NAME=user"
+  #   secrets:
+  #     - for_yml
+  #     - beyond_yml
+  #   volumes:
+  #     - "${WORKSPACE_VOLUME}/gen/:${IN_DOCKER_WORKSPACE_VOLUME}/gen/"
+  #     - "${A4DC_INSTALL_TARBALLS_VOLUME}/:${A4DC_INSTALL_IN_DOCKER_TARBALLS_VOLUME}/"
+  #   networks:
+  #     jaisocx_dc_internal_connected_all_network:
+  #       ipv4_address: "${A4DC_IPv4}"
+  #       # ipv6_address: "${A4DC_IPv6}"
+  #; -- End block: a4dc for A4 electronique documents produced from inet pages, shown in browsers --
+
+
+
+  #; -- a4dc for A4 electronique documents under docker compose, produced from inet pages, shown in browsers --
+  #;      the "a4dc:dns" stands for inet installs in docker.
   a4dc:
     build:
       context: "./docker_compose/Prince/docker"
@@ -65,12 +90,15 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     networks:
-      #      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
-      #        aliases:
-      #          - "a4dc.basetasks.site"
       jaisocx_dc_internal_connected_all_network:
+        aliases:
+          - "a4dc.basetasks.site"
         ipv4_address: "${A4DC_IPv4}"
-  #        ipv6_address: "${A4DC_IPv6}"
+        # ipv6_address: "${A4DC_IPv6}"
+      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
+        aliases:
+          - "oa4dc.basetasks.site"
+  #; -- End block: a4dc for A4 electronique documents produced from inet pages, shown in browsers --
 
 
 
@@ -132,6 +160,11 @@ services:
 
 
   #; -- Nodejs "ts_prod" in prod mode --
+  #;       no inet installs,
+  #;         a. try to load tarballs via browser.
+  #;         b. try to start Nodejs "ts_prod" after install of js libs to node_modules
+  #;              by Nodejs "ts" in another ${WORKSPACE_NAME} and another docker network.
+  #;
   #;   B. maybe need like just proxiing of Express endpoints
   #;      by another https endpoint, connected to "opened_ONE_for_browsers" docker network.
   #;      "ts:dns" ain't in the "internal" docker network without access to inet.
@@ -186,26 +219,31 @@ services:
       - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
       - "8448:8448"
     networks:
-      jaisocx_dc_opened_one_for_browsers_network:
-        aliases:
-          - "${FORBROWSER_DOMAIN_NAME}"
-      #        ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
-      #        ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
-      #      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
-      #        aliases:
-      #          - "${JAISOCX_OPENED_DOMAIN_NAME}"
       jaisocx_dc_internal_connected_all_network:
         aliases:
           - "${JAISOCX_DOMAIN_NAME}"
         ipv4_address: "${JAISOCX_HTTP_IPv4}"
         # ipv6_address: "${JAISOCX_HTTP_IPv6}"
+      jaisocx_dc_opened_one_for_browsers_network:
+        aliases:
+          - "${FORBROWSER_DOMAIN_NAME}"
+        # ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
+        # ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
+      # jaisocx_dc_opened_for_inet_installs_n_browsers_network:
+      #   aliases:
+      #     - "${JAISOCX_OPENED_DOMAIN_NAME}"
   #; -- End block: Jaisocx Sites Server --
 
 
 
   #; -- php-fpm8.3 "php_fpm" for the Jaisocx Sites Server, no inet installs, no open ports --
+  #;       no inet installs,
+  #;       start php_fpm after install of php packages to vendor
+  #;       by php-fpm8.3 "php_composer" in another WORKSPACE_NAME and other docker network.
   #;      "php_fpm:dns" ain't in the "internal" docker network without access to inet.
-  #;      the "php_fpm:dns" stands for inet installs in docker.
+  #;        the "php_fpm:dns" stands for inet installs in docker.
+  #;      the "php_fpm:ports" stands for access to php-fpm8.3 by other php sites servers on Host OS.
+  #;        php-fpm8.3 port remains exposed in Dockerfile.
   #  php_fpm:
   #    build:
   #      context: "./docker_compose/PHP/docker"
@@ -221,23 +259,20 @@ services:
   #      - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
   #      - "${PHP_TARBALLS_VOLUME}/:${PHP_TARBALLS_IN_DOCKER_VOLUME}/"
   #      - "./docker_compose/PHP/logs/:${PHP_SOFTWARE_LOGS}/"
-  #    # dns:
-  #    #   - "${DNS_SERVER_IPv4}"
   #    networks:
   #      jaisocx_dc_internal_connected_all_network:
   #        aliases:
   #          - "${PHP_FPM_DOMAIN_NAME}"
   #        ipv4_address: "${PHP_FPM_IPv4}"
   #        # ipv6_address: "${PHP_FPM_IPv6}"
-  #    # extra_hosts:
-  #      # for XDebug configuration .ini
-  #      # - "host.docker.internal:host-gateway"
   #; -- End block: php-fpm8.3 "php_fpm" for the Jaisocx Sites Server, no inet installs, no open ports --
 
 
 
   #; -- php-fpm8.3 "php_composer" for the Jaisocx Sites Server, may install php packages to vendor from inet, no open ports --
   #;      the "php_composer:dns" stands for inet installs in docker, tarballs and php packages to vendor from inet.
+  #;      the "php_composer:ports" stands for access to php-fpm8.3 by other php sites servers on Host OS.
+  #;        php-fpm8.3 port remains exposed in Dockerfile.
   php_composer:
     # -- installs, due to composer.json, php open source packages to folder "vendor", in the same workspace volume, like of [php_fpm], too --
     build:
@@ -257,14 +292,14 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     networks:
-      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
-        aliases:
-          - "${PHP_FPM_OPEN_DOMAIN_NAME}"
       jaisocx_dc_internal_connected_all_network:
         aliases:
           - "${PHP_COMPOSER_DOMAIN_NAME}"
         ipv4_address: "${PHP_COMPOSER_IPv4}"
         # ipv6_address: "${PHP_COMPOSER_IPv6}"
+      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
+        aliases:
+          - "${PHP_FPM_OPEN_DOMAIN_NAME}"
     extra_hosts:
       # for XDebug configuration .ini
       - "host.docker.internal:host-gateway"
