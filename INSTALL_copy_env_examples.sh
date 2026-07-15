@@ -72,52 +72,6 @@
 
 
 
-#; a4dc
-  if [ ! -e "${WORKSPACE_VOLUME}/gen" ]; then
-    mkdir -p "${WORKSPACE_VOLUME}/gen"
-  fi
-
-  #; README a4dc security in folder "./cmd/security"
-  if [ ! -e "${this_folder}/cmd/security" ]; then
-    mkdir -p "${this_folder}/cmd/security"
-    touch "${this_folder}/cmd/security/README.md"
-
-    echo -e "# A4DC Security\n\n" >> "${this_folder}/cmd/security/README.md"
-    echo -e "Passwords examples reside in folder `./cmd/example_a4dc_security` \n\n" >> "${this_folder}/cmd/security/README.md"
-    echo -e "\n\n" >> "${this_folder}/cmd/security/README.md"
-  fi
-
-
-  #; copies passwords example files in the example_a4dc_security folder
-  a4dc_security_folder_example="cmd/example_a4dc_security"
-  a4dc_pwds=(
-    ".owner_pwd"
-    ".user_pwd"
-    ".https_auth_creds"
-  )
-
-  #; creates backup subfolder
-  if [ ! -e "${backup_folder}/example_a4dc_security" ]; then
-    mkdir -p "${backup_folder}/example_a4dc_security"
-  fi
-
-  for fname_env in ${a4dc_pwds[@]}; do
-
-    fname_example="example_$(printf "%s" "$fname_env" | cut -d'.' -f2- | xargs)"
-    echo -e "[a4dc example pwds] [${fname_env}]: cp ./${a4dc_security_folder_example}/${fname_example} => ${fname_env}"
-
-    #; confs backup
-    if [ -e "${this_folder}/${a4dc_security_folder_example}/${fname_env}" ]; then
-      cp "${this_folder}/${a4dc_security_folder_example}/${fname_env}"  "${backup_folder}/example_a4dc_security/bckp${fname_env}"
-    fi
-
-    cp "${this_folder}/${a4dc_security_folder_example}/${fname_example}"  "${this_folder}/${a4dc_security_folder_example}/${fname_env}"
-
-  done;
-  echo -e "\n"
-
-
-
 #; copies docker-compose.yml from example
 #;  in the root of the project
   ymls=(

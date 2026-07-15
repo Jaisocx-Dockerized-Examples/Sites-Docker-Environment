@@ -4,7 +4,10 @@ networks:
   jaisocx_dc_opened_one_for_browsers_network:
     name: "${OPENED_ONE_FOR_BROWSERS_NETWORK_NAME}"
     driver: bridge
-  jaisocx_dc_opened_for_inet_installs_network:
+  # jaisocx_dc_opened_several_for_browsers_network:
+  #   name: "${OPENED_SEVERAL_FOR_BROWSERS_NETWORK_NAME}"
+  #   driver: bridge
+  jaisocx_dc_opened_for_inet_installs_n_browsers_network:
     name: "${OPENED_FOR_INET_INSTALLS_NETWORK_NAME}"
     driver: bridge
   jaisocx_dc_internal_connected_all_network:
@@ -62,7 +65,7 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     networks:
-      #      jaisocx_dc_opened_for_inet_installs_network:
+      #      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
       #        aliases:
       #          - "a4dc.basetasks.site"
       jaisocx_dc_internal_connected_all_network:
@@ -71,6 +74,19 @@ services:
 
 
 
+  #; -- Nodejs "ts" in dev mode --
+  #;   might need installs of js libs to node_modules, need "opened_for_inet_installs" docker network,
+  #;   need "ts:dns" for inet installs.
+  #; in prod mode,
+  #;   A. maybe need Express endpoints or https static endpoints.
+  #;      might connect to "opened_ONE_for_browsers" docker network.
+  #;      other services the best way to remove from "opened_ONE_for_browsers" docker network,
+  #;      otherwise, just to rename to "opened_several_for_browsers" docker network,
+  #;      in order to know transparently about Your own deploy.
+  #;      the "ts:dns" stands for inet installs in docker.
+  #;      the "ts:ports" stands for access in inet sites browsers.
+  #;      ports were exposed in Dockerfile.
+  #;
   ts:
     build:
       context: "./docker_compose/ts/docker"
@@ -102,13 +118,53 @@ services:
           - "${NODE_INTERNAL_DOMAIN_NAME}"
         ipv4_address: "${NODE_IPv4}"
         # ipv6_address: "${NODE_IPv6}"
-      jaisocx_dc_opened_for_inet_installs_network:
+      # jaisocx_dc_opened_one_for_browsers_network:
+      #   aliases:
+      #     - "${FORBROWSER_DOMAIN_NAME}"
+      #        ipv4_address: "${OPENED_NODE_HTTP_IPv4}"
+      #        ipv6_address: "${OPENED_NODE_HTTP_IPv6}"
+      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
         aliases:
           - "${EXPRESS_OPENED_DOMAIN_NAME}"
           - "${NODE_OPENED_DOMAIN_NAME}"
+  #; -- End block: Nodejs "ts" in dev mode --
 
 
 
+  #; -- Nodejs "ts_prod" in prod mode --
+  #;   B. maybe need like just proxiing of Express endpoints
+  #;      by another https endpoint, connected to "opened_ONE_for_browsers" docker network.
+  #;      "ts:dns" ain't in the "internal" docker network without access to inet.
+  #;      "ts:ports" ain't in the "internal" docker network,
+  #;      other services connect via "${EXPRESS_INTERNAL_DOMAIN_NAME}:<in Dockerfile exposed port>"
+  #;      ports remain exposed in Dockerfile.
+  #;
+  # ts_prod:
+  #   build:
+  #     context: "./docker_compose/ts/docker"
+  #     args:
+  #       - "A_GROUP_USERS_NAME=privileged"
+  #       - "A_USER_NAME=user"
+  #       - "A_NODE_SOFTWARE_HOME=${NODE_SOFTWARE_HOME}"
+  #   secrets:
+  #     - for_yml
+  #     - beyond_yml
+  #   volumes:
+  #     - "${WORKSPACE_VOLUME}/:${IN_DOCKER_WORKSPACE_VOLUME}/"
+  #     - "${NODE_TARBALLS_VOLUME}/:${NODE_TARBALLS_IN_DOCKER_VOLUME}/"
+  #     - "./docker_compose/ts/logs/:${NODE_SOFTWARE_LOGS}/"
+  #   networks:
+  #     jaisocx_dc_internal_connected_all_network:
+  #       aliases:
+  #         - "${EXPRESS_INTERNAL_DOMAIN_NAME}"
+  #         - "${NODE_INTERNAL_DOMAIN_NAME}"
+  #       ipv4_address: "${NODE_IPv4}"
+  #       # ipv6_address: "${NODE_IPv6}"
+  #; -- End block: Nodejs "ts_prod" in prod mode --
+
+
+
+  #; -- Jaisocx Sites Server --
   jaisocx:
     build:
       context: "./docker_compose/Jaisocx_SitesServer/docker"
@@ -135,7 +191,7 @@ services:
           - "${FORBROWSER_DOMAIN_NAME}"
       #        ipv4_address: "${OPENED_JAISOCX_HTTP_IPv4}"
       #        ipv6_address: "${OPENED_JAISOCX_HTTP_IPv6}"
-      #      jaisocx_dc_opened_for_inet_installs_network:
+      #      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
       #        aliases:
       #          - "${JAISOCX_OPENED_DOMAIN_NAME}"
       jaisocx_dc_internal_connected_all_network:
@@ -143,9 +199,13 @@ services:
           - "${JAISOCX_DOMAIN_NAME}"
         ipv4_address: "${JAISOCX_HTTP_IPv4}"
         # ipv6_address: "${JAISOCX_HTTP_IPv6}"
+  #; -- End block: Jaisocx Sites Server --
 
 
 
+  #; -- php-fpm8.3 "php_fpm" for the Jaisocx Sites Server, no inet installs, no open ports --
+  #;      "php_fpm:dns" ain't in the "internal" docker network without access to inet.
+  #;      the "php_fpm:dns" stands for inet installs in docker.
   #  php_fpm:
   #    build:
   #      context: "./docker_compose/PHP/docker"
@@ -172,9 +232,12 @@ services:
   #    # extra_hosts:
   #      # for XDebug configuration .ini
   #      # - "host.docker.internal:host-gateway"
+  #; -- End block: php-fpm8.3 "php_fpm" for the Jaisocx Sites Server, no inet installs, no open ports --
 
 
 
+  #; -- php-fpm8.3 "php_composer" for the Jaisocx Sites Server, may install php packages to vendor from inet, no open ports --
+  #;      the "php_composer:dns" stands for inet installs in docker, tarballs and php packages to vendor from inet.
   php_composer:
     # -- installs, due to composer.json, php open source packages to folder "vendor", in the same workspace volume, like of [php_fpm], too --
     build:
@@ -194,7 +257,7 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     networks:
-      jaisocx_dc_opened_for_inet_installs_network:
+      jaisocx_dc_opened_for_inet_installs_n_browsers_network:
         aliases:
           - "${PHP_FPM_OPEN_DOMAIN_NAME}"
       jaisocx_dc_internal_connected_all_network:
@@ -205,5 +268,6 @@ services:
     extra_hosts:
       # for XDebug configuration .ini
       - "host.docker.internal:host-gateway"
+  #; -- End block: php-fpm8.3 "php_composer" for the Jaisocx Sites Server, may install php packages to vendor from inet, no open ports --
 
 
