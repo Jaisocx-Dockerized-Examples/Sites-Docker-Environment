@@ -1,0 +1,151 @@
+<html>
+<head>
+
+    <title>Server Project</title>
+
+
+<!--   DOCUMENT   --> 
+<style> .iceLarge , .icePresentation { display: block; position: relative; margin: 0px; padding: 0px; top: 0px; left: 0px; border-width: 0px; } .iceLarge { height: 100%; width: 100%; overflow-y: scroll; overflow-x: auto; text-align: center; } .icePresentation { height: 100%; width: 100%; overflow-y: hidden; overflow-x: hidden; } .iceLarge .iceimagingpanel , .icePresentation .iceimagingpanel { display: block; position: absolute; margin: 0px; padding: 0px; height: 100%; width: 100%; top: 0px; left: 0px; border-width: 0px; } .iceLarge .fieldslayout , .icePresentation .fieldslayout { top: 0px; left: 0px; height: 100%; width: 100%; margin: 0px; padding: 0px; border-width: 0px; border-collapse: collapse; } .fieldslayout .fieldright , .fieldslayout .fieldleft { margin: 0px; padding: 0px; } .iceLarge .fieldslayout .fieldright , .iceLarge .fieldslayout .fieldleft { width: 30%; } .icePresentation .fieldslayout .fieldright , .icePresentation .fieldslayout .fieldleft { width: 5%; } .iceLarge .icepanel , .icePresentation .icepanel { display: block; position: relative; margin: 0px; padding: 0px; top: 0px; border-width: 0px; } .iceLarge .icepanel { width: 750px; left: 0px; text-align: left; } .icePresentation .icepanel { height: 100%; width: 100%; left: 0px; overflow-y: hidden; overflow-x: hidden; } .icepanel .TOP , .icepanel .TOPPANEL .TOP , .icepanel .CONTENTPANEL , .icepanel .CONTENTPANEL .CONTENT , .icepanel .DEVELOPERSPANEL , .icepanel .DEVELOPERSPANEL .DEVELOPERS { margin: 0px; padding: 0px; border-width: 0px; overflow-x: hidden; } .icepanel .TOPPANEL , .icepanel .CONTENTPANEL , .icepanel .DEVELOPERSPANEL { position: relative; top: 0px; left: 10%; width: 80%; } .icepanel .TOPPANEL { display: block; overflow-y: hidden; } .iceLarge .TOPPANEL { height: 140px; } .icePresentation .TOPPANEL { height: 20%; } .iceLarge .CONTENTPANEL , .icePresentation .CONTENTPANEL { display: block; } .icePresentation .CONTENTPANEL { overflow-y: hidden; height: 68%; } .icepanel .DEVELOPERSPANEL { display: block; overflow-y: hidden; } .iceLarge .DEVELOPERSPANEL { height: 120px; } .icePresentation .DEVELOPERSPANEL { height: 12%; } .icepanel .TOPPANEL .TOP , .icepanel .CONTENTPANEL .CONTENT , .icepanel .DEVELOPERSPANEL .DEVELOPERS { display: block; position: relative; left: 5%; width: 90%; overflow-x: hidden; } .icepanel .TOPPANEL .TOP { top: 10%; height: 80%; overflow-y: hidden; } .iceLarge .CONTENTPANEL .CONTENT { top: 0px; } .icePresentation .CONTENTPANEL .CONTENT { top: 0px; height: 100%; } .icepanel .DEVELOPERSPANEL .DEVELOPERS { top: 10%; height: 80%; overflow-y: hidden; } .icepanel h1 , .icepanel .TOPPANEL .TOP h1 , .icepanel .CONTENTPANEL .CONTENT h1 { display: block; margin: 0px; padding-left: 40px; padding-top: 40px; padding-bottom: 10px; border-width: 0px; border-style: solid; border-color: black; text-align: center; font-variant: small-caps; text-transform: capitalize; font-size: 40px; font-style: normal; font-weight: bold; } .icepanel .TOPPANEL .TOP , .icepanel .TOPPANEL .TOP td , .icepanel .TOPPANEL .TOP pre , .icepanel .CONTENTPANEL .CONTENT , .icepanel .CONTENTPANEL .CONTENT td , .icepanel .CONTENTPANEL .CONTENT pre , .icepanel .DEVELOPERSPANEL .DEVELOPERS , .icepanel .DEVELOPERSPANEL .DEVELOPERS td , .icepanel .DEVELOPERSPANEL .DEVELOPERS pre { font-family: Tahoma; font-size: 12px; font-style: normal; } </style>
+
+
+
+
+<!-- TOOLS --> 
+<style> .linkslinepanel { display: block; position: relative; margin: 0px; padding: 0px; width: 100%; top: 0px; left: 0px; border: 0px solid lime; overflow-y: visible; overflow-x: visible; float: right; clear: left; background-color: darkgreen; } .linkslinepanel .linksline { display: inline; position: static; margin: 0px; padding: 0px; top: 2px; left: 0px; line-height: 14px; overflow-y: visible; overflow-x: visible; float: left; clear: right; width: 100%; background-color: white; vertical-align: middle; } .linkslinepanel .linksline a { display: block; position: relative; margin-left: 0px; margin-right: 7px; padding: 0px; top: 0px; left: 0px; float: left; height: 14px; line-height: 14px; font-size: 10px; font-family: Arial; font-style: normal; font-weight: normal; white-space: nowrap; color: steelblue; } .linkslinepanel .linksline a:hover { color: crimson; } .linkslinepanel .linksline .title { display: block; position: static; margin: 0px; padding-top: 0px; padding-left: 4px; padding-right: 8px; padding-bottom: 0px; height: 16px; line-height: 14px; top: 0px; left: 0px; border: 0px solid lime; overflow-y: hidden; overflow-x: visible; float: left; clear: right; color: #000; font-family: Verdana; font-size: 8px; font-variant: small-caps; font-style: normal; font-weight: bold; text-decoration: none; text-transform: capitalize; white-space: nowrap; } </style> 
+
+
+
+
+<!--   DOCUMENT   THEMES   --> 
+
+<style> .RPCommerce .fieldslayout { color: #373 ; background-color: cornsilk; } .RPCommerce .icepanel { color: #373 ; background-color: cornsilk; } .RPCommerce .icepanel .TOPPANEL , .RPCommerce .icepanel .CONTENTPANEL , .RPCommerce .icepanel .DEVELOPERSPANEL { color: #373 ; background-color: moccasin; } .RPCommerce .icepanel .TOPPANEL .TOP { color: #373 ; background-color: #efe; } .RPCommerce .icepanel .CONTENTPANEL .CONTENT { color: #373 ; background-color: moccasin; } .RPCommerce .icepanel .DEVELOPERSPANEL .DEVELOPERS { color: #efe ; background-color: #373; } </style> 
+
+<style> .Aqua .linkslinepanel .linksline , .Aqua .linkslinepanel .linksline a , .Aqua .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #da7b00 } .Aqua .fieldslayout { COLOR: #000; background-color: #ffffff; } .Aqua .icepanel , .primaryLight { COLOR: black; background: #eaeef4 } .Aqua .icepanel .TOPPANEL , .Aqua .icepanel .CONTENTPANEL , .Aqua .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Aqua .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #eaeef4; background: #046a7c } .Aqua .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d2deed } .Aqua .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #eaeef4; background: #046a7c } </style> 
+<style> .BlackWhite .linkslinepanel .linksline , .BlackWhite .linkslinepanel .linksline a , .BlackWhite .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #000000 } .BlackWhite .fieldslayout { COLOR: #000; background-color: #ffffff; } .BlackWhite .icepanel , .primaryLight { COLOR: black; background: #ffffff } .BlackWhite .icepanel .TOPPANEL , .BlackWhite .icepanel .CONTENTPANEL , .BlackWhite .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .BlackWhite .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #ffffff; background: #000000 } .BlackWhite .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #ffffff } .BlackWhite .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #ffffff; background: #000000 } </style> 
+<style> .Blueberry .linkslinepanel .linksline , .Blueberry .linkslinepanel .linksline a , .Blueberry .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #637595 } .Blueberry .fieldslayout { COLOR: #000; background-color: #ffffff; } .Blueberry .icepanel , .primaryLight { COLOR: black; background: #ede6ef } .Blueberry .icepanel .TOPPANEL , .Blueberry .icepanel .CONTENTPANEL , .Blueberry .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Blueberry .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #ede6ef; background: #183569 } .Blueberry .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #bbc9dc } .Blueberry .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #ede6ef; background: #183569 } </style> 
+<style> .Blue .linkslinepanel .linksline , .Blue .linkslinepanel .linksline a , .Blue .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #517dbf } .Blue .fieldslayout { COLOR: #000; background-color: #ffffff; } .Blue .icepanel , .primaryLight { COLOR: black; background: #ebf0f9 } .Blue .icepanel .TOPPANEL , .Blue .icepanel .CONTENTPANEL , .Blue .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Blue .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #ebf0f9; background: #1e3c7b } .Blue .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #cbd8eb } .Blue .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #ebf0f9; background: #1e3c7b } </style> 
+<style> .BrightBlue .linkslinepanel .linksline , .BrightBlue .linkslinepanel .linksline a , .BrightBlue .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #ff8716 } .BrightBlue .fieldslayout { COLOR: #000; background-color: #ffffff; } .BrightBlue .icepanel , .primaryLight { COLOR: black; background: #f5f3eb } .BrightBlue .icepanel .TOPPANEL , .BrightBlue .icepanel .CONTENTPANEL , .BrightBlue .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .BrightBlue .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f5f3eb; background: #134fc7 } .BrightBlue .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d3e5fa } .BrightBlue .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f5f3eb; background: #134fc7 } </style> 
+<style> .Brown .linkslinepanel .linksline , .Brown .linkslinepanel .linksline a , .Brown .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #3757b4 } .Brown .fieldslayout { COLOR: #000; background-color: #ffffff; } .Brown .icepanel , .primaryLight { COLOR: black; background: #f8eee0 } .Brown .icepanel .TOPPANEL , .Brown .icepanel .CONTENTPANEL , .Brown .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Brown .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f8eee0; background: #442422 } .Brown .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #e7d3bd } .Brown .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f8eee0; background: #442422 } </style> 
+<style> .Burgundy .linkslinepanel .linksline , .Burgundy .linkslinepanel .linksline a , .Burgundy .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #79194d } .Burgundy .fieldslayout { COLOR: #000; background-color: #ffffff; } .Burgundy .icepanel , .primaryLight { COLOR: black; background: #fde9ec } .Burgundy .icepanel .TOPPANEL , .Burgundy .icepanel .CONTENTPANEL , .Burgundy .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Burgundy .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #fde9ec; background: #79194d } .Burgundy .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #fcc8c7 } .Burgundy .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #fde9ec; background: #79194d } </style> 
+<style> .Gray .linkslinepanel .linksline , .Gray .linkslinepanel .linksline a , .Gray .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #626262 } .Gray .fieldslayout { COLOR: #000; background-color: #ffffff; } .Gray .icepanel , .primaryLight { COLOR: black; background: #f6f6f6 } .Gray .icepanel .TOPPANEL , .Gray .icepanel .CONTENTPANEL , .Gray .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Gray .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f6f6f6; background: #000000 } .Gray .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d2d2d2 } .Gray .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f6f6f6; background: #000000 } </style> 
+<style> .Green .linkslinepanel .linksline , .Green .linkslinepanel .linksline a , .Green .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #9b58ba } .Green .fieldslayout { COLOR: #000; background-color: #ffffff; } .Green .icepanel , .primaryLight { COLOR: black; background: #f4fbee } .Green .icepanel .TOPPANEL , .Green .icepanel .CONTENTPANEL , .Green .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Green .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f4fbee; background: #035647 } .Green .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d6eace } .Green .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f4fbee; background: #035647 } </style> 
+<style> .Mahogany .linkslinepanel .linksline , .Mahogany .linkslinepanel .linksline a , .Mahogany .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #5c73b6 } .Mahogany .fieldslayout { COLOR: #000; background-color: #ffffff; } .Mahogany .icepanel , .primaryLight { COLOR: black; background: #ffdaab } .Mahogany .icepanel .TOPPANEL , .Mahogany .icepanel .CONTENTPANEL , .Mahogany .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Mahogany .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #ffdaab; background: #61000a } .Mahogany .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d3a04f } .Mahogany .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #ffdaab; background: #61000a } </style> 
+<style> .Olive .linkslinepanel .linksline , .Olive .linkslinepanel .linksline a , .Olive .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #7c925d } .Olive .fieldslayout { COLOR: #000; background-color: #ffffff; } .Olive .icepanel , .primaryLight { COLOR: black; background: #f5f3eb } .Olive .icepanel .TOPPANEL , .Olive .icepanel .CONTENTPANEL , .Olive .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Olive .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f5f3eb; background: #545f38 } .Olive .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d6e0c3 } .Olive .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f5f3eb; background: #545f38 } </style> 
+<style> .Orange .linkslinepanel .linksline , .Orange .linkslinepanel .linksline a , .Orange .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #fda102 } .Orange .fieldslayout { COLOR: #000; background-color: #ffffff; } .Orange .icepanel , .primaryLight { COLOR: black; background: #fff7e7 } .Orange .icepanel .TOPPANEL , .Orange .icepanel .CONTENTPANEL , .Orange .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Orange .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #fff7e7; background: #f56116 } .Orange .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #fedc8e } .Orange .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #fff7e7; background: #f56116 } </style> 
+<style> .Plum .linkslinepanel .linksline , .Plum .linkslinepanel .linksline a , .Plum .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #845c42 } .Plum .fieldslayout { COLOR: #000; background-color: #ffffff; } .Plum .icepanel , .primaryLight { COLOR: black; background: #fbf3de } .Plum .icepanel .TOPPANEL , .Plum .icepanel .CONTENTPANEL , .Plum .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Plum .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #fbf3de; background: #3e2244 } .Plum .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #dabe9b } .Plum .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #fbf3de; background: #3e2244 } </style> 
+<style> .PurpleSage .linkslinepanel .linksline , .PurpleSage .linkslinepanel .linksline a , .PurpleSage .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #87978b } .PurpleSage .fieldslayout { COLOR: #000; background-color: #ffffff; } .PurpleSage .icepanel , .primaryLight { COLOR: black; background: #f0f1fb } .PurpleSage .icepanel .TOPPANEL , .PurpleSage .icepanel .CONTENTPANEL , .PurpleSage .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .PurpleSage .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f0f1fb; background: #665484 } .PurpleSage .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #d7e1d9 } .PurpleSage .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f0f1fb; background: #665484 } </style> 
+<style> .Red .linkslinepanel .linksline , .Red .linkslinepanel .linksline a , .Red .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #f61208 } .Red .fieldslayout { COLOR: #000; background-color: #ffffff; } .Red .icepanel , .primaryLight { COLOR: black; background: #f8eee0 } .Red .icepanel .TOPPANEL , .Red .icepanel .CONTENTPANEL , .Red .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Red .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #f8eee0; background: #c00b02 } .Red .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #fed3d1 } .Red .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #f8eee0; background: #c00b02 } </style> 
+<style> .Slate .linkslinepanel .linksline , .Slate .linkslinepanel .linksline a , .Slate .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #585867 } .Slate .fieldslayout { COLOR: #000; background-color: #ffffff; } .Slate .icepanel , .primaryLight { COLOR: black; background: #efeff6 } .Slate .icepanel .TOPPANEL , .Slate .icepanel .CONTENTPANEL , .Slate .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Slate .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #efeff6; background: #000000 } .Slate .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #dadae1 } .Slate .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #efeff6; background: #000000 } </style> 
+<style> .Turquoise .linkslinepanel .linksline , .Turquoise .linkslinepanel .linksline a , .Turquoise .linkslinepanel .linksline .title , .accentDark { COLOR: white; background: #2ea8e7 } .Turquoise .fieldslayout { COLOR: #000; background-color: #ffffff; } .Turquoise .icepanel , .primaryLight { COLOR: black; background: #fff4c7 } .Turquoise .icepanel .TOPPANEL , .Turquoise .icepanel .CONTENTPANEL , .Turquoise .icepanel .DEVELOPERSPANEL { COLOR: black; background-color: white; } .Turquoise .icepanel .TOPPANEL .TOP , .primaryVeryDark { COLOR: #fff4c7; background: #7673fd } .Turquoise .icepanel .CONTENTPANEL .CONTENT , .primaryMedium { COLOR: black; background: #a4e0ff } .Turquoise .icepanel .DEVELOPERSPANEL .DEVELOPERS , .primaryVeryDark { COLOR: #fff4c7; background: #7673fd } </style> 
+
+</head>
+
+
+
+
+
+<body class="icePresentation" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+
+    <div class="RPCommerce" id="icedocument"> 
+
+        <table class="fieldslayout" cellspacing="0" cellpadding="0"> 
+          <tr>
+            <td class="fieldleft"></td> 
+
+            <td>
+<!-- icepanel begin -->
+              <div class="icepanel" id="icelayout"> 
+                <span class="TOPPANEL"> 
+                  <span class="TOP">
+                    <h1>Server Project</h1>
+                  </span>
+                </span>
+                <span class="CONTENTPANEL">
+                  <span class="CONTENT"> 
+                      <h2>Packages Info</h2>
+    <dl>
+        <dt> <b style="font-size:90%"> rpcommerce.server.dispatcher </b> </dt> 
+        <dt>The <b> Dispatcher </b> handles all connections on several ports to servers: http, ftp, smtp.</dt> 
+            <p></p> 
+            <dd> <b style="font-size:90%">  rpcommerce.server.conf  </b> </dd> 
+            <dd> <b style="font-size:90%">  rpcommerce.server.impl  </b> </dd> 
+            <dd>Each <b> Server </b> extends Server template class, Thread and instantiates its configuration class</dd> 
+            <dd>Each <b> Server </b> Thread accepting connections has a number of <b> SharedServers </b> they handle each one connection </dd> 
+            <dd>
+                <dl>
+                    <p></p> 
+                    <dd> <b style="font-size:90%">  rpcommerce.server.sharedserver  </b> </dd> 
+                    <dd> <b> SharedServers </b> run each one new <b> Protocol Thread </b> for each Connection </dd>
+                    <dd> <b> SharedServers </b> have each one Server specific <b> Protocol </b> Implementation Instance </dd>
+                    <dd>
+                        <dl>
+                            <p></p> 
+                            <dd> <b style="font-size:90%">  rpcommerce.server.protocol  </b> </dd> 
+                            <dd> A <b> Protocol Thread </b> uses logics of the <b> Protocol Implementation </b> stored by the owner <b>SharedServer</b> </dd> 
+                        </dl>
+                    </dd>
+                </dl>
+            </dd>
+    </dl>
+                  </span>
+	        </span>
+                <span class="DEVELOPERSPANEL"> 
+                  <span class="DEVELOPERS"> 
+                    <span class="border"></span>
+                    <pre> ICE CUBE 2011&copy; </pre> 
+                  </span>
+                </span> 
+
+<span class="linkslinepanel" style=" position: absolute; left: 0; top: 0px; width: 80px; "> 
+ <span class="linksline"> 
+
+  <span class="title"> Themes </span> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='RPCommerce'; "> R&amp;P Commerce</a>
+  <br/>
+  <span class="title"> MS InfoPath </span> 
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Orange'; "> Orange </a>       <br>
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Red'; "> Red </a>             <br>
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Burgundy'; "> Burgundy </a> 
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='BlackWhite'; "> BlackWhite </a> 
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Mahogany'; "> Mahogany </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Plum'; "> Plum </a>           <br>
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Brown'; "> Brown </a>         <br>
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Gray'; "> Gray </a>           <br>
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Slate'; "> Slate </a>         <br>
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Olive'; "> Olive </a>         <br>
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Green'; "> Green </a>         <br>
+
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Aqua'; "> Aqua </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='PurpleSage'; "> PurpleSage </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='BlueBerry'; "> BlueBerry </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Blue'; "> Blue </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='BrightBlue'; "> BrightBlue </a> 
+   <a href="#" onclick="javascript: document.getElementById('icedocument').className='Turquoise'; "> Turquoise </a> 
+
+ </span>
+</span>
+
+              </div>  
+<!-- icepanel finish -->
+
+            </td>
+            <td class="fieldright"></td> 
+
+          </tr>
+        </table>  <!-- layout table finish -->
+
+    </div> <!-- ice document finish -->
+
+
+
+
+
+
+</body>
+</html>
+

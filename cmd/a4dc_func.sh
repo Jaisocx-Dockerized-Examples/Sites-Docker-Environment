@@ -20,8 +20,10 @@ a4dc_func() {
 #      --disallow-print \
 #      --disallow-copy \
 
+  jaisocx_port_internal_network=8532
+
 #  prince --media=print-for-screen "http://${JAISOCX_DOMAIN_NAME}:${JAISOCX_HTTP_FLAT_PORT}/Letters/${letter_name}/${html_doc}" \
-  prince --media=print-for-screen "https://${JAISOCX_DOMAIN_NAME}:${JAISOCX_HTTPS_PORT}/Letters/${letter_name}/${html_doc}" \
+  prince --media=print-for-screen "https://${JAISOCX_DOMAIN_NAME}:${jaisocx_port_internal_network}/Letters/${letter_name}/${html_doc}" \
       -o "${workspace}/gen/${doc_name}${letter_name}.pdf" \
       --pdf-title "${letter_name}" \
       --pdf-subject "${letter_name}" \

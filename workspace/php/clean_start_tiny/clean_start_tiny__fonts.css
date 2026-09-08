@@ -1,0 +1,74 @@
+
+/* microsoft fonts:
+     the browser shows texts the right way
+     on all computers with all other OS, like: ios, linux, android
+*/
+/* microsoft, ios, android, linux */
+.clean_start,
+.clean_start.theme_fonts_old_good_fonts,
+.clean_start  .theme_fonts_old_good_fonts {
+                                              /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:             "Arial";
+  --clean_start--serif--font-family:            "Times New Roman";
+  --clean_start--monospace--font-family:        "Courier";
+  --clean_start--handwrite--font-family:        "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
+}
+
+
+
+.clean_start.theme_fonts_a,
+.clean_start  .theme_fonts_a {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+  --clean_start--monospace--font-family: "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+  --clean_start--handwrite--font-family: "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+}
+
+
+
+.clean_start.theme_fonts_b,
+.clean_start  .theme_fonts_b  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_start--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_start--handwrite--font-family: "Bradley Hand ITC", "Bradley Hand",     "Z003",                      "cursive";
+}
+
+
+
+.clean_start.theme_fonts_c,
+.clean_start  .theme_fonts_c  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Sitka",       "Charter",          "DejaVu Serif",     "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
+  --clean_start--handwrite--font-family: "Kristen ITC", "Snell Roundhand",  "Z003",             "cursive";
+}
+
+
+
+/* @start font override */
+.clean_start  .font_override.font_sans,
+.clean_start  .font_override.font_sans * {
+  font-family: var(--clean_start--sans--font-family, "Arial");
+}
+
+.clean_start  .font_override.font_serif,
+.clean_start  .font_override.font_serif * {
+  font-family: var(--clean_start--serif--font-family, "Times New Roman");
+}
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family, "Segoe Script",   "Bradley Hand",   "Z003",   "cursive");
+}
+
+.clean_start  .font_override.font_monospace,
+.clean_start  .font_override.font_monospace * {
+  font-family: var(--clean_start--monospace--font-family, "Courier");
+}
+/* @finish font override */
+
+

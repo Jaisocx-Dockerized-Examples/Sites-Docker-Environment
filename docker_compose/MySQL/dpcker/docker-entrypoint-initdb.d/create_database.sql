@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS workspace;
+
+;;; GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY 'password goes here';
+
+FLUSH PRIVILEGES;
+

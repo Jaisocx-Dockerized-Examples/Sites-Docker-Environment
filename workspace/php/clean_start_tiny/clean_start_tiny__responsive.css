@@ -1,0 +1,117 @@
+
+/* @start clean_start_tiny Mobile friendly */
+
+    /* portrait, xxxs til mobile xxs */
+    /* filters by widths */
+    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
+      .page.responsive.clean_start {
+        /* variables for @jaisocx/responsive_sizes helper library */
+        --theme_name: clean_start_tiny__theme_base;
+        --responsive_size: responsive_size__mobile_friendly__xxxs_til_d05_very_small_xxs_portrait;
+
+        /* styles */
+        --clean_start--site--padding: 1rem 0 10rem 0;
+        --clean_start--site--width: 100%;
+
+        --clean_start--rem: 10px;
+      }
+
+      .page.responsive.clean_start main {
+        min-width: 93%;
+        max-width: 100%;
+        width: 93%;
+      }
+
+      .page.responsive.clean_start main layout-block.layout_2 {
+        padding: 1.4rem 0.3rem 1.4rem 0.3rem;
+      }
+
+    }
+
+
+    /* portrait, mobile xs til mobile md */
+    /* filters both by by widths and heights */
+    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
+      .page.responsive.clean_start {
+        /* variables for @jaisocx/responsive_sizes helper library */
+        --theme_name: clean_start_tiny__theme_base;
+        --responsive_size: responsive_size__mobile_friendly__d05_e08_very_small_xxs__til__midsize_md_portrait;
+
+        /* styles */
+        --clean_start--site--padding: 1.2rem 0 12rem 0;
+        --clean_start--site--width: 100%;
+
+        --clean_start--rem: 14px;
+      }
+
+      .page.responsive.clean_start main {
+        min-width: 93%;
+        max-width: 100%;
+        width: 93%;
+      }
+
+      .page.responsive.clean_start main layout-block.layout_2 {
+        padding: 1.4rem 0.3rem 1.4rem 0.3rem;
+      }
+
+    }
+
+
+    /* landscape, xxxs height til mobile md */
+    /* filters both by by widths and heights */
+    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
+      .page.responsive.clean_start {
+        /* variables for @jaisocx/responsive_sizes helper library */
+        --theme_name: clean_start_tiny__theme_base;
+        --responsive_size: responsive_size__mobile_friendly__d05_e08_very_small_xxs__til__midsize_md_landscape;
+
+        /* styles */
+        --clean_start--site--padding: 0.3rem 0 10rem 0;
+        --clean_start--site--width: 100%;
+      }
+    }
+/* @finish clean_start_tiny Mobile friendly */
+
+
+  /* portrait, mobile xs til mobile md */
+  /* filters both by by widths and heights */
+  @media only screen and (min-height: 2px) and (max-height: 640px) {
+    .page.responsive.clean_start {
+      /* variables for @jaisocx/responsive_sizes helper library */
+      --theme_name: clean_start_tiny__theme_base;
+      --responsive_size: responsive_size__mobile_friendly__d05_e08_very_small_xxs__til__midsize_md_portrait;
+
+      /* styles */
+      --clean_start--site--padding: 1.2rem 0 5rem 0;
+      --clean_start--site--width: 100%;
+    }
+  }
+
+
+  /* landscape, xxxs height til mobile md */
+  /* filters both by by widths and heights */
+  @media only screen and (min-width: 3000px) and (max-width: 8003px) {
+    .page.responsive.clean_start {
+      /* variables for @jaisocx/responsive_sizes helper library */
+      --theme_name: clean_start_tiny__theme_base;
+      --responsive_size: responsive_size__mobile_friendly__xxl__til__tv8k;
+
+      /* styles */
+      --clean_start--rem: 34px;
+      --clean_start--site--padding: 0.3rem 0 1rem 0;
+      --clean_start--site--width: 100%;
+    }
+
+    .page.responsive.clean_start main {
+      min-width: 50%;
+      max-width: 100%;
+      width: 50%;
+    }
+
+    .page.responsive.clean_start main layout-block.layout_2 {
+      padding: 1.4rem 0.3rem 1.4rem 0.3rem;
+    }
+
+  }
+
+

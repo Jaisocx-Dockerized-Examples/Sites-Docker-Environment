@@ -1,0 +1,81 @@
+[
+
+{"name":"@jaisocx/text","keywords":["string","text","html","email"],"version":"2.2.2","description":"``` npm install @jaisocx/text ```","sanitized_name":"@jaisocx/text","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-06T02:15:55.163Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/text"}}
+
+,
+
+{"name":"@jaisocx/responsive-sizes","keywords":[],"version":"1.3.6","description":"`@jaisocx/responsive-sizes`   > 💡 The package does ...","sanitized_name":"@jaisocx/responsive-sizes","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-18T02:03:22.650Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/responsive-sizes"}}
+
+,
+
+{"name":"@jaisocx/template-renderer","keywords":["template","render"],"version":"1.6.2","description":"`@jaisocx/template-renderer`   > 💡 The package does ...","sanitized_name":"@jaisocx/template-renderer","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-18T03:38:48.654Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/template-renderer"}}
+
+,
+
+{"name":"@jaisocx/css-html","keywords":["string","text","html","email"],"version":"1.3.6","description":"``` npm install @jaisocx/css-html ```","sanitized_name":"@jaisocx/css-html","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-30T23:55:23.714Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-html"}}
+
+,
+
+{"name":"@jaisocx/media_tools_images_mini_mimetypes_base","keywords":["css","styles","themes","images","mini-images"],"version":"1.2.2","description":"`@jaisocx/media_tools_images_mini_mimetypes_base`","sanitized_name":"@jaisocx/media_tools_images_mini_mimetypes_base","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-11T00:05:53.071Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_images_mini_mimetypes_base"}}
+
+,
+
+{"name":"@jaisocx/api","keywords":["api","objdata"],"version":"1.2.3","description":"[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)","sanitized_name":"@jaisocx/api","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-06-02T21:59:11.487Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/api"}}
+
+,
+
+{"name":"@jaisocx/email-html-inliner","keywords":["inline","css","styles","html","email"],"version":"1.3.7","description":"``` npm install @jaisocx/email-html-inliner ```","sanitized_name":"@jaisocx/email-html-inliner","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-06-03T00:36:15.164Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/email-html-inliner"}}
+
+,
+
+{"name":"@jaisocx/event-emitter","keywords":["event","efficiency","improval"],"version":"1.4.3","description":"`@jaisocx/event-emitter`   > 💡 Optimization of adding in-browser interactivity events to rendered styled big data, like tree and table.","sanitized_name":"@jaisocx/event-emitter","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-18T03:36:17.484Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/event-emitter"}}
+
+,
+
+{"name":"@jaisocx/theme-turn-on","keywords":["css","styles"],"version":"1.0.4","description":"`@jaisocx/theme-turn-on`   > 💡 The package does ...","sanitized_name":"@jaisocx/theme-turn-on","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-17T22:45:41.197Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/theme-turn-on"}}
+
+,
+
+{"name":"@jaisocx/objdata","keywords":["JSON","Binary","parse","serialize","object"],"version":"2.1.3","description":"ObjData represents the Objects and array and arrays of objects, where no parsing by bytewise chars comparisons are not used (XML and Json are in all text IDEs readable/writable, and use comaparisons of chars), and the instantiating a JavaScript Object ins","sanitized_name":"@jaisocx/objdata","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-06-02T20:47:59.368Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/objdata"}}
+
+,
+
+{"name":"@jaisocx/media_tools_fonts_orbitron","keywords":["imports","fonts","styles","css"],"version":"1.2.2","description":"The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.","sanitized_name":"@jaisocx/media_tools_fonts_orbitron","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-10T22:41:40.992Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_fonts_orbitron"}}
+
+,
+
+{"name":"@jaisocx/jpath","keywords":["jpath","json","query","filter","search","lookup"],"version":"2.0.5","description":"JPath accepts queries of datatype (string|number)[] and performs lookup in js objects and arrays","sanitized_name":"@jaisocx/jpath","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-05-07T06:25:38.450Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/jpath"}}
+
+,
+
+{"name":"@jaisocx/css-table","keywords":["css","styles"],"version":"3.5.93","description":"Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types","sanitized_name":"@jaisocx/css-table","publisher":{"email":"illia.polianskyi@protonmail.com","actor":{"name":"jaisocx","type":"user","email":"illia.polianskyi@protonmail.com"},"username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-22T04:48:35.002Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-table"}}
+
+,
+
+{"name":"@jaisocx/css-table-ordered","keywords":["table","order_by","css","styles","ui"],"version":"2.4.5","description":"Css sites tool styling a server side rendered database table data to a grid view, with solutions for sticky scroll and order by on columns via browser's js engine","sanitized_name":"@jaisocx/css-table-ordered","publisher":{"actor":{"name":"jaisocx","type":"user","email":"illia.polianskyi@protonmail.com"},"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-22T06:28:22.225Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-table-ordered"}}
+
+,
+
+{"name":"@jaisocx/media_tools_fonts_base","keywords":["imports","fonts","styles","css"],"version":"1.2.2","description":"The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.","sanitized_name":"@jaisocx/media_tools_fonts_base","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-10T22:38:55.138Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_fonts_base"}}
+
+,
+
+{"name":"@jaisocx/css-clean-start-2","keywords":["css","styles"],"version":"1.2.9","description":"Css sites resetting default styles with main.css of few hundereds css code lines, and the very nice infrastructure for responsive sites bugfixing and fine-tuning","sanitized_name":"@jaisocx/css-clean-start-2","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-11T12:06:53.489Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-clean-start-2"}}
+
+,
+
+{"name":"@jaisocx/tree","keywords":["json","tree"],"version":"2.2.22","description":"Sites tool, styling json","sanitized_name":"@jaisocx/tree","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-22T03:49:03.577Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/tree"}}
+
+,
+
+{"name":"@jaisocx/preloader","keywords":[],"version":"2.3.2","description":"fine tuning of look and feel themes turning on.","sanitized_name":"@jaisocx/preloader","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-19T04:11:42.229Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/preloader"}}
+
+,
+
+{"name":"@jaisocx/css-importer","keywords":["css","css import","import resolver","bundler"],"version":"1.4.1","description":"Like the Webpack, builds a bundle of several sources, however just with .css stylesheets, and also very fast, in milliseconds.","sanitized_name":"@jaisocx/css-importer","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-09-27T13:34:09.286Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-importer"}}
+
+,
+
+{"name":"@jaisocx/eslint-plugins","keywords":[],"version":"1.3.2","description":"## eslint.config.js","sanitized_name":"@jaisocx/eslint-plugins","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-07-11T03:41:59.536Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/eslint-plugins"}}
+]
+

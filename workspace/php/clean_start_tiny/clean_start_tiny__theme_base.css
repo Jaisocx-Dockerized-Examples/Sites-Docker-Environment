@@ -1,0 +1,159 @@
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--rem:  16px;
+
+  --clean_start--all_tags--font-family:   var(--clean_start--sans--font-family);
+  --clean_start--all_tags--font-size:     0.95rem;
+  --clean_start--all_tags--line-height:   1.49rem;
+  --clean_start--all_tags--color:         black;
+  --clean_start--all_tags--border-width:  0;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--site--padding:              1.4rem 1.9rem 12rem 1.9rem;
+  --clean_start--site--width:                72%;
+
+  --clean_start--site--background:           #fdfdfd;
+  --clean_start--body_tag--background:       #eefefa;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag h */
+.clean_start {
+  --clean_start--h1--font-size:           1.25rem;
+  --clean_start--h1--line-height:         1.7rem;
+
+  --clean_start--h--font-size:            0.9rem;
+  --clean_start--h--line-height:          1.4rem;
+  --clean_start--h--margin:               1.4rem 0 0.4rem 0;
+  --clean_start--h--color:                black;
+}
+/* @finish base theme for clean_start_tiny html tag h */
+
+
+
+/* @start base theme for clean_start_tiny html tag a */
+.clean_start {
+  --clean_start--anchor--color:           navy;
+  --clean_start--anchor_hover--color:     #2292e5;
+}
+/* @finish base theme for clean_start_tiny html tag a */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--label--display:           inline-block;
+
+  --clean_start--label--font-size:         0.79rem;
+  --clean_start--label--line-height:       var(--clean_start--label--font-size);
+
+  --clean_start--label--padding:           0.14rem 0.5rem 0.14rem 0.5rem;
+  --clean_start--label--margin:            0 0.24rem 0 0;
+
+  --clean_start--label--color:             green;
+  --clean_start--label--background-color:  #d3fafd;
+
+  --clean_start--label--border:            1px solid green;
+  --clean_start--label--border-radius:     0.8rem;
+
+  --clean_start--label--overflow-x:        hidden;
+  --clean_start--label--overflow-y:        hidden;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--p--margin:               1.4rem 0 0 0;
+  --clean_start--p--font-size:            var(--clean_start--all_tags--font-size);
+  --clean_start--p--line-height:          var(--clean_start--all_tags--line-height);
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--pre--font-family:    var(--clean_start--monospace--font-family);
+  --clean_start--pre--font-size:      0.9rem;
+  --clean_start--pre--line-height:    1.2rem;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag ul_li */
+.clean_start {
+  --clean_start--ul_li_i_c--top:            0;
+  --clean_start--ul_li_i_c--left:          -0.5rem;
+
+  --clean_start--ul_li_i--padding:          0 0.44rem 0 0.44rem;
+  --clean_start--i_ul_li_i--padding:        0 0.44rem 0 0.44rem;
+  --clean_start--ul_li_i_tags--padding:     0 0.3rem 0 0;
+  --clean_start--ul_li_i_tags--display:     inline-block;
+
+  --clean_start--ul--margin:                0.3rem 0 0.3rem 0.5rem;
+  --clean_start--i_ul--margin:              0 0 0 3rem;
+
+  --clean_start--ul_li_i--font-size:        var(--clean_start--all_tags--font-size);
+  --clean_start--ul_li_i--line-height:      var(--clean_start--all_tags--line-height);
+
+  --clean_start--ul_li_i_c--font-size:      0.4rem;
+  --clean_start--ul_li_i_c--line-height:    var(--clean_start--ul_li_i--line-height);
+
+  --clean_start--ul_li_i_c--color:          #33ab55;
+
+  /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  --clean_start--ul_li_i_c--content:        '🟢';
+}
+/* @finish base theme for clean_start_tiny html tag ul_li */
+
+
+
+/* @start base theme for clean_start_tiny html tag table */
+.clean_start {
+  --clean_start--table--border:                     0.3px solid green;
+
+  --clean_start--table_th--text-align:              center;
+  --clean_start--table_th--color:                   black;
+  --clean_start--table_th--background-color:        #eefedd;
+
+  --clean_start--table_td--color:                   green;
+  --clean_start--table_td--background-color:        #fdfdfd;
+}
+/* @finish base theme for clean_start_tiny html tag table */
+
+
+
+/* @start base theme for clean_start_tiny html tag having scrollbar */
+.clean_start {
+
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar--size:     0.3rem;
+
+  /* standard styles */
+  /*
+  scrollbar-width: auto;
+  scrollbar-width: thin;
+  scrollbar-width: none;
+  */
+  --clean_start--scrollbar--width:    thin;
+
+  /* scrollbar colors */
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar-thumb--background-color:    lime;
+  --clean_start--scrollbar-track--background-color:    #fafefa;
+  --clean_start--scrollbar--color:                     var(--clean_start--scrollbar-thumb--background-color)  var(--clean_start--scrollbar-track--background-color);
+}
+/* @finish base theme for clean_start_tiny html tag having scrollbar */
+
+

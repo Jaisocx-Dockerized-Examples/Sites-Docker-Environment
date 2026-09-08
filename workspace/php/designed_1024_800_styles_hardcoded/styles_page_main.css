@@ -1,0 +1,143 @@
+
+.page.clean_start layout-block.layout_3 {
+  /* --page_phpinfo--l31--height: 15.625rem; */
+  --page_phpinfo--l3--height: 10.0rem;
+  --page_phpinfo--l31--height: 10.0rem;
+  --page_phpinfo--l32--height: 4.55rem;
+
+  --page_phpinfo--l3--padding: 0 0 0 0;
+  --page_phpinfo--l31--padding: 0 0 0 0;
+  --page_phpinfo--l32--padding: 1.4rem 3.75rem 2.2rem 3.75rem;
+
+  --page_phpinfo--l3--bottom: 0;
+  --page_phpinfo--l32--bottom: 4.9rem;
+
+  --page_phpinfo--l3--text--line-height: 1.45rem;
+  --page_phpinfo--l3--text--font-size: 1.125rem;
+  --page_phpinfo--l3--text--color: #fdfdfd;
+
+  --page_phpinfo--list--symbol: '|';
+  --page_phpinfo--list--text_symbol_distance--left: -0.5rem;
+  --page_phpinfo--list--text_distance_l1--left: 0.5rem;
+  --page_phpinfo--list--text_distance_ln--left: 2rem;
+  --page_phpinfo--list--text_distance--left: -0.5rem;
+
+  --page_phpinfo--list--color: var(--page_phpinfo--l3--text--color);
+  --page_phpinfo--list--font-size: var(--page_phpinfo--l3--text--font-size);
+  --page_phpinfo--list--line-height: var(--page_phpinfo--l3--text--line-height);
+
+  --clean_start--all_tags--color: var(--page_phpinfo--l3--text--color);
+}
+
+.page.clean_start ul.inline.slash.powered-by {
+  --clean_start--ul_li_i_c--top:            0;
+  --clean_start--ul_li_i_c--left:          -0.5rem;
+
+  --clean_start--ul_li_i--padding:          0 0.5rem 0 0.5rem;
+  --clean_start--i_ul_li_i--padding:        0 0.5rem 0 0.5rem;
+  --clean_start--ul_li_i_tags--padding:     0 0.3rem 0 0;
+  --clean_start--ul_li_i_tags--display:     inline-block;
+
+  --clean_start--ul--margin:                0 0 0 0.5rem;
+  --clean_start--i_ul--margin:              0.3rem 0 0.3rem 1rem;
+
+  --clean_start--ul_li_i--font-size:        var(--page_phpinfo--l3--text--font-size);
+  --clean_start--ul_li_i--line-height:      var(--page_phpinfo--l3--text--line-height);
+
+  --clean_start--ul_li_i_c--font-size:      var(--page_phpinfo--l3--text--font-size);
+  --clean_start--ul_li_i_c--line-height:    var(--page_phpinfo--l3--text--line-height);
+
+  --clean_start--ul_li_i_c--color:          var(--page_phpinfo--l3--text--color);
+  --clean_start--ul_li_i_c--content:        '|';
+}
+
+.page.clean_start layout-block.layout_3 {
+  display: block;
+
+  min-height: unset;
+  max-height: var(--page_phpinfo--l3--height);
+  height:     var(--page_phpinfo--l3--height);
+
+  padding: var(--page_phpinfo--l3--padding);
+
+  width: 100%;
+
+  background: var(--clean_start--site--background);
+  background-color: var(--clean_start--site--background);
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.page.clean_start layout-block.layout_3 layout-block.l31 {
+  display: block;
+
+  min-width: 100%;
+  width: auto;
+  max-width: unset;
+
+  min-height: var(--page_phpinfo--l31--height);
+  max-height: var(--page_phpinfo--l31--height);
+  height: var(--page_phpinfo--l31--height);
+
+  padding: 0 0 0 0;
+
+  background: var(--clean_start--site--background);
+  background-color: var(--clean_start--site--background);
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.page.clean_start layout-block.layout_3 layout-block.l31 img,
+.page.clean_start layout-block.layout_3 layout-block.l31 picture,
+.page.clean_start layout-block.layout_3 layout-block.l31 picture img {
+  display: block;
+
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+
+  min-width: 100%;
+  width:  100%;
+  max-width: 100%;
+
+  padding: 0 0 0 0;
+
+  background: var(--clean_start--site--background);
+  background-color: var(--clean_start--site--background);
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.page.clean_start layout-block.layout_3 layout-block.l32 {
+  display: block;
+
+  min-height: var(--page_phpinfo--l32--height);
+  max-height: var(--page_phpinfo--l32--height);
+  height: var(--page_phpinfo--l32--height);
+
+  padding: var(--page_phpinfo--l32--padding);
+
+  width: 100%;
+
+  bottom: var(--page_phpinfo--l32--bottom);
+
+  background-color: #83a67c;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.page.clean_start layout-block.layout_3 layout-block.l32 ul.inline.slash {
+  min-height: var(--page_phpinfo--l3--text--line-height);
+  max-height: var(--page_phpinfo--l3--text--line-height);
+  height: var(--page_phpinfo--l3--text--line-height);
+  line-height: var(--page_phpinfo--l3--text--line-height);
+
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+

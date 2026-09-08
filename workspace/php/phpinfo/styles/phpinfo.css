@@ -1,0 +1,75 @@
+
+.phpinfo.clean_start .v {font-family: var(--clean_start--monospace--font-family);}
+
+
+.phpinfo.clean_start .center {text-align: center;}
+.phpinfo.clean_start .center table {margin: 1em auto; text-align: left;}
+.phpinfo.clean_start .center th {text-align: center !important;}
+
+
+.phpinfo.clean_start .e {font-weight: bold;}
+.phpinfo.clean_start .h {font-weight: bold;}
+.phpinfo.clean_start .v i {color: #999;}
+.phpinfo.clean_start img {float: right; border: 0;}
+.phpinfo.clean_start hr {width: 300px; background-color: #ccc; border: 0; height: 1px;}
+
+
+.phpinfo.browsercolors.clean_start { --php-dark-grey: #333; --php-dark-blue: #4F5B93; --php-medium-blue: #8892BF; --php-light-blue: #E2E4EF; --php-accent-purple: #793862}@media (prefers-color-scheme: dark) {
+  .phpinfo.browsercolors.clean_start {
+      --clean_start--body_tag--background: #0e0e0e;
+      --clean_start--site--background: #040404;
+      --clean_start--all_tags--color: var(--php-dark-grey);
+
+      --clean_start--anchor--color: #009;
+      --clean_start--anchor_hover--color: #009;
+
+      --clean_start--table_th--color:                   #fdfdfd;
+      --clean_start--table_th--background-color:        var(--php-dark-blue);
+      --clean_start--table_th--border:                  1px solid white;
+
+      --clean_start--table_td--color:                   var(--php-medium-blue);
+      --clean_start--table_td--background-color:        var(--php-dark-blue);
+      --clean_start--table_td--border:                  1px solid white;
+  }
+
+   .phpinfo.browsercolors.clean_start .h td,
+   .phpinfo.browsercolors.clean_start table td.e,
+   .phpinfo.browsercolors.clean_start th {border-color: #606A90}
+   .phpinfo.browsercolors.clean_start table td {border-color: #505153}
+
+   .phpinfo.browsercolors.clean_start .e {background-color: #404A77; color: var(--php-dark-blue);}
+   .phpinfo.browsercolors.clean_start .h {background-color: var(--php-light-blue); color: #050505;}
+   .phpinfo.browsercolors.clean_start .v {background-color: #050505}
+   .phpinfo.browsercolors.clean_start hr {background-color: #505153}
+
+}@media (prefers-color-scheme: light) {
+
+   .phpinfo.browsercolors.clean_start {
+      --clean_start--body_tag--background: var(--php-medium-blue);
+      --clean_start--site--background: var(--php-light-blue);
+      --clean_start--all_tags--color: #1a1a1a;
+
+      --clean_start--anchor--color: #009;
+      --clean_start--anchor_hover--color: #009;
+
+      --clean_start--table_th--color:                   #fdfdfd;
+      --clean_start--table_th--background-color:        var(--php-medium-blue);
+      --clean_start--table_th--border:                  1px solid white;
+
+      --clean_start--table_td--color:                   var(--php-dark-grey);
+      --clean_start--table_td--background-color:        var(--php-light-blue);
+      --clean_start--table_td--border:                  1px solid white;
+   }
+
+   .phpinfo.browsercolors.clean_start .h td,
+   .phpinfo.browsercolors.clean_start table td.e,
+   .phpinfo.browsercolors.clean_start th {border-color: #606A90}
+   .phpinfo.browsercolors.clean_start table td {border-color: #505153}
+
+   .phpinfo.browsercolors.clean_start .e {background-color: var(--php-dark-blue); color: var(--php-medium-blue);}
+   .phpinfo.browsercolors.clean_start .h {background-color: var(--php-medium-blue); color: #fdfdfd;}
+   .phpinfo.browsercolors.clean_start .v {background-color: #fdfdfd; color: #1a1a1a;}
+   .phpinfo.browsercolors.clean_start hr {background-color: #505153}
+ }
+
+

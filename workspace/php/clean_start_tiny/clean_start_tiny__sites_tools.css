@@ -1,0 +1,212 @@
+
+/* @start sites_tool base theme for clean_start_tiny sites_tool for html tag Label */
+.clean_start ul li label,
+.clean_start ul li i label,
+.clean_start p label {
+.clean_start layout-block text-block label,
+.clean_start layout-block text-line label {
+  --clean_start--label--display:            inline-block;
+
+  --clean_start--label--font-size:          0.72rem;
+  --clean_start--label--line-height:        var(--clean_start--label--font-size);
+
+  --clean_start--label--padding:            0.12rem 0.3rem 0.12rem 0.3rem;
+
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  --clean_start--label--margin:             0 0.24rem 0 0;
+
+  --clean_start--label--color:              green;
+  --clean_start--label--background-color:   #eefdfa;
+
+  --clean_start--label--border:             1px solid lime;
+  --clean_start--label--border-radius:      0.5rem;
+
+  --clean_start--label--overflow-x:   hidden;
+  --clean_start--label--overflow-y:   hidden;
+}
+/* @finish sites_tool base theme for clean_start_tiny sites_tool for html tag Label */
+
+
+
+/* @start clean_start_tiny sites_tool for html tag Label */
+.clean_start ul li label,
+.clean_start ul li i label,
+.clean_start p label {
+  font-size:           var(--clean_start--label--font-size, 0.72rem);
+  line-height:         var(--clean_start--label--font-size);
+
+  padding:             var(--clean_start--label--padding, 0.12rem 0.4rem 0.12rem 0.4rem);
+  margin:              var(--clean_start--label--margin, 0 0.24rem 0 0);
+
+  color:               var(--clean_start--label--color, darkgreen);
+  background-color:    var(--clean_start--label--background-color, #eafdfa);
+
+  border:              var(--clean_start--label--border, 1px solid lime);
+  border-radius:       var(--clean_start--label--border-radius, 0.4rem);
+
+  overflow-x:          var(--clean_start--label--overflow-x, hidden);
+  overflow-y:          var(--clean_start--label--overflow-y, hidden);
+}
+
+.clean_start ul li label,
+.clean_start ul li i label {
+  max-height:          var(--clean_start--ul_li_i--line-height, 1.2rem);
+}
+
+.clean_start p label {
+  max-height:          var(--clean_start--p--line-height, 1.2rem);
+}
+/* @finish clean_start_tiny sites_tool for html tag Label */
+
+
+
+/* @start clean_start_tiny sites_tool having scrollbars */
+.clean_start .scrolls {
+  height: 10rem;
+
+  min-width: unset;
+  max-width: 100%;
+  width: 30rem;
+
+  padding: 0 1rem 1rem 1rem;
+  border: 1px solid lime;
+  background-color: #fdfdfd;
+
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.clean_start .scrolls layout-block,
+.clean_start .scrolls text-lines-block {
+  height: auto;
+
+  min-width:  45rem;
+  max-width:  45rem;
+  width:  45rem;
+
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+/* @finish clean_start_tiny sites_tool having scrollbars */
+
+
+
+/* @start base theme for clean_start_tiny sites_tool table */
+.clean_start {
+  --clean_start--table--border:                     0.5px solid green;
+
+  --clean_start--table_caption--text-align:         left;
+  --clean_start--table_caption--color:              #333;
+  --clean_start--table_caption--background-color:   #fdfdfd;
+  --clean_start--table_caption--border:             0.5px solid green;
+
+  --clean_start--table_th--text-align:              center;
+  --clean_start--table_th--color:                   black;
+  --clean_start--table_th--background-color:        #eefedd;
+
+  --clean_start--table_td--color:                   green;
+  --clean_start--table_td--background-color:        #fdfdfd;
+
+  --clean_start--table_td_odd--color:               #553322;
+  --clean_start--table_td_odd--background-color:    #fafaf2;
+
+  --clean_start--table_td_even--color:              darkgreen;
+  --clean_start--table_td_even--background-color:   #f2faf2;
+
+  --clean_start--table_tfoot--color:                black;
+  --clean_start--table_tfoot--background-color:     #fdfdfd;
+}
+/* @finish base theme for clean_start_tiny sites_tool table */
+
+
+
+/* @start clean_start_tiny sites_tool table */
+.clean_start table {
+  display: table;
+  border: var(--clean_start--table--border);
+}
+
+.clean_start table caption {
+  display: 	table-caption;
+  overflow-x: hidden;
+  text-align: var(--clean_start--table_caption--text-align);
+
+  border: var(--clean_start--table_caption--border);
+  color: var(--clean_start--table_caption--color);
+  background-color: var(--clean_start--table_caption--background-color);
+}
+
+.clean_start colgroup {
+  display: table-column-group;
+}
+
+.clean_start col {
+  display: table-column;
+}
+
+.clean_start thead {
+  display: table-header-group;
+}
+
+.clean_start th {
+  display: table-cell;
+  text-align: var(--clean_start--table_th--text-align);
+}
+
+.clean_start thead tr,
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  color: var(--clean_start--table_th--color);
+  background-color: var(--clean_start--table_th--background-color);
+}
+
+.clean_start tbody {
+  display: table-row-group;
+}
+
+.clean_start tr {
+  display: table-row;
+}
+
+.clean_start td {
+  display: table-cell;
+  text-align: left;
+}
+
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  font-weight: 600;
+}
+
+.clean_start table td {
+  color: var(--clean_start--table_td--color);
+  background-color: var(--clean_start--table_td--background-color);
+}
+
+.clean_start table tr:nth-of-type(2n + 1) td {
+  color: var(--clean_start--table_td_odd--color);
+  background-color: var(--clean_start--table_td_odd--background-color);
+}
+
+.clean_start table tr:nth-of-type(2n + 2) td {
+  color: var(--clean_start--table_td_even--color);
+  background-color: var(--clean_start--table_td_even--background-color);
+}
+
+.clean_start tfoot {
+  display: table-footer-group;
+}
+
+.clean_start tfoot td {
+  font-weight: 600;
+}
+
+.clean_start tfoot tr:nth-of-type(2n + 1) td {
+  color: var(--clean_start--table_tfoot--color);
+  background-color: var(--clean_start--table_tfoot--background-color);
+}
+/* @finish clean_start_tiny sites_tool table */
+
+
