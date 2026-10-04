@@ -188,7 +188,7 @@
       "path": "libraries/base_packs/FileWriter",
       "name": "file-writer",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -202,12 +202,16 @@
       "path": "libraries/base_packs/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
           "name": "@jaisocx/file-writer",
           "path": "libraries/base_packs/FileWriter"
+        },
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/tokens-parser",
@@ -860,12 +864,24 @@
       ]
     },
     {
-      "path": "console/JsInvoke",
-      "name": "console-js-invoke",
+      "path": "libraries/console/JsInvoke",
+      "name": "jsc_console_js_invoke",
       "update-published": "Sat Mar  7 22:11:15 UTC 2026",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/tokens-parser",
+          "path": "libraries/base_packs/TokensParser"
+        },
+        {
+          "name": "@jaisocx/file-writer",
+          "path": "libraries/base_packs/FileWriter"
+        },
         {
           "name": "@jaisocx/command-line",
           "path": "libraries/base_packs/CommandLine"

@@ -58,7 +58,7 @@ const packagesPath = path.resolve(commandArgs.ProjectRoot, commandArgs.PackagesP
 if (false === fs.existsSync(packagesPath)) {
     throw new Error(`modulesPath not available at path: ${packagesPath}`);
 }
-const cssCleanStartPath = path.resolve(commandArgs.ProjectRoot, "Jaisocx_SitesTools/libraries/sites_tools/js_tools/CssTableOrdered");
+const cssCleanStartPath = path.resolve(commandArgs.ProjectRoot, "ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/js_tools/CssTableOrdered");
 if (false === fs.existsSync(cssCleanStartPath)) {
     throw new Error(`cssCleanStartPath not available at path: ${cssCleanStartPath}`);
 }

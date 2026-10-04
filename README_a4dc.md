@@ -59,13 +59,13 @@
 
   > `start, stop, restart, status, restartus))`
 
-![workspace/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg](./workspace/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg)
+![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg)
 
-![workspace/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg](./workspace/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg)
+![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg)
 
-![workspace/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg](./workspace/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg)
+![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg)
 
-![workspace/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg](./workspace/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg)
+![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg)
 
 ---
 

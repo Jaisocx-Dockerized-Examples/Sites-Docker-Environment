@@ -1,0 +1,47 @@
+    /* microsoft_windows_clean_start_os_installed_fonts */
+    /* Tests */
+
+    .microsoft.jaisocx.clean_start .theme_fonts_a .font_sans {
+      font-family: Tahoma;
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_a .font_serif {
+      font-family: "Times New Roman";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_a .font_monospace {
+      font-family: "Courier New";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_a .font_written {
+      font-family: "";
+    }
+
+
+
+    .microsoft.jaisocx.clean_start .theme_fonts_b .font_sans {
+      font-family: Verdana;
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_b .font_serif {
+      font-family: "Times New Roman";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_b .font_monospace {
+      font-family: "Courier New";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_b .font_written {
+      font-family: "";
+    }
+
+
+
+    .microsoft.jaisocx.clean_start .theme_fonts_c .font_sans {
+      font-family: Arial;
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_c .font_serif {
+      font-family: "Times New Roman";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_c .font_monospace {
+      font-family: "Courier New";
+    }
+    .microsoft.jaisocx.clean_start .theme_fonts_c .font_written {
+      font-family: "";
+    }
+
+

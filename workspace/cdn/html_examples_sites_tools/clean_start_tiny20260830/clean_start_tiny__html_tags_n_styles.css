@@ -1,0 +1,847 @@
+
+/* @start clean_start_tiny for all html tags */
+.clean_start * {
+
+  position:        var(--clean_start--all_tags--position, relative);
+  display:         var(--clean_start--all_tags--display, inline-block);
+  box-sizing:      var(--clean_start--all_tags--box-sizing, border-box);
+
+  padding:         var(--clean_start--all_tags--padding, 0 0 0 0);
+  margin:          var(--clean_start--all_tags--margin, 0 0 0 0);
+
+  font-family:     var(--clean_start--all_tags--font-family, Arial);
+  font-size:       var(--clean_start--all_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--all_tags--line-height, 1.2rem);
+
+  letter-spacing:  var(--clean_start--all_tags--letter-spacing, 0);
+  line-break:      var(--clean_start--all_tags--line-break, strict);
+  word-wrap:       var(--clean_start--all_tags--word-wrap, normal);
+  word-break:      var(--clean_start--all_tags--word-break, normal);
+  color:           var(--clean_start--all_tags--color, black);
+
+  border-color:    var(--clean_start--all_tags--border-color, lime);
+  border-style:    var(--clean_start--all_tags--border-style, solid);
+  border-width:    var(--clean_start--all_tags--border-width, 0);
+
+  min-height:      var(--clean_start--all_tags--min-height, 0);
+  max-height:      var(--clean_start--all_tags--max-height, unset);
+  height:          var(--clean_start--all_tags--height, auto);
+
+  min-width:       var(--clean_start--all_tags--min-width, 0);
+  max-width:       var(--clean_start--all_tags--max-width, 100%);
+  width:           var(--clean_start--all_tags--width, auto);
+
+  overflow-x:      var(--clean_start--all_tags--overflow-x, visible);
+  overflow-y:      var(--clean_start--all_tags--overflow-y, visible);
+}
+/* @finish clean_start_tiny for all html tags */
+
+
+
+/* @start clean_start_tiny main html tags */
+/* this style sets rem size for the html page. 1rem = 16px */
+html.clean_start {
+  font-size:      var(--clean_start--rem, 16px);
+}
+
+
+
+html.clean_start {
+  position: static;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+
+  width:        100%;
+  max-width:    100%;
+  min-width:    100%;
+
+  overflow-x:   hidden;
+}
+
+/* these html elems are invisible */
+.clean_start head,
+.clean_start head *,
+.clean_start style,
+.clean_start script {
+  min-height: unset;
+  max-height: 0;
+  height: 0;
+  min-width:  unset;
+  max-width:  0;
+  width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  visibility: hidden;
+  display: block;
+}
+
+.clean_start body {
+  position: relative;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      block;
+  box-sizing:   border-box;
+
+  font-size:    var(--clean_start--all_tags--font-size, 0.9rem);
+
+  min-height:   100vh;
+  max-height:   unset;
+  height:       auto;
+
+  min-width:    100%;
+  max-width:    100%;
+  width:        100%;
+
+  background:   var(--clean_start--body_tag--background, #eefdf4);
+
+  overflow-x:   hidden;
+  overflow-y:   auto;
+}
+
+.clean_start main {
+  padding:      var(--clean_start--site--padding, 0 0 0 0);
+  margin:       0 auto 0 auto;
+
+  font-size:    var(--clean_start--all_tags--font-size, 0.9rem);
+
+  min-height:   100vh;
+  max-height:   unset;
+  height:       auto;
+
+  min-width:    var(--clean_start--site--width, 100%);
+  max-width:    100%;
+  width:        var(--clean_start--site--width, 100%);
+
+  background:   var(--clean_start--site--background, #fdfdfd);
+
+  overflow-x:   hidden;
+  overflow-y:   visible;
+}
+/* @finish clean_start_tiny main html tags */
+
+
+
+/* @start clean_start_tiny display style for all html tags */
+html.clean_start {
+  display:      block;
+}
+
+.clean_start * {
+  display:      inline-block;
+}
+
+.clean_start body {
+  display:      block;
+}
+
+.clean_start main {
+  display:      block;
+}
+
+
+
+/* block tags reset, the Jaisocx tags proposed */
+.clean_start block,
+.clean_start text-lines-block {
+  display: block;
+}
+
+/* block tags reset, the tags normally in html */
+.clean_start canvas,
+.clean_start fieldset,
+.clean_start nav,
+.clean_start ol,
+.clean_start ul,
+.clean_start aside,
+.clean_start p,
+.clean_start pre,
+.clean_start div,
+.clean_start video {
+  display: block;
+}
+/* @finish clean_start_tiny display style for all html tags */
+
+
+
+/* @start clean_start_tiny scrollbar styles for all html tags */
+.clean_start {
+  --clean_start--scrollbar--color: var(--clean_start--scrollbar-thumb--background-color, lime)  var(--clean_start--scrollbar-track--background-color, #eafdfa);
+}
+
+@supports selector(::-webkit-scrollbar) {
+
+  .clean_start::-webkit-scrollbar,
+  .clean_start *::-webkit-scrollbar {
+    width:  var(--clean_start--scrollbar--size, 0.3rem);
+    height: var(--clean_start--scrollbar--size, 0.3rem);
+  }
+
+  .clean_start::-webkit-scrollbar-thumb,
+  .clean_start *::-webkit-scrollbar-thumb {
+    background-color: var(--clean_start--scrollbar-thumb--background-color, lime);
+  }
+
+  .clean_start::-webkit-scrollbar-track,
+  .clean_start *::-webkit-scrollbar-track {
+    background-color: var(--clean_start--scrollbar-track--background-color, #eafdfa);
+  }
+}
+
+@supports (scrollbar-color: auto) {
+  .clean_start,
+  .clean_start * {
+    scrollbar-width: var(--clean_start--scrollbar--width, thin);
+  }
+
+  .clean_start,
+  .clean_start * {
+    scrollbar-color: var(--clean_start--scrollbar--color);
+  }
+
+}
+/* @finish clean_start_tiny scrollbar styles for all html tags */
+
+
+
+/* @start clean_start_tiny html tag h1 til h6 */
+.clean_start h1, .clean_start h2, .clean_start h3,
+ .clean_start h4, .clean_start h5, .clean_start h6 {
+  display:       var(--clean_start--h--display, block);
+  padding:       var(--clean_start--h--padding, 0 0 0 0);
+  margin:        var(--clean_start--h--margin, 0 0 0 0);
+
+  font-weight:   var(--clean_start--h--font-weight, 600);
+  color:         var(--clean_start--h--color, black);
+  background:    var(--clean_start--h--background, #fdfdfd);
+}
+
+.clean_start h1 {
+  text-align:    var(--clean_start--h1--text-align, center);
+
+  font-size:     var(--clean_start--h1--font-size, 1.9rem);
+  line-height:   var(--clean_start--h1--line-height, 2.3rem);
+
+  color:         var(--clean_start--h1--color, black);
+  background:    var(--clean_start--h1--background, #fdfdfd);
+}
+
+.clean_start h2, .clean_start h3,
+ .clean_start h4, .clean_start h5, .clean_start h6 {
+  text-align:    var(--clean_start--h--text-align, left);
+
+  font-size:     var(--clean_start--h--font-size, 1.09rem);
+  line-height:   var(--clean_start--h--line-height, 1.4rem);
+}
+/* @finish clean_start_tiny html tag h1 til h6 */
+
+
+
+/* @start clean_start_tiny html tag a */
+/* Hyperlink html tag <a> (anchor) */
+.clean_start a,
+.clean_start a:active,
+.clean_start a:visited {
+  color:             var(--clean_start--anchor--color, navy);
+  text-decoration:   var(--clean_start--anchor--text-decoration, none);
+}
+
+.clean_start a:hover,
+.clean_start a:active:hover,
+.clean_start a:visited:hover {
+  color:             var(--clean_start--anchor_hover--color, #2255ab);
+  text-decoration:   var(--clean_start--anchor_hover--text-decoration, underline);
+}
+/* @finish clean_start_tiny html tag a */
+
+
+
+/* @start clean_start_tiny html tag Label */
+.clean_start label {
+  display:             var(--clean_start--label--display, inline-block);
+
+  min-height:          var(--clean_start--label--min-height, unset);
+  max-height:          var(--clean_start--label--max-height, 100%);
+  height:              var(--clean_start--label--height, auto);
+
+  min-width:           var(--clean_start--label--min-width, unset);
+  max-width:           var(--clean_start--label--max-width, 100%);
+  width:               var(--clean_start--label--width, auto);
+
+  font-size:           var(--clean_start--label--font-size, 0.9rem);
+  line-height:         var(--clean_start--label--line-height, 1.2rem);
+
+  padding:             var(--clean_start--label--padding, 0 0 0 0);
+  margin:              var(--clean_start--label--margin, 0 0 0 0);
+
+  color:               var(--clean_start--label--color, black);
+  background:          var(--clean_start--label--background, #fdfdfd);
+
+  border:              var(--clean_start--label--border, 0 solid #ddd);
+  border-radius:       var(--clean_start--label--border-radius, 0);
+
+  overflow-x:          var(--clean_start--label--overflow-x, hidden);
+  overflow-y:          var(--clean_start--label--overflow-y, hidden);
+}
+/* @finish clean_start_tiny html tag Label */
+
+
+
+/* @start clean_start_tiny for all html tags */
+.clean_start marker {
+
+  position:        var(--clean_start--marker--position, relative);
+  display:         var(--clean_start--marker--display, inline-block);
+
+  padding:         var(--clean_start--marker--margin, 0 0 0 0);
+  margin:          var(--clean_start--marker--margin, 0 0 0 0);
+
+  font-family:     var(--clean_start--marker--font-family, Arial);
+  font-size:       var(--clean_start--marker--font-size, 0.9rem);
+  line-height:     var(--clean_start--marker--line-height, 0.9rem);
+
+  letter-spacing:  var(--clean_start--marker--letter-spacing, 0);
+  color:           var(--clean_start--marker--color, green);
+
+  border-color:    var(--clean_start--marker--border-color, #99fd55);
+  border-style:    var(--clean_start--marker--border-style, solid);
+  border-width:    var(--clean_start--marker--border-width, 1px);
+
+  background:      var(--clean_start--marker--color, #effdea);
+
+  min-height:      var(--clean_start--marker--min-height, 0.9rem);
+  max-height:      var(--clean_start--marker--max-height, 0.9rem);
+  height:          var(--clean_start--marker--height, 0.9rem);
+
+  min-width:       var(--clean_start--marker--min-width, 0);
+  max-width:       var(--clean_start--marker--max-width, 100%);
+  width:           var(--clean_start--marker--width, auto);
+
+  overflow-x:      var(--clean_start--marker--overflow-x, visible);
+  overflow-y:      var(--clean_start--marker--overflow-y, visible);
+}
+/* @finish clean_start_tiny for all html tags */
+
+
+
+/* @start clean_start_tiny html tag ol_li */
+.clean_start ol {
+  counter-reset:       cnt 0;
+}
+
+.clean_start ol li {
+  counter-increment:   cnt 1;
+}
+
+.clean_start ol li::after {
+  content:             counter(cnt, decimal);
+}
+
+
+
+.clean_start ol {
+  padding:         var(--clean_start--ol--padding, 0 0 0 0);
+  display:         var(--clean_start--ol--display, block);
+  margin:          var(--clean_start--ol--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--ol--line-height, 0.9rem);
+  font-size:       var(--clean_start--ol--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--ol--min-height, 0);
+  max-height:      var(--clean_start--ol--max-height, unset);
+  height:          var(--clean_start--ol--height, auto);
+
+  overflow-x:      var(--clean_start--ol--overflow-x, visible);
+  overflow-y:      var(--clean_start--ol--overflow-y, visible);
+}
+
+.clean_start ol li {
+  padding:         var(--clean_start--ol_li--padding, 0 0 0 0);
+  display:         var(--clean_start--ol_li--display, block);
+  margin:          var(--clean_start--ol_li--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--ol_li--line-height, 1.2rem);
+  font-size:       var(--clean_start--ol_li--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--ol_li--min-height, 0);
+  max-height:      var(--clean_start--ol_li--max-height, unset);
+  height:          var(--clean_start--ol_li--height, auto);
+
+  overflow-x:      var(--clean_start--ol_li--overflow-x, visible);
+  overflow-y:      var(--clean_start--ol_li--overflow-y, visible);
+}
+
+.clean_start ol li * {
+  padding:         var(--clean_start--ol_li_tags--padding, 0 0 0 0);
+  display:         var(--clean_start--ol_li_tags--display, block);
+  margin:          var(--clean_start--ol_li_tags--margin, 0 0 0 0);
+
+  font-size:       var(--clean_start--ol_li_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--ol_li_tags--line-height, 0.9rem);
+
+  min-height:      var(--clean_start--ol_li_tags--min-height, 0);
+  max-height:      var(--clean_start--ol_li_tags--max-height, 0.9rem);
+  height:          var(--clean_start--ol_li_tags--height, 0.9);
+
+  overflow-x:      var(--clean_start--ol_li_tags--overflow-x, visible);
+  overflow-y:      var(--clean_start--ol_li_tags--overflow-y, visible);
+}
+
+
+
+/* overrides wildcard styles before */
+.clean_start ol li ol {
+  padding:         var(--clean_start--li_ol--padding, 0 0 0 0);
+  display:         var(--clean_start--li_ol--display, block);
+  margin:          var(--clean_start--li_ol--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--li_ol--line-height, 0.9rem);
+  font-size:       var(--clean_start--li_ol--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--li_ol--min-height, 0);
+  max-height:      var(--clean_start--li_ol--max-height, 0.9rem);
+  height:          var(--clean_start--li_ol--height, auto);
+
+  overflow-x:      var(--clean_start--li_ol--overflow-x, visible);
+  overflow-y:      var(--clean_start--li_ol--overflow-y, visible);
+}
+
+.clean_start li ol li {
+  padding:         var(--clean_start--li_ol_li--padding, 0 0 0 0);
+  display:         var(--clean_start--li_ol_li--display, block);
+  margin:          var(--clean_start--li_ol_li--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--li_ol_li--line-height, 1.2rem);
+  font-size:       var(--clean_start--li_ol_li--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--li_ol_li--min-height, 0);
+  max-height:      var(--clean_start--li_ol_li--max-height, unset);
+  height:          var(--clean_start--li_ol_li--height, auto);
+
+  overflow-x:      var(--clean_start--li_ol_li--overflow-x, visible);
+  overflow-y:      var(--clean_start--li_ol_li--overflow-y, visible);
+}
+
+
+
+.clean_start ol {
+  list-style-type:     none;
+}
+
+.clean_start ol li::after {
+  position:      var(--clean_start--ol_li_c--position, absolute);
+  display:       var(--clean_start--ol_li_c--display, block);
+
+  top:           var(--clean_start--ol_li_c--top, 0);
+  left:          var(--clean_start--ol_li_c--left, 0);
+
+  height:        var(--clean_start--ol_li_c--height, 1.2rem);
+  line-height:   var(--clean_start--ol_li_c--line-height, 1.2rem);
+  font-size:     var(--clean_start--ol_li_c--font-size, 0.9rem);
+
+  min-height:    var(--clean_start--ol_li_c--min-height, 0);
+  max-height:    var(--clean_start--ol_li_c--max-height, 1.2rem);
+  height:        var(--clean_start--ol_li_c--height, 1.2rem);
+
+  color:         var(--clean_start--ol_li_c--color, black);
+  background:    var(--clean_start--ol_li_c--background, #fdfdfd);
+  border:        var(--clean_start--ol_li_c--border, 0 solid #ddd);
+
+  overflow-x:    var(--clean_start--ol_li_c--overflow-x, hidden);
+  overflow-y:    var(--clean_start--ol_li_c--overflow-y, hidden);
+}
+
+
+
+/* inline */
+.clean_start ol.inline li {
+  display:          inline-block;
+}
+
+.clean_start ol.inline li * {
+  display:          inline-block;
+}
+/* @finish clean_start_tiny html tag ol_li */
+
+
+
+/* @start clean_start_tiny html tag p */
+/* Paragraph html tag <p> */
+.clean_start p {
+  line-height:     var(--clean_start--p--line-height, 1.2rem);
+  font-size:       var(--clean_start--p--font-size, 0.9rem);
+  margin:          var(--clean_start--p--margin, 0 0 0 0);
+}
+
+.clean_start p:first-of-type {
+  margin:          var(--clean_start--p_first--margin, 0 0 0 0);
+}
+
+.clean_start p *,
+.clean_start layout-block p * {
+  padding:         var(--clean_start--p_tags--padding, 0 0 0 0);
+  margin:          var(--clean_start--p_tags--margin, 0 0 0 0);
+
+  font-size:       var(--clean_start--p_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--p_tags--line-height, 0.9rem);
+
+  min-height:      var(--clean_start--p_tags--min-height, 0);
+  max-height:      var(--clean_start--p_tags--max-height, 0.9rem);
+  height:          var(--clean_start--p_tags--height, 0.9rem);
+
+  overflow-x:      var(--clean_start--p_tags--overflow-x, visible);
+  overflow-y:      var(--clean_start--p_tags--overflow-y, hidden);
+}
+/* @finish clean_start_tiny html tag p */
+
+
+
+/* @start clean_start_tiny html tag pre */
+/* new lines and spaces are rendered like typed <pre> */
+.clean_start pre {
+  font-family:    var(--clean_start--pre--font-family, Courier);
+}
+
+.clean_start pre {
+  font-size:      var(--clean_start--pre--font-size, 0.9rem);
+  line-height:    var(--clean_start--pre--line-height, 1.2rem);
+}
+
+.clean_start pre * {
+  font-size:      var(--clean_start--pre_tags--font-size, 0.9rem);
+  line-height:    var(--clean_start--pre_tags--line-height, 0.9rem);
+}
+/* @finish clean_start_tiny html tag pre */
+
+
+
+/* @start clean_start_tiny html tag table */
+.clean_start * table {
+  display:           table;
+}
+
+.clean_start table caption {
+  display: 	         table-caption;
+}
+
+.clean_start table colgroup {
+  display:           table-column-group;
+}
+
+.clean_start table col {
+  display:           table-column;
+}
+
+.clean_start table thead {
+  display:           table-header-group;
+}
+
+.clean_start table th {
+  display:           table-cell;
+}
+
+.clean_start table tbody {
+  display:           table-row-group;
+}
+
+.clean_start table tr {
+  display:           table-row;
+}
+
+.clean_start table td {
+  display:           table-cell;
+}
+
+
+
+.clean_start * table {
+  border:            var(--clean_start--table--border, 0 solid #fdfd40);
+  border-collapse:   var(--clean_start--table--border-collapse, collapse);
+  overflow-x:        var(--clean_start--table--overflow-x, hidden);
+  overflow-y:        var(--clean_start--table--overflow-y, hidden);
+  min-width:         var(--clean_start--table--min-width, unset);
+  max-width:         var(--clean_start--table--max-width, 100%);
+  width:             var(--clean_start--table--width, auto);
+}
+
+.clean_start table caption {
+  padding:           var(--clean_start--table_caption--padding, 0 0 0 0);
+  margin:            var(--clean_start--table_caption--margin, 0 0 0 0);
+
+  text-align:        var(--clean_start--table_caption--text-align, left);
+  font-size:         var(--clean_start--table_caption--font-size, 0.9rem);
+  line-height:       var(--clean_start--table_caption--line-height, 1.2rem);
+  font-weight:       var(--clean_start--table_caption--font-weight, 600);
+
+  border:            var(--clean_start--table_caption--border, 0 solid lime);
+  color:             var(--clean_start--table_caption--color, black);
+  background:        var(--clean_start--table_caption--background, #fdfdfd);
+
+  overflow-x:        var(--clean_start--table_caption--overflow-x, hidden);
+  overflow-y:        var(--clean_start--table_caption--overflow-y, hidden);
+
+  min-width:         unset;
+  max-width:         100%;
+  width:             auto;
+}
+
+.clean_start table thead,
+.clean_start table tbody,
+.clean_start table tr {
+  min-width:         100%;
+  max-width:         100%;
+  width:             100%;
+}
+
+
+
+.clean_start tr th,
+.clean_start thead td,
+.clean_start tbody th {
+  text-align:        var(--clean_start--table_th--text-align, left);
+  font-weight:       var(--clean_start--table_th--font-weight, 600);
+  padding:           var(--clean_start--table_th--padding, 0 0 0 0);
+  margin:            var(--clean_start--table_th--margin, 0 0 0 0);
+  color:             var(--clean_start--table_th--color, black);
+  border:            var(--clean_start--table_th--border, 0.2px solid lime);
+  background:        var(--clean_start--table_th--background, #fdfdfd);
+}
+
+
+.clean_start tr td {
+  text-align:        var(--clean_start--table_td--text-align, left);
+  font-weight:       var(--clean_start--table_td--font-weight, 400);
+  padding:           var(--clean_start--table_td--padding, 0 0 0 0);
+  margin:            var(--clean_start--table_td--margin, 0 0 0 0);
+
+  font-size:         var(--clean_start--table_td--font-size, 0.9rem);
+  line-height:       var(--clean_start--table_td--line-height, 1.2rem);
+
+  border:            var(--clean_start--table_td--border, 0.2px solid #ddd);
+  color:             var(--clean_start--table_td--color, black);
+  background:        var(--clean_start--table_td--background, #fdfdfd);
+}
+
+.clean_start td * {
+  padding:           var(--clean_start--table_td_tags--padding, 0 0 0 0);
+  margin:            var(--clean_start--table_td_tags--margin, 0 0 0 0);
+
+  font-size:         var(--clean_start--table_td_tags--font-size, 0.9rem);
+  line-height:       var(--clean_start--table_td_tags--line-height, 0.9rem);
+  overflow-x:        visible;
+  overflow-y:        hidden;
+}
+
+
+
+.clean_start table tfoot {
+  display:           table-footer-group;
+}
+
+.clean_start table tf {
+  display:           table-cell;
+}
+
+.clean_start table tfoot {
+  min-width:         100%;
+  max-width:         100%;
+  width:             100%;
+}
+
+.clean_start tfoot td,
+.clean_start tfoot tf {
+  text-align:        var(--clean_start--table_tf--text-align, left);
+  font-weight:       var(--clean_start--table_tf--font-weight, 600);
+  padding:           var(--clean_start--table_tf--padding, 0 0 0 0);
+  margin:            var(--clean_start--table_tf--margin, 0 0 0 0);
+  border:            var(--clean_start--table_tf--border, 0.2px solid #ddd);
+  color:             var(--clean_start--table_tf--color, black);
+  background:        var(--clean_start--table_tf--background, #fdfdfd);
+}
+/* @finish clean_start_tiny html tag table */
+
+
+
+/* @start clean_start_tiny for all html tags */
+.clean_start text {
+
+  position:        var(--clean_start--text--position, relative);
+  display:         var(--clean_start--text--display, inline-block);
+  box-sizing:      var(--clean_start--text--box-sizing, border-box);
+
+  padding:         var(--clean_start--text--padding, 0 0 0 0);
+  margin:          var(--clean_start--text--margin, 0 0 0 0);
+
+  font-family:     var(--clean_start--text--font-family, Arial);
+  font-size:       var(--clean_start--text--font-size, 0.9rem);
+  line-height:     var(--clean_start--text--line-height, 1.2rem);
+
+  font-style:      var(--clean_start--text--font-style, normal);
+  font-variant:    var(--clean_start--text--font-variant, normal);
+  letter-spacing:  var(--clean_start--text--letter-spacing, 0.005rem);
+  line-break:      var(--clean_start--text--line-break, strict);
+  word-wrap:       var(--clean_start--text--word-wrap, normal);
+  word-break:      var(--clean_start--text--word-break, normal);
+  color:           var(--clean_start--text--color, black);
+
+  border-color:    var(--clean_start--text--border-color, lime);
+  border-style:    var(--clean_start--text--border-style, solid);
+  border-width:    var(--clean_start--text--border-width, 0);
+
+  background:      var(--clean_start--text--background, #fdfdfd);
+
+  min-height:      var(--clean_start--text--min-height, 0);
+  max-height:      var(--clean_start--text--max-height, unset);
+  height:          var(--clean_start--text--height, auto);
+
+  min-width:       var(--clean_start--text--min-width, 0);
+  max-width:       var(--clean_start--text--max-width, 100%);
+  width:           var(--clean_start--text--width, auto);
+
+  overflow-x:      var(--clean_start--text--overflow-x, visible);
+  overflow-y:      var(--clean_start--text--overflow-y, visible);
+}
+/* @finish clean_start_tiny for all html tags */
+
+
+
+/* @start clean_start_tiny html tag ul_li */
+
+.clean_start ul li::after {
+  content:         var(--clean_start--ul_li_c--content, '');
+}
+
+.clean_start ul.inline li::after {
+  content:         var(--clean_start--ul_li_c--content, '');
+}
+
+
+
+.clean_start * ul {
+  padding:         var(--clean_start--ul--padding, 0 0 0 0);
+  display:         var(--clean_start--ul--display, block);
+  margin:          var(--clean_start--ul--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--ul--line-height, 0.9rem);
+  font-size:       var(--clean_start--ul--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--ul--min-height, 0);
+  max-height:      var(--clean_start--ul--max-height, unset);
+  height:          var(--clean_start--ul--height, auto);
+
+  overflow-x:      var(--clean_start--ul--overflow-x, visible);
+  overflow-y:      var(--clean_start--ul--overflow-y, visible);
+}
+
+.clean_start ul li {
+  padding:         var(--clean_start--ul_li--padding, 0 0 0 0);
+  display:         var(--clean_start--ul_li--display, block);
+  margin:          var(--clean_start--ul_li--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--ul_li--line-height, 1.2rem);
+  font-size:       var(--clean_start--ul_li--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--ul_li--min-height, 0);
+  max-height:      var(--clean_start--ul_li--max-height, unset);
+  height:          var(--clean_start--ul_li--height, auto);
+
+  overflow-x:      var(--clean_start--ul_li--overflow-x, visible);
+  overflow-y:      var(--clean_start--ul_li--overflow-y, visible);
+}
+
+.clean_start ul li * {
+  padding:         var(--clean_start--ul_li_tags--padding, 0 0 0 0);
+  display:         var(--clean_start--ul_li_tags--display, inline-block);
+  margin:          var(--clean_start--ul_li_tags--margin, 0 0 0 0);
+
+  font-size:       var(--clean_start--ul_li_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--ul_li_tags--line-height, 0.9rem);
+
+  min-height:      var(--clean_start--ul_li_tags--min-height, 0);
+  max-height:      var(--clean_start--ul_li_tags--max-height, unset);
+  height:          var(--clean_start--ul_li_tags--height, 0.9rem);
+
+  overflow-x:      var(--clean_start--ul_li_tags--overflow-x, visible);
+  overflow-y:      var(--clean_start--ul_li_tags--overflow-y, visible);
+}
+
+
+
+/* overrides wildcard styles before */
+.clean_start ul li ul {
+  padding:         var(--clean_start--li_ul--padding, 0 0 0 0);
+
+  display:         var(--clean_start--li_ul--display, block);
+  margin:          var(--clean_start--li_ul--margin, 0 0 0 0);
+
+  font-size:       var(--clean_start--li_ul--font-size, 0.9rem);
+  line-height:     var(--clean_start--li_ul--line-height, 0.9rem);
+
+  min-height:      var(--clean_start--li_ul--min-height, 0);
+  max-height:      var(--clean_start--li_ul--max-height, unset);
+  height:          var(--clean_start--li_ul--height, auto);
+
+  overflow-x:      var(--clean_start--li_ul--overflow-x, visible);
+  overflow-y:      var(--clean_start--li_ul--overflow-y, visible);
+}
+
+.clean_start li ul li {
+  padding:         var(--clean_start--li_ul_li--padding, 0 0 0 0);
+  display:         var(--clean_start--li_ul_li--display, block);
+  margin:          var(--clean_start--li_ul_li--margin, 0 0 0 0);
+
+  line-height:     var(--clean_start--li_ul_li--line-height, 1.2rem);
+  font-size:       var(--clean_start--li_ul_li--font-size, 0.9rem);
+
+  min-height:      var(--clean_start--li_ul_li--min-height, 0);
+  max-height:      var(--clean_start--li_ul_li--max-height, unset);
+  height:          var(--clean_start--li_ul_li--height, auto);
+
+  overflow-x:      var(--clean_start--li_ul_li--overflow-x, visible);
+  overflow-y:      var(--clean_start--li_ul_li--overflow-y, visible);
+}
+
+.clean_start ul {
+  list-style-type:     none;
+}
+
+
+
+.clean_start ul li::after {
+  position:      var(--clean_start--ul_li_c--position, absolute);
+  display:       var(--clean_start--ul_li_c--display, block);
+
+  top:           var(--clean_start--ul_li_c--top, 0);
+  left:          var(--clean_start--ul_li_c--left, 0);
+
+  line-height:   var(--clean_start--ul_li_c--line-height, 1.2rem);
+  font-size:     var(--clean_start--ul_li_c--font-size, 0.9rem);
+
+  min-height:    var(--clean_start--ul_li_c--min-height, 0);
+  max-height:    var(--clean_start--ul_li_c--max-height, 1.2rem);
+  height:        var(--clean_start--ul_li_c--height, 1.2rem);
+
+  color:         var(--clean_start--ul_li_c--color, black);
+  background:    var(--clean_start--ul_li_c--background, #fdfdfd);
+  border:        var(--clean_start--ul_li_c--border, 0 solid #ddd);
+
+  overflow-x:    var(--clean_start--ul_li_c--overflow-x, hidden);
+  overflow-y:    var(--clean_start--ul_li_c--overflow-y, hidden);
+}
+
+
+
+/* inline */
+.clean_start ul.inline li {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li * {
+  display:          inline-block;
+}
+
+/* @finish clean_start_tiny html tag ul_li */
+
+

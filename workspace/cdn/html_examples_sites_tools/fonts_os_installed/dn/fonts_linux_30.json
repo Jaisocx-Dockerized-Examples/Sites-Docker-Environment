@@ -1,0 +1,178 @@
+[
+  {
+    "font_name": "Cantarell",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux (Debian/Ubuntu)",
+    "font_name": "DejaVu Sans",
+    "year_ad": "2004",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux (Red Hat)",
+    "font_name": "Liberation Sans",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Nimbus Sans",
+    "year_ad": "1987",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Nimbus Sans L",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Noto Sans",
+    "year_ad": "2013",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans CJK HK",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans CJK JP",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans CJK KR",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans CJK SC",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans CJK TC",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Noto Sans",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Open Sans",
+    "year_ad": "2011",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "PakType Naskh Basic",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "PT Sans Caption",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "PT Sans",
+    "year_ad": "2010",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Sans",
+    "year_ad": "2002",
+    "font_style": "sans"
+  },
+  {
+    "font_name": "Waree",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Bitstream Vera Serif",
+    "year_ad": "2003",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "Linux (Debian/Ubuntu)",
+    "font_name": "DejaVu Serif",
+    "year_ad": "2004",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "Linux (Red Hat)",
+    "font_name": "Liberation Serif",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Nimbus Roman",
+    "year_ad": "1987",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Nimbus Roman No9 L",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Noto Serif CJK HK",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Noto Serif CJK JP",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Noto Serif CJK KR",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Noto Serif CJK SC",
+    "font_style": "serif"
+  },
+  {
+    "font_name": "Noto Serif CJK TC",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Serif",
+    "year_ad": "2002",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Bitstream Vera Sans Mono",
+    "year_ad": "2003",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "Linux (Debian/Ubuntu)",
+    "font_name": "DejaVu Sans Mono",
+    "year_ad": "2004",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "Linux (Red Hat)",
+    "font_name": "Liberation Mono",
+    "year_ad": "2007",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Mono",
+    "year_ad": "2013",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Nimbus Mono",
+    "year_ad": "1987",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "Linux",
+    "font_name": "Z003",
+    "year_ad": "1987",
+    "font_style": "written"
+  }
+]

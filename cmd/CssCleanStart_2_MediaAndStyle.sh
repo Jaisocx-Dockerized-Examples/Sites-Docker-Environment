@@ -49,7 +49,7 @@ fi
 
 
 "${jsInvokePath}" "${commandLineArgs}" \
-  --packagePath="Jaisocx_SitesTools/libraries/base_packs/SitesToolAutomation" \
+  --packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/SitesToolAutomation" \
   --script="main/produceSitesTool_MediaAndStyles.js" \
       --cssOrJsTool="css" \
       --sitesToolName="CssCleanStart_3" \

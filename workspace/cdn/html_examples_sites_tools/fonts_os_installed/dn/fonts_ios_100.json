@@ -1,0 +1,388 @@
+[
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Arial Rounded MT Bold",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Avenir Book",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 6",
+    "font_name": "Avenir Next Condensed",
+    "year_ad": "2012",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 6",
+    "font_name": "Avenir Next Condensed Heavy",
+    "year_ad": "2012",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 6",
+    "font_name": "Avenir Next Condensed Medium",
+    "year_ad": "2012",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 6",
+    "font_name": "Avenir Next Condensed Ultra Light",
+    "year_ad": "2012",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "DIN Alternate",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "DIN Condensed",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Gill Sans",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Gill Sans",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 7",
+    "font_name": "Helvetica Neue",
+    "year_ad": "2013",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Optima",
+    "year_ad": "2007",
+    "font_style": "sans"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Baskerville",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Bodoni 72",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Bodoni 72 Oldstyle",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Bodoni 72 Smallcaps",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Charter",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Cochin",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Didot",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Hoefler Text",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Iowan Old Style",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Marion",
+    "year_ad": "2007",
+    "font_style": "serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Menlo",
+    "year_ad": "2007",
+    "font_style": "monospace"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "American Typewriter",
+    "year_ad": "2007",
+    "font_style": "display"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Apple SD Gothic Neo",
+    "year_ad": "2007",
+    "font_style": "korean"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Avenir",
+    "year_ad": "2007",
+    "font_style": "display"
+  },
+  {
+    "os_name_font_first_released": "iOS 6",
+    "font_name": "Avenir Next",
+    "year_ad": "2012",
+    "font_style": "display"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Bangla Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Bradley Hand",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Chalkboard SE",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Chalkduster",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Copperplate",
+    "year_ad": "2007",
+    "font_style": "display"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Devanagari Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Futura",
+    "year_ad": "2007",
+    "font_style": "display"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Heiti SC",
+    "year_ad": "2007",
+    "font_style": "chinese"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Heiti TC",
+    "year_ad": "2007",
+    "font_style": "chinese"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Hiragino Sans",
+    "year_ad": "2007",
+    "font_style": "japanese"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Kannada Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Khmer Sangam MN",
+    "year_ad": "2007",
+    "font_style": "khmer"
+  },
+  {
+    "os_name_font_first_released": "iOS 8",
+    "font_name": "Kohinoor Bangla",
+    "year_ad": "2014",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 8",
+    "font_name": "Kohinoor Devanagari",
+    "year_ad": "2014",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 8",
+    "font_name": "Kohinoor Telugu",
+    "year_ad": "2014",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Lao Sangam MN",
+    "year_ad": "2007",
+    "font_style": "lao"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Malayalam Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Marker Felt",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "MarkerFelt-Thin",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "MarkerFelt-Wide",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Myanmar Sangam MN",
+    "year_ad": "2007",
+    "font_style": "myanmar"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Noteworthy",
+    "year_ad": "2007",
+    "font_style": "handwriting"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Papyrus",
+    "year_ad": "2007",
+    "font_style": "decorative"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Party LET",
+    "year_ad": "2007",
+    "font_style": "decorative"
+  },
+  {
+    "os_name_font_first_released": "iOS 9",
+    "font_name": "PingFang HK",
+    "year_ad": "2015",
+    "font_style": "chinese"
+  },
+  {
+    "os_name_font_first_released": "iOS 9",
+    "font_name": "PingFang SC",
+    "year_ad": "2015",
+    "font_style": "chinese"
+  },
+  {
+    "os_name_font_first_released": "iOS 9",
+    "font_name": "PingFang TC",
+    "year_ad": "2015",
+    "font_style": "chinese"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Rockwell",
+    "year_ad": "2007",
+    "font_style": "slab serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Savoye LET",
+    "year_ad": "2007",
+    "font_style": "script"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Sinhala Sangam MN",
+    "year_ad": "2007",
+    "font_style": "sinhala"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Snell Roundhand",
+    "year_ad": "2007",
+    "font_style": "script"
+  },
+  {
+    "os_name_font_first_released": "iOS 7",
+    "font_name": "Sukhumvit Set",
+    "year_ad": "2013",
+    "font_style": "thai"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Superclarendon",
+    "year_ad": "2007",
+    "font_style": "slab serif"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Tamil Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Telugu Sangam MN",
+    "year_ad": "2007",
+    "font_style": "indic"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Thonburi",
+    "year_ad": "2007",
+    "font_style": "thai"
+  },
+  {
+    "os_name_font_first_released": "iOS 1",
+    "font_name": "Zapfino",
+    "year_ad": "2007",
+    "font_style": "decorative"
+  }
+]
+
+

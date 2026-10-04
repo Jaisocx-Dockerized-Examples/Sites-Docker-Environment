@@ -215,8 +215,8 @@ app.get (
 https
   .createServer (
     {
-      key:  fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key' ),
-      cert: fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
+      key:  fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key' ),
+      cert: fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
     },
     app
   ).listen( https_port, () => {

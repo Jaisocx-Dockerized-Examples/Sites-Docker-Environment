@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en" class="jaisocx clean_start   jsx"><head>
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicons/flaticon_com_flowers_ico/009_bird_of_paradise.ico">
+
+  <title> CleanStart OS Fonts Tests </title>
+
+  <!--
+    /** Just need time for publishing same packages after renamings and tests.
+    *
+    * Renamings in future for the few sites tools,
+    * are aimed for Software Companies' Namespaces, like Jaisocx,
+    * and, whether the alignment library styles set,
+    * the class name for the CssCleanStart, clean_start.
+    *
+    * Due to the aim of the SetUp,
+    * the variables' namespace doesn't have the Companie's Name,
+    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+    */
+  -->
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base href="../">
+
+
+
+  <meta charset="utf-8">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+  <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      fetchpriority="medium"
+      crossorigin
+      onerror="javascript: ( () => { let tagLink = this; tagLink.href = 'javascript: void(0);'; tagLink.remove(); } )();"
+      href="fonts/Press_Start_2P/PressStart2P-Regular.ttf">
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css">
+
+  <!--# STYLES CssCodeSnippet and theme_base -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css">
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css">
+
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="fonts/fonts_os_installed/css/microsoft_fonts.css">
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="fonts/fonts_os_installed/css/ios_fonts.css">
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="fonts/fonts_os_installed/css/macos_fonts.css">
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="fonts/fonts_os_installed/css/clean_start_font_overrides.css">
+
+
+
+  <style name="workaround_font_link_cdn_absolute_or_relative">
+
+    /**
+    * Quality raise for UserExperience and SitePerformance
+    * thanks to workarounds for CDN.
+    *
+    * a font, referenced by a cdn link, obtains the id for browser, like a cdn url of the font "Press_Start_2P_cdn".
+    *
+    * the browser requests from inet a sites server for a font, if didn't find a font in caches by cdn url as a font id,
+    * also token into account infos about timestamp of cache expiration, sent from sites server along with the font.
+    *
+    * see around for our @jaisocx lib, the linked-resources-integrity.
+    */
+
+    @font-face {
+      font-family: Press_Start_2P_cdn;
+      src: url("https://sandbox.basetasks.site:8445/cdn/fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+
+    @font-face {
+      font-family: Press_Start_2P_rel;
+      src: url("fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+  </style>
+
+
+
+  <style name="fonts_os_installed_preview_styles">
+
+    .jaisocx.clean_start  layout-block.intro {
+      display: block;
+      margin: 1.9rem 0 1.9rem 0;
+    }
+
+    .jaisocx.clean_start  layout-block.intro  text-block {
+      display: block;
+      margin: 0.6rem 0 0.6rem 0;
+    }
+
+
+
+    .jaisocx.clean_start  layout-block.fonts_block {
+      margin: 0 0 2.5rem 0;
+    }
+
+    .jaisocx.clean_start  layout-block.fonts_block  text-block.font_preview {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      margin: 0.9rem 0 1.2rem 0;
+      width: 100%;
+      white-space: pre-line;
+      overflow-wrap: normal;
+    }
+
+    .jsx.jaisocx.clean_start  layout-block.fonts_block.theme_fontname_check  text-block.font_preview.labelled::after {
+      content: attr(data-font) ' | ' attr(data-font-style);
+    }
+
+
+
+    .jaisocx.clean_start  layout-block.fonts_block.labelled {
+      padding: 0.4rem 0 2rem 2rem;
+    }
+    .jaisocx.clean_start  layout-block.fonts_block  text-block.font_preview.labelled {
+      padding: 0.1rem 0 1.2rem 0;
+    }
+
+    .jaisocx.clean_start  label.notice,
+    .jaisocx.clean_start  layout-block.fonts_block.labelled::after,
+    .jaisocx.clean_start  layout-block.fonts_block  text-block.font_preview.labelled::after {
+      content: attr(data-label);
+
+      display: inline-block;
+      position: absolute;
+      top: 0.1rem;
+      left: 0;
+
+      font-family: Arial;
+      font-weight: normal;
+      font-size: 0.79rem;
+      line-height: 0.93rem;
+
+      padding: 0.01rem 0.9rem 0.01rem 0.9rem;
+      border-radius: 0.6rem;
+
+      min-width: 1px;
+      max-width: fit-content;
+      width: auto;
+    }
+
+    .jaisocx.clean_start  label.notice {
+      position: relative;
+      border-radius: 0;
+    }
+
+
+
+    .jaisocx.clean_start  label.notice {
+      border: 1px solid #f33;
+      color: crimson;
+      background: #fef;
+    }
+
+    .jaisocx.clean_start  layout-block.fonts_block.labelled::after {
+      border: 1px solid #33f;
+      color: navy;
+      background: #eef;
+    }
+
+    .jaisocx.clean_start  layout-block.fonts_block  text-block.font_preview.labelled::after {
+      border: 1px solid lime;
+      color: green;
+      background: #efe;
+    }
+
+
+
+    .jaisocx.clean_start  .theme_fontname_check  text-block.font_preview.font_a {
+      font-family: "system-ui";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  text-block.font_preview.font_b {
+      font-family: "-apple-system";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  text-block.font_preview.font_c {
+      font-family: "BlinkMacSystemFont";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_d {
+      font-family: "Roboto";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_e {
+      font-family: "Oxygen";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_f {
+      font-family: '';
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_g {
+      font-family: "Arial";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_h {
+      font-family: "Courier";
+    }
+    .jaisocx.clean_start  .theme_fontname_check  .font_i {
+      font-family: "Courier New";
+    }
+    .jaisocx.clean_start .theme_fontname_check .font_j {
+      font-family: "Arial Narrow";
+    }
+    .jaisocx.clean_start .theme_fontname_check .font_k {
+      font-family: "Menlo";
+    }
+    .jaisocx.clean_start .theme_fontname_check .font_l {
+      font-family: "Consolas";
+    }
+    .jaisocx.clean_start .theme_fontname_check .font_m {
+      font-family: "Liberation Mono";
+    }
+
+
+    .jaisocx.clean_start  layout-block.fonts_block {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+
+    .jaisocx.clean_start text-block.timestamp_updated {
+      display: block;
+      margin: 0.6rem 0;
+    }
+
+  </style>
+
+
+
+  <!--  OVERRIDES -->
+  <style name="clean_start_font_overrides">
+    /* Css Clean Start Lite styles overrides */
+
+    /** Just need time for publishing same packages after renamings and tests.
+    *
+    * Renamings in future for the few sites tools,
+    * are aimed for Software Companies' Namespaces, like Jaisocx,
+    * and, whether the alignment library styles set,
+    * the class name for the CssCleanStart, clean_start.
+    *
+    * Due to the aim of the SetUp,
+    * the variables' namespace doesn't have the Companie's Name,
+    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+    */
+
+    .jsx.jaisocx.clean_start,
+    .jsx.jaisocx.clean_start.theme_fonts_a,
+    .jsx.jaisocx.clean_start .theme_fonts_a,
+    .jsx.jaisocx.clean_start.theme_fonts_b,
+    .jsx.jaisocx.clean_start .theme_fonts_b,
+    .jsx.jaisocx.clean_start.theme_fonts_c,
+    .jsx.jaisocx.clean_start .theme_fonts_c {
+      --css-clean-start-2--sans--font-family: var(--clean_start__sans__font-family);
+      --css-clean-start-2--serif--font-family: var(--clean_start__serif__font-family);
+      --css-clean-start-2--monospace--font-family: var(--clean_start__monospace__font-family);
+    }
+  </style>
+
+
+
+  <style name="clean_start_overrides">
+    /* Css Clean Start Lite styles overrides */
+
+    /** Just need time for publishing same packages after renamings and tests.
+    *
+    * Renamings in future for the few sites tools,
+    * are aimed for Software Companies' Namespaces, like Jaisocx,
+    * and, whether the alignment library styles set,
+    * the class name for the CssCleanStart, clean_start.
+    *
+    * Due to the aim of the SetUp,
+    * the variables' namespace doesn't have the Companie's Name,
+    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+    */
+
+    .jaisocx.clean_start,
+    .jsx {
+      --jsx--css-clean-start-2--rem: 16px;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.4rem;
+      --jsx--css-clean-start-2--h1--line-height: 1.9rem;
+      --jsx--css-clean-start-2--h1--font-weight: 600;
+
+      --jsx--css-clean-start-2--h1--margin: 1.4rem 0 1rem 0;
+    }
+
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    @media only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: landscape) {
+
+      .jaisocx.clean_start,
+      .jsx {
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+      }
+
+    }
+
+  </style>
+
+
+
+  <style name="css_code_snippet_overrides">
+
+    .jaisocx.clean_start  .css_code_snippet,
+    .jsx  codesnippetholder.CodeSnippetHolder.CssCodeSnippet {
+      --code-snippet-tool--width: fit-content;
+      --code-snippet-tool--overflow-y: hidden;
+      --code-snippet-tool--overflow-x: hidden;
+      --code-snippet-tool--width:  100%;
+      --code-snippet-tool--height: auto;
+    }
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    @media only screen and (min-width: 2px) and (max-width: 1024px) and (orientation: landscape) {
+
+      .jaisocx.clean_start  .css_code_snippet,
+      .jsx  codesnippetholder.CodeSnippetHolder.CssCodeSnippet {
+          --code-snippet-tool--width: 100%;
+        }
+
+    }
+
+
+
+    /** LINES NUMBERS */
+    .jaisocx.clean_start  .css_code_snippet,
+    .jsx  codesnippetholder.CodeSnippetHolder.CssCodeSnippet {
+      /**
+      * styles load hardcoded lines numbers in code-snippet-lines-numbers-99.css
+      * on path MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css
+      */
+
+      --lines-numbers--content: var(--lines-numbers--content--99);
+    }
+
+    /** always by id */
+    #code-snippet-fonts-tests-example {
+      --lines-number: 14;
+    }
+
+  </style>
+
+</head><body>
+<main>
+
+  <text-block class="timestamp_updated">
+    🗓 Updated:  🌼 Summer  2026, Timestamp 18:25:40 UTC, 07th of June in year AD 2026
+  </text-block>
+
+  <label class="notice"> in engineering </label>
+
+  <h1> CleanStart OS Fonts Tests </h1>
+
+
+
+  <nav>
+
+    <text-link>
+      <a data-os="Microsoft 10" class="nav_text_link fonts_button Microsoft" href="javascript: void(0);"> ✅   Microsoft 10 Fonts </a>
+    </text-link>
+
+    <text-link>
+      <a data-os="Microsoft" class="nav_text_link fonts_button Microsoft" href="javascript: void(0);"> ✅   Microsoft Fonts </a>
+    </text-link>
+
+    <text-link>
+      <a data-os="Apple" class="nav_text_link fonts_button Apple" href="javascript: void(0);"> ✅   Apple Fonts </a>
+    </text-link>
+
+    <text-link>
+      <a data-os="Linux" class="nav_text_link fonts_button Linux" href="javascript: void(0);"> ✅   Linux Fonts </a>
+    </text-link>
+
+    <text-link>
+      <a data-os="Android" class="nav_text_link fonts_button Android" href="javascript: void(0);"> ✅   Android Fonts </a>
+    </text-link>
+
+  </nav>
+
+
+
+  <layout-block data-label="Theme Fonts A" class="font_overrides   theme_fonts_a   fonts_block   labelled">
+
+    <text-block data-label="font_sans like Tahoma" class="font_sans   font_preview   labelled">
+      Font Sans like Tahoma
+    </text-block>
+    <text-block data-label="font like Times" class="font_serif   font_preview   labelled">
+      Font Serif
+    </text-block>
+    <text-block data-label="font_monospace" class="font_monospace   font_preview   labelled">
+      Font Monospace
+    </text-block>
+    <text-block data-label="font_written" class="font_written   font_preview   labelled">
+      Font Written
+    </text-block>
+
+  </layout-block>
+
+
+
+  <layout-block data-label="Theme Fonts B" class="font_overrides   theme_fonts_b   fonts_block   labelled">
+
+    <text-block data-label="font_sans like Verdana" class="font_sans   font_preview   labelled">
+      Font Sans like Verdana
+    </text-block>
+    <text-block data-label="font_serif" class="font_serif   font_preview   labelled">
+      Font Serif
+    </text-block>
+    <text-block data-label="font_monospace" class="font_monospace   font_preview   labelled">
+      Font Monospace
+    </text-block>
+    <text-block data-label="font_written" class="font_written   font_preview   labelled">
+      Font Written
+    </text-block>
+
+  </layout-block>
+
+
+
+  <layout-block data-label="Theme Fonts C" class="font_overrides   theme_fonts_c   fonts_block   labelled">
+
+    <text-block data-label="font_sans" class="font_sans   font_preview   labelled">
+      Font Sans
+    </text-block>
+    <text-block data-label="font_serif" class="font_serif   font_preview   labelled">
+      Font Serif
+    </text-block>
+    <text-block data-label="font_monospace" class="font_monospace   font_preview   labelled">
+      Font Monospace
+    </text-block>
+    <text-block data-label="font_written" class="font_written   font_preview   labelled">
+      Font Written
+    </text-block>
+
+  </layout-block>
+
+
+
+  <!--
+  <layout-block data-label="OS. Testing OS Fonts"  class="os fonts_block theme_fontname_check labelled">
+  </layout-block>
+  -->
+
+
+
+  <layout-block class="intro">
+    <text-block>
+      On a computer in browser like Google Chrome, Microsoft Edge or Mozilla Firefox,
+      You see, whether a font is present on the computer under the OS.
+    </text-block>
+    <text-block>
+      Testing a site under Microsoft Windows, or Linux Ubuntu, You'll see the text with the font set in styles.
+    </text-block>
+    <text-block>
+      The aim of the set up is, to save up traffic,
+      loosing quality,
+      refusing on preciese text style by font file requested,
+      however the sans styled texts remain sans styled, serif, monospace and handwrite.
+    </text-block>
+    <text-block>
+      The amount of css code lines,
+      to solve example for the fallback fonts,
+      due to new css font-family comma delimitered names of fonts,
+      one theme of font families 6 ( six ) css code lines,
+      and we have then 4 ( four ) arts of fonts, set via css variables.
+    </text-block>
+    <text-block>
+      That You may see, if a font doesn't apply, meant isn't installed on Your TVset, laptop or mobile,
+      in this testing tool text renders by font Press_Start_2P.
+      This font renders by the font file, requested and then obtained from the sites server.
+    </text-block>
+    <text-block>
+      Font file Press_Start_2P has size of 116 kB
+      ( hundred sixteen thousand bytes ( info units ) ),
+      where one byte loads one symbol of English Alphabet in the texts on sites or emails.
+    </text-block>
+    <text-block>
+      For other fonts this example doesn't request font files from the sites server.
+    </text-block>
+  </layout-block>
+
+
+
+  <codesnippetholder id="code-snippet-fonts-tests-example" class="CodeSnippetHolder CssCodeSnippet little salad">
+          <pre class="CodeSnippetArea">
+    &lt;style&gt;
+      .jaisocx.clean_start  layout-block.fonts_block.theme_fontname_check  text-block.font_preview.labelled::after {
+        content: attr(data-font) ' | ' attr(data-font-style);
+      }
+    &lt;/style&gt;
+
+    &lt;text-block  data-font="system-ui"  class="font_preview labelled"   style="font-family: 'system-ui', Press_Start_2P_cdn, Press_Start_2P_rel;"&gt;
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    &lt;/text-block&gt;
+
+          </pre>
+  </codesnippetholder>
+
+
+
+  <layout-block data-label="Theme Fonts Old Good Fonts" class="font_overrides   theme_fonts_old_good_fonts   fonts_block   labelled">
+    <text-block data-label="Arial" class="font_preview font_sans labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="Times New Roman" class="font_preview font_serif labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="Courier" class="font_preview font_monospace labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="font_written" class="font_preview font_written labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+  </layout-block>
+
+
+
+  <layout-block data-label="Dinamique. Testing OS Fonts"  class="dinamique   font_overrides   theme_fontname_check   fonts_block   labelled">
+  </layout-block>
+
+
+
+</main>
+
+<script>
+
+  let osFontsButtonSelector       = "nav text-link a.nav_text_link.fonts_button";
+  let dinamiqueFontsBlockSelector = ".fonts_block.theme_fontname_check.dinamique";
+
+  let fontsOS_to_dnLinks = {
+    "Microsoft 10": "dn/fonts_microsoft_10.json",
+    "Microsoft": "dn/fonts_microsoft_100.json",
+    "Apple": "dn/fonts_ios_100.json",
+    "Linux": "dn/fonts_linux_30.json",
+    "Android": "dn/fonts_android_4.json",
+  };
+
+  let templateFontPreview = `<text-block  data-font="{{ fontName }}"  data-font-style="{{ fontStyle }}"  class="font_preview labelled"  style="font-family: {{ fontNameQuoted }}, Press_Start_2P_cdn, Press_Start_2P_rel;">
+          The quick brown fox jumps over the lazy dog, but QA engineers know this is never enough.
+        </text-block>`;
+
+  let htmlTagHTML = new Object();
+  let bodyHtmlTag = new Object();
+  let fontsBlock  = new Object();
+  let navFontsOS_Cls = new Object();
+
+
+
+/*
+  let datasetFonts = [
+  { "os_name_font_first_released": "iOS 7", "font_name": "Helvetica Neue", "year_ad": "2013", "font_style": "sans" },
+*/
+
+  class NavFontsOS {
+    _osFontsButtonSelector = "";
+    _dinamiqueFontsBlockSelector = "";
+    _fontsOS_to_dnLinks = new Object();
+    _template = "";
+
+    constructor() {
+      this._osFontsButtonSelector = "nav text-link a.nav_text_link.fonts_button";
+      this._dinamiqueFontsBlockSelector = ".fonts_block.theme_fontname_check.dinamique";
+      this._fontsOS_to_dnLinks = {
+        "Microsoft 10": "dn/fonts_microsoft_10.json",
+        "Microsoft": "dn/fonts_microsoft_100.json",
+        "Apple": "dn/fonts_ios_100.json",
+        "Linux": "dn/fonts_linux_30.json",
+        "Android": "dn/fonts_android_4.json",
+      };
+
+      this._template = `<text-block  data-font="{{ fontName }}"  data-font-style="{{ fontStyle }}"  class="font_preview labelled"  style="font-family: {{ fontNameQuoted }}, Press_Start_2P_cdn, Press_Start_2P_rel;">
+          The quick brown fox jumps over the lazy dog, but QA engineers know this is never enough.
+        </text-block>`;
+    }
+
+    get_osFontsButtonSelector() {
+      return this._osFontsButtonSelector;
+    }
+    get_dinamiqueFontsBlockSelector() {
+      return this._dinamiqueFontsBlockSelector;
+    }
+    get_fontsOS_to_dnLinks() {
+      return this._fontsOS_to_dnLinks;
+    }
+    get_template() {
+      return this._template;
+    }
+
+    set_osFontsButtonSelector( selector) {
+      this._osFontsButtonSelector = selector;
+      return this;
+    }
+    set_dinamiqueFontsBlockSelector( selector ) {
+      this._dinamiqueFontsBlockSelector = selector;
+      return this;
+    }
+    set_fontsOS_to_dnLinks( oLinks ) {
+      this._fontsOS_to_dnLinks = oLinks;
+      return this;
+    }
+    set_template( template ) {
+      this._template = template;
+      return this;
+    }
+
+
+
+    genFontsPreview ( dn ) {
+
+      let data_records_num = dn.length;
+      let r_htmlTexts = new Array( data_records_num );
+
+      let counter = 1;
+      let maxCounter = ( data_records_num + 1 );
+      let maxIncCounter = ( maxCounter + 2 );
+      let ix = 1;
+      let data_record = new Object();
+      let fontName = "";
+      let fontNameQuoted = "";
+      let fontNamesArray = new Array();
+      let fontStyle = "";
+      let htmlBlock = "";
+
+
+
+       fonts_ci: while ( counter < maxIncCounter ) {
+         counter++;
+         if ( counter > maxCounter ) {
+           break fonts_ci;
+         }
+
+         ix = ( counter - 2 );
+         data_record = dn[ ix ];
+         fontName = data_record.font_name;
+         fontNameQuoted = [ "'", fontName, "'" ].join( "" );
+         fontStyle = data_record.font_style;
+
+         htmlBlock = this._template
+          .replace( "{{ fontName }}", fontName )
+          .replace( "{{ fontNameQuoted }}", fontNameQuoted )
+          .replace( "{{ fontStyle }}", fontStyle );
+
+         r_htmlTexts[ ix ] = htmlBlock;
+
+         continue fonts_ci;
+       }
+
+       return r_htmlTexts;
+    }
+
+
+
+    setOS_forFontPreview (
+      os_name,
+      i2_fonts_block
+    ) {
+
+      // let bodyHtmlTag = document.getElementsByTagName( "BODY" )[0];
+      // let htmlTagHTML = document.getElementsByTagName( "HTML" )[0];
+      // let i2_fonts_block = bodyHtmlTag.querySelector( this._dinamiqueFontsBlockSelector );
+
+      // @example: "microsoft": "dn/fonts_ms_100.json"
+      let dnLinkFontsOS = this._fontsOS_to_dnLinks[ os_name ] || 1;
+      if ( dnLinkFontsOS === 1 ) {
+        i2_fonts_block.dataset.label = [ os_name, "No Fonts Tests for now ..." ].join( " | " );
+        i2_fonts_block.innerHTML = "";
+
+        return 2;
+      }
+
+
+      let resolved_dnLinkFontsOS = [ "fonts/fonts_os_installed/", dnLinkFontsOS ].join("");
+      // @example: fetch( "dn/fonts_ms_100.json" )
+      fetch( resolved_dnLinkFontsOS )
+        .then ( ( resp)  => { return resp.json(); } )
+        .then ( ( dn ) => {
+
+          // htmlTagHTML.className = [ os_name, "jaisocx", "clean_start", "jsx" ].join( " " );
+          i2_fonts_block.dataset.label = [ os_name, "Testing OS Fonts" ].join( " | " );
+          let loc_htmlTexts = this.genFontsPreview( dn );
+          i2_fonts_block.innerHTML = loc_htmlTexts.join( "" );
+
+          return 1;
+
+        }
+      );
+    }
+
+
+
+    produceDataset_forLinuxFontPreview (
+      os_name,
+      i2_fonts_block
+    ) {
+
+      let dn = new Array();
+
+      // let bodyHtmlTag = document.getElementsByTagName( "BODY" )[0];
+      // let htmlTagHTML = document.getElementsByTagName( "HTML" )[0];
+      // let i2_fonts_block = bodyHtmlTag.querySelector( this._dinamiqueFontsBlockSelector );
+
+      let tagXmlSelector = "xml fontconfig alias";
+      let buttons = bodyHtmlTag.querySelectorAll( tagXmlSelector );
+      let buttonsNumber = buttons.length;
+      let tagXmlAlias = new Object();
+
+      let fontName = "";
+      let fontStyle = "";
+
+      let counter = 1;
+      let ix = 1;
+      let maxCounter = ( buttonsNumber + 1); // 2;
+      let maxCounterInc = ( maxCounter + 2 );
+
+      ci_os_fonts_buttons: while( counter < maxCounterInc ) {
+        counter++;
+        if ( counter > maxCounter ) {
+          break  ci_os_fonts_buttons;
+        }
+
+        ix = ( counter - 2 );
+        tagXmlAlias = buttons[ ix ];
+        fontName = tagXmlAlias.getElementsByTagName( "family" )[0];
+        fontStyle = tagXmlAlias.getElementsByTagName( "family" )[1];
+
+
+        dn.push (
+          {
+            "font_name": fontName.innerHTML,
+            "font_style": fontStyle.innerHTML,
+          }
+        );
+
+
+        continue  ci_os_fonts_buttons;
+      }
+
+
+      // htmlTagHTML.className = [ os_name, "jaisocx", "clean_start", "jsx" ].join( " " );
+      i2_fonts_block.dataset.label = [ os_name, "Testing OS Fonts" ].join( " | " );
+      let loc_htmlTexts = this.genFontsPreview( dn );
+      i2_fonts_block.innerHTML = loc_htmlTexts.join( "" );
+
+      // console.log( dn );
+    }
+
+
+
+    addEventHandler_navBtnOSfontPreview (
+      fonts_btn_selector,
+      i1_fonts_block
+    ) {
+
+      // let bodyHtmlTag = document.getElementsByTagName( "BODY" )[0];
+      this.set_osFontsButtonSelector( fonts_btn_selector );
+
+      let loc_fonts_btn_selector = this._osFontsButtonSelector;
+      let buttons = bodyHtmlTag.querySelectorAll( loc_fonts_btn_selector );
+      let buttonsNumber = buttons.length;
+      let navBtnOS = new Object();
+
+      let counter = 1;
+      let ix = 1;
+      let maxCounter = ( buttonsNumber + 1); // 2;
+      let maxCounterInc = ( maxCounter + 2 );
+
+      ci_os_fonts_buttons: while( counter < maxCounterInc ) {
+        counter++;
+        if ( counter > maxCounter ) {
+          break  ci_os_fonts_buttons;
+        }
+
+        ix = ( counter - 2 );
+        navBtnOS = buttons[ ix ];
+        navBtnOS.addEventListener (
+          "click",
+          ( evt ) => {
+            let btn = evt.target;
+            let osName = btn.dataset.os;
+            this.setOS_forFontPreview (
+              osName,
+              i1_fonts_block
+            );
+
+            return 1;
+          }
+        );
+
+        continue  ci_os_fonts_buttons;
+      }
+
+    }
+
+  }
+
+
+
+  document.addEventListener (
+     "DOMContentLoaded",
+     ( evt ) => {
+
+       htmlTagHTML = document.getElementsByTagName( "HTML" )[0];
+       bodyHtmlTag = document.getElementsByTagName( "BODY" )[0];
+
+       // @example: let dinamiqueFontsBlockSelector = ".fonts_block.theme_fontname_check.dinamique";
+       fontsBlock  = bodyHtmlTag.querySelector( dinamiqueFontsBlockSelector );
+
+       // @example: let osFontsButtonSelector       = "nav text-link a.nav_text_link.fonts_button";
+
+       /**
+       * @example: let fontsOS_to_dnLinks = {
+       *   "microsoft": "dn/fonts_ms_100.json",
+       *   "ios": "dn/fonts_ios_300.json",
+       *   "android": "dn/fonts_android_70.json",
+       *   "linux": "dn/fonts_linux_80.json",
+       * };
+       */
+
+       /**
+       * @example: let templateFontPreview = `<text-block  data-font="{{ fontName }}"  data-font-style="{{ fontStyle }}"  class="font_preview labelled"  style="font-family: {{ fontNameQuoted }}, Press_Start_2P_cdn, Press_Start_2P_rel;">
+       *   The quick brown fox jumps over the lazy dog, but QA engineers know this is never enough.
+       * </text-block>`;
+       */
+
+
+
+/**
+       let datasetFontsLC = [ ...datasetFonts ]
+         .map (
+           ( fontRecord ) => {
+             let r_record = { ...fontRecord };
+             let ci_fontStyle = r_record[ "font_style" ].toLowerCase();
+             r_record["font_style"] = ci_fontStyle;
+
+             return r_record;
+           }
+         );
+
+
+
+       let datasetFontsSorted = [ ...datasetFontsLC ]
+         .sort (
+           ( a, b ) => {
+
+             let retVal = 0;
+
+             if ( a["font_name"] > b["font_name"] ) {
+               retVal = 1;
+             } else if ( a["font_name"] < b["font_name"] ) {
+               retVal = (-1);
+             }
+
+             return retVal;
+
+           }
+         );
+
+
+
+       let datasetSans = [ ...datasetFontsSorted ]
+         .filter (
+           ( record ) => {
+             let filtered = ( record["font_style"] === "sans" );
+
+             return filtered;
+           }
+         );
+
+
+
+       let datasetSerif = [ ...datasetFontsSorted ]
+         .filter (
+           ( record ) => {
+             let filtered = ( record["font_style"] === "serif" );
+
+             return filtered;
+           }
+         );
+
+
+
+       let datasetMonospace = [ ...datasetFontsSorted ]
+         .filter (
+           ( record ) => {
+             let filtered = ( record["font_style"] === "monospace" );
+
+             return filtered;
+           }
+         );
+
+
+
+       let datasetOther = [ ...datasetFontsSorted ]
+         .filter (
+           ( record ) => {
+             let filtered = ( record["font_style"] !== "sans" ) && ( record["font_style"] !== "serif" ) && ( record["font_style"] !== "monospace" );
+
+             return filtered;
+           }
+         );
+
+
+
+       let dataset = [
+         ...datasetSans,
+         ...datasetSerif,
+         ...datasetMonospace,
+         ...datasetOther
+       ];
+
+
+*/
+
+
+        // let dataset = datasetFonts;
+
+        navFontsOS_Cls = new NavFontsOS();
+
+         navFontsOS_Cls
+          .set_osFontsButtonSelector( osFontsButtonSelector )
+          .set_dinamiqueFontsBlockSelector( dinamiqueFontsBlockSelector )
+          .set_fontsOS_to_dnLinks( fontsOS_to_dnLinks )
+          .set_template( templateFontPreview )
+          .addEventHandler_navBtnOSfontPreview (
+             osFontsButtonSelector,
+             fontsBlock
+          );
+
+
+
+          // let loc_htmlTexts = navFontsOS_Cls.genFontsPreview( dataset );
+
+          // fontsBlock.dataset.label = "iOS. Testing OS Fonts";
+          // fontsBlock.innerHTML = loc_htmlTexts.join( "" );
+          // console.info( dataset );
+
+    }
+  );
+
+</script>
+
+</body></html>

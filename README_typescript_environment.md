@@ -12,9 +12,17 @@
 ![workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
 ![workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
+
 [software_labels preview](./README_software_labels.md)
 
-[HOME](./README.md)
+
+[HOME Docker for a Site](./README.md)
+
+
+**HOME Docker for a Site Typescript Environment**
+
+
+
 
 ---
 
@@ -35,7 +43,7 @@
   > 
   >  **Local link**:  🌐  **Sites Tools via Statique http**  [http://local.basetasks.site:8085/](http://local.basetasks.site:8085/)
   > 
-  >  **Local link**:  🌐  **Sites Tools via Statique https with Security**  [https://local.basetasks.site:8445/](https://local.basetasks.site:8445/)
+  >  **Local link**:  🌐  **Sites Tools via Statique Secure https**  [https://local.basetasks.site:8445/](https://local.basetasks.site:8445/)
 
 
 
@@ -54,7 +62,7 @@
 
 
 ## News
-  > **News**: [workspace/ts/readme_ts_env/md/ts_env_news.md](./workspace/ts/readme_ts_env/md/ts_env_news.md)
+  > **News**: [workspace/readme/readme_ts_env/md/ts_env_news.md](./workspace/readme/readme_ts_env/md/ts_env_news.md)
   -  🗓  26 April 2026 **Sites Tools updated**
 
 ---
@@ -62,18 +70,18 @@
 
 
 ##  📚 READMEs
-  > **TS Environment Docs**:  📚  [workspace/ts/readme_ts_env/md/README.md](./workspace/ts/readme_ts_env/md/README.md)
+  > **TS Environment Docs**:  📚  [workspace/readme/readme_ts_env/md/README.md](./workspace/readme/readme_ts_env/md/README.md)
 
 
-  - **Aim Of The SetUp**:  📙  [workspace/ts/readme_ts_env/md/ts_env_aim_of_the_setup.md](./workspace/ts/readme_ts_env/md/ts_env_aim_of_the_setup.md)
+  - **Aim Of The SetUp**:  📙  [workspace/readme/readme_ts_env/md/ts_env_aim_of_the_setup.md](./workspace/readme/readme_ts_env/md/ts_env_aim_of_the_setup.md)
 
   - **TLS**:  📙  [cmd/https_keys/README.md](./cmd/https_keys/README.md)
 
   - **Express Node Framework**:  📙  [workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - **Features**:  📙  [workspace/ts/readme_ts_env/md/ts_env_features.md](./workspace/ts/readme_ts_env/md/ts_env_features.md)
+  - **Features**:  📙  [workspace/readme/readme_ts_env/md/ts_env_features.md](./workspace/readme/readme_ts_env/md/ts_env_features.md)
 
-  - **INSTALL**:  📙  [workspace/ts/readme_ts_env/md/ts_env_install.md](./workspace/ts/readme_ts_env/md/ts_env_install.md)
+  - **INSTALL**:  📙  [workspace/readme/readme_ts_env/md/ts_env_install.md](./workspace/readme/readme_ts_env/md/ts_env_install.md)
 
 
 

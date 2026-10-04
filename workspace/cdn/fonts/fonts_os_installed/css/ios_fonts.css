@@ -1,0 +1,47 @@
+    /* ios_clean_start_os_installed_fonts */
+    /* Tests */
+
+    .ios.jaisocx.clean_start .theme_fonts_a .font_sans {
+      font-family: Tahoma;
+    }
+    .ios.jaisocx.clean_start .theme_fonts_a .font_serif {
+      font-family: "Times New Roman";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_a .font_monospace {
+      font-family: "Courier New";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_a .font_written {
+      font-family: "";
+    }
+
+
+
+    .ios.jaisocx.clean_start .theme_fonts_b .font_sans {
+      font-family: Verdana;
+    }
+    .ios.jaisocx.clean_start .theme_fonts_b .font_serif {
+      font-family: "Times New Roman";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_b .font_monospace {
+      font-family: "Courier New";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_b .font_written {
+      font-family: "";
+    }
+
+
+
+    .ios.jaisocx.clean_start .theme_fonts_c .font_sans {
+      font-family: Arial;
+    }
+    .ios.jaisocx.clean_start .theme_fonts_c .font_serif {
+      font-family: "Times New Roman";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_c .font_monospace {
+      font-family: "Courier New";
+    }
+    .ios.jaisocx.clean_start .theme_fonts_c .font_written {
+      font-family: "";
+    }
+
+

@@ -55,12 +55,12 @@ fi
 "${jsInvokePath}" "${commandLineArgs}" \
   --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
   --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
-  --packagePath="Jaisocx_SitesTools/libraries/console/JsInvoke" \
+  --packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/console/JsInvoke" \
   --script="invokeCssImporter.js" \
-      --sitesToolPath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/css_flat/CssTable" \
+      --sitesToolPath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/css_flat/CssTable" \
       --cssFilePath="MediaAndStyles/CssTable_main_Webpack.css" \
-      --cssTargetFilePath="MediaAndStyles/CssTable_resolved.css"
-
+      --cssTargetFilePath="MediaAndStyles/CssTable_resolved.css" \
+      --toExcludeComments="true"
 
 
 

@@ -1,0 +1,103 @@
+[
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Arial", "year_ad": "1992", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Times New Roman", "year_ad": "1992", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Courier New", "year_ad": "1992", "font_style": "Monospace" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Comic Sans MS", "year_ad": "1995", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Impact", "year_ad": "1995", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Arial Black", "year_ad": "1995", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Bookman Old Style", "year_ad": "1995", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Century Gothic", "year_ad": "1995", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Garamond", "year_ad": "1995", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 95", "font_name": "Lucida Sans", "year_ad": "1995", "font_style": "Sans-Serif" },
+
+  { "os_name_font_first_released": "Windows 98", "font_name": "Georgia", "year_ad": "1996", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 98", "font_name": "Verdana", "year_ad": "1996", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 98", "font_name": "Trebuchet MS", "year_ad": "1996", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 98", "font_name": "Tahoma", "year_ad": "1996", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 98", "font_name": "MS Sans Serif", "year_ad": "1996", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 98", "font_name": "MS Serif", "year_ad": "1996", "font_style": "Serif" },
+
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Franklin Gothic Medium", "year_ad": "1999", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Palatino Linotype", "year_ad": "1999", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Sylfaen", "year_ad": "1999", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Estrangelo Edessa", "year_ad": "1999", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Gautami", "year_ad": "1999", "font_style": "Indic" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Latha", "year_ad": "1999", "font_style": "Indic" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Mangal", "year_ad": "1999", "font_style": "Indic" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Raavi", "year_ad": "1999", "font_style": "Indic" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Shruti", "year_ad": "1999", "font_style": "Indic" },
+
+  { "os_name_font_first_released": "Windows XP", "font_name": "Lucida Console", "year_ad": "2001", "font_style": "Monospace" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Kristen ITC", "year_ad": "2001", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Jokerman", "year_ad": "2001", "font_style": "Decorative" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Chiller", "year_ad": "2001", "font_style": "Decorative" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Ravie", "year_ad": "2001", "font_style": "Decorative" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Tempus Sans ITC", "year_ad": "2001", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Viner Hand ITC", "year_ad": "2001", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Vivaldi", "year_ad": "2001", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Wide Latin", "year_ad": "2001", "font_style": "Decorative" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Wingdings", "year_ad": "2001", "font_style": "Symbol" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Wingdings 2", "year_ad": "2001", "font_style": "Symbol" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "Wingdings 3", "year_ad": "2001", "font_style": "Symbol" },
+
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Calibri", "year_ad": "2007", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Cambria", "year_ad": "2007", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Candara", "year_ad": "2007", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Consolas", "year_ad": "2007", "font_style": "Monospace" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Corbel", "year_ad": "2007", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Constantia", "year_ad": "2007", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Segoe UI", "year_ad": "2006", "font_style": "UI Sans-Serif" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Segoe Print", "year_ad": "2006", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Segoe Script", "year_ad": "2006", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Euphemia", "year_ad": "2006", "font_style": "Syllabics" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Meiryo", "year_ad": "2006", "font_style": "CJK" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "Malgun Gothic", "year_ad": "2006", "font_style": "Korean" },
+
+  { "os_name_font_first_released": "Windows 7", "font_name": "Gabriola", "year_ad": "2009", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows 7", "font_name": "Segoe UI Light", "year_ad": "2009", "font_style": "UI Sans-Serif" },
+  { "os_name_font_first_released": "Windows 7", "font_name": "Segoe UI Semibold", "year_ad": "2009", "font_style": "UI Sans-Serif" },
+  { "os_name_font_first_released": "Windows 7", "font_name": "Segoe UI Semilight", "year_ad": "2009", "font_style": "UI Sans-Serif" },
+
+  { "os_name_font_first_released": "Windows 8", "font_name": "Yu Gothic", "year_ad": "2012", "font_style": "CJK" },
+  { "os_name_font_first_released": "Windows 8", "font_name": "Yu Mincho", "year_ad": "2012", "font_style": "CJK" },
+  { "os_name_font_first_released": "Windows 8", "font_name": "Ebrima", "year_ad": "2012", "font_style": "Sans-Serif" },
+  { "os_name_font_first_released": "Windows 8", "font_name": "Leelawadee UI", "year_ad": "2012", "font_style": "Sans-Serif" },
+
+  { "os_name_font_first_released": "Windows 10", "font_name": "Bahnschrift", "year_ad": "2017", "font_style": "Variable Sans-Serif" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "Segoe UI Emoji", "year_ad": "2015", "font_style": "Emoji" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "Segoe UI Symbol", "year_ad": "2015", "font_style": "Symbol" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "HoloLens MDL2 Assets", "year_ad": "2015", "font_style": "Symbol" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "Cascadia Code", "year_ad": "2019", "font_style": "Monospace" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "Cascadia Mono", "year_ad": "2019", "font_style": "Monospace" },
+
+  { "os_name_font_first_released": "Windows 11", "font_name": "Segoe UI Variable", "year_ad": "2021", "font_style": "Variable UI Sans-Serif" },
+  { "os_name_font_first_released": "Windows 11", "font_name": "Segoe Fluent Icons", "year_ad": "2021", "font_style": "Symbol" },
+
+  { "os_name_font_first_released": "Windows XP", "font_name": "Arial Unicode MS", "year_ad": "2000", "font_style": "Unicode Sans-Serif" },
+
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Batang", "year_ad": "1999", "font_style": "Korean" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "BatangChe", "year_ad": "1999", "font_style": "Korean" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Gulim", "year_ad": "1999", "font_style": "Korean" },
+  { "os_name_font_first_released": "Windows 2000", "font_name": "Dotum", "year_ad": "1999", "font_style": "Korean" },
+
+  { "os_name_font_first_released": "Windows XP", "font_name": "SimSun", "year_ad": "2001", "font_style": "Chinese" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "SimHei", "year_ad": "2001", "font_style": "Chinese" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "PMingLiU", "year_ad": "2001", "font_style": "Chinese" },
+  { "os_name_font_first_released": "Windows XP", "font_name": "MingLiU", "year_ad": "2001", "font_style": "Chinese" },
+
+  { "os_name_font_first_released": "Windows Vista", "font_name": "KaiTi", "year_ad": "2006", "font_style": "Chinese" },
+  { "os_name_font_first_released": "Windows Vista", "font_name": "NSimSun", "year_ad": "2006", "font_style": "Chinese" },
+
+  { "os_name_font_first_released": "Windows 7", "font_name": "Microsoft YaHei", "year_ad": "2009", "font_style": "Chinese" },
+  { "os_name_font_first_released": "Windows 7", "font_name": "Microsoft JhengHei", "year_ad": "2009", "font_style": "Chinese" },
+
+  { "os_name_font_first_released": "Windows 8", "font_name": "Javanese Text", "year_ad": "2012", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows 8", "font_name": "Myanmar Text", "year_ad": "2012", "font_style": "Script" },
+  { "os_name_font_first_released": "Windows 8", "font_name": "Nirmala UI", "year_ad": "2012", "font_style": "Indic" },
+
+  { "os_name_font_first_released": "Windows 10", "font_name": "Ink Free", "year_ad": "2018", "font_style": "Handwriting" },
+  { "os_name_font_first_released": "Windows 10", "font_name": "Segoe MDL2 Assets", "year_ad": "2015", "font_style": "Symbol" },
+
+  { "os_name_font_first_released": "Windows 11", "font_name": "Sitka", "year_ad": "2021", "font_style": "Serif" },
+  { "os_name_font_first_released": "Windows 11", "font_name": "Leelawadee UI Semilight", "year_ad": "2021", "font_style": "Sans-Serif" }
+]

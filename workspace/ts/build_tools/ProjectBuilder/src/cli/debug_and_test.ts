@@ -56,7 +56,7 @@ if (false === fs.existsSync( packagesPath ) ) {
 
 const cssCleanStartPath: any = path.resolve(
   commandArgs.ProjectRoot,
-  "Jaisocx_SitesTools/libraries/sites_tools/js_tools/CssTableOrdered"
+  "ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/js_tools/CssTableOrdered"
 );
 
 if (false === fs.existsSync( cssCleanStartPath ) ) {

@@ -1,0 +1,8 @@
+[
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Helvetica", "year_ad": "1992", "font_style": "sans-serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Arial", "year_ad": "1992", "font_style": "sans-serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Times New Roman", "year_ad": "1992", "font_style": "serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Times", "year_ad": "1992", "font_style": "serif" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Courier", "year_ad": "1992", "font_style": "monospace" },
+  { "os_name_font_first_released": "Windows 3.1", "font_name": "Courier New", "year_ad": "1992", "font_style": "monospace" }
+]

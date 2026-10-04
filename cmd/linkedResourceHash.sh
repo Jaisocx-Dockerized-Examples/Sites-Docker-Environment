@@ -41,7 +41,7 @@ fi
 
 
 "${jsInvokePath}" "${commandLineArgs}" \
-  --packagePath="Jaisocx_SitesTools/libraries/base_packs/LinkedResourcesIntegrity" \
+  --packagePath="ts/cloned_repos/jaisocx_sitestools/libraries/base_packs/LinkedResourcesIntegrity" \
   --script="cmd/produceLinkedResourceHash.js" \
       --filePath="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/json_styling_tools/Tree/MediaAndStyles/Tree_main_resolved_minimal.css" \
       --algo="sha384"

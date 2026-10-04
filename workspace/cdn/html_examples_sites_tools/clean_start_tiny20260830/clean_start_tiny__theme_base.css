@@ -1,0 +1,402 @@
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--rem:  16px;
+
+  --clean_start--all_tags--font-family: var(--clean_start--sans--font-family);
+
+  --clean_start--all_tags--position: relative;
+  --clean_start--all_tags--display: inline-block;
+  --clean_start--all_tags--box-sizing: border-box;
+
+  --clean_start--all_tags--padding: 0 0 0 0;
+  --clean_start--all_tags--margin: 0 0 0 0;
+
+  --clean_start--all_tags--font-family: Arial;
+  --clean_start--all_tags--font-size: 0.9rem;
+  --clean_start--all_tags--line-height: 1.2rem;
+
+  --clean_start--all_tags--letter-spacing: 0;
+  --clean_start--all_tags--line-break: strict;
+  --clean_start--all_tags--word-wrap: normal;
+  --clean_start--all_tags--word-break: normal;
+  --clean_start--all_tags--color: black;
+
+  --clean_start--all_tags--border-color: lime;
+  --clean_start--all_tags--border-style: solid;
+  --clean_start--all_tags--border-width: 0;
+
+  --clean_start--all_tags--min-height: 0;
+  --clean_start--all_tags--max-height: unset;
+  --clean_start--all_tags--height: auto;
+
+  --clean_start--all_tags--min-width: 0;
+  --clean_start--all_tags--max-width: 100%;
+  --clean_start--all_tags--width: fit-content;
+
+  --clean_start--all_tags--overflow-x: visible;
+  --clean_start--all_tags--overflow-y: visible;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--site--padding:              0 0 0 0;
+  --clean_start--site--background:           #fdfdfd;
+  --clean_start--body_tag--background:       #eefefa;
+  --clean_start--site--width:                100%;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start_tiny html tag h */
+.clean_start {
+  --clean_start--h1--text-align: center;
+  --clean_start--h1--font-size: 1.9rem;
+  --clean_start--h1--line-height: 2.3rem;
+  --clean_start--h1--color: black;
+  --clean_start--h1--background: #fdfdfd;
+
+  --clean_start--h--display: block;
+  --clean_start--h--padding: 0 0 0 0;
+  --clean_start--h--margin: 0 0 0 0;
+  --clean_start--h--font-weight: 600;
+  --clean_start--h--color: black;
+  --clean_start--h--background: #fdfdfd;
+  --clean_start--h--text-align: left;
+  --clean_start--h--font-size: 1.09rem;
+  --clean_start--h--line-height: 1.4rem;
+}
+/* @finish base theme for clean_start_tiny html tag h */
+
+
+
+/* @start base theme for clean_start_tiny html tag a */
+.clean_start {
+  --clean_start--anchor--color:           navy;
+  --clean_start--anchor_hover--color:     #2292e5;
+  --clean_start--anchor--text-decoration: none;
+  --clean_start--anchor_hover--text-decoration: underline;
+}
+/* @finish base theme for clean_start_tiny html tag a */
+
+
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--label--display: inline-block;
+  --clean_start--label--min-height: unset;
+  --clean_start--label--max-height: 100%;
+  --clean_start--label--height: auto;
+  --clean_start--label--min-width: unset;
+  --clean_start--label--max-width: 100%;
+  --clean_start--label--width: auto;
+  --clean_start--label--font-size: 0.9rem;
+  --clean_start--label--line-height: 1.2rem;
+  --clean_start--label--padding: 0 0 0 0;
+  --clean_start--label--margin: 0 0 0 0;
+  --clean_start--label--color: black;
+  --clean_start--label--background: #fdfdfd;
+  --clean_start--label--border: 0 solid #ddd;
+  --clean_start--label--border-radius: 0;
+  --clean_start--label--overflow-x: hidden;
+  --clean_start--label--overflow-y: hidden;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+
+
+/* @start base theme for clean_start html tag ol_li */
+.clean_start {
+  --clean_start--ol--padding: 0 0 0 0;
+  --clean_start--ol--display: block;
+  --clean_start--ol--margin: 0 0 0 0;
+  --clean_start--ol--line-height: 0.9rem;
+  --clean_start--ol--font-size: 0.9rem;
+  --clean_start--ol_li--min-height: 0;
+  --clean_start--ol_li--max-height: unset;
+  --clean_start--ol_li--height: auto;
+  --clean_start--ol--overflow-x: visible;
+  --clean_start--ol--overflow-y: visible;
+  --clean_start--ol_li--padding: 0 0 0 0;
+  --clean_start--ol_li--display: block;
+  --clean_start--ol_li--margin: 0 0 0 0;
+  --clean_start--ol_li--line-height: 1.2rem;
+  --clean_start--ol_li--font-size: 0.9rem;
+  --clean_start--ol_li--min-height: 0;
+  --clean_start--ol_li--max-height: unset;
+  --clean_start--ol_li--height: auto;
+  --clean_start--ol_li--overflow-x: visible;
+  --clean_start--ol_li--overflow-y: visible;
+  --clean_start--ol_li_tags--padding: 0 0 0 0;
+  --clean_start--ol_li_tags--display: block;
+  --clean_start--ol_li_tags--margin: 0 0 0 0;
+  --clean_start--ol_li_tags--font-size: 0.9rem;
+  --clean_start--ol_li_tags--line-height: 0.9rem;
+  --clean_start--ol_li_tags--min-height: 0;
+  --clean_start--ol_li_tags--max-height: 0.9rem;
+  --clean_start--ol_li_tags--height: 0.9rem;
+  --clean_start--ol_li_tags--overflow-x: visible;
+  --clean_start--ol_li_tags--overflow-y: visible;
+  --clean_start--li_ol--padding: 0 0 0 0;
+  --clean_start--li_ol--display: block;
+  --clean_start--li_ol--margin: 0 0 0 0;
+  --clean_start--li_ol--line-height: 0.9rem;
+  --clean_start--li_ol--font-size: 0.9rem;
+  --clean_start--li_ol--min-height: 0;
+  --clean_start--li_ol--max-height: unset;
+  --clean_start--li_ol--height: auto;
+  --clean_start--li_ol--overflow-x: visible;
+  --clean_start--li_ol--overflow-y: visible;
+  --clean_start--li_ol_li--padding: 0 0 0 0;
+  --clean_start--li_ol_li--display: block;
+  --clean_start--li_ol_li--margin: 0 0 0 0;
+  --clean_start--li_ol_li--line-height: 1.2rem;
+  --clean_start--li_ol_li--font-size: 0.9rem;
+  --clean_start--li_ol_li--min-height: 0;
+  --clean_start--li_ol_li--max-height: 1.2rem;
+  --clean_start--li_ol_li--height: auto;
+  --clean_start--li_ol_li--overflow-x: visible;
+  --clean_start--li_ol_li--overflow-y: visible;
+  --clean_start--ol_li_c--position: absolute;
+  --clean_start--ol_li_c--display: block;
+  --clean_start--ol_li_c--top: 0;
+  --clean_start--ol_li_c--left: 0;
+  --clean_start--ol_li_c--line-height: 1.2rem;
+  --clean_start--ol_li_c--font-size: 0.9rem;
+  --clean_start--ol_li_c--min-height: 0;
+  --clean_start--ol_li_c--max-height: 1.2rem;
+  --clean_start--ol_li_c--height: 1.2rem;
+  --clean_start--ol_li_c--color: black;
+  --clean_start--ol_li_c--background: #fdfdfd;
+  --clean_start--ol_li_c--border: 0 solid #ddd;
+  --clean_start--ol_li_c--overflow-x: hidden;
+  --clean_start--ol_li_c--overflow-y: hidden;
+}
+/* @finish base theme for clean_start html tag ol_li */
+
+
+
+/* @start base theme for clean_start html tag p */
+.clean_start {
+  --clean_start--p--line-height:    var(--clean_start--all_tags--line-height);
+  --clean_start--p--font-size:      var(--clean_start--all_tags--font-size);
+  --clean_start--p--margin:         0 0 0 0;
+
+  --clean_start--p_first--margin:   0 0 0 0;
+
+  --clean_start--p_tags--padding:   0 0 0 0;
+  --clean_start--p_tags--margin:    0 0 0 0;
+  --clean_start--p_tags--font-size: 0.9rem;
+  --clean_start--p_tags--line-height: 0.9rem;
+  --clean_start--p_tags--min-height: 0;
+  --clean_start--p_tags--max-height: 0.9rem;
+  --clean_start--p_tags--height: 0.9rem;
+  --clean_start--p_tags--overflow-x: visible;
+  --clean_start--p_tags--overflow-y: hidden;
+}
+/* @finish base theme for clean_start html tag p */
+
+
+
+/* @start base theme for clean_start html tag pre */
+.clean_start {
+  --clean_start--pre--font-family:    var(--clean_start--monospace--font-family);
+  --clean_start--pre--font-size:      0.9rem;
+  --clean_start--pre--line-height:    1.2rem;
+}
+/* @finish base theme for clean_start html tag pre */
+
+
+
+/* @start base theme for clean_start_tiny html tag ul_li */
+
+.clean_start ul.inline {
+  --clean_start--ul_li_c--content:        '';
+}
+
+.clean_start {
+  /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  --clean_start--ul_li_c--content:        '';
+}
+
+.clean_start {
+  --clean_start--ul--padding: 0 0 0 0;
+  --clean_start--ul--display: block;
+  --clean_start--ul--margin: 0 0 0 0;
+  --clean_start--ul--line-height: 0.9rem;
+  --clean_start--ul--font-size: 0.9rem;
+  --clean_start--ul--min-height: 0;
+  --clean_start--ul--max-height: unset;
+  --clean_start--ul--height: auto;
+  --clean_start--ul--overflow-x: visible;
+  --clean_start--ul--overflow-y: visible;
+  --clean_start--ul_li--padding: 0 0 0 0;
+  --clean_start--ul_li--display: block;
+  --clean_start--ul_li--margin: 0 0 0 0;
+  --clean_start--ul_li--line-height: 1.2rem;
+  --clean_start--ul_li--font-size: 0.9rem;
+  --clean_start--ul_li--min-height: 0;
+  --clean_start--ul_li--max-height: unset;
+  --clean_start--ul_li--height: auto;
+  --clean_start--ul_li--overflow-x: visible;
+  --clean_start--ul_li--overflow-y: visible;
+  --clean_start--ul_li_tags--padding: 0 0 0 0;
+  --clean_start--ul_li_tags--display: inline-block;
+  --clean_start--ul_li_tags--margin: 0 0 0 0;
+  --clean_start--ul_li_tags--line-height: 0.9rem;
+  --clean_start--ul_li_tags--min-height: 0;
+  --clean_start--ul_li_tags--max-height: unset;
+  --clean_start--ul_li_tags--height: 0.9rem;
+  --clean_start--ul_li_tags--overflow-x: visible;
+  --clean_start--ul_li_tags--overflow-y: visible;
+  --clean_start--li_ul--padding: 0 0 0 0;
+  --clean_start--li_ul--display: block;
+  --clean_start--li_ul--margin: 0 0 0 0;
+  --clean_start--li_ul--line-height: 0.9rem;
+  --clean_start--li_ul--font-size: 0.9rem;
+  --clean_start--li_ul--min-height: 0;
+  --clean_start--li_ul--max-height: unset;
+  --clean_start--li_ul--height: auto;
+  --clean_start--li_ul--overflow-x: visible;
+  --clean_start--li_ul--overflow-y: visible;
+  --clean_start--li_ul_li--padding: 0 0 0 0;
+  --clean_start--li_ul_li--display: block;
+  --clean_start--li_ul_li--margin: 0 0 0 0;
+  --clean_start--li_ul_li--line-height: 1.2rem;
+  --clean_start--li_ul_li--font-size: 0.9rem;
+  --clean_start--li_ul_li--min-height: 0;
+  --clean_start--li_ul_li--max-height: unset;
+  --clean_start--li_ul_li--height: auto;
+  --clean_start--li_ul_li--overflow-x: visible;
+  --clean_start--li_ul_li--overflow-y: visible;
+  --clean_start--ul_li_c--position: absolute;
+  --clean_start--ul_li_c--display: block;
+  --clean_start--ul_li_c--top: 0;
+  --clean_start--ul_li_c--left: 0;
+  --clean_start--ul_li_c--line-height: 1.2rem;
+  --clean_start--ul_li_c--font-size: 0.9rem;
+  --clean_start--ul_li_c--min-height: 0;
+  --clean_start--ul_li_c--max-height: 1.2rem;
+  --clean_start--ul_li_c--height: 1.2rem;
+  --clean_start--ul_li_c--color: black;
+  --clean_start--ul_li_c--background: #fdfdfd;
+  --clean_start--ul_li_c--border: 0 solid #ddd;
+  --clean_start--ul_li_c--overflow-x: hidden;
+  --clean_start--ul_li_c--overflow-y: hidden;
+}
+
+.clean_start ul.inline {
+  --clean_start--ul_li_c--height:         var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--line-height:    var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--font-size:      var(--clean_start--ul_li--font-size);
+}
+
+.clean_start {
+  --clean_start--ul_li_c--height:         var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--line-height:    var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--font-size:      var(--clean_start--ul_li--font-size);
+}
+/* @finish base theme for clean_start_tiny html tag ul_li */
+
+
+
+/* @start base theme for clean_start html tag table */
+.clean_start {
+
+  --clean_start--table--border: 0 solid #fdfd40;
+  --clean_start--table--border-collapse: collapse;
+  --clean_start--table--overflow-x: hidden;
+  --clean_start--table--overflow-y: hidden;
+  --clean_start--table--min-width: unset;
+  --clean_start--table--max-width: 100%;
+  --clean_start--table--width: auto;
+  --clean_start--table_caption--padding: 0 0 0 0;
+  --clean_start--table_caption--text-align: center;
+  --clean_start--table_caption--font-size: 0.9rem;
+  --clean_start--table_caption--font-weight: 600;
+  --clean_start--table_caption--border: 0 solid lime;
+  --clean_start--table_caption--color: black;
+  --clean_start--table_caption--background: #fdfdfd;
+  --clean_start--table_caption--overflow-x: hidden;
+  --clean_start--table_caption--overflow-y: hidden;
+  --clean_start--table_th--text-align: left;
+  --clean_start--table_th--font-weight: 600;
+  --clean_start--table_th--padding: 0 0 0 0;
+  --clean_start--table_th--margin: 0 0 0 0;
+  --clean_start--table_th--color: black;
+  --clean_start--table_th--border: 0.2px solid #ddd;
+  --clean_start--table_th--background: #fdfdfd;
+  --clean_start--table_td--text-align: left;
+  --clean_start--table_td--font-weight: 400;
+  --clean_start--table_td--padding: 0 0 0 0;
+  --clean_start--table_td--margin: 0 0 0 0;
+  --clean_start--table_td--font-size: 0.9rem;
+  --clean_start--table_td--line-height: 1.2rem;
+  --clean_start--table_td--border: 0.2px solid #ddd;
+  --clean_start--table_td--color: black;
+  --clean_start--table_td--background: #fdfdfd;
+  --clean_start--table_td_tags--padding: 0 0 0 0;
+  --clean_start--table_td_tags--margin: 0 0 0 0;
+  --clean_start--table_td_tags--font-size: 0.9rem;
+  --clean_start--table_td_tags--line-height: 0.9rem;
+  --clean_start--table_tf--text-align: left;
+  --clean_start--table_tf--font-weight: 600;
+  --clean_start--table_tf--padding: 0 0 0 0;
+  --clean_start--table_tf--margin: 0 0 0 0;
+  --clean_start--table_tf--border: 0.2px solid #ddd;
+  --clean_start--table_tf--color: black;
+  --clean_start--table_tf--background: #fdfdfd;
+
+  /** variables of a sites tool.
+  *     I have to think later: how to write theme styles,
+  *     when the clean_start_tiny or clean_start was referenced in the html via link node,
+  *     whether the styles variables were in the clean_start_tiny.
+  *     the very interesting question,
+  *     if the aim of the setup was,
+  *     the namespaces of variables names are easy to know,
+  *     and for the clean_start_tiny for the same html node we set other namespace
+  *     for telling variables namespaces from each other,
+  *     no one never knows later whether a variable neds namespace of clean start or clean start tiny)).
+  *     --clean_start--table_td--
+  *     --clean_start_tiny--table_td--
+  *     if another .css: then the styles variables don't do.
+  **/
+  /**
+  --clean_start--table_td_odd--color:               #553322;
+  --clean_start--table_td_odd--background-color:    #fafaf2;
+
+  --clean_start--table_td_even--color:              darkgreen;
+  --clean_start--table_td_even--background-color:   #f2faf2;
+  */
+}
+/* @finish base theme for clean_start html tag table */
+
+
+
+/* @start base theme for clean_start_tiny html tag having scrollbar */
+.clean_start {
+
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar--size:     0.3rem;
+
+  /* standard styles */
+  /*
+  scrollbar-width: auto;
+  scrollbar-width: thin;
+  scrollbar-width: none;
+  */
+  --clean_start--scrollbar--width:    thin;
+
+  /* scrollbar colors */
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar-thumb--background-color:    lime;
+  --clean_start--scrollbar-track--background-color:    #fafefa;
+  --clean_start--scrollbar--color:                     var(--clean_start--scrollbar-thumb--background-color)  var(--clean_start--scrollbar-track--background-color);
+}
+/* @finish base theme for clean_start_tiny html tag having scrollbar */
+
+

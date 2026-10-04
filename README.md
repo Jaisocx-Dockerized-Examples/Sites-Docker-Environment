@@ -124,7 +124,7 @@
 
  > Refinements in the current February 2026 review after 3 months release before.
 
-  - ✅ [**Ideas, Why Coded What**](./workspace/readme_sites_docker/r_docker/README_Ideas_why_coded_what.md).
+  - ✅ [**Ideas, Why Coded What**](./workspace/readme/readme_sites_docker/r_docker/README_Ideas_why_coded_what.md).
 
   - ✅ **Newer Workaround for Docker Compose**.
 
@@ -132,7 +132,7 @@
 
   - ✅ **B. Workarounds improve quality and easen work day**.
 
-  - ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme_sites_docker/r_docker/README_Docker_Code_Snippets.md).
+  - ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Code_Snippets.md).
 
   - ✅ **D.** [**Typescript Environment**](./README_typescript_environment.md).
 
@@ -140,15 +140,15 @@
 
 
 
-  1. ✅ [**Network**](./workspace/readme_sites_docker/r_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
+  1. ✅ [**Network**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
 
-  2. ✅ [**Users**](./workspace/readme_sites_docker/r_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
+  2. ✅ [**Users**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
 
   3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
 
   4. ✅ **Tarballs** for reuse on reinstall.
 
-  5. ✅ [**Docker Env Theories**](./workspace/readme_sites_docker/r_docker/README_Docker_Env.md).
+  5. ✅ [**Docker Env Theories**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Env.md).
 
 
 
@@ -157,7 +157,7 @@
   - Why **Docker**
   - When Docker, why **Alpine**
   - Why **bash** 
-  - Why **sudo** ( see [**Users** => 4.](./workspace/readme_sites_docker/r_docker/README_Docker_Users.md) )
+  - Why **sudo** ( see [**Users** => 4.](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md) )
 
 ## Newer Workaround for Docker Compose
   > Just one Service, for Sites, added to network with internet and has open port(s): **jaisocx_dc_opened_one_for_browsers_network**
@@ -207,7 +207,7 @@
   - Workspace VOLUME same .env bash variable
 
 
-![workspace/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png](./workspace/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png)
 
 
 ## B. Workarounds improve quality and easen work day
@@ -269,7 +269,7 @@
 
 
 ### 2.2. Secure in deployment
-  > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./workspace/readme_sites_docker/r_docker/README_Docker_Users.md) )
+  > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md) )
 
   Once docker service deployed to production server machine,
   after logging inn,

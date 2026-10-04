@@ -47,7 +47,7 @@ export default [
     }
   },
   {
-    "files": ["src/**/*.ts", "Jaisocx_SitesTools/**/src/**/*.ts"],
+    "files": ["src/**/*.ts", "ts/cloned_repos/jaisocx_sitestools/**/src/**/*.ts"],
     "plugins": {
       "@typescript-eslint": typescriptEslintPlugin,
       "jaisocx": jaisocxPlugin
@@ -109,7 +109,7 @@ export default [
     }
   },
   {
-    "files": ["transpiled/Simple/**/*.js", "Jaisocx_SitesTools/**/transpiled/Simple/**/*.js"],
+    "files": ["transpiled/Simple/**/*.js", "ts/cloned_repos/jaisocx_sitestools/**/transpiled/Simple/**/*.js"],
     "plugins": {
       "jaisocx": jaisocxPlugin
     },

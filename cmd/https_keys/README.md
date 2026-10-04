@@ -1,10 +1,17 @@
 
-![../../workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
-![../../workspace/cdn/software_labels/Jaisocx/serverside/jaisocx_command_line_1_2_4.svg](../../workspace/cdn/software_labels/Jaisocx/serverside/jaisocx_command_line_1_2_4.svg)
+`typescript environment`
 
-`bash command line`
 
-[README.md HOME](./../../README.md)
+![../../workspace/cdn/software_labels/docker/softlabel_docker.svg](../../workspace/cdn/software_labels/docker/softlabel_docker.svg)
+![../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+
+[HOME Docker for a Site](../../README.md)
+
+
+[HOME Docker for a Site Typescript Environment](../../README_typescript_environment.md)
+
+
+[HOME Typescript Environment](../../workspace/readme/readme_ts_env/md/README.md)
 
 
 

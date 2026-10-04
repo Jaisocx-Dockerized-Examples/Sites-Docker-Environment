@@ -1,4 +1,30 @@
+
+`typescript environment`
+
+
+![../../cdn/software_labels/docker/softlabel_docker.svg](../../cdn/software_labels/docker/softlabel_docker.svg)
+![../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+
+[HOME Docker for a Site](../../../README.md)
+
+
+[HOME Docker for a Site Typescript Environment](../../../README_typescript_environment.md)
+
+
+[HOME Typescript Environment](../../readme/readme_ts_env/md/README.md)
+
+
+
 # Express Framework example by Jaisocx
+
+
+  | ⚡  **just JS Base Engine required** | ❌ no |
+
+  | ⚡  **Support by JS Engines** | 🌐 Browser: ❌ no | 🧭 Server-side Express: ✅ yes | 🖥️ Command Line: ✅ yes |
+
+  | ⚡  **JS Calls** | Network(fetch): ❌ no | 🌐 Browser(DOM): ❌ no | 🧭 Server-side Express(FS | DB): ✅ yes | 🖥️ Command Line: ✅ yes |
+
+
 
   > I could set the paths of private key and ssl cert from .env.dynamic like in settings of node-http,
   > with 3rd partie's dependency like @jaisocx/command-line for ENV variables from .env.dynamic in

@@ -1,0 +1,98 @@
+    /* Css Clean Start Lite font families new styles */
+
+    /** Just need time for publishing same packages after renamings and tests.
+    *
+    * Renamings in future for the few sites tools,
+    * are aimed for Software Companies' Namespaces, like Jaisocx,
+    * and, whether the alignment librarie's styles set,
+    * the class name for the CssCleanStart, clean_start.
+    *
+    * Due to the aim of the SetUp,
+    * the variables' namespace doesn't have the Companie's Name,
+    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+    */
+
+    /* Font Families */
+
+    /* microsoft, ios, android, linux */
+
+    .jsx,
+    .jsx.jaisocx.clean_start,
+    .jaisocx.clean_start,
+    .jaisocx.clean_start.theme_fonts_old_good_fonts,
+    .jaisocx.clean_start   .theme_fonts_old_good_fonts {
+                                             /* microsoft fonts: The browser shows texts the right way on all computers with all other OS, like: ios, linux, android */
+
+                                             /* microsoft, ios, linux, android */
+      --clean_start__arial__font-family:     Arial;
+      --clean_start__times_new_roman__font-family:  "Times New Roman";
+      --clean_start__courier__font-family:   Courier;
+      --clean_start__written__font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+
+      --clean_start__sans__font-family:      Arial;
+      --clean_start__serif__font-family:     "Times New Roman";
+      --clean_start__monospace__font-family: Courier;
+      --clean_start__written__font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+    }
+
+
+
+    /**
+    On every OS install Microsoft fonts:
+    Times New Roman, Arial, Courier, Courier New.
+    However, on other OS these fonts show not the same way.
+
+    3 themes, all same fonts for:
+    . Android: sans-serif, serif, monospace, cursive.
+    . Linux handwrite font: Z003.
+    */
+
+    .jaisocx.clean_start.theme_fonts_a,
+    .jaisocx.clean_start   .theme_fonts_a {
+                                             /* microsoft, ios, linux, android */
+      --clean_start__sans__font-family:      "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+      --clean_start__serif__font-family:     "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+      --clean_start__monospace__font-family: "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+      --clean_start__written__font-family:   "<microsoft>", "Chalkduster",          "Z003",             "cursive";
+    }
+
+    .jaisocx.clean_start.theme_fonts_b,
+    .jaisocx.clean_start   .theme_fonts_b  {
+                                             /* microsoft, ios, linux, android */
+      --clean_start__sans__font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+      --clean_start__serif__font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+      --clean_start__monospace__font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+      --clean_start__written__font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
+    }
+
+    .jaisocx.clean_start.theme_fonts_c,
+    .jaisocx.clean_start   .theme_fonts_c  {
+                                             /* microsoft, ios, linux, android */
+      --clean_start__sans__font-family:      "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
+      --clean_start__serif__font-family:     "Sitka",       "Charter",          "DejaVu Serif",     "serif";
+      --clean_start__monospace__font-family: "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
+      --clean_start__written__font-family:   "<microsoft>", "Snell Roundhand",  "Z003",             "cursive";
+    }
+
+
+
+    .jaisocx.clean_start  .font_overrides  .font_sans,
+    .jaisocx.clean_start  .font_overrides.font_sans {
+      font-family: var(--clean_start__sans__font-family);
+    }
+
+    .jaisocx.clean_start  .font_overrides  .font_serif,
+    .jaisocx.clean_start  .font_overrides.font_serif {
+      font-family: var(--clean_start__serif__font-family);
+    }
+
+    .jaisocx.clean_start  .font_overrides  .font_monospace,
+    .jaisocx.clean_start  .font_overrides.font_monospace {
+      font-family: var(--clean_start__monospace__font-family);
+    }
+
+    .jaisocx.clean_start  .font_overrides  .font_written,
+    .jaisocx.clean_start  .font_overrides.font_written {
+      font-family: var(--clean_start__written__font-family);
+    }
+
