@@ -42,28 +42,28 @@ RUN apk add shadow
 # RUN apk add util-linux
 
 
-RUN apk add    php83
-RUN apk add    php83-fpm
+RUN apk add    php85
+RUN apk add    php85-fpm
 
-RUN apk add    php83-common
-RUN apk add    php83-curl
-RUN apk add    php83-fileinfo
-# RUN apk add    php83-gd
-RUN apk add    php83-json
-RUN apk add    php83-iconv
-RUN apk add    php83-mbstring
-# RUN apk add    php83-opcache
-RUN apk add    php83-openssl
-RUN apk add    php83-pear
-RUN apk add    php83-phar
-RUN apk add    php83-session
-RUN apk add    php83-xml
-RUN apk add    php83-zip
+RUN apk add    php85-common
+RUN apk add    php85-curl
+RUN apk add    php85-fileinfo
+# RUN apk add    php85-gd
+RUN apk add    php85-json
+RUN apk add    php85-iconv
+RUN apk add    php85-mbstring
+# RUN apk add    php85-opcache
+RUN apk add    php85-openssl
+RUN apk add    php85-pear
+RUN apk add    php85-phar
+RUN apk add    php85-session
+RUN apk add    php85-xml
+RUN apk add    php85-zip
 
 # -- Work with SQL securely --
-# RUN apk add    php83-pdo
-# RUN apk add    php83-pdo_mysql
-# RUN apk add    php83-pdo_pgsql
+# RUN apk add    php85-pdo
+# RUN apk add    php85-pdo_mysql
+# RUN apk add    php85-pdo_pgsql
 
 
 
@@ -74,11 +74,11 @@ RUN apk add    php83-zip
 USER   root
 
 
-ARG a_php_conf_folder="/etc/php83"
+ARG a_php_conf_folder="/etc/php85"
 ARG a_php_confd_folder="${a_php_conf_folder}/conf.d"
 ARG a_fpm_php_conf_folder="${a_php_conf_folder}/php-fpm.d"
 
-ARG a_backup_php_conf_folder="/etc/backup/php83/conf"
+ARG a_backup_php_conf_folder="/etc/backup/php85/conf"
 ARG a_backup_php_confd_folder="${a_backup_php_conf_folder}/conf.d"
 ARG a_backup_fpm_php_conf_folder="${a_backup_php_conf_folder}/php-fpm.d"
 
@@ -182,14 +182,14 @@ RUN if [ ! -e "${a_php_confd_folder}" ]; then mkdir -p "${a_php_confd_folder}"; 
 RUN if [ ! -e "${a_fpm_php_conf_folder}" ]; then mkdir -p "${a_fpm_php_conf_folder}"; fi
 RUN if [ ! -e "${A_PHP_SOFTWARE_HOME}/tmp/uploads" ]; then mkdir -p "${A_PHP_SOFTWARE_HOME}/tmp/uploads"; fi
 
-COPY "./conf/php83/php.ini"         "${A_PHP_SOFTWARE_HOME}/conf/examples/php.ini"
-COPY "./conf/php83/php-fpm.conf"    "${A_PHP_SOFTWARE_HOME}/conf/examples/php-fpm.ini"
-COPY "./conf/php83/php-fpm.d/pool_workspace.conf"     "${A_PHP_SOFTWARE_HOME}/conf/examples/pool_workspace.conf"
+COPY "./conf/php85/php.ini"         "${A_PHP_SOFTWARE_HOME}/conf/examples/php.ini"
+COPY "./conf/php85/php-fpm.conf"    "${A_PHP_SOFTWARE_HOME}/conf/examples/php-fpm.ini"
+COPY "./conf/php85/php-fpm.d/pool_workspace.conf"     "${A_PHP_SOFTWARE_HOME}/conf/examples/pool_workspace.conf"
 
-COPY "./conf/php83/conf.d/dc_curl.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_curl.ini"
-COPY "./conf/php83/conf.d/dc_iconv.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_iconv.ini"
-COPY "./conf/php83/conf.d/dc_session.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_session.ini"
-COPY "./conf/php83/conf.d/dc_xdebug.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"
+COPY "./conf/php85/conf.d/dc_curl.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_curl.ini"
+COPY "./conf/php85/conf.d/dc_iconv.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_iconv.ini"
+COPY "./conf/php85/conf.d/dc_session.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_session.ini"
+COPY "./conf/php85/conf.d/dc_xdebug.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"
 
 
 
@@ -198,9 +198,9 @@ COPY "./conf/php83/conf.d/dc_xdebug.ini"  "${A_PHP_SOFTWARE_HOME}/conf/examples/
 # COPY "${a_fpm_php_conf_folder}/www.conf" "${a_backup_fpm_php_conf_folder}/www.conf"
 
 # Install Your custom php and xdebug config files
-COPY "./conf/php83/php.ini"         "${a_php_conf_folder}/php.ini"
-COPY "./conf/php83/php-fpm.conf"    "${a_php_conf_folder}/php-fpm.conf"
-COPY "./conf/php83/php-fpm.d/pool_workspace.conf"  "${a_fpm_php_conf_folder}/pool_workspace.conf"
+COPY "./conf/php85/php.ini"         "${a_php_conf_folder}/php.ini"
+COPY "./conf/php85/php-fpm.conf"    "${a_php_conf_folder}/php-fpm.conf"
+COPY "./conf/php85/php-fpm.d/pool_workspace.conf"  "${a_fpm_php_conf_folder}/pool_workspace.conf"
 RUN  rm "${a_fpm_php_conf_folder}/www.conf"
 
 
@@ -218,12 +218,17 @@ ENV USER_HOME="/home/${USER_NAME}"
 # EXPOSE ${PHP_FPM_STATUS_PORT}
 # EXPOSE ${PHP_XDEBUG_FLAT_PORT}
 
+#; -- env variables ports numbers for documentation purposes, hardcopy from .env --
+#; PHP_FPM_FLAT_PORT=9020
+#; PHP_FPM_STATUS_PORT=9032
+#; PHP_XDEBUG_FLAT_PORT=9050
+
 # - php_fpm --
 EXPOSE 9020
 # -- php_composer --
 EXPOSE 9025
 
-EXPOSE 9022
+# EXPOSE 9032
 EXPOSE 9050
 
 

@@ -18,11 +18,13 @@
 
 ---
 
-  >  🗓  **Updated**:  🌼 Summer 2026, Tue. 07 jul. 20:18:45
+  >  🗓  **Updated**:  🌾  Autumn 2026, Tue. 06 oct. 10:30:50 GMT
+
+
 
 ---
 
-  ⛔  **Warning July 2026!!! don't update, first do backup!!! all project data could get lost, changed several configurations**.
+  ⛔  **Warning October 2026!!! don't update, first do backup!!! all project data could get lost, changed several configurations**.
 
   > for js developers, first learned docker and databases
 
@@ -44,7 +46,145 @@
 
 
 # Docker for a Site
- > For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
+>  💡  For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
+
+
+
+## Refined all
+
+> Refinements in the current February 2026 review after 3 months release before.
+
+- ✅ [**Ideas, Why Coded What**](./workspace/readme/readme_sites_docker/r_docker/README_Ideas_why_coded_what.md).
+
+- ✅ **Newer Workaround for Docker Compose**.
+
+- ✅ **A. Aligned All Services**.
+
+- ✅ **B. Workarounds improve quality and easen work day**.
+
+- ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Code_Snippets.md).
+
+- ✅ **D.** [**Typescript Environment**](./README_typescript_environment.md).
+
+- ✅ **E.** [**A4DC**](./README_a4dc.md).
+
+
+
+1. ✅ [**Network**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
+
+2. ✅ [**Users**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
+
+3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
+
+4. ✅ **Tarballs** for reuse on reinstall.
+
+5. ✅ [**Docker Env Theories**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Env.md).
+
+
+
+
+workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/
+
+
+
+## Sites Tools under Sites Docker
+
+
+
+**Old page of year AD 2012. Old MS FrontPage color themes**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html)
+
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_orange_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_orange_540.png)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_aqua_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_aqua_540.png)
+
+
+
+
+
+## Sites Tools of Greate Use
+
+
+**Sites Tools BuildData.json**
+
+🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/BuildData_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/BuildData_540.png)
+
+
+
+
+
+
+**Lock Viewer**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/LockViewer_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/LockViewer_540.png)
+
+
+
+
+
+### Tests for fonts saving up network
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Fonts_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Fonts_540.png)
+
+
+
+
+
+### Unicode symbols
+
+
+**pair of icons**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_540.png)
+
+
+
+
+
+**more icons**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_2_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_2_540.png)
+
+
+
+
+
+
+
+### Pair of sites tools on cdn
+
+**tb thought for rendering js data**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Tb_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Tb_540.png)
+
+
+
+
+
+**Css code snippet**
+
+  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html)
+
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/CssCodeSnippet_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/CssCodeSnippet_540.png)
+
+
+
+
+
 
 
 ## Set Up
@@ -117,38 +257,6 @@
     22:    #     - subnet: "${SUBNET_IPv6}"
     23:    #       ip_range: "${IP_RANGE_IPv6}"
   ```
-
-
-
-## Refined all
-
- > Refinements in the current February 2026 review after 3 months release before.
-
-  - ✅ [**Ideas, Why Coded What**](./workspace/readme/readme_sites_docker/r_docker/README_Ideas_why_coded_what.md).
-
-  - ✅ **Newer Workaround for Docker Compose**.
-
-  - ✅ **A. Aligned All Services**.
-
-  - ✅ **B. Workarounds improve quality and easen work day**.
-
-  - ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Code_Snippets.md).
-
-  - ✅ **D.** [**Typescript Environment**](./README_typescript_environment.md).
-
-  - ✅ **E.** [**A4DC**](./README_a4dc.md).
-
-
-
-  1. ✅ [**Network**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
-
-  2. ✅ [**Users**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
-
-  3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
-
-  4. ✅ **Tarballs** for reuse on reinstall.
-
-  5. ✅ [**Docker Env Theories**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Env.md).
 
 
 

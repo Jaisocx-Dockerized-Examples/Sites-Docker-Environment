@@ -239,9 +239,9 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${SOFTWARE_INSTALL_FOLDER}"
   chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${PHP_SOFTWARE_HOME}"
   chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${PHP_SOFTWARE_LOGS}"
-  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php85"
+  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php83"
   chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${php_conf_folder}"
-  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/usr/lib/php85"
+  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/usr/lib/php83"
 
 
   # -- Setting Read/Write privilegs to Owner and Group --
@@ -255,9 +255,9 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   chmod -R  u+rwx  "${SOFTWARE_INSTALL_FOLDER}"
   chmod -R  u+rwx  "${PHP_SOFTWARE_HOME}"
   chmod -R  u+rwx  "${PHP_SOFTWARE_LOGS}"
-  # chmod -R  u+rwx  "/etc/php85"
+  # chmod -R  u+rwx  "/etc/php83"
   # chmod -R  u+rwx  "${php_conf_folder}"
-  chmod -R  u+rwx  "/usr/lib/php85"
+  chmod -R  u+rwx  "/usr/lib/php83"
 
 
   chmod -R g+rwx  "${markers}"
@@ -273,10 +273,10 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   chmod -R  g+rwx  "${PHP_SOFTWARE_HOME}"
   chmod -R  g+rwx  "${PHP_SOFTWARE_LOGS}"
 
-  # chmod -R  g+rwx  "/etc/php85"
+  # chmod -R  g+rwx  "/etc/php83"
   # chmod -R  g+rwx  "${php_conf_folder}"
-  chmod -R  g-rwx  "/usr/lib/php85"
-  # chmod -R  g-w   "/usr/lib/php85"
+  chmod -R  g-rwx  "/usr/lib/php83"
+  # chmod -R  g-w   "/usr/lib/php83"
 
 
   # -- Revoking Read/Write privilegs from other users --
@@ -289,9 +289,9 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
 
   chmod -R  o-rwx  "${PHP_SOFTWARE_HOME}"
   chmod -R  o-rwx  "${PHP_SOFTWARE_LOGS}"
-  # chmod -R  o-rwx   "/etc/php85"
+  # chmod -R  o-rwx   "/etc/php83"
   # chmod -R  o-rwx   "${php_conf_folder}"
-  chmod -R  o-rwx   "/usr/lib/php85"
+  chmod -R  o-rwx   "/usr/lib/php83"
 
 
 
@@ -346,12 +346,12 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   if [ ! -e "${PHP_SOFTWARE_HOME}/tmp/upload" ]; then mkdir -p "${PHP_SOFTWARE_HOME}/tmp/upload"; fi
 
 
-  if [ ! -e "${php_software_logs}/php85" ]; then mkdir "${php_software_logs}/php85"; fi
+  if [ ! -e "${php_software_logs}/php83" ]; then mkdir "${php_software_logs}/php83"; fi
 
-  if [ ! -e "${php_software_logs}/php85/php85_error.log" ]; then touch "${php_software_logs}/php85/php85_error.log"; fi
-  if [ ! -e "${php_software_logs}/php85/fpm_php85_error.log" ];   then touch "${php_software_logs}/php85/fpm_php85_error.log"; fi
-  if [ ! -e "${php_software_logs}/php85/access_workspace_fpm_php85.log" ];   then touch "${php_software_logs}/php85/access_workspace_fpm_php85.log"; fi
-  if [ ! -e "${php_software_logs}/php85/slow_workspace_fpm_php85.log" ];   then touch "${php_software_logs}/php85/slow_workspace_fpm_php85.log"; fi
+  if [ ! -e "${php_software_logs}/php83/php83_error.log" ]; then touch "${php_software_logs}/php83/php83_error.log"; fi
+  if [ ! -e "${php_software_logs}/php83/fpm_php83_error.log" ];   then touch "${php_software_logs}/php83/fpm_php83_error.log"; fi
+  if [ ! -e "${php_software_logs}/php83/access_workspace_fpm_php83.log" ];   then touch "${php_software_logs}/php83/access_workspace_fpm_php83.log"; fi
+  if [ ! -e "${php_software_logs}/php83/slow_workspace_fpm_php83.log" ];   then touch "${php_software_logs}/php83/slow_workspace_fpm_php83.log"; fi
 
 
   if [ ! -e "${php_software_logs}/xdebug" ]; then mkdir "${php_software_logs}/xdebug"; fi
@@ -361,7 +361,7 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
 #  if [ ! -e "${php_software_logs}/xdebug/trace" ];    then mkdir "${php_software_logs}/xdebug/trace"; fi
 #  if [ ! -e "${php_software_logs}/xdebug/dbg" ];      then mkdir "${php_software_logs}/xdebug/dbg"; fi
 
-  if [ ! -e "${php_software_logs}/xdebug/php85_xdebug.log" ]; then touch "${php_software_logs}/xdebug/php85_xdebug.log"; fi
+  if [ ! -e "${php_software_logs}/xdebug/php83_xdebug.log" ]; then touch "${php_software_logs}/xdebug/php83_xdebug.log"; fi
 
   chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${php_software_logs}"
   chmod -R 770     "${php_software_logs}"
@@ -370,9 +370,9 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
   # Set timezone
   ln -snf "/usr/share/zoneinfo/${TIME_ZONE}" /etc/localtime
   echo -e "${TIME_ZONE}\n" > /etc/timezone
-  echo -e "[PHP]\ndate.timezone = ${TIME_ZONE}\n" > /etc/php85/conf.d/tzone.ini
-  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php85/conf.d/tzone.ini"
-  chmod 644   "/etc/php85/conf.d/tzone.ini"
+  echo -e "[PHP]\ndate.timezone = ${TIME_ZONE}\n" > /etc/php83/conf.d/tzone.ini
+  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php83/conf.d/tzone.ini"
+  chmod 644   "/etc/php83/conf.d/tzone.ini"
   if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
     echo -e "[$(date)]: TIME_ZONE written to confs\n"
   fi
@@ -480,38 +480,38 @@ if [[ ( "${marker_php_fpm_installed}" != "$YES" ) ]]; then
     echo -e "The OnLogin bash script: "${USER_PHP_HOME}/.bashrc"\n"
   fi
 
-  ln -s   "/usr/bin/php85"   "/usr/local/bin/php"
-  ln -s   "/usr/sbin/php-fpm85"   "/usr/local/bin/php-fpm"
+  ln -s   "/usr/bin/php83"   "/usr/local/bin/php"
+  ln -s   "/usr/sbin/php-fpm83"   "/usr/local/bin/php-fpm"
 
 
-  if [ -e "/etc/php85/conf.d/00_curl.ini" ]; then
-    rm "/etc/php85/conf.d/00_curl.ini"
+  if [ -e "/etc/php83/conf.d/00_curl.ini" ]; then
+    rm "/etc/php83/conf.d/00_curl.ini"
   fi
-  if [ -e "/etc/php85/conf.d/00_iconv.ini" ]; then
-    rm "/etc/php85/conf.d/00_iconv.ini"
+  if [ -e "/etc/php83/conf.d/00_iconv.ini" ]; then
+    rm "/etc/php83/conf.d/00_iconv.ini"
   fi
-  if [ -e "/etc/php85/conf.d/00_session.ini" ]; then
-    rm "/etc/php85/conf.d/00_session.ini"
+  if [ -e "/etc/php83/conf.d/00_session.ini" ]; then
+    rm "/etc/php83/conf.d/00_session.ini"
   fi
 
-  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_curl.ini"   "/etc/php85/conf.d/00_curl.ini"
-  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_iconv.ini"   "/etc/php85/conf.d/00_iconv.ini"
-  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_session.ini"   "/etc/php85/conf.d/00_session.ini"
+  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_curl.ini"   "/etc/php83/conf.d/00_curl.ini"
+  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_iconv.ini"   "/etc/php83/conf.d/00_iconv.ini"
+  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_session.ini"   "/etc/php83/conf.d/00_session.ini"
 
-  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php85/conf.d"
-  chmod -R 750      "/etc/php85/conf.d"
+  chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php83/conf.d"
+  chmod -R 750      "/etc/php83/conf.d"
 
 
 
   php_folders=(
-    "/usr/lib/php85"
-    "/usr/lib/php85/modules"
+    "/usr/lib/php83"
+    "/usr/lib/php83/modules"
 
-    "/usr/sbin/php-fpm85"
+    "/usr/sbin/php-fpm83"
 
-    "/usr/bin/php85"
-    "/usr/bin/phar85.phar"
-    "/usr/bin/phar85"
+    "/usr/bin/php83"
+    "/usr/bin/phar83.phar"
+    "/usr/bin/phar83"
 
     "/usr/local/bin"
   )
@@ -594,21 +594,21 @@ if [[ ( "${env_xdebug_on}" == "$YES" ) && ( "${marker_xdebug_installed}" != "$YE
   chmod -R 750   "/usr/local/bin"
 
   # pie install xdebug
-  apk add php85-pecl-xdebug
+  apk add php83-pecl-xdebug
 
-  if [ -e "/etc/php85/conf.d/50_xdebug.ini" ]; then
-    rm "/etc/php85/conf.d/50_xdebug.ini"
+  if [ -e "/etc/php83/conf.d/50_xdebug.ini" ]; then
+    rm "/etc/php83/conf.d/50_xdebug.ini"
   fi
-  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"   "/etc/php85/conf.d/50_xdebug.ini"
+  cp "${PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"   "/etc/php83/conf.d/50_xdebug.ini"
 
-  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/usr/lib/php85/modules/xdebug.so"
-  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php85/conf.d/50_xdebug.ini"
+  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/usr/lib/php83/modules/xdebug.so"
+  chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php83/conf.d/50_xdebug.ini"
 
-  chmod -R 750   "/usr/lib/php85/modules"
-  # chmod 750   "/usr/lib/php85/modules/xdebug.so"
+  chmod -R 750   "/usr/lib/php83/modules"
+  # chmod 750   "/usr/lib/php83/modules/xdebug.so"
 
-  chmod -R 750   "/etc/php85/conf.d"
-  # chmod 750   "/etc/php85/conf.d/50_xdebug.ini"
+  chmod -R 750   "/etc/php83/conf.d"
+  # chmod 750   "/etc/php83/conf.d/50_xdebug.ini"
 
   if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
     echo -e "[$(date)]: XDebug installed \n"
@@ -629,13 +629,13 @@ if [[ ( "${env_xdebug_on}" == "$YES" ) && ( "${marker_xdebug_installed}" == "$YE
       echo -e "[$(date)]: Starts enable XDebug php extension \n"
     fi
 
-    if [ -e "/etc/php85/conf.d/50_xdebug.ini" ]; then
-      rm "/etc/php85/conf.d/50_xdebug.ini"
+    if [ -e "/etc/php83/conf.d/50_xdebug.ini" ]; then
+      rm "/etc/php83/conf.d/50_xdebug.ini"
     fi
-    cp "${PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"   "/etc/php85/conf.d/50_xdebug.ini"
-    chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php85/conf.d/50_xdebug.ini"
-    chmod -R 750   "/etc/php85/conf.d"
-    # chmod 750   "/etc/php85/conf.d/50_xdebug.ini"
+    cp "${PHP_SOFTWARE_HOME}/conf/examples/92_xdebug.ini"   "/etc/php83/conf.d/50_xdebug.ini"
+    chown "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "/etc/php83/conf.d/50_xdebug.ini"
+    chmod -R 750   "/etc/php83/conf.d"
+    # chmod 750   "/etc/php83/conf.d/50_xdebug.ini"
 
     touch "${xdebug_ext_marker}"
 
@@ -644,8 +644,8 @@ if [[ ( "${env_xdebug_on}" == "$YES" ) && ( "${marker_xdebug_installed}" == "$YE
       echo -e "[$(date)]: Starts disable XDebug php extension \n"
     fi
 
-    if [ -e "/etc/php85/conf.d/50_xdebug.ini" ]; then
-      rm "/etc/php85/conf.d/50_xdebug.ini"
+    if [ -e "/etc/php83/conf.d/50_xdebug.ini" ]; then
+      rm "/etc/php83/conf.d/50_xdebug.ini"
     fi
     if [ -e "${xdebug_ext_marker}" ]; then
       rm "${xdebug_ext_marker}"

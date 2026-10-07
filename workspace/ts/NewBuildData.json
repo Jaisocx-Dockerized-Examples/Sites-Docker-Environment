@@ -6,7 +6,7 @@
       "path": "libraries/base_packs/datasets/CssJsHtmlConstants",
       "name": "css-js-html-constants",
       "update-published": "Mon Sep 22 08:06:10 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -27,7 +27,7 @@
       "path": "libraries/base_packs/CommandLine",
       "name": "command-line",
       "update-published": "Sat Aug 30 18:16:38 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": []
@@ -36,7 +36,7 @@
       "path": "libraries/base_packs/fine_tuning/LinkedResourcesIntegrity",
       "name": "linked-resources-integrity",
       "update-published": "Sat Aug 30 18:20:26 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -50,7 +50,7 @@
       "path": "libraries/sites_tools/media_tools/JscFonts_base",
       "name": "media_tools_fonts_base",
       "update-published": "Thu Sep 25 11:40:28 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "css-importer": {
         "build": false,
@@ -64,7 +64,7 @@
       "path": "libraries/sites_tools/media_tools/JscFonts_Orbitron",
       "name": "media_tools_fonts_orbitron",
       "update-published": "Thu Sep 25 11:40:28 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "css-importer": {
         "build": false,
@@ -78,7 +78,7 @@
       "path": "libraries/sites_tools/media_tools/JscImages_mini_datatypes_base",
       "name": "media_tools_images_mini_datatypes_base",
       "update-published": "Sat Sep 27 14:14:17 UTC 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": []
@@ -87,7 +87,7 @@
       "path": "libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii",
       "name": "media_tools_images_mini_freepic_kawaii",
       "update-published": "Sat Sep 27 16:57:02 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": []
@@ -96,7 +96,7 @@
       "path": "libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base",
       "name": "media_tools_images_mini_mimetypes_base",
       "update-published": "Tue Nov 18 07:17:07 CET 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": []
@@ -105,7 +105,7 @@
       "path": "libraries/base_packs/text/parsers/TokensParser",
       "name": "tokens-parser",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -121,7 +121,6 @@
       "dependencies": [],
       "build-files": [
         "JPath.js",
-        "JPathImpl.js",
         "JPathData.js"
       ]
     },
@@ -129,7 +128,7 @@
       "path": "libraries/base_packs/data_workarounds/OData",
       "name": "objdata",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -146,7 +145,7 @@
       "path": "libraries/base_packs/text/Text",
       "name": "text",
       "update-published": "Sat Sep  6 04:14:24 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -160,7 +159,7 @@
       "path": "libraries/base_packs/CssHtml",
       "name": "css-html",
       "update-published": "Wed Oct  1 01:37:16 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -172,7 +171,7 @@
       "path": "libraries/base_packs/EventEmitter",
       "name": "event-emitter",
       "update-published": "Wed Feb 18 04:53:34 CET 202",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "build-files": [
         "EventEmitter.js",
@@ -183,7 +182,7 @@
       "path": "libraries/base_packs/FileWriter",
       "name": "file-writer",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -197,7 +196,7 @@
       "path": "libraries/base_packs/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -219,7 +218,7 @@
       "path": "libraries/base_packs/datasets/CdnDatasetsBase",
       "name": "cdn-datasets-base",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -237,7 +236,7 @@
       "path": "libraries/base_packs/datasets/MimeType",
       "name": "mime-type",
       "update-published": "Wed Sep 10 01:59:37 UTC 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -250,7 +249,7 @@
       "path": "libraries/base_packs/text/converters/CharcodeConverter",
       "name": "charcode-converter",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -324,7 +323,7 @@
       "path": "libraries/base_packs/fine_tuning/Preloader",
       "name": "preloader",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -364,7 +363,7 @@
       "path": "libraries/base_packs/text/renderers/TemplateRenderer",
       "name": "template-renderer",
       "update-published": "Wed Feb 18 04:53:34 CET 202",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -384,7 +383,7 @@
       "path": "libraries/base_packs/FileProducerByTemplate",
       "name": "file-producer-by-template",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -402,7 +401,7 @@
       "path": "libraries/base_packs/fine_tuning/SitesToolAutomation",
       "name": "sites-tool-automation",
       "update-published": "Wed Oct  1 01:32:57 UTC 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -466,7 +465,7 @@
       "ready-to-use": false,
       "path": "libraries/base_packs/data_workarounds/WorkspaceTreeWalker",
       "name": "workspace-tree-walker",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -481,7 +480,7 @@
       "ready-to-use": false,
       "path": "libraries/base_packs/text/renderers/ImprovedTemplateRenderer",
       "name": "improved-template-renderer",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -511,7 +510,7 @@
       "path": "libraries/base_packs/api/Api",
       "name": "api",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -527,7 +526,7 @@
       "path": "libraries/sites_tools/json_styling_tools/Tree",
       "name": "tree",
       "update-published": "Wed Feb 18 04:53:34 CET 202 ",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "css-importer": {
         "build": false,
@@ -586,7 +585,7 @@
       "ready-to-use": false,
       "path": "libraries/sites_tools/json_styling_tools/Table",
       "name": "table",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -606,7 +605,7 @@
       "path": "libraries/sites_tools/js_tools/Tooltip",
       "name": "tooltip",
       "update-published": "Tue Jun  3 00:23:40 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -635,7 +634,7 @@
       "path": "libraries/sites_tools/js_tools/CssTableOrdered",
       "name": "css-table-ordered",
       "update-published": "Sun Feb 22 07:24:27 CET 2026",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "css-importer": {
         "build": false,
@@ -669,7 +668,7 @@
     {
       "path": "examples/ExampleTemplateRenderer",
       "name": "example-template-renderer",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -688,7 +687,7 @@
     {
       "path": "webpack_builds/ExampleTree",
       "name": "example-tree",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -721,7 +720,7 @@
     {
       "path": "webpack_builds/ExampleTable",
       "name": "example-table",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -736,7 +735,7 @@
     {
       "path": "webpack_builds/ExampleTooltip",
       "name": "example-tooltip",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -751,7 +750,7 @@
     {
       "path": "templates/ResponsiveAndValidForWebpackWhenNpmInstall",
       "name": "template-css-clean-start",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -764,7 +763,7 @@
     {
       "path": "templates/BuiltWithWebpackYarnInstalledPackage",
       "name": "example-built-with-webpack",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -782,7 +781,7 @@
       "path": "libraries/sites_tools/js_tools/EmailHtmlInliner",
       "name": "email-html-inliner",
       "update-published": "Tue Jun  3 00:36:34 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -807,7 +806,7 @@
       "path": "libraries/base_packs/fine_tuning/ResponsiveSizes",
       "name": "responsive-sizes",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "build-files": [
         "ResponsiveSizesConstants.js",
@@ -839,7 +838,7 @@
       "path": "libraries/base_packs/patterns/EngineAndDataRecords",
       "name": "engine-and-data-records",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -850,7 +849,7 @@
       "path": "libraries/base_packs/ThemeTurnOn",
       "name": "theme-turn-on",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -862,7 +861,7 @@
       "path": "libraries/console/JsInvoke",
       "name": "jsc_console_js_invoke",
       "update-published": "Sat Mar  7 22:11:15 UTC 2026",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {

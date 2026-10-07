@@ -88,13 +88,13 @@ class JaisocxLockViewer extends Tree {
       this.#js_packages[ key ].packageName = key;
 
       let jPath = ( new JPath() );
-      this.#js_packages[ key ].packageVersion = JPath.getByJPath (
+      this.#js_packages[ key ].packageVersion = jPath.getByJPath (
+        this.data,
         [
           "packages",
           [ this.KEYWORD_NODEMODULES, key ].join( "" ),
           "version"
-        ],
-        this.data
+        ]
       );
 
       this.#counters[ key ] = ( new Array() );

@@ -7,10 +7,10 @@
   <link
       rel="icon"
       type="image/x-icon"
-      href="favicons/flaticon_com_flowers_ico/009_bird_of_paradise.ico"
+      href="favicons/flaticon_com_flowers_ico/004_sunflower.ico"
   />
 
-  <title> Jaisocx Tree </title>
+  <title> Lock Viewer </title>
 
 
 
@@ -44,14 +44,14 @@
     rel="stylesheet"
     type="text/css"
     charset="utf-8"
-    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/tree-styles-main.css"
+    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/Tree_main_resolved_minimal.css"
   />
 
   <link
     rel="stylesheet"
     type="text/css"
     charset="utf-8"
-    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/theme-funny.css"
+    href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/tree_theme-funny.css"
   />
 
 
@@ -60,7 +60,7 @@
 
     .jsx {
       --jsx--css-clean-start-2--body-tag--background: white;
-      --jsx--css-clean-start-2--site--background: #fff5f0;
+      --jsx--css-clean-start-2--site--background: #fff0f5;
 
       --jsx--css-clean-start-2--site--padding: 2rem 1rem 3rem 1rem;
 
@@ -144,7 +144,7 @@
 
     <content>
 
-        <h1> Tree </h1>
+        <h1> Jaisocx Lock Viewer </h1>
         <label> @jaisocx/tree </label>
 
         <textblock class="testing_html"></textblock>
@@ -391,6 +391,7 @@
                     let verEncounteredNum = versionsEncounteredKeys.length;
                     if ( verEncounteredNum === 0 ) {
                       newKey = [ item.packageName, "@", item.packageVersion, "___n", "0" ].join( "" );
+                      // newKey = [ item.packageName, "@", item.packageVersion, "___n", "0" ].join( "" );
                       newItem = "❎";
                     } else if ( verEncounteredNum === 1 ) {
                       if ( item.packageVersion === versionsEncounteredKeys[ 0 ] ) {

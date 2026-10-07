@@ -1,0 +1,21 @@
+[
+  "libraries/console/JsInvoke",
+  "libraries/base_packs/data_workarounds/ArrayOrObject",
+  "libraries/base_packs/api/ApiInterface",
+  "libraries/base_packs/api/Sax",
+  "libraries/base_packs/api/XmlHttp",
+  "libraries/base_packs/api/Upload",
+  "libraries/base_packs/api/driver/ApiJson",
+  "libraries/base_packs/api/driver/ApiOdata",
+  "libraries/base_packs/api/driver/ApiXml",
+  "libraries/base_packs/text/parsers/TemplateParser",
+  "libraries/base_packs/text/converters/CaseConverter",
+  "libraries/base_packs/text/trimmers/Trimmer",
+  "libraries/base_packs/text/trimmers/OptimizedTrimmer",
+  "libraries/sites_tools/css_tools/css_clean_start/CleanStart_Tiny",
+  "libraries/sites_tools/js_tools/CssTableOrdered",
+  "libraries/sites_tools/spa/BashMyAdmin",
+  "libraries/sites_tools/spa/databank_a4_reports"
+]
+
+

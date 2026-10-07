@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" id="js_tree_preview" class="jsx jsc">
+<head>
+
+
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicons/flaticon_com_flowers_ico/002_lavender.ico"
+  />
+
+  <title> Build Data </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="../"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/Tree_main_resolved_minimal.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/tree_theme-funny.css"
+  />
+
+
+
+  <style naame="styles_css_clean_start_overrides">
+
+    .jsx {
+      --jsx--css-clean-start-2--body-tag--background: white;
+      --jsx--css-clean-start-2--site--background: #f0fff5;
+
+      --jsx--css-clean-start-2--site--padding: 2rem 1rem 3rem 1rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
+
+      --jsx--css-clean-start-2--all-tags--font-family: Verdana;
+
+      --theme-button--width: fit-content;
+      --theme-button--font-size: 0.795rem;
+    }
+
+    .jsx#js_tree_preview .tree,
+    .jsx#js_tree_preview .tree.theme-funny {
+      --node-label--font-family: Verdana;
+    }
+
+
+
+    @media screen and ( min-width: 2px) and (max-width: 767px) {
+      .jsx {
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+      }
+
+      .jsx h2,
+      .jsx h3,
+      .jsx description {
+        display: none;
+      }
+    }
+
+  </style>
+
+
+  <style name="styles_textblock_tests">
+
+    .jsx main content {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    textblock.testing_html {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      line-break: break-all;
+      word-break: break-all;
+      height: 7rem;
+      min-height: fit-content;
+      overflow-y: visible;
+      padding: 1rem;
+      margin: 1rem 0 1rem 0;
+      border: 1px solid #e0e0e0;
+    }
+
+    textblock.testing_html img.mini_image {
+      display: inline-block;
+      width: 2rem;
+      height: auto;
+      max-height: 2rem;
+      margin-right: 1rem;
+    }
+
+  </style>
+
+</head>
+<body>
+<main>
+
+    <content>
+
+        <h1> BuildData.json </h1>
+        <label> @jaisocx/tree </label>
+
+        <textblock class="testing_html"></textblock>
+
+    </content>
+
+
+
+    <jstree id="tree_holder_0" class="theme-funny"></jstree>
+
+    <hr />
+
+    <jstree id="tree_holder_1" class="theme-funny"></jstree>
+
+    <hr />
+
+    <jstree id="tree_holder_2"></jstree>
+
+    <hr />
+
+    <jstree id="tree_holder_3"></jstree>
+
+</main>
+</body>
+
+
+
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/EventEmitter.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/ImprovedRenderEventEmitter.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPathData.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPath.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tokens-parser/transpiled/Simple/TokensParser.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/template-renderer/transpiled/Simple/TemplateRenderer.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/ArrayOrObjectPackage.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeConstants.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapter.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapterModeEase.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeAdapterModeConf.js" defer="defer"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/TreeConf.js" defer="defer"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/tree/transpiled/Simple/typescript/Tree.js" defer="defer"></script>
+
+
+
+<script src="html_examples_sites_tools/lock_viewer/src/JaisocxLockViewer.js" defer="defer"></script>
+
+<script>
+
+  const MAX_ITERATIONS_NUMBER   = 62;
+  const MAX_B_ITERATIONS_NUMBER = 50;
+
+
+
+  class TreeData {
+
+    id = "";
+    data = new Object();
+    dataLink = "";
+    htmlHolderId = "";
+    htmlElem = new Object();
+    dataIconBase = "";
+    renderingMode = "";
+    nodesOpenMode = "";
+
+
+
+    constructor (
+      id,
+      dataLink,
+      data,
+      htmlHolderId,
+      htmlElem,
+      dataIconBase,
+      renderingMode,
+      nodesOpenMode
+    ) {
+      this.id = id || "";
+
+      if ( this.id === "" ) {
+        throw new Error( "Required Data ID." );
+      }
+
+      this.dataLink = dataLink || "";
+      this.data = data || new Object();
+      this.htmlHolderId = htmlHolderId || "";
+      if ( this.htmlHolderId === "" ) {
+        throw new Error( "Required HtmlHolder ID." );
+      }
+
+      this.dataIconBase = dataIconBase || "";
+      this.renderingMode = renderingMode;
+      this.nodesOpenMode = nodesOpenMode;
+    }
+
+  }
+
+
+
+  class TreeExamples {
+
+    #treeInstances = new Object();
+    #treeData = new Object();
+    tsHtml = 1;
+    sitesTools = ( new Array() );
+
+    treeJsonDataIconBase = "";
+
+
+    constructor() {
+      // super();
+
+      this.#treeInstances = new Object();
+      this.#treeData = new Object();
+      this.tsHtml = 1;
+      this.newSitesTools = ( new Array() );
+
+      this.treeJsonDataIconBase = "";
+    }
+
+
+    setDataItems ( treeData ) {
+      this.#treeData = treeData;
+
+      return this;
+    }
+
+    addDataItem( inData ) {
+      const treeDataId = inData.id;
+      this.#treeData[ treeDataId ] = inData;
+
+      return this;
+    }
+
+    getTreeData() {
+      return this.#treeData;
+    }
+
+    getDataItemById( treeDataId ) {
+      const dataItem = this.#treeData[ treeDataId ];
+      return dataItem;
+    }
+
+    getSitesTools() {
+      return this.sitesTools;
+    }
+
+
+    exampleFunc( inSelector, jsonItem, eventPayload ) {}
+
+    examplefnc( inSelector, jsonItem, eventPayload ) {
+
+      let text = ( jsonItem.text ) ?? "";
+      let tagImg_miniImage = eventPayload.treeHtmlNode.querySelector( ".jstree-html-node-holder-icon > img" );
+      let imgSrc = tagImg_miniImage.getAttribute( "src" );
+      let imgAlt = tagImg_miniImage.getAttribute( "alt" );
+
+      if ( this.tsHtml === 1 ) {
+          this.tsHtml = document.body.querySelector( inSelector );
+      }
+
+      this.tsHtml.innerHTML = `
+        <img class="mini_image" src="${imgSrc}" alt="${imgAlt}" />
+        <div>${text}</div>`;
+    }
+
+
+
+    loadDataAndRenderTree (
+      id,
+      holderElemId,
+      dataOrLink,
+      renderingMode,
+      modeShownNodes,
+      whetherDataLink,
+      debug
+    ) {
+
+        // example to load by url
+        // this.#treeInstances[ id ] = new Tree();
+        this.#treeInstances[ id ] = new JaisocxLockViewer();
+        let lockViewer = this.#treeInstances[ id ];
+
+        lockViewer
+          .setDebug( debug )
+          .setMainHtmlNodeId( holderElemId )
+          .setNodesWithIcons( true )
+          .setRenderingMode( renderingMode )
+          .setNodesOpenedMode( modeShownNodes )
+          .setModifiable( false )
+          .addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__AFTER_RENDER_ONE_NODE,
+              ( eventName, eventPayload ) => {
+                lockViewer.beforeRenderOneNode( eventName, eventPayload );
+              }
+
+          ).addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
+              ( eventName, eventPayload ) => {
+                  let loc_treeClassInstance = lockViewer;
+
+                  if ( this.debug === true ) {
+
+                    //# example to obtain of the current tree node the data that was used to render the tree.
+                    let treeNodeData = {
+                      "treeClassInstance": loc_treeClassInstance,
+                      "eventName": eventName,
+                      "eventPayload": eventPayload,
+                      "flatClone": eventPayload.jsonNode._flatClone,
+                      "deepClone": loc_treeClassInstance.getTreeDataByJPath( eventPayload.jsonNode._pathArray )
+                    };
+
+                    console.log( { treeNodeData } );
+                  }
+
+                  this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
+              }
+           );
+
+
+
+           if ( whetherDataLink ) {
+             fetch( dataOrLink )
+              .then( ( response ) => { return response.json(); } )
+              .then( ( data ) => {
+
+                lockViewer.render( data );
+
+                let eventPayload = {
+                  "id": id,
+                  "pack": lockViewer.getJsPack(),
+                  "counters": lockViewer.getCounters()
+                };
+
+                // lockViewer.emitEvent( "AFTER_RENDER", eventPayload );
+
+                // console.log( eventPayload.pack );
+                // console.log( eventPayload.counters );
+              } );
+
+             // lockViewer.load( dataOrLink );
+           } else {
+
+             lockViewer.render( dataOrLink );
+
+           }
+
+           return 2;
+    }
+
+
+
+    renderExamples() {
+
+      let keys = Object.keys( this.#treeData );
+      let counter = 1;
+      let itemsNumber = keys.length;
+      let loc_maxCounter = ( itemsNumber + 2 );
+
+      let elem = document.getElementsByTagName( "BODY" )[ 0 ];
+      let dataOrLink = [];
+
+      loop: while( counter < loc_maxCounter ) {
+        counter++;
+        if ( counter >= loc_maxCounter ) {
+          break loop;
+        }
+
+        let itemCounter = ( counter - 2 );
+        let id = keys[ itemCounter ];
+        let dataItem = this.#treeData[ id ];
+
+        if ( dataItem[ "dataMode" ] === "link" ) {
+          if (
+            ( dataItem[ "dataLink" ] === undefined )
+            || ( dataItem[ "dataLink" ] === null )
+            || ( dataItem[ "dataLink" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "dataLink" ];
+
+        } else {
+          if (
+            ( dataItem[ "data" ] === undefined )
+            || ( dataItem[ "data" ] === null )
+            || ( dataItem[ "data" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "data" ];
+
+        }
+
+
+        this.loadDataAndRenderTree (
+          dataItem[ "id" ],
+          dataItem[ "htmlHolderId" ],
+          dataOrLink,
+          dataItem[ "renderingMode" ],
+          dataItem[ "nodesOpenMode" ],
+          ( dataItem[ "dataMode" ] === "link" ),
+          dataItem[ "debug" ]
+        );
+
+      }
+
+      return 2;
+    }
+
+
+
+  /**
+  * @returns updated in_buildData
+  */
+  sitesToolsNBuildData (
+    in_sitesTools,
+    in_buildData,
+    in_maxCounter,
+    in_b_maxCounter,
+    in_offsetStep,
+    in_b_offsetStep
+  ) {
+
+    let loc_sitesTools               = in_sitesTools;
+    let llc_buildData                = in_buildData;
+
+    let loc_maxCounter               = in_maxCounter;
+    let loc_b_maxCounter             = in_b_maxCounter;
+
+    let loc_offsetStep               = in_offsetStep;
+    let loc_b_offsetStep             = in_b_offsetStep;
+
+    let LOC_COUNTER_DEC              = 1;
+    let LOC_MAX_COUNTER              = 1;
+
+    let LOC_B_COUNTER_DEC            = 1;
+    let LOC_B_MAX_COUNTER            = 1;
+
+    // let toExit_from_a                = true;
+    // let toExit_from_b                = true;
+
+    let siteToolFound                = true;
+
+
+
+    let loc_buildData                = [...llc_buildData];
+
+
+
+    let loc_sitesTools_itemsNumber   = loc_sitesTools.length;
+    let loc_sitesTools_LastPos       = ( loc_sitesTools_itemsNumber - 1 );
+    let ci_sitesTools_item           = String( "" );
+
+    let loc_buildData_itemsNumber    = loc_buildData.length;
+    let loc_buildData_LastPos        = ( loc_buildData_itemsNumber - 1 );
+    let cib_buildData_item           = ( new Object() );
+
+
+
+    LOC_COUNTER_DEC                  = ( 1 + loc_offsetStep );
+    LOC_MAX_COUNTER                  = ( MAX_ITERATIONS_NUMBER + LOC_COUNTER_DEC );
+
+    LOC_B_COUNTER_DEC                = ( 1 + loc_b_offsetStep );
+    LOC_B_MAX_COUNTER                = ( MAX_B_ITERATIONS_NUMBER + LOC_B_COUNTER_DEC );
+
+    loc_maxCounter                   += loc_offsetStep;
+    loc_b_maxCounter                 += loc_b_offsetStep;
+
+
+
+    if ( loc_maxCounter > LOC_MAX_COUNTER ) {
+      loc_maxCounter = LOC_MAX_COUNTER;
+    }
+    if ( loc_maxCounter > loc_sitesTools_itemsNumber ) {
+      loc_maxCounter = loc_sitesTools_itemsNumber;
+    }
+
+    if ( loc_b_maxCounter > LOC_B_MAX_COUNTER ) {
+      loc_b_maxCounter = LOC_B_MAX_COUNTER;
+    }
+    if ( loc_b_maxCounter > loc_buildData_itemsNumber ) {
+      loc_b_maxCounter = loc_buildData_itemsNumber;
+    }
+
+
+
+    let ci_loopCounter               = 1;
+    let ci_offset                    = 1;
+
+    let cib_loopCounter              = 1;
+    let cib_offset                   = 1;
+
+
+
+    let ci_bibPathArray              = ( new Array() );
+    let ci_bibPathArrLen             = 1;
+    let ci_bibPathArrLastPos         = 1;
+    let ci_bibPathArrLastStr         = String("");
+    let ci_bibPathArrLastPath        = String("");
+
+    // let cib_bibName_lastIndexOf      = 1;
+    let cib_bibFound                 = true;
+
+
+
+    let loc_funcStrFound = (
+      in_o,
+      in_key,
+      in_strToFind
+    ) => {
+
+      let loc_o                      = in_o;
+      let loc_key                    = in_key;
+      let loc_strToFind              = in_strToFind;
+
+      let loc_value                  = loc_o[ loc_key ];
+
+      let loc_str_lastIndexOf        = 1;
+      loc_str_lastIndexOf            = loc_value.lastIndexOf( loc_strToFind );
+      let loc_bibFound               = ( loc_str_lastIndexOf !== (-1) );
+
+      return ( loc_bibFound );
+    };
+
+
+
+
+
+    // let cib_buildData_item = ( new Object() );
+    ci_marker_a: while ( ci_loopCounter < loc_maxCounter ) {
+
+      ci_loopCounter += loc_b_offsetStep;
+      if ( ci_loopCounter > loc_maxCounter ) {
+        break ci_marker_a;
+      }
+
+      ci_offset = ( ci_loopCounter - LOC_COUNTER_DEC );
+      if ( ci_offset > loc_sitesTools_LastPos ) {
+        break ci_marker_a;
+      }
+
+
+      siteToolFound                  = false;
+      ci_sitesTools_item             = loc_sitesTools[ ci_offset ];
+
+      ci_bibPathArray                = ci_sitesTools_item.split( "/" );
+      ci_bibPathArrLen               = ci_bibPathArray.length;
+      ci_bibPathArrLastPos           = ( ci_bibPathArrLen - 1 );
+      ci_bibPathArrLastStr           = ci_bibPathArray[ ci_bibPathArrLastPos ];
+      ci_bibPathArrLastPath          = [ "/", ci_bibPathArrLastStr ].join( "" );
+
+      // cib_bibName_lastIndexOf        = 1;
+      cib_bibFound                   = true;
+      // cib_bibFound                   = ( cib_bibName_lastIndexOf !== (-1) );
+
+      // toExit_from_a                  = false;
+
+
+
+      cib_loopCounter                = 1;
+      cib_offset                     = 1;
+      // toExit_from_b                  = false;
+
+      ci_marker_b: while ( cib_loopCounter < loc_b_maxCounter ) {
+
+        cib_loopCounter += loc_b_offsetStep;
+        if ( cib_loopCounter > loc_b_maxCounter ) {
+          break ci_marker_b;
+        }
+
+        cib_offset = ( cib_loopCounter - LOC_B_COUNTER_DEC );
+        if ( cib_offset > loc_buildData_LastPos ) {
+          break ci_marker_b;
+        }
+
+        /* if ( toExit_from_a === true ) {
+          break ci_marker_a;
+          // continue ci_marker_a;
+        } */
+
+
+
+        cib_buildData_item           = loc_buildData[ cib_offset ];
+        cib_bibFound                 = loc_funcStrFound (
+          cib_buildData_item,
+          "path",
+          ci_bibPathArrLastPath
+        );
+
+
+
+        if ( cib_bibFound === true ) {
+          siteToolFound              = true;
+          let cib_sitesTools_item = ci_sitesTools_item;
+          loc_buildData[ cib_offset ][ "path" ] = cib_sitesTools_item;
+        }
+
+
+
+        let cib_bibDepsArray         = cib_buildData_item[ "dependencies" ];
+        if ( ( !cib_bibDepsArray ) || ( cib_bibDepsArray.length === 0 ) ) {
+          continue ci_marker_b;
+        }
+
+
+        let cib_bibResolvedDepsArray = ( new Array() );
+
+        cib_bibResolvedDepsArray     = cib_bibDepsArray
+          .map (
+            ( cic_dep ) => {
+              let cic_item = {...cic_dep};
+              let cic_bibFound = loc_funcStrFound (
+                cic_dep,
+                "path",
+                ci_bibPathArrLastPath
+              );
+
+              if ( cic_bibFound ) {
+                cic_item[ "path" ]   = ci_sitesTools_item;
+              }
+
+              return ( cic_item );
+            }
+          );
+
+        loc_buildData[ cib_offset ][ "dependencies" ] = cib_bibResolvedDepsArray;
+
+
+
+        continue ci_marker_b;
+      }
+      // -- finish ci_marker_b --
+
+      if ( siteToolFound === false ) {
+        this.sitesTools.push( ci_sitesTools_item );
+      }
+
+
+
+      continue ci_marker_a;
+    }
+    // -- finish ci_marker_a --
+
+
+
+    return loc_buildData;
+
+  }
+  // -- finish func g_sitesToolsNBuildData --
+
+
+  }
+</script>
+
+
+
+<script name="event_site_loaded">
+
+  let g_data_sitesTools_link = "html_examples_sites_tools/data/sites_tools.json";
+  let g_data_BuildData_link  = "html_examples_sites_tools/data/BuildData.json";
+
+
+
+  let treeExamplesInstance = new Object();
+
+let glob_dataItems = {
+  "sites_tools": {
+    id: "sites_tools",
+    dataMode: "data",
+    dataLink: "",
+    data: [],
+    htmlHolderId: "tree_holder_0",
+    htmlElem: null,
+    dataIconBase: "node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  },
+  "update": {
+    id: "update",
+    dataMode: "data",
+    dataLink: "",
+    data: [],
+    htmlHolderId: "tree_holder_1",
+    htmlElem: null,
+    dataIconBase: "node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  },
+  "new_site_tools": {
+    id: "new_site_tools",
+    dataMode: "data",
+    dataLink: "",
+    data: [],
+    htmlHolderId: "tree_holder_2",
+    htmlElem: null,
+    dataIconBase: "node_cdn_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-base/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  }
+};
+
+
+
+document.addEventListener (
+  "DOMContentLoaded",
+  function ( evt ) {
+    glob_dataItems[ "sites_tools" ][ "renderingMode" ]    = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "sites_tools" ][ "nodesOpenMode" ]    = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    // glob_dataItems[ "build_data" ][ "renderingMode" ]  = TreeConstants.RenderingMode.Ease;
+    // glob_dataItems[ "build_data" ][ "nodesOpenMode" ]  = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    glob_dataItems[ "update" ][ "renderingMode" ]         = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "update" ][ "nodesOpenMode" ]         = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    glob_dataItems[ "new_site_tools" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "new_site_tools" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_SHOWN;
+
+
+
+    treeExamplesInstance = new TreeExamples();
+
+    fetch( g_data_sitesTools_link )
+      .then( r1 => r1.json() )
+      .then( json_a => {
+
+        glob_dataItems[ "sites_tools" ].data = json_a;
+
+        fetch( g_data_BuildData_link )
+          .then( r2 => r2.json() )
+          .then( json_b => {
+
+            // glob_dataItems[ "build_data" ].data = json_b;
+            glob_dataItems[ "update" ][ "data" ]   = {...json_b};
+
+            let arg_BuildData                   = json_b[ "packages" ];
+
+            let arg_maxCounter    = 50;
+            let arg_b_maxCounter  = 50;
+
+            let arg_offsetStep    = 1;
+            let arg_b_offsetStep  = 1;
+
+
+
+            let loc_update = treeExamplesInstance.sitesToolsNBuildData (
+              glob_dataItems[ "sites_tools" ].data,
+              arg_BuildData,
+              arg_maxCounter,
+              arg_b_maxCounter,
+              arg_offsetStep,
+              arg_b_offsetStep
+            );
+
+            glob_dataItems[ "update" ][ "data" ][ "packages" ] = loc_update;
+
+            glob_dataItems[ "new_site_tools" ][ "data" ] = treeExamplesInstance.getSitesTools();
+
+
+
+            treeExamplesInstance
+              .setDataItems( glob_dataItems )
+              .renderExamples();
+
+            console.log( glob_dataItems[ "update" ][ "data" ][ "packages" ] );
+
+            console.log( glob_dataItems[ "new_site_tools" ][ "data" ] );
+
+          }
+        );
+
+      }
+    );
+
+  }
+);
+
+</script>
+
+</html>
+
+

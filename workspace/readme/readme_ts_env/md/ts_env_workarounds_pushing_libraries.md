@@ -88,7 +88,7 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 `@jaisocx/css-clean-start`
 
 
-3. path: [./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md](./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md)
+3. path: [./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_Lite/README.md](./../../workspace/ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_Lite/README.md)
 
 
 4. cdn folder example: [./../../cdn](./../../cdn)
