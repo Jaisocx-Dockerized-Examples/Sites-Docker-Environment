@@ -83,7 +83,6 @@
 
 
 
-workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/
 
 
 
