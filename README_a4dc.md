@@ -152,8 +152,8 @@
 
 
 
-**Friendly greetings,**
+**Friendly greetings**
 
-  Jaisocx Software Architect, Elias
+  Jaisocx Software Architect I.P.
 
 
