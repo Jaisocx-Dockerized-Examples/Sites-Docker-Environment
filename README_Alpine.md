@@ -72,7 +72,7 @@ Other docker services load bibs from the saved image offline.
 5. on demand, saving the image to a compressed tarball to computer's harddrive
 
   ```bash
-    docker image save -o "./build/alpine_sites.dckr" alpine_sites:3.23.2
+    docker image save -o "./build/alpine_sites.dc" alpine_sites:3.23.2
   ```
 
 
@@ -83,7 +83,7 @@ Other docker services load bibs from the saved image offline.
 
 
   ```bash
-    docker image load -i "./build/alpine_sites.dckr"
+    docker image load -i "./build/alpine_sites.dc"
   ```
 
 
