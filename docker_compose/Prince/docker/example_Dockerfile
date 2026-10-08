@@ -1,14 +1,4 @@
-# amd64 CPU Architecture, when not working, I have one more docker build, with arm64/v8
-FROM jaisocx/webserver:amd64.3.0.16
-# FROM jaisocx/webserver:amd64.latest
-
-# arm64/v8 CPU Architecture
-# FROM jaisocx/webserver:mac.latest
-
-
-# FROM alpine:3.23
-
-
+FROM alpine:3.23
 
 # ---------------------
 # -- local variables available in entrypoint bash script entrypoint.sh --
@@ -36,19 +26,42 @@ WORKDIR "${workdir}"
 #   This prevents unexpected changes in package versions and API incompatibilities.
 RUN apk update
 
-RUN apk add ca-certificates
-RUN apk add curl
-RUN apk add openssl
-#RUN apk add libgcc
-#RUN apk add libstdc++
-## RUN apk add git
-RUN apk add bash
+RUN apk add   curl
+RUN apk add   ca-certificates
+RUN apk add   openssl
+# RUN apk add   libgcc
+# RUN apk add   libstdc++
+# RUN apk add   git
+RUN apk add   bash
+
 
 # -- admin privilegs libraries installation --
-RUN apk add sudo
-RUN apk add shadow
-# RUN apk add util-linux
+RUN apk add   sudo
+RUN apk add   shadow
+# RUN apk add   util-linux
 
+
+# -- a4dc --
+RUN apk add   freetype
+RUN apk add   fontconfig
+RUN apk add   ttf-dejavu
+RUN apk add   libxrender
+RUN apk add   libjpeg-turbo
+RUN apk add   libpng
+RUN apk add   zlib
+RUN apk add   libx11
+RUN apk add   libxext
+RUN apk add   libxft
+RUN apk add   glib
+RUN apk add   icu-libs
+RUN apk add   libxml2
+RUN apk add   tiff
+RUN apk add   giflib
+RUN apk add   libwebp
+RUN apk add   libwebpdemux
+RUN apk add   libavif
+RUN apk add   aom
+RUN apk add   lcms2
 
 
 # -------------------------------------
@@ -58,15 +71,11 @@ RUN apk add shadow
 USER   root
 
 
-# ARG A_GROUP_SUDIER_ID
+
 ARG A_GROUP_USERS_NAME
 
 ARG A_USER_NAME
 ARG A_USER_HASHED_PWD="q6DDn07ExN73M"
-
-ARG A_JAISOCX_SOFTWARE_HOME
-
-
 
 RUN addgroup "${A_GROUP_USERS_NAME}"
 RUN adduser  -G "${A_GROUP_USERS_NAME}" -D "${A_USER_NAME}"
@@ -116,7 +125,7 @@ RUN chmod -R ug+rwx "${markers}"
 RUN chmod -R a+r    "${templates}"
 
 COPY   "./entrypoint.sh"    "/entrypoint/entrypoint.sh"
-COPY   "./server_start.sh"  "/entrypoint/server_start.sh"
+# COPY   "./server_start.sh"  "/entrypoint/server_start.sh"
 COPY   "./templates/profile"  "${templates}/profile"
 RUN chmod -R a+rx   "/entrypoint"
 
@@ -142,29 +151,6 @@ RUN chmod -R ug+w  "/usr/local/bin"
 #       not available neither in entrypoint,
 #       nor in docker console after $_ docker compose exec a_service bash
 #    keyword ENV for declaring variables available in both three: Dockerfile, entrypoint, terminal.
-ARG A_JAISOCX_SOFTWARE_HOME
-ENV JAISOCX_SOFTWARE_HOME="${A_JAISOCX_SOFTWARE_HOME}"
-
-
-
-#; -- plain http --
-# EXPOSE 80
-
-#; -- opened for browsers port local., in compose.yml --
-EXPOSE 8447
-
-#; -- internal dck. secure https a4dc  --
-EXPOSE 8532
-
-#; -- opened for browsers port mac., in compose.yml --
-EXPOSE 443
-
-#; -- opened for browsers port mac., in compose.yml --
-EXPOSE 9070
-
-
-
-ENV LOCAL_ENV="${A_LOCAL_ENV}"
 ENV USER_NAME="${A_USER_NAME}"
 ENV USER_HOME="/home/${USER_NAME}"
 
@@ -178,7 +164,6 @@ WORKDIR "${USER_HOME}"
 # -- ENTRYPOINT --
 # After docker service build due code lines in this Dockerfile,
 #   the entrypoint runs on every (re)start of this docker service
-# ENTRYPOINT [ "sudo", "-E", "--non-interactive", "/entrypoint/entrypoint.sh" ]
 ENTRYPOINT [ "/usr/bin/sudo", "-E", "--non-interactive", "/entrypoint/entrypoint.sh" ]
 
 

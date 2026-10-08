@@ -1,14 +1,4 @@
-# amd64 CPU Architecture, when not working, I have one more docker build, with arm64/v8
-FROM jaisocx/webserver:amd64.3.0.16
-# FROM jaisocx/webserver:amd64.latest
-
-# arm64/v8 CPU Architecture
-# FROM jaisocx/webserver:mac.latest
-
-
-# FROM alpine:3.23
-
-
+FROM alpine:3.23
 
 # ---------------------
 # -- local variables available in entrypoint bash script entrypoint.sh --
@@ -36,18 +26,25 @@ WORKDIR "${workdir}"
 #   This prevents unexpected changes in package versions and API incompatibilities.
 RUN apk update
 
-RUN apk add ca-certificates
-RUN apk add curl
-RUN apk add openssl
-#RUN apk add libgcc
-#RUN apk add libstdc++
-## RUN apk add git
-RUN apk add bash
+RUN apk add   curl
+RUN apk add   ca-certificates
+RUN apk add   openssl
+RUN apk add   libgcc
+RUN apk add   libstdc++
+# RUN apk add   git
+RUN apk add   bash
+
 
 # -- admin privilegs libraries installation --
-RUN apk add sudo
-RUN apk add shadow
-# RUN apk add util-linux
+RUN apk add   sudo
+RUN apk add   shadow
+# RUN apk add   util-linux
+
+RUN apk add   zlib
+RUN apk add   libx11
+RUN apk add   libxext
+RUN apk add   libxft
+RUN apk add   glib
 
 
 
@@ -58,21 +55,15 @@ RUN apk add shadow
 USER   root
 
 
-# ARG A_GROUP_SUDIER_ID
+
 ARG A_GROUP_USERS_NAME
 
 ARG A_USER_NAME
 ARG A_USER_HASHED_PWD="q6DDn07ExN73M"
 
-ARG A_JAISOCX_SOFTWARE_HOME
-
-
-
 RUN addgroup "${A_GROUP_USERS_NAME}"
 RUN adduser  -G "${A_GROUP_USERS_NAME}" -D "${A_USER_NAME}"
 RUN echo "${A_USER_NAME}:${A_USER_HASHED_PWD}" | chpasswd -e
-
-RUN addgroup "root" "${A_GROUP_USERS_NAME}"
 
 
 
@@ -102,26 +93,30 @@ RUN mkdir -p "${templates}"
 RUN mkdir -p "/entrypoint"
 RUN mkdir -p "/usr/local/bin"
 
-
-# -- just allowances, keeping this code block little --
-#    in entrypoint the user privilegs are set,
-#    since only in entrypoint .env variables for users names, ids and groups may have access,
-#    then all users and groups may be added only in entrypoint,
-#    then the code block in entrypoint for filesystem privilegs may be written in entrypoint,
-#    having overview of all filesystem resources in one bash code block,
-#    we have interest on for a docker service, in time of designing privilegs.
-RUN chmod -R a+r    "${markers}"
-RUN chmod -R ug+rwx "${markers}"
-
-RUN chmod -R a+r    "${templates}"
-
-COPY   "./entrypoint.sh"    "/entrypoint/entrypoint.sh"
-COPY   "./server_start.sh"  "/entrypoint/server_start.sh"
+COPY   "./entrypoint.sh"      "/entrypoint/entrypoint.sh"
 COPY   "./templates/profile"  "${templates}/profile"
-RUN chmod -R a+rx   "/entrypoint"
 
-RUN chmod -R a+rx  "/usr/local/bin"
-RUN chmod -R ug+w  "/usr/local/bin"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${workdir}"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${markers}"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${templates}"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "/entrypoint"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "/usr/local/bin"
+
+RUN chmod -R   a+rx   "${workdir}"
+RUN chmod -R   ug+w   "${workdir}"
+
+RUN chmod -R   a+rx   "${markers}"
+RUN chmod -R   ug+w   "${markers}"
+
+RUN chmod -R   a+rx   "${templates}"
+RUN chmod -R   ug+w   "${templates}"
+
+RUN chmod -R   a+rx   "/entrypoint"
+RUN chmod -R   ug+w   "/entrypoint"
+
+RUN chmod -R   a+rx   "/usr/local/bin"
+RUN chmod -R   ug+w   "/usr/local/bin"
+
 
 
 # -- .env variables accessed --
@@ -142,31 +137,39 @@ RUN chmod -R ug+w  "/usr/local/bin"
 #       not available neither in entrypoint,
 #       nor in docker console after $_ docker compose exec a_service bash
 #    keyword ENV for declaring variables available in both three: Dockerfile, entrypoint, terminal.
-ARG A_JAISOCX_SOFTWARE_HOME
-ENV JAISOCX_SOFTWARE_HOME="${A_JAISOCX_SOFTWARE_HOME}"
 
-
-
-#; -- plain http --
-# EXPOSE 80
-
-#; -- opened for browsers port local., in compose.yml --
-EXPOSE 8447
-
-#; -- internal dck. secure https a4dc  --
-EXPOSE 8532
-
-#; -- opened for browsers port mac., in compose.yml --
-EXPOSE 443
-
-#; -- opened for browsers port mac., in compose.yml --
-EXPOSE 9070
-
-
-
-ENV LOCAL_ENV="${A_LOCAL_ENV}"
+ENV GROUP_USERS_NAME="${A_GROUP_USERS_NAME}"
 ENV USER_NAME="${A_USER_NAME}"
 ENV USER_HOME="/home/${USER_NAME}"
+
+
+
+# Expose the application's port
+
+# http
+# EXPOSE 80
+
+# https
+# EXPOSE 443
+
+# Express framework
+EXPOSE 3000
+EXPOSE 9443
+
+# static node-http
+EXPOSE 8085
+EXPOSE 8445
+EXPOSE 8449
+
+# debug
+EXPOSE 9229
+
+
+# EXPOSE $A_EXPRESS_PORT
+# EXPOSE $A_NODE_HTTP_FLAT_PORT
+# EXPOSE $A_NODE_HTTPS_PORT
+
+# EXPOSE $NODE_DEBUG_PORT
 
 
 
@@ -178,7 +181,6 @@ WORKDIR "${USER_HOME}"
 # -- ENTRYPOINT --
 # After docker service build due code lines in this Dockerfile,
 #   the entrypoint runs on every (re)start of this docker service
-# ENTRYPOINT [ "sudo", "-E", "--non-interactive", "/entrypoint/entrypoint.sh" ]
 ENTRYPOINT [ "/usr/bin/sudo", "-E", "--non-interactive", "/entrypoint/entrypoint.sh" ]
 
 

@@ -101,9 +101,9 @@
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html)
 
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_orange_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_orange_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_aqua_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/ICE_Cube2012_aqua_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png)
 
 
 
@@ -116,7 +116,7 @@
 
 🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/BuildData_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/BuildData_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/BuildData_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/BuildData_740.png)
 
 
 
@@ -127,7 +127,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/LockViewer_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/LockViewer_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png)
 
 
 
@@ -137,7 +137,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Fonts_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Fonts_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Fonts_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Fonts_740.png)
 
 
 
@@ -150,7 +150,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png)
 
 
 
@@ -160,7 +160,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_2_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/UnicodeIcons_2_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png)
 
 
 
@@ -174,7 +174,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Tb_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/Tb_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Tb_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Tb_740.png)
 
 
 
@@ -184,7 +184,7 @@
 
   🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/CssCodeSnippet_540.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized/CssCodeSnippet_540.png)
+![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png)
 
 
 
