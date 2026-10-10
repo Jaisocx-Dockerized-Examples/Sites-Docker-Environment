@@ -23,6 +23,9 @@
 >         for Your site under docker in order to **save up** time and network.
 
 
+![./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png)
+
+
 ### 1. step: the same Alpine image ver. num.
 
   **one** Alpine image **for every** dockerized **service**
