@@ -20,6 +20,7 @@ PS1='\n\s_\v    docker ${WORKSPACE_NAME} ts \u ${TYPING_PROMPT_SYMBOL}'
 # turns on echo to console, seen in console on command: $_ docker compose -f <filename of compose.yml> logs <service name>
 WHETHER_DEV_MODE="true"
 
+# ts dynamique .env offline setting:
 NODE_INSTALL_TARBALL_RELOAD=false
 
 start_node_https=true
