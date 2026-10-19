@@ -31,11 +31,18 @@ node_https_publish_port=8445
 node_https_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/cdn"
 
 
+
+start_node_sites_tools_https=true
+node_https_sites_tools_publish_port=8449
+
+
+
 start_node_http_flat=true
 node_http_flat_publish_port=8085
 node_http_flat_publish_folder="/opt/jaisocx/sites_docker_environment/workspace/cdn"
 
 node_https_sites_tools_publish_port=8449
+
 
 
 start_express_secure=true

@@ -973,6 +973,31 @@ fi
 
 
 
+
+
+if [[ "${start_node_sites_tools_https}" == "true" ]]; then
+
+  echo -e "\n  Node Secure Server starts sites_tools ... \n"
+
+  if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
+          sudo -u ${USER_YARN_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; yarn sites_tools_https &"
+          # yarn https &
+
+        elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
+          sudo -u ${USER_PNPM_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; pnpm --version"
+          # pnpm --version
+
+        else
+          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts"; npm run sites_tools_https &"
+          # npm run https &
+  fi
+
+fi
+
+
+
+
+
 if [[ "${start_node_http_flat}" == "true" ]]; then
 
   echo -e "\n  Node Server starts ... \n"

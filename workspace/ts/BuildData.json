@@ -3,6 +3,15 @@
   "prettify-typescript": true,
   "packages": [
     {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start",
+      "name": "clean_start",
+      "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
+      "build": true,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    },
+    {
       "path": "libraries/base_packs/datasets/CssJsHtmlConstants",
       "name": "css-js-html-constants",
       "update-published": "Mon Sep 22 08:06:10 CEST 2025",
@@ -116,7 +125,7 @@
       "path": "libraries/base_packs/data_workarounds/JPath",
       "name": "jpath",
       "update-published": "3 mai 2026 20:24:20 UTC",
-      "build": true,
+      "build": false,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
