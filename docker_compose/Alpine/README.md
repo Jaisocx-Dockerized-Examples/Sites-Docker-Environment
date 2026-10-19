@@ -219,6 +219,6 @@
 
 Have a nice day,
 
-Jaisocx Software Architect I.P.
+Jaisocx Inc. Software Architect I. Polianskyi
 
 
