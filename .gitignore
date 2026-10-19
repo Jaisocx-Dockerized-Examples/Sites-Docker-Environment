@@ -87,7 +87,7 @@
 /.env
 /compose.yml
 /docker-compose.yml
-/docker_compose/**/docker/Dockerfile
+/docker_compose/**/Dockerfile
 
 
 

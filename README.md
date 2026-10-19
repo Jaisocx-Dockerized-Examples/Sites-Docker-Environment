@@ -417,7 +417,7 @@
 
 **Friendly greetings**
 
-Jaisocx Software Architect I.P.
+Jaisocx Inc. Software Architect I.P.
 
 
 

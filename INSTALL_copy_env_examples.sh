@@ -1,14 +1,66 @@
 #/bin/bash
 
   this_folder="$(realpath "$(dirname "$0")")"
-  backup_folder="${this_folder}/env_backups"
+
+  dockerfiles_backups="dockerfiles_backups"
+  env_backups="env_backups"
+
+  backup_folder="${this_folder}/${dockerfiles_backups}"
+#; creates folder for backups of Dockerfile(s)
+  mkdir -p "${backup_folder}"
+
+
+  backup_folder="${this_folder}/${env_backups}"
   fname_example=""
   folder_name=""
 
-
-
 #; creates folder for backups of .env files
   mkdir -p "${backup_folder}"
+
+
+
+
+
+
+#; does copy of example_Dockerfile
+#;  in docker_compose/<service_name> ( logs, tarballs ),
+#;  these aren't saved on git server.
+#; backups Dockerfile => /dockerfiles_backups/<service name>_Dockerfile.bcp
+  docker_compose_folder="docker_compose"
+  docker_services=(
+    "Alpine"
+    "Prince"
+    "PHP"
+    "Jaisocx_SitesServer"
+    "ts"
+  )
+
+
+  for fname_env in ${docker_services[@]}; do
+
+    folder_name="${fname_env}"
+
+    folder_rel_path="docker"
+    example_fname="example_Dockerfile"
+    fname="Dockerfile"
+
+    example_fname_path_to_copy_from="${this_folder}/${docker_compose_folder}/${folder_name}/${folder_rel_path}/${example_fname}"
+    fname_path_to_copy_to="${this_folder}/${docker_compose_folder}/${folder_name}/${folder_rel_path}/${fname}"
+    backup_fname_path_to_copy_to="${this_folder}/${dockerfiles_backups}/${fname_env}_$(date)_${fname}"
+
+    if [ -e "${fname_path_to_copy_to}" ]; then
+      echo -e "[Docker Compose] [${folder_name}]: backup of ${fname_path_to_copy_to} \n"
+      cp "${fname_path_to_copy_to}" "${backup_fname_path_to_copy_to}"
+    fi
+
+    if [ -e "${example_fname_path_to_copy_from}" ]; then
+      echo -e "[Docker Compose] [${folder_name}]: ${fname} of ${example_fname} from ${example_fname_path_to_copy_from} \n"
+      cp "${example_fname_path_to_copy_from}" "${fname_path_to_copy_to}"
+    fi
+
+  done;
+
+
 
 
 
@@ -197,8 +249,6 @@
     if [ -e "${this_folder}/${a4dc_security_folder_example}/${fname_env}" ]; then
       cp "${this_folder}/${a4dc_security_folder_example}/${fname_env}"  "${backup_folder}/example_a4dc_security/bckp${fname_env}"
     fi
-
-    cp "${this_folder}/${a4dc_security_folder_example}/${fname_example}"  "${this_folder}/${a4dc_security_folder_example}/${fname_env}"
 
   done;
   echo -e "\n"
