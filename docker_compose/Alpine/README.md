@@ -2,12 +2,12 @@
 `Docker for a Site`
 
 
-![workspace/cdn/software_labels/docker/softlabel_docker.svg](workspace/cdn/software_labels/docker/softlabel_docker.svg)
-![workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+![../../workspace/cdn/software_labels/docker/softlabel_docker.svg](../../workspace/cdn/software_labels/docker/softlabel_docker.svg)
+![../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
 
 
-[HOME Docker for a Site](./README.md)
+[HOME Docker for a Site](../../README.md)
 
 
 
@@ -23,7 +23,7 @@
 >         for Your site under docker in order to **save up** time and network.
 
 
-![./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png)
+![../../workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png](../../workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png)
 
 
 ### 1. step: the same Alpine image ver. num.
@@ -47,6 +47,8 @@
 
   Having the image **on Your Host OS**, 
   may type the image name **for other** dockerized **services** in their **Dockerfiles** on Your comp.
+
+  **Example Dockerfile**: `docker_compose/ts/docker/example_fromcaches_Dockerfile`
   
   **Dockerfiles**:
   
