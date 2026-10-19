@@ -1,0 +1,523 @@
+
+/* @start clean_start base theme html forms */
+.clean_start {
+
+  --clean_start--input_checkbox__checked_c--content:  '✅';
+  --clean_start--input_checkbox_c--content:           '❌';
+
+  --clean_start--input_radiobutton_checked_c--content: '🟢';
+  --clean_start--input_radiobutton_c--content:        '';
+
+
+
+  --clean_start--field--line-height:                   1.62rem;
+
+  --clean_start--input_checkbox_c--font-size:         0.70rem;
+  --clean_start--input_checkbox--width:               0.9rem;
+  --clean_start--input_checkbox_c--width:             0.9rem;
+
+  --clean_start--input_radiobutton_c--font-size:      0.50rem;
+  --clean_start--input_radiobutton--width:            0.9rem;
+  --clean_start--input_radiobutton_c--width:          0.9rem;
+
+
+
+
+
+  --clean_start--input_checkbox--display:             inline-block;
+
+  --clean_start--input_checkbox--min-height:          unset;
+  --clean_start--input_checkbox--max-height:          unset;
+  --clean_start--input_checkbox--height:              1.62rem;
+  --clean_start--input_checkbox--line-height:         1.62rem;
+
+  --clean_start--input_checkbox--font-size:           1.62rem;
+
+  --clean_start--input_checkbox--position:            absolute;
+
+  --clean_start--input_checkbox--top:                 0;
+  --clean_start--input_checkbox--left:                0;
+
+  --clean_start--input_checkbox--min-width:           unset;
+  --clean_start--input_checkbox--max-width:           unset;
+  /** --clean_start--input_checkbox--width:            0.9rem; */
+
+  --clean_start--input_checkbox--border:              0 solid magenta;
+
+  --clean_start--input_checkbox--overflow-x:           visible;
+  --clean_start--input_checkbox--overflow-y:           visible;
+
+
+
+
+
+  --clean_start--input_radiobutton--display:          inline-block;
+
+  --clean_start--input_radiobutton--min-height:       unset;
+  --clean_start--input_radiobutton--max-height:       unset;
+  --clean_start--input_radiobutton--height:           1.62rem;
+  --clean_start--input_radiobutton--line-height:      1.62rem;
+
+  --clean_start--input_radiobutton--font-size:        1.62rem;
+
+  --clean_start--input_radiobutton--position:         absolute;
+
+  --clean_start--input_radiobutton--top:              0;
+  --clean_start--input_radiobutton--left:             0;
+
+  --clean_start--input_radiobutton--min-width:        unset;
+  --clean_start--input_radiobutton--max-width:        unset;
+  /** --clean_start--input_radiobutton--width:            0.9rem; */
+
+  --clean_start--input_radiobutton--border:           0 solid magenta;
+
+  --clean_start--input_radiobutton--overflow-x:        visible;
+  --clean_start--input_radiobutton--overflow-y:        visible;
+
+
+
+
+
+  --clean_start--input_checkbox_c--display:           block;
+
+  --clean_start--input_checkbox_c--min-height:        unset;
+  --clean_start--input_checkbox_c--max-height:        1.62rem;
+  --clean_start--input_checkbox_c--height:            1.62rem;
+  --clean_start--input_checkbox_c--line-height:       1.62rem;
+
+  --clean_start--input_checkbox_c--font-size:         0.70rem;
+
+  --clean_start--input_checkbox_c--position:          absolute;
+  --clean_start--input_checkbox_c--visibility:        visible;
+  --clean_start--input_checkbox_c--top:               0;
+  --clean_start--input_checkbox_c--left:              0;
+
+  --clean_start--input_checkbox_c--min-width:         0;
+  --clean_start--input_checkbox_c--max-width:         unset;
+  /** --clean_start--input_checkbox_c--width:            0.9rem; */
+
+  --clean_start--input_checkbox_c--border:            0 solid magenta;
+
+
+
+
+
+  --clean_start--input_radiobutton_c--display:        block;
+
+  --clean_start--input_radiobutton_c--min-height:     unset;
+  --clean_start--input_radiobutton_c--max-height:     1.62rem;
+  --clean_start--input_radiobutton_c--height:         1.62rem;
+  --clean_start--input_radiobutton_c--line-height:    1.62rem;
+
+  --clean_start--input_radiobutton_c--font-size:      0.70rem;
+
+  --clean_start--input_radiobutton_c--position:       absolute;
+  --clean_start--input_radiobutton_c--visibility:     visible;
+  --clean_start--input_radiobutton_c--top:            0;
+  --clean_start--input_radiobutton_c--left:           0;
+
+  --clean_start--input_radiobutton_c--min-width:      0;
+  --clean_start--input_radiobutton_c--max-width:      unset;
+  /** --clean_start--input_radiobutton_c--width:            0.9rem; */
+
+  --clean_start--input_radiobutton_c--border:         0 solid magenta;
+
+}
+
+
+
+
+
+.clean_start fieldset {
+
+  --clean_start--input_checkbox__checked_c--content:  '✅';
+  --clean_start--input_checkbox_c--content:           '❌';
+
+  --clean_start--input_radiobutton_checked_c--content: '🟢';
+  --clean_start--input_radiobutton_c--content:        '';
+
+
+
+  --clean_start--field--line-height:                   1.62rem;
+
+  --clean_start--input_checkbox_c--font-size:         0.70rem;
+  --clean_start--input_checkbox--width:               0.9rem;
+  --clean_start--input_checkbox_c--width:             0.9rem;
+
+  --clean_start--input_radiobutton_c--font-size:      0.40rem;
+  --clean_start--input_radiobutton--width:            0.9rem;
+  --clean_start--input_radiobutton_c--width:          0.9rem;
+
+
+
+  --clean_start--fieldset--padding:                    1rem 1rem 1rem 1rem;
+  --clean_start--fieldset--margin:                     0 0 0 0;
+
+  --clean_start--field--padding:                       0 0 0 1rem;
+  --clean_start--field--margin:                        1rem 0 0 0;
+
+  --clean_start--label--color:                        #30a410;
+  --clean_start--label--background:                   #fefffe;
+  --clean_start--label--border:                       1px solid #99faa9;
+
+
+
+
+
+  --clean_start--input_checkbox--min-height:          0;
+  --clean_start--input_checkbox--max-height:          unset;
+  --clean_start--input_checkbox--height:              var(--clean_start--field--line-height);
+  --clean_start--input_checkbox--line-height:         var(--clean_start--field--line-height);
+  --clean_start--input_checkbox--font-size:           var(--clean_start--field--line-height);
+
+  --clean_start--input_checkbox_c--min-height:        0;
+  --clean_start--input_checkbox_c--max-height:        unset;
+  --clean_start--input_checkbox_c--height:            var(--clean_start--field--line-height);
+  --clean_start--input_checkbox_c--line-height:       var(--clean_start--field--line-height);
+
+
+
+  --clean_start--input_radiobutton--min-height:       0;
+  --clean_start--input_radiobutton--max-height:       unset;
+  --clean_start--input_radiobutton--height:           var(--clean_start--field--line-height);
+  --clean_start--input_radiobutton--line-height:      var(--clean_start--field--line-height);
+  --clean_start--input_radiobutton--font-size:        var(--clean_start--field--line-height);
+
+  --clean_start--input_radiobutton_c--min-height:     0;
+  --clean_start--input_radiobutton_c--max-height:     unset;
+  --clean_start--input_radiobutton_c--height:         var(--clean_start--field--line-height);
+  --clean_start--input_radiobutton_c--line-height:    var(--clean_start--field--line-height);
+
+}
+/* @finish clean_start base theme html forms */
+
+
+
+/* @start clean_start html forms */
+.clean_start fieldset .field {
+
+  position:                        relative;
+  display:                         flex;
+  align-items:                     center;
+
+  padding:                         var(--clean_start--field--padding);
+  margin:                          var(--clean_start--field--margin);
+
+  z-index:                         1003;
+
+  overflow-x:                       visible;
+  overflow-y:                       visible;
+
+}
+
+
+.clean_start fieldset .field,
+.clean_start fieldset .field input[type="checkbox"],
+.clean_start fieldset .field input[type="radio"] {
+
+  min-height:                      unset;
+  max-height:                      unset;
+  height:                          var(--clean_start--field--line-height);
+  line-height:                     var(--clean_start--field--line-height);
+
+  font-size:                       var(--clean_start--field--line-height);
+
+}
+
+
+
+
+
+.clean_start input[type="checkbox"] {
+
+  display:                         var(--clean_start--input_checkbox--display, inline-block);
+
+  min-height:                      var(--clean_start--input_checkbox--min-height, 0);
+  max-height:                      var(--clean_start--input_checkbox--max-height, unset);
+  height:                          var(--clean_start--input_checkbox--height, 1.2rem);
+
+  line-height:                     var(--clean_start--input_checkbox--line-height, 1.2rem);
+
+  font-size:                       var(--clean_start--input_checkbox--font-size, 1.2rem);
+  position:                        var(--clean_start--input_checkbox--position, absolute);
+
+  top:                             var(--clean_start--input_checkbox--top, 0);
+  left:                            var(--clean_start--input_checkbox--left, 0);
+
+  min-width:                       var(--clean_start--input_checkbox--min-width, 0);
+  max-width:                       var(--clean_start--input_checkbox--max-width, unset);
+  width:                           var(--clean_start--input_checkbox--width, 1rem);
+
+  border:                          var(--clean_start--input_checkbox--border, 0 solid magenta);
+
+  overflow-x:                       var(--clean_start--input_checkbox--overflow-x, visible);
+  overflow-y:                       var(--clean_start--input_checkbox--overflow-y, visible);
+
+  visibility:                      hidden;
+
+  z-index:                         1004;
+}
+
+.clean_start input[type="radio"] {
+
+  display:                         var(--clean_start--input_radiobutton--display, inline-block);
+
+  min-height:                      var(--clean_start--input_radiobutton--min-height, 0);
+  max-height:                      var(--clean_start--input_radiobutton--max-height, unset);
+  height:                          var(--clean_start--input_radiobutton--height, 1.2rem);
+
+  line-height:                     var(--clean_start--input_radiobutton--line-height, 1.2rem);
+
+  font-size:                       var(--clean_start--input_radiobutton--font-size, 1.2rem);
+  position:                        var(--clean_start--input_radiobutton--position, absolute);
+
+  top:                             var(--clean_start--input_radiobutton--top, 0);
+  left:                            var(--clean_start--input_radiobutton--left, 0);
+
+  min-width:                       var(--clean_start--input_radiobutton--min-width, 0);
+  max-width:                       var(--clean_start--input_radiobutton--max-width, unset);
+  width:                           var(--clean_start--input_radiobutton--width, 1rem);
+
+  border:                          var(--clean_start--input_radiobutton--border, 0 solid magenta);
+
+  overflow-x:                       var(--clean_start--input_radiobutton--overflow-x, visible);
+  overflow-y:                       var(--clean_start--input_radiobutton--overflow-y, visible);
+
+  visibility:                      hidden;
+
+  z-index:                         1004;
+}
+
+
+
+
+
+.clean_start input[type="checkbox"]:checked::after {
+  content:                         var(--clean_start--input_checkbox__checked_c--content, '✅');
+  display:                         block;
+}
+.clean_start input[type="checkbox"]::after {
+  content:                         var(--clean_start--input_checkbox_c--content, '❌');
+  display:                         block;
+}
+
+
+.clean_start input[type="radio"]:checked::after {
+  content:                         var(--clean_start--input_radiobutton_checked_c--content, '🟢');
+  display:                         block;
+}
+.clean_start input[type="radio"]::after {
+  content:                         var(--clean_start--input_radiobutton_c--content, '');
+  display:                         block;
+}
+
+
+
+
+
+.clean_start input[type="checkbox"]::after {
+
+  display:                         var(--clean_start--input_checkbox_c--display, block);
+
+  min-height:                      var(--clean_start--input_checkbox_c--min-height, 0);
+  max-height:                      var(--clean_start--input_checkbox_c--max-height, unset);
+  height:                          var(--clean_start--input_checkbox_c--height, 1.2rem);
+
+  line-height:                     var(--clean_start--input_checkbox_c--line-height, 1.2rem);
+
+  font-size:                       var(--clean_start--input_checkbox_c--font-size, 0.70rem);
+  position:                        var(--clean_start--input_checkbox_c--position, absolute);
+
+  top:                             var(--clean_start--input_checkbox_c--top, 0);
+  left:                            var(--clean_start--input_checkbox_c--left, 0);
+
+  min-width:                       var(--clean_start--input_checkbox_c--min-width, 0);
+  max-width:                       var(--clean_start--input_checkbox_c--max-width, unset);
+  width:                           var(--clean_start--input_checkbox_c--width, 0.9rem);
+
+  border:                          var(--clean_start--input_checkbox_c--border, 0 solid magenta);
+
+  overflow-x:                       var(--clean_start--input_checkbox_c--overflow-x, visible);
+  overflow-y:                       var(--clean_start--input_checkbox_c--overflow-y, visible);
+
+  visibility:                      visible;
+
+  z-index:                         2003;
+
+}
+
+.clean_start input[type="radio"]::after {
+
+  display:                         var(--clean_start--input_radiobutton_c--display, block);
+
+  min-height:                      var(--clean_start--input_radiobutton_c--min-height, 0);
+  max-height:                      var(--clean_start--input_radiobutton_c--max-height, unset);
+  height:                          var(--clean_start--input_radiobutton_c--height, 1.2rem);
+
+  line-height:                     var(--clean_start--input_radiobutton_c--line-height, 1.2rem);
+
+  font-size:                       var(--clean_start--input_radiobutton_c--font-size, 0.70rem);
+  position:                        var(--clean_start--input_radiobutton_c--position, absolute);
+
+  top:                             var(--clean_start--input_radiobutton_c--top, 0);
+  left:                            var(--clean_start--input_radiobutton_c--left, 0);
+
+  min-width:                       var(--clean_start--input_radiobutton_c--min-width, 0);
+  max-width:                       var(--clean_start--input_radiobutton_c--max-width, unset);
+  width:                           var(--clean_start--input_radiobutton_c--width, 0.9rem);
+
+  border:                          var(--clean_start--input_radiobutton_c--border, 0 solid magenta);
+
+  overflow-x:                       var(--clean_start--input_radiobutton_c--overflow-x, visible);
+  overflow-y:                       var(--clean_start--input_radiobutton_c--overflow-y, visible);
+
+  visibility:                      visible;
+
+  z-index:                         2003;
+
+}
+/* @finish clean_start html forms */
+
+
+  /* @start clean_start base theme Label in ol||ul and other text blocks */
+.clean_start * ol {
+  --clean_start--label--max-height:         var(--clean_start--ol_li_tags--line-height);
+  --clean_start--label--height:             var(--clean_start--ol_li_tags--line-height);
+}
+
+.clean_start * ul {
+  --clean_start--label--max-height:         var(--clean_start--ul_li_tags--line-height);
+  --clean_start--label--height:             var(--clean_start--ul_li_tags--line-height);
+}
+
+.clean_start * p {
+  --clean_start--label--max-height:         var(--clean_start--p_tags--line-height);
+  --clean_start--label--height:             var(--clean_start--p_tags--line-height);
+}
+
+
+.clean_start * ol,
+.clean_start * ul,
+.clean_start * p,
+.clean_start * text-lines-block,
+.clean_start * text-line {
+
+  --clean_start--label--display:            inline-block;
+
+
+  /** @var padding
+  * max-height, height = line-height of the main tag.
+  * line-height = font-size, the text aligns top vertically.
+  */
+  --clean_start--label--padding:            0.14rem 0.35rem 0 0.35rem;
+
+
+
+  /* margin: left and right allowed. */
+  --clean_start--label--margin:             0 0.24rem 0 0;
+
+  --clean_start--label--overflow-x:          hidden;
+  --clean_start--label--overflow-y:          hidden;
+
+}
+
+
+
+.clean_start * ol,
+.clean_start * ul {
+
+  --clean_start--label--padding:            0.10rem 0.35rem 0 0.35rem;
+
+  --clean_start--label--font-size:          0.70rem;
+  --clean_start--label--line-height:        var(--clean_start--label--font-size);
+
+  --clean_start--label--border-radius:      0.5rem;
+
+}
+
+.clean_start * p {
+
+  --clean_start--label--padding:            0.10rem 0.35rem 0 0.35rem;
+
+  --clean_start--label--font-size:          0.70rem;
+  --clean_start--label--line-height:        var(--clean_start--label--font-size);
+
+  --clean_start--label--border-radius:      0.5rem;
+
+}
+
+
+
+.clean_start * ol {
+  --clean_start--label--color:              #a0c0fa;
+  --clean_start--label--background-color:   navy;
+  --clean_start--label--border:             0.4px solid #5599fa;
+}
+
+.clean_start * ul {
+  --clean_start--label--color:              lime;
+  --clean_start--label--background-color:   green;
+  --clean_start--label--border:             0.4px solid lime;
+}
+
+.clean_start * p {
+  --clean_start--label--color:              #f2faf2;
+  --clean_start--label--background-color:   green;
+  --clean_start--label--border:             0.4px solid lime;
+}
+/* @finish clean_start base theme Label in ol||ul and other text blocks */
+
+
+/* @start clean_start Label in ol||ul and other text blocks */
+.clean_start ol li label,
+.clean_start ul li label,
+.clean_start text-lines-block label,
+.clean_start p label {
+  font-size:               var(--clean_start--label--font-size, 0.72rem);
+  line-height:             var(--clean_start--label--font-size, 0.72rem);
+
+  padding:                 var(--clean_start--label--padding, 0.12rem 0.4rem 0.12rem 0.4rem);
+  margin:                  var(--clean_start--label--margin, 0 0.24rem 0 0);
+
+  color:                   var(--clean_start--label--color, darkgreen);
+  background-color:        var(--clean_start--label--background-color, #eafdfa);
+
+  border:                  var(--clean_start--label--border, 1px solid lime);
+  border-radius:           var(--clean_start--label--border-radius, 0.4rem);
+
+  overflow-x:               var(--clean_start--label--overflow-x, hidden);
+  overflow-y:               var(--clean_start--label--overflow-y, hidden);
+}
+/* @finish clean_start Label in ol||ul and other text blocks */
+
+
+
+/* @start clean_start_tiny sites_tool having scrollbars */
+.clean_start .scrolls {
+  height:                  var(--clean_start--scrolls--height, 10rem);
+
+  min-width:               unset;
+  max-width:               100%;
+  width:                   var(--clean_start--scrolls--width, 30rem);
+
+  padding:                 var(--clean_start--scrolls--padding, 1rem 1rem 1rem 1rem);
+  border:                  var(--clean_start--scrolls--border, 1px solid green);
+
+  overflow-x:               scroll;
+  overflow-y:               scroll;
+}
+
+.clean_start .scrolls block,
+.clean_start .scrolls text-lines-block {
+  height:                  auto;
+
+  min-width:               unset;
+  max-width:               unset;
+  width:                   var(--clean_start--scrolls_block--width, 50rem);
+
+  overflow-x:               hidden;
+  overflow-y:               visible;
+}
+/* @finish clean_start_tiny sites_tool having scrollbars */
+
+

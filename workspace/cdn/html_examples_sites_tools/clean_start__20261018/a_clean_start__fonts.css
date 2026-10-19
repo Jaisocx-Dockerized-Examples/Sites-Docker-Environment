@@ -1,0 +1,172 @@
+
+/* @start clean_start theme fonts_old_good_fonts */
+
+/** Just need time for publishing same packages after renamings and tests.
+*
+* Renamings in future for the few sites tools,
+* are aimed for Software Companies' Namespaces, like Jaisocx,
+* and, whether the alignment librarie's styles set,
+* the class name for the CssCleanStart, clean_start.
+*
+* Due to the aim of the SetUp,
+* the variables' namespace doesn't have the Companie's Name,
+* in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+*/
+
+/* Font Families */
+
+/* MicroSoft fonts:
+     the browser shows texts the right way
+     on all computers with all other OS, like: iOS, Linux, Android
+*/
+
+/* microsoft, ios, linux, android */
+.clean_start,
+.clean_start.theme_fonts_old_good_fonts,
+.clean_start  .theme_fonts_old_good_fonts {
+                                                  /* microsoft, ios, linux, android */
+  --clean_start--arial--font-family:                "Arial";
+  --clean_start--times_new_roman--font-family:      "Times New Roman";
+  --clean_start--courier--font-family:              "Courier";
+  --clean_start--handwrite--font-family:            "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
+
+  --clean_start--sans--font-family:                 "Arial";
+  --clean_start--serif--font-family:                "Times New Roman";
+  --clean_start--monospace--font-family:            "Courier";
+  --clean_start--handwrite--font-family:            "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
+}
+/* @finish clean_start theme fonts_old_good_fonts */
+
+
+
+/* @start clean_start_tiny theme_fonts_a */
+.clean_start.theme_fonts_a,
+.clean_start  .theme_fonts_a {
+                                                  /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:                 "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+  --clean_start--serif--font-family:                "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+  --clean_start--monospace--font-family:            "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+  --clean_start--handwrite--font-family:            "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+}
+/* @finish clean_start_tiny theme_fonts_a */
+
+
+
+/* @start clean_start_tiny theme_fonts_b */
+.clean_start.theme_fonts_b,
+.clean_start  .theme_fonts_b  {
+                                                  /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:                 "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_start--serif--font-family:                "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_start--monospace--font-family:            "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_start--handwrite--font-family:            "Bradley Hand ITC", "Bradley Hand",     "Z003",                      "cursive";
+}
+/* @finish clean_start_tiny theme_fonts_b */
+
+
+
+/* @start clean_start_tiny theme_fonts_c */
+.clean_start.theme_fonts_c,
+.clean_start  .theme_fonts_c  {
+                                                  /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:                 "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
+  --clean_start--serif--font-family:                "Sitka",       "Charter",          "DejaVu Serif",     "serif";
+  --clean_start--monospace--font-family:            "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
+  --clean_start--handwrite--font-family:            "Kristen ITC", "Snell Roundhand",  "Z003",             "cursive";
+}
+/* @start clean_start_tiny theme_fonts_c */
+
+
+
+/* @start clean_start font_override */
+
+/**
+* @doc_start clean_start font override
+
+ <html class="clean_start theme_fonts_c">
+   ...
+   <block class="font_override">
+
+     <text-line class="font_monospace">
+        text rendered with the monospace font,
+        set by fonts theme class="theme_fonts_c" for 4 font families groups:
+        sans, serif, monospace, handwrite.
+        .clean_start.theme_fonts_c {
+          --clean_start--monospace--font-family: "Consolas", "Rockwell", "DejaVu Sans Mono", "monospace";
+        }
+     </text-line>
+
+     <text-line class="font_handwrite">
+        friendly regards, Illia
+     </text-line>
+     ...
+ </html>
+* @doc_finish clean_start font_override
+*/
+
+
+
+.clean_start.font_override.font_sans,
+.clean_start.font_override.font_sans *,
+
+.clean_start.font_override  .font_sans,
+.clean_start.font_override  .font_sans *,
+
+.clean_start  .font_override.font_sans,
+.clean_start  .font_override.font_sans *,
+
+.clean_start  .font_override  .font_sans,
+.clean_start  .font_override  .font_sans * {
+  font-family: var(--clean_start--sans--font-family);
+}
+
+
+
+.clean_start.font_override.font_serif,
+.clean_start.font_override.font_serif *,
+
+.clean_start.font_override  .font_serif,
+.clean_start.font_override  .font_serif *,
+
+.clean_start  .font_override.font_serif,
+.clean_start  .font_override.font_serif *,
+
+.clean_start  .font_override  .font_serif,
+.clean_start  .font_override  .font_serif * {
+  font-family: var(--clean_start--serif--font-family);
+}
+
+
+
+.clean_start.font_override.font_handwrite,
+.clean_start.font_override.font_handwrite *,
+
+.clean_start.font_override  .font_handwrite,
+.clean_start.font_override  .font_handwrite *,
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite *,
+
+.clean_start  .font_override  .font_handwrite,
+.clean_start  .font_override  .font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family);
+}
+
+
+
+.clean_start.font_override.font_monospace,
+.clean_start.font_override.font_monospace *,
+
+.clean_start.font_override  .font_monospace,
+.clean_start.font_override  .font_monospace *,
+
+.clean_start  .font_override.font_monospace,
+.clean_start  .font_override.font_monospace *,
+
+.clean_start  .font_override  .font_monospace,
+.clean_start  .font_override  .font_monospace * {
+  font-family: var(--clean_start--monospace--font-family);
+}
+/* @finish clean_start font_override */
+
+

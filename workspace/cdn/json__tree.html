@@ -16,7 +16,7 @@
 
   <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
   <base
-      href="../"
+      href="./"
   />
 
 
@@ -149,9 +149,20 @@
 
 <main>
 
-    <h1> Docker Network Conf </h1>
+    <content>
 
-    <jstree id="tree_holder_1"></jstree>
+        <h1> Tree </h1>
+        <label> @jaisocx/tree </label>
+
+        <textblock class="testing_html"></textblock>
+
+    </content>
+
+
+    <jstree id="tree_holder_1" class="theme-funny"></jstree>
+
+
+    <jstree id="tree_holder_2"></jstree>
 
   </main>
 
@@ -159,11 +170,11 @@
 
 
 
-<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/EventEmitter.js"></script>
-<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/ImprovedRenderEventEmitter.js"></script>
-
 <script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPathData.js"></script>
 <script src="node_cdn_installs/node_modules/@jaisocx/jpath/transpiled/Simple/JPath.js"></script>
+
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/EventEmitter.js"></script>
+<script src="node_cdn_installs/node_modules/@jaisocx/event-emitter/transpiled/Simple/ImprovedRenderEventEmitter.js"></script>
 
 <script src="node_cdn_installs/node_modules/@jaisocx/tokens-parser/transpiled/Simple/TokensParser.js"></script>
 
@@ -182,6 +193,106 @@
 
 
 <script>
+  // -------------------
+  // START TREE DATA
+  let glob_Data = [
+    {
+      "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/house.png",
+      "label": "Main",
+      "opened": false,
+      "text": "<h3>Main tree elem</h3>",
+      "subtree": [
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/google.png",
+          "label": "A Link to Google",
+          "href": "https://google.com/",
+          "cssClassName": "hyperlink"
+        },
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/github.png",
+          "label": "A Link to GitHub",
+          "href": "https://github.com/orgs/Jaisocx-Tools/repositories",
+          "cssClassName": "hyperlink"
+        },
+        {
+          "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/track.png",
+          "label": "echo html",
+          "opened": false,
+          "subtree": [
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 1",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#26d;\">Have fun with styling and using JSTree tool.</p>"
+            },
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 2",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#d83;\">You can edit code easily, JSTree class is lightweight.</p>"
+            },
+            {
+              "icon": "images/mini-images/sites_tools/tree/home_tree_mode_conf/html.png",
+              "label": "html 3",
+              "href": "javascript: void(0);",
+              "text": "<h3>Hello World!</h3><p style=\"color:#00bb00;\">Have a nice day.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ];
+
+</script>
+
+
+
+<script>
+
+  class TreeData {
+
+    id = "";
+    data = new Object();
+    dataLink = "";
+    htmlHolderId = "";
+    htmlElem = new Object();
+    dataIconBase = "";
+    renderingMode = "";
+    nodesOpenMode = "";
+
+
+
+    constructor (
+      id,
+      dataLink,
+      data,
+      htmlHolderId,
+      htmlElem,
+      dataIconBase,
+      renderingMode,
+      nodesOpenMode
+    ) {
+      this.id = id || "";
+
+      if ( this.id === "" ) {
+        throw new Error( "Required Data ID." );
+      }
+
+      this.dataLink = dataLink || "";
+      this.data = data || new Object();
+      this.htmlHolderId = htmlHolderId || "";
+      if ( this.htmlHolderId === "" ) {
+        throw new Error( "Required HtmlHolder ID." );
+      }
+
+      this.dataIconBase = dataIconBase || "";
+      this.renderingMode = renderingMode;
+      this.nodesOpenMode = nodesOpenMode;
+    }
+
+  }
+
+
 
   class TreeExamples {
 
@@ -223,6 +334,24 @@
     getDataItemById( treeDataId ) {
       const dataItem = this.#treeData[ treeDataId ];
       return dataItem;
+    }
+
+
+
+    exampleFunc( inSelector, jsonItem, eventPayload ) {
+
+      let text = ( jsonItem.text ) ?? "";
+      let tagImg_miniImage = eventPayload.treeHtmlNode.querySelector( ".jstree-html-node-holder-icon > img" );
+      let imgSrc = tagImg_miniImage.getAttribute( "src" );
+      let imgAlt = tagImg_miniImage.getAttribute( "alt" );
+
+      if ( this.tsHtml === 1 ) {
+          this.tsHtml = document.body.querySelector( inSelector );
+      }
+
+      this.tsHtml.innerHTML = `
+        <img class="mini_image" src="${imgSrc}" alt="${imgAlt}" />
+        <div>${text}</div>`;
     }
 
 
@@ -272,7 +401,7 @@
                     console.log( { treeNodeData } );
                   }
 
-                // this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
+                this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
 
               }
            )
@@ -357,14 +486,37 @@
 
   let treeExamplesInstance = new Object();
 
+  let glob_oneDataItems = {
+    "tree_1": {
+      id: "tree_1",
+      dataLink: "",
+      data: glob_Data,
+      htmlHolderId: "tree_holder_1",
+      htmlElem: null,
+      dataIconBase: "data/tree-data-to-use-with-conf.json",
+      renderingMode: TreeConstants.RenderingMode.Conf,
+      nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
+    }
+  };
+
   let glob_dataItems = {
     "tree_1": {
       id: "tree_1",
-      dataLink: "html_examples_sites_tools/data/docker_network_conf_07_jul_10__tmp.json",
-      data: "",
+      dataLink: "",
+      data: glob_Data,
       htmlHolderId: "tree_holder_1",
       htmlElem: null,
-      dataIconBase: "tree-data-to-use-with-conf.json",
+      dataIconBase: "data/tree-data-to-use-with-conf.json",
+      renderingMode: TreeConstants.RenderingMode.Conf,
+      nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
+    },
+    "tree_2": {
+      id: "tree_2",
+      dataLink: "tree-data-to-use-with-conf.json",
+      data: new Object(),
+      htmlHolderId: "tree_holder_2",
+      htmlElem: null,
+      dataIconBase: "data/tree-data-to-use-with-conf.json",
       renderingMode: TreeConstants.RenderingMode.Ease,
       nodesOpenMode: TreeConstants.NodesOpenedMode.ALL_SHOWN
     }
@@ -375,7 +527,7 @@
     function ( evt ) {
       treeExamplesInstance = new TreeExamples();
       treeExamplesInstance
-        .setDataItems( glob_dataItems )
+        .setDataItems( glob_oneDataItems )
         .renderExamples();
     }
   );

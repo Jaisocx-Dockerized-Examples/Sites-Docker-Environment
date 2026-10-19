@@ -2,19 +2,20 @@
 <html lang="en" id="css_table_imaged" class="jsx theme_visible_height">
 <head>
 
+
   <link
       rel="icon"
       type="image/x-icon"
-      href="favicons/flaticon_com_flowers_ico/008_dandelion.ico"
+      href="favicons/flaticon_com_flowers_ico/004_sunflower.ico"
   />
 
-  <title> Table Imaged Orderby </title>
+  <title> CSS Table Imaged </title>
 
 
 
   <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
   <base
-      href="../"
+      href="./"
   />
 
 
@@ -64,7 +65,7 @@
       href="node_cdn_installs/node_modules/@jaisocx/css-table/MediaAndStyles/CssTable_main_resolved.css"
   />
 
-  
+
 
   <link
       rel="stylesheet"
@@ -163,10 +164,12 @@
   <!-- the css_clean_start base theme spaces, for the table we set 1921px for big displays or TV -->
   <style name="css clean start lite mobile portrait">
 
-    @media screen and ( ( min-width: 10px ) and ( max-width: 764px ) and ( orientation: portrait ) ),
-      ( ( min-width: 10px ) and ( max-width: 1021px ) and ( orientation: landscape ) ) {
+    @media screen and ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: portrait ) ),
+      ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: landscape ) ) {
 
       html#css_table_imaged.jsx.theme_visible_height {
+
+        --responsive_size: responsive_size_til_h03_tablet_s_portrait;
 
         --jsx--css-clean-start-2--site--min-width: 100%;
         --jsx--css-clean-start-2--site--max-width: 100%;
@@ -177,8 +180,6 @@
 
       }
 
-
-
       .jsx.theme_visible_height h2,
       .jsx.theme_visible_height h3,
       .jsx.theme_visible_height description {
@@ -187,35 +188,6 @@
 
       .jsx themebuttons {
         margin: 1rem 0 1rem 0;
-      }
-
-    }
-
-
-
-    @media screen and ( ( min-width: 10px ) and ( max-width: 1021px ) and ( orientation: landscape ) ) {
-
-      html#css_table_imaged.jsx.theme_visible_height {
-        --jsx--css-clean-start-2--site--padding: 0 1rem 0.2rem 1rem;
-      }
-
-      .jsx themebuttons {
-        margin: 0.3rem 0 0.3rem 0;
-      }
-
-    }
-
-
-
-    @media screen and ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: portrait ) ),
-      ( ( min-width: 10px ) and ( max-width: 1921px ) and ( orientation: landscape ) ) {
-
-      html#css_table_imaged.jsx.theme_visible_height {
-
-        --jsx--css-clean-start-2--site--min-width: 100%;
-        --jsx--css-clean-start-2--site--max-width: 100%;
-        --jsx--css-clean-start-2--site--width: 100%;
-
       }
 
     }
@@ -251,13 +223,11 @@
 
     <content>
 
-      <h1> Css Table Imaged Orderby </h1>
-
-      <h2> @jaisocx/css-table-ordered </h2>
-
+      <h1> Css Table Imaged </h1>
+      <h2> @jaisocx/css-table </h2>
+      <h3> css_table_imaged_preview.html </h3>
       <description>
-        Css sites tool styling a server side rendered database table data to a grid view,
-        with solutions for sticky scroll and order by on columns via browser's js engine
+        Css sites tool styling a server side rendered database table data to a grid view
       </description>
 
 
@@ -273,7 +243,7 @@
 
 
         <!--starts markup of the table styled by @jaisocx/css-table-ordered npm package-->
-        <div class="jsx-css-table-holder   theme_fixed_columns_labels   theme_imaged   theme_imaged_mimetypes_base   jaisocx-folder-listing-columns">
+        <div class="jsx-css-table-holder theme_imaged theme_imaged_mimetypes_base jaisocx-folder-listing-columns">
           <div class="jsx-css-table desktop-columns-labels-holder">
             <!--the first table record with the names of the table columns, shown in the table bright mode-->
             <div class="row">
@@ -1860,56 +1830,7 @@
 
 
 
-<script src="node_cdn_installs/node_modules/@jaisocx/css-table-ordered/transpiled/Simple/scroll/CssTableScroll.js"></script>
-
-<script src="node_cdn_installs/node_modules/@jaisocx/css-table-ordered/transpiled/Simple/orderby/CssTableOrderby.js"></script>
-
-
-
-<script name="add_fixed_scroll">
-
-  let cssTableScrollInstance = new Object();
-
-  function addScrollEventHandlers() {
-    cssTableScrollInstance = new CssTableScroll();
-    cssTableScrollInstance.addScrollEventHandlers();
-  }
-
-  // DOCUMENT ONLOAD, FIXED SCROLL AND ORDERBY
-  document.addEventListener (
-    "DOMContentLoaded",
-    () => {
-      addScrollEventHandlers();
-    }
-  );
-
-</script>
-
-
-
-<script name="add_orderby">
-
-  let orderbyInstance   = new Object();
-
-  function addOrderbyEventHandler() {
-    orderbyInstance = new CssTableOrderby();
-      orderbyInstance.setRowsNumberNotOrdered( 1 );
-    let eventHandlerRetval = orderbyInstance.addOrderbyEventHandler();
-  }
-
-  // DOCUMENT ONLOAD, FIXED SCROLL AND ORDERBY
-  document.addEventListener (
-    "DOMContentLoaded",
-    () => {
-      addOrderbyEventHandler();
-    }
-  );
-
-</script>
-
-
-
-<script name="themes_turn_on">
+<script>
 
   const cssClassesNames = [
     "jsx",
