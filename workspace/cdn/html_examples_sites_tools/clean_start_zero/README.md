@@ -7,9 +7,9 @@
   > 💡 Aligning styles of a site, the single file `clean_start_zero__site.css` of three hundred code lines of filesize 8k.
 
 
-  | 🗂  **Library**  | `@jaisocx/clean_start_zero` | 🏷  **ver.**: `1.0.1` |
+  | 🗂  **Library**  | `@jaisocx/clean_start_zero` | 🏷  **ver.**: `1.0.2` |
 
-  | 🗓  **Updated**  | 🌾 Autumn 2026 | `AD 2026 Oct 20 10:35:10.500 GMT_24h` |
+  | 🗓  **Updated**  | 🌾 Autumn 2026 | `AD 2026 Oct 20 12:35:10.500 GMT_24h` |
 
   | 📐  **Size**     | 🗂 Folder: 80 K | 📦 Tarball: 8_809 B | 📄 .css: 9_000 B | 📄 .html: 7_862 B | 
 
@@ -149,7 +149,7 @@ _________________________________________________________________
        📄  clean_start_zero__html_tags.css                3_218 b 
        📄  clean_start_zero__site.css                     8_167 b 
     📒  README.md                                         6_746 b 
-    📦  jaisocx-clean_start_zero-1.0.1.tgz                8_809 b
+    📦  jaisocx-clean_start_zero-1.0.2.tgz                8_809 b
     📄  clean_start_zero__all_tags.html                  13_248 b
     📄  clean_start_zero__base.html                       6_396 b
     📄  clean_start_zero_cdn__all_tags.html              13_128 b

@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/clean_start_zero",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jaisocx Sites Tools base aligning styles, multiplatform fonts, example html pages",
   "license": "ISC",
   "author": "Jaisocx Inc. Software Architect ILLIA POLIANSKYI",
@@ -8,10 +8,14 @@
     "css"
   ],
   "files": [
-    "*.html",
+    "index_preview.html",
+    "clean_start_zero_cdn__base.html",
 
     "favicon/*.ico",
     "MediaAndStyles/*.css",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
 
     "webpack.aliases.json",
 
@@ -23,16 +27,11 @@
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
-  "types": "./transpiled/ESNext/index.d.ts",
   "module": "./transpiled/ESNext/index.js",
   "exports": {
     ".": {
       "import": "./transpiled/ESNext/index.js",
       "require": "./transpiled/CommonJS/index.js"
-    },
-    "./WebpackAliases": {
-      "import": "./transpiled/ESNext/webpack.aliases.mjs",
-      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
   }
 }
