@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="jaisocx clean_start theme_fonts_a">
+<head>
+
+  <!--# FAVICON -->
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/x-icon;base64,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"
+  />
+
+  <title> README Zero clean_start </title>
+
+
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <style name="clean_start_zero__theme">
+
+    .jaisocx.clean_start {
+
+      --clean_start--rem:      16px;
+
+      --clean_start--all_tags--font-size:      0.9rem;
+      --clean_start--all_tags--line-height:    1.2rem;
+
+      --clean_start--all_tags--border-width:   0;
+
+      --clean_start--site--background:         #fdfdfd;
+      --clean_start--body_tag--background:     #eefdf4;
+
+      --clean_start--site--padding:            1rem 3rem 20rem 3rem;
+      --clean_start--site--width:              55%;
+
+      --clean_start--scrollbar-thumb--background-color:   lime;
+      --clean_start--scrollbar-track--background-color:   #eafdfa;
+      --clean_start--scrollbar--color:                    lime #eafdfa;
+
+    }
+
+  </style>
+
+
+  <!--# Clean start zero Fonts -->
+  <style name="clean_start_zero__fonts">
+
+    /* @start clean_start_tiny theme_fonts_a */
+    .clean_start.theme_fonts_a,
+    .clean_start  .theme_fonts_a {
+                                                      /* microsoft, ios, linux, android */
+      --clean_start--sans--font-family:                 "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+      --clean_start--serif--font-family:                "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+      --clean_start--monospace--font-family:            "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+      --clean_start--handwrite--font-family:            "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+    }
+    /* @finish clean_start_tiny theme_fonts_a */
+
+
+
+    /* @start clean_start_tiny font_override */
+    .clean_start  .font_override.font_sans,
+    .clean_start  .font_override.font_sans * {
+      font-family: var(--clean_start--sans--font-family, "Arial");
+    }
+
+    .clean_start  .font_override.font_serif,
+    .clean_start  .font_override.font_serif * {
+      font-family: var(--clean_start--serif--font-family, "Times New Roman");
+    }
+
+    .clean_start  .font_override.font_handwrite,
+    .clean_start  .font_override.font_handwrite * {
+      font-family: var(--clean_start--handwrite--font-family, "Segoe Script",   "Bradley Hand",   "Z003",   "cursive");
+    }
+
+    .clean_start  .font_override.font_monospace,
+    .clean_start  .font_override.font_monospace * {
+      font-family: var(--clean_start--monospace--font-family, "Courier");
+    }
+    /* @finish clean_start_tiny font_override */
+
+  </style>
+
+
+  <!--# Clean start zero Site -->
+  <style name="clean_start_zero__site">
+
+    /* @start clean_start_tiny for all html tags */
+
+      /* this style sets rem size for the html page. 1rem = 16px */
+    html.clean_start {
+      font-size:               var(--clean_start--rem, 16px);
+    }
+
+
+
+      /** --clean_start--all_tags-- */
+    .clean_start * {
+      /** --clean_start--all_tags-- */
+
+      position:                relative;
+
+
+      /** display: var(--clean_start--all_tags--display, inline-block);
+       *    @moved_to: --clean_start--custom_tags--display in styles_display/clean_start__display.css
+      */
+
+
+      /** box-sizing: var(--clean_start--all_tags--box-sizing, border-box);
+       *    @moved_to: .clean_start main * {  }
+      */
+
+
+      padding:                 0 0 0 0;
+      margin:                  0 0 0 0;
+
+      font-family:             var(--clean_start--all_tags--font-family, Arial);
+      font-size:               var(--clean_start--all_tags--font-size,   0.9rem);
+      line-height:             var(--clean_start--all_tags--line-height, 1.2rem);
+
+      letter-spacing:          0;
+      line-break:              strict;
+      word-wrap:               normal;
+      word-break:              normal;
+      color:                   black;
+
+      border-color:            magenta;
+      border-style:            solid;
+      border-width:            var(--clean_start--all_tags--border-width, 0.3px);
+
+      min-height:              0;
+      max-height:              unset;
+      height:                  auto;
+
+      min-width:               0;
+      max-width:               100%;
+      width:                   auto;
+
+      overflow-x:               visible;
+      overflow-y:               visible;
+    }
+    /* @finish clean_start_tiny for all html tags */
+
+
+
+    /* @start clean_start_tiny display style for all html tags */
+
+    /**
+    * 1. clean_start styles reset existing html sites for theming purposes.
+    * 2. these tiny styles are mainly for new sites front-end work,
+    *      saving up tens of K reload and rerender in browser,
+    *      very rule for watch mode
+    *      when building the bundle.js set on the timeout on few keyboard typings.
+    *      lika a code snippet, too.
+    */
+
+      /* @start browsers' reserved */
+      /** -- browsers' reserved -- */
+    html.clean_start {
+      display:                 block;
+    }
+
+      /** above, to override by the next styles.
+      *          body tag overrides the reserved style display block.
+      */
+    .clean_start * {
+      display:                 var(--clean_start--custom_tags--display, inline-block);
+    }
+
+      /** -- browsers' reserved -- */
+    .clean_start body {
+      display:                 block;
+    }
+      /* @finish browsers' reserved */
+
+
+
+      /* @start styles block the main html tag */
+      /** -- main --
+      * styled normally when the reserved tags (html, head, body) have set 100% and zero values,
+      * and the browsers' reserved styles.
+      */
+    .clean_start main,
+    .clean_start site {
+      display:                 var(--clean_start--site--display, block);
+    }
+      /* @finish styles block the main html tag
+
+
+
+      /* @start inline tags reset, the Jaisocx tags proposed */
+    .clean_start text {
+      display:                 var(--clean_start--inline_tags--display, inline-block);
+    }
+      /* @finish inline tags reset, the Jaisocx tags proposed */
+
+
+
+      /* @start block tags reset, the Jaisocx tags proposed */
+    .clean_start block,
+    .clean_start text-lines-block {
+      display:                 var(--clean_start--block_tags--display, block);
+    }
+      /* @finish block tags reset, the Jaisocx tags proposed */
+
+
+
+      /* @start just pair of inline tags reset, like an example */
+    .clean_start label,
+    .clean_start a,
+    .clean_start b {
+      display:                 var(--clean_start--inline_tags--display, inline-block);
+    }
+      /* @finish just pair of inline tags reset, like an example */
+
+
+
+      /* @start just pair of block tags reset, the tags normally in html */
+    .clean_start canvas,
+    .clean_start fieldset,
+    .clean_start nav,
+    .clean_start ol,
+    .clean_start ul,
+    .clean_start aside,
+    .clean_start p,
+    .clean_start pre,
+    .clean_start div,
+    .clean_start video {
+      display:                 var(--clean_start--block_tags--display, block);
+    }
+      /* @finish just pair of block tags reset, the tags normally in html */
+    /* @finish clean_start_tiny display style for all html tags */
+
+
+
+    /* @start clean_start site css props */
+    html.clean_start {
+      position:                static;
+      top:                     0;
+      padding:                 0 0 0 0;
+      margin:                  0 0 0 0;
+      box-sizing:              border-box;
+
+      min-height:              100vh;
+      max-height:              unset;
+      height:                  auto;
+
+      min-width:               100%;
+      max-width:               100%;
+      width:                   100%;
+
+      overflow-x:               hidden;
+    }
+
+
+
+      /* these html elems are invisible */
+    .clean_start head,
+    .clean_start head *,
+    .clean_start style,
+    .clean_start script {
+      display:                 block;
+      visibility:              hidden;
+      overflow-x:               hidden;
+      overflow-y:               hidden;
+      min-height:              unset;
+      max-height:              0;
+      height:                  0;
+      min-width:               unset;
+      max-width:               0;
+      width:                   0;
+    }
+
+
+
+      /** --clean_start--body_tag-- */
+    .clean_start body {
+      /** --clean_start--body_tag-- */
+
+      position:                relative;
+      top:                     0;
+      padding:                 0 0 0 0;
+      margin:                  0 0 0 0;
+      display:                 block;
+      box-sizing:              border-box;
+
+      font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+
+      min-height:              100vh;
+      max-height:              unset;
+      height:                  auto;
+
+      min-width:               100%;
+      max-width:               100%;
+      width:                   100%;
+
+      background:              var(--clean_start--body_tag--background, #eefdf4);
+
+      overflow-x:               hidden;
+      overflow-y:               auto;
+    }
+
+
+
+      /** --clean_start--site-- */
+    .clean_start main,
+    .clean_start site {
+      /** --clean_start--site-- */
+
+      padding:                 var(--clean_start--site--padding, 0 0 0 0);
+      margin:                  var(--clean_start--site--margin, 0 auto 0 auto);
+
+      font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+      box-sizing:              var(--clean_start--site--box-sizing, border-box);
+
+      min-height:              var(--clean_start--site--min-height, 100vh );
+      max-height:              var(--clean_start--site--max-height, unset );
+      height:                  var(--clean_start--site--height, auto );
+
+      min-width:               var(--clean_start--site--min-width, unset);
+      max-width:               var(--clean_start--site--max-width, 100%);
+      width:                   var(--clean_start--site--width, auto);
+
+      background:              var(--clean_start--site--background, #fdfdfd);
+
+      overflow-x:               var(--clean_start--site--overflow-x, hidden);
+      overflow-y:               var(--clean_start--site--overflow-y, visible);
+    }
+
+
+
+    .clean_start main *,
+    .clean_start site * {
+      box-sizing:              var(--clean_start--all_tags--box-sizing, border-box);
+    }
+    /* @finish clean_start site css props */
+
+
+
+
+
+      /* @start clean_start scrollbar styles for all html tags */
+    .clean_start {
+      --clean_start--scrollbar--color:    var(--clean_start--scrollbar-thumb--background-color, lime)  var(--clean_start--scrollbar-track--background-color, #eafdfa);
+    }
+
+    @supports selector(::-webkit-scrollbar) {
+
+      .clean_start::-webkit-scrollbar,
+      .clean_start *::-webkit-scrollbar {
+        width:                 var(--clean_start--scrollbar--size, 0.3rem);
+        height:                var(--clean_start--scrollbar--size, 0.3rem);
+      }
+
+      .clean_start::-webkit-scrollbar-thumb,
+      .clean_start *::-webkit-scrollbar-thumb {
+        background-color:      var(--clean_start--scrollbar-thumb--background-color, lime);
+      }
+
+      .clean_start::-webkit-scrollbar-track,
+      .clean_start *::-webkit-scrollbar-track {
+        background-color:      var(--clean_start--scrollbar-track--background-color, #eafdfa);
+      }
+
+    }
+
+
+
+    @supports (scrollbar-color: auto) {
+      .clean_start,
+      .clean_start * {
+        scrollbar-width:       var(--clean_start--scrollbar--width, thin);
+      }
+
+      .clean_start,
+      .clean_start * {
+        scrollbar-color:       var(--clean_start--scrollbar--color, lime #eafdfa);
+      }
+
+    }
+      /* @finish clean_start scrollbar styles for all html tags */
+
+    /* @finish clean_start_zero */
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Overrides -->
+  <style name="overrides">
+
+    .jaisocx.clean_start h1 {
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+      font-weight:                400;
+      margin:                     0 0 0 0;
+      color:                      #40be30;
+      background:                 #fefefe;
+      border:                     0 solid lime;
+    }
+
+    .jaisocx.clean_start h2 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h3 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h4 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h2:first-of-type {
+      margin:                     1rem 0 1rem 0;
+    }
+
+    .jaisocx.clean_start h2 ~ h3,
+    .jaisocx.clean_start h2 ~ block > h3:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h3 ~ h4,
+    .jaisocx.clean_start h3 ~ block > h4:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+
+
+      /* label */
+    .jaisocx.clean_start label {
+      display:                    inline-block;
+
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+
+      padding:                    0.18rem 0.9rem 0.10rem 0.9rem;
+      margin:                     0 0 0 0;
+
+      color:                      #40be30;
+      background:                 #fefefe;
+
+      border:                     2px solid #99faa9;
+      border-radius:              0.8rem;
+
+      overflow-x:                  hidden;
+      overflow-y:                  hidden;
+    }
+
+
+
+      /* hyperlinks <a href="url"> */
+    .jaisocx.clean_start a {
+      color:                     navy;
+    }
+    .jaisocx.clean_start a:hover {
+      color:                     #2255ab;
+    }
+
+
+
+      /* paragraphs <p> */
+    .jaisocx.clean_start p {
+      margin:                    1rem 0 0 0;
+    }
+    .jaisocx.clean_start p:first-of-type {
+      margin:                    0 0 0 0;
+    }
+
+    .jaisocx.clean_start pre,
+    .jaisocx.clean_start pre * {
+      font-family:               var(--clean_start--monospace--font-family, Courier);
+      line-height:               0.99rem;
+      font-size:                 0.85rem;
+    }
+
+    .jaisocx.clean_start pre.code_html,
+    .jaisocx.clean_start pre.code_css,
+    .jaisocx.clean_start pre.code_ls {
+      border:                    0.4px solid #335577;
+      background-color:          #f5f9fd;
+      padding: 0.2rem 1rem 0 1rem;
+      margin: 0.4rem 0 0.4rem 0;
+    }
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Mobile friendly -->
+  <style name="mobile_friendly">
+
+    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1rem 0.3rem 2rem 0.3rem;
+        --clean_start--site--width:        100%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1.2rem 0.3rem 5rem 0.3rem;
+        --clean_start--site--width:        92%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      0.3rem 0.3rem 1rem 0.3rem;
+        --clean_start--site--width:        95%;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+<site>
+
+  <label> <h1> @jaisocx/clean_start_zero  ®  </h1> </label>
+
+
+  <h2> README Zero clean_start  ©  </h2>
+
+
+  <block class="readme_md">
+
+
+    <label> Jaisocx Sites Tools  ®  </label>
+
+
+    <p>
+
+      💡  Aligning styles of a site,
+           the single file `clean_start_zero__site.css`
+           of three hundred ( 300 ) code lines of filesize eight kilobytes ( 8k ).
+    </p>
+
+    <pre>
+| 🗂  <b>Library</b>    |  @jaisocx/clean_start_zero  |  🏷  <b> ver. </b>: 1.0.3  |
+| 🗓  <b>Updated</b>  |  🌾  Autumn 2026  |  AD 2026 Oct 20 12:35:10.500 GMT_24h  |
+| 📐  <b>Size</b>         |  🗂  Folder: 80 K  |  📦 Tarball: 8_809 B  |  📄 .css: 9_000 B  |  📄 .html: 7_862 B  |
+    </pre>
+
+
+
+
+
+    <h2> The aim of the setup </h2>
+
+    <p>
+
+      💡  Aligning styles of a site,
+      the single file `clean_start_zero__site.css`
+      of three hundred ( 300 ) code lines of filesize eight kilobytes ( 8k ).
+    </p>
+
+    <p>
+      The zero css clean start sets just the few styles for the tags html, head, body, main or site.
+    </p>
+
+    <p>
+      The `clean_start_zero__base.css` file of smaller size solves just the base aligning.
+    </p>
+
+
+
+
+
+    <h2> Examples </h2>
+
+    <h3> html example </h3>
+
+
+    <pre class="code_html">
+1:  &lt;html language="en" class="clean_start theme_fonts_a"&gt;
+    </pre>
+
+    <pre class="code_html">
+1:  &lt;html language="en" class="&lt;Your Namespace&gt; clean_start theme_fonts_a"&gt;
+    </pre>
+
+
+
+
+      <h3> css example </h3>
+
+      <pre class="code_css">
+1:  .&lt;Your Namespace&gt;.clean_start {
+2:    --clean_start--all_tags--font-size:     0.94rem;
+3:  }
+      </pre>
+
+
+
+
+
+      <h2>  ✅  Tasks solved </h2>
+
+      <h3> Four ( 4 ) fonts themes </h3>
+
+      <p>
+        💡  Texts look well, saving SIM mobile traffic.
+      </p>
+
+      <p>
+        ❌  Multiplatform fallback fonts are just for the roaming mobile save up mode (nice with the cdn caches fine-tuning),
+               don't look the same on other OS' browsers,
+               however, still, sans remains the sans and the monospace remains monospace.
+      </p>
+
+
+      <pre>
+✅  <b> Linux </b> ( just one Linux OS )
+✅  <b> Android </b>: just one font-family for on font-family group, all 4 themes look the same.
+✅  <b> iOS </b> ( iPad )
+✅  <b> MacOS </b> ( MacBook )
+      </pre>
+
+
+
+
+
+      <p>
+        <b> Multiplatform </b> <text> font styles, set by styles variables for 4 font familie groups: </text>
+      </p>
+
+      <p>
+        ❌  Didn't have real comps with OS', weren't tested:
+              Microsoft Windows,
+              Chrome OS,
+              Free BSD.
+      </p>
+
+      <pre>
+. sans
+. serif
+. handwrite
+. monospace
+      </pre>
+
+      <pre class="code_css">
+1:  /* microsoft,  ios,         linux,               android  */
+2:  --clean_start--monospace--font-family:   "Consolas",  "Rockwell",  "DejaVu Sans Mono",  "monospace";
+      </pre>
+
+
+
+
+      </h4> Jaisocx workaround, class .font_override </h4>
+
+      <p>
+        text renders by the monospace font,
+        set by fonts theme class="theme_fonts_c" for 4 font familie groups:
+      </p>
+
+      <pre>
+. sans
+. serif
+. handwrite
+. monospace
+      </pre>
+
+
+
+      <pre class="code_css">
+1:  .clean_start.theme_fonts_c,
+2:  .clean_start  .theme_fonts_c {
+3:    ...
+4:    --clean_start--monospace--font-family: "Consolas", "Rockwell", "DejaVu Sans Mono", "monospace";
+5:    ...
+6:  }
+      </pre>
+
+
+
+
+
+      <h2>  Structure </h2>
+
+      <pre class="code_ls">
+📚 clean_start_zero/                                       80_000 b  l_d0_d
+    _________________________________________________________________
+    🗂 favicon/                                               4_286 b  l_d1_f
+        📄  Icon_Jaisocx.ico                                    4_286 b
+    _____________________________________________________________
+    🗂 MediaAndStyles/                                       12_901 b  l_d1_f
+        📄  clean_start_zero__fonts.css                         1_516 b
+        📄  clean_start_zero__html_tags.css                     3_218 b
+        📄  clean_start_zero__site.css                          8_167 b
+    📒  README.md                                             6_746 b
+    📦  jaisocx-clean_start_zero-1.0.2.tgz                    8_809 b
+    📄  clean_start_zero__all_tags.html                      13_248 b
+    📄  clean_start_zero__base.html                           6_396 b
+    📄  clean_start_zero_cdn__all_tags.html                  13_128 b
+    📄  clean_start_zero_cdn__base.html                       7_852 b
+      </pre>
+
+
+
+
+
+      <h2> Theme Base </h2>
+
+      <p>
+        ✅  the base theme in 📒 `README.md`
+      </p>
+
+
+      <b> style in clean_start_zero__base.html </b>
+
+
+      <pre class="code_css">
+
+.jaisocx.clean_start {
+
+  --clean_start--rem:      16px;
+
+  --clean_start--all_tags--font-size:      0.9rem;
+  --clean_start--all_tags--line-height:    1.2rem;
+
+  --clean_start--all_tags--border-width:   0;
+
+  --clean_start--site--background:         #fdfdfd;
+  --clean_start--body_tag--background:     #eefdf4;
+
+  --clean_start--site--padding:            1rem 3rem 20rem 3rem;
+  --clean_start--site--width:              55%;
+
+  --clean_start--scrollbar-thumb--background-color:   lime;
+  --clean_start--scrollbar-track--background-color:   #eafdfa;
+  --clean_start--scrollbar--color:                    lime #eafdfa;
+
+}
+
+      </pre>
+
+
+
+      <b> all variables </b>
+
+      <pre class="code_css">
+
+.jaisocx.clean_start {
+
+  --clean_start--rem:      16px;
+
+  --clean_start--all_tags--font-family:    var(--clean_start--sans--font-family, "Arial");
+  --clean_start--all_tags--font-size:      0.9rem;
+  --clean_start--all_tags--line-height:    1.2rem;
+
+
+  --clean_start--pre--font-family:         var(--clean_start--monospace--font-family, "Courier");
+  --clean_start--pre_tags--font-family:    var(--clean_start--monospace--font-family, "Courier");
+
+
+  --clean_start--all_tags--border-width:   0;
+
+
+
+  --clean_start--site--display:            block;
+  --clean_start--custom_tags--display:     inline-block;
+  --clean_start--inline_tags--display:     inline-block;
+  --clean_start--block_tags--display:      block;
+
+
+
+  --clean_start--all_tags--box-sizing:     border-box;
+  --clean_start--site--box-sizing:         border-box;
+
+  --clean_start--site--padding:            0 0 0 0;
+  --clean_start--site--margin:             0 auto 0 auto;
+
+  --clean_start--site--min-height:         100vh;
+  --clean_start--site--max-height:         unset;
+  --clean_start--site--height:             auto;
+
+  --clean_start--site--min-width:          unset;
+  --clean_start--site--max-width:          100%;
+  --clean_start--site--width:              auto;
+
+  --clean_start--site--overflow-x:          hidden;
+  --clean_start--site--overflow-y:          visible;
+
+
+  --clean_start--site--background:         #fdfdfd;
+  --clean_start--body_tag--background:     #eefdf4;
+
+
+
+  --clean_start--scrollbar-thumb--background-color:   lime;
+  --clean_start--scrollbar-track--background-color:   #eafdfa;
+  --clean_start--scrollbar--color:                    lime #eafdfa;
+
+  --clean_start--scrollbar--size:                     0.3rem;
+  --clean_start--scrollbar--width:                    thin;
+
+}
+
+      </pre>
+
+
+
+      <p class="sign">
+        Have a nice day, Jaisocx Inc. Software Architect I. Polianskyi
+      </p>
+
+  </block>
+
+</site>
+</body>
+</html>
+
+
+
+
