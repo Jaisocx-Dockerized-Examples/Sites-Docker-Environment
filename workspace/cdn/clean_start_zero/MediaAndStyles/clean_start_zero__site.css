@@ -1,0 +1,299 @@
+
+/* @start clean_start_tiny for all html tags */
+
+  /* this style sets rem size for the html page. 1rem = 16px */
+html.clean_start {
+  font-size:               var(--clean_start--rem, 16px);
+}
+
+
+
+  /** --clean_start--all_tags-- */
+.clean_start * {
+  /** --clean_start--all_tags-- */
+
+  position:                relative;
+
+
+  /** display: var(--clean_start--all_tags--display, inline-block);
+   *    @moved_to: --clean_start--custom_tags--display in styles_display/clean_start__display.css
+  */
+
+
+  /** box-sizing: var(--clean_start--all_tags--box-sizing, border-box);
+   *    @moved_to: .clean_start main * {  }
+  */
+
+
+  padding:                 0 0 0 0;
+  margin:                  0 0 0 0;
+
+  font-family:             var(--clean_start--all_tags--font-family, Arial);
+  font-size:               var(--clean_start--all_tags--font-size,   0.9rem);
+  line-height:             var(--clean_start--all_tags--line-height, 1.2rem);
+
+  letter-spacing:          0;
+  line-break:              strict;
+  word-wrap:               normal;
+  word-break:              normal;
+  color:                   black;
+
+  border-color:            magenta;
+  border-style:            solid;
+  border-width:            var(--clean_start--all_tags--border-width, 0.3px);
+
+  min-height:              0;
+  max-height:              unset;
+  height:                  auto;
+
+  min-width:               0;
+  max-width:               100%;
+  width:                   auto;
+
+  overflow-x:               visible;
+  overflow-y:               visible;
+}
+/* @finish clean_start_tiny for all html tags */
+
+
+
+/* @start clean_start_tiny display style for all html tags */
+
+/**
+* 1. clean_start styles reset existing html sites for theming purposes.
+* 2. these tiny styles are mainly for new sites front-end work,
+*      saving up tens of K reload and rerender in browser,
+*      very rule for watch mode
+*      when building the bundle.js set on the timeout on few keyboard typings.
+*      lika a code snippet, too.
+*/
+
+  /* @start browsers' reserved */
+  /** -- browsers' reserved -- */
+html.clean_start {
+  display:                 block;
+}
+
+  /** above, to override by the next styles.
+  *          body tag overrides the reserved style display block.
+  */
+.clean_start * {
+  display:                 var(--clean_start--custom_tags--display, inline-block);
+}
+
+  /** -- browsers' reserved -- */
+.clean_start body {
+  display:                 block;
+}
+  /* @finish browsers' reserved */
+
+
+
+  /* @start styles block the main html tag */
+  /** -- main --
+  * styled normally when the reserved tags (html, head, body) have set 100% and zero values,
+  * and the browsers' reserved styles.
+  */
+.clean_start main,
+.clean_start site {
+  display:                 var(--clean_start--site--display, block);
+}
+  /* @finish styles block the main html tag
+
+
+
+  /* @start inline tags reset, the Jaisocx tags proposed */
+.clean_start text {
+  display:                 var(--clean_start--inline_tags--display, inline-block);
+}
+  /* @finish inline tags reset, the Jaisocx tags proposed */
+
+
+
+  /* @start block tags reset, the Jaisocx tags proposed */
+.clean_start block,
+.clean_start text-lines-block {
+  display:                 var(--clean_start--block_tags--display, block);
+}
+  /* @finish block tags reset, the Jaisocx tags proposed */
+
+
+
+  /* @start just pair of inline tags reset, like an example */
+.clean_start label,
+.clean_start a,
+.clean_start b {
+  display:                 var(--clean_start--inline_tags--display, inline-block);
+}
+  /* @finish just pair of inline tags reset, like an example */
+
+
+
+  /* @start just pair of block tags reset, the tags normally in html */
+.clean_start canvas,
+.clean_start fieldset,
+.clean_start nav,
+.clean_start ol,
+.clean_start ul,
+.clean_start aside,
+.clean_start p,
+.clean_start pre,
+.clean_start div,
+.clean_start video {
+  display:                 var(--clean_start--block_tags--display, block);
+}
+  /* @finish just pair of block tags reset, the tags normally in html */
+/* @finish clean_start_tiny display style for all html tags */
+
+
+
+/* @start clean_start site css props */
+html.clean_start {
+  position:                static;
+  top:                     0;
+  padding:                 0 0 0 0;
+  margin:                  0 0 0 0;
+  box-sizing:              border-box;
+
+  min-height:              100vh;
+  max-height:              unset;
+  height:                  auto;
+
+  min-width:               100%;
+  max-width:               100%;
+  width:                   100%;
+
+  overflow-x:               hidden;
+}
+
+
+
+  /* these html elems are invisible */
+.clean_start head,
+.clean_start head *,
+.clean_start style,
+.clean_start script {
+  display:                 block;
+  visibility:              hidden;
+  overflow-x:               hidden;
+  overflow-y:               hidden;
+  min-height:              unset;
+  max-height:              0;
+  height:                  0;
+  min-width:               unset;
+  max-width:               0;
+  width:                   0;
+}
+
+
+
+  /** --clean_start--body_tag-- */
+.clean_start body {
+  /** --clean_start--body_tag-- */
+
+  position:                relative;
+  top:                     0;
+  padding:                 0 0 0 0;
+  margin:                  0 0 0 0;
+  display:                 block;
+  box-sizing:              border-box;
+
+  font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+
+  min-height:              100vh;
+  max-height:              unset;
+  height:                  auto;
+
+  min-width:               100%;
+  max-width:               100%;
+  width:                   100%;
+
+  background:              var(--clean_start--body_tag--background, #eefdf4);
+
+  overflow-x:               hidden;
+  overflow-y:               auto;
+}
+
+
+
+  /** --clean_start--site-- */
+.clean_start main,
+.clean_start site {
+  /** --clean_start--site-- */
+
+  padding:                 var(--clean_start--site--padding, 0 0 0 0);
+  margin:                  var(--clean_start--site--margin, 0 auto 0 auto);
+
+  font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+  box-sizing:              var(--clean_start--site--box-sizing, border-box);
+
+  min-height:              var(--clean_start--site--min-height, 100vh );
+  max-height:              var(--clean_start--site--max-height, unset );
+  height:                  var(--clean_start--site--height, auto );
+
+  min-width:               var(--clean_start--site--min-width, unset);
+  max-width:               var(--clean_start--site--max-width, 100%);
+  width:                   var(--clean_start--site--width, auto);
+
+  background:              var(--clean_start--site--background, #fdfdfd);
+
+  overflow-x:               var(--clean_start--site--overflow-x, hidden);
+  overflow-y:               var(--clean_start--site--overflow-y, visible);
+}
+
+
+
+.clean_start main *,
+.clean_start site * {
+  box-sizing:              var(--clean_start--all_tags--box-sizing, border-box);
+}
+/* @finish clean_start site css props */
+
+
+
+
+
+  /* @start clean_start scrollbar styles for all html tags */
+.clean_start {
+  --clean_start--scrollbar--color:    var(--clean_start--scrollbar-thumb--background-color, lime)  var(--clean_start--scrollbar-track--background-color, #eafdfa);
+}
+
+@supports selector(::-webkit-scrollbar) {
+
+  .clean_start::-webkit-scrollbar,
+  .clean_start *::-webkit-scrollbar {
+    width:                 var(--clean_start--scrollbar--size, 0.3rem);
+    height:                var(--clean_start--scrollbar--size, 0.3rem);
+  }
+
+  .clean_start::-webkit-scrollbar-thumb,
+  .clean_start *::-webkit-scrollbar-thumb {
+    background-color:      var(--clean_start--scrollbar-thumb--background-color, lime);
+  }
+
+  .clean_start::-webkit-scrollbar-track,
+  .clean_start *::-webkit-scrollbar-track {
+    background-color:      var(--clean_start--scrollbar-track--background-color, #eafdfa);
+  }
+
+}
+
+
+
+@supports (scrollbar-color: auto) {
+  .clean_start,
+  .clean_start * {
+    scrollbar-width:       var(--clean_start--scrollbar--width, thin);
+  }
+
+  .clean_start,
+  .clean_start * {
+    scrollbar-color:       var(--clean_start--scrollbar--color, lime #eafdfa);
+  }
+
+}
+  /* @finish clean_start scrollbar styles for all html tags */
+
+/* @finish clean_start_zero */
+
+

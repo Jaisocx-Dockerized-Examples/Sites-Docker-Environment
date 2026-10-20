@@ -9,7 +9,70 @@
       "build": true,
       "build-simple-enable": false,
       "dependencies": [],
-      "build-files": []
+      "build-files": [],
+      "html-examples": [
+        {
+          "html-preview": "index_preview.html",
+          "referenced-media-and-styles": [
+            {
+              "filepath": "favicon/Icon_Jaisocx.ico",
+              "filesize": "4286",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/a_clean_start__fonts.css",
+              "filesize": "6217",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/d_clean_start__html_tags.css",
+              "filesize": "52639",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/clean_start__sites_tools.css",
+              "filesize": "19290",
+              "checksum": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start_tiny",
+      "name": "clean_start_tiny",
+      "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
+      "build": true,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": [],
+      "html-examples": [
+        {
+          "html-preview": "index_preview.html",
+          "referenced-media-and-styles": [
+            {
+              "filepath": "favicon/Icon_Jaisocx.ico",
+              "filesize": "4286",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/a_clean_start_tiny__fonts.css",
+              "filesize": "1516",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/d_clean_start_tiny__html_tags.css",
+              "filesize": "31977",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/clean_start_tiny__sites_tools.css",
+              "filesize": "923",
+              "checksum": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "path": "libraries/base_packs/datasets/CssJsHtmlConstants",

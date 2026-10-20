@@ -1,0 +1,141 @@
+
+/* @start clean_start_tiny for all html tags */
+
+  /* @start clean_start_tiny h1, h2 */
+.clean_start h1 {
+
+  text-align:              left;
+
+  line-height:             1.24rem;
+  font-size:               0.92rem;
+  font-weight:             900;
+
+  font-style:              normal;
+  font-variant:            normal;
+  letter-spacing:          0.005rem;
+  line-break:              strict;
+  word-wrap:               normal;
+  word-break:              normal;
+
+  display:                 block;
+  padding:                 0 0 0 0;
+  margin:                  0 0 0 0;
+
+  color:                   black;
+
+}
+
+.clean_start h2 {
+
+  font-family:             "Arial";
+
+  text-align:              left;
+  line-height:             2.0rem;
+  font-size:               1.282rem;
+  font-weight:             600;
+
+  color:                   black;
+
+  margin:                  0 0 0 0;
+
+}
+  /* @finish clean_start_tiny html tag h1, h2 */
+
+
+
+  /* @start clean_start_tiny for all inline text html tags */
+.clean_start text {
+
+  display:                 inline-block;
+
+  padding:                 0 0 0 0;
+  margin:                  0 0 0 0;
+
+  font-family:             Arial;
+  line-height:             1.2rem;
+  font-size:               0.9rem;
+
+  font-style:              normal;
+  font-variant:            normal;
+  letter-spacing:          0.005rem;
+  line-break:              strict;
+  word-wrap:               normal;
+  word-break:              normal;
+
+  border-color:            lime;
+  border-style:            solid;
+  border-width:            0;
+
+  color:                   black;
+  background:              #fdfdfd;
+
+  min-height:              0;
+  max-height:              unset;
+  height:                  auto;
+
+  min-width:               0;
+  max-width:               100%;
+  width:                   auto;
+
+  overflow-x:               visible;
+  overflow-y:               visible;
+
+}
+  /* @finish clean_start_tiny for all inline text html tags */
+
+
+
+  /* @start clean_start_tiny html tag a */
+    /* Hyperlink html tag <a> (anchor) */
+.clean_start a,
+.clean_start a:active,
+.clean_start a:visited {
+  color:                   navy;
+  text-decoration:         none;
+}
+
+.clean_start a:hover,
+.clean_start a:active:hover,
+.clean_start a:visited:hover {
+  color:                   #2255ab;
+  text-decoration:         underline;
+}
+  /* @finish clean_start_tiny html tag a */
+
+
+
+  /* @start clean_start_tiny html tag p */
+    /* Paragraph html tag <p> */
+.clean_start p {
+  line-height:             1.2rem;
+  font-size:               0.9rem;
+  margin:                  1rem 0 0 0;
+}
+
+.clean_start p:first-of-type {
+  margin:                  0 0 0 0;
+}
+  /* @finish clean_start_tiny html tag p */
+
+
+
+  /* @start clean_start_tiny html tag pre */
+    /* new lines and spaces are rendered like typed <pre> */
+.clean_start pre {
+  font-family:             var(--clean_start--pre--font-family, Courier);
+  font-size:               0.9rem;
+  line-height:             1.2rem;
+}
+
+.clean_start pre * {
+  font-family:             var(--clean_start--pre_tags--font-family, Courier);
+  font-size:               0.9rem;
+  line-height:             0.9rem;
+}
+  /* @finish clean_start_tiny html tag pre */
+
+/* @finish clean_start_zero */
+
+
+
+
