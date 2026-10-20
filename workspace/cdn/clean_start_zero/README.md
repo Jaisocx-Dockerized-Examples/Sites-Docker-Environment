@@ -4,7 +4,7 @@
 
 # clean_start_zero
 
-  > 💡 Aligning styles of a site, the single file `d_clean_start__html_tags.css` of few hundred code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_zero__site.css` of three hundred code lines of filesize 8k.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_zero` | 🏷  **ver.**: `1.0.1` |
@@ -22,7 +22,7 @@
 
 ## The aim of the setup
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of few hundred code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_zero__site.css` of three hundred code lines of filesize 8k.
 
   The zero css clean start sets just the few styles for the tags html, head, body, main or site.
 
