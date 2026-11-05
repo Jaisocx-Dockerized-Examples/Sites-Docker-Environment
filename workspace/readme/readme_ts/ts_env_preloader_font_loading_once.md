@@ -333,9 +333,7 @@ are the exact same url every char in the url("font-file") css style value.
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

@@ -21,9 +21,7 @@ to the workaround of year AD 2026 for the easier .html examples review later.
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

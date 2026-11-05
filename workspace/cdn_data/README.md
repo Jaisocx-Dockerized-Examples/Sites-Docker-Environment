@@ -43,9 +43,7 @@ since /cdn_sites/data/ would also publish without protection by authentication.
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

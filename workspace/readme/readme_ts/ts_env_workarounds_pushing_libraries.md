@@ -134,9 +134,7 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

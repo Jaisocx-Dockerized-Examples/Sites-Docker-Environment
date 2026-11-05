@@ -355,9 +355,7 @@ the steps before and `step 6`, **entrypoint.sh** on context path: `./docker_comp
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

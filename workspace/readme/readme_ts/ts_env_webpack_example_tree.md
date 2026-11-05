@@ -289,8 +289,6 @@ export { Tree, TreeConstants } from "@jaisocx/tree";
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 

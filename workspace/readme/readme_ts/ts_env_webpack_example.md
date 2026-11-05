@@ -148,8 +148,6 @@ When the bundle.js includes imported themes, just the typing in the css class na
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 

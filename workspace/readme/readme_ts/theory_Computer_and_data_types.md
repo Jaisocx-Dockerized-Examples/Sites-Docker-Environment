@@ -276,9 +276,7 @@ SUM: 1 + 2 + 32 + 64 = 99
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

@@ -114,9 +114,7 @@ Aimed no concurrency to frameworks, rather to develop a very easy workaround and
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

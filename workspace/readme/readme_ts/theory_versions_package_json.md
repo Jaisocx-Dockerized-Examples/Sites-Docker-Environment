@@ -153,9 +153,7 @@ docker-express-example@1.0.0 /opt/jaisocx/sites_docker_environment/workspace/ts/
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

@@ -89,9 +89,7 @@ if downgraded image versions were generated and set for the picture html node ur
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

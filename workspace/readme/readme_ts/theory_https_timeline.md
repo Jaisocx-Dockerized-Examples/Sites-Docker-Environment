@@ -134,9 +134,7 @@ The Mainstream servers, like Nginx, have added official/production h3 support du
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect Illia Polianskyi
+Have a nice day, Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 
