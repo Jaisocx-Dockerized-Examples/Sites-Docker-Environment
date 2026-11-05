@@ -1,0 +1,104 @@
+{
+  "jaisocx": [
+    "https://local.basetasks.site:8447/",
+
+    "/cdn_sites/example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__all.css",
+    "/cdn_sites/example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__fonts.css",
+    "/cdn_sites/example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__html_tags.css",
+    "/cdn_sites/example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__site.css",
+
+    "/cdn_sites/example__sites_tools/css__code_snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css",
+    "/cdn_sites/example__sites_tools/css__code_snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css",
+
+    "/cdn_sites/example__sites_tools/json_styling__tree/bundle__json_styling__tree.js",
+    "/cdn_sites/example__sites_tools/json_styling__tree/Tree_main_resolved.css",
+
+    "/cdn_sites/example__sites_tools/spa__lock_viewer/src/JaisocxLockViewer.js",
+
+    "/cdn_sites/favicon/Icon_Jaisocx.ico",
+    "/cdn_sites/favicon/flaticon_com_flowers_ico/004_sunflower.ico",
+
+    "/cdn_sites/fonts/*",
+    "/cdn_sites/images/mini-images/sites_tools/tb/*",
+    "/cdn_sites/images/mini-images/sites_tools/tree/*",
+
+    "/cdn_sites/software_labels/*",
+
+    "/cdn_sites/ICE_Cube_2012_gummy.html",
+    "/cdn_sites/clean_start_2025__lite.html",
+    "/cdn_sites/clean_start_2026__all.html",
+    "/cdn_sites/clean_start_2026__tiny.html",
+    "/cdn_sites/clean_start_2026__zero__all_tags.html",
+    "/cdn_sites/clean_start_2026__zero__base.html",
+    "/cdn_sites/css__code_snippet.html",
+    "/cdn_sites/json_styling_tool__tree.html",
+    "/cdn_sites/json_user_friendly_view__build_data.html",
+    "/cdn_sites/json_user_friendly_view__docker_network.html",
+    "/cdn_sites/spa__fonts_os_installed.html",
+    "/cdn_sites/spa__lock_viewer.html",
+    "/cdn_sites/unicode_icons__all.html",
+    "/cdn_sites/unicode_icons__clean_start.html"
+  ],
+  "node_https": [
+    "https://local.basetasks.site:8445/",
+    "/ICE_Cube_2012_gummy.html",
+    "/clean_start_2025__lite.html",
+    "/clean_start_2026__all.html",
+    "/clean_start_2026__tiny.html",
+    "/clean_start_2026__zero__all_tags.html",
+    "/clean_start_2026__zero__base.html",
+    "/css__code_snippet.html",
+    "/json_styling_tool__tree.html",
+    "/json_user_friendly_view__build_data.html",
+    "/json_user_friendly_view__docker_network.html",
+    "/spa__fonts_os_installed.html",
+    "/spa__lock_viewer.html",
+    "/unicode_icons__all.html",
+    "/unicode_icons__clean_start.html"
+  ],
+  "a4dc": [
+    "/html_a4dc/LetterTemplate/index.html",
+    "/html_a4dc/letter_first/index.html"
+  ],
+  "jaisocx_express_routes": [
+    "https://local.basetasks.site:9445/",
+    "/cdn_sites/",
+    "/html_funny_humour",
+    "/funny_humour",
+    "/sveta_hi",
+    "/helloworld/",
+    "/favicon.ico",
+    "/clean_start_zero/fonts.css",
+    "/clean_start_zero/site.css",
+    "/clean_start_zero/html_tags.css"
+  ],
+  "jaisocx_express_funcs": [
+    "https://local.basetasks.site:9445/",
+    "/json/",
+    "/usr/",
+    "/json/data/table-conf-by-express.json",
+    "/json/data/table-records-by-express.json"
+  ],
+  "https_express": [
+    "https://local.basetasks.site:9443/",
+    "/cdn_sites/",
+    "/favicon.ico",
+    "/cdn_sites/clean_start_zero__all.css",
+    "/json/",
+    "/json/data/table-conf-by-express.json",
+    "/json/data/table-records-by-express.json"
+  ],
+  "express": [
+    "http://local.basetasks.site:3000/",
+    "/cdn_sites/",
+    "/favicon.ico",
+    "/cdn_sites/clean_start_zero__all.css",
+    "/json/",
+    "/json/data/table-conf-by-express.json",
+    "/json/data/table-records-by-express.json"
+  ]
+}
+
+
+
+

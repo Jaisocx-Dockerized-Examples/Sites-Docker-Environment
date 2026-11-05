@@ -1,0 +1,10 @@
+@media all and (min-width: 1201px) {
+  .footer-container {
+    width: 1200px !important;
+  }
+  .footer-container .footer-right-col {
+    margin-right: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=footer-large.css.map */

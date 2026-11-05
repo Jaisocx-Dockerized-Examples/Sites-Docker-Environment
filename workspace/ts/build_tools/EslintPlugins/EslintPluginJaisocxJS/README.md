@@ -1,4 +1,25 @@
-# ESLint
+
+`Docker for a Site`  Jaisocx &#8482; &#169;
+
+
+
+# ESLint examples by Jaisocx
+
+  >  code prettifier
+
+
+|  🗓  **Updated**  |  🌾  Autumn 2025 
+
+
+| ⚡  **just JS Base Engine required** | ❌ no |
+
+| ⚡  **Support by JS Engines** | 🌐 Browser: ❌ no | 🧭 Server-side Express:  ❌  no  |  🖥️ Command Line: ✅ yes |
+
+| ⚡  **JS Calls** | Network(fetch): ❌ no | 🌐 Browser(DOM): ❌ no | 🧭 Server-side Express(FS | DB): ❌ no | 🖥️ Command Line: ✅ yes |
+
+
+
+
 
 ## eslint.config.js
 
@@ -54,6 +75,15 @@ let argsCharsMaxNumber = options["args-chars-max-number"];
 ```
 
 
+---
+
+
+
+
+
+Have a nice day,
+
+Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

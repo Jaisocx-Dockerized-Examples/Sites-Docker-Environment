@@ -1,9 +1,5 @@
 
-`Docker for a Site`
-
-
-![../../workspace/cdn/software_labels/docker/softlabel_docker.svg](../../workspace/cdn/software_labels/docker/softlabel_docker.svg)
-![../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+`Docker for a Site` Jaisocx &#8482; &#169;
 
 
 
@@ -19,7 +15,14 @@
   
 
 
+---
 
-Have a nice day, Jaisocx Inc. Software Architect I. Polianskyi
+
+
+Have a nice day, 
+
+Jaisocx Inc. Software Architect Illia Polianskyi
+
+
 
 

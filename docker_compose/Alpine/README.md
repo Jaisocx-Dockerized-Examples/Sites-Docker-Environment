@@ -1,20 +1,12 @@
 
-`Docker for a Site`
-
-
-![../../workspace/cdn/software_labels/docker/softlabel_docker.svg](../../workspace/cdn/software_labels/docker/softlabel_docker.svg)
-![../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../../workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
-
-
-
-[HOME Docker for a Site](../../README.md)
+`Docker for a Site` Jaisocx &#8482; &#169;
 
 
 
 # Alpine
 >  💡  Fine-tuning Docker by caching
 
-| 🗓  **Updated**  | 🌾 Autumn 2026 | `AD 2026_Oct_10 14:52:30.0 UTC 24h` |
+| 🗓  **Updated**  | 🌾 Autumn 2026 | `AD 2026 Oct 10 14:52:30.000 GMT_24h` 
 
 
 
@@ -22,8 +14,6 @@
 >   💡  **one** Alpine image **for every** dockerized **service** 
 >         for Your site under docker in order to **save up** time and network.
 
-
-![../../workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png](../../workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/offline_build_ts_740.png)
 
 
 ### 1. step: the same Alpine image ver. num.
@@ -219,6 +209,6 @@
 
 Have a nice day,
 
-Jaisocx Inc. Software Architect I. Polianskyi
+Jaisocx Inc. Software Architect Illia Polianskyi
 
 

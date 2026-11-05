@@ -2,8 +2,8 @@
 `temporary in engineering doc`
 
 
-![workspace/cdn/software_labels/docker/softlabel_docker.svg](workspace/cdn/software_labels/docker/softlabel_docker.svg)
-![workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](workspace/cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+![workspace/cdn_sites/software_labels/docker/softlabel_docker.svg](workspace/cdn_sites/software_labels/docker/softlabel_docker.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg](workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
 
 
@@ -14,7 +14,7 @@
 # Size minimization plan
 >  💡  keeping docker repo small
 
-| 🗓  **Updated**  | 🌾 Autumn 2026 | `06 Oct AD 2026` |
+| 🗓  **Updated**  | 🌾 Autumn 2026  |  `AD 2026 Oct 26`
 
 
 
@@ -82,10 +82,16 @@
 📐  3M 📚 without cdn and other examples 
 
 
+---
+
+
+
 
 
 Have a nice day,
 
-Jaisocx Software Architect I.P.
+Jaisocx Inc. Software Architect I.P.
+
+
 
 

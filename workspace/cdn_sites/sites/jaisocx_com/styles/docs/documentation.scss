@@ -1,0 +1,32 @@
+@import "../vars-global/vars-global";
+@import "vars/vars-docs";
+@import "docs-mobile";
+@import "docs-tablet";
+@import "docs-notebook";
+@import "docs-desktop";
+@import "docs-large";
+@import "config-xml-table/base";
+@import "../footer/footer-base";
+@import "components/highlight";
+@import "components/required";
+@import "components/deprecated";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: $main-bg-color;
+  margin: 0;
+}
+.underline-container {
+  position: relative;
+  h2:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: '';
+    width: 64px;
+    height: 4px;
+  }
+}

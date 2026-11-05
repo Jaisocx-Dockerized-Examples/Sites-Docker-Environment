@@ -1,0 +1,45 @@
+
+.jsx.theme_lightmode,
+.jsx .theme_lightmode {
+
+  /** -------------------------------
+    background styles of the html elem <body>, and, the direct anchester html elem <main>
+  */
+  --jsx--css-clean-start-2--body-tag--background: #e0e9f4;
+  --jsx--css-clean-start-2--site--background: #fff;
+
+
+  --jsx--css-clean-start-2--all-tags--color: #333;
+
+  --jsx--css-clean-start-2--all-tags--border-color: #ddd;
+  --jsx--css-clean-start-2--all-tags--border-style: dotted;
+  --jsx--css-clean-start-2--all-tags--border-width: 0;
+
+
+
+  /** -------------------------------
+    h1 til h6 styles
+  */
+  --jsx--css-clean-start-2--h--color:       #567;
+
+
+
+  /** -------------------------------
+    hyperlnks text colors
+  */
+  --jsx--css-clean-start-2--anchor--color: #00f;
+  --jsx--css-clean-start-2--anchor-hover--color: #55f;
+
+  --jsx--css-clean-start-2--anchor-visited--color: grey;
+  --jsx--css-clean-start-2--anchor-visited-hover--color: grey;
+
+  --jsx--css-clean-start-2--anchor-active--color: #00f;
+  --jsx--css-clean-start-2--anchor-active-hover--color: #55f;
+
+
+
+  --jsx--css-clean-start-2--thead--background-color: honeydew;
+  --jsx--css-clean-start-2--tfoot--background-color: cornsilk;
+
+}
+

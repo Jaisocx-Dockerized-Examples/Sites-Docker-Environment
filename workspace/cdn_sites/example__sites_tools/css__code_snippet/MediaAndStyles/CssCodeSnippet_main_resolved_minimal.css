@@ -1,0 +1,245 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jsx .CssCodeSnippet {
+
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code-snippet-tool--overflow-y: auto;
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+
+  
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code_snippet__font_family: var(--css-clean-start-2--monospace--font-family) Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
+
+  
+  
+  --code-snippet-tool--border-color: lime;
+
+  
+  --code-snippet-tool--border-radius: 0;
+  --code-snippet-tool--border-width: 0.8px;
+  --code-snippet-tool--border-style: solid;
+
+
+  
+  
+  --code-snippet--line-height: 1.5rem;
+  --code-snippet--font-size: 0.875rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  
+  --code-snippet--text-color: darkgreen;
+  --code-snippet--background-color: #fff;
+
+
+  
+  --code_snippet__column_numbers__width: 3.3rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+
+  
+  --code_snippet__column_numbers__text-color: lime;
+  --code_snippet__column_numbers__background-color: #efe;
+}
+
+
+
+
+
+
+@media (max-width: 440px) {
+  .jsx .CodeSnippetHolder {
+    max-width: 93vw;
+    margin: 0 auto;
+  }
+}
+
+
+.jsx .CodeSnippetHolder,
+.jsx .CodeSnippetHolder *,
+.jsx .CodeSnippetHolder::before,
+.jsx .CodeSnippetHolder::after,
+.jsx .CodeSnippetHolder *::before,
+.jsx .CodeSnippetHolder *::after {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+
+  height: auto;
+  min-height: 0;
+
+  width: auto;
+  min-width: 0;
+
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+
+.jsx .CodeSnippetHolder {
+    
+    --code-snippet-holder--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top) + var(--code-snippet--padding-bottom));
+    --code-snippet--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top) + var(--code-snippet--padding-bottom));
+    --code-snippet--width: calc(100% - var(--column-numbers-holder--width));
+    --code-snippet--padding: var(--code-snippet--padding-top) var(--code-snippet--padding-right) 0 var(--code-snippet--padding-left);
+    --code-snippet--left: var(--column-numbers-holder--width);
+
+    --code_snippet__column_numbers__padding: var(--code-snippet--padding-top) var(--code_snippet__column_numbers__padding-right) var(--code-snippet--padding-bottom) 0;
+    --column-numbers-holder--width: var(--code_snippet__column_numbers__width);
+    --column-numbers-holder--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top));
+}
+
+
+.jsx .CodeSnippetHolder {
+  min-height: var(--code-snippet-tool--height) !important;
+  height: var(--code-snippet-tool--height) !important;
+
+  width: var(--code-snippet-tool--width);
+
+  overflow: var(--code-snippet-tool--overflow-y) hidden !important;
+  overflow-y: var(--code-snippet-tool--overflow-y) !important;
+  overflow-x: hidden;
+
+  background-color: var(--code_snippet__column_numbers__background-color);
+
+  border-radius: var(--code-snippet-tool--border-radius);
+  border: var(--code-snippet-tool--border-width) var(--code-snippet-tool--border-style) var(--code-snippet-tool--border-color);
+}
+
+
+
+
+.jsx .CodeSnippetHolder::after {
+  content: "";
+
+  position: absolute !important;
+
+  top: 0;
+  right: 0;
+
+  height: var(--code-snippet--height);
+  min-height: 100%;
+  max-height: var(--code-snippet--height);
+
+  width: var(--code-snippet--padding-right);
+
+  background-color: var(--code-snippet--background-color);
+
+  z-index: 999;
+}
+
+
+.jsx .CodeSnippetHolder::before {
+  content: var(--lines-numbers--content);
+
+  top: 0 !important;
+  left: 0;
+
+  float: left;
+
+  height: var(--column-numbers-holder--height);
+  max-height: var(--column-numbers-holder--height);
+
+  width: var(--code_snippet__column_numbers__width) !important;
+
+  padding: var(--code_snippet__column_numbers__padding) !important;
+
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+
+  white-space: pre;
+
+  text-align: right;
+  font-size: var(--code-snippet--font-size);
+  line-height: var(--code-snippet--line-height);
+
+  font-family: var(--code_snippet__font_family);
+
+  color: var(--code_snippet__column_numbers__text-color);
+  background-color: var(--code_snippet__column_numbers__background-color);
+
+  z-index: 9999;
+}
+
+
+
+.jsx .CodeSnippetHolder .CodeSnippetArea {
+  top: 0 !important;
+  left: 0;
+
+  height: var(--code-snippet--height);
+  min-height: 100%;
+  max-height: unset;
+  
+
+  min-width: auto;
+  width: var(--code-snippet--width);
+
+  padding: var(--code-snippet--padding);
+
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+
+  font-size: var(--code-snippet--font-size);
+  line-height: var(--code-snippet--line-height);
+  font-family: var(--code_snippet__font_family);
+
+  color: var(--code-snippet--text-color);
+  background-color: var(--code-snippet--background-color);
+}
+
+
+

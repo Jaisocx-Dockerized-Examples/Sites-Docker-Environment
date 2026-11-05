@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en" id="js_tree_preview" class="jaisocx clean_start theme_fonts_a">
+<head>
+
+
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/flaticon_com_flowers_ico/002_lavender.ico"
+  />
+
+  <title> Build Data </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="./"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# Clean start zero Fonts -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__fonts.css"
+  />
+
+
+  <!--# Clean start zero Site -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__site.css"
+  />
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/json_styling__tree/Tree_main_resolved.css"
+  />
+
+
+
+
+
+  <style name="styles_css_clean_start_overrides">
+
+    .clean_start {
+
+      --clean_start--all_tags--font-family: var(--clean_start--sans--font-family);
+
+
+
+      --clean_start--h1--font-family: var(--clean_start--all_tags--font-family);
+      --clean_start--h--font-family:  var(--clean_start--all_tags--font-family);
+      --clean_start--p--font-family:  var(--clean_start--all_tags--font-family);
+
+      --clean_start--rem:      16px;
+
+      --clean_start--all_tags--font-size:      0.9rem;
+      --clean_start--all_tags--line-height:    1.2rem;
+
+      --clean_start--all_tags--border-width:   0;
+
+      --clean_start--site--background:         white;
+      --clean_start--body_tag--background:     #f5fff0;
+
+      --clean_start--site--padding:            2rem 1rem 300rem 1rem;
+      --clean_start--site--width:              55%;
+
+      --clean_start--scrollbar-thumb--background-color:   lime;
+      --clean_start--scrollbar-track--background-color:   #eafdfa;
+      --clean_start--scrollbar--color:                    lime #eafdfa;
+
+
+      --clean_start--h1--font-size: 1.05rem;
+      --clean_start--h2--font-size: 0.9rem;
+      --clean_start--h3--font-size: 0.83rem;
+
+      --clean_start--h2--font-weight: 500;
+
+      --theme-button--width: fit-content;
+      --theme-button--font-size: 0.795rem;
+    }
+
+
+
+    @media screen and ( min-width: 2px) and (max-width: 767px) {
+      .clean_start h2,
+      .clean_start h3,
+      .clean_start description {
+        display: none;
+      }
+    }
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Overrides -->
+  <style name="overrides">
+
+    .jaisocx.clean_start h1 {
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+      font-weight:                400;
+      margin:                     0 0 0 0;
+      color:                      #40be30;
+      background:                 #fefefe;
+      border:                     0 solid lime;
+    }
+
+    .jaisocx.clean_start h2 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h3 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h4 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h2:first-of-type {
+      margin:                     1rem 0 1rem 0;
+    }
+
+    .jaisocx.clean_start h2 ~ h3,
+    .jaisocx.clean_start h2 ~ block > h3:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h3 ~ h4,
+    .jaisocx.clean_start h3 ~ block > h4:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+
+
+      /* label */
+    .jaisocx.clean_start label {
+      display:                    inline-block;
+
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+
+      padding:                    0.18rem 0.9rem 0.10rem 0.9rem;
+      margin:                     0 0 0 0;
+
+      color:                      #40be30;
+      background:                 #fefefe;
+
+      border:                     2px solid #99faa9;
+      border-radius:              0.8rem;
+
+      overflow-x:                  hidden;
+      overflow-y:                  hidden;
+    }
+
+
+
+      /* hyperlinks <a href="url"> */
+    .jaisocx.clean_start a {
+      color:                     navy;
+    }
+    .jaisocx.clean_start a:hover {
+      color:                     #2255ab;
+    }
+
+
+
+      /* paragraphs <p> */
+    .jaisocx.clean_start p {
+      margin:                    1rem 0 0 0;
+    }
+    .jaisocx.clean_start p:first-of-type {
+      margin:                    0 0 0 0;
+    }
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Mobile friendly -->
+  <style name="mobile_friendly">
+
+    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1rem 0.3rem 2rem 0.3rem;
+        --clean_start--site--width:        100%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1.2rem 0.3rem 5rem 0.3rem;
+        --clean_start--site--width:        92%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      0.3rem 0.3rem 1rem 0.3rem;
+        --clean_start--site--width:        95%;
+      }
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+<site>
+
+
+  <label> <h1> user friendly view BuildData.json  ®  </h1> </label>
+
+  <h2> BuildData.json </h2>
+
+
+  <block>
+    <jstree id="tree_holder_0" class="theme-funny"></jstree>
+  </block>
+
+  <hr />
+
+  <block>
+    <jstree id="tree_holder_1" class="theme-funny"></jstree>
+  </block>
+
+  <hr />
+
+  <block>
+    <jstree id="tree_holder_2"></jstree>
+  </block>
+
+  <hr />
+
+  <block>
+    <jstree id="tree_holder_3"></jstree>
+  </block>
+
+</site>
+</body>
+
+
+
+
+
+<script src="example__sites_tools/json_styling__tree/bundle__json_styling__tree.js"></script>
+
+<script src="example__sites_tools/spa__lock_viewer/src/JaisocxLockViewer.js" defer="defer"></script>
+
+<script>
+
+  const MAX_ITERATIONS_NUMBER   = 62;
+  const MAX_B_ITERATIONS_NUMBER = 50;
+
+
+
+  class TreeData {
+
+    id = "";
+    data = new Object();
+    dataLink = "";
+    htmlHolderId = "";
+    htmlElem = new Object();
+    dataIconBase = "";
+    renderingMode = "";
+    nodesOpenMode = "";
+
+
+
+    constructor (
+      id,
+      dataLink,
+      data,
+      htmlHolderId,
+      htmlElem,
+      dataIconBase,
+      renderingMode,
+      nodesOpenMode
+    ) {
+      this.id = id || "";
+
+      if ( this.id === "" ) {
+        throw new Error( "Required Data ID." );
+      }
+
+      this.dataLink = dataLink || "";
+      this.data = data || new Object();
+      this.htmlHolderId = htmlHolderId || "";
+      if ( this.htmlHolderId === "" ) {
+        throw new Error( "Required HtmlHolder ID." );
+      }
+
+      this.dataIconBase = dataIconBase || "";
+      this.renderingMode = renderingMode;
+      this.nodesOpenMode = nodesOpenMode;
+    }
+
+  }
+
+
+
+  class TreeExamples {
+
+    #treeInstances = new Object();
+    #treeData = new Object();
+    tsHtml = 1;
+    sitesTools = ( new Array() );
+
+    treeJsonDataIconBase = "";
+
+
+    constructor() {
+      // super();
+
+      this.#treeInstances = new Object();
+      this.#treeData = new Object();
+      this.tsHtml = 1;
+      this.newSitesTools = ( new Array() );
+
+      this.treeJsonDataIconBase = "";
+    }
+
+
+    setDataItems ( treeData ) {
+      this.#treeData = treeData;
+
+      return this;
+    }
+
+    addDataItem( inData ) {
+      const treeDataId = inData.id;
+      this.#treeData[ treeDataId ] = inData;
+
+      return this;
+    }
+
+    getTreeData() {
+      return this.#treeData;
+    }
+
+    getDataItemById( treeDataId ) {
+      const dataItem = this.#treeData[ treeDataId ];
+      return dataItem;
+    }
+
+    getSitesTools() {
+      return this.sitesTools;
+    }
+
+
+    exampleFunc( inSelector, jsonItem, eventPayload ) {}
+
+    examplefnc( inSelector, jsonItem, eventPayload ) {
+
+      let text = ( jsonItem.text ) ?? "";
+      let tagImg_miniImage = eventPayload.treeHtmlNode.querySelector( ".jstree-html-node-holder-icon > img" );
+      let imgSrc = tagImg_miniImage.getAttribute( "src" );
+      let imgAlt = tagImg_miniImage.getAttribute( "alt" );
+
+      if ( this.tsHtml === 1 ) {
+          this.tsHtml = document.body.querySelector( inSelector );
+      }
+
+      this.tsHtml.innerHTML = `
+        <img class="mini_image" src="${imgSrc}" alt="${imgAlt}" />
+        <div>${text}</div>`;
+    }
+
+
+
+    loadDataAndRenderTree (
+      id,
+      holderElemId,
+      dataOrLink,
+      renderingMode,
+      modeShownNodes,
+      whetherDataLink,
+      debug
+    ) {
+
+        // example to load by url
+        // this.#treeInstances[ id ] = new Tree();
+        this.#treeInstances[ id ] = new JaisocxLockViewer();
+        let lockViewer = this.#treeInstances[ id ];
+
+        lockViewer
+          .setDebug( debug )
+          .setMainHtmlNodeId( holderElemId )
+          .setNodesWithIcons( true )
+          .setRenderingMode( renderingMode )
+          .setNodesOpenedMode( modeShownNodes )
+          .setModifiable( false )
+          .addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__AFTER_RENDER_ONE_NODE,
+              ( eventName, eventPayload ) => {
+                lockViewer.beforeRenderOneNode( eventName, eventPayload );
+              }
+
+          ).addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
+              ( eventName, eventPayload ) => {
+                  let loc_treeClassInstance = lockViewer;
+
+                  if ( this.debug === true ) {
+
+                    //# example to obtain of the current tree node the data that was used to render the tree.
+                    let treeNodeData = {
+                      "treeClassInstance": loc_treeClassInstance,
+                      "eventName": eventName,
+                      "eventPayload": eventPayload,
+                      "flatClone": eventPayload.jsonNode._flatClone,
+                      "deepClone": loc_treeClassInstance.getTreeDataByJPath( eventPayload.jsonNode._pathArray )
+                    };
+
+                    console.log( { treeNodeData } );
+                  }
+
+                  this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
+              }
+           );
+
+
+
+           if ( whetherDataLink ) {
+             fetch( dataOrLink )
+              .then( ( response ) => { return response.json(); } )
+              .then( ( data ) => {
+
+                lockViewer.render( data );
+
+                let eventPayload = {
+                  "id": id,
+                  "pack": lockViewer.getJsPack(),
+                  "counters": lockViewer.getCounters()
+                };
+
+                // lockViewer.emitEvent( "AFTER_RENDER", eventPayload );
+
+                // console.log( eventPayload.pack );
+                // console.log( eventPayload.counters );
+              } );
+
+             // lockViewer.load( dataOrLink );
+           } else {
+
+             lockViewer.render( dataOrLink );
+
+           }
+
+           return 2;
+    }
+
+
+
+    renderExamples() {
+
+      let keys = Object.keys( this.#treeData );
+      let counter = 1;
+      let itemsNumber = keys.length;
+      let loc_maxCounter = ( itemsNumber + 2 );
+
+      let elem = document.getElementsByTagName( "BODY" )[ 0 ];
+      let dataOrLink = [];
+
+      loop: while( counter < loc_maxCounter ) {
+        counter++;
+        if ( counter >= loc_maxCounter ) {
+          break loop;
+        }
+
+        let itemCounter = ( counter - 2 );
+        let id = keys[ itemCounter ];
+        let dataItem = this.#treeData[ id ];
+
+        if ( dataItem[ "dataMode" ] === "link" ) {
+          if (
+            ( dataItem[ "dataLink" ] === undefined )
+            || ( dataItem[ "dataLink" ] === null )
+            || ( dataItem[ "dataLink" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "dataLink" ];
+
+        } else {
+          if (
+            ( dataItem[ "data" ] === undefined )
+            || ( dataItem[ "data" ] === null )
+            || ( dataItem[ "data" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "data" ];
+
+        }
+
+
+        this.loadDataAndRenderTree (
+          dataItem[ "id" ],
+          dataItem[ "htmlHolderId" ],
+          dataOrLink,
+          dataItem[ "renderingMode" ],
+          dataItem[ "nodesOpenMode" ],
+          ( dataItem[ "dataMode" ] === "link" ),
+          dataItem[ "debug" ]
+        );
+
+      }
+
+      return 2;
+    }
+
+
+
+  /**
+  * @returns updated in_buildData
+  */
+  sitesToolsNBuildData (
+    in_sitesTools,
+    in_buildData,
+    in_maxCounter,
+    in_b_maxCounter,
+    in_offsetStep,
+    in_b_offsetStep
+  ) {
+
+    let loc_sitesTools               = in_sitesTools;
+    let llc_buildData                = in_buildData;
+
+    let loc_maxCounter               = in_maxCounter;
+    let loc_b_maxCounter             = in_b_maxCounter;
+
+    let loc_offsetStep               = in_offsetStep;
+    let loc_b_offsetStep             = in_b_offsetStep;
+
+    let LOC_COUNTER_DEC              = 1;
+    let LOC_MAX_COUNTER              = 1;
+
+    let LOC_B_COUNTER_DEC            = 1;
+    let LOC_B_MAX_COUNTER            = 1;
+
+    // let toExit_from_a                = true;
+    // let toExit_from_b                = true;
+
+    let siteToolFound                = true;
+
+
+
+    let loc_buildData                = [...llc_buildData];
+
+
+
+    let loc_sitesTools_itemsNumber   = loc_sitesTools.length;
+    let loc_sitesTools_LastPos       = ( loc_sitesTools_itemsNumber - 1 );
+    let ci_sitesTools_item           = String( "" );
+
+    let loc_buildData_itemsNumber    = loc_buildData.length;
+    let loc_buildData_LastPos        = ( loc_buildData_itemsNumber - 1 );
+    let cib_buildData_item           = ( new Object() );
+
+
+
+    LOC_COUNTER_DEC                  = ( 1 + loc_offsetStep );
+    LOC_MAX_COUNTER                  = ( MAX_ITERATIONS_NUMBER + LOC_COUNTER_DEC );
+
+    LOC_B_COUNTER_DEC                = ( 1 + loc_b_offsetStep );
+    LOC_B_MAX_COUNTER                = ( MAX_B_ITERATIONS_NUMBER + LOC_B_COUNTER_DEC );
+
+    loc_maxCounter                   += loc_offsetStep;
+    loc_b_maxCounter                 += loc_b_offsetStep;
+
+
+
+    if ( loc_maxCounter > LOC_MAX_COUNTER ) {
+      loc_maxCounter = LOC_MAX_COUNTER;
+    }
+    if ( loc_maxCounter > loc_sitesTools_itemsNumber ) {
+      loc_maxCounter = loc_sitesTools_itemsNumber;
+    }
+
+    if ( loc_b_maxCounter > LOC_B_MAX_COUNTER ) {
+      loc_b_maxCounter = LOC_B_MAX_COUNTER;
+    }
+    if ( loc_b_maxCounter > loc_buildData_itemsNumber ) {
+      loc_b_maxCounter = loc_buildData_itemsNumber;
+    }
+
+
+
+    let ci_loopCounter               = 1;
+    let ci_offset                    = 1;
+
+    let cib_loopCounter              = 1;
+    let cib_offset                   = 1;
+
+
+
+    let ci_bibPathArray              = ( new Array() );
+    let ci_bibPathArrLen             = 1;
+    let ci_bibPathArrLastPos         = 1;
+    let ci_bibPathArrLastStr         = String("");
+    let ci_bibPathArrLastPath        = String("");
+
+    // let cib_bibName_lastIndexOf      = 1;
+    let cib_bibFound                 = true;
+
+
+
+    let loc_funcStrFound = (
+      in_o,
+      in_key,
+      in_strToFind
+    ) => {
+
+      let loc_o                      = in_o;
+      let loc_key                    = in_key;
+      let loc_strToFind              = in_strToFind;
+
+      let loc_value                  = loc_o[ loc_key ];
+
+      let loc_str_lastIndexOf        = 1;
+      loc_str_lastIndexOf            = loc_value.lastIndexOf( loc_strToFind );
+      let loc_bibFound               = ( loc_str_lastIndexOf !== (-1) );
+
+      return ( loc_bibFound );
+    };
+
+
+
+
+
+    // let cib_buildData_item = ( new Object() );
+    ci_marker_a: while ( ci_loopCounter < loc_maxCounter ) {
+
+      ci_loopCounter += loc_b_offsetStep;
+      if ( ci_loopCounter > loc_maxCounter ) {
+        break ci_marker_a;
+      }
+
+      ci_offset = ( ci_loopCounter - LOC_COUNTER_DEC );
+      if ( ci_offset > loc_sitesTools_LastPos ) {
+        break ci_marker_a;
+      }
+
+
+      siteToolFound                  = false;
+      ci_sitesTools_item             = loc_sitesTools[ ci_offset ];
+
+      ci_bibPathArray                = ci_sitesTools_item.split( "/" );
+      ci_bibPathArrLen               = ci_bibPathArray.length;
+      ci_bibPathArrLastPos           = ( ci_bibPathArrLen - 1 );
+      ci_bibPathArrLastStr           = ci_bibPathArray[ ci_bibPathArrLastPos ];
+      ci_bibPathArrLastPath          = [ "/", ci_bibPathArrLastStr ].join( "" );
+
+      // cib_bibName_lastIndexOf        = 1;
+      cib_bibFound                   = true;
+      // cib_bibFound                   = ( cib_bibName_lastIndexOf !== (-1) );
+
+      // toExit_from_a                  = false;
+
+
+
+      cib_loopCounter                = 1;
+      cib_offset                     = 1;
+      // toExit_from_b                  = false;
+
+      ci_marker_b: while ( cib_loopCounter < loc_b_maxCounter ) {
+
+        cib_loopCounter += loc_b_offsetStep;
+        if ( cib_loopCounter > loc_b_maxCounter ) {
+          break ci_marker_b;
+        }
+
+        cib_offset = ( cib_loopCounter - LOC_B_COUNTER_DEC );
+        if ( cib_offset > loc_buildData_LastPos ) {
+          break ci_marker_b;
+        }
+
+        /* if ( toExit_from_a === true ) {
+          break ci_marker_a;
+          // continue ci_marker_a;
+        } */
+
+
+
+        cib_buildData_item           = loc_buildData[ cib_offset ];
+        cib_bibFound                 = loc_funcStrFound (
+          cib_buildData_item,
+          "path",
+          ci_bibPathArrLastPath
+        );
+
+
+
+        if ( cib_bibFound === true ) {
+          siteToolFound              = true;
+          let cib_sitesTools_item = ci_sitesTools_item;
+          loc_buildData[ cib_offset ][ "path" ] = cib_sitesTools_item;
+        }
+
+
+
+        let cib_bibDepsArray         = cib_buildData_item[ "dependencies" ];
+        if ( ( !cib_bibDepsArray ) || ( cib_bibDepsArray.length === 0 ) ) {
+          continue ci_marker_b;
+        }
+
+
+        let cib_bibResolvedDepsArray = ( new Array() );
+
+        cib_bibResolvedDepsArray     = cib_bibDepsArray
+          .map (
+            ( cic_dep ) => {
+              let cic_item = {...cic_dep};
+              let cic_bibFound = loc_funcStrFound (
+                cic_dep,
+                "path",
+                ci_bibPathArrLastPath
+              );
+
+              if ( cic_bibFound ) {
+                cic_item[ "path" ]   = ci_sitesTools_item;
+              }
+
+              return ( cic_item );
+            }
+          );
+
+        loc_buildData[ cib_offset ][ "dependencies" ] = cib_bibResolvedDepsArray;
+
+
+
+        continue ci_marker_b;
+      }
+      // -- finish ci_marker_b --
+
+      if ( siteToolFound === false ) {
+        this.sitesTools.push( ci_sitesTools_item );
+      }
+
+
+
+      continue ci_marker_a;
+    }
+    // -- finish ci_marker_a --
+
+
+
+    return loc_buildData;
+
+  }
+  // -- finish func g_sitesToolsNBuildData --
+
+
+  }
+</script>
+
+
+
+<script name="data_js_variables">
+
+let g_data_sitesTools_js = [
+  "libraries/console/JsInvoke",
+
+  "libraries/base_packs/data_workarounds/JPath",
+  "libraries/base_packs/data_workarounds/ArrayOrObject",
+  "libraries/base_packs/data_workarounds/WorkspaceTreeWalker",
+  "libraries/base_packs/data_workarounds/OData",
+
+  "libraries/base_packs/patterns/EngineAndDataRecords",
+
+  "libraries/base_packs/fine_tuning/Preloader",
+  "libraries/base_packs/fine_tuning/LinkedResourcesIntegrity",
+  "libraries/base_packs/fine_tuning/ResponsiveSizes",
+  "libraries/base_packs/fine_tuning/SitesToolAutomation",
+
+  "libraries/base_packs/datasets/CssJsHtmlConstants",
+  "libraries/base_packs/datasets/MimeType",
+  "libraries/base_packs/datasets/CdnDatasetsBase",
+
+  "libraries/base_packs/FileWriter",
+  "libraries/base_packs/CommandLine",
+  "libraries/base_packs/FileProducerByTemplate",
+
+  "libraries/base_packs/api/ApiInterface",
+  "libraries/base_packs/api/Sax",
+  "libraries/base_packs/api/XmlHttp",
+  "libraries/base_packs/api/Api",
+  "libraries/base_packs/api/Upload",
+
+  "libraries/base_packs/api/driver/ApiJson",
+  "libraries/base_packs/api/driver/ApiOdata",
+  "libraries/base_packs/api/driver/ApiXml",
+
+  "libraries/base_packs/ThemeTurnOn",
+
+  "libraries/base_packs/text/renderers/ImprovedTemplateRenderer",
+  "libraries/base_packs/text/renderers/TemplateRenderer",
+  "libraries/base_packs/text/parsers/TokensParser",
+  "libraries/base_packs/text/parsers/TemplateParser",
+  "libraries/base_packs/text/converters/CaseConverter",
+  "libraries/base_packs/text/converters/CharcodeConverter",
+  "libraries/base_packs/text/Text",
+  "libraries/base_packs/text/trimmers/Trimmer",
+  "libraries/base_packs/text/trimmers/OptimizedTrimmer",
+
+  "libraries/base_packs/CssHtml",
+  "libraries/base_packs/CssImporter",
+  "libraries/base_packs/EventEmitter",
+
+  "libraries/sites_tools/css_tools/css_flat/CssTable",
+  "libraries/sites_tools/css_tools/css_flat/CssCodeSnippet",
+
+  "libraries/sites_tools/css_tools/css_clean_start/CleanStart_Tiny",
+  "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_2",
+  "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_Lite",
+
+  "libraries/sites_tools/css_tools/pages/responses/exception_responses/https_404_exception",
+
+  "libraries/sites_tools/js_tools/Tooltip",
+  "libraries/sites_tools/js_tools/EmailHtmlInliner",
+  "libraries/sites_tools/js_tools/CssTableOrdered",
+
+  "libraries/sites_tools/json_styling_tools/Tree",
+  "libraries/sites_tools/json_styling_tools/Table",
+
+  "libraries/sites_tools/spa/BashMyAdmin",
+  "libraries/sites_tools/spa/databank_a4_reports",
+  "libraries/sites_tools/spa/colors_spa",
+  "libraries/sites_tools/spa/PHPMyAdmin",
+  "libraries/sites_tools/spa/data_access_pages",
+  "libraries/sites_tools/spa/theming_spa",
+  "libraries/sites_tools/spa/lock_viewer",
+  "libraries/sites_tools/spa/simple_accountance_spa",
+
+  "libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii",
+  "libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base",
+  "libraries/sites_tools/media_tools/JscImages_mini_datatypes_base",
+  "libraries/sites_tools/media_tools/JscFonts_Orbitron",
+  "libraries/sites_tools/media_tools/JscFonts_base"
+];
+
+</script>
+
+
+
+<script name="data_js_variables">
+let g_data_BuildData_js = {
+  "npm-registry-name": "@jaisocx",
+  "prettify-typescript": true,
+  "packages": [
+    {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start",
+      "name": "clean_start",
+      "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
+      "build": true,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": [],
+      "html-examples": [
+        {
+          "html-preview": "index_preview.html",
+          "referenced-media-and-styles": [
+            {
+              "filepath": "favicon/Icon_Jaisocx.ico",
+              "filesize": "4286",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/a_clean_start__fonts.css",
+              "filesize": "6217",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/d_clean_start__html_tags.css",
+              "filesize": "52639",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/clean_start__sites_tools.css",
+              "filesize": "19290",
+              "checksum": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start_tiny",
+      "name": "clean_start_tiny",
+      "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
+      "build": true,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": [],
+      "html-examples": [
+        {
+          "html-preview": "index_preview.html",
+          "referenced-media-and-styles": [
+            {
+              "filepath": "favicon/Icon_Jaisocx.ico",
+              "filesize": "4286",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/a_clean_start_tiny__fonts.css",
+              "filesize": "1516",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/d_clean_start_tiny__html_tags.css",
+              "filesize": "31977",
+              "checksum": ""
+            },
+            {
+              "filepath": "MediaAndStyles/clean_start_tiny__sites_tools.css",
+              "filesize": "923",
+              "checksum": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "libraries/base_packs/datasets/CssJsHtmlConstants",
+      "name": "css-js-html-constants",
+      "update-published": "Mon Sep 22 08:06:10 CEST 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "constants/symbols/SymbolConstants.js",
+        "constants/symbols/CharcodeSymbolConstants.js",
+        "constants/keywords/css/Keywords_CssConstants.js",
+        "constants/keywords/css/BitbufKeywords_CssConstants.js",
+        "constants/keywords/html/Keywords_HtmlConstants.js",
+        "constants/keywords/html/BitbufKeywords_HtmlConstants.js",
+        "constants/keywords/html_escape/Keywords_HtmlEsc_Constants.js",
+        "constants/keywords/html_escape/BitbufKeywords_HtmlEsc_Constants.js",
+        "constants/keywords/js/Keywords_JsConstants.js",
+        "constants/keywords/js/BitbufKeywords_JsConstants.js",
+        "CssJsHtmlConstants.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/CommandLine",
+      "name": "command-line",
+      "update-published": "Sat Aug 30 18:16:38 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/fine_tuning/LinkedResourcesIntegrity",
+      "name": "linked-resources-integrity",
+      "update-published": "Sat Aug 30 18:20:26 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/command-line",
+          "path": "libraries/base_packs/CommandLine"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/media_tools/JscFonts_base",
+      "name": "media_tools_fonts_base",
+      "update-published": "Thu Sep 25 11:40:28 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/JscFonts_main_CssImporterRelative_minimal.css",
+        "cssTargetFilePath": "MediaAndStyles/JscFonts_main_resolved_minimal.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/media_tools/JscFonts_Orbitron",
+      "name": "media_tools_fonts_orbitron",
+      "update-published": "Thu Sep 25 11:40:28 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/JscFonts_Orbitron_main_CssImporterRelative_minimal.css",
+        "cssTargetFilePath": "MediaAndStyles/JscFonts_Orbitron_main_resolved_minimal.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_datatypes_base",
+      "name": "media_tools_images_mini_datatypes_base",
+      "update-published": "Sat Sep 27 14:14:17 UTC 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii",
+      "name": "media_tools_images_mini_freepic_kawaii",
+      "update-published": "Sat Sep 27 16:57:02 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base",
+      "name": "media_tools_images_mini_mimetypes_base",
+      "update-published": "Tue Nov 18 07:17:07 CET 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/text/parsers/TokensParser",
+      "name": "tokens-parser",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "TokensParser.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/data_workarounds/JPath",
+      "name": "jpath",
+      "update-published": "3 mai 2026 20:24:20 UTC",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "JPath.js",
+        "JPathImpl.js",
+        "JPathData.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/data_workarounds/OData",
+      "name": "objdata",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "ObjDataConstants.js",
+        "ObjDataConstantsMinimized.js",
+        "ObjDataTypes.js",
+        "ObjDataPackage.js",
+        "ObjDataParser.js",
+        "ObjDataSerializer.js",
+        "ObjData.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/text/Text",
+      "name": "text",
+      "update-published": "Sat Sep  6 04:14:24 CEST 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "trimmer/Trimmer.js",
+        "case_converter/types/DataRecordMatches.js",
+        "case_converter/case_converter_constants/CaseConverterConstants.js",
+        "case_converter/CaseConverter.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/CssHtml",
+      "name": "css-html",
+      "update-published": "Wed Oct  1 01:37:16 CEST 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "CssHtml.js",
+        "CssSelectorWeight.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/EventEmitter",
+      "name": "event-emitter",
+      "update-published": "Wed Feb 18 04:53:34 CET 202",
+      "build": false,
+      "build-simple-enable": true,
+      "build-files": [
+        "EventEmitter.js",
+        "ImprovedRenderEventEmitter.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/FileWriter",
+      "name": "file-writer",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/CssImporter",
+      "name": "css-importer",
+      "update-published": "Sat Sep 27 15:28:55 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/file-writer",
+          "path": "libraries/base_packs/FileWriter"
+        },
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/tokens-parser",
+          "path": "libraries/base_packs/text/parsers/TokensParser"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/datasets/CdnDatasetsBase",
+      "name": "cdn-datasets-base",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/jpath",
+          "path": "libraries/base_packs/data_workarounds/JPath"
+        }
+      ],
+      "build-files": [
+        "JsonWriter.js",
+        "DatasetBase.js",
+        "WriteAllDataSetsCommand.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/datasets/MimeType",
+      "name": "mime-type",
+      "update-published": "Wed Sep 10 01:59:37 UTC 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "MimeType.js",
+        "mime_type_constants/MimeTypeConstants.js",
+        "mime_type_constants/SitesPreloaderMimeTypeConstants.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/text/converters/CharcodeConverter",
+      "name": "charcode-converter",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/jpath",
+          "path": "libraries/base_packs/data_workarounds/JPath"
+        },
+        {
+          "name": "@jaisocx/cdn-datasets-base",
+          "path": "libraries/base_packs/datasets/CdnDatasetsBase"
+        }
+      ],
+      "build-files": [
+        "CharcodeConverter.js",
+        "Charcodes.js",
+        "Countries.js",
+        "CountriesCodes.js",
+        "LanguagesCodes.js",
+        "WriteAllDataSetsCommand.js"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/CssCleanStart",
+      "name": "css-clean-start",
+      "update-published": "Sun Aug 17 01:22:34 UTC 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/css_clean_start_main_webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/css_clean_start_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": [
+        "index.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_flat/CssCodeSnippet",
+      "name": "css-code-snippet",
+      "update-published": "Sun Nov 23 04:43:15 CET 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssCodeSnippet_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssCodeSnippet_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": [
+        "CssCodeSnippetHelpers.js"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_flat/CssTable",
+      "name": "css-table",
+      "update-published": "Fri Nov 21 04:20:10 CET 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssTable_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssTable_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/fine_tuning/Preloader",
+      "name": "preloader",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/text",
+          "path": "libraries/base_packs/text/Text"
+        },
+        {
+          "name": "@jaisocx/mime-type",
+          "path": "libraries/base_packs/datasets/MimeType"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        }
+      ],
+      "build-files": [
+        "media_preloader/media_preloader_constants/PreloaderConstants.js",
+        "media_preloader/preloader/Preloader.js",
+        "scripts_chained_loader/ScriptsChainedLoader.js"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/pages/responses/exception_responses/https_404_exception",
+      "name": "https_404_exception",
+      "update-published": "Tue Aug 26 00:19:19 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/Https404Exception_main_Webpack_minimal.css",
+        "cssTargetFilePath": "MediaAndStyles/Https404Exception_main_resolved_minimal.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/text/renderers/TemplateRenderer",
+      "name": "template-renderer",
+      "update-published": "Wed Feb 18 04:53:34 CET 202",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/tokens-parser",
+          "path": "libraries/base_packs/text/parsers/TokensParser"
+        }
+      ],
+      "build-files": [
+        "TemplateRenderer.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/FileProducerByTemplate",
+      "name": "file-producer-by-template",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        },
+        {
+          "name": "@jaisocx/file-writer",
+          "path": "libraries/base_packs/FileWriter"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/base_packs/fine_tuning/SitesToolAutomation",
+      "name": "sites-tool-automation",
+      "update-published": "Wed Oct  1 01:32:57 UTC 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/file-writer",
+          "path": "libraries/base_packs/FileWriter"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        },
+        {
+          "name": "@jaisocx/file-producer-by-template",
+          "path": "libraries/base_packs/FileProducerByTemplate"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_2",
+      "name": "css-clean-start-2",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssCleanStart_2_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_Lite",
+      "name": "css_clean_start_lite",
+      "update-published": "Sat Jan 24 11:06:58 CET 2026",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssCleanStart_Lite_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/CssToolTemplate",
+      "name": "css-tool-template",
+      "update-published": "Tue Aug 26 00:30:34 CEST 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssToolTemplate_main_Webpack_minimal.css",
+        "cssTargetFilePath": "MediaAndStyles/CssToolTemplate_main_resolved_minimal.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
+      "ready-to-use": false,
+      "path": "libraries/base_packs/data_workarounds/WorkspaceTreeWalker",
+      "name": "workspace-tree-walker",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "lib/JPath.js",
+        "types/JPathData.js",
+        "types/IterableInfo.js",
+        "types/WorkspaceTreeWalkerPayload.js",
+        "WorkspaceTreeWalker.js"
+      ]
+    },
+    {
+      "ready-to-use": false,
+      "path": "libraries/base_packs/text/renderers/ImprovedTemplateRenderer",
+      "name": "improved-template-renderer",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/charcode-converter",
+          "path": "libraries/base_packs/text/converters/CharcodeConverter"
+        },
+        {
+          "name": "@jaisocx/workspace-tree-walker",
+          "path": "libraries/base_packs/data_workarounds/WorkspaceTreeWalker"
+        }
+      ],
+      "build-files": [
+        "lib/TemplateParser.js",
+        "types/DataConf.js",
+        "types/RepeatDataCallbackValue.js",
+        "types/TemplateInfo.js",
+        "types/TemplateConf.js",
+        "ImprovedTemplateRenderer.js",
+        "ImprovedTemplateRendererConstants.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/api/Api",
+      "name": "api",
+      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/objdata",
+          "path": "libraries/base_packs/ObjData"
+        }
+      ],
+      "build-files": [
+        "Api.js"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/json_styling_tools/Tree",
+      "name": "tree",
+      "update-published": "Wed Feb 18 04:53:34 CET 202 ",
+      "build": false,
+      "build-simple-enable": true,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/Tree_main_Webpack_minimal.css",
+        "cssTargetFilePath": "MediaAndStyles/Tree_main_resolved_minimal.css"
+      },
+      "build-files": [
+        "typescript/ArrayOrObjectPackage.js",
+        "typescript/Tree.js",
+        "typescript/TreeAdapter.js",
+        "typescript/TreeAdapterModeConf.js",
+        "typescript/TreeAdapterModeEase.js",
+        "typescript/TreeConf.js",
+        "typescript/TreeConstants.js",
+        "typescript/Types.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ],
+      "dependencies": [
+        {
+          "name": "@jaisocx/css-clean-start-2",
+          "path": "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_2"
+        },
+        {
+          "name": "@jaisocx/jpath",
+          "path": "libraries/base_packs/data_workarounds/JPath"
+        },
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        },
+        {
+          "name": "@jaisocx/theme-turn-on",
+          "path": "libraries/base_packs/ThemeTurnOn"
+        },
+        {
+          "name": "@jaisocx/mime-type",
+          "path": "libraries/base_packs/datasets/MimeType"
+        },
+        {
+          "name": "@jaisocx/text",
+          "path": "libraries/base_packs/text/Text"
+        },
+        {
+          "name": "@jaisocx/preloader",
+          "path": "libraries/base_packs/fine_tuning/Preloader"
+        }
+      ]
+    },
+    {
+      "ready-to-use": false,
+      "path": "libraries/sites_tools/json_styling_tools/Table",
+      "name": "table",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        }
+      ],
+      "build-files": [
+        "Table.js"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/js_tools/Tooltip",
+      "name": "tooltip",
+      "update-published": "Tue Jun  3 00:23:40 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        }
+      ],
+      "build-files": [
+        "Tooltip.js",
+        "TooltipConstants.js",
+        "TooltipLib.js",
+        "TooltipMainTemplateData.js",
+        "TooltipShownSettings.js",
+        "Types.js",
+        "index.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ]
+    },
+    {
+      "path": "libraries/sites_tools/js_tools/CssTableOrdered",
+      "name": "css-table-ordered",
+      "update-published": "Sun Feb 22 07:24:27 CET 2026",
+      "build": false,
+      "build-simple-enable": true,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/CssTableOrdered_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssTableOrdered_main_resolved.css"
+      },
+      "dependencies": [
+        {
+          "name": "@jaisocx/css-table",
+          "path": "libraries/sites_tools/css_tools/css_flat/CssTable"
+        }
+      ],
+      "build-files": [
+        "scroll/CssTableScroll.js",
+        "orderby/CssTableOrderby.js"
+      ]
+    },
+    {
+      "path": "webpack_builds/ExampleCssCleanStartWebpack",
+      "name": "example-css-clean-start",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/css-clean-start",
+          "path": "libraries/sites_tools/css_tools/CssCleanStart"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "examples/ExampleTemplateRenderer",
+      "name": "example-template-renderer",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/template-renderer",
+          "path": "libraries/base_packs/text/renderers/TemplateRenderer"
+        }
+      ],
+      "build-files": [
+        "ExampleTemplateRenderer.js"
+      ]
+    },
+    {
+      "path": "webpack_builds/ExampleTree",
+      "name": "example-tree",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/tree",
+          "path": "libraries/sites_tools/json_styling_tools/Tree"
+        }
+      ],
+      "build-files": [
+        "ExampleTree.js"
+      ],
+      "webpack-bundle.js": {
+        "@status": "this ProjectBuilder.json property 'webpack-bundle.js' is an idea for future implementation, and is now not under development",
+        "@description": "to automate producing of a bundle.ts file for webpack build",
+        "imports": [
+          {
+            "class": "Tree",
+            "from": "@jaisocx/tree"
+          },
+          {
+            "class": "TreeConstants",
+            "from": "@jaisocx/tree"
+          },
+          {
+            "class": "ExampleTree",
+            "from": "./ExampleTree"
+          }
+        ]
+      }
+    },
+    {
+      "path": "webpack_builds/ExampleTable",
+      "name": "example-table",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/table",
+          "path": "libraries/sites_tools/json_styling_tools/Table"
+        }
+      ],
+      "build-files": [
+        "ExampleTable.js"
+      ]
+    },
+    {
+      "path": "webpack_builds/ExampleTooltip",
+      "name": "example-tooltip",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/tooltip",
+          "path": "libraries/sites_tools/js_tools/Tooltip"
+        }
+      ],
+      "build-files": [
+        "ExampleTooltip.js"
+      ]
+    },
+    {
+      "path": "templates/ResponsiveAndValidForWebpackWhenNpmInstall",
+      "name": "template-css-clean-start",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "index.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ]
+    },
+    {
+      "path": "templates/BuiltWithWebpackYarnInstalledPackage",
+      "name": "example-built-with-webpack",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/css-clean-start",
+          "path": "libraries/sites_tools/css_tools/CssCleanStart"
+        },
+        {
+          "name": "@jaisocx/tooltip",
+          "path": "libraries/sites_tools/js_tools/Tooltip"
+        }
+      ],
+      "build-files": []
+    },
+    {
+      "path": "libraries/sites_tools/js_tools/EmailHtmlInliner",
+      "name": "email-html-inliner",
+      "update-published": "Tue Jun  3 00:36:34 GMT 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [
+        {
+          "name": "@jaisocx/text",
+          "path": "libraries/base_packs/text/Text"
+        },
+        {
+          "name": "@jaisocx/css-html",
+          "path": "libraries/base_packs/CssHtml"
+        }
+      ],
+      "build-files": [
+        "index.js",
+        "EmailHtmlInliner.js",
+        "EmailHtmlInlinerConstants.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/fine_tuning/ResponsiveSizes",
+      "name": "responsive-sizes",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": false,
+      "build-files": [
+        "ResponsiveSizesConstants.js",
+        "ResponsiveSizesConstantsCssCleanStart.js",
+        "ResponsiveSizes.js"
+      ],
+      "dependencies": []
+    },
+    {
+      "path": "libraries/sites_tools/css_tools/CssToolTemplate",
+      "name": "css-tool-template",
+      "update-published": "Mon Jun 16 02:02:01 GMT 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": false,
+        "cssFilePath": "MediaAndStyles/clean-start-main-webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/clean-start-main-resolved.css"
+      },
+      "dependencies": [],
+      "build-files": [
+        "index.js",
+        "webpackAliases.js",
+        "webpack.aliases.mjs",
+        "webpack.aliases.cjs"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/patterns/EngineAndDataRecords",
+      "name": "engine-and-data-records",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "EngineDataRecordsBase.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/ThemeTurnOn",
+      "name": "theme-turn-on",
+      "update-published": "",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "constants/ThemeTurnOnConstants.js",
+        "theme_turn_on/ThemeTurnOn.js"
+      ]
+    },
+    {
+      "path": "libraries/console/JsInvoke",
+      "name": "jsc_console_js_invoke",
+      "update-published": "Sat Mar  7 22:11:15 UTC 2026",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/event-emitter",
+          "path": "libraries/base_packs/EventEmitter"
+        },
+        {
+          "name": "@jaisocx/tokens-parser",
+          "path": "libraries/base_packs/text/parsers/TokensParser"
+        },
+        {
+          "name": "@jaisocx/file-writer",
+          "path": "libraries/base_packs/FileWriter"
+        },
+        {
+          "name": "@jaisocx/command-line",
+          "path": "libraries/base_packs/CommandLine"
+        },
+        {
+          "name": "@jaisocx/css-importer",
+          "path": "libraries/base_packs/CssImporter"
+        }
+      ],
+      "build-files": []
+    }
+  ]
+};
+
+</script>
+
+
+<script name="event_site_loaded">
+
+  let g_data_sitesTools_link = "example__dn/sites_tools.json";
+  let g_data_BuildData_link  = "example__dn/BuildData.json";
+
+
+
+  let treeExamplesInstance = new Object();
+
+let glob_dataItems = {
+  "sites_tools": {
+    id: "sites_tools",
+    dataMode: "data",
+    dataLink: "",
+    data: g_data_sitesTools_js,
+    htmlHolderId: "tree_holder_0",
+    htmlElem: null,
+    dataIconBase: "../cdn_node_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  },
+  "build_data": {
+    id: "build_data",
+    dataMode: "data",
+    dataLink: "",
+    data: g_data_BuildData_js,
+    htmlHolderId: "tree_holder_1",
+    htmlElem: null,
+    dataIconBase: "../cdn_node_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  },
+  "update": {
+    id: "update",
+    dataMode: "data",
+    dataLink: "",
+    data: g_data_BuildData_js,
+    htmlHolderId: "tree_holder_2",
+    htmlElem: null,
+    dataIconBase: "../cdn_node_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  },
+  "new_site_tools": {
+    id: "new_site_tools",
+    dataMode: "data",
+    dataLink: "",
+    data: [],
+    htmlHolderId: "tree_holder_3",
+    htmlElem: null,
+    dataIconBase: "../cdn_node_installs/node_modules/@jaisocx/tree/MediaAndStyles/themes/theme-base/mini-images/data-types/",
+    renderingMode: "mode_ease",
+    nodesOpenMode: "all_hide",
+    debug: false
+  }
+};
+
+
+
+
+
+function renderDataJsVariable() {
+
+
+    treeExamplesInstance = new TreeExamples();
+
+    let loc_updateData    = {...glob_dataItems[ "update" ]["data"]};
+    let arg_BuildData     = loc_updateData[ "packages" ];
+
+    let arg_maxCounter    = 50;
+    let arg_b_maxCounter  = 50;
+
+    let arg_offsetStep    = 1;
+    let arg_b_offsetStep  = 1;
+
+
+
+    let loc_updatePackages = treeExamplesInstance.sitesToolsNBuildData (
+      glob_dataItems[ "sites_tools" ].data,
+      arg_BuildData,
+      arg_maxCounter,
+      arg_b_maxCounter,
+      arg_offsetStep,
+      arg_b_offsetStep
+    );
+
+    glob_dataItems[ "update" ][ "data" ][ "packages" ] = loc_updatePackages;
+
+    glob_dataItems[ "new_site_tools" ][ "data" ] = treeExamplesInstance.getSitesTools();
+
+
+
+    treeExamplesInstance
+      .setDataItems( glob_dataItems )
+      .renderExamples();
+
+}
+
+
+
+
+
+document.addEventListener (
+  "DOMContentLoaded",
+  function ( evt ) {
+
+    glob_dataItems[ "sites_tools" ][ "renderingMode" ]    = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "sites_tools" ][ "nodesOpenMode" ]    = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    glob_dataItems[ "build_data" ][ "renderingMode" ]     = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "build_data" ][ "nodesOpenMode" ]     = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    glob_dataItems[ "update" ][ "renderingMode" ]         = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "update" ][ "nodesOpenMode" ]         = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+    glob_dataItems[ "new_site_tools" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+    glob_dataItems[ "new_site_tools" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_SHOWN;
+
+
+
+    // onloadDataByUrl();
+    renderDataJsVariable();
+
+  }
+);
+
+</script>
+
+</html>
+
+

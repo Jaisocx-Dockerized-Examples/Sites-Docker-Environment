@@ -1,0 +1,16 @@
+@media all and (min-width: 1201px) {
+  .header .startup {
+    width: 1200px !important;
+  }
+  .main .main-container {
+    width: 1200px !important;
+  }
+  .aside {
+    width: 330px !important;
+  }
+  .doc-container {
+    max-width: 840px !important;
+  }
+}
+
+/*# sourceMappingURL=docs-large.css.map */

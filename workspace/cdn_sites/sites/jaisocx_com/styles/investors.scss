@@ -1,0 +1,623 @@
+@import "popup-container";
+
+  body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #6C7888;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 1120px;
+    margin: 0 auto;
+  }
+  .header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    display: flex;
+    background-color: #464A59;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      margin: 16px 0;
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        margin: auto 0;
+        line-height: 80px;
+
+        li {
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+          }
+        }
+
+        li:not(:first-child) {
+          margin-left: 16px;
+        }
+
+        li:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+
+  .main {
+    max-width: 1440px;
+    margin: 80px auto 0;
+
+    .current {
+      color: #fff;
+      background: linear-gradient(180deg, #464A59 13.95%, rgba(70, 74, 89, 0.8) 100%);
+      padding: 93px 16px;
+
+      .container {
+        display: flex;
+
+        h2 {
+          margin: 0;
+          display: block;
+          border-right: 1px solid #6C7888;
+          padding-right: 84px;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 68px;
+          white-space: nowrap;
+        }
+
+        p {
+          margin: 0 0 0 40px;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+
+    }
+
+  }
+  .monetization {
+    background: linear-gradient(129.92deg, #FF9A23 21.41%, #ED1A98 72.78%);
+    padding: 78px 0;
+
+    .container {
+      background-color: rgba(255, 255, 255, .2);
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 60px 0;
+      color: #fff;
+
+      h2 {
+        margin: 0 auto 31px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      p {
+        max-width: 582px;
+        margin: 0 auto 30px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+
+      }
+    }
+  }
+  .market {
+    padding: 120px 0;
+    color: #fff;
+    background: linear-gradient(180deg, #464A59 13.95%, rgba(70, 74, 89, 0.8) 100%);
+
+    .container {
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        max-width: 700px;
+        margin: 16px auto 36px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        a {
+          color: whitesmoke;
+          text-decoration: underline;
+        }
+      }
+
+      .tab-desktop {
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 5px;
+        overflow: hidden;
+        border-collapse: collapse;
+        border-style: hidden;
+        margin: 0 auto;
+
+        td {
+          padding: 10px 30px;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0em;
+          text-align: left;
+          border: 1px solid #fff;
+        }
+      }
+
+      .competitors_container {
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: center;
+
+        }
+      }
+    }
+  }
+  .join {
+    background: linear-gradient(129.92deg, #FF9A23 21.41%, #ED1A98 72.78%);
+    padding: 80px 0 73px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 34px;
+        color: #fff;
+        text-align: center;
+      }
+
+      a {
+        display: inline-block;
+        padding: 16px 25px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        color: #F13184;
+        background-color: #fff;
+        border-radius: 32px;
+        margin: 0 auto;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .plans {
+    background-color: #fff;
+    padding: 166px 0 146px;
+
+    .container {
+      margin: 0 auto;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 24px;
+      }
+
+      p {
+        max-width: 700px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 auto 80px;
+      }
+
+      .plans_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        .plan-card {
+          width: 357px;
+          height: 192px;
+          background-color: #F7F7F7;
+          box-sizing: border-box;
+          border-radius: 8px;
+          overflow: hidden;
+          padding: 24px 16px;
+
+          h3 {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 22px;
+            text-align: left;
+            background: linear-gradient(129.92deg, #FF9A23 21.41%, #ED1A98 72.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 0 16px;
+          }
+
+          p {
+            margin: 0;
+            padding-top: 16px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            position: relative;
+          }
+
+          p:before {
+            content: '';
+            height: 1px;
+            width: 100%;
+            background-color: #BDBDBD;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  .finances {
+    padding: 120px 0;
+    background-color: #F6F6F6;
+
+    .container {
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .fin-table-mob {
+        display: none;
+      }
+      .fin-table-desk {
+        width: 100%;
+        background: linear-gradient(129.92deg, #FFE3C1 21.41%, #FFCFEC 72.78%);
+        border-radius: 5px;
+        overflow: hidden;
+        border-collapse: collapse;
+        border-style: hidden;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: left;
+
+        td {
+          padding: 20px 30px;
+          font-size: 18px;
+          font-weight: 400;
+          text-align: left;
+          border: 1px solid #BDBDBD;
+        }
+      }
+    }
+  }
+  .contact_form {
+    background: linear-gradient(180deg, #464A59 13.95%, rgba(70, 74, 89, 0.8) 100%);
+    padding: 100px 0;
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        white-space: nowrap;
+      }
+
+      form {
+        width: 748px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: #fff;
+        margin: 0 auto;
+
+        .col {
+          width: 358px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 24px;
+          text-align: left;
+          color: #fff;
+          opacity: .6;
+          margin: 0;
+        }
+
+        input {
+          margin-bottom: 24px;
+        }
+
+        input, textarea {
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid #E3E3E3;
+          overflow: hidden;
+          border-radius: 4px;
+          outline: none;
+          width: 100%;
+          padding: 12px;
+          color: #fff;
+          font-family: 'Public Sans', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          box-sizing: border-box;
+        }
+
+        textarea {
+          height: 153px;
+          resize: none;
+          margin-bottom: 26px;
+
+        }
+
+        input::placeholder {
+          color: #fff;
+          font-family: 'Public Sans', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+
+        }
+
+        textarea::placeholder {
+          color: #fff;
+          font-family: 'Public Sans', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        a.form-btn {
+          display: block;
+          padding: 18px 0;
+          width: 100%;
+          border-radius: 32px;
+          text-align: center;
+          background-color: #fff;
+          text-decoration: none;
+          color: #F13184;
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #5D616E;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    margin: 16px 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .tab-mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+  }
+  .header {
+    position: fixed;
+    top: 0;
+  }
+  .main {
+    margin: 0;
+    .current {
+      .container {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          border-bottom: 1px solid rgba(217, 217, 217, .1);
+
+        }
+        p {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+
+    .monetization {
+      padding: 78px 15px;
+      .container {
+        padding: 60px 10px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 17px;
+        width: 100%;
+      }
+    }
+    .market {
+      padding: 60px 10px;
+      h2 {
+        font-size: 34px;
+        margin-top: 0;
+      }
+      .tab-mobile {
+        display: table;
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 5px;
+        overflow: hidden;
+        border-collapse: collapse;
+        border-style: hidden;
+        box-sizing: border-box;
+        tr {
+          padding: 16px;
+          display: flex;
+          box-sizing: border-box;
+        }
+        tr:not(:last-child) {
+          border-bottom: 1px solid #fff;
+        }
+        th {
+          box-sizing: border-box;
+          border: none;
+          vertical-align: top;
+          width: 30%;
+          text-align: left;
+          font-size: 14px;
+          display: inline-block;
+        }
+        td {
+          box-sizing: border-box;
+          width: 35%;
+          padding-left: 10px;
+          text-align: left;
+          display: inline-block;
+          vertical-align: top;
+
+        }
+        p {
+          text-align: left;
+          display: block;
+          margin: 0 0 8px;
+          font-size: 12px;
+          line-height: 16px;
+          min-height: 16px;
+        }
+      }
+      .tab-desktop {
+        display: none;
+      }
+    }
+    .join {
+      display: none;
+    }
+    .plans {
+      padding: 80px 16px;
+      h2 {
+        color: #082139;
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 44px;
+        text-transform: uppercase;
+      }
+    }
+    .finances {
+      .container {
+        padding: 16px;
+        h2 {
+          font-size: 34px;
+        }
+        .fin-table-desk {
+          display: none;
+        }
+        .fin-table-mob {
+          display: table;
+          width: 100%;
+          background: linear-gradient(129.92deg, #FFE3C1 21.41%, #FFCFEC 72.78%);
+          border-radius: 5px;
+          overflow: hidden;
+          border-collapse: collapse;
+          border-style: hidden;
+          tr:not(:last-child) {
+            border-bottom: 1px solid #BDBDBD;
+
+          }
+          th {
+            border-right: 1px solid #BDBDBD;
+
+          }
+        }
+      }
+    }
+    .contact_form {
+      .container {
+        padding: 16px;
+        box-sizing: border-box;
+        h2 {
+
+        }
+        form {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          .col {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      flex-direction: column;
+      padding: 24px 0 !important;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

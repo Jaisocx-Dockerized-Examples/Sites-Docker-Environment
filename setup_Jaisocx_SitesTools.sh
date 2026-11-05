@@ -154,7 +154,7 @@ docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 
 
 
-packagePath="ts/cloned_repos/jaisocx_sitestools/cdn/node_cdn_installs"
+packagePath="ts/cloned_repos/jaisocx_sitestools/cdn_sites/node_cdn_installs"
 commandToRun="cd "${IN_DOCKER_WORKSPACE_VOLUME}/${packagePath}"; if [ ! -e "./package.json" ]; then cp "./example_package_json.txt"  "./package.json" && cp "./example_package_lock_json.txt"  "./package-lock.json" && npm init; fi; npm install -S  --install-strategy=hoisted  --omit=dev"
 docker compose exec -u user ts bash -c ". "/home/user/.bashrc"; ${commandToRun}"
 

@@ -1,0 +1,441 @@
+/*
+
+Css Clean Start Lite
+
+html tags base styles reset
+
+why of need:
+when developing a site from scratch,
+You shall type html tags, and when preview rendered in browser,
+were never sure, whether a font style, paddings and margins will look like You planned.
+in a css clean start theme,
+You may set at once the styles for texts, display style rule, and several other.
+In this .css file, You see transparently every style assigned to every html element.
+Just like a documentation .css doc, of great use, too.
+
+When You like, You may set other styles, too, and assign in this .css file the values via css vars,
+then, to set the styles in themes .css files later.
+
+in the theme_base, every css var gets a value.
+
+other theme files may just have very few css variables,
+to override the few styles, already set in the theme_base.
+*/
+.jsx * {
+
+  position:     var(--jsx--css-clean-start-2--all-tags--position);
+  display:      var(--jsx--css-clean-start-2--custom-tags--display);
+  box-sizing:   var(--jsx--css-clean-start-2--all-tags--box-sizing);
+
+  line-break:   strict;
+  word-wrap:    normal;
+  word-break:   normal;
+
+  width:        fit-content;
+  max-width:    100%;
+  min-width:    unset;
+
+  color:        var(--jsx--css-clean-start-2--all-tags--color);
+
+  border-width: var(--jsx--css-clean-start-2--all-tags--border-width);
+  border-style: var(--jsx--css-clean-start-2--all-tags--border-style);
+  border-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+
+  padding:      var(--jsx--css-clean-start-2--all-tags--padding);
+  margin:       var(--jsx--css-clean-start-2--all-tags--margin);
+
+  font-family:  var(--jsx--css-clean-start-2--all-tags--font-family);
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+  line-height:  var(--jsx--css-clean-start-2--all-tags--line-height);
+
+}
+
+
+
+/* this style sets rem size for the html page. 1rem = 16px */
+html.jsx {
+  font-size:    var(--jsx--css-clean-start-2--rem);
+}
+
+
+
+html.jsx {
+  position: static;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+  top:          0;
+
+  width:        var(--jsx--css-clean-start-2--body-tag--width);
+  max-width:    var(--jsx--css-clean-start-2--body-tag--max-width);
+  min-width:    var(--jsx--css-clean-start-2--body-tag--min-width);
+
+  overflow-x:   hidden;
+}
+
+
+
+/* these html elems are invisible */
+html.jsx head,
+html.jsx head *,
+html.jsx style,
+html.jsx script {
+  visibility: hidden;
+  max-height: 0;
+  max-width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: none;
+}
+
+
+
+html.jsx body {
+  position: relative;
+  top:          0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      var(--jsx--css-clean-start-2--block-tags--display);
+  box-sizing:   var(--jsx--css-clean-start-2--all-tags--box-sizing);
+
+  background: var(--jsx--css-clean-start-2--body-tag--background);
+
+  /* NOT READY: RESPONSIVE FEATURE!!! */
+  height:     var(--jsx--css-clean-start-2--body-tag--height);
+  max-height: var(--jsx--css-clean-start-2--body-tag--max-height);
+  min-height: var(--jsx--css-clean-start-2--body-tag--min-height);
+
+  width:      var(--jsx--css-clean-start-2--body-tag--width);
+  max-width:  var(--jsx--css-clean-start-2--body-tag--max-width);
+  min-width:  var(--jsx--css-clean-start-2--body-tag--min-width);
+
+  overflow:   var(--jsx--css-clean-start-2--body-tag--overflow-x) var(--jsx--css-clean-start-2--body-tag--overflow-y);
+
+
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+}
+
+
+
+html.jsx body main {
+
+  margin:       var(--jsx--css-clean-start-2--site--margin);
+  padding:      var(--jsx--css-clean-start-2--site--padding);
+
+  background:   var(--jsx--css-clean-start-2--site--background);
+
+  /* NOT READY: RESPONSIVE FEATURE!!! */
+  height:     var(--jsx--css-clean-start-2--site--height);
+  max-height: var(--jsx--css-clean-start-2--site--max-height);
+  min-height: var(--jsx--css-clean-start-2--site--min-height);
+
+  width:      var(--jsx--css-clean-start-2--site--width);
+  max-width:  var(--jsx--css-clean-start-2--site--max-width);
+  min-width:  var(--jsx--css-clean-start-2--site--min-width);
+
+  overflow:   var(--jsx--css-clean-start-2--site--overflow-x) var(--jsx--css-clean-start-2--site--overflow-y);
+
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+}
+
+
+
+.jsx h1,
+.jsx h2,
+.jsx h3,
+.jsx h4,
+.jsx h5,
+.jsx h6 {
+  font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  color:       var(--jsx--css-clean-start-2--h--color);
+  margin:      var(--jsx--css-clean-start-2--h--margin);
+  padding:     var(--jsx--css-clean-start-2--h--padding);
+}
+
+.jsx h1 {
+  font-size:   var(--jsx--css-clean-start-2--h1--font-size);
+  line-height: var(--jsx--css-clean-start-2--h1--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h1--font-weight);
+  color:       var(--jsx--css-clean-start-2--h1--color);
+  margin:      var(--jsx--css-clean-start-2--h1--margin);
+  padding:     var(--jsx--css-clean-start-2--h1--padding);
+}
+
+.jsx h2 {
+  font-size:   var(--jsx--css-clean-start-2--h2--font-size);
+  line-height: var(--jsx--css-clean-start-2--h2--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h2--font-weight);
+  color:       var(--jsx--css-clean-start-2--h2--color);
+  margin:      var(--jsx--css-clean-start-2--h2--margin);
+  padding:     var(--jsx--css-clean-start-2--h2--padding);
+}
+
+.jsx h3 {
+  font-size:   var(--jsx--css-clean-start-2--h3--font-size);
+  line-height: var(--jsx--css-clean-start-2--h3--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h3--font-weight);
+  color:       var(--jsx--css-clean-start-2--h3--color);
+  margin:      var(--jsx--css-clean-start-2--h3--margin);
+  padding:     var(--jsx--css-clean-start-2--h3--padding);
+}
+
+.jsx h4 {
+  font-size:   var(--jsx--css-clean-start-2--h4--font-size);
+  line-height: var(--jsx--css-clean-start-2--h4--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h4--font-weight);
+  color:       var(--jsx--css-clean-start-2--h4--color);
+  margin:      var(--jsx--css-clean-start-2--h4--margin);
+  padding:     var(--jsx--css-clean-start-2--h4--padding);
+}
+
+.jsx h5 {
+  font-size:   var(--jsx--css-clean-start-2--h5--font-size);
+  line-height: var(--jsx--css-clean-start-2--h5--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h5--font-weight);
+  color:       var(--jsx--css-clean-start-2--h5--color);
+  margin:      var(--jsx--css-clean-start-2--h5--margin);
+  padding:     var(--jsx--css-clean-start-2--h5--padding);
+}
+
+.jsx h6 {
+  font-size:   var(--jsx--css-clean-start-2--h6--font-size);
+  line-height: var(--jsx--css-clean-start-2--h6--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h6--font-weight);
+  color:       var(--jsx--css-clean-start-2--h6--color);
+  margin:      var(--jsx--css-clean-start-2--h6--margin);
+  padding:     var(--jsx--css-clean-start-2--h6--padding);
+}
+
+
+
+/* Paragraph html tag <p> */
+.jsx p {
+  margin:      var(--jsx--css-clean-start-2--p--margin);
+}
+
+
+
+/* Hyperlink html tag <a> (anchor) */
+.jsx a {
+  color:           var(--jsx--css-clean-start-2--anchor--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor--text-decoration);
+}
+.jsx a:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-hover--text-decoration);
+}
+.jsx a:visited {
+  color:           var(--jsx--css-clean-start-2--anchor-visited--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-visited--text-decoration);
+}
+.jsx a:visited:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-visited-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-visited-hover--text-decoration);
+}
+.jsx a:active {
+  color:           var(--jsx--css-clean-start-2--anchor-active--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-active--text-decoration);
+}
+.jsx a:active:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-active-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-active-hover--text-decoration);
+}
+
+
+
+.jsx pre {
+  font-family: var(--jsx--css-clean-start-2--pre--font-family, "Courier New", Courier, monospace);
+}
+
+
+
+/* block tags reset */
+.jsx address,
+.jsx article,
+.jsx aside,
+.jsx blockquote,
+/* .jsx body, */
+.jsx canvas,
+.jsx dd,
+.jsx div,
+.jsx dl,
+.jsx dt,
+.jsx fieldset,
+.jsx figcaption,
+.jsx figure,
+.jsx footer,
+.jsx form,
+.jsx h1,
+.jsx h2,
+.jsx h3,
+.jsx h4,
+.jsx h5,
+.jsx h6,
+.jsx header,
+.jsx hr,
+/* .jsx li, */
+/* .jsx main, */
+.jsx nav,
+.jsx noscript,
+.jsx ol,
+.jsx output,
+.jsx p,
+.jsx pre,
+.jsx section,
+.jsx ul,
+.jsx video {
+  display:   var(--jsx--css-clean-start-2--block-tags--display, block);
+}
+
+
+
+/* inline tags reset */
+.jsx span,
+.jsx a,
+.jsx b,
+.jsx big,
+.jsx br,
+.jsx cite,
+.jsx code,
+.jsx del,
+.jsx em,
+.jsx i,
+.jsx img,
+.jsx ins,
+.jsx label,
+.jsx map,
+.jsx mark,
+.jsx q,
+.jsx s,
+.jsx samp,
+.jsx small,
+.jsx strong,
+.jsx sub,
+.jsx sup,
+.jsx time,
+.jsx u,
+.jsx var {
+  display:   var(--jsx--css-clean-start-2--inline-tags--display, inline-block);
+}
+
+
+/* Table no reset */
+.jsx table {
+  display: table;
+}
+
+.jsx table caption {
+  display: 	table-caption;
+  width: 100%;
+  text-align: center;
+}
+
+.jsx colgroup {
+  display: table-column-group;
+}
+
+.jsx col {
+  display: table-column;
+}
+
+.jsx thead {
+  display: table-header-group;
+}
+
+.jsx tbody {
+  display: table-row-group;
+}
+
+.jsx tfoot {
+  display: table-footer-group;
+}
+
+.jsx tr {
+  display: table-row;
+}
+
+.jsx th,
+.jsx td {
+  display: table-cell;
+  text-align: left;
+}
+
+.jsx thead th,
+.jsx thead td,
+.jsx tbody th,
+.jsx tfoot td {
+  font-weight: 600;
+}
+
+.jsx thead tr,
+.jsx thead th {
+  background-color: var(--jsx--css-clean-start-2--thead--background-color);
+}
+
+.jsx tfoot tr,
+.jsx tfoot th {
+  background-color: var(--jsx--css-clean-start-2--tfoot--background-color);
+}
+
+
+/** ------------------------
+ UL and OL tags
+*/
+.jsx ul {
+  list-style: disc inside;
+}
+
+.jsx ol {
+  list-style: decimal inside;
+}
+
+.jsx ul ul,
+.jsx ul ol,
+.jsx ol ul,
+.jsx ol ol {
+  margin-left: var(--jsx--css-clean-start-2--ul--margin-left);
+}
+
+
+
+.jsx ul li,
+.jsx ol li {
+  display:   list-item;
+}
+
+
+
+/** ------------------------
+  UL and OL tags RESET
+  Example:
+  <ul class="ul-reset">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+*/
+.jsx.ul-reset ul,
+.jsx.ul-reset ol
+.jsx .ul-reset ul,
+.jsx .ul-reset ol
+.jsx ul.ul-reset,
+.jsx ol.ul-reset {
+
+  list-style-type: none;
+  display:         var(--jsx--css-clean-start-2--block-tags--display, block);
+  margin-left:     var(--jsx--css-clean-start-2--all-tags--margin);
+
+}
+
+.jsx.ul-reset li,
+.jsx .ul-reset li {
+  display:         var(--jsx--css-clean-start-2--inline-tags--display, inline-block);
+}
+
+

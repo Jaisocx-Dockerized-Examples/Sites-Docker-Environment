@@ -18,27 +18,34 @@
 
           <alias art="folder"
                  url="/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
 
           <alias art="file"
                  url="/favicon.ico"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/favicons/Icon_Jaisocx.ico"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/favicons/Icon_Jaisocx.ico"
                  cache="cache"
           />
 
           <alias art="folder"
-                 url="/cdn/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/"
+                 url="/cdn_sites/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+
+          <alias art="folder"
+                 url="/cdn_data/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_data/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_cdn_installs/node_modules/@jaisocx/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_node_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
@@ -86,13 +93,13 @@
 
           <alias art="folder"
                  url="/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/images/Logos_of_Jaisocx/Logo_left/cropped_logo_left"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="logo_Jaisocx_2_title_on_the_right_side.png" />
 
           <alias art="folder"
-                 url="/cdn/"
+                 url="/cdn_sites/"
                  path="/opt/jaisocx/sites_docker_environment/workspace/cdn"
                  cache="update"
                  list="true"
@@ -100,7 +107,7 @@
 
           <alias art="folder"
                  url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn/node_cdn_installs/node_modules/@jaisocx/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/node_cdn_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />

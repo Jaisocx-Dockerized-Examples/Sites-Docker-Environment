@@ -3,8 +3,9 @@
   "version": "1.0.1",
   "main": "secure_server.js",
   "scripts": {
-    "start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/server.js",
-    "secure_start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/secure_server.js"
+    "jaisocx_express": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/JaisocxExpress.js",
+    "secure_start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/secure_server.js",
+    "start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/server.js"
   },
   "dependencies": {
     "express": "~5.1.0"

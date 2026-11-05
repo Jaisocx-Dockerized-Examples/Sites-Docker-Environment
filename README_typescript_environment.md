@@ -1,19 +1,14 @@
 
-`Docker for a Site`
-
-![workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg](./workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+`Docker for a Site` Jaisocx &#8482; &#169;
 
 
-![workspace/cdn/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn/software_labels/Prince/software_tm_label_prince.svg)
-![workspace/cdn/software_labels/php/software_tm_label_php.svg](./workspace/cdn/software_labels/php/software_tm_label_php.svg)
-![workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
-![workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg](./workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg)
-![workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg](workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+![workspace/cdn_sites/software_labels/Typescript/softlabel_typescript_1.svg](./workspace/cdn_sites/software_labels/Typescript/softlabel_typescript_1.svg)
+![workspace/cdn_sites/software_labels/Node/softlabel_nodejs_1.svg](./workspace/cdn_sites/software_labels/Node/softlabel_nodejs_1.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg](workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
 
-
-[software_labels preview](./README_software_labels.md)
 
 
 [HOME Docker for a Site](./README.md)
@@ -23,10 +18,13 @@
 
 
 
+[software_labels preview](./README_software_labels.md)
+
+
 
 ---
 
-  >  🗓  **Updated**:  🌼  Summer 2026,  the 02th of July 2026, 18:20:00 CEST.
+  >  🗓  **Updated**:  🌼  Summer 2026  |  `AD 2026 Jul 02 16:20:00.100 GMT_24h`
 
 
 
@@ -84,13 +82,15 @@
   - **INSTALL**:  📙  [workspace/readme/readme_ts_env/md/ts_env_install.md](./workspace/readme/readme_ts_env/md/ts_env_install.md)
 
 
+---
 
 
 
 
-**Friendly greetings**
 
-Jaisocx Software Architect I.P.
+Have a nice day,
+
+Jaisocx Inc. Software Architect I.P.
 
 
 

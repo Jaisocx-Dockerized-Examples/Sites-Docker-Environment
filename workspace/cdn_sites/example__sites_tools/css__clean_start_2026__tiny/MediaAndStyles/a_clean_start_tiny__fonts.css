@@ -1,0 +1,66 @@
+
+/* @start clean_start_tiny theme_fonts_a */
+.clean_start.theme_fonts_a,
+.clean_start  .theme_fonts_a {
+                                                  /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:                 "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+  --clean_start--serif--font-family:                "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+  --clean_start--monospace--font-family:            "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+  --clean_start--handwrite--font-family:            "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+}
+/* @finish clean_start_tiny theme_fonts_a */
+
+
+
+/* @start clean_start_tiny font_override */
+.clean_start  .font_override.font_sans,
+.clean_start  .font_override.font_sans * {
+  font-family: var(--clean_start--sans--font-family, "Arial");
+}
+
+.clean_start  .font_override.font_serif,
+.clean_start  .font_override.font_serif * {
+  font-family: var(--clean_start--serif--font-family, "Times New Roman");
+}
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family, "Segoe Script",   "Bradley Hand",   "Z003",   "cursive");
+}
+
+.clean_start  .font_override.font_monospace,
+.clean_start  .font_override.font_monospace * {
+  font-family: var(--clean_start--monospace--font-family, "Courier");
+}
+/* @finish clean_start_tiny font_override */
+
+
+
+.clean_start {
+
+  --clean_start--h1--font-family:                 var(--clean_start--sans--font-family);
+  --clean_start--h2--font-family:                 var(--clean_start--sans--font-family);
+  --clean_start--h3--font-family:                 var(--clean_start--sans--font-family);
+  --clean_start--h4--font-family:                 var(--clean_start--sans--font-family);
+
+  --clean_start--all_tags--font-family:           var(--clean_start--sans--font-family);
+
+  --clean_start--text--font-family:               var(--clean_start--all_tags--font-family);
+
+  --clean_start--ol_li_c--font-family:            var(--clean_start--all_tags--font-family);
+  --clean_start--ul_li_c--font-family:            var(--clean_start--all_tags--font-family);
+
+  --clean_start--ol_li--font-family:              var(--clean_start--all_tags--font-family);
+  --clean_start--ol_li_tags--font-family:         var(--clean_start--all_tags--font-family);
+
+  --clean_start--ul_li--font-family:              var(--clean_start--all_tags--font-family);
+  --clean_start--ul_li_tags--font-family:         var(--clean_start--all_tags--font-family);
+
+
+
+  --clean_start--pre--font-family:                var(--clean_start--monospace--font-family);
+  --clean_start--pre_tags--font-family:           var(--clean_start--monospace--font-family);
+
+}
+
+

@@ -1,0 +1,232 @@
+@import "./vars/vars-docs";
+@import "./../vars-global/vars-global";
+
+@media all and (min-width: 1025px) {
+  .header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: $header-background-color;
+    .startup {
+      display: flex;
+      height: 80px;
+      width: $content-desktop-width;
+      align-items: center;
+      justify-content: space-between;
+      .startup_container {
+        display: flex;
+        align-items: center;
+        h2 {
+          font-size: 24px;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  .main {
+    .main-container {
+      width: $content-desktop-width;
+      margin: 120px auto 0;
+      position: relative;
+    }
+  }
+  .aside {
+    width: 280px;
+    background-color: #06192C;
+    border-radius: 10px;
+    overflow: hidden;
+    position: fixed;
+    color: #fff;
+
+    .anchor-active {
+      a {
+        color: #D53346;
+      }
+    }
+
+    .aside-header {
+      border-bottom: 1px solid #2A384D;
+      padding: 24px 16px 16px 32px;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .col {
+      flex: 1;
+
+      &:last-child {
+        margin-left: 1em;
+      }
+
+      .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+
+        .tab {
+          width: 100%;
+          color: #fff;
+          overflow: hidden;
+          border-bottom: 1px solid #2A384D;
+
+          &-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            /* Icon */
+            &:hover {
+            }
+
+            &::after {
+              content: "\276F";
+              width: 1em;
+              height: 1em;
+              text-align: center;
+              transition: all .35s;
+            }
+          }
+
+          &-content {
+            max-height: 0;
+            padding: 0 1em;
+            background: #06192C;
+            transition: all .35s;
+            display: flex;
+            flex-direction: column;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              margin: 0 auto 24px 16px;
+              font-size: 18px;
+              font-weight: 300;
+            }
+
+            a.active {
+              color: #D53346;
+            }
+          }
+
+          &-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            cursor: pointer;
+
+            &:hover {
+            }
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+          }
+
+          input:checked {
+            + .tab-label {
+              &::after {
+                transform: rotate(90deg);
+              }
+            }
+
+            ~ .tab-content {
+              max-height: 100vh;
+            }
+          }
+        }
+      }
+    }
+  }
+  .doc-container {
+    max-width: 689px;
+    margin-left: auto;
+    padding-bottom: 50px;
+    position: relative;
+
+    .anchor-active {
+      top: -120px;
+      position: absolute;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h2:after {
+      background-color: #D53541;
+      margin-bottom: -4px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      display: block;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #CDD3DE;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .code-snippet {
+      background-color: #fff;
+      width: 100%;
+      border: 1px solid #CDD3DE;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      overflow-y: hidden;
+
+      pre.line-numbers {
+        color: #14bfab;
+        border-right: 1px solid #DDE5F1;
+        background-color: ghostwhite;
+        padding-left: 8px;
+        padding-right: 8px;
+        flex-shrink: 0;
+        overflow-y: hidden;
+        max-width: 32px;
+      }
+
+      pre.line-numbers, p, pre {
+        font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+        object-fit: none;
+      }
+    }
+
+    ol {
+      padding-left: 20px;
+
+      li {
+        line-height: 30px;
+      }
+    }
+  }
+}
+

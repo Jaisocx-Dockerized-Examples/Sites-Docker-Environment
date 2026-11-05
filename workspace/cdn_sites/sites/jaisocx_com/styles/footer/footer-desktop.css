@@ -1,0 +1,8 @@
+@media all and (min-width: 1025px) {
+  .footer-container {
+    width: 1000px !important;
+    justify-content: flex-end !important;
+  }
+}
+
+/*# sourceMappingURL=footer-desktop.css.map */

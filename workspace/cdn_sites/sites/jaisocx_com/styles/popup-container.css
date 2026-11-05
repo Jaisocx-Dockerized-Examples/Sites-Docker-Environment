@@ -1,0 +1,184 @@
+.main_popup_container {
+  position: fixed;
+  background-color: rgba(56, 65, 80, 0.3);
+  display: flex;
+  justify-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 0.2s linear;
+}
+.main_popup_container .popup-message-sent, .main_popup_container .popup-terms {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 5;
+  background-color: #fff;
+  width: 738px;
+  padding: 104px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: 0.2s linear transform;
+}
+.main_popup_container .popup-message-sent h3, .main_popup_container .popup-terms h3 {
+  margin: 0;
+}
+.main_popup_container .popup-message-sent .btn-popup-close, .main_popup_container .popup-terms .btn-popup-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  height: 24px;
+  width: 24px;
+  display: block;
+  background-image: url("/img/clarity_close-line.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+.main_popup_container .popup-message-sent svg {
+  width: 48px;
+  display: block;
+  margin: 48px 0;
+}
+.main_popup_container .popup-message-sent .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+.main_popup_container .popup-message-sent .path.circle {
+  -webkit-animation: dash 0.9s ease-in-out;
+  animation: dash 0.9s ease-in-out;
+}
+.main_popup_container .popup-message-sent .path.line {
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+  animation: dash 0.9s 0.35s ease-in-out forwards;
+}
+.main_popup_container .popup-message-sent .path.check {
+  stroke-dashoffset: -100;
+  -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  animation: dash-check 0.9s 0.35s ease-in-out forwards;
+}
+.main_popup_container .popup-message-sent p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25em;
+}
+.main_popup_container .popup-message-sent p.success {
+  color: #000;
+}
+.main_popup_container .popup-message-sent p.error {
+  color: #D06079;
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+.main_popup_container .popup-message-sent .btn-popup-ok {
+  display: block;
+  width: 216px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #D53541;
+  color: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+.main_popup_container .popup-terms .label-container {
+  margin: 40px 0;
+}
+.main_popup_container .popup-terms label {
+  display: flex;
+  line-height: 30px;
+}
+.main_popup_container .popup-terms label p {
+  margin: 0 0 0 1em;
+}
+.main_popup_container .popup-terms label a {
+  color: #000;
+  text-decoration: underline;
+  margin-left: 0.3em;
+}
+.main_popup_container .popup-terms label input {
+  width: 24px;
+  height: 24px;
+}
+.main_popup_container .popup-terms label input:checked {
+  accent-color: #1E2F41;
+}
+.main_popup_container .popup-terms label:not(:last-child) {
+  margin-bottom: 25px;
+}
+.main_popup_container .popup-terms .btn-popup-download {
+  min-width: 358px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  border-radius: 28px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: grab;
+  margin: 12px;
+  text-decoration: none;
+}
+.main_popup_container .popup-terms .disabled {
+  background-color: #dddddd !important;
+  color: black;
+}
+.main_popup_container .popup-terms .active {
+  background: #46BB7C;
+  color: white;
+}
+.main_popup_container .terms-disabled .btn-popup-download {
+  background-color: #CBCDCC;
+}
+.main_popup_container .popup-disable {
+  display: none;
+  transform: scale(0);
+  transition: 0.2s linear transform;
+}
+
+.popup_container-disable {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+/*# sourceMappingURL=popup-container.css.map */

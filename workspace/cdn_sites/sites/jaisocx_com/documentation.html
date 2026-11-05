@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Jaisocx Free PHP Web Server Documentation</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://jaisocx.com/docs" rel="canonical"/>
+  <link href="styles/docs/documentation.css?ver=3.0.2" rel="stylesheet">
+  <meta content="Get to know how to publish Your site fast, secure and easily with Jaisocx free php web server. Here is the full server documentation."
+    name="description">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Full Jaisocx Web Server Documentation",
+    "datePublished": "2023-10-21T20:00:00+00:00",
+    "dateModified": "2023-10-21T20:00:00+00:00",
+    "author": [
+    {
+      "@type": "Organization",
+      "name": "Jaisocx",
+      "url": "https://jaisocx.com/"
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="header">
+  <div class="startup">
+  <div class="logo">
+    <a href="/"><img alt="Jaisocx logo" src="img/jaisocx-logo.webp"></a>
+  </div>
+  </div>
+</header>
+<div class="menu-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<main class="main">
+  <div class="main-container">
+  <div class="bread"></div>
+  <aside class="aside" id="aside-nav">
+    <div class="aside-header"><h3>TOPICS</h3></div>
+    <div class="col">
+    <div class="tabs">
+      <div class="tab" id="installing">
+      <input id="rd1" name="rd" type="radio">
+      <label class="tab-label" for="rd1">Install</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#installing-win-anchor');"
+         id="installing-win-nav">Windows</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#installing-macos-anchor');"
+         id="installing-macos-nav">Mac OS</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#installing-linux-anchor');"
+         id="installing-linux-nav">Linux</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#installing-docker-anchor');"
+         id="installing-docker-nav">Docker</a>
+      </div>
+      </div>
+      <div class="tab" id="implementing">
+      <input id="rd2" name="rd" type="radio">
+      <label class="tab-label" for="rd2">Publish Your Site</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-plan-anchor');"
+         id="implementing-plan-nav">Static Web Contents</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#cache-except-anchor');"
+         id="cache-except-nav">File exclusions</a>
+        <a href="javascript: scrollWithoutHighlight('#redirection-anchor');"
+         id="redirection-nav">Redirection</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-prepare-anchor');"
+         id="implementing-prepare-nav">Charset encoding</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-wordpress-anchor');"
+         id="implementing-wordpress-nav">Publish Wordpress build</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-install-anchor');"
+         id="implementing-install-nav">Publish Angular build</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-deploy-anchor');"
+         id="implementing-deploy-nav">Publish React build</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#implementing-configure-anchor');"
+         id="implementing-configure-nav">Publish VueJS build</a>
+      </div>
+      </div>
+      <div class="tab" id="administrating">
+      <input id="rd3" name="rd" type="radio">
+      <label class="tab-label" for="rd3">HTTPS</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#administrating-certbot-anchor');"
+         id="administrating-certbot-nav">Create free certificate</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#administrating-jks-anchor');"
+         id="administrating-jks-nav">Import purchased certificate</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#administrating-prepare-anchor');"
+         id="administrating-prepare-nav">Config attrs for HTTPS</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#administrating-httpversions-anchor');"
+         id="administrating-httpversions-nav">HTTP Versions supported</a>
+      </div>
+      </div>
+      <div class="tab" id="reporting">
+      <input id="rd4" name="rd" type="radio">
+      <label class="tab-label" for="rd4">SQL to JSON</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#reporting-plan-anchor');"
+         id="reporting-plan-nav">SQL to JSON</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#reporting-prepare-anchor');"
+         id="reporting-prepare-nav">Caching SQL to JSON results</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#reporting-params-anchor');"
+         id="reporting-params-nav">SQL Parameters</a>
+      </div>
+      </div>
+      <div class="tab" id="auth">
+      <input id="rd5" name="rd" type="radio">
+      <label class="tab-label" for="rd5">Security</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#auth-basic-anchor');" id="auth-basic-nav">Authorization:
+        Basic</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#auth-jwt-anchor');" id="auth-jwt-nav">Authorization:
+        JSON Web Token</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#auth-roles-anchor');" id="auth-roles-nav">Users
+        and Roles</a>
+      </div>
+      </div>
+      <div class="tab" id="proxy">
+      <input id="rd6" name="rd" type="radio">
+      <label class="tab-label" for="rd6">Proxy</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#proxy-index-anchor');"
+         id="proxy-index-nav">Proxy alias</a>
+      </div>
+      </div>
+      <div class="tab" id="spec">
+      <input id="rd7" name="rd" type="radio">
+      <label class="tab-label" for="rd7">Config.xml specification</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#spec-jwt-anchor');"
+         id="spec-jwt-nav">jwt</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#spec-server-anchor');" id="spec-server-nav">server</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#spec-domain-anchor');" id="spec-domain-nav">domain</a>
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#spec-alias-anchor');" id="spec-alias-nav">alias</a>
+      </div>
+      </div>
+      <div class="tab" id="etcserverprops">
+      <input id="rd8" name="rd" type="radio">
+      <label class="tab-label" for="rd8">etc/server.properties specification</label>
+      <div class="tab-content">
+        <a class="nav-btn" href="javascript: scrollWithoutHighlight('#etcserverprops-definition-anchor');"
+         id="etcserverprops-definition-nav">etc/server.properties file specifications</a>
+      </div>
+      </div>
+    </div>
+    </div>
+  </aside>
+  <section class="doc-container">
+    <div class="anchor-active" id="installing-win-anchor"></div>
+    <div class="underline-container">
+    <h2>Install under Windows</h2>
+    </div>
+    <h3>System Requirements</h3>
+    <h4>Java</h4>
+    <p>The application is compiled and runs on Java version 21. You need to download and install JDK&nbsp;21 (or
+    later) from the official Oracle website: <a
+      href="https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html"
+      target="_blank">
+      https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html</a>
+    <span><img alt="external-link" src="img/external-link.svg"/></span></p>
+    <h4>PHP</h4>
+    <p>Only needed if you use for backend tasks, e.g. dynamic html producing, .php files, php-fpm install is required.</p>
+    <p>Currently The PHP support was tested with the ORO, the Symfony based complex application,
+    Wordpress CMS and Magento online shop application.</p>
+    <p>php-fpm service should listen on localhost on any free port, default is 9000.
+    Please, specify the php-fpm endpoint in your project's etc/server.properties file.
+    Example: php.fpm.host=localhost:9000</p>
+
+    <h3>Run Jaisocx Server</h3>
+    <ol>
+    <li>Go to "cmd-windows" folder</li>
+    <li>Double click on "server_run.cmd"</li>
+    </ol>
+    <p>After successfully launching the application, you will see the Jaisocx icon in the system tray. Server
+    management (start, stop, restart and exit) is carried out through the icon in the system tray by
+    clicking the right mouse button.</p>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="installing-macos-anchor"></div>
+    <div class="underline-container">
+    <h2>Install under Mac OS</h2>
+    </div>
+    <h3>System Requirements</h3>
+    <h4>Java</h4>
+    <p>The application is compiled and runs on Java version 21. You need to download and install JDK&nbsp;21 (or
+      later) from the official Oracle website: <a
+        href="https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html"
+        target="_blank">
+        https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html</a>
+      <span><img alt="external-link" src="img/external-link.svg"/></span></p>
+      <h4>PHP</h4>
+      <p>Only needed if you use for backend tasks, e.g. dynamic html producing, .php files, php-fpm install is required.</p>
+      <p>Currently The PHP support was tested with the ORO, the Symfony based complex application,
+      Wordpress CMS and Magento online shop application.</p>
+      <p>php-fpm service should listen on localhost on any free port, default is 9000.
+      Please, specify the php-fpm endpoint in your project's etc/server.properties file.
+      Example: php.fpm.host=localhost:9000</p>
+  
+    <h3>Run Jaisocx Server</h3>
+    <ol>
+    <li>Go to "cmd-macos" folder</li>
+    <li>Open Terminal app and cd to current folder</li>
+    <li>Run command in terminal</li>
+    </ol>
+    <div class="code-snippet">
+<pre class="code">
+bash ./server-run.sh
+</pre>
+    </div>
+
+    <p>After successfully launching the application, you will see the Jaisocx icon in the system tray. Server
+    management (start, stop, restart and exit) is carried out through the icon in the system tray by
+    clicking the right mouse button.</p>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="installing-linux-anchor"></div>
+    <div class="underline-container">
+    <h2>Install under Linux</h2>
+    </div>
+    <h3>System Requirements</h3>
+    <h4>Java</h4>
+    <p>The application is compiled and runs on Java version 21. You need to download and install JDK&nbsp;21 (or
+      later) from the official Oracle website: <a
+        href="https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html"
+        target="_blank">
+        https://www.oracle.com/cis/java/technologies/javase/jdk21-archive-downloads.html</a>
+      <span><img alt="external-link" src="img/external-link.svg"/></span></p>
+      <h4>PHP</h4>
+      <p>Only needed if you use for backend tasks, e.g. dynamic html producing, .php files, php-fpm install is required.</p>
+      <p>Currently The PHP support was tested with the ORO, the Symfony based complex application,
+      Wordpress CMS and Magento online shop application.</p>
+      <p>php-fpm service should listen on localhost on any free port, default is 9000.
+      Please, specify the php-fpm endpoint in your project's etc/server.properties file.
+      Example: php.fpm.host=localhost:9000</p>
+
+    <h3>Run Jaisocx Server</h3>
+    <h4>Run in the Terminal window</h4>
+    <p>cd to the folder, where you unpacked the Jaisocx application, cd to "cmd-linux" folder.</p>
+    <div class="code-snippet">
+<pre class="code">
+bash ./server-run.sh
+</pre>
+    </div>
+    <p>You will see log output in the terminal window</p>
+    <pre>
+===============================================
+JAISOCX API Web Server 2021/5.5 (Java MVC, PHP,</br>SQL-to-JSON, JS Frameworks support) is active
+===============================================
+</pre>
+    <p>Now you can access Jaisocx default page under http://localhost/, or, if port 80 on your system is busy,
+    at http://localhost:2288/</p>
+    <p>Press Ctrl-C to stop the server.</p>
+
+    <h4>Run as a service</h4>
+    <p>cd to "cmd-linux/service-template" folder, edit jaisocx.service file. You need to change
+    "WorkingDirectory" parameter value
+    to the absolute path to your cmd-linux folder on your machine.</p>
+    <p>Run this script in terminal, being in cmd-linux folder:</p>
+    <div class="code-snippet">
+<pre class="code">
+bash ./install.sh
+</pre>
+    </div>
+    <p>The server should be running the default Jaisocx home page. Now you can manage your server
+    with systemctl command to start, restart, stop the jaisocx service. For example:</p>
+    <div class="code-snippet">
+<pre class="code">
+sudo systemctl restart jaisocx
+  or
+sudo systemctl stop jaisocx
+  or
+sudo systemctl status jaisocx
+</pre>
+    </div>
+
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="installing-docker-anchor"></div>
+    <div class="underline-container">
+    <h2>Use with Docker</h2>
+    </div>
+    <h3>System Requirements</h3>
+    <h4>Docker, docker-compose</h4>
+    <p>e.g. under Windows, it is very hard to install all required php extensions .dlls for a php application.
+    that is why a docker-compose setup is recommended. of course, you can use docker setup on any other OS,
+    since you're ensured in docker usage advantages. Docker installation instructions can be found at docker
+    official site at
+    <a href="https://docs.docker.com/engine/install/" target="_blank">https://docs.docker.com/engine/install/</a></p>
+    <p>Here is one more awesome posts at upwork:
+    <a href="https://www.upwork.com/resources/how-to-install-docker-compose" target="_blank">Install
+      docker-compose</a></p>
+    <h3>Use jaisocx with docker-compose</h3>
+    <h4>Jaisocx docker image on dockerhub</h4>
+    <p>
+    <a href="https://hub.docker.com/repository/docker/jaisocx/webserver/general"
+       target="_blank">jaisocx/webserver</a>
+    </p>
+    <h4>The dockerized example of a site with backend in Symfony framework served by Jaisocx https server</h4>
+    <p>
+      <p>Feel free to use a sample setup from the public github repo:</p>
+      <a href="https://github.com/jaisocx-org/symfony-docker-setup"
+                             target="_blank">https://github.com/jaisocx-org/symfony-docker-setup</a>
+    </p>
+    <h4>The dockerized example of a site with backend in Laravel framework served by Jaisocx https server</h4>
+    <p>
+      <p>Feel free to use a sample setup from the public github repo:</p>
+      <a href="https://github.com/jaisocx-org/laravel-docker-setup"
+                             target="_blank">https://github.com/jaisocx-org/laravel-docker-setup</a>
+    </p>
+    <h4>The dockerized example of a site with backend in Wordpress Content Management System served by Jaisocx https server</h4>
+    <p>
+      <p>Feel free to use a sample setup from the public github repo:</p>
+      <a href="https://github.com/jaisocx-org/wordpress-docker-setup"
+                             target="_blank">https://github.com/jaisocx-org/wordpress-docker-setup</a>
+    </p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-plan-anchor"></div>
+    <div class="underline-container">
+    <h2>Publish Your Site</h2>
+    </div>
+
+    <h3>Static web contents</h3>
+    <p>In the "etc/" folder, the "server.properties" file contains path to server configuration file.
+    Property is called "app.config.file".
+    Set your own, if needed. Further readings show how to edit config file, in order to publish your
+    contents.</p>
+
+    <h4>Publish HTML app folder</h4>
+    <p>Default app is stored in "apps/congratulations" folder, config is stored in
+    "app/congratulations/conf/htp-conf.xml" file.</p>
+    <p>In order to publish your first site, the conf file should be configured as in this example:</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm
+    path="apps/congratulations/conf/idm-conf.xml"&gt;
+  &lt;/conf-idm&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      &lt;server
+          port="80"
+          alternative-port="2288"&gt;
+        &lt;domain name="localhost"&gt;
+          &lt;alias
+            art="folder"
+            url="/"
+            path="apps/congratulations/www/"
+            cache="cache"
+            list="false"
+            each-folder-content-file-name="index.html"/&gt;
+        &lt;/domain&gt;
+      &lt;/server&gt;
+    &lt;/servers&gt;
+  &lt;/conf-http&gt;
+&lt;/conf&gt;
+</pre>
+    </div>
+    <p>Explaination: servers tag contains server tags, those define servers, listening on a specific port.
+    Under each listening port, you can publish your domains. Just change &lt;localhost&gt; tag name to your
+    domain, registered on DNS server,
+    or specified in /etc/hosts file.</p>
+    <p>an &lt;alias&gt; tags are defining urls to publish contents under current domain, and paths to source
+    files. alias can be of art folder or file.
+    url attribute specifies the url to publish, and path atibute - the path to html/css/js contents.</p>
+    <p>During development, the cache attribute should be "update", and for publishing live, better speed is with
+        <i class="highlight">cache="cache"</i></p>
+    <p>List attribute for aliases of art folder, specify whether to publish list of files in a folder, if no
+    default html file for the folder specified.</p>
+    <p>each-folder-content-file-name shows the file, that will be shownon folder url. if omitted, the listing of
+        directory will be shown, if attribute <i class="highlight">list="true"</i></p>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="cache-except-anchor"></div>
+    <div class="underline-container">
+    <h2>File exclusions</h2>
+    </div>
+    <p>Jaisocx server is equipped with a built-in resource caching mechanism. However, it is possible to set
+    exceptions to prevent the server from caching these files.</p>
+    <h4>Specifying exceptions</h4>
+    <p>You can specify exceptions by adding the "cache-except" attribute to the "alias" tag of your
+    configuration file. After the "=" sign, file extensions are indicated that the server should not cache.
+    Extensions can be one or more. Multiple file extensions are separated by commas.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm path="apps/congratulations/conf/idm-conf.xml"&gt;
+  &lt;/conf-idm&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      &lt;server
+          port="80"
+          alternative-port="2288"&gt;
+        &lt;domain name="localhost"&gt;
+          &lt;alias art="folder"
+            ...
+            cache-except="php, mp4"
+            .../&gt;
+        &lt;/domain&gt;
+      &lt;/server&gt;
+    &lt;/servers&gt;
+  &lt;/conf-http&gt;
+&lt;/conf&gt;
+</pre>
+    </div>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="redirection-anchor"></div>
+    <div class="underline-container">
+    <h2>Redirection</h2>
+    </div>
+    <p>Jaisocx server supports 303 redirects. In the near future it will be possible to manually specify the
+    desired redirect code.</p>
+    <h4>Specifying a redirection</h4>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm path="apps/congratulations/conf/idm-conf.xml"&gt;
+  &lt;/conf-idm&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      &lt;server
+          port="80"
+          alternative-port="2288"&gt;
+        &lt;domain name="localhost"&gt;
+          &lt;alias
+            art="redirection"
+            url="/redirect/"
+            path="https://google.com/" /&gt;
+        &lt;/domain&gt;
+      &lt;/server&gt;
+    &lt;/servers&gt;
+  &lt;/conf-http&gt;
+&lt;/conf&gt;
+</pre>
+    </div>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-prepare-anchor"></div>
+    <div class="underline-container">
+    <h2>Charset Encoding</h2>
+    </div>
+    <h4>Publishing charset</h4>
+    <p>You can specify any charset name, supported by Java and all browsers, how the web contents will be
+    encoded at sending to browsers.
+    Attribute <i class="highlight">publish-charset="UTF-8"</i> for example, has to be set on an alias tag, domain tag, or server tag.
+    if the alias doesn't have this attribute,
+    the domain publish-charset attribute will be used, if omitted, then server tag attribute will be
+    used.</p>
+    <p>Attribute <i class="highlight">source-charset="charset of your saved file"</i>, 
+        e.g. <i class="highlight">source-charset="UTF-8"</i> has to be set, if you're sure,
+    the charset
+    encoding, that your text files were saved.</p>
+    <p>If publish-charset and source-charset attributes have the same value, then no re-encoding will be performed,
+    and the speed of server startup and response will be higher. It is recommended.</p>
+
+    <h4>If you're not sure</h4>
+    <p>If you aren't sure, what encoding has saved file, you can specify attribute
+        <i class="highlight">language="language"</i> and
+        attribute <i class="highlight">source-charset="*"</i>,
+    the language value should be equal to filename without .txt extension, from the alphabets folder in the
+    jaisocx app root.
+    e.g. <i class="highlight">language="german" source-charset="*" publish-charset="UTF-8"</i></p>
+    <p>You can add your own language file into alphabets folder, the file has to contain all chars of your language,
+    not delimitered by any char or whitespace, obligatory saved in UTF-8 encoding.</p>
+    <p>If Jaisocx package doesn't contain your language alphabet, feel free to support us with your language
+    .txt file per email.
+    We will provide it in later releases for your country citizens. Thank You.</p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-wordpress-anchor"></div>
+    <div class="underline-container">
+    <h2>Publish Wordpress App</h2>
+    </div>
+    <p>This example shows how to publish a Wordpress app.
+    url atribute with value ${any} is required for the routing by index.php Wordpress CMS entrypoint.
+    </p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;domain name="wordpress-example.jaisocx.loc"&gt;
+  &lt;alias
+    art="file"
+    url="/${any}"
+    path="Application Data/applications/default/www/applications/wordpress/index.php"
+    cache="update"/&gt;
+  &lt;alias
+    art="folder"
+    url="/"
+    path="Application Data/applications/default/www/applications/wordpress/"
+    cache="cache"
+    cache-except="php"
+    list="false"
+    each-folder-content-file-name="index.php"/&gt;
+&lt;/domain&gt;
+</pre>
+    </div>
+
+    <p>You can also have a look on the ready config file and server.properties file for wordpress install on the
+    github site:
+    <a href="https://github.com/jaisocx-org/wordpress-docker-setup" target="_blank">https://github.com/jaisocx-org/wordpress-docker-setup</a>,
+    the server config.xml You'll find in the repo's folder docker/jaisocx-http/conf/http-conf.xml
+    and the server.properties in docker/jaisocx-http folder.
+    the most important for php-fpm is:
+    <i class="highlight">php.fpm.host=localhost:9000</i>
+    if having troubles with PHP install, feel free to use the ready for serve docker enabled repo.
+    </p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-install-anchor"></div>
+    <div class="underline-container">
+    <h2>Publish Angular build</h2>
+    </div>
+    <p>This example shows how to publish a build of an angular app.
+    url atribute with value ${any} is required for the js framework routing.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;domain name="angular-example.jaisocx.loc"&gt;
+  &lt;alias art="file"
+    url="/${any}"
+    path="Application Data/applications/default/www/applications/angular/index.html"
+    cache="cache"/&gt;
+  &lt;alias art="folder"
+    url="/"
+    path="Application Data/applications/default/www/applications/angular/"
+    cache="cache"
+    list="true"
+    each-folder-content-file-name="index.html"/&gt;
+&lt;/domain&gt;
+</pre>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-deploy-anchor"></div>
+    <div class="underline-container">
+    <h2>Publish React build</h2>
+    </div>
+    <p>This example shows how to publish a build of an react app.
+    url atribute with value ${any} is required for the js framework routing.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;domain name="react-example.jaisocx.loc"&gt;
+  &lt;alias art="file"
+    url="/${any}"
+    path="Application Data/applications/default/www/applications/reactjs/index.html"
+    cache="cache"/&gt;
+  &lt;alias art="folder"
+    url="/"
+    path="Application Data/applications/default/www/applications/reactjs/"
+    cache="cache"
+    list="true"
+    each-folder-content-file-name="index.html"/&gt;
+&lt;/domain&gt;
+</pre>
+    </div>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="implementing-configure-anchor"></div>
+    <div class="underline-container">
+    <h2>Publish VueJS build</h2>
+    </div>
+    <p>This example shows how to publish a build of an VueJS app.
+    url atribute with value ${any} is required for the js framework routing.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;domain name="vue-example.jaisocx.loc"&gt;
+  &lt;alias
+    art="file"
+    url="/${any}"
+    path="Application Data/applications/default/www/applications/vuejs/index.html"
+    cache="cache"/&gt;
+  &lt;alias
+    art="folder"
+    url="/"
+    path="Application Data/applications/default/www/applications/vuejs/"
+    cache="cache"
+    list="true"
+    each-folder-content-file-name="index.html"/&gt;
+&lt;/domain&gt;
+</pre>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="administrating-certbot-anchor"></div>
+    <div class="underline-container">
+    <h2>Create free certificate</h2>
+    </div>
+    <p>Jaisocx server uses JKS files to get certificates info for secure HTTPS connections.</p>
+    <p>There is a script for generation of a .jks file, using free certificates 
+        library <a href="https://certbot.eff.org/"
+                                  target="_blank">certbot tool</a>.</p>
+    <ul>
+        <li>First, edit file ssl/Linux/get-cert.sh. Put your email address, domain name and .jks password in the most upper block of the file.</li>
+    </ul>
+    <div class="code-snippet">
+<pre class="code">
+#!/bin/bash
+
+#=========== PLEASE, SET HERE YOUR PARAMS ==============================
+export EMAIL="illia.polianskyi@jaisocx.com"
+export DOMAIN="politest.fun"
+
+# Specify the keystore password 
+# that is used to protect the integrity of the keystore.
+# Keystore password has to be at least 6 characters.
+
+JKS_PASSWORD=adminpass
+
+#===============================================================
+
+</pre>
+    </div>
+
+    <ul>
+        <li>Upload this file to Your host where the web server will be running.</li>
+        <li>Get sure, this host's IP address is mapped at Your DNS provider to Your domain name, 
+        for that You wish to get the certificate.</li>
+        <li>Get sure, the port 80 is free, otherwise please stop server running on port 80.</li>
+        <li>Then, run the script as mentioned here:</li>
+    </ul>
+    <div class="code-snippet">
+<pre class="code">
+cd ssl/Linux
+./get-cert.sh
+</pre>
+    </div>
+    <p>The generated free .jks file, secured with password, will be at 
+    <pre>
+ssl/Linux/certs/&lt;domain-name&gt;/&lt;domain-name&gt;.jks        
+</pre></p>
+<p>Now You can use this .jks file for https, as described in section below: <a href="#administrating-prepare-anchor">Config attrs for HTTPS</a>.</p>
+  </section>
+  
+  
+  <section class="doc-container">
+    <div class="anchor-active" id="administrating-jks-anchor"></div>
+    <div class="underline-container">
+    <h2>Import purchased certificate</h2>
+    </div>
+    <p>Jaisocx server uses JKS files to get certificates info for secure HTTPS connections.
+    to create a store, you need first buy a certificate at one of Certification authorities in the internet,
+    or generate a self-signed one for free, for example with <a href="https://certbot.eff.org/"
+                                  target="_blank">certbot tool</a>.</p>
+    <p>As you got your cert private key and cert files, navigate to a folder in Jaisocx app root "ssl", and
+    choose
+    subfolder for your operating system, e.g. Linux. There you'll find generate-jks.sh file, where you have
+    to edit parameters,
+    pointing to your cert files. for example, CRT_FILE is a quoted-surrounded absolute path to your
+    certificate text file,
+    .crt or .pem or similar. PRIVATE_KEY - accordingly the path to private key file.</p>
+    <p>If you generated a cert with certbot, you won't have Root certifiacte authority file ROOT_CA, nor
+    SUB_CA, used as chain in your certificate. then provide please only CRT_FILE and PRIVATE_KEY, not
+    ROOT_CA nor SUB_CA, and edit script on
+    line 54,
+    <pre>cat "$SUB_CA" "$ROOT_CA" "$CRT_FILE" > "$CHAIN_CA"</pre>
+    , make to
+    <pre>cat "$CRT_FILE" > "$CHAIN_CA"</pre>
+    <p>You can watch in example-generate-jks.sh, how should params to be set.
+    As you put all script params in the generate-jks.sh file, run command</p>
+    <div class="code-snippet">
+    <pre class="code">bash ./generate-jks.sh</pre>
+    </div>
+    <p>Now, as to script param TARGET_DIR, your .jks store file should be there.
+    For each certificate chain / private key pair, please create a separate jks file. That's all about generating
+    .jks.</p>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="administrating-prepare-anchor"></div>
+    <div class="underline-container">
+    <h2>Config attrs for HTTPS</h2>
+    </div>
+    <p>To enable HTTPS on a server endpoint, default port 443, you need first create .jks file, as described in
+    the previous chapter.</p>
+    <p>Then, you have to create a &lt;server&gt; tag for listening on port 443, specifying .jks params, exactly
+    the same as in generate-jks.sh file.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;server
+    port="443"
+    alternative-port="8443"
+    secure="true"&gt;
+  &lt;domain
+    name="example.loc"
+    jks-path="ssl/Linux/jaisocx.jks"
+    jks-alias="jaisocx"
+    jks-passphrase="adminpass"
+    &gt;
+      &lt;alias
+        art="folder"
+        url="/"
+        ...
+        ...
+</pre>
+    </div>
+    <p>Domain tag param jks-path has to contain path to stored .jks file.</p>
+    <p>jks-alias the JKS_ALIAS value in the generate-jks.sh file.</p>
+    <p>jks-pasfrase should contain the
+    password, you've specified in
+    generate-jks.sh file under param JKS_PASSWORD.</p>
+    <p>Please, notice, that you can create a secure conection with .jks, containing cert file for a specific
+    domain,
+    and exactly this domain should be published (change example.loc to your domain)</p>
+    <p>Save config, restart the server, open in browser at https://your-domain</p>
+    <p>Ready</p>
+  </section>
+  
+  <section class="doc-container">
+    <div class="anchor-active" id="administrating-httpversions-anchor"></div>
+    <div class="underline-container">
+    <h2>HTTP Versions supported</h2>
+    </div>
+    <p>With HTTPS enabled, <i class="highlight">&lt;server port="443" secure="true"&gt;</i> in modern browsers, your website will be automatically published under HTTP/2,
+    that is faster than HTTP/1.1</p>
+    <p>It's the matter of browser or any other HTTP client, what HTTP version to choose, to communicate with Jaisocx
+    Web Server.
+    The web server uses automatically the HTTP version supported by the client, e.g. Chrome, Safari, Edge,
+    PostMan or Curl.</p>
+    <p>E.g. in Google Chrome browser, in the developer console Network tab, you can apply "Protocol" column,
+    then you'll see after request in Protocol column, if value set to "h2", then the site is under HTTP/2.</p>
+    <p>HTTP/2 without TLS is not provided by Jaisocx, since browsers don't support HTTP/2 over plain unencrypted
+    connection.</p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="reporting-plan-anchor"></div>
+    <div class="underline-container">
+    <h2>SQL to JSON</h2>
+    </div>
+    <p>Jaisocx provides a way, to execute SQL queries and send the response in JSON format.
+    For this case, the art of the alias should be set "sql".</p>
+    <p>Here is the example of an SQL alias, and required for running SQL queries, jdbc connection to your
+    database server <strong>for downloaded releases til 21th of October 2023</strong>:</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm path="apps/congratulations/conf/idm-conf.xml"/&gt;
+  &lt;conf-jdbc&gt;
+    &lt;jdbc-connections&gt;
+      &lt;group-by-driver driver-id="MYSQL" driver-class="com.mysql.cj.jdbc.Driver" proto="jdbc:mysql://"
+        port="3306"&gt;
+        &lt;group-by-url url="jdbc:mysql://localhost:3306/wp-vova"&gt;
+          &lt;jdbc-alias <span style="color: red;">id="mysql"</span> database-user-name="root" database-user-password="root"/&gt;
+        &lt;/group-by-url&gt;
+      &lt;/group-by-driver&gt;
+    &lt;/jdbc-connections&gt;
+  &lt;/conf-jdbc&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      &lt;server port="80" alternative-port="2288"&gt;
+        &lt;domain
+            name="localhost"
+            document-root="../apps/congratulations/www"
+        &gt;
+          &lt;alias art="sql"
+             url="/mysql-utf8/"
+             title="MySQL"
+             <span style="color: red;">connection="mysql"</span>
+             transport="json"
+             cache="update"
+             authorization="DATABASE"&gt;
+            &lt;sql&gt;&lt;![CDATA[
+              SELECT option_id, option_name, autoload23 FROM wp_options;
+            ]]&gt;&lt;/sql&gt;
+          &lt;/alias&gt;
+          ...
+</pre>
+    </div>
+    <p>In the alias tag, conection attribute value has to be equal to jdbc-alias tag id attribute.</p>
+    <p>Jaisocx supports currently only MySQL, Postgres, MS SQLServer, Oracle. Here are examples for
+    jdbc connections specs for your database <strong>for downloaded releases til 21th of October 2023</strong>.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm path="Application Data/applications/default/conf/idm-conf-default.xml"&gt;
+  &lt;/conf-idm&gt;
+  &lt;conf-jdbc&gt;
+    &lt;!-- JDBC CONNECTIONS ALIASES --&gt;
+    &lt;jdbc-connections&gt;
+      &lt;group-by-driver driver-id="ORACLE" driver-class="oracle.jdbc.driver.OracleDriver"
+           proto="jdbc:oracle:thin:@//" port="1521"&gt;
+        &lt;group-by-url url="jdbc:oracle:thin:@//127.0.0.1:1521/ORCLPDB1"&gt;
+          &lt;jdbc-alias id="orcl" database-user-name="SYSTEM" database-user-password="root"/&gt;
+        &lt;/group-by-url&gt;
+      &lt;/group-by-driver&gt;
+      &lt;group-by-driver driver-id="MYSQL" driver-class="com.mysql.cj.jdbc.Driver" proto="jdbc:mysql://"
+           port="3306"&gt;
+        &lt;group-by-url url="jdbc:mysql://localhost:3306/WpTest"&gt;
+          &lt;jdbc-alias id="mysql" database-user-name="root" database-user-password="root123"/&gt;
+        &lt;/group-by-url&gt;
+      &lt;/group-by-driver&gt;
+      &lt;group-by-driver driver-id="MICRSOSFTSQLServer" driver-class="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+           proto="jdbc:sqlserver://" port="51570"&gt;
+        &lt;group-by-url url="jdbc:sqlserver://localhost:51570;databaseName=jaisocx-testing;encrypt=false;"&gt;
+          &lt;jdbc-alias id="mssql" database-user-name="root" database-user-password="root"/&gt;
+        &lt;/group-by-url&gt;
+      &lt;/group-by-driver&gt;
+      &lt;group-by-driver driver-id="POSTRESQL" driver-class="org.postgresql.Driver"
+           proto="jdbc:postgresql://" port="5432"&gt;
+        &lt;group-by-url url="jdbc:postgresql://localhost:5432/postgres"&gt;
+          &lt;jdbc-alias id="postgres" database-user-name="postgres" database-user-password="root"/&gt;
+        &lt;/group-by-url&gt;
+      &lt;/group-by-driver&gt;
+    &lt;/jdbc-connections&gt;
+  &lt;/conf-jdbc&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      ...
+      ...
+</pre>
+    </div>
+
+    <p>From 22th October 2023, Jaisocx supports also sqlite3 database.
+    And here is the example of newer connection specification in the config.xml</p>
+    <p>The value of &lt;connection driver="" should be one of the constants:
+    mysql, oracle, sqlserver, postgresql, sqlite3.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm
+    path="Application Data/applications/default/conf/idm-conf-default.xml"&gt;
+  &lt;/conf-idm&gt;
+  &lt;conf-jdbc&gt;
+    &lt;connection
+      driver="mysql"
+      url="jdbc:mysql://localhost:3306/cv"
+      id="mysqlillia"
+      user="root" password="root" /&gt;
+    &lt;connection
+      driver="oracle"
+      url="jdbc:oracle:thin:@localhost:1521:xe"
+      id="orcl"
+      user="system" password="oracle" /&gt;
+    &lt;connection
+      driver="sqlserver"
+      url="jdbc:sqlserver://localhost:51570;databaseName=jaisocx-testing;encrypt=false;"
+      id="mssql"
+      user="root" password="root" /&gt;
+    &lt;connection
+      driver="postgresql"
+      url="jdbc:postgresql://localhost:5432/postgres"
+      id="postgres"
+      user="postgres" password="root" /&gt;
+    &lt;connection
+      driver="sqlite3"
+      url="jdbc:sqlite:/home/illia/Documents/JAISOCX/WEB/jaisocx-current/sqlite3-dbs/jaisocx-test.db"
+      id="sqlite3"
+      user="" password="" /&gt;
+  &lt;/conf-jdbc&gt;
+  &lt;conf-http&gt;
+  &lt;servers&gt;
+    ...
+    ...
+</pre>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="reporting-prepare-anchor"></div>
+    <div class="underline-container">
+    <h2>Caching SQL to JSON results</h2>
+    </div>
+    <p>Jaisocx doesn't create cached JSON on server startup, that is why,
+    if you'd like to have JSON in 3ms instead of 900ms, just use alias attribute 
+    <i class="highlight">cache="first-call"</i>.
+    In such case, on first url call, the database query will be executed, and JSON result will be stored
+    in cache, performing on further calls to this url very fast responses from cache.</p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="reporting-params-anchor"></div>
+    <div class="underline-container">
+    <h2>SQL parameters</h2>
+    </div>
+    <p>Here is an example, how you can pass request parameters to sql statement.</p>
+    <p>Supposing, you access sql-to-json endooint in browser or js function at the url:
+    "https://example.com/with-params?option1=siteurl&option2=whatever"</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;alias
+  url="/with-params"
+  art="sql"
+  connection="orcl"
+  cache="update"&gt;
+  &lt;sql&gt;&lt;![CDATA[SELECT * FROM wp_options
+    where option_name like ? or option_name like ?;]]&gt;
+  &lt;/sql&gt;
+  &lt;arg
+    position="1"
+    sql-type="VARCHAR"
+    request-field-name="option1"/&gt;
+  &lt;arg
+    position="2"
+    sql-type="VARCHAR"
+    request-field-name="option2"/&gt;
+&lt;/alias&gt;
+</pre>
+    </div>
+
+    <p>with jwt payload and POST body json objects,
+      you can use json paths for accessing json children like, e.g.
+      <i class="highlight">request-field-name="$json.cities[0].name"</i>, 
+      to pass as parameter strigified JSON representation,
+      you can write this: <i class="highlight">request-field-name="$json.{}"</i> 
+      or <i class="highlight">request-field-name="$jwt.{}"</i>
+      </p>
+    <p>Here is an example, how to pass as a sql query parameter,
+      the POST request body JSON property, e.g. named "option_name",
+      or Authorization http request header json web token payload property, e.g. named "user".</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;alias
+  url="/with-params"
+  art="sql"
+  connection="orcl"
+  cache="update"
+  authorization="jwt"
+  jwt="jwt-by-idm-1"&gt;
+  &lt;sql&gt;&lt;![CDATA[SELECT * FROM tb_example
+    where user_name like ? and option_name like ?;]]&gt;
+  &lt;/sql&gt;
+  &lt;arg
+    position="1"
+    sql-type="VARCHAR"
+    request-field-name="$jwt.user"/&gt;
+  &lt;arg
+    position="2"
+    sql-type="VARCHAR"
+    request-field-name="$json.option_name"/&gt;
+&lt;/alias&gt;
+</pre>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="auth-basic-anchor"></div>
+    <div class="underline-container">
+    <h2>Authorization: Basic</h2>
+    </div>
+    <p>Jaisocx web server provides a way to secure an url with Basic authoriazation method.
+    For securing an url, provide in according alias tag folowing atributes:
+    <i class="highlight">authorization="basic"</i>
+    </p>
+    <p>The username and pass for accessing such resource, is specified in idm-conf.xml configuration file.
+    Here is an example of an idm-conf.xml file, specifying user with username "admin" and password "adminpass",
+    having access rights for example to secured url, located under localhost:80/</p>
+    <p>Please notice, that a granted alias url should contain the port number, always.</p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf-idm&gt;
+  &lt;user
+    id="admin"
+    password="adminpass"
+    granted-roles="auth1" /&gt;
+  &lt;role
+      id="auth1"&gt;
+    &lt;granted-alias
+      url="localhost:2288/" /&gt;
+    &lt;granted-alias
+      url="localhost:80/" /&gt;
+  &lt;/role&gt;
+&lt;/conf-idm&gt;
+</pre>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="auth-jwt-anchor"></div>
+    <div class="underline-container">
+    <h2>Authorization: JSON Web Token</h2>
+    </div>
+    <p>Jaisocx web server provides an easy way to secure an url with JSON web token with minimum configuration needed
+    by default,
+    and wide range of customization possibilities. The example conf.xml configuration snippet is here:
+    </p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf&gt;
+  &lt;conf-idm
+    path="Application Data/applications/default/conf/idm-conf-default.xml"/&gt;
+  &lt;conf-jdbc&gt;
+    &lt;connection
+      driver="mysql"
+      url="jdbc:mysql://localhost:3306/mydb"
+      id="mysqlconn-1"
+      user="root" password="root" /&gt;
+  &lt;/conf-jdbc&gt;
+  &lt;conf-jwt&gt;
+    &lt;jwt
+      id="jwt-config-1"/&gt;
+    &lt;jwt
+      id="jwt-database-1"
+      users-storage="database"
+      connection="mysqlconn-1"
+      users-table="users"
+      login-cols="email,username,phone"
+      pass-col="password"
+      pass-hash-alg="SHA-256"
+      active-col="active"
+      jwt-payload-cols="id,username,email,roles,country_code"
+    /&gt;
+  &lt;/conf-jwt&gt;
+  &lt;conf-http&gt;
+    &lt;servers&gt;
+      &lt;server
+        port="443"
+        alternative-port="8443"
+        secure="true"&gt;
+        &lt;domain
+          name="example.com"
+          jks-path="path-to-.jks-file"
+          jks-alias="alias name in the .jks file"
+          jks-passphrase="jksfilepassgoeshere"
+        &gt;
+          &lt;alias
+            art="jwt-login"
+            url="/login"
+            jwt="jwt-config-1"
+          /&gt;
+          &lt;alias
+            art="sql"
+            url="/api/setting"
+            cache="update"
+            publish-charset="UTF-8"
+            authorization="jwt"
+            jwt="jwt-config-1"&gt;
+            &lt;sql&gt;
+              &lt;![CDATA[SELECT * FROM tb_settings where user=? and setting_name=?;]]&gt;
+            &lt;/sql&gt;
+            &lt;arg
+              position="1"
+              sql-type="VARCHAR"
+              request-field-name="$jwt.user" /&gt;
+            &lt;arg
+              position="2"
+              sql-type="VARCHAR"
+              request-field-name="setting_name" /&gt;
+          &lt;/alias&gt;
+        &lt;/domain&gt;
+      &lt;/server&gt;
+    &lt;/servers&gt;
+  &lt;/conf-http&gt;
+&lt;/conf&gt;
+</pre>
+    </div>
+    
+    <h3>How to apply JWT security</h3>
+    <h4>The Short Steps Summary</h4>
+    <ol>
+        <li>create <i class="highlight">&lt;jwt ... /&gt;</i> node with jwt configuration attributes.</li>
+        <li>create <i class="highlight">&lt;alias art="jwt-login" .../&gt;</i> for login.</li>
+        <li>secure desired URLs by aliases attributes <i class="highlight">&lt;alias url="..." art="..." authorization="jwt" jwt="jwt-config-1" ...</i></li>
+        <li>grant access to desired roles and/or users to secured URLs in <i class="highlight">&lt;conf-idm .../&gt;</i></li>
+    </ol>
+    
+    <h4>Step By Step</h4>
+    <p>If You need to restrict access to a URL with sensitive information, for example JSON from a SQL query to Your database.</p>
+    <p>Let's do some steps in Your configuration .xml file:</p>
+    <p>
+    <ol>
+        <li>First, create a JWT configuration node in Your conf.xml:
+            <div class="code-snippet"><pre>&lt;conf-jwt&gt;
+  &lt;jwt id="jwt-config-1"/&gt;
+&lt;/conf-jwt&gt;    
+            </pre></div>        
+        </li>
+        <li>Create URL, where Your web application can login, and get JSON Web Token in the response.
+        We just need at some of Your domain node create an alias node for this:
+            <div class="code-snippet"><pre>&lt;alias
+  url="/login"
+  art="jwt-login"
+  jwt="jwt-config-1"
+/&gt;
+            </pre></div>        
+        </li>
+        <li>For getting a new JSON Web Token, Your web app should send POST request with JSON payload 
+            to jwt-login alias URL <i class="highlight">https://your-domain.com/login</i>:
+            <div class="code-snippet"><pre>{
+  "login": "user's login", 
+  "password": "user's password"
+}
+            </pre></div>        
+        </li>
+        <li>For login and password values You can use the user's credentials stored in idm-conf.xml, 
+            as described in "Authorization Basic" section.</li>
+        <li>If You'd like to use users' credentials from Your database, refer to documentation section Config.xml -&gt; jwt.
+            Please read info on optional jwt node attributes, if is set <i class="highlight">&lt;jwt users-storage=”database”</i>.  
+        </li>
+        <li><i class="required">Notice</i> Never publish <i class="highlight">jwt-login</i> URL with unencrypted plain HTTP server.
+        Use only secured endpoint over HTTPS, otherwise the users' credentials then during login in the POST JSON request payload 
+        would be sent unencrypted over Internet.
+        </li>
+        <li>Let's assume, Your web application made POST HTTP request with JSON payload as described above, 
+            and You have the JSON Web Token in the response from <i class="highlight">https://your-domain.com/login</i> like this:
+            <div class="code-snippet"><pre>{
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFuZDBMV2xrYlM1U1V6STFOaTR5T0RVNE1EY3dNQT09In0.eyJpc3MiOiJkZXYzLmphaXNvY3guY29tIiwiaWF0IjoiMTcxNDg0NDI4OCIsImV4cCI6IjE3MTQ4NDU0ODgiLCJyb2xlcyI6IlJFQURFUiIsInVzZXIiOiJpbHVzaGEifQ.rYLZ6S+mcnPYPT0VWR1CWT6pwWsxsABUp8xEUIHqSFZjtmq56Ap9EIj51uzGD331mb+KlBjLf8k1aryB7tKqnrvolpU7h5cYyv2XslgsoZRW27VDcbs09EYzXTyhWFYoRRHTf50OOCwHsFRy/UxXxhl5PEHdxb9TMbG16/LXEXe6KAtsi8ZG5OHj/503FqpSjx1/2bYG0kTsf+qSaFBfOpYhUuvSHBXdMmqx4RBI+Uc3Xit7GjNWRtLwcWAUQpQMWoL4ASluzG/dOrmy9Fyslv7xtxQNojJp0GHFNBpaFp8kX9cUd4AbADrAfNcQIXstT4Sr0GXzzpU6akXqUoA/cw",
+  "expires": "1714845488"
+}</pre></div>        
+        </li>
+        <li>Now, Your web application can use this JSON Web Token to authorize at You secured endpoints.
+        For this, Your web application in the requests to secured endpoints should pass request header like this:
+        <i class="highlight">Authorization: Bearer &lt;your-token&gt;</i>. On failure You get HTTP response status 401.
+        On success response code 200 and the contents, published at the secured endpoint.
+        </li>
+        <li>To secure Your endpoint, You should at any of Your web application aliases, set attributes 
+            <i class="highlight">authorization</i> and <i class="highlight">jwt</i> like this: 
+            <div class="code-snippet"><pre>&lt;alias
+  url="...
+  path="...
+  art="...
+  <i class="highlight">authorization="jwt"</i>
+  <i class="highlight">jwt="jwt-config-1"</i>        
+/&gt;
+            </pre></div>        
+        </li>
+        <li>Don't forget, please, to grant access to this secured endpoint to the user in <i class="highlight">conf-idm</i>.
+        This will be explained in the next section "Users and Roles". 
+        A user with a valid JSON Web Token, 
+        but without granted access to an URL,
+        will not get contents of the secured endpoint, and will get HTTP response status code 401.
+        </li>
+    </ol>
+    </p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="auth-roles-anchor"></div>
+    <div class="underline-container">
+    <h2>Users and Roles (idm-conf.xml)</h2>
+    </div>
+    <p>
+    In Your Jaisocx install, at path "apps/congratulations/conf/idm-conf.xml", You can define users with their
+    credentials,
+    and define roles hierarchy. "idm" stands for "Identity Management", and "conf" for "configuration" (or
+    "confiserie").
+    A user can have granted roles list, and each role can have granted other roles list.
+    Each role can have granted on your published domain url resource with optionally request http method allowed
+    like only "GET" or "POST" and so.
+    Here goes the example idm-conf.xml snippet, explained below.
+    </p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;conf-idm&gt;
+  &lt;user
+    id="admin"
+    password="strongadminpass"
+    granted-roles="ADMIN" /&gt;
+  &lt;user
+    id="reader"
+    password="strongreaderpass"
+    granted-roles="READER" /&gt;
+  &lt;role
+    id="READER"&gt;
+    &lt;granted-alias
+      url="dev.jaisocx.com:8443/api/${any}"
+      methods="GET"&gt;
+    &lt;/granted-alias&gt;
+  &lt;/role&gt;
+  &lt;role
+    id="ADD"
+    granted-roles="READER"&gt;
+    &lt;granted-alias
+      url="dev.jaisocx.com:8443/api/${any}"
+      methods="POST"&gt;
+    &lt;/granted-alias&gt;
+  &lt;/role&gt;
+  &lt;role
+    id="REMOVE"
+    granted-roles="READER"&gt;
+    &lt;granted-alias
+      url="dev.jaisocx.com:8443/api/${any}"
+      methods="DELETE"&gt;
+    &lt;/granted-alias&gt;
+  &lt;/role&gt;
+  &lt;role
+    id="EDITOR"
+    granted-roles="ADD,REMOVE"&gt;
+    &lt;granted-alias
+      url="dev.jaisocx.com:8443/api/${any}"
+      methods="PUT,PATCH"&gt;
+    &lt;/granted-alias&gt;
+  &lt;/role&gt;
+  &lt;role
+    id="ADMIN"
+    granted-roles="EDITOR"&gt;
+  &lt;/role&gt;
+&lt;/conf-idm&gt;
+</pre>
+    </div>
+    <p>
+    Any role can inherit other roles, and the allowed for them urls and the request http methods.
+    A role node can have multiple <i class="highlight">&lt;granted-alias</i> nodes. <i class="highlight">methods</i>
+    attribute is optional.
+    If not set, then all http methods are allowed.
+    The <i class="highlight">/${any}</i> reserved key stands for any url.
+    e.g. when a role "READER" has defined 
+    <i class="highlight">&lt;granted-alias url="example.com:443/api/${any}"/&gt;</i>,
+    then url <i class="highlight">https://example.com/api/settings</i> 
+    will be also allowed for the successfully authorized user
+    with role "READER" granted.
+    Please note, that &lt;granted-alias url starts with domain name, without <i class="highlight">https://</i> before,
+    and should always have port specified, even if this is a default port.
+    </p>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="proxy-index-anchor"></div>
+    <div class="underline-container">
+    <h2>Proxy Alias</h2>
+    </div>
+    <p>Proxy is the bypassing endpoint. 
+        It just retransmits the requests from a browser to another server,
+        and the domain name in the browser address bar is of the proxy endpoint.</p>
+    <p>Supposing, there is an endpoint at the domain example.com.  
+        Proxy endpoint is hosted at domain www.proxy.com. 
+        As an inet surfer accesses <b>in the browser</b> url <i class="highlight">https://www.proxy.com/</i>, 
+        <b>she/he sees</b> the contents of the site, published on <i class="highlight">https://example.com/</i>.
+    </p>
+    <div class="code-snippet">
+<pre class="code">
+&lt;domain name="www.proxy.com"&gt;
+  &lt;alias art="proxy"
+    url="/${any}"
+    path="https://example.com/"
+  /&gt;
+&lt;/domain&gt;
+</pre>
+    </div>
+
+    <p>If You'd like to proxy Your site, be sure, the site pages don't contain absolute links.
+    E.g. on the webpage on https://example.com/ there 
+    styles, scripts and images referenced by relative urls,
+    without domain name,
+    like this:
+    </p>
+    <div class="code-snippet overflown">
+<pre class="code">
+&lt;img src="/images/logos/company-logo.webp" /&gt;
+</pre>
+    </div>
+  </section>
+  
+  <section class="doc-container">
+    <div class="anchor-active" id="spec-jwt-anchor"></div>
+    <div class="underline-container">
+    <h2>config.xml &lt;jwt&gt; node</h2>
+    </div>
+    <p>Here you specify a jwt tokens generation and handling parameters. These parameters will be used for a secured
+    with jwt token alias,
+    if the alias has attribute set <i class="highlight">authorization="jwt" jwt="&lt;id-of-jwt-node&gt;"</i>.
+    The most of attributes are optional, so you need only few minutes to get your endpoints be secured with jwt.
+    </p>
+    <div class="config-nodes-container">
+    <div class="config-nodes-row config-table-header">
+      <div class="cell"><span class="label">attribute</span></div>
+      <div class="cell"><span class="label">type</span></div>
+      <div class="cell"><span class="label">values</span></div>
+      <div class="cell"><span class="label">default</span></div>
+      <div class="cell"><span class="label">description</span></div>
+    </div>
+    <div class="config-nodes-row">
+        <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> id</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">the unique text identifier for this jwt config</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">users-storage</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">database | config</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">config</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage="config"</i>, then user’s credentials and granted roles are taken from idm-conf.xml, otherwise from database users table</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">connection</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. mysqlconn1</span></div>
+      <div class="cell"><span class="label">default</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, then you need to specify here the id of the jdbc connection alias from this config</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">users-table</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. users</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">users</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, then here you specify the table, where users’ data is stored</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">login-cols</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. “login,email,phone”</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">username,email</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify comma-separated list of columns names from the users’ table, these columns values will be checked as login during jwt login. For example, if you specify phone,email, and you have this columns in your users’ table, then a site user can login with both his phone or email </span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">roles-col</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. roles</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">roles</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify the users’ table column name, where comma-separated list of roles names for each user is stored</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">refresh-col</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. refresh_token</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">refresh_token</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify column name of users table, where to store the refresh token</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">pass-col</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. password</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">password</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify the column name of users table where hashed passwords are stored</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">pass-hash-alg</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">SHA-256</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify the hash algorythm, with that the passwords in users table are hashed</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">active-col</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">active</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, here you specify the users table column name, storing status of user, active or not.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">jwt-payload-cols</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if <i class="highlight">users-storage=”database”</i>, you can provide comma-separated list of users table columns, that you want to send in the JWT payload, and then be accessible by jwt secured andpoints as $jwt. Argument variable. For example, you built an sql alias, secured with jwt, then in alias node, you can add arg node with value of the jwt payload field, e.g. <i class="highlight">request-field-name="$jwt.email"</i>. Be aware of setting sensitive data columns to jwt payload, such as password.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">ttl</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">number</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">1200</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">time to live for the jwt token, in seconds. Default is set to 20 minutes</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">refresh-ttl</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">number</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">72000</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">time to live for the jwt-refresh-token in seconds, default is 20 hours</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">keys-in-memory</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">by default, the private and public keys are stored in the filesystem, etc/jwt/keys folder, and if set to true, then they will just be kept in memory</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">keys-dynamic</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">by default, the private/public key pair is generated once at server’s start, if <i class="highlight">keys-dynamic=”true”</i>, then new pair of private/public keys is always automatically generated in period of jwt time-to-live</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">algorythm-random</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">default</span><span class="value">false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">by default, for every jwt generation, the same signing algorythm is used, if <i class="highlight">algoryth-random=”true”</i>, then the jwt token is signed by randomly chosen encryption algorythm</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">algorythm-name</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">RS256</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">If <i class="highlight">algorythm-random=”false”</i>, or was not specified, then this encryption algorythm will be used for signing jwt.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">secret</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">default</span><span class="value">a randomly generated value</span>
+      </div>
+      <div class="cell"><span class="label">description</span><span class="value">if for the algorythm, used for encryption, type: “mac” set in <i class="highlight">etc/jwt/alg/alg.json</i> file, then this secret will be used for signing jwt </span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="spec-server-anchor"></div>
+    <div class="underline-container">
+    <h2>config.xml &lt;server&gt; node</h2>
+    </div>
+    <p>The server node is for defining servers, running on a single port.
+    Here can be defined server port and secure encryption option.
+    </p>
+    <div class="config-nodes-container">
+    <div class="config-nodes-row config-table-header">
+      <div class="cell"><span class="label">attribute</span></div>
+      <div class="cell"><span class="label">type</span></div>
+      <div class="cell"><span class="label">values</span></div>
+      <div class="cell"><span class="label">description</span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> port</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">number</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. 443</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">the port number for the server to accept browsers' connections</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> alternative-port</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">number</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. 8443</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">for development and testing purposes only. if default port is busy,
+          then the server starts listening on the alternative port.</span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">secure</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">please specify, where to use HTTPS secured connection with TLS or not.</span>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="doc-container">
+    <div class="anchor-active" id="spec-domain-anchor"></div>
+    <div class="underline-container">
+    <h2>config.xml &lt;domain&gt; node</h2>
+    </div>
+    <p>Here you define properties of the domain, published at server's port.
+    </p>
+
+    <div class="config-nodes-container">
+    <div class="config-nodes-row config-table-header">
+      <div class="cell"><span class="label">attribute</span></div>
+      <div class="cell"><span class="label">type</span></div>
+      <div class="cell"><span class="label">values</span></div>
+      <div class="cell"><span class="label">description</span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> name</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. example.fun</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">domain name without port number. to navigate to the site you have to specify this domain name in hosts file, or register your static IP address with this domain name at your domain registar's console.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">source-charset</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. UTF-8</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        Default: <i class="highlight">source-charset="UTF-8"</i>.
+        Specifies, in what charset the text files (.html, .css, .js and other not binary files),
+        You publish, were saved</span>
+      </div>
+    </div>
+      <div class="config-nodes-row">
+        <div class="cell"><span class="label">attribute</span><span class="value">pubish-charset</span></div>
+        <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+        <div class="cell"><span class="label">values</span><span class="value">e.g. UTF-8</span></div>
+        <div class="cell"><span class="label">description</span><span class="value">
+        Default: <i class="highlight">publish-charset="UTF-8"</i>.
+        The charset, you want the text files be sent to browser</span>
+        </div>
+      </div>
+      <div class="config-nodes-row">
+        <div class="cell"><span class="label">attribute</span><span class="value">language</span></div>
+        <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+        <div class="cell"><span class="label">values</span><span class="value">e.g. <i class="highlight">language="german"</i></span></div>
+        <div class="cell"><span class="label">description</span><span class="value">
+        File name of an alphabet in the same-named app folder, without .txt extension, so to automatically detect the source charset, if you don't know or remember, what is the charset of the textual resources, that you saved them.</span>
+        </div>
+      </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">jks-path</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        For securing with certifiicate https sites only.
+        Full path to .jks file, related to this domain. You have to store one cert/private key pair for each one domain in a separate .jks file.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">jks-alias</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        For securing with certifiicate https sites only.
+        alias name in the .jks file, related to this domain</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">jks-passphrase</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        For securing with certifiicate https sites only.
+        password of the .jks file, related to this domain</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">document-root</span></div>
+      <div class="cell"><span class="label">type</span><span class="value">string</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">full path to folder, where your php scripts for this domain reside.
+        important for php-fpm engine only.
+        if omitted, as php document-root will be considered the path of the alias of art folder,
+        where the published php script is located.</span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="spec-alias-anchor"></div>
+    <div class="underline-container">
+    <h2>config.xml &lt;alias&gt; node</h2>
+    </div>
+    <p>Here you specify a resource that is published at a specific url.
+    </p>
+    <!-- ALIAS -->
+    <div class="config-nodes-container">
+    <div class="config-nodes-row config-table-header">
+      <div class="cell"><span class="label">attribute</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span></div>
+      <div class="cell"><span class="label">type</span></div>
+      <div class="cell"><span class="label">values</span></div>
+      <div class="cell"><span class="label">description</span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> art</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+              <i class="highlight">jwt-login</i>
+              <i class="highlight">redirection</i>
+              <i class="highlight">proxy</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span>
+          <span class="value">folder | file | redirection | sql | jwt-login | proxy</span>
+      </div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              the art of the alias specifies the art of the resource being published under "url".
+              <ol>
+                  <li><i class="highlight">art="folder"</i> stands for published contents in a specific folder, with all subfolders recursively,</li>
+                  <li><i class="highlight">art="file"</i> for the single file,</li>
+                  <li><i class="highlight">art="sql"</i> for publishing a database sql query result in json format,</li>
+                  <li><i class="highlight">art="redirection"</i> just for redirecting all requests to url to another url,
+                      specified in <i class="highlight">path="https://example.com/"</i> atribute of the &lt;alias art="redirection",</li>
+                  <li><i class="highlight">art="jwt-login"</i> is for creating the endpoint for issuing signed json web token by user's credentials,</li>
+                  <li><i class="highlight">art="proxy"</i> is for creating proxying endpoint.</li>
+              </ol>
+        </span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> url</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+              <i class="highlight">jwt-login</i>
+              <i class="highlight">redirection</i>
+              <i class="highlight">proxy</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. <i class="highlight">&lt;alias url="/"</i></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              the relative url after domain name, 
+              starting with slash. you can use <i class="highlight">url="/${any}"</i> for matching all urls on this domain.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">path</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">redirection</i>
+              <i class="highlight">proxy</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">fullpath for file or folder, or redirection target url for alias of art redirection</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value"><i class="required">required</i> cache</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">cache | first-call | update</span>
+      </div>
+      <div class="cell">
+          <span class="label">description</span>
+          <span class="value">
+              <ol>
+                  <li><i class="highlight">cache="cache"</i> stands for caching all resources published by the alias on server start, </li>
+                  <li><i class="highlight">cache="update"</i>cache="update" means resources will be read on each request,</li>
+                  <li><i class="highlight">cache="first-call"</i> suits best for dynamic resources, 
+                      like <i class="highlight">&lt;alias art="sql"</i> or php scripts, 
+                      where after first response the result will be cached in memory, 
+                      and then all further responses will take much less time, 
+                      since sql and php will not be executed, 
+                      but just stored in memory previous response will be sent.</li>
+              </ol>
+        </span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">source-charset</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+          </span>
+
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. UTF-8</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        Default: <i class="highlight">source-charset="UTF-8"</i>.
+        Overrides same-named attribute of &lt;domain&gt; node.
+        Specifies, in what charset were text files saved, those you publish.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">publish-charset</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. UTF-8</span>
+      </div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        Default: <i class="highlight">publish-charset="UTF-8"</i>.
+        Overrides the same named attribute of &lt;domain&gt; node.
+        The charset, you want the text contents to be sent to browser</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">language</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+          </span>
+
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. language="german"</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+        Overrides language attribute of parent &lt;domain&gt; node.
+        File name of an alphabet in the same-named app folder, without .txt extension, 
+        so to automatically detect the source charset, 
+        if you don't know or remember, what is the charset of the textual resources, that you saved them.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">cache-except</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">folder</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. cache-except="php, mp4"</span>
+      </div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              if you specified attribute <i class="highlight">cache="cache"</i>, 
+              then all files with the comma separated extensions in <i class="highlight">cache-except="php,mp4"</i> attribute 
+              will be handled as <i class="highlight">cache="update"</i>. </span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">each-folder-content-file-name</span>
+      </div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">folder</i>
+          </span>
+</div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. index.html</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              if a file with such name will exist in the published folder or subfolder, 
+              it will be sent in the response at folder's url as a default resource for this folder.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">list</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+                    <span class="value">
+              <i class="highlight">folder</i>
+          </span>
+
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">if a published folder doesn't have a file, 
+              specified in each-folder-content-file-name attribute, 
+              then with list atribute set to true,               
+              the listing of requested folder will be sent in the response, 
+              otherwise, set to false, there will be sent 403 access denied status code.</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">document-root</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+          </span>
+
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value"></span></div>
+      <div class="cell"><span class="label">description</span><span class="value">overrides the domain's document-root
+        value. If both domain's and alias's document-root attribute is omitted,
+        and if the &lt;alias&gt; has attribute <i class="highlight">art="file"</i>
+        then the document-root will be considered the path to the folder where this file resides.</span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">connection</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">sql</i>
+              <i class="highlight">jwt-login</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. <i class="highlight">connection="mysqlconn1"</i></span>
+      </div>
+      <div class="cell"><span class="label">description</span><span class="value">the id of the database connection,               
+              specified in <i class="highlight">&lt;conf-jdbc&gt;</i> section of the config</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+        <div class="cell"><span class="label">attribute</span><span class="value"><i class="deprecated">deprecated</i> authorization-required</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+              <i class="highlight">redirection</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">boolean</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">true | false</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              deprecated, use atribute <i class="highlight">authorization="basic"</i> 
+              or <i class="highlight">authorization="jwt"</i> instead.
+if true, the basic authorization will be required, and only granted users, specified in idm-conf.xml will have access to this resource</span>
+      </div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">authorization</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+              <i class="highlight">redirection</i>
+          </span>
+
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">basic | jwt</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">with this atribute set to "basic" or "jwt" you can protect any alias' url.
+              if authorization="jwt", then, please, set alias atribute <i class="highlight">jwt="id-of-jwt-node"</i>,
+ what will use settings from a defined previously &lt;jwt&gt; config node by it's id.
+ </span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">jwt</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">file</i>
+              <i class="highlight">folder</i>
+              <i class="highlight">sql</i>
+              <i class="highlight">jwt-login</i>
+              <i class="highlight">redirection</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. jwt=”jwt1”</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">
+              if <i class="highlight">&lt;alias authorization="jwt"</i>, 
+              then set alias atribute <i class="highlight">jwt="id-of-jwt-node"</i>,
+              that will use settings from a defined previously jwt config node by it's id.
+ </span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">login-param</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">jwt-login</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. login-param="login"</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">default value "login", so for getting a json web token,
+              your browser has to send to the url, specified in <i class="highlight">&lt;alias art="jwt-login"</i>
+ POST json payload: 
+ <pre>{
+  "login": "user's login", 
+  "password": "user's password"
+}</pre>
+
+ Example: if you set this param, e.g. <i class="highlight">login-param="user"</i>, 
+ then POST json payload should look like this:
+ <pre>{
+  <i class="highlight">"user"</i>: "user's login", 
+  "password": "user's password"
+}</pre>
+        </span></div>
+    </div>
+    <div class="config-nodes-row">
+      <div class="cell"><span class="label">attribute</span><span class="value">password-param</span></div>
+      <div class="cell"><span class="label">Relevant for alias art</span>
+          <span class="value">
+              <i class="highlight">jwt-login</i>
+          </span>
+      </div>
+      <div class="cell"><span class="label">type</span><span class="value">text</span></div>
+      <div class="cell"><span class="label">values</span><span class="value">e.g. password-param="pass"</span></div>
+      <div class="cell"><span class="label">description</span><span class="value">default value "password", so for getting a json web token,
+              your browser should send to the url, specified in <i class="highlight">&lt;alias art="jwt-login"</i>
+ POST json payload: 
+ <pre>{
+  "login": "user's login", 
+  "password": "user's password"
+}</pre>
+
+ Example: if you set this param, e.g. <i class="highlight">password-param="secret"</i>, then POST json payload should look like this:
+ <pre>{
+  "login": "user's login", 
+  <i class="highlight">"secret"</i>: "user's password"
+}</pre></span></div>
+    </div>
+    </div>
+  </section>
+
+  <section class="doc-container">
+    <div class="anchor-active" id="etcserverprops-definition-anchor"></div>
+    <div class="underline-container">
+    <h2>etc/server.properties specification</h2>
+    </div>
+    <p>the file, located in the server installation root folder under etc/server.properties
+    has the main server engine configuration options that can be configured.
+    In this section You'll get explaination on the meaning of each server.properties file config line.
+    </p>
+    <div class="code-snippet">
+<pre class="code">
+#with app.env=dev mode, the server issues more detailed logs.
+app.env=dev
+#app.env=prod
+#app.env=test
+
+# here is the path to http-conf.xml file, where the running server
+# endpoints, domains and published resources are specified
+app.config.file=apps/congratulations/conf/http-conf.xml
+
+
+# this property sets timeout in seconds, after that the inactive connection will be colsed
+keepalive.connection.timeout=60
+
+
+# this property sets the maximal amount of active connections
+keepalive.connectionspool.maxcount=10000
+
+
+# this property sets the supposing slowest traffic speed in Kilo bits per second
+# for calculations of avoiding being closed connections on timeout, if a heavy load is in progress
+keepalive.slowest.load.kbits=50
+
+
+# it's the seconds timeout for the initial reading operations on socket.
+# if the socket is waiting longer, the socket will be closed.
+so.timeout.initial=15
+
+# after starting successfull http connection,
+# each single connection will live maximum this number of seconds.
+# after this timeout, any hanging or live connection
+# from any browser will be killed.
+# so, if a larger downloads are provided, then increase
+# this value to allow a connection to live longer,
+# but then you can have more hanging connections,
+# wasting server's memory usage.
+# 300 stands here for 5 minutes connection life time.
+so.timeout.http2=300
+
+# PHP-FPM settings
+# address, where php-fpm service is listening
+php.fpm.host=localhost:9000
+
+# php-fpm output charset, is like source-charset for the jaisocx
+php.charset=UTF-8
+
+# php scripts running timeout
+php.so.timeout=30000
+
+# whether to display php errors in the http content or not
+php.errors=true
+
+# maximal number of post parameters in your php application
+post.params.max=1000
+
+# default size of a video content block, asked by browser
+# during playing video. can be set higher,
+# if your internet bandwidth is high,
+# it'll be then better for performance
+# and the server will have more time
+# betwen video blocks sending to serve other clients.
+# lower block size suits at low internet bandwidth,
+# and causes the more often
+# requests to server for video blocks sending.
+# size dimensions constants can be B, K, M or G
+# for bytes, kilobytes, megabytes, gigabytes.
+video.block.size=1.4M
+
+
+</pre>
+    </div>
+  </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="email footer-col">
+      <ul class="email-lines">
+        <li class="email-line">
+          <span class="label">Email:</span>
+          <span class="value"><a href="mailto: info@jaisocx.com">info@jaisocx.com</a></span>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-right-col footer-col">
+      <ul class="policies-block">
+        <li class="policy-line">
+          <a href="/policies/terms-and-conditions.html" target="_blank">Terms of Use</a>
+        </li>
+        <li class="policy-line">
+          <a href="/policies/privacy-policy.html" target="_blank">Privacy Policy</a>
+        </li>
+      </ul>
+      <div class="copyright-block">
+        <span class="copyright-text">Copyright JAISOCX 2023 © All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/documentation.js?ver=2.4.003"></script>
+</body>
+</html>

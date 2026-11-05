@@ -1,0 +1,50 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/css_clean_start_lite",
+  "version": "1.0.3",
+  "description": "Css sites resetting default styles with main.css of few hundreds css lines, without 30 css files for media queries of 30 displays sizes",
+  "keywords": [
+    "css",
+    "styles"
+  ],
+  "files": [
+    "favicon/",
+    "webpack.aliases.json",
+
+    "README.md",
+
+    "index.preview.html",
+    "css_clean_start_lite.preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/theme_lightmode/",
+    "MediaAndStyles/themes/theme_darkmode/",
+    "MediaAndStyles/themes/theme_visible_height/",
+
+    "src/",
+
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}
+
+

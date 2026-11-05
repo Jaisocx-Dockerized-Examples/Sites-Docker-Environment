@@ -1,0 +1,209 @@
+.jsx {
+  /** -------------------------------
+    this style sets rem size for the html page. 1rem = 16px
+  */
+  --jsx--css-clean-start-2--rem: 16px;
+
+
+  /** -------------------------------
+    background styles of the html elem <body>, and, the direct anchester html elem <main>
+  */
+  --jsx--css-clean-start-2--body-tag--background: #fafff5;
+  --jsx--css-clean-start-2--site--background: #fff;
+
+
+
+  /** -------------------------------
+    width and height of the body elem
+  */
+  --jsx--css-clean-start-2--body-tag--width: 100%;
+  --jsx--css-clean-start-2--body-tag--max-width: 100%;
+  --jsx--css-clean-start-2--body-tag--min-width: 100%;
+
+  --jsx--css-clean-start-2--body-tag--height: auto;
+  --jsx--css-clean-start-2--body-tag--max-height: unset;
+  --jsx--css-clean-start-2--body-tag--min-height: 100vh;
+
+  --jsx--css-clean-start-2--body-tag--overflow-x: auto;
+  --jsx--css-clean-start-2--body-tag--overflow-y: auto;
+
+
+
+  /** -------------------------------
+    width and height of the site, normally positioned in the center of the browser's tab
+  */
+  --jsx--css-clean-start-2--site--height: fit-content;
+  --jsx--css-clean-start-2--site--max-height: fit-content;
+  --jsx--css-clean-start-2--site--min-height: 100vh;
+
+  --jsx--css-clean-start-2--site--overflow-x: hidden;
+  --jsx--css-clean-start-2--site--overflow-y: visible;
+
+  --jsx--css-clean-start-2--site--width: 75%;
+  --jsx--css-clean-start-2--site--max-width: 100%;
+  --jsx--css-clean-start-2--site--min-width: 75%;
+
+
+
+  /** -------------------------------
+    padding and margin of the site
+  */
+  --jsx--css-clean-start-2--site--margin: 0 auto 0 auto;
+
+  --jsx--css-clean-start-2--site--padding-top: 1rem;
+  --jsx--css-clean-start-2--site--padding-left: 1rem;
+  --jsx--css-clean-start-2--site--padding-right: 1rem;
+  --jsx--css-clean-start-2--site--padding-bottom: 1rem;
+  --jsx--css-clean-start-2--site--padding: var(--jsx--css-clean-start-2--site--padding-top) var(--jsx--css-clean-start-2--site--padding-left) var(--jsx--css-clean-start-2--site--padding-bottom) var(--jsx--css-clean-start-2--site--padding-right);
+
+
+  /** -------------------------------
+    overflow styles
+  */
+  --jsx--css-clean-start-2--body-tag--overflow-x: hidden;
+  --jsx--css-clean-start-2--site--overflow-y: visible;
+
+
+
+  /** -------------------------------
+    html elems styles
+  */
+  --jsx--css-clean-start-2--all-tags--position: relative;
+  --jsx--css-clean-start-2--all-tags--box-sizing: border-box;
+
+  --jsx--css-clean-start-2--inline-tags--display: inline-block;
+  --jsx--css-clean-start-2--block-tags--display: block;
+  --jsx--css-clean-start-2--custom-tags--display: var(--jsx--css-clean-start-2--block-tags--display);
+
+  --jsx--css-clean-start-2--all-tags--padding: 0 0 0 0;
+  --jsx--css-clean-start-2--h--padding: 0 0 0 0;
+
+  --jsx--css-clean-start-2--all-tags--margin: 0 0 0 0;
+  --jsx--css-clean-start-2--h--margin: 0 0 0 0;
+  --jsx--css-clean-start-2--ul--margin-left: 2rem;
+  --jsx--css-clean-start-2--p--margin: 0.9rem 0 0.9rem 0;
+
+  --jsx--css-clean-start-2--all-tags--color: black;
+
+
+
+/*
+removed fonts, that may be set via @font-face, since hardcoded font file loaded required and .css with @font-face
+the fallback font names improved according to documentation, however not tested with multiplatform and multibrowser testing tools.
+*/
+  --css-clean-start-2--sans--font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen;
+  --css-clean-start-2--serif--font-family: 'Times New Roman', system-ui, -apple-system, BlinkMacSystemFont;
+  --css-clean-start-2--monospace--font-family: Courier, 'Courier New', Menlo, Consolas, 'Liberation Mono';
+
+  --jsx--css-clean-start-2--all-tags--font-family: var(--css-clean-start-2--sans--font-family);
+  --jsx--css-clean-start-2--pre--font-family: var(--css-clean-start-2--monospace--font-family);
+
+/*  --jsx--css-clean-start-2--all-tags--font-family: Tahoma, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen; */
+/*  --jsx--css-clean-start-2--pre--font-family: 'Courier New', Courier, Menlo, Consolas, 'Liberation Mono', monospace; */
+
+
+
+  --jsx--css-clean-start-2--all-tags--font-size: 0.9rem;
+  --jsx--css-clean-start-2--all-tags--line-height: 1.09rem;
+
+  --jsx--css-clean-start-2--all-tags--border-color: green;
+  --jsx--css-clean-start-2--all-tags--border-style: dotted;
+  --jsx--css-clean-start-2--all-tags--border-width: 0;
+
+
+
+  /** -------------------------------
+    h1 til h6 styles
+  */
+  --jsx--css-clean-start-2--h--font-weight: 600;
+  --jsx--css-clean-start-2--h--color:       black;
+  --jsx--css-clean-start-2--h--margin:      0 0 0 0;
+  --jsx--css-clean-start-2--h--padding:     0 0 0 0;
+
+
+
+  --jsx--css-clean-start-2--h1--font-size: 2.3rem;
+  --jsx--css-clean-start-2--h1--line-height: 2.45rem;
+
+  --jsx--css-clean-start-2--h2--font-size: 1.5rem;
+  --jsx--css-clean-start-2--h2--line-height: 1.7rem;
+
+  --jsx--css-clean-start-2--h3--font-size: 1.3rem;
+  --jsx--css-clean-start-2--h3--line-height: 1.6rem;
+
+  --jsx--css-clean-start-2--h4--font-size: 1.24rem;
+  --jsx--css-clean-start-2--h4--line-height: 1.5rem;
+
+  --jsx--css-clean-start-2--h5--font-size: 1.2rem;
+  --jsx--css-clean-start-2--h5--line-height: 1.4rem;
+
+  --jsx--css-clean-start-2--h6--font-size: 1rem;
+  --jsx--css-clean-start-2--h6--line-height: 1.3rem;
+
+
+
+  --jsx--css-clean-start-2--h1--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h1--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h1--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h1--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h2--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h2--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h2--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h2--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h3--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h3--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h3--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h3--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h4--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h4--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h4--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h4--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h5--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h5--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h5--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h5--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h6--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h6--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h6--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h6--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+
+
+  /** -------------------------------
+    hyperlnks text colors
+  */
+  --jsx--css-clean-start-2--anchor--color: navy;
+  --jsx--css-clean-start-2--anchor-hover--color: blue;
+
+  --jsx--css-clean-start-2--anchor-visited--color: grey;
+  --jsx--css-clean-start-2--anchor-visited-hover--color: grey;
+
+  --jsx--css-clean-start-2--anchor-active--color: darkblue;
+  --jsx--css-clean-start-2--anchor-active-hover--color: blue;
+
+
+
+  /** -------------------------------
+    hyperlnks are underlined, or they have been set other css text-decoration style
+  */
+  --jsx--css-clean-start-2--anchor--text-decoration: none;
+  --jsx--css-clean-start-2--anchor-hover--text-decoration: underline;
+
+  --jsx--css-clean-start-2--anchor-visited--text-decoration: none;
+  --jsx--css-clean-start-2--anchor-visited-hover--text-decoration: underline;
+
+  --jsx--css-clean-start-2--anchor-active--text-decoration: underline;
+  --jsx--css-clean-start-2--anchor-active-hover--text-decoration: underline;
+
+
+
+  --jsx--css-clean-start-2--thead--background-color: ghostwhite;
+  --jsx--css-clean-start-2--tfoot--background-color: honeydew;
+
+}
+

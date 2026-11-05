@@ -1,9 +1,9 @@
 
-`Docker for a Site`
+`Docker for a Site`  Jaisocx &#8482; &#169;
 
 
-![../cdn/software_labels/docker/softlabel_docker.svg](../cdn/software_labels/docker/softlabel_docker.svg)
-![../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg](../cdn/software_labels/Jaisocx/softlabel_jaisocx.svg)
+![../cdn_sites/software_labels/docker/softlabel_docker.svg](../cdn_sites/software_labels/docker/softlabel_docker.svg)
+![../cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg](../cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg)
 
 
 
@@ -47,8 +47,16 @@
     /workspace/ts/cloned_repos/.pnpmfile.cjs
   ```
 
+---
 
 
-Jaisocx &#8482; &#169;
+
+
+
+Have a nice day,
+
+Jaisocx Inc. Software Architect Illia Polianskyi
+
+
 
 

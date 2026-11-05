@@ -45,6 +45,9 @@ node_https_sites_tools_publish_port=8449
 
 
 
+start_jaisocx_express=true
+jaisocx_express_publish_port=9445
+
 start_express_secure=true
 express_secure_publish_port=9443
 

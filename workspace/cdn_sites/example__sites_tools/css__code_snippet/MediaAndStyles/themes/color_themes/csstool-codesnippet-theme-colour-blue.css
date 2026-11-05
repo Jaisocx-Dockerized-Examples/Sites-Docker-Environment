@@ -1,0 +1,47 @@
+/* tool variables */
+.jsx.blue,
+.jsx .blue,
+.CodeSnippetHolder.blue {
+
+  --code-snippet--theme-color: #f8fdff;
+
+  /* code snippet tool borders */
+  /* by color */
+  --code-snippet-tool--border-color: cornsilk;
+
+  /* code snippet theme Colors variables */
+  --code-snippet--text-color: darkblue;
+  --code-snippet--background-color: #fffffa;
+
+  /* column theme Colors variables */
+  --code_snippet__column_numbers__text-color: #09f;
+  --code_snippet__column_numbers__background-color: #cef;
+
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.blue::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-thumb {
+    background-color: steelblue;
+  }
+
+  .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-track {
+    background-color:  #fafaff;
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.blue {
+    scrollbar-color: steelblue  #fafaff;
+    scrollbar-width: thin;
+  }
+}
+

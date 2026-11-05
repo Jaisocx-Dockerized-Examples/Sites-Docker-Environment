@@ -1,0 +1,18 @@
+/* tool variables */
+.CodeSnippetHolder.large {
+
+  /* theme variables */
+  /* code snippet theme sizes variables */
+  --code-snippet--line-height: 1.9rem;
+  --code-snippet--font-size: 1.5rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  /* column theme sizes variables */
+  --code_snippet__column_numbers__width: 4.2rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+  
+}

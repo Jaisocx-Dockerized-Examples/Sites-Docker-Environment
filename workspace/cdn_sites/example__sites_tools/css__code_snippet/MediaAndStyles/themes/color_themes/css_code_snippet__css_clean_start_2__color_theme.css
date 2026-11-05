@@ -1,0 +1,15 @@
+
+.jsx .CodeSnippetHolder.css_clean_start_2__color_theme {
+  --code-snippet--theme-color: var(--jsx--css-clean-start-2--body-tag--background);
+  --code-snippet--background-color: var(--jsx--css-clean-start-2--site--background);
+
+
+  --code-snippet--text-color: var(--jsx--css-clean-start-2--all-tags--color);
+
+  --code-snippet-tool--border-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+
+  --code_snippet__column_numbers__text-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+  --code_snippet__column_numbers__background-color: var(--jsx--css-clean-start-2--body-tag--background);
+}
+
+

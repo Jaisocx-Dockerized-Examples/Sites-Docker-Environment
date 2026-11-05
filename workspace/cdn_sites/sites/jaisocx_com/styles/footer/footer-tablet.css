@@ -1,0 +1,25 @@
+@media all and (min-width: 441px) and (max-width: 768px) {
+  .footer {
+    padding: 10px 0 10px 0 !important;
+  }
+  .footer .footer-right-col .policies-block {
+    flex-direction: row;
+  }
+  .footer .footer-right-col .policies-block .policy-line {
+    width: auto;
+  }
+  .footer .footer-right-col .policies-block .policy-line a {
+    padding: 0 12px 0 12px;
+  }
+  .footer .footer-right-col .policies-block .policy-line:not(:last-of-type):after {
+    content: "";
+    height: 14px;
+    line-height: inherit;
+    width: 1px;
+    box-sizing: border-box;
+    display: block;
+    border-right: 1px solid white;
+  }
+}
+
+/*# sourceMappingURL=footer-tablet.css.map */

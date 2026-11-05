@@ -293,7 +293,7 @@
       <ul class="inline slash powered-by">
         <li>
           <i>
-            <img style="top: 0; display: block; overflow-y: hidden; width: auto; height: 1.45rem; min-height: 1.45rem; max-height: 1.45rem;" src="/cdn/images/Logos_of_Jaisocx/Logo_left/original_logo_left/logo_green.png" />
+            <img style="top: 0; display: block; overflow-y: hidden; width: auto; height: 1.45rem; min-height: 1.45rem; max-height: 1.45rem;" src="/cdn_sites/images/Logos_of_Jaisocx/Logo_left/original_logo_left/logo_green.png" />
           </i>
         </li>
         <li><i> powered by Jaisocx </i></li>

@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en" id="js_tree_preview" class="jaisocx clean_start theme_fonts_a">
+<head>
+
+
+
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/flaticon_com_flowers_ico/002_lavender.ico"
+  />
+
+  <title> LockViewer </title>
+
+
+
+  <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
+  <base
+      href="./"
+  />
+
+
+
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
+
+
+  <!--# Clean start zero Fonts -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__fonts.css"
+  />
+
+
+  <!--# Clean start zero Site -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__site.css"
+  />
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="example__sites_tools/json_styling__tree/Tree_main_resolved.css"
+  />
+
+
+
+
+
+  <style name="styles_css_clean_start_overrides">
+
+    .clean_start {
+
+      --clean_start--all_tags--font-family: var(--clean_start--sans--font-family);
+
+
+
+      --clean_start--h1--font-family: var(--clean_start--all_tags--font-family);
+      --clean_start--h--font-family:  var(--clean_start--all_tags--font-family);
+      --clean_start--p--font-family:  var(--clean_start--all_tags--font-family);
+
+      --clean_start--rem:      16px;
+
+      --clean_start--all_tags--font-size:      0.9rem;
+      --clean_start--all_tags--line-height:    1.2rem;
+
+      --clean_start--all_tags--border-width:   0;
+
+      --clean_start--site--background:         white;
+      --clean_start--body_tag--background:     #f5f0ff;
+
+      --clean_start--site--padding:            2rem 1rem 300rem 1rem;
+      --clean_start--site--width:              55%;
+
+      --clean_start--scrollbar-thumb--background-color:   #a090ff;
+      --clean_start--scrollbar-track--background-color:   #f5f0ff;
+      --clean_start--scrollbar--color:                    #a090ff #f5f0ff;
+
+
+      --clean_start--h1--font-size: 1.05rem;
+      --clean_start--h2--font-size: 0.9rem;
+      --clean_start--h3--font-size: 0.83rem;
+
+      --clean_start--h2--font-weight: 500;
+
+      --theme-button--width: fit-content;
+      --theme-button--font-size: 0.795rem;
+    }
+
+
+
+    @media screen and ( min-width: 2px) and (max-width: 767px) {
+      .clean_start h2,
+      .clean_start h3,
+      .clean_start description {
+        display: none;
+      }
+    }
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Overrides -->
+  <style name="overrides">
+
+    .jaisocx.clean_start h1 {
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+      font-weight:                400;
+      margin:                     0 0 0 0;
+      color:                      #40be30;
+      background:                 #fefefe;
+      border:                     0 solid lime;
+    }
+
+    .jaisocx.clean_start h2 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h3 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+    .jaisocx.clean_start h4 {
+      margin:                     2rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h2:first-of-type {
+      margin:                     1rem 0 1rem 0;
+    }
+
+    .jaisocx.clean_start h2 ~ h3,
+    .jaisocx.clean_start h2 ~ block > h3:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+    .jaisocx.clean_start h3 ~ h4,
+    .jaisocx.clean_start h3 ~ block > h4:first-of-type {
+      margin:                     0.4rem 0 0.21rem 0;
+    }
+
+
+
+      /* label */
+    .jaisocx.clean_start label {
+      display:                    inline-block;
+
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+
+      padding:                    0.18rem 0.9rem 0.10rem 0.9rem;
+      margin:                     0 0 0 0;
+
+      color:                      #40be30;
+      background:                 #fefefe;
+
+      border:                     2px solid #99faa9;
+      border-radius:              0.8rem;
+
+      overflow-x:                  hidden;
+      overflow-y:                  hidden;
+    }
+
+
+
+      /* hyperlinks <a href="url"> */
+    .jaisocx.clean_start a {
+      color:                     navy;
+    }
+    .jaisocx.clean_start a:hover {
+      color:                     #2255ab;
+    }
+
+
+
+      /* paragraphs <p> */
+    .jaisocx.clean_start p {
+      margin:                    1rem 0 0 0;
+    }
+    .jaisocx.clean_start p:first-of-type {
+      margin:                    0 0 0 0;
+    }
+
+  </style>
+
+
+
+  <!-- CleanStart_Tiny Mobile friendly -->
+  <style name="mobile_friendly">
+
+    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1rem 0.3rem 2rem 0.3rem;
+        --clean_start--site--width:        100%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      1.2rem 0.3rem 5rem 0.3rem;
+        --clean_start--site--width:        92%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
+      .jaisocx.clean_start {
+        --clean_start--site--padding:      0.3rem 0.3rem 1rem 0.3rem;
+        --clean_start--site--width:        95%;
+      }
+    }
+
+  </style>
+
+
+</head>
+<body>
+<site>
+
+
+  <label> <h1> LockViewer  ®  </h1> </label>
+
+  <h2> LockViewer </h2>
+
+
+  <block>
+    <jstree id="tree_holder_0"></jstree>
+  </block>
+
+  <block>
+    <jstree id="tree_holder_1"></jstree>
+  </block>
+
+  <block>
+    <jstree id="tree_holder_2"></jstree>
+  </block>
+
+  <block>
+    <jstree id="tree_holder_3"></jstree>
+  </block>
+
+</site>
+</body>
+
+
+
+
+
+<script src="example__sites_tools/json_styling__tree/bundle__json_styling__tree.js"></script>
+
+<script src="example__sites_tools/spa__lock_viewer/src/JaisocxLockViewer.js" defer="defer"></script>
+
+<script name="jaisocx_package">
+
+let glob_dataJaisocxPackage_js = [
+  {"name":"@jaisocx/text","keywords":["string","text","html","email"],"version":"2.2.2","description":"``` npm install @jaisocx/text ```","sanitized_name":"@jaisocx/text","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-06T02:15:55.163Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/text"}},
+  {"name":"@jaisocx/responsive-sizes","keywords":[],"version":"1.3.6","description":"`@jaisocx/responsive-sizes`   > 💡 The package does ...","sanitized_name":"@jaisocx/responsive-sizes","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-18T02:03:22.650Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/responsive-sizes"}},
+  {"name":"@jaisocx/template-renderer","keywords":["template","render"],"version":"1.6.2","description":"`@jaisocx/template-renderer`   > 💡 The package does ...","sanitized_name":"@jaisocx/template-renderer","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-18T03:38:48.654Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/template-renderer"}},
+  {"name":"@jaisocx/css-html","keywords":["string","text","html","email"],"version":"1.3.6","description":"``` npm install @jaisocx/css-html ```","sanitized_name":"@jaisocx/css-html","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-30T23:55:23.714Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-html"}},
+  {"name":"@jaisocx/media_tools_images_mini_mimetypes_base","keywords":["css","styles","themes","images","mini-images"],"version":"1.2.2","description":"`@jaisocx/media_tools_images_mini_mimetypes_base`","sanitized_name":"@jaisocx/media_tools_images_mini_mimetypes_base","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-11T00:05:53.071Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_images_mini_mimetypes_base"}},
+  {"name":"@jaisocx/api","keywords":["api","objdata"],"version":"1.2.3","description":"[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)","sanitized_name":"@jaisocx/api","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-06-02T21:59:11.487Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/api"}},
+  {"name":"@jaisocx/email-html-inliner","keywords":["inline","css","styles","html","email"],"version":"1.3.7","description":"``` npm install @jaisocx/email-html-inliner ```","sanitized_name":"@jaisocx/email-html-inliner","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-06-03T00:36:15.164Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/email-html-inliner"}},
+  {"name":"@jaisocx/event-emitter","keywords":["event","efficiency","improval"],"version":"1.4.3","description":"`@jaisocx/event-emitter`   > 💡 Optimization of adding in-browser interactivity events to rendered styled big data, like tree and table.","sanitized_name":"@jaisocx/event-emitter","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-18T03:36:17.484Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/event-emitter"}},
+  {"name":"@jaisocx/theme-turn-on","keywords":["css","styles"],"version":"1.0.4","description":"`@jaisocx/theme-turn-on`   > 💡 The package does ...","sanitized_name":"@jaisocx/theme-turn-on","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-17T22:45:41.197Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/theme-turn-on"}},
+  {"name":"@jaisocx/objdata","keywords":["JSON","Binary","parse","serialize","object"],"version":"2.1.3","description":"ObjData represents the Objects and array and arrays of objects, where no parsing by bytewise chars comparisons are not used (XML and Json are in all text IDEs readable/writable, and use comaparisons of chars), and the instantiating a JavaScript Object ins","sanitized_name":"@jaisocx/objdata","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-06-02T20:47:59.368Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/objdata"}},
+  {"name":"@jaisocx/media_tools_fonts_orbitron","keywords":["imports","fonts","styles","css"],"version":"1.2.2","description":"The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.","sanitized_name":"@jaisocx/media_tools_fonts_orbitron","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-10T22:41:40.992Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_fonts_orbitron"}},
+  {"name":"@jaisocx/jpath","keywords":["jpath","json","query","filter","search","lookup"],"version":"2.0.5","description":"JPath accepts queries of datatype (string|number)[] and performs lookup in js objects and arrays","sanitized_name":"@jaisocx/jpath","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-05-07T06:25:38.450Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/jpath"}},
+  {"name":"@jaisocx/css-table","keywords":["css","styles"],"version":"3.5.93","description":"Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types","sanitized_name":"@jaisocx/css-table","publisher":{"email":"illia.polianskyi@protonmail.com","actor":{"name":"jaisocx","type":"user","email":"illia.polianskyi@protonmail.com"},"username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-22T04:48:35.002Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-table"}},
+  {"name":"@jaisocx/css-table-ordered","keywords":["table","order_by","css","styles","ui"],"version":"2.4.5","description":"Css sites tool styling a server side rendered database table data to a grid view, with solutions for sticky scroll and order by on columns via browser's js engine","sanitized_name":"@jaisocx/css-table-ordered","publisher":{"actor":{"name":"jaisocx","type":"user","email":"illia.polianskyi@protonmail.com"},"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-22T06:28:22.225Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-table-ordered"}},
+  {"name":"@jaisocx/media_tools_fonts_base","keywords":["imports","fonts","styles","css"],"version":"1.2.2","description":"The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.","sanitized_name":"@jaisocx/media_tools_fonts_base","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-10T22:38:55.138Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/media_tools_fonts_base"}},
+  {"name":"@jaisocx/css-clean-start-2","keywords":["css","styles"],"version":"1.2.9","description":"Css sites resetting default styles with main.css of few hundereds css code lines, and the very nice infrastructure for responsive sites bugfixing and fine-tuning","sanitized_name":"@jaisocx/css-clean-start-2","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2026-02-11T12:06:53.489Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-clean-start-2"}},
+  {"name":"@jaisocx/tree","keywords":["json","tree"],"version":"2.2.22","description":"Sites tool, styling json","sanitized_name":"@jaisocx/tree","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"ISC","date":"2026-02-22T03:49:03.577Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/tree"}},
+  {"name":"@jaisocx/preloader","keywords":[],"version":"2.3.2","description":"fine tuning of look and feel themes turning on.","sanitized_name":"@jaisocx/preloader","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-09-19T04:11:42.229Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/preloader"}},
+  {"name":"@jaisocx/css-importer","keywords":["css","css import","import resolver","bundler"],"version":"1.4.1","description":"Like the Webpack, builds a bundle of several sources, however just with .css stylesheets, and also very fast, in milliseconds.","sanitized_name":"@jaisocx/css-importer","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"license":"nope","date":"2025-09-27T13:34:09.286Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/css-importer"}},
+  {"name":"@jaisocx/eslint-plugins","keywords":[],"version":"1.3.2","description":"## eslint.config.js","sanitized_name":"@jaisocx/eslint-plugins","publisher":{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"},"maintainers":[{"email":"illia.polianskyi@protonmail.com","username":"jaisocx"}],"date":"2025-07-11T03:41:59.536Z","links":{"npm":"https://www.npmjs.com/package/@jaisocx/eslint-plugins"}}
+];
+
+</script>
+
+<script name="lock_json">
+let glob_dataPackageLockJson_js = {
+  "name": "@jaisocx/sites-tools-on-cdn",
+  "version": "1.0.1",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "@jaisocx/sites-tools-on-cdn",
+      "version": "1.0.1",
+      "dependencies": {
+        "@jaisocx/api": "~1.2.3",
+        "@jaisocx/cdn-datasets-base": "~1.3.1",
+        "@jaisocx/charcode-converter": "~1.4.2",
+        "@jaisocx/clean_start_zero": "~1.0.2",
+        "@jaisocx/command-line": "~1.2.4",
+        "@jaisocx/css_clean_start_lite": "~1.0.3",
+        "@jaisocx/css-clean-start": "1.5.6",
+        "@jaisocx/css-clean-start-2": "~1.2.9",
+        "@jaisocx/css-code-snippet": "~1.4.3",
+        "@jaisocx/css-html": "~1.3.6",
+        "@jaisocx/css-importer": "~1.4.1",
+        "@jaisocx/css-js-html-constants": "~1.0.3",
+        "@jaisocx/css-table": "~3.5.93",
+        "@jaisocx/css-table-ordered": "~2.4.5",
+        "@jaisocx/css-tool-template": "~2.1.4",
+        "@jaisocx/email-html-inliner": "~1.3.7",
+        "@jaisocx/engine-and-data-records": "~1.2.1",
+        "@jaisocx/eslint-plugins": "~1.3.2",
+        "@jaisocx/event-emitter": "~1.4.3",
+        "@jaisocx/example-built-with-webpack": "~1.0.3",
+        "@jaisocx/example-css-clean-start": "~1.3.2",
+        "@jaisocx/file-producer-by-template": "~1.2.2",
+        "@jaisocx/file-writer": "~1.2.7",
+        "@jaisocx/jpath": "~2.0.5",
+        "@jaisocx/linked-resources-integrity": "~1.0.1",
+        "@jaisocx/media_tools_fonts_base": "~1.2.2",
+        "@jaisocx/media_tools_fonts_orbitron": "~1.2.2",
+        "@jaisocx/media_tools_images_mini_datatypes_base": "~1.2.2",
+        "@jaisocx/media_tools_images_mini_freepic_kawaii": "~1.2.2",
+        "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.2.2",
+        "@jaisocx/mime-type": "~1.0.7",
+        "@jaisocx/objdata": "~2.1.3",
+        "@jaisocx/preloader": "~2.3.2",
+        "@jaisocx/project-builder": "~1.3.3",
+        "@jaisocx/responsive-sizes": "~1.3.6",
+        "@jaisocx/sites-tool-automation": "~2.2.1",
+        "@jaisocx/template-renderer": "~1.6.2",
+        "@jaisocx/text": "~2.2.2",
+        "@jaisocx/theme-turn-on": "~1.0.4",
+        "@jaisocx/tokens-parser": "~1.2.2",
+        "@jaisocx/tooltip": "~1.2.5",
+        "@jaisocx/tree": "~2.2.22"
+      }
+    },
+    "node_modules/@jaisocx/api": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/api/-/api-1.2.3.tgz",
+      "integrity": "sha512-Okz5Uq4MpomqprYvx5TKZUzmFytRwXudohjPl1TJrRKsTYTvjX9LvGVgo767mrAwZrh6QXgjCp5jXiUt7SIi2w==",
+      "license": "nope",
+      "optionalDependencies": {
+        "@jaisocx/objdata": "2.1.3"
+      }
+    },
+    "node_modules/@jaisocx/cdn-datasets-base": {
+      "version": "1.3.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/cdn-datasets-base/-/cdn-datasets-base-1.3.1.tgz",
+      "integrity": "sha512-zjI71KaIrNObD2rdtRmTzYB32y0j83vKpHFOBS8mtCKxb8p4ZDbqqeg4Sy4GZalYnwwhT9mlneVES3JcvsP2Gw==",
+      "optionalDependencies": {
+        "@jaisocx/file-writer": "~1.2.7",
+        "@jaisocx/jpath": "^1.2.3"
+      }
+    },
+    "node_modules/@jaisocx/cdn-datasets-base/node_modules/@jaisocx/jpath": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/jpath/-/jpath-1.2.3.tgz",
+      "integrity": "sha512-QTfxWBvXpp+TTqsvyOAXHkhwQriyYZLGc1zSUNnr68TEc0qVAGWH+78dgA0hnjOG+SUY95ZLnK7nJCUWBdcqNg==",
+      "optional": true
+    },
+    "node_modules/@jaisocx/charcode-converter": {
+      "version": "1.4.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/charcode-converter/-/charcode-converter-1.4.2.tgz",
+      "integrity": "sha512-sKwJER+3Kj2ho+cFfPSoaG+D+ZbYikPG1kNXvQuU5fFdqe0gHoyBp881s8UYucWDc8ZaGbhrS/ONYgw5UzRrdw==",
+      "optionalDependencies": {
+        "@jaisocx/cdn-datasets-base": "^1.2.2",
+        "@jaisocx/event-emitter": "^1.4.2"
+      }
+    },
+    "node_modules/@jaisocx/clean_start_zero": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/clean_start_zero/-/clean_start_zero-1.0.2.tgz",
+      "integrity": "sha512-xhfiJsWVUeu3wc39JpLndwe8Q49Y119wuq+PbqrGJ00xDWJpOLyhrfN/A2ZU4VmrZgPbu+G4YmmICGVvScYteg==",
+      "license": "ISC"
+    },
+    "node_modules/@jaisocx/command-line": {
+      "version": "1.2.4",
+      "resolved": "https://registry.npmjs.org/@jaisocx/command-line/-/command-line-1.2.4.tgz",
+      "integrity": "sha512-ng5l/dSbBjyxwqRAmUdbgTFMIH5EMTLyoY1ZePFrHwqCqfgsihnF2LzlyjSK+R0EsK5w4SIdCUYprEF/85rBmg=="
+    },
+    "node_modules/@jaisocx/css_clean_start_lite": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css_clean_start_lite/-/css_clean_start_lite-1.0.3.tgz",
+      "integrity": "sha512-GZnJstQR+qZEzhBTl5zOfMjo1+WWDpfuwHekIB7ClxJPjrUqIPYe30tRcZ4BHP7NEWguJuJUChQ/JqDojn4g+Q=="
+    },
+    "node_modules/@jaisocx/css-clean-start": {
+      "version": "1.5.6",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-clean-start/-/css-clean-start-1.5.6.tgz",
+      "integrity": "sha512-NPd4QVf/ZpFHSo0mkvd96eXjwlPenBJXB9twwsKqy93pxXaFUxL7xmk8XgZq8xb4xvxKjIgH1tmtHKkbYrIEAg==",
+      "license": "ISC"
+    },
+    "node_modules/@jaisocx/css-clean-start-2": {
+      "version": "1.2.9",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-clean-start-2/-/css-clean-start-2-1.2.9.tgz",
+      "integrity": "sha512-FBY7s9IG8a/xP6Ht4PpRVtFwgfjGLojJbwKp/YNtzyKURC/ZEk8Vu+1RCKd0tASfIogOvQEqi6gnCt9+OKuKKg==",
+      "optionalDependencies": {
+        "@jaisocx/media_tools_fonts_base": "~1.0.9"
+      }
+    },
+    "node_modules/@jaisocx/css-clean-start-2/node_modules/@jaisocx/media_tools_fonts_base": {
+      "version": "1.0.9",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_fonts_base/-/media_tools_fonts_base-1.0.9.tgz",
+      "integrity": "sha512-GtSPPBAUoRuvzcn8ZwV86s7nyU29TH4vBYqhbYFmjJfv/q0K85hgwDp8xZTDWtU48KweX3NhuFrxyXqo7y4uNg==",
+      "optional": true,
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.2"
+      }
+    },
+    "node_modules/@jaisocx/css-code-snippet": {
+      "version": "1.4.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-code-snippet/-/css-code-snippet-1.4.3.tgz",
+      "integrity": "sha512-uaoGVmvijItnuv8zlwnMrrzjhorEmRoNTYOeQaTtkDLIfQSkq3bELurlOWE+vZQsajBPN+c2nIsSkWR0AvNYDQ==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/css-html": {
+      "version": "1.3.6",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-html/-/css-html-1.3.6.tgz",
+      "integrity": "sha512-sp39wjqe8wFFM5Zd+F/9HHeNGTvI1QJROuElOgbtzgsuyT+a3rVRVt+nF5sZDhTTyz0ge/23Sh4F3qgvR72DZA=="
+    },
+    "node_modules/@jaisocx/css-importer": {
+      "version": "1.4.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-importer/-/css-importer-1.4.1.tgz",
+      "integrity": "sha512-unzW3tQ9b09RzEIiISM/tp0l5gRxzjtId0aqZ9wkBhkpzCpp0c0JRk77aGtba+XvTJEZZN2RpissBad7Mzi4dg==",
+      "dependencies": {
+        "@jaisocx/file-writer": "^1.2.7",
+        "@jaisocx/tokens-parser": "^1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/css-js-html-constants": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-js-html-constants/-/css-js-html-constants-1.0.3.tgz",
+      "integrity": "sha512-rxK2rq0PIjGj0vyp/7DPIv3hCT1RFrzAKu/3AjoDpeZ1Hl3CrlF1tBKfPTn8ic3q6wlJZx//Cq4SnUBitPA+9A=="
+    },
+    "node_modules/@jaisocx/css-table": {
+      "version": "3.5.93",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-table/-/css-table-3.5.93.tgz",
+      "integrity": "sha512-hMVi+nIrSUedqnTj1JhCNcaikE/TbsIxsjmCouJuiun7UxoTtB7eUAa/Y47mcIdgTS7IsODz1CvpVpfHBVGd0g==",
+      "dependencies": {
+        "@jaisocx/css-table": "^3.5.91"
+      },
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3",
+        "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/css-table-ordered": {
+      "version": "2.4.5",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-table-ordered/-/css-table-ordered-2.4.5.tgz",
+      "integrity": "sha512-NrIQ9UnLHysXuy0lpVQLA5kRcTImgEUmi6w3SpGgH2NZyCUf5qO9gCTPy6OWJUIJ+1sV9H87IhTazfXH76lfaA==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3",
+        "@jaisocx/css-table": "~3.5.93"
+      }
+    },
+    "node_modules/@jaisocx/css-tool-template": {
+      "version": "2.1.4",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-tool-template/-/css-tool-template-2.1.4.tgz",
+      "integrity": "sha512-IJaPy92Njai7y2js6bB4daFwJbnJDOK0ntor9F/RUBg0F7Yr9kPYfWIqjhx95fA9u1C26jJycBpAO0eGi9Ey1w==",
+      "dependencies": {
+        "@jaisocx/css-clean-start-2": "~1.1.5"
+      }
+    },
+    "node_modules/@jaisocx/css-tool-template/node_modules/@jaisocx/css-clean-start-2": {
+      "version": "1.1.10",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-clean-start-2/-/css-clean-start-2-1.1.10.tgz",
+      "integrity": "sha512-pf2RFdGVgZV9TfMlCEkOX4xy/lSmtjjUlwRYVlUgKcKXV+ASOLyfWePkPzsZ/IXY+RW/ro+4o3Yfla34XWMI+w==",
+      "optionalDependencies": {
+        "@jaisocx/responsive-sizes": "~1.3.1"
+      }
+    },
+    "node_modules/@jaisocx/email-html-inliner": {
+      "version": "1.3.7",
+      "resolved": "https://registry.npmjs.org/@jaisocx/email-html-inliner/-/email-html-inliner-1.3.7.tgz",
+      "integrity": "sha512-UI/nA9KOZlst3N7SCCsgDSMfibQqB1SlCgykF8J3KmiPiN1eWmd3m+SLwqsA5ceeFtg6kmM5BoNTZCVu/B71Gg==",
+      "optionalDependencies": {
+        "@jaisocx/css-html": "^1.3.5",
+        "@jaisocx/text": "^1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/email-html-inliner/node_modules/@jaisocx/text": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/text/-/text-1.2.2.tgz",
+      "integrity": "sha512-IdIS4aXPbRyWgzKImUgqew2FIqyZEuUBsbSzgzBDPf+Zj1UqbELNI781JtCFVEfPBwLZMaFkjThzOw53Hzny0w==",
+      "optional": true
+    },
+    "node_modules/@jaisocx/engine-and-data-records": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/engine-and-data-records/-/engine-and-data-records-1.2.1.tgz",
+      "integrity": "sha512-9Dl2IlmK7sbWlKINF8Ercsr0QHXPB83lwZ7BZSs3kqZKl3lC93wVHLFie8V2IINPauOGMNIOXogrh7Mm7fNN5Q=="
+    },
+    "node_modules/@jaisocx/eslint-plugins": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/eslint-plugins/-/eslint-plugins-1.3.2.tgz",
+      "integrity": "sha512-2qcp+ZzAHwysmkEhcCa1x53xZvb2wZRACWVB4izE2rtUZiMtUn+8GAXmuZYtXHWlrDtUrPOV4pXcabmsRULGPQ=="
+    },
+    "node_modules/@jaisocx/event-emitter": {
+      "version": "1.4.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/event-emitter/-/event-emitter-1.4.3.tgz",
+      "integrity": "sha512-jASz6RieXbhOF8Ldl0TB5J/hUX4IQwomTHgnGpVdWmK6D3qjuI7/IBosBkrOAiZhxsbyUmf8e3ydWCnoSv9j1w=="
+    },
+    "node_modules/@jaisocx/example-built-with-webpack": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/example-built-with-webpack/-/example-built-with-webpack-1.0.3.tgz",
+      "integrity": "sha512-3x/KbCm1x1agEnFIFr9dn1wJNhMOiJH2bID5ml7Ih9ZqhbQpJWmBSW6m4jfjaig48ssprRljhqaZ/Yb2T+Ww3Q==",
+      "dependencies": {
+        "@jaisocx/css-clean-start": "^1.3.22",
+        "@jaisocx/tooltip": "^1.2.4"
+      }
+    },
+    "node_modules/@jaisocx/example-css-clean-start": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/example-css-clean-start/-/example-css-clean-start-1.3.2.tgz",
+      "integrity": "sha512-CZJfV8ixHqRsu7jjTBsMpezMS87EIGQPzEfB3n6gfDa0C+fhtVZuvwqZ4YQq4dqH1aL+FWHcpJRh24kaPgsY/w==",
+      "license": "ISC",
+      "optionalDependencies": {
+        "@jaisocx/css-clean-start": "^1.3.x"
+      }
+    },
+    "node_modules/@jaisocx/file-producer-by-template": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/file-producer-by-template/-/file-producer-by-template-1.2.2.tgz",
+      "integrity": "sha512-uLQicjjIQm73l4CCXHEHB6uBwEs/WPpN3quIhwRMZ3AQNjCl8Y0aFIPux7XjTlrbfj8RcdoDNaWjOg0yw6pVTA==",
+      "optionalDependencies": {
+        "@jaisocx/file-writer": "~1.2.7",
+        "@jaisocx/template-renderer": "~1.6.1"
+      }
+    },
+    "node_modules/@jaisocx/file-writer": {
+      "version": "1.2.7",
+      "resolved": "https://registry.npmjs.org/@jaisocx/file-writer/-/file-writer-1.2.7.tgz",
+      "integrity": "sha512-/ctwzRTeyGIxRypsS5FiIrtN2y4hV9PDC2qKngoKqfSJxqfWSBismXnZPkK+URmqUrTm1ZYtIEoCUR/YkCmQSg==",
+      "optionalDependencies": {
+        "@jaisocx/event-emitter": "^1.4.2"
+      }
+    },
+    "node_modules/@jaisocx/jpath": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/@jaisocx/jpath/-/jpath-2.0.5.tgz",
+      "integrity": "sha512-M4fjBB1zinayLBjc9+h1foN286CBjeeBERFqgMemOmeJgzhbfSijbXqxErSpS2z/s2TVz9s+D8n7ZGb3RETXJA==",
+      "optionalDependencies": {
+        "@jaisocx/css-code-snippet": "^1.4.3"
+      }
+    },
+    "node_modules/@jaisocx/linked-resources-integrity": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/linked-resources-integrity/-/linked-resources-integrity-1.0.1.tgz",
+      "integrity": "sha512-ZPGrJgrJRJGDSZihpH194DLvZYaVY0B+IfzQFn3/nlwsTeqTwfwiIetb9YJijKTeh2sAMU81E3nDgbit2D8niw==",
+      "optionalDependencies": {
+        "@jaisocx/command-line": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/linked-resources-integrity/node_modules/@jaisocx/command-line": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/command-line/-/command-line-1.0.3.tgz",
+      "integrity": "sha512-8FfJo9mAtGgolD3k3HTm4zvTqJGKsGfqu3tfn9V0Y0DUuqiGi9Ry/nU0+aQVrTbNEgHKClwFb6rPScteD2sztw==",
+      "optional": true
+    },
+    "node_modules/@jaisocx/media_tools_fonts_base": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_fonts_base/-/media_tools_fonts_base-1.2.2.tgz",
+      "integrity": "sha512-6IS8AzrHrjRQkZtO9rKBPepLZcD+Ikpzc+bLPEU7FO7dZGuVP4axyCrQmRNj0ymJ3q9t1l+bKAWcHujEgz/bAA==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/media_tools_fonts_orbitron": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_fonts_orbitron/-/media_tools_fonts_orbitron-1.2.2.tgz",
+      "integrity": "sha512-odBZC7sJbGkjIytDkFH40RTVEpXUqQiYLTruR9ijnClTS2YRQSstYomma2VSutaHkeiIZPlcFUOwD7CLqwecUw==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/media_tools_images_mini_datatypes_base": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_images_mini_datatypes_base/-/media_tools_images_mini_datatypes_base-1.2.2.tgz",
+      "integrity": "sha512-P1djYbBq1129G+gN9H1x3rPIhNXyj3+7RlsVfoFoVIYxrTBFFKr86eY2Gx1FJxzemuhj2XIb6rv+2rtNL09RaA==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/media_tools_images_mini_freepic_kawaii": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_images_mini_freepic_kawaii/-/media_tools_images_mini_freepic_kawaii-1.2.2.tgz",
+      "integrity": "sha512-RHnNZLOkomQQKmWYA4/nG1CBCNRHvrEGCfo+NDVllWLExgv6lZUaIa4piQ39Sm/7TLI3rjQYkIBE1dXO3Lud2A==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/media_tools_images_mini_mimetypes_base": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/media_tools_images_mini_mimetypes_base/-/media_tools_images_mini_mimetypes_base-1.2.2.tgz",
+      "integrity": "sha512-99mc4JZRn2jDAJEZ59MemCPQwqN8RQlV2PygiYpiVBEJCi8fdX1HbRcmbCplgX97a5gpBUFwDtbjQO1p8pZHjw==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "~1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/mime-type": {
+      "version": "1.0.7",
+      "resolved": "https://registry.npmjs.org/@jaisocx/mime-type/-/mime-type-1.0.7.tgz",
+      "integrity": "sha512-ENbWyygeGduecldRLoe21e8iMtdqU1iqGe2lnTItu5n68zTlLkA7ofTR8rwmP/mhTsm5hrdAM7Lbv24jmkMO6A=="
+    },
+    "node_modules/@jaisocx/objdata": {
+      "version": "2.1.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/objdata/-/objdata-2.1.3.tgz",
+      "integrity": "sha512-ZJSA1hWCQ0YphYp1IkJapcCx5KxqCPiLUcdRsD7O+6xM9twvEn0TfbK0lmBRPhmSNj0yL19TTQTGF3NpYAYVeg==",
+      "license": "nope"
+    },
+    "node_modules/@jaisocx/preloader": {
+      "version": "2.3.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/preloader/-/preloader-2.3.2.tgz",
+      "integrity": "sha512-bIOhm4cIz0S5dTejNH7kBnNqRllw+HAcrlzo0Btme3AIftKUzVRcUVfoVz8urnWNSKj6C7FhrJx0tEdhPsQx6w==",
+      "optionalDependencies": {
+        "@jaisocx/mime-type": "~1.0.7",
+        "@jaisocx/template-renderer": "~1.6.1",
+        "@jaisocx/text": "~2.2.2"
+      }
+    },
+    "node_modules/@jaisocx/project-builder": {
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/project-builder/-/project-builder-1.3.3.tgz",
+      "integrity": "sha512-3OosOxmSKmy4Sv3/u66SC6SnW7Ba6PvoUN4lBNINK/X2ZX2Hzla+R8XhGWP0AGyKfth2KhOWXNZT5VEI9+7dKw==",
+      "dependencies": {
+        "@jaisocx/css-importer": "^1.4.1",
+        "@jaisocx/eslint-plugins": "^1.3.2",
+        "@jaisocx/file-writer": "^1.2.2",
+        "json5": "^2.2.3"
+      }
+    },
+    "node_modules/@jaisocx/responsive-sizes": {
+      "version": "1.3.6",
+      "resolved": "https://registry.npmjs.org/@jaisocx/responsive-sizes/-/responsive-sizes-1.3.6.tgz",
+      "integrity": "sha512-abHw0cqzItlFxeeeDXveSGfAfJst6ertGKNobmT2gYbf+/gox+oqAcYdtiT08iImN998j8fSxzc0GFmLU6UsNg==",
+      "optionalDependencies": {
+        "@jaisocx/css-clean-start-2": "~1.2.9"
+      }
+    },
+    "node_modules/@jaisocx/sites-tool-automation": {
+      "version": "2.2.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/sites-tool-automation/-/sites-tool-automation-2.2.1.tgz",
+      "integrity": "sha512-XUWbz/PQwZx51NtqlIUTknRvdk0oekfmyyQUIyy+MYKLiGlDWsbohrPz8VqgBf9jK0YgvPwBptKrWtMoU4PmBg==",
+      "dependencies": {
+        "@jaisocx/file-producer-by-template": "~1.2.2",
+        "@jaisocx/file-writer": "~1.2.7",
+        "@jaisocx/template-renderer": "~1.6.1"
+      },
+      "optionalDependencies": {
+        "@jaisocx/css-clean-start-2": "^1.2.9",
+        "@jaisocx/tree": "^2.2.20"
+      }
+    },
+    "node_modules/@jaisocx/template-renderer": {
+      "version": "1.6.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/template-renderer/-/template-renderer-1.6.2.tgz",
+      "integrity": "sha512-31zs0w7Vagz144HRB+mRKISf6UrA9VgxCJNye9UdOG/YGw6VPgKd0Q1KiXkGeFKpe/OV/27dBsyJpuxn7WIcaQ==",
+      "optionalDependencies": {
+        "@jaisocx/event-emitter": "^1.4.3",
+        "@jaisocx/tokens-parser": "^1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/text": {
+      "version": "2.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/text/-/text-2.2.2.tgz",
+      "integrity": "sha512-Xqf7OuieBRli3JVmCf1lPEOpt60dnpBStMxnv7ea9NCOjOlA+/Kfyq8yReMQT0Eof7oZcZLo8+EPcN04l00XbA=="
+    },
+    "node_modules/@jaisocx/theme-turn-on": {
+      "version": "1.0.4",
+      "resolved": "https://registry.npmjs.org/@jaisocx/theme-turn-on/-/theme-turn-on-1.0.4.tgz",
+      "integrity": "sha512-VGbkcu8f5v89U/TKHyPAJRZnMFlufN3ygNEDt3NiO4nRFfQF77JOcODSNmU9xtWrAJMToO5h6/TKb2Xg3mdXXg==",
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "^1.0.3"
+      }
+    },
+    "node_modules/@jaisocx/tokens-parser": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/tokens-parser/-/tokens-parser-1.2.2.tgz",
+      "integrity": "sha512-uBgE4HqDdvTv910j0zzr8cW/HMumpqhrtQsa1S0ZO7+2NjS6rtUCTsDcIajrxWnKZiDD1dBCmsNsuHjGRiTE8Q=="
+    },
+    "node_modules/@jaisocx/tooltip": {
+      "version": "1.2.5",
+      "resolved": "https://registry.npmjs.org/@jaisocx/tooltip/-/tooltip-1.2.5.tgz",
+      "integrity": "sha512-+ixMJJoFAnzY5DcHVXlyFlNFpS11zwrtkIbQmvVfUChmcJXJiOME4nfhLVTtHYdgx6vQBlrS+HgUWqUywXcQPw==",
+      "license": "ISC",
+      "optionalDependencies": {
+        "@jaisocx/event-emitter": "^1.4.2",
+        "@jaisocx/template-renderer": "^1.5.8"
+      }
+    },
+    "node_modules/@jaisocx/tree": {
+      "version": "2.2.22",
+      "resolved": "https://registry.npmjs.org/@jaisocx/tree/-/tree-2.2.22.tgz",
+      "integrity": "sha512-CX9pli4GhP/Dg+FftJY0Pe2/MbZZV10czCDOPHB9RE/I/Oa4KDbA+3AlcSufdw7pJo6mHwnAOmFSEzX280P7yA==",
+      "dependencies": {
+        "@jaisocx/event-emitter": "~1.4.3",
+        "@jaisocx/jpath": "~1.2.3",
+        "@jaisocx/template-renderer": "~1.6.2"
+      },
+      "optionalDependencies": {
+        "@jaisocx/css_clean_start_lite": "^1.0.3",
+        "@jaisocx/media_tools_fonts_base": "~1.2.2",
+        "@jaisocx/preloader": "~2.3.2",
+        "@jaisocx/theme-turn-on": "~1.0.4"
+      }
+    },
+    "node_modules/@jaisocx/tree/node_modules/@jaisocx/jpath": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/jpath/-/jpath-1.2.3.tgz",
+      "integrity": "sha512-QTfxWBvXpp+TTqsvyOAXHkhwQriyYZLGc1zSUNnr68TEc0qVAGWH+78dgA0hnjOG+SUY95ZLnK7nJCUWBdcqNg=="
+    },
+    "node_modules/json5": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+      "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
+      "license": "MIT",
+      "bin": {
+        "json5": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    }
+  }
+};
+
+</script>
+
+
+
+<script>
+
+  class TreeData {
+
+    id = "";
+    data = new Object();
+    dataLink = "";
+    htmlHolderId = "";
+    htmlElem = new Object();
+    dataIconBase = "";
+    renderingMode = "";
+    nodesOpenMode = "";
+
+
+
+    constructor (
+      id,
+      dataLink,
+      data,
+      htmlHolderId,
+      htmlElem,
+      dataIconBase,
+      renderingMode,
+      nodesOpenMode
+    ) {
+      this.id = id || "";
+
+      if ( this.id === "" ) {
+        throw new Error( "Required Data ID." );
+      }
+
+      this.dataLink = dataLink || "";
+      this.data = data || new Object();
+      this.htmlHolderId = htmlHolderId || "";
+      if ( this.htmlHolderId === "" ) {
+        throw new Error( "Required HtmlHolder ID." );
+      }
+
+      this.dataIconBase = dataIconBase || "";
+      this.renderingMode = renderingMode;
+      this.nodesOpenMode = nodesOpenMode;
+    }
+
+  }
+
+
+
+  class TreeExamples {
+
+    #treeInstances = new Object();
+    #treeData = new Object();
+    tsHtml = 1;
+
+    treeJsonDataIconBase = "";
+
+
+    constructor() {
+      // super();
+
+      this.#treeInstances = new Object();
+      this.#treeData = new Object();
+      this.tsHtml = 1;
+
+      this.treeJsonDataIconBase = "";
+    }
+
+
+    setDataItems ( treeData ) {
+      this.#treeData = treeData;
+
+      return this;
+    }
+
+    addDataItem( inData ) {
+      const treeDataId = inData.id;
+      this.#treeData[ treeDataId ] = inData;
+
+      return this;
+    }
+
+    getTreeData() {
+      return this.#treeData;
+    }
+
+    getDataItemById( treeDataId ) {
+      const dataItem = this.#treeData[ treeDataId ];
+      return dataItem;
+    }
+
+
+    exampleFunc( inSelector, jsonItem, eventPayload ) {
+
+      let text = ( jsonItem.text ) ?? "";
+      let tagImg_miniImage = eventPayload.treeHtmlNode.querySelector( ".jstree-html-node-holder-icon > img" );
+      let imgSrc = tagImg_miniImage.getAttribute( "src" );
+      let imgAlt = tagImg_miniImage.getAttribute( "alt" );
+
+      if ( this.tsHtml === 1 ) {
+          this.tsHtml = document.body.querySelector( inSelector );
+      }
+
+      this.tsHtml.innerHTML = `
+        <img class="mini_image" src="${imgSrc}" alt="${imgAlt}" />
+        <div>${text}</div>`;
+    }
+
+
+
+    loadDataAndRenderTree (
+      id,
+      holderElemId,
+      dataOrLink,
+      renderingMode,
+      modeShownNodes,
+      whetherDataLink,
+      debug
+    ) {
+
+        // example to load by url
+        this.#treeInstances[ id ] = new JaisocxLockViewer();
+        let lockViewer = this.#treeInstances[ id ];
+
+        lockViewer
+          .setDebug( debug )
+          .setMainHtmlNodeId( holderElemId )
+          .setNodesWithIcons( true )
+          .setRenderingMode( renderingMode )
+          .setNodesOpenedMode( modeShownNodes )
+          .setModifiable( false )
+          .addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__AFTER_RENDER_ONE_NODE,
+              ( eventName, eventPayload ) => {
+                lockViewer.beforeRenderOneNode( eventName, eventPayload );
+              }
+
+          ).addJSTreeEventListener (
+              TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
+              ( eventName, eventPayload ) => {
+                  let loc_treeClassInstance = lockViewer;
+
+                  if ( this.debug === true ) {
+
+                    //# example to obtain of the current tree node the data that was used to render the tree.
+                    let treeNodeData = {
+                      "treeClassInstance": loc_treeClassInstance,
+                      "eventName": eventName,
+                      "eventPayload": eventPayload,
+                      "flatClone": eventPayload.jsonNode._flatClone,
+                      "deepClone": loc_treeClassInstance.getTreeDataByJPath( eventPayload.jsonNode._pathArray )
+                    };
+
+                    console.log( { treeNodeData } );
+                  }
+
+                  this.exampleFunc( ".testing_html", eventPayload.jsonNode._flatClone, eventPayload );
+              }
+           ).addThisClassEventListener (
+              "AFTER_RENDER",
+              ( eventName, treeExamplesRenderPayload ) => {
+                  if ( treeExamplesRenderPayload.id !== "pkglck" ) {
+                    return 2;
+                  }
+
+                  let counter = 1;
+                  let ix = 1;
+                  let packs = treeExamplesRenderPayload.pack;
+                  let pack_cp = ( new Object() );
+                  let packKeys = Object.keys( packs );
+                  let packNumber = packKeys.length;
+                  let correctionNumber = 2;
+                  let counterMax = ( packNumber + 1 );
+                  let item = ( new Object() );
+                  let newItem = ( new Object() );
+                  let key = ( new Object() );
+                  let newKey = ( new Object() );
+                  let verEncounteredNum = 1;
+
+                  ci_payload_cp: while ( counter < counterMax ) {
+                    counter += 1;
+                    if ( counter > counterMax ) {
+                      break ci_payload_cp;
+                    }
+
+                    ix = ( counter - correctionNumber );
+                    key = packKeys[ ix ];
+                    item = packs[ key ];
+                    newItem = ( new Object() );
+
+                    let versionsEncounteredKeys = Object.keys( item.counters.versionsEncountered );
+                    let verEncounteredNum = versionsEncounteredKeys.length;
+                    if ( verEncounteredNum === 0 ) {
+                      newKey = [ item.packageName, "@", item.packageVersion, "___n", "0" ].join( "" );
+                      newItem = "❎";
+                    } else if ( verEncounteredNum === 1 ) {
+                      if ( item.packageVersion === versionsEncounteredKeys[ 0 ] ) {
+                        newKey = [ item.packageName, "@", item.packageVersion, "___n", "1_", "✅" ].join( "" );
+                      } else {
+                        newKey = [ item.packageName, "@", item.packageVersion, "___n", "1_", "🔔" ].join( "" );
+                      }
+                      newItem = item.counters.versionsEncountered;
+
+                    } else {
+                      newKey = [ item.packageName, "@", item.packageVersion, "___n", Number( verEncounteredNum ).toString(), "_", "🟥" ].join( "" );
+                      newItem = item.counters.versionsEncountered;
+                    }
+                    pack_cp[ newKey ] = newItem;
+
+                    continue ci_payload_cp;
+                  }
+
+
+
+                  let treeDataId = "clean_tree";
+                  let dataItem = glob_dataItems[ treeDataId ];
+
+                  if ( this.#treeInstances[ treeDataId ] ) {
+                    this.#treeInstances[ treeDataId ].mainHolderHtmlNode.innerHTML = "";
+                    this.#treeInstances[ treeDataId ] = null;
+                  }
+
+                  this.loadDataAndRenderTree (
+                    dataItem[ "id" ],
+                    dataItem[ "htmlHolderId" ],
+                    treeExamplesRenderPayload,
+                    dataItem[ "renderingMode" ],
+                    dataItem[ "nodesOpenMode" ],
+                    ( dataItem[ "dataMode" ] === "link" ),
+                    dataItem[ "debug" ]
+                  );
+
+
+                  treeDataId = "pack";
+                  dataItem = glob_dataItems[ treeDataId ];
+
+                  if ( this.#treeInstances[ treeDataId ] ) {
+                    this.#treeInstances[ treeDataId ].mainHolderHtmlNode.innerHTML = "";
+                    this.#treeInstances[ treeDataId ] = null;
+                  }
+
+                  this.loadDataAndRenderTree (
+                    dataItem[ "id" ],
+                    dataItem[ "htmlHolderId" ],
+                    pack_cp,
+                    dataItem[ "renderingMode" ],
+                    dataItem[ "nodesOpenMode" ],
+                    ( dataItem[ "dataMode" ] === "link" ),
+                    dataItem[ "debug" ]
+                  );
+            } );
+
+
+           if ( whetherDataLink ) {
+             fetch( dataOrLink )
+              .then( ( response ) => { return response.json(); } )
+              .then( ( data ) => {
+                lockViewer.render( data );
+
+                let eventPayload = {
+                  "id": id,
+                  "pack": lockViewer.getJsPack(),
+                  "counters": lockViewer.getCounters()
+                };
+
+                lockViewer.emitEvent( "AFTER_RENDER", eventPayload );
+
+                // console.log( eventPayload.pack );
+                // console.log( eventPayload.counters );
+              } );
+
+              // lockViewer.load( dataOrLink );
+
+           } else {
+              lockViewer.render( dataOrLink );
+
+              let eventPayload = {
+                "id": id,
+                "pack": lockViewer.getJsPack(),
+                "counters": lockViewer.getCounters()
+              };
+
+              lockViewer.emitEvent( "AFTER_RENDER", eventPayload );
+           }
+
+           return 2;
+    }
+
+
+
+    renderExamples() {
+
+      let keys = Object.keys( this.#treeData );
+      let counter = 1;
+      let itemsNumber = keys.length;
+      let maxCounter = ( itemsNumber + 2 );
+
+      let elem = document.getElementsByTagName( "BODY" )[ 0 ];
+      let dataOrLink = [];
+
+      loop: while( counter < maxCounter ) {
+        counter++;
+        if ( counter >= maxCounter ) {
+          break loop;
+        }
+
+        let itemCounter = ( counter - 2 );
+        let id = keys[ itemCounter ];
+        let dataItem = this.#treeData[ id ];
+
+        if ( dataItem[ "dataMode" ] === "link" ) {
+          if (
+            ( dataItem[ "dataLink" ] === undefined )
+            || ( dataItem[ "dataLink" ] === null )
+            || ( dataItem[ "dataLink" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "dataLink" ];
+
+        } else {
+          if (
+            ( dataItem[ "data" ] === undefined )
+            || ( dataItem[ "data" ] === null )
+            || ( dataItem[ "data" ].length === 0 )
+          ) {
+            continue loop;
+          }
+
+          dataOrLink = dataItem[ "data" ];
+
+        }
+
+
+        this.loadDataAndRenderTree (
+          dataItem[ "id" ],
+          dataItem[ "htmlHolderId" ],
+          dataOrLink,
+          dataItem[ "renderingMode" ],
+          dataItem[ "nodesOpenMode" ],
+          ( dataItem[ "dataMode" ] === "link" ),
+          dataItem[ "debug" ]
+        );
+
+      }
+
+      return 2;
+    }
+  }
+</script>
+
+<script name="event_site_loaded">
+
+  let treeExamplesInstance = new Object();
+
+  let glob_dataItems = {
+    "all": {
+      id: "all",
+      dataMode: "jsObject",
+      dataLink: "/cdn_sites/example__sites_tools/spa__lock_viewer/data/Jaisocx_package.json",
+      data: glob_dataJaisocxPackage_js,
+      htmlHolderId: "tree_holder_0",
+      htmlElem: null,
+      dataIconBase: "/jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+      renderingMode: "mode_ease",
+      nodesOpenMode: "all_hide",
+      debug: false
+    },
+    "pkglck": {
+      id: "pkglck",
+      dataMode: "jsObject",
+      dataLink: "/cdn_sites/example__sites_tools/spa__lock_viewer/data/package-lock.json",
+      data: glob_dataPackageLockJson_js,
+      htmlHolderId: "tree_holder_1",
+      htmlElem: null,
+      dataIconBase: "/jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+      renderingMode: "mode_ease",
+      nodesOpenMode: "all_hide",
+      debug: false
+    },
+    "clean_tree": {
+      id: "clean_tree",
+      dataMode: "jsObject",
+      dataLink: "",
+      data: [],
+      htmlHolderId: "tree_holder_2",
+      htmlElem: null,
+      dataIconBase: "/jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+      renderingMode: "mode_ease",
+      nodesOpenMode: "all_hide",
+      debug: false
+    },
+    "pack": {
+      id: "pack",
+      dataMode: "jsObject",
+      dataLink: "",
+      data: [],
+      htmlHolderId: "tree_holder_3",
+      htmlElem: null,
+      dataIconBase: "/jaisocx/tree/MediaAndStyles/themes/theme-funny/mini-images/data-types/",
+      renderingMode: "mode_ease",
+      nodesOpenMode: "all_shown",
+      debug: false
+    }
+  };
+
+
+
+  document.addEventListener (
+    "DOMContentLoaded",
+    function ( evt ) {
+      glob_dataItems[ "all" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+      glob_dataItems[ "all" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+      glob_dataItems[ "pkglck" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+      glob_dataItems[ "pkglck" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+      glob_dataItems[ "clean_tree" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+      glob_dataItems[ "clean_tree" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+      glob_dataItems[ "pack" ][ "renderingMode" ] = TreeConstants.RenderingMode.Ease;
+      glob_dataItems[ "pack" ][ "nodesOpenMode" ] = TreeConstants.NodesOpenedMode.ALL_HIDE;
+
+      treeExamplesInstance = new TreeExamples();
+      treeExamplesInstance
+        .setDataItems( glob_dataItems )
+        .renderExamples();
+    }
+  );
+
+</script>
+
+</html>
+
+

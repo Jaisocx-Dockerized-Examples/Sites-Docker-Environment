@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1201px) {
+  .header .container {
+    max-width: 1200px !important;
+    width: 1200px !important;
+    margin: 0 auto;
+  }
+  section .container {
+    width: 1200px;
+  }
+  .main .advantages .container {
+    width: 1260px !important;
+  }
+  .main .contact_form {
+    max-width: 1200px !important;
+    width: 1200px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto;
+  }
+  .main .contact_form .container {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index-large.css.map */

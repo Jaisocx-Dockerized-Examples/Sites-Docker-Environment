@@ -1,0 +1,1026 @@
+
+.jsx .CodeSnippetHolder.css_clean_start_2__color_theme {
+  --code-snippet--theme-color: var(--jsx--css-clean-start-2--body-tag--background);
+  --code-snippet--background-color: var(--jsx--css-clean-start-2--site--background);
+
+
+  --code-snippet--text-color: var(--jsx--css-clean-start-2--all-tags--color);
+
+  --code-snippet-tool--border-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+
+  --code_snippet__column_numbers__text-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+  --code_snippet__column_numbers__background-color: var(--jsx--css-clean-start-2--body-tag--background);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jsx.blue,
+.jsx .blue,
+.CodeSnippetHolder.blue {
+
+  --code-snippet--theme-color: #f8fdff;
+
+  
+  
+  --code-snippet-tool--border-color: cornsilk;
+
+  
+  --code-snippet--text-color: darkblue;
+  --code-snippet--background-color: #fffffa;
+
+  
+  --code_snippet__column_numbers__text-color: #09f;
+  --code_snippet__column_numbers__background-color: #cef;
+
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.blue::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-thumb {
+    background-color: steelblue;
+  }
+
+  .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-track {
+    background-color:  #fafaff;
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.blue {
+    scrollbar-color: steelblue  #fafaff;
+    scrollbar-width: thin;
+  }
+}
+
+
+
+
+
+.jsx.rosa,
+.jsx .rosa,
+.CodeSnippetHolder.rosa {
+
+  --code-snippet--theme-color: #fff;
+
+  
+  
+  --code-snippet-tool--border-color: #fcc;
+
+  
+  --code-snippet--text-color: #444;
+  --code-snippet--background-color: #fee;
+
+  
+  --code_snippet__column_numbers__text-color: #fdd;
+  --code_snippet__column_numbers__background-color: white;
+
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-thumb {
+    background-color: magenta;
+  }
+
+  .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-track {
+    background-color: #fffafa;
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.rosa {
+    scrollbar-color: magenta #fffafa;
+    scrollbar-width: thin;
+  }
+}
+
+
+
+
+
+
+.jsx.salad,
+.jsx .salad,
+.CodeSnippetHolder.salad {
+
+  --code-snippet--theme-color: #f2fff8;
+
+  
+  
+  --code-snippet-tool--border-color: lime;
+
+  
+  --code-snippet--text-color: darkgreen;
+  --code-snippet--background-color: #fff;
+
+  
+  --code_snippet__column_numbers__text-color: lime;
+  --code_snippet__column_numbers__background-color: #efe;
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.salad::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-thumb {
+    background-color: lime;
+  }
+
+  .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-track {
+    background-color: #fefffe;
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.salad {
+    scrollbar-color: lime #fefffe;
+    scrollbar-width: thin;
+  }
+}
+
+
+
+
+
+
+.CodeSnippetHolder.large {
+
+  
+  
+  --code-snippet--line-height: 1.9rem;
+  --code-snippet--font-size: 1.5rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  
+  --code_snippet__column_numbers__width: 4.2rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+  
+}
+
+
+
+
+.CodeSnippetHolder,
+.CodeSnippetHolder.little {
+
+  
+  
+  --code-snippet--line-height: 0.97rem;
+  --code-snippet--font-size: 0.8rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  
+  --code_snippet__column_numbers__width: 3.3rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+  
+}
+
+
+
+
+.jsx .CssCodeSnippet {
+
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code-snippet-tool--overflow-y: auto;
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+
+  
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code_snippet__font_family: Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
+
+  
+  
+  --code-snippet-tool--border-color: lime;
+
+  
+  --code-snippet-tool--border-radius: 0;
+  --code-snippet-tool--border-width: 0.8px;
+  --code-snippet-tool--border-style: solid;
+
+
+  
+  
+  --code-snippet--line-height: 1.5rem;
+  --code-snippet--font-size: 0.875rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  
+  --code-snippet--text-color: darkgreen;
+  --code-snippet--background-color: #fff;
+
+
+  
+  --code_snippet__column_numbers__width: 3.3rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+
+  
+  --code_snippet__column_numbers__text-color: lime;
+  --code_snippet__column_numbers__background-color: #efe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2px) and (max-width: 99999px) and (min-height: 2px) and (max-height: 239px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_d05_very_small_xxs_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_d05_very_small_xxs_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 240px) and (max-width: 320px) and (min-height: 240px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e02_mobile_xs_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e02_mobile_xs_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 240px) and (max-width: 99999px) and (min-height: 240px) and (max-height: 320px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e02_mobile_xs_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e02_mobile_xs_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 375px) and (min-height: 321px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e04_mobile_s_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e04_mobile_s_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 99999px) and (min-height: 321px) and (max-height: 375px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e04_mobile_s_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e04_mobile_s_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 376px) and (max-width: 430px) and (min-height: 376px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e06_mobile_sm_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e06_mobile_sm_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 376px) and (max-width: 99999px) and (min-height: 376px) and (max-height: 430px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e06_mobile_sm_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e06_mobile_sm_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 431px) and (max-width: 480px) and (min-height: 431px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e08_mobile_md_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e08_mobile_md_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 431px) and (max-width: 99999px) and (min-height: 431px) and (max-height: 480px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e08_mobile_md_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e08_mobile_md_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) and (min-height: 481px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h03_tablet_s_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h03_tablet_s_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 99999px) and (min-height: 481px) and (max-height: 767px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h03_tablet_s_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h03_tablet_s_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h05_tablet_sm_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h05_tablet_sm_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h05_tablet_sm_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h05_tablet_sm_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1194px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h07_tablet_md_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h07_tablet_md_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1194px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h07_tablet_md_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h07_tablet_md_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1195px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h09_tablet_lg_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h09_tablet_lg_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1195px) and (max-width: 99999px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h09_tablet_lg_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h09_tablet_lg_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l02_laptop_sm_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l02_laptop_sm_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l02_laptop_sm_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l02_laptop_sm_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (min-height: 1366px) and (max-height: 1440px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l03_laptop_md_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l03_laptop_md_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) and (min-height: 1025px) and (max-height: 1440px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l03_laptop_md_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l03_laptop_md_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) and (min-height: 1441px) and (max-height: 1600px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l07_laptop_lg_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l07_laptop_lg_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) and (min-height: 1025px) and (max-height: 1600px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_l07_laptop_lg_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_l07_laptop_lg_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 1601px) and (max-height: 1920px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s02_display_xl_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s02_display_xl_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1601px) and (max-width: 1920px) and (min-height: 1025px) and (max-height: 1920px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s02_display_xl_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s02_display_xl_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 2560px) and (min-height: 1921px) and (max-height: 2560px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s04_display_xxl_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s04_display_xxl_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1921px) and (max-width: 2560px) and (min-height: 1025px) and (max-height: 2560px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s04_display_xxl_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s04_display_xxl_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 3840px) and (min-height: 2561px) and (max-height: 3840px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s08_display_qhd_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s08_display_qhd_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 2561px) and (max-width: 3840px) and (min-height: 1025px) and (max-height: 3840px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_s08_display_qhd_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_s08_display_qhd_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 7680px) and (min-height: 3841px) and (max-height: 7680px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t04_tv_4k_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t04_tv_4k_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 3841px) and (max-width: 7680px) and (min-height: 1025px) and (max-height: 7680px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t04_tv_4k_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t04_tv_4k_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 15360px) and (min-height: 7681px) and (max-height: 15360px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t08_tv_8k_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t08_tv_8k_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 7681px) and (max-width: 15360px) and (min-height: 1025px) and (max-height: 15360px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t08_tv_8k_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t08_tv_8k_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 25360px) and (min-height: 15361px) and (max-height: 25360px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t16_tv_16k_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t16_tv_16k_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 15361px) and (max-width: 25360px) and (min-height: 1025px) and (max-height: 25360px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t16_tv_16k_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t16_tv_16k_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 999999px) and (min-height: 25361px) and (max-height: 999999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t99_tv_xxxl_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t99_tv_xxxl_portrait__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 25361px) and (max-width: 999999px) and (min-height: 1025px) and (max-height: 999999px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t99_tv_xxxl_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t99_tv_xxxl_landscape__CssCodeSnippet__theme_base;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 440px) {
+  .jsx .CodeSnippetHolder {
+    max-width: 93vw;
+    margin: 0 auto;
+  }
+}
+
+
+.jsx .CodeSnippetHolder,
+.jsx .CodeSnippetHolder *,
+.jsx .CodeSnippetHolder::before,
+.jsx .CodeSnippetHolder::after,
+.jsx .CodeSnippetHolder *::before,
+.jsx .CodeSnippetHolder *::after {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+
+  height: auto;
+  min-height: 0;
+
+  width: auto;
+  min-width: 0;
+
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+
+.jsx .CodeSnippetHolder {
+    
+    --code-snippet-holder--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top) + var(--code-snippet--padding-bottom));
+    --code-snippet--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top) + var(--code-snippet--padding-bottom));
+    --code-snippet--width: calc(100% - var(--column-numbers-holder--width));
+    --code-snippet--padding: var(--code-snippet--padding-top) var(--code-snippet--padding-right) 0 var(--code-snippet--padding-left);
+    --code-snippet--left: var(--column-numbers-holder--width);
+
+    --code_snippet__column_numbers__padding: var(--code-snippet--padding-top) var(--code_snippet__column_numbers__padding-right) var(--code-snippet--padding-bottom) 0;
+    --column-numbers-holder--width: var(--code_snippet__column_numbers__width);
+    --column-numbers-holder--height: calc(var(--code-snippet--line-height) * var(--lines-number) + var(--code-snippet--padding-top));
+}
+
+
+.jsx .CodeSnippetHolder {
+  min-height: var(--code-snippet-tool--height) !important;
+  height: var(--code-snippet-tool--height) !important;
+
+  width: var(--code-snippet-tool--width);
+
+  overflow: var(--code-snippet-tool--overflow-y) hidden !important;
+  overflow-y: var(--code-snippet-tool--overflow-y) !important;
+  overflow-x: hidden;
+
+  background-color: var(--code_snippet__column_numbers__background-color);
+
+  border-radius: var(--code-snippet-tool--border-radius);
+  border: var(--code-snippet-tool--border-width) var(--code-snippet-tool--border-style) var(--code-snippet-tool--border-color);
+}
+
+
+
+
+.jsx .CodeSnippetHolder::after {
+  content: "";
+
+  position: absolute !important;
+
+  top: 0;
+  right: 0;
+
+  height: var(--code-snippet--height);
+  min-height: 100%;
+  max-height: var(--code-snippet--height);
+
+  width: var(--code-snippet--padding-right);
+
+  background-color: var(--code-snippet--background-color);
+
+  z-index: 999;
+}
+
+
+.jsx .CodeSnippetHolder::before {
+  content: var(--lines-numbers--content);
+
+  top: 0 !important;
+  left: 0;
+
+  float: left;
+
+  height: var(--column-numbers-holder--height);
+  max-height: var(--column-numbers-holder--height);
+
+  width: var(--code_snippet__column_numbers__width) !important;
+
+  padding: var(--code_snippet__column_numbers__padding) !important;
+
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+
+  white-space: pre;
+
+  text-align: right;
+  font-size: var(--code-snippet--font-size);
+  line-height: var(--code-snippet--line-height);
+
+  font-family: var(--code_snippet__font_family);
+
+  color: var(--code_snippet__column_numbers__text-color);
+  background-color: var(--code_snippet__column_numbers__background-color);
+
+  z-index: 9999;
+}
+
+
+
+.jsx .CodeSnippetHolder .CodeSnippetArea {
+  top: 0 !important;
+  left: 0;
+
+  height: var(--code-snippet--height);
+  min-height: 100%;
+  max-height: unset;
+  
+
+  min-width: auto;
+  width: var(--code-snippet--width);
+
+  padding: var(--code-snippet--padding);
+
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+
+  font-size: var(--code-snippet--font-size);
+  line-height: var(--code-snippet--line-height);
+  font-family: var(--code_snippet__font_family);
+
+  color: var(--code-snippet--text-color);
+  background-color: var(--code-snippet--background-color);
+}
+
+
+

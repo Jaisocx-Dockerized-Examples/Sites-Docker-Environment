@@ -1,0 +1,10 @@
+@media only screen and (min-width: 481px) and (max-width: 767px) and (min-height: 481px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_h03_tablet_s_portrait;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_h03_tablet_s_portrait__CssCodeSnippet__theme_base;
+  }
+}
+

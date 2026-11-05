@@ -1,0 +1,10 @@
+@media only screen and (min-width: 240px) and (max-width: 99999px) and (min-height: 240px) and (max-height: 320px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_e02_mobile_xs_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_e02_mobile_xs_landscape__CssCodeSnippet__theme_base;
+  }
+}
+

@@ -1,0 +1,67 @@
+/* Sites tool: CssCodeSnippet, theme: theme_base */
+.jsx .CssCodeSnippet {
+
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code-snippet-tool--overflow-y: auto;
+
+  /* base theme css var assignment example */
+  /* --jsx--CssCodeSnippet--toolHtmlElement--font-size: 1rem; */
+
+
+  /* same, but assigned value of css-clean-start */
+  /* --jsx--CssCodeSnippet--toolHtmlElement--font-size: var(--jsx--css-clean-start-2--all-tags--font-size); */
+
+
+  /* --jsx--CssCodeSnippet--main--background-color: darkgreen; */
+  /* --jsx--CssCodeSnippet--main--color: white; */
+
+
+
+  /* when the MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css file is in the .html page,
+      then the css variable --lines-numbers--content--99 is loaded.
+
+      file: workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCodeSnippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-300.css
+      contains css vriable --lines-numbers--content--300
+
+      CssCodeSnippetHelpers js class in file transpiled/Simple/CssCodeSnippetHelpers.js
+      can produce custom lines numbers text.
+      CssCodeSnippetHelpers.linesNumbersTextToConsole( 20 );
+   */
+  --lines-numbers--content: var(--lines-numbers--content--99);
+
+  --code_snippet__font_family: Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
+
+  /* code snippet tool borders */
+  /* by color */
+  --code-snippet-tool--border-color: lime;
+
+  /* code snippet tool borders */
+  --code-snippet-tool--border-radius: 0;
+  --code-snippet-tool--border-width: 0.8px;
+  --code-snippet-tool--border-style: solid;
+
+
+  /* theme variables */
+  /* code snippet theme sizes variables */
+  --code-snippet--line-height: 1.5rem;
+  --code-snippet--font-size: 0.875rem;
+  --code-snippet--padding-top: 2.0rem;
+  --code-snippet--padding-bottom: 2.0rem;
+  --code-snippet--padding-left: 0.4rem;
+  --code-snippet--padding-right: 1.4rem;
+
+
+  /* code snippet theme Colors variables */
+  --code-snippet--text-color: darkgreen;
+  --code-snippet--background-color: #fff;
+
+
+  /* column theme sizes variables */
+  --code_snippet__column_numbers__width: 3.3rem;
+  --code_snippet__column_numbers__padding-right: 0.8rem;
+
+  /* column theme Colors variables */
+  --code_snippet__column_numbers__text-color: lime;
+  --code_snippet__column_numbers__background-color: #efe;
+}

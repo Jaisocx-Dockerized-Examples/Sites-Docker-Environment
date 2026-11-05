@@ -1,0 +1,164 @@
+@import "./../vars-global/vars-global";
+
+@media all and (max-width: 440px) {
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .container:not(.header .container, .top .container) {
+    padding: 56px 24px;
+  }
+  .container {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .header {
+    .container {
+      width: 100% !important;
+      flex-direction: column;
+      justify-content: center;
+      .logo {
+        max-width: 100%; /*440px;*/
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        border-bottom: 1px solid rgba(217, 217, 217, 0.1);
+        margin: 0;
+        padding: 16px 0;
+      }
+      .nav {
+        max-width: 100%; /*440px;*/
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .main {
+    .top {
+          background-image: url("/img/city/440x812/440x812_1x.webp");
+          background-position: top 0;
+          background-size: cover;
+
+        .container {
+        padding: 129px 24px 168px;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-size: 14px;
+          text-align: center;
+          width: 100%;
+        }
+        h1 {
+          font-size: 49px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        .become_investor {
+          margin: 48px auto 0;
+        }
+      }
+    }
+    .advantages {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        .adv_holder {
+          flex-direction: column;
+          .adv:not(:nth-child(3n)):after {
+            display: none;
+          }
+          .adv {
+            padding: 32px 0;
+            p {
+              margin: 0;
+            }
+            h3 {
+              padding-top: 0;
+            }
+          }
+          .adv:not(:last-child) {
+            border-bottom: 1px solid #6C7888;
+          }
+        }
+      }
+    }
+    .download {
+      .container {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          text-align: center;
+          font-size: 28px;
+          line-height: 42px !important;
+        }
+        p {
+          text-align: center;
+          font-size: 17px;
+        }
+        h4 {
+          text-align: center;
+          font-size: 22px;
+        }
+        .btn-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .download_btn {
+            width: 234px;
+            margin: 0 0 32px;
+            box-sizing: border-box;
+            padding: 17px 0;
+            cursor: grab;
+          }
+        }
+        h5 {
+          font-size: 14px;
+        }
+        text-align: center;
+
+        .donation-buttons {
+          flex-direction: column;
+          .donation-btn {
+            flex-direction: row;
+            width: 234px;
+            height: 56px;
+            margin: 15px 0 15px 0;
+          }
+        }
+      }
+    }
+    .contact_form {
+      .container {
+        padding: 16px;
+        box-sizing: border-box;
+        h2 {
+          white-space: break-spaces !important;
+        }
+        form {
+          width: 100% !important;
+          flex-direction: column;
+          justify-content: center;
+          .col {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

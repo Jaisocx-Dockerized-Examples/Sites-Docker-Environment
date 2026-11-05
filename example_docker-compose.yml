@@ -132,6 +132,7 @@ services:
     dns:
       - "${DNS_SERVER_IPv4}"
     ports:
+      - "${JAISOCX_EXPRESS_PORT}:${JAISOCX_EXPRESS_PORT}"
       - "${EXPRESS_SECURE_PORT}:${EXPRESS_SECURE_PORT}"
       - "${EXPRESS_PORT}:${EXPRESS_PORT}"
       - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"

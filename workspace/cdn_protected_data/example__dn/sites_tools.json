@@ -1,0 +1,82 @@
+[
+  "libraries/console/JsInvoke",
+
+  "libraries/base_packs/data_workarounds/JPath",
+  "libraries/base_packs/data_workarounds/ArrayOrObject",
+  "libraries/base_packs/data_workarounds/WorkspaceTreeWalker",
+  "libraries/base_packs/data_workarounds/OData",
+
+  "libraries/base_packs/patterns/EngineAndDataRecords",
+
+  "libraries/base_packs/fine_tuning/Preloader",
+  "libraries/base_packs/fine_tuning/LinkedResourcesIntegrity",
+  "libraries/base_packs/fine_tuning/ResponsiveSizes",
+  "libraries/base_packs/fine_tuning/SitesToolAutomation",
+
+  "libraries/base_packs/datasets/CssJsHtmlConstants",
+  "libraries/base_packs/datasets/MimeType",
+  "libraries/base_packs/datasets/CdnDatasetsBase",
+
+  "libraries/base_packs/FileWriter",
+  "libraries/base_packs/CommandLine",
+  "libraries/base_packs/FileProducerByTemplate",
+
+  "libraries/base_packs/api/ApiInterface",
+  "libraries/base_packs/api/Sax",
+  "libraries/base_packs/api/XmlHttp",
+  "libraries/base_packs/api/Api",
+  "libraries/base_packs/api/Upload",
+
+  "libraries/base_packs/api/driver/ApiJson",
+  "libraries/base_packs/api/driver/ApiOdata",
+  "libraries/base_packs/api/driver/ApiXml",
+
+  "libraries/base_packs/ThemeTurnOn",
+
+  "libraries/base_packs/text/renderers/ImprovedTemplateRenderer",
+  "libraries/base_packs/text/renderers/TemplateRenderer",
+  "libraries/base_packs/text/parsers/TokensParser",
+  "libraries/base_packs/text/parsers/TemplateParser",
+  "libraries/base_packs/text/converters/CaseConverter",
+  "libraries/base_packs/text/converters/CharcodeConverter",
+  "libraries/base_packs/text/Text",
+  "libraries/base_packs/text/trimmers/Trimmer",
+  "libraries/base_packs/text/trimmers/OptimizedTrimmer",
+
+  "libraries/base_packs/CssHtml",
+  "libraries/base_packs/CssImporter",
+  "libraries/base_packs/EventEmitter",
+
+  "libraries/sites_tools/css_tools/css_flat/CssTable",
+  "libraries/sites_tools/css_tools/css_flat/CssCodeSnippet",
+
+  "libraries/sites_tools/css_tools/css_clean_start/CleanStart_Tiny",
+  "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_2",
+  "libraries/sites_tools/css_tools/css_clean_start/CssCleanStart_Lite",
+
+  "libraries/sites_tools/css_tools/pages/responses/exception_responses/https_404_exception",
+
+  "libraries/sites_tools/js_tools/Tooltip",
+  "libraries/sites_tools/js_tools/EmailHtmlInliner",
+  "libraries/sites_tools/js_tools/CssTableOrdered",
+
+  "libraries/sites_tools/json_styling_tools/Tree",
+  "libraries/sites_tools/json_styling_tools/Table",
+
+  "libraries/sites_tools/spa/BashMyAdmin",
+  "libraries/sites_tools/spa/databank_a4_reports",
+  "libraries/sites_tools/spa/colors_spa",
+  "libraries/sites_tools/spa/PHPMyAdmin",
+  "libraries/sites_tools/spa/data_access_pages",
+  "libraries/sites_tools/spa/theming_spa",
+  "libraries/sites_tools/spa/lock_viewer",
+  "libraries/sites_tools/spa/simple_accountance_spa",
+
+  "libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii",
+  "libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base",
+  "libraries/sites_tools/media_tools/JscImages_mini_datatypes_base",
+  "libraries/sites_tools/media_tools/JscFonts_Orbitron",
+  "libraries/sites_tools/media_tools/JscFonts_base"
+]
+
+

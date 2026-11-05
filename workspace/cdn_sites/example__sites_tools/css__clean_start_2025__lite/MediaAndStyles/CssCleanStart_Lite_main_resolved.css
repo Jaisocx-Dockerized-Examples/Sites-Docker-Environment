@@ -1,0 +1,800 @@
+.jsx {
+  
+  --jsx--css-clean-start-2--rem: 16px;
+
+
+  
+  --jsx--css-clean-start-2--body-tag--background: #fafff5;
+  --jsx--css-clean-start-2--site--background: #fff;
+
+
+
+  
+  --jsx--css-clean-start-2--body-tag--width: 100%;
+  --jsx--css-clean-start-2--body-tag--max-width: 100%;
+  --jsx--css-clean-start-2--body-tag--min-width: 100%;
+
+  --jsx--css-clean-start-2--body-tag--height: auto;
+  --jsx--css-clean-start-2--body-tag--max-height: unset;
+  --jsx--css-clean-start-2--body-tag--min-height: 100vh;
+
+  --jsx--css-clean-start-2--body-tag--overflow-x: auto;
+  --jsx--css-clean-start-2--body-tag--overflow-y: auto;
+
+
+
+  
+  --jsx--css-clean-start-2--site--height: fit-content;
+  --jsx--css-clean-start-2--site--max-height: fit-content;
+  --jsx--css-clean-start-2--site--min-height: 100vh;
+
+  --jsx--css-clean-start-2--site--overflow-x: hidden;
+  --jsx--css-clean-start-2--site--overflow-y: visible;
+
+  --jsx--css-clean-start-2--site--width: 75%;
+  --jsx--css-clean-start-2--site--max-width: 100%;
+  --jsx--css-clean-start-2--site--min-width: 75%;
+
+
+
+  
+  --jsx--css-clean-start-2--site--margin: 0 auto 0 auto;
+
+  --jsx--css-clean-start-2--site--padding-top: 1rem;
+  --jsx--css-clean-start-2--site--padding-left: 1rem;
+  --jsx--css-clean-start-2--site--padding-right: 1rem;
+  --jsx--css-clean-start-2--site--padding-bottom: 1rem;
+  --jsx--css-clean-start-2--site--padding: var(--jsx--css-clean-start-2--site--padding-top) var(--jsx--css-clean-start-2--site--padding-left) var(--jsx--css-clean-start-2--site--padding-bottom) var(--jsx--css-clean-start-2--site--padding-right);
+
+
+  
+  --jsx--css-clean-start-2--body-tag--overflow-x: hidden;
+  --jsx--css-clean-start-2--site--overflow-y: visible;
+
+
+
+  
+  --jsx--css-clean-start-2--all-tags--position: relative;
+  --jsx--css-clean-start-2--all-tags--box-sizing: border-box;
+
+  --jsx--css-clean-start-2--inline-tags--display: inline-block;
+  --jsx--css-clean-start-2--block-tags--display: block;
+  --jsx--css-clean-start-2--custom-tags--display: var(--jsx--css-clean-start-2--block-tags--display);
+
+  --jsx--css-clean-start-2--all-tags--padding: 0 0 0 0;
+  --jsx--css-clean-start-2--h--padding: 0 0 0 0;
+
+  --jsx--css-clean-start-2--all-tags--margin: 0 0 0 0;
+  --jsx--css-clean-start-2--h--margin: 0 0 0 0;
+  --jsx--css-clean-start-2--ul--margin-left: 2rem;
+  --jsx--css-clean-start-2--p--margin: 0.9rem 0 0.9rem 0;
+
+  --jsx--css-clean-start-2--all-tags--color: black;
+
+
+
+
+  --css-clean-start-2--sans--font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen;
+  --css-clean-start-2--serif--font-family: 'Times New Roman', system-ui, -apple-system, BlinkMacSystemFont;
+  --css-clean-start-2--monospace--font-family: Courier, 'Courier New', Menlo, Consolas, 'Liberation Mono';
+
+  --jsx--css-clean-start-2--all-tags--font-family: var(--css-clean-start-2--sans--font-family);
+  --jsx--css-clean-start-2--pre--font-family: var(--css-clean-start-2--monospace--font-family);
+
+
+
+
+
+
+  --jsx--css-clean-start-2--all-tags--font-size: 0.9rem;
+  --jsx--css-clean-start-2--all-tags--line-height: 1.09rem;
+
+  --jsx--css-clean-start-2--all-tags--border-color: green;
+  --jsx--css-clean-start-2--all-tags--border-style: dotted;
+  --jsx--css-clean-start-2--all-tags--border-width: 0;
+
+
+
+  
+  --jsx--css-clean-start-2--h--font-weight: 600;
+  --jsx--css-clean-start-2--h--color:       black;
+  --jsx--css-clean-start-2--h--margin:      0 0 0 0;
+  --jsx--css-clean-start-2--h--padding:     0 0 0 0;
+
+
+
+  --jsx--css-clean-start-2--h1--font-size: 2.3rem;
+  --jsx--css-clean-start-2--h1--line-height: 2.45rem;
+
+  --jsx--css-clean-start-2--h2--font-size: 1.5rem;
+  --jsx--css-clean-start-2--h2--line-height: 1.7rem;
+
+  --jsx--css-clean-start-2--h3--font-size: 1.3rem;
+  --jsx--css-clean-start-2--h3--line-height: 1.6rem;
+
+  --jsx--css-clean-start-2--h4--font-size: 1.24rem;
+  --jsx--css-clean-start-2--h4--line-height: 1.5rem;
+
+  --jsx--css-clean-start-2--h5--font-size: 1.2rem;
+  --jsx--css-clean-start-2--h5--line-height: 1.4rem;
+
+  --jsx--css-clean-start-2--h6--font-size: 1rem;
+  --jsx--css-clean-start-2--h6--line-height: 1.3rem;
+
+
+
+  --jsx--css-clean-start-2--h1--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h1--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h1--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h1--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h2--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h2--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h2--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h2--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h3--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h3--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h3--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h3--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h4--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h4--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h4--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h4--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h5--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h5--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h5--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h5--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+  --jsx--css-clean-start-2--h6--font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  --jsx--css-clean-start-2--h6--color:       var(--jsx--css-clean-start-2--h--color);
+  --jsx--css-clean-start-2--h6--margin:      var(--jsx--css-clean-start-2--h--margin);
+  --jsx--css-clean-start-2--h6--padding:     var(--jsx--css-clean-start-2--h--padding);
+
+
+
+  
+  --jsx--css-clean-start-2--anchor--color: navy;
+  --jsx--css-clean-start-2--anchor-hover--color: blue;
+
+  --jsx--css-clean-start-2--anchor-visited--color: grey;
+  --jsx--css-clean-start-2--anchor-visited-hover--color: grey;
+
+  --jsx--css-clean-start-2--anchor-active--color: darkblue;
+  --jsx--css-clean-start-2--anchor-active-hover--color: blue;
+
+
+
+  
+  --jsx--css-clean-start-2--anchor--text-decoration: none;
+  --jsx--css-clean-start-2--anchor-hover--text-decoration: underline;
+
+  --jsx--css-clean-start-2--anchor-visited--text-decoration: none;
+  --jsx--css-clean-start-2--anchor-visited-hover--text-decoration: underline;
+
+  --jsx--css-clean-start-2--anchor-active--text-decoration: underline;
+  --jsx--css-clean-start-2--anchor-active-hover--text-decoration: underline;
+
+
+
+  --jsx--css-clean-start-2--thead--background-color: ghostwhite;
+  --jsx--css-clean-start-2--tfoot--background-color: honeydew;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jsx.theme_lightmode,
+.jsx .theme_lightmode {
+
+  
+  --jsx--css-clean-start-2--body-tag--background: #e0e9f4;
+  --jsx--css-clean-start-2--site--background: #fff;
+
+
+  --jsx--css-clean-start-2--all-tags--color: #333;
+
+  --jsx--css-clean-start-2--all-tags--border-color: #ddd;
+  --jsx--css-clean-start-2--all-tags--border-style: dotted;
+  --jsx--css-clean-start-2--all-tags--border-width: 0;
+
+
+
+  
+  --jsx--css-clean-start-2--h--color:       #567;
+
+
+
+  
+  --jsx--css-clean-start-2--anchor--color: #00f;
+  --jsx--css-clean-start-2--anchor-hover--color: #55f;
+
+  --jsx--css-clean-start-2--anchor-visited--color: grey;
+  --jsx--css-clean-start-2--anchor-visited-hover--color: grey;
+
+  --jsx--css-clean-start-2--anchor-active--color: #00f;
+  --jsx--css-clean-start-2--anchor-active-hover--color: #55f;
+
+
+
+  --jsx--css-clean-start-2--thead--background-color: honeydew;
+  --jsx--css-clean-start-2--tfoot--background-color: cornsilk;
+
+}
+
+
+
+
+
+
+.jsx.theme_darkmode,
+.jsx .theme_darkmode {
+
+  
+  --jsx--css-clean-start-2--body-tag--background: #457;
+  --jsx--css-clean-start-2--site--background: #012;
+
+
+  --jsx--css-clean-start-2--all-tags--color: #adf;
+
+  --jsx--css-clean-start-2--all-tags--border-color: #fff;
+  --jsx--css-clean-start-2--all-tags--border-style: dotted;
+  --jsx--css-clean-start-2--all-tags--border-width: 0;
+
+
+
+  
+  --jsx--css-clean-start-2--h--color:       #fff;
+
+
+
+  
+  --jsx--css-clean-start-2--anchor--color: #00f;
+  --jsx--css-clean-start-2--anchor-hover--color: #55f;
+
+  --jsx--css-clean-start-2--anchor-visited--color: grey;
+  --jsx--css-clean-start-2--anchor-visited-hover--color: grey;
+
+  --jsx--css-clean-start-2--anchor-active--color: #00f;
+  --jsx--css-clean-start-2--anchor-active-hover--color: #55f;
+
+
+
+  --jsx--css-clean-start-2--thead--background-color: #456;
+  --jsx--css-clean-start-2--tfoot--background-color: #456;
+
+}
+
+
+
+
+
+
+
+.jsx.theme_visible_height {
+
+  --jsx--css-clean-start-2--body-tag--height: 100vh;
+  --jsx--css-clean-start-2--body-tag--max-height: 100vh;
+  --jsx--css-clean-start-2--body-tag--min-height: 100vh;
+
+  --jsx--css-clean-start-2--body-tag--overflow-y: hidden;
+
+
+
+  --jsx--css-clean-start-2--site--height: 100%;
+  --jsx--css-clean-start-2--site--max-height: 100%;
+  --jsx--css-clean-start-2--site--min-height: 100%;
+
+  --jsx--css-clean-start-2--site--overflow-y: hidden;
+
+}
+
+
+
+.jsx.theme_visible_height body main {
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: auto;
+
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+
+
+.jsx.theme_visible_height body main > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+
+
+
+.jsx.theme_visible_height main .a-tag-in-main-tag {
+
+  flex-grow: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+.jsx.small {
+  --jsx--css-clean-start-2--body-tag--height: 100vh;
+  --jsx--css-clean-start-2--body-tag--max-height: unset;
+  --jsx--css-clean-start-2--body-tag--min-height: 100vh;
+
+  --jsx--css-clean-start-2--site--height: fit-content;
+  --jsx--css-clean-start-2--site--max-height: fit-content;
+  --jsx--css-clean-start-2--site--min-height: fit-content;
+}
+
+
+
+
+.jsx.browser-width {
+  
+  --jsx--css-clean-start-2--body-tag--width: 100%;
+  --jsx--css-clean-start-2--body-tag--max-width: 100%;
+  --jsx--css-clean-start-2--body-tag--min-width: 100%;
+
+  --jsx--css-clean-start-2--body-tag--overflow-x: hidden;
+
+
+
+  --jsx--css-clean-start-2--site--width: 100%;
+  --jsx--css-clean-start-2--site--max-width: 100%;
+  --jsx--css-clean-start-2--site--min-width: 100%;
+
+  --jsx--css-clean-start-2--site--overflow-x: hidden;
+}
+
+
+
+
+
+
+
+.jsx * {
+
+  position:     var(--jsx--css-clean-start-2--all-tags--position);
+  display:      var(--jsx--css-clean-start-2--custom-tags--display);
+  box-sizing:   var(--jsx--css-clean-start-2--all-tags--box-sizing);
+
+  line-break:   strict;
+  word-wrap:    normal;
+  word-break:   normal;
+
+  width:        fit-content;
+  max-width:    100%;
+  min-width:    unset;
+
+  color:        var(--jsx--css-clean-start-2--all-tags--color);
+
+  border-width: var(--jsx--css-clean-start-2--all-tags--border-width);
+  border-style: var(--jsx--css-clean-start-2--all-tags--border-style);
+  border-color: var(--jsx--css-clean-start-2--all-tags--border-color);
+
+  padding:      var(--jsx--css-clean-start-2--all-tags--padding);
+  margin:       var(--jsx--css-clean-start-2--all-tags--margin);
+
+  font-family:  var(--jsx--css-clean-start-2--all-tags--font-family);
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+  line-height:  var(--jsx--css-clean-start-2--all-tags--line-height);
+
+}
+
+
+
+
+html.jsx {
+  font-size:    var(--jsx--css-clean-start-2--rem);
+}
+
+
+
+html.jsx {
+  position: static;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+  top:          0;
+
+  width:        var(--jsx--css-clean-start-2--body-tag--width);
+  max-width:    var(--jsx--css-clean-start-2--body-tag--max-width);
+  min-width:    var(--jsx--css-clean-start-2--body-tag--min-width);
+
+  overflow-x:   hidden;
+}
+
+
+
+
+html.jsx head,
+html.jsx head *,
+html.jsx style,
+html.jsx script {
+  visibility: hidden;
+  max-height: 0;
+  max-width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: none;
+}
+
+
+
+html.jsx body {
+  position: relative;
+  top:          0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      var(--jsx--css-clean-start-2--block-tags--display);
+  box-sizing:   var(--jsx--css-clean-start-2--all-tags--box-sizing);
+
+  background: var(--jsx--css-clean-start-2--body-tag--background);
+
+  
+  height:     var(--jsx--css-clean-start-2--body-tag--height);
+  max-height: var(--jsx--css-clean-start-2--body-tag--max-height);
+  min-height: var(--jsx--css-clean-start-2--body-tag--min-height);
+
+  width:      var(--jsx--css-clean-start-2--body-tag--width);
+  max-width:  var(--jsx--css-clean-start-2--body-tag--max-width);
+  min-width:  var(--jsx--css-clean-start-2--body-tag--min-width);
+
+  overflow:   var(--jsx--css-clean-start-2--body-tag--overflow-x) var(--jsx--css-clean-start-2--body-tag--overflow-y);
+
+
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+}
+
+
+
+html.jsx body main {
+
+  margin:       var(--jsx--css-clean-start-2--site--margin);
+  padding:      var(--jsx--css-clean-start-2--site--padding);
+
+  background:   var(--jsx--css-clean-start-2--site--background);
+
+  
+  height:     var(--jsx--css-clean-start-2--site--height);
+  max-height: var(--jsx--css-clean-start-2--site--max-height);
+  min-height: var(--jsx--css-clean-start-2--site--min-height);
+
+  width:      var(--jsx--css-clean-start-2--site--width);
+  max-width:  var(--jsx--css-clean-start-2--site--max-width);
+  min-width:  var(--jsx--css-clean-start-2--site--min-width);
+
+  overflow:   var(--jsx--css-clean-start-2--site--overflow-x) var(--jsx--css-clean-start-2--site--overflow-y);
+
+  font-size:  var(--jsx--css-clean-start-2--all-tags--font-size);
+}
+
+
+
+.jsx h1,
+.jsx h2,
+.jsx h3,
+.jsx h4,
+.jsx h5,
+.jsx h6 {
+  font-weight: var(--jsx--css-clean-start-2--h--font-weight);
+  color:       var(--jsx--css-clean-start-2--h--color);
+  margin:      var(--jsx--css-clean-start-2--h--margin);
+  padding:     var(--jsx--css-clean-start-2--h--padding);
+}
+
+.jsx h1 {
+  font-size:   var(--jsx--css-clean-start-2--h1--font-size);
+  line-height: var(--jsx--css-clean-start-2--h1--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h1--font-weight);
+  color:       var(--jsx--css-clean-start-2--h1--color);
+  margin:      var(--jsx--css-clean-start-2--h1--margin);
+  padding:     var(--jsx--css-clean-start-2--h1--padding);
+}
+
+.jsx h2 {
+  font-size:   var(--jsx--css-clean-start-2--h2--font-size);
+  line-height: var(--jsx--css-clean-start-2--h2--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h2--font-weight);
+  color:       var(--jsx--css-clean-start-2--h2--color);
+  margin:      var(--jsx--css-clean-start-2--h2--margin);
+  padding:     var(--jsx--css-clean-start-2--h2--padding);
+}
+
+.jsx h3 {
+  font-size:   var(--jsx--css-clean-start-2--h3--font-size);
+  line-height: var(--jsx--css-clean-start-2--h3--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h3--font-weight);
+  color:       var(--jsx--css-clean-start-2--h3--color);
+  margin:      var(--jsx--css-clean-start-2--h3--margin);
+  padding:     var(--jsx--css-clean-start-2--h3--padding);
+}
+
+.jsx h4 {
+  font-size:   var(--jsx--css-clean-start-2--h4--font-size);
+  line-height: var(--jsx--css-clean-start-2--h4--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h4--font-weight);
+  color:       var(--jsx--css-clean-start-2--h4--color);
+  margin:      var(--jsx--css-clean-start-2--h4--margin);
+  padding:     var(--jsx--css-clean-start-2--h4--padding);
+}
+
+.jsx h5 {
+  font-size:   var(--jsx--css-clean-start-2--h5--font-size);
+  line-height: var(--jsx--css-clean-start-2--h5--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h5--font-weight);
+  color:       var(--jsx--css-clean-start-2--h5--color);
+  margin:      var(--jsx--css-clean-start-2--h5--margin);
+  padding:     var(--jsx--css-clean-start-2--h5--padding);
+}
+
+.jsx h6 {
+  font-size:   var(--jsx--css-clean-start-2--h6--font-size);
+  line-height: var(--jsx--css-clean-start-2--h6--line-height);
+
+  font-weight: var(--jsx--css-clean-start-2--h6--font-weight);
+  color:       var(--jsx--css-clean-start-2--h6--color);
+  margin:      var(--jsx--css-clean-start-2--h6--margin);
+  padding:     var(--jsx--css-clean-start-2--h6--padding);
+}
+
+
+
+
+.jsx p {
+  margin:      var(--jsx--css-clean-start-2--p--margin);
+}
+
+
+
+
+.jsx a {
+  color:           var(--jsx--css-clean-start-2--anchor--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor--text-decoration);
+}
+.jsx a:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-hover--text-decoration);
+}
+.jsx a:visited {
+  color:           var(--jsx--css-clean-start-2--anchor-visited--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-visited--text-decoration);
+}
+.jsx a:visited:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-visited-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-visited-hover--text-decoration);
+}
+.jsx a:active {
+  color:           var(--jsx--css-clean-start-2--anchor-active--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-active--text-decoration);
+}
+.jsx a:active:hover {
+  color:           var(--jsx--css-clean-start-2--anchor-active-hover--color);
+  text-decoration: var(--jsx--css-clean-start-2--anchor-active-hover--text-decoration);
+}
+
+
+
+.jsx pre {
+  font-family: var(--jsx--css-clean-start-2--pre--font-family, "Courier New", Courier, monospace);
+}
+
+
+
+
+.jsx address,
+.jsx article,
+.jsx aside,
+.jsx blockquote,
+
+.jsx canvas,
+.jsx dd,
+.jsx div,
+.jsx dl,
+.jsx dt,
+.jsx fieldset,
+.jsx figcaption,
+.jsx figure,
+.jsx footer,
+.jsx form,
+.jsx h1,
+.jsx h2,
+.jsx h3,
+.jsx h4,
+.jsx h5,
+.jsx h6,
+.jsx header,
+.jsx hr,
+
+
+.jsx nav,
+.jsx noscript,
+.jsx ol,
+.jsx output,
+.jsx p,
+.jsx pre,
+.jsx section,
+.jsx ul,
+.jsx video {
+  display:   var(--jsx--css-clean-start-2--block-tags--display, block);
+}
+
+
+
+
+.jsx span,
+.jsx a,
+.jsx b,
+.jsx big,
+.jsx br,
+.jsx cite,
+.jsx code,
+.jsx del,
+.jsx em,
+.jsx i,
+.jsx img,
+.jsx ins,
+.jsx label,
+.jsx map,
+.jsx mark,
+.jsx q,
+.jsx s,
+.jsx samp,
+.jsx small,
+.jsx strong,
+.jsx sub,
+.jsx sup,
+.jsx time,
+.jsx u,
+.jsx var {
+  display:   var(--jsx--css-clean-start-2--inline-tags--display, inline-block);
+}
+
+
+
+.jsx table {
+  display: table;
+}
+
+.jsx table caption {
+  display: 	table-caption;
+  width: 100%;
+  text-align: center;
+}
+
+.jsx colgroup {
+  display: table-column-group;
+}
+
+.jsx col {
+  display: table-column;
+}
+
+.jsx thead {
+  display: table-header-group;
+}
+
+.jsx tbody {
+  display: table-row-group;
+}
+
+.jsx tfoot {
+  display: table-footer-group;
+}
+
+.jsx tr {
+  display: table-row;
+}
+
+.jsx th,
+.jsx td {
+  display: table-cell;
+  text-align: left;
+}
+
+.jsx thead th,
+.jsx thead td,
+.jsx tbody th,
+.jsx tfoot td {
+  font-weight: 600;
+}
+
+.jsx thead tr,
+.jsx thead th {
+  background-color: var(--jsx--css-clean-start-2--thead--background-color);
+}
+
+.jsx tfoot tr,
+.jsx tfoot th {
+  background-color: var(--jsx--css-clean-start-2--tfoot--background-color);
+}
+
+
+
+.jsx ul {
+  list-style: disc inside;
+}
+
+.jsx ol {
+  list-style: decimal inside;
+}
+
+.jsx ul ul,
+.jsx ul ol,
+.jsx ol ul,
+.jsx ol ol {
+  margin-left: var(--jsx--css-clean-start-2--ul--margin-left);
+}
+
+
+
+.jsx ul li,
+.jsx ol li {
+  display:   list-item;
+}
+
+
+
+
+.jsx.ul-reset ul,
+.jsx.ul-reset ol
+.jsx .ul-reset ul,
+.jsx .ul-reset ol
+.jsx ul.ul-reset,
+.jsx ol.ul-reset {
+
+  list-style-type: none;
+  display:         var(--jsx--css-clean-start-2--block-tags--display, block);
+  margin-left:     var(--jsx--css-clean-start-2--all-tags--margin);
+
+}
+
+.jsx.ul-reset li,
+.jsx .ul-reset li {
+  display:         var(--jsx--css-clean-start-2--inline-tags--display, inline-block);
+}
+
+
+
+
+
+

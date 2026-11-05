@@ -1,27 +1,26 @@
 
-`Docker for a Site`
-
-![workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg](./workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+`Docker for a Site` Jaisocx &#8482; &#169;
 
 
-![workspace/cdn/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn/software_labels/Prince/software_tm_label_prince.svg)
-![workspace/cdn/software_labels/php/software_tm_label_php.svg](./workspace/cdn/software_labels/php/software_tm_label_php.svg)
-![workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
-![workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg](./workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg)
-![workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+
+![workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg](workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+![workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg](workspace/cdn_sites/software_labels/Jaisocx/softlabel_jaisocx.svg)
+
+
+
+[HOME Docker for a Site](./README.md)
+
 
 [software_labels preview](./README_software_labels.md)
 
-[HOME](./README.md)
 
 ---
 
   >  🗓  **Updated**:  🌷  Spring 2026
 
 
-# ![workspace/cdn/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg](./workspace/cdn/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg) A4DC 
+# ![workspace/cdn_sites/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg](./workspace/cdn_sites/software_labels/Jaisocx/logo/Jaisocx_Logo_green.svg) A4DC 
 
   > **A4DC stands for A4 Electronic Document under Docker by Compose plugin** 
   > 
@@ -59,13 +58,13 @@
 
   > `start, stop, restart, status, restartus))`
 
-![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_logoipsum.jpg)
+![workspace/readme/img_readme_a4dc/page_in_browser_logoipsum.jpg](./workspace/readme/img_readme_a4dc/page_in_browser_logoipsum.jpg)
 
-![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_logoipsum.jpg)
+![workspace/readme/img_readme_a4dc/doc_in_browser_logoipsum.jpg](./workspace/readme/img_readme_a4dc/doc_in_browser_logoipsum.jpg)
 
-![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/page_in_browser_music.jpg)
+![workspace/readme/img_readme_a4dc/page_in_browser_music.jpg](./workspace/readme/img_readme_a4dc/page_in_browser_music.jpg)
 
-![workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg](./workspace/readme/readme_sites_docker/r_docker/r_a4dc_images/doc_in_browser_music.jpg)
+![workspace/readme/img_readme_a4dc/doc_in_browser_music.jpg](./workspace/readme/img_readme_a4dc/doc_in_browser_music.jpg)
 
 ---
 
@@ -92,9 +91,8 @@
   
   https://local.basetasks.site:8447/jaisocx/
   
-  https://local.basetasks.site:8447/cdn/
+  https://local.basetasks.site:8447/cdn_sites/
   
-  https://local.basetasks.site:8447/readme/
 
 ---
 
@@ -148,12 +146,15 @@
     docker compose -f "./docker-compose.yml" exec a4dc bash 
   
   ```
+
 ---
 
 
 
-**Friendly greetings**
 
-  Jaisocx Software Architect I.P.
+
+Have a nice day,
+
+Jaisocx Inc. Software Architect I.P.
 
 

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+https_auth_method="basic"
+https_auth_user="user"
+https_auth_p="view formular"
+
+

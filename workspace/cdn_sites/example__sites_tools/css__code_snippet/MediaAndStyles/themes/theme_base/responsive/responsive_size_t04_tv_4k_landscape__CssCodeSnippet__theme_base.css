@@ -1,0 +1,10 @@
+@media only screen and (min-width: 3841px) and (max-width: 7680px) and (min-height: 1025px) and (max-height: 7680px) and (orientation: landscape) {
+
+  .jsx .CssCodeSnippet {
+    --theme_name: CssCodeSnippet__theme_base;
+    --theme_name__CssCodeSnippet: theme_base;
+    --responsive_size: responsive_size_t04_tv_4k_landscape;
+    --responsive_size__CssCodeSnippet__theme_base: responsive_size_t04_tv_4k_landscape__CssCodeSnippet__theme_base;
+  }
+}
+

@@ -1,0 +1,968 @@
+
+
+
+
+.tree{
+    background-color: var(--background-color--tree);
+}
+
+.tree * {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    border: 0px solid #fff;
+}
+
+
+.tree ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    list-style-type: none;
+}
+
+.tree ul li {
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.tree ul li .jstree-html-node {
+    height: var(--size--jstree-html-node);
+    min-height: var(--size--jstree-html-node);
+    width: auto;
+
+    font-size: var(--size--jstree-html-node);
+    line-height: var(--size--jstree-html-node);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 4px;
+}
+
+.tree ul li > ul {
+    margin-left: 22px;
+    border: var(--border--subtree-parent);
+}
+
+.tree .jstree-html-node-label {
+    border: var(--border--jstree-html-node);
+    background-color: inherit;
+    font-family: 'Open Sans';
+    font-size: 80%;
+    line-height: 95%;
+    min-height: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    padding-left: 2px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: var(--text-color--dark);
+}
+.tree .jstree-html-node-label:hover {
+    color: var(--text-color--hover);
+}
+
+.tree .open-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: var(--border--jstree-html-node-open-button);
+    height: 100%;
+    width: var(--size--jstree-html-node);
+    margin: auto;
+}
+
+.tree .open-button > span {
+    display: none;
+    height: var(--open-button-size);
+    width: var(--open-button-size);
+
+    font-size: inherit;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: local;
+}
+
+.tree .open-button > span.opened {
+    background-image: var(--open-button-opened--image-url);
+}
+.tree .open-button > span.closed {
+    background-image: var(--open-button-closed--image-url);
+    transform: rotate(90deg);
+}
+.tree .open-button > span.without-subtree {
+    background-image: var(--open-button-without-subtree--image-url);
+    color: crimson !important;
+}
+.tree .open-button > span.animated {
+    background-image: var(--open-button-animated--image-url);
+}
+
+.tree .open-button.toggle-with-subtree-opened:hover > span.opened,
+.tree .open-button.toggle-with-subtree-opened:hover > span.closed,
+.tree .open-button.toggle-with-subtree-closed:hover > span.opened,
+.tree .open-button.toggle-with-subtree-closed:hover > span.closed {
+    display: none;
+}
+
+.tree .open-button.toggle-with-subtree-opened:hover > span.animated,
+.tree .open-button.toggle-with-subtree-closed:hover > span.animated {
+    display: block;
+}
+
+.tree .toggle-with-subtree-closed span.opened {
+    display: none;
+}
+
+.tree .toggle-with-subtree-closed span.closed {
+    display: block;
+}
+
+.tree .toggle-with-subtree-closed span.without-subtree {
+    display: none;
+}
+
+
+.tree .toggle-with-subtree-opened span.opened {
+    display: block;
+}
+
+.tree .toggle-with-subtree-opened span.closed {
+    display: none;
+}
+
+.tree .toggle-with-subtree-opened span.without-subtree {
+    display: none;
+}
+
+
+.tree .toggle-without-subtree  span.opened {
+    display: none;
+}
+
+.tree .toggle-without-subtree span.closed {
+    display: none;
+}
+
+.tree .toggle-without-subtree span.without-subtree {
+    display: block;
+}
+
+
+.context-menu-container{
+    display: none;
+    position: fixed;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.context-menu-container ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.context-menu-container li{
+    border-bottom: 1px solid #ddd;
+    margin-top: 12px;
+    cursor: ref;
+}
+.context-menu-container li:first-of-type{
+    margin-top: 0px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 2px) and (max-width: 239px) and (min-height: 2px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_d05_very_small_xxs_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_d05_very_small_xxs_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 2px) and (max-width: 99999px) and (min-height: 2px) and (max-height: 239px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_d05_very_small_xxs_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_d05_very_small_xxs_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 320px) and (min-height: 240px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e02_mobile_xs_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_e02_mobile_xs_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 99999px) and (min-height: 240px) and (max-height: 320px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e02_mobile_xs_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_e02_mobile_xs_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 375px) and (min-height: 321px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e04_mobile_s_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_e04_mobile_s_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 99999px) and (min-height: 321px) and (max-height: 375px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e04_mobile_s_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_e04_mobile_s_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 430px) and (min-height: 376px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e06_mobile_sm_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_e06_mobile_sm_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 99999px) and (min-height: 376px) and (max-height: 430px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e06_mobile_sm_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_e06_mobile_sm_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 431px) and (max-width: 480px) and (min-height: 431px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e08_mobile_md_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_e08_mobile_md_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 99999px) and (min-height: 431px) and (max-height: 480px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_e08_mobile_md_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_e08_mobile_md_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) and (min-height: 481px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h03_tablet_s_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_h03_tablet_s_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 99999px) and (min-height: 481px) and (max-height: 767px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h03_tablet_s_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_h03_tablet_s_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h05_tablet_sm_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_h05_tablet_sm_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h05_tablet_sm_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_h05_tablet_sm_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1194px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h07_tablet_md_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_h07_tablet_md_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1194px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h07_tablet_md_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_h07_tablet_md_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1195px) and (max-height: 99999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h09_tablet_lg_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_h09_tablet_lg_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1195px) and (max-width: 99999px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_h09_tablet_lg_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_h09_tablet_lg_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l02_laptop_sm_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_l02_laptop_sm_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l02_laptop_sm_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_l02_laptop_sm_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (min-height: 1366px) and (max-height: 1440px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l03_laptop_md_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_l03_laptop_md_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) and (min-height: 1025px) and (max-height: 1440px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l03_laptop_md_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_l03_laptop_md_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) and (min-height: 1441px) and (max-height: 1600px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l07_laptop_lg_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_l07_laptop_lg_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) and (min-height: 1025px) and (max-height: 1600px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_l07_laptop_lg_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_l07_laptop_lg_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 1601px) and (max-height: 1920px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s02_display_xl_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_s02_display_xl_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1920px) and (min-height: 1025px) and (max-height: 1920px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s02_display_xl_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_s02_display_xl_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 2560px) and (min-height: 1921px) and (max-height: 2560px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s04_display_xxl_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_s04_display_xxl_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2560px) and (min-height: 1025px) and (max-height: 2560px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s04_display_xxl_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_s04_display_xxl_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 3840px) and (min-height: 2561px) and (max-height: 3840px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s08_display_qhd_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_s08_display_qhd_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 2561px) and (max-width: 3840px) and (min-height: 1025px) and (max-height: 3840px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_s08_display_qhd_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_s08_display_qhd_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 7680px) and (min-height: 3841px) and (max-height: 7680px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t04_tv_4k_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_t04_tv_4k_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 3841px) and (max-width: 7680px) and (min-height: 1025px) and (max-height: 7680px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t04_tv_4k_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_t04_tv_4k_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 15360px) and (min-height: 7681px) and (max-height: 15360px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t08_tv_8k_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_t08_tv_8k_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 7681px) and (max-width: 15360px) and (min-height: 1025px) and (max-height: 15360px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t08_tv_8k_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_t08_tv_8k_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 25360px) and (min-height: 15361px) and (max-height: 25360px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t16_tv_16k_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_t16_tv_16k_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 15361px) and (max-width: 25360px) and (min-height: 1025px) and (max-height: 25360px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t16_tv_16k_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_t16_tv_16k_landscape__Tree__theme_base;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 999999px) and (min-height: 25361px) and (max-height: 999999px) and (orientation: portrait) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t99_tv_xxxl_portrait;
+    --responsive_size__Tree__theme_base: responsive_size_t99_tv_xxxl_portrait__Tree__theme_base;
+  }
+}
+
+@media only screen and (min-width: 25361px) and (max-width: 999999px) and (min-height: 1025px) and (max-height: 999999px) and (orientation: landscape) {
+
+  .jsx .Tree {
+    --theme_name: Tree__theme_base;
+    --theme_name__Tree: theme_base;
+    --responsive_size: responsive_size_t99_tv_xxxl_landscape;
+    --responsive_size__Tree__theme_base: responsive_size_t99_tv_xxxl_landscape__Tree__theme_base;
+  }
+}
+
+
+
+.tree > ul > li > pre > pre.jstree-html-node-holder-icon.icon-show
+{
+  --datatype-array--image-url:               url('../../images/mini-images/sites_tools/tree/data-types/icons8-json-96.png');
+  --datatype-object--image-url:              url('../../images/mini-images/sites_tools/tree/data-types/icons8-json-96.png');
+}
+
+.tree {
+
+  --open-button-animated--image-url:         url('../../images/mini-images/sites_tools/tree/button-open/button-animated.gif');
+  --open-button-opened--image-url:           url('../../images/mini-images/sites_tools/tree/button-open/button-opened.png');
+  --open-button-without-subtree--image-url:  url('../../images/mini-images/sites_tools/tree/button-open/button-without-subtree.svg');
+
+  --datatype-array--image-url:               url('../../images/mini-images/sites_tools/tree/data-types/icons8-view-array-96.png');
+  --datatype-object--image-url:              url('../../images/mini-images/sites_tools/tree/data-types/icons8-static-view-level2-80.png');
+  --datatype-number--image-url:              url('../../images/mini-images/sites_tools/tree/data-types/icons8-3-100.png');
+  --datatype-string--image-url:              url('../../images/mini-images/sites_tools/tree/data-types/icons8-font-style-formatting-96.png');
+  --datatype-boolean--image-url:             url('../../images/mini-images/sites_tools/tree/data-types/icons8-true-false-96.png');
+}
+
+.tree {
+  --node-margin: 0 0 0.4rem 0;
+
+  --node-margin: 0 0 0.18rem 0;
+
+  --open-button-size: 68%;
+
+  --background-color--tree: unset;
+
+  --text-color--dark: #000000;
+
+  --size--jstree-html-node: 1.2rem;
+  --node-label--font-family: LibreFranklin, Arial, system-ui, sans-serif;
+  --node-label--font-size: 0.9rem;
+  --node-label--line-height: var(--size--jstree-html-node);
+  --node-label--text-color: unset;
+
+  --text-color--hover: darkgreen;
+
+  --border--jstree-html-node: 0px solid #abc;
+  --border--subtree-parent: 0px solid #abc;
+  --border--jstree-html-node-open-button: 0px solid #abc;
+
+  --icon-margin: 0 0.3rem 0 0;
+  --icon-holder-size: 1.0rem;
+}
+
+
+@media ( (max-width: 440px) and (orientation: portrait) ) {
+  .tree {
+      --node-margin: 0 0 0.8rem 0;
+      --size--jstree-html-node: 2.1rem;
+      --icon-holder-size: 2.1rem;
+  }
+}
+
+
+@media ( (max-height: 440px) and (orientation: landscape) ) {
+  .tree {
+      --node-margin: 0 0 0.8rem 0;
+      --size--jstree-html-node: 2.1rem;
+      --icon-holder-size: 2.1rem;
+  }
+}
+
+
+.tree {
+    background-color: var(--background-color--tree);
+}
+
+.tree * {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    border: 0px solid #fff;
+    white-space: normal;
+}
+
+.tree ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    list-style-type: none;
+}
+
+.tree ul li {
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.tree ul li .jstree-html-node {
+    height: var(--size--jstree-html-node);
+    min-height: var(--size--jstree-html-node);
+    width: auto;
+
+    overflow: visible;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: var(--node-margin);
+}
+
+.tree ul li > ul {
+    margin-left: 22px;
+    border: var(--border--subtree-parent);
+}
+
+.tree .jstree-html-node-holder-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--icon-holder-size);
+    width: var(--icon-holder-size);
+
+    margin: var(--icon-margin);
+}
+
+
+.tree .jstree-html-node-holder-icon.icon-hide {
+    display: none;
+}
+
+.tree .jstree-html-node-holder-icon.icon-show {
+    display: flex;
+}
+
+.tree .jstree-html-node-holder-icon.icon-show.icon-tag-img {
+    background-size:     0;
+    background-image:    unset;
+    background-position: unset;
+    background-repeat:   unset;
+}
+
+.tree .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-position: center;
+    background-repeat:   no-repeat;
+    background-size:     contain;
+}
+
+.tree .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) img {
+    display: none;
+}
+
+.tree .jstree-html-node-holder-icon.icon-show.icon-tag-img img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.tree ul li.holder-datatype--array  > .jstree-html-node > .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-image:    var(--datatype-array--image-url);
+}
+.tree ul li.holder-datatype--object  > .jstree-html-node > .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-image:    var(--datatype-object--image-url);
+}
+.tree ul li.holder-datatype--string  > .jstree-html-node > .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-image:    var(--datatype-string--image-url);
+}
+.tree ul li.holder-datatype--number  > .jstree-html-node > .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-image:    var(--datatype-number--image-url);
+}
+.tree ul li.holder-datatype--boolean > .jstree-html-node > .jstree-html-node-holder-icon.icon-show:not(.icon-tag-img) {
+    background-image:    var(--datatype-boolean--image-url);
+}
+
+
+.tree .jstree-html-node-label {
+    border: var(--border--jstree-html-node);
+    background-color: inherit;
+    font-family: var(--node-label--font-family);
+    font-size: var(--node-label--font-size);
+    line-height: var(--node-label--line-height);
+    min-height: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    padding-left: 2px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: var(--node-label--text-color);
+}
+
+.tree .jstree-html-node-label:hover {
+    color: var(--text-color--hover);
+}
+
+.tree .open-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: var(--border--jstree-html-node-open-button);
+    height: 100%;
+    width: var(--size--jstree-html-node);
+    margin: auto;
+}
+
+.tree .open-button > pre {
+    display: none;
+    height: var(--open-button-size);
+    width: var(--open-button-size);
+
+    font-size: inherit;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: local;
+}
+
+.tree .open-button > .opened {
+    background-image: var(--open-button-opened--image-url);
+    transform: rotate(180deg);
+}
+.tree .open-button > pre {
+    background-image: var(--open-button-opened--image-url);
+    transform: rotate(90deg);
+}
+.tree .open-button > .without-subtree {
+    background-image: var(--open-button-without-subtree--image-url);
+    color: crimson !important;
+}
+
+.tree .open-button > .animated {
+    display: none;
+}
+
+.tree .open-button > .opened {
+    display: none;
+}
+
+.tree .open-button > pre {
+    display: block;
+}
+
+.tree .open-button > .without-subtree {
+    display: none;
+}
+
+.tree .toggle-with-subtree-opened > .opened {
+    display: block;
+}
+
+.tree .toggle-with-subtree-opened > pre {
+    display: none;
+}
+
+
+.tree .toggle-without-subtree > pre {
+    display: none;
+}
+
+.tree .toggle-without-subtree > .without-subtree {
+    display: block;
+}
+
+.json-context-menu-holder,
+.json-context-menu-holder * {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    border: 0px solid #fff;
+    white-space: normal;
+}
+
+.json-context-menu-holder {
+    display: none;
+    position: absolute !important;
+    top: var(--size--jstree-html-node);
+
+    background-color: white;
+    border: 1px solid #bitbufsb;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px #abb;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 1.0rem;
+
+    width: auto;
+    overflow-x: visible;
+
+    z-index: 9999;
+}
+
+ul.json-context-menu-holder li {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: stretch;
+
+    border-bottom: 1px solid #ddd;
+    cursor: ref;
+
+    width: auto;
+    min-width: 100%;
+}
+
+.json-context-menu-holder li .json-context-menu-item-holder-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--icon-holder-size);
+    width: var(--icon-holder-size);
+
+    margin: var(--icon-margin);
+}
+
+.json-context-menu-holder li .json-context-menu-item-holder-icon img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.json-context-menu-holder li .json-context-menu-item-label {
+    white-space: pre;
+    line-break: strict;
+    font-family: Verdana;
+    font-size: 0.685rem;
+    line-height: 0.685rem;
+
+    padding: 0.3rem 0.8rem;
+    margin: 0.5rem 0;
+    background-color: #fffafa;
+    flex-grow: 1;
+    border-radius: 0.6rem;
+    border: 0.3px solid #fdb;
+}
+
+@media (max-width: 440px) {
+    .tree .open-button {
+        margin-right: 1rem;
+    }
+}
+

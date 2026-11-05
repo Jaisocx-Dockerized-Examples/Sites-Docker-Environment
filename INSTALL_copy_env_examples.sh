@@ -499,7 +499,7 @@
 
 
 #; js libraries: package.json from examples
-  cdn_installs_folder="workspace/cdn/node_cdn_installs"
+  cdn_installs_folder="workspace/cdn_sites/node_cdn_installs"
   package_json=(
     "package.json"
     "package-lock.json"
@@ -557,7 +557,7 @@
 #; installs to cdn js libraries from inet
 #;   if yarn installed on Host OS
 #;   or, may install later in "ts" dockerized nodejs service.
-  cd "${this_folder}/workspace/cdn/node_cdn_installs"
+  cd "${this_folder}/workspace/cdn_sites/node_cdn_installs"
   yarn install
   # npm install
 

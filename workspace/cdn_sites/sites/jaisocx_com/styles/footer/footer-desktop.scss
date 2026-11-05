@@ -1,0 +1,8 @@
+@import "./../vars-global/vars-global";
+
+@media all and (min-width: 1025px) {
+  .footer-container {
+    width: $content-desktop-width !important;
+    justify-content: flex-end !important;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./../vars-global/vars-global";
+
+@media all and (min-width: 1201px) {
+  .footer-container {
+    width: $content-large-width !important;
+    .footer-right-col {
+      margin-right: 0 !important;
+    }
+  }
+}

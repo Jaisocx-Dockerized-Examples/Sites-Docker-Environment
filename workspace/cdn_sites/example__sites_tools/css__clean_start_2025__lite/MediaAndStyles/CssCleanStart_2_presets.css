@@ -1,0 +1,51 @@
+/* CSS CLASSES */
+
+
+/*
+  html tag css class "small"
+
+  with this css class, the <main> tag is NOT the entire height of the browser's tab.
+  if the html site has a lot of text,
+  then the site is scrollable.
+  If not a lot of text, then You see background, applied to <body> styles,
+  and the <main> tag is small, and has anther background.
+
+  I recommend to keep these classes in order to rebuild Your styles theme later,
+  if the default variables You have erased,
+  when edited the variables here, and not in the theme .css file.
+*/
+.jsx.small {
+  --jsx--css-clean-start-2--body-tag--height: 100vh;
+  --jsx--css-clean-start-2--body-tag--max-height: unset;
+  --jsx--css-clean-start-2--body-tag--min-height: 100vh;
+
+  --jsx--css-clean-start-2--site--height: fit-content;
+  --jsx--css-clean-start-2--site--max-height: fit-content;
+  --jsx--css-clean-start-2--site--min-height: fit-content;
+}
+
+
+
+/*
+  html tag css class "browser-width"
+
+  with this css class, the <main> tag is the entire width of the browser's tab.
+*/
+.jsx.browser-width {
+  /* width and height of the body elem */
+  --jsx--css-clean-start-2--body-tag--width: 100%;
+  --jsx--css-clean-start-2--body-tag--max-width: 100%;
+  --jsx--css-clean-start-2--body-tag--min-width: 100%;
+
+  --jsx--css-clean-start-2--body-tag--overflow-x: hidden;
+
+
+
+  --jsx--css-clean-start-2--site--width: 100%;
+  --jsx--css-clean-start-2--site--max-width: 100%;
+  --jsx--css-clean-start-2--site--min-width: 100%;
+
+  --jsx--css-clean-start-2--site--overflow-x: hidden;
+}
+
+

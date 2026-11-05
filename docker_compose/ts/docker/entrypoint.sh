@@ -233,6 +233,24 @@ fi
       fi
 
 
+      adduser  -u "${USER_JAISOCX_EXPRESS_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_JAISOCX_EXPRESS_NAME}"
+      echo "${USER_JAISOCX_EXPRESS_NAME}:${USER_JAISOCX_EXPRESS_HASHED_PWD}" | chpasswd -e
+      USER_JAISOCX_EXPRESS_HOME="/home/${USER_JAISOCX_EXPRESS_NAME}"
+
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_JAISOCX_EXPRESS "${USER_JAISOCX_EXPRESS_ID}" ${USER_JAISOCX_EXPRESS_NAME}\n"
+      fi
+
+
+      adduser  -u "${USER_PNPM_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_PNPM_NAME}"
+      echo "${USER_PNPM_NAME}:${USER_PNPM_HASHED_PWD}" | chpasswd -e
+      USER_PNPM_HOME="/home/${USER_PNPM_NAME}"
+
+      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+        echo -e "[$(date)]: new user USER_PNPM "${USER_PNPM_ID}" ${USER_PNPM_NAME}\n"
+      fi
+
+
       adduser  -u "${USER_NPX_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_NPX_NAME}"
       echo "${USER_NPX_NAME}:${USER_NPX_HASHED_PWD}" | chpasswd -e
       USER_NPX_HOME="/home/${USER_NPX_NAME}"
@@ -248,15 +266,6 @@ fi
 
       if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
         echo -e "[$(date)]: new user USER_NPM "${USER_NPM_ID}" ${USER_NPM_NAME}\n"
-      fi
-
-
-      adduser  -u "${USER_PNPM_ID}"  -G "${GROUP_NODE_NAME}" -D "${USER_PNPM_NAME}"
-      echo "${USER_PNPM_NAME}:${USER_PNPM_HASHED_PWD}" | chpasswd -e
-      USER_PNPM_HOME="/home/${USER_PNPM_NAME}"
-
-      if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
-        echo -e "[$(date)]: new user USER_PNPM "${USER_PNPM_ID}" ${USER_PNPM_NAME}\n"
       fi
 
 
@@ -319,6 +328,43 @@ fi
 
       chown -R  "${USER_NAME}:${GROUP_USERS_NAME}" "${USER_HOME}"
       chown "${USER_NAME}:${GROUP_USERS_NAME}"     "${BASH_LOGIN}"
+
+
+
+      chown -R  "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}" "${USER_JAISOCX_EXPRESS_HOME}"
+      chown -R  "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}" "${JAISOCX_EXPRESS_HOME}"
+
+
+      echo -e "\nOwner USER_JAISOCX_EXPRESS to JAISOCX_EXPRESS_FOLDERS ...\n"
+
+        jaisocx_allowed=${JAISOCX_EXPRESS_FOLDERS}
+
+        # Loop through all files in the directory
+        for RELATIVE_JAISOCX_EXPRESS_ALLOWED in $jaisocx_allowed
+        do
+
+            jaisocx_express_dir="${IN_DOCKER_WORKSPACE_VOLUME}/${RELATIVE_JAISOCX_EXPRESS_ALLOWED}"
+            echo "${jaisocx_express_dir}"
+
+            if [ -d "${jaisocx_express_dir}" ]; then
+
+              if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+                echo "[$(date)]: starts chown to... USER_JAISOCX_EXPRESS "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}" ${jaisocx_express_dir}"
+              fi;
+
+              chown -R  "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}" "${jaisocx_express_dir}"
+
+              if [[ "${WHETHER_DEV_MODE}" == "true" ]]; then
+                echo "[$(date)]: owner USER_JAISOCX_EXPRESS "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}" ${jaisocx_express_dir}"
+              fi;
+
+            fi;
+
+        done;
+
+      echo -e "Owner USER_JAISOCX_EXPRESS set to JAISOCX_EXPRESS_FOLDERS!\n"
+
+
 
       # chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${SOFTWARE_INSTALL_FOLDER}"
       # chown -R "${USER_PHP_NAME}:${GROUP_PHP_NAME}"   "${PHP_SOFTWARE_HOME}"
@@ -591,6 +637,10 @@ fi
         "GROUP_NODE_NAME"
         "USER_NODE_NAME"
         "USER_NODE_HOME"
+        "USER_JAISOCX_EXPRESS_NAME"
+        "USER_JAISOCX_EXPRESS_HOME"
+        "JAISOCX_EXPRESS_HOME"
+        "JAISOCX_EXPRESS_FOLDERS"
         "USER_NPX_NAME"
         "USER_NPM_NAME"
         "USER_PNPM_NAME"
@@ -654,6 +704,7 @@ fi
 
       USER_SUDIER_BASH_LOGIN="/home/${USER_SUDIER_NAME}/.bashrc"
       USER_NODE_BASH_LOGIN="/home/${USER_NODE_NAME}/.bashrc"
+      USER_JAISOCX_EXPRESS_LOGIN="/home/${USER_JAISOCX_EXPRESS_NAME}/.bashrc"
       USER_NPX_BASH_LOGIN="/home/${USER_NPX_NAME}/.bashrc"
       USER_NPM_BASH_LOGIN="/home/${USER_NPM_NAME}/.bashrc"
       USER_PNPM_BASH_LOGIN="/home/${USER_PNPM_NAME}/.bashrc"
@@ -666,6 +717,9 @@ fi
       fi
       if [ -e "${USER_NODE_BASH_LOGIN}" ]; then
         rm     "${USER_NODE_BASH_LOGIN}"
+      fi
+      if [ -e "${USER_JAISOCX_EXPRESS_LOGIN}" ]; then
+        rm     "${USER_JAISOCX_EXPRESS_LOGIN}"
       fi
       if [ -e "${USER_NPX_BASH_LOGIN}" ]; then
         rm     "${USER_NPX_BASH_LOGIN}"
@@ -690,6 +744,7 @@ fi
         touch    "${USER_SUDIER_BASH_LOGIN}"
       fi
       touch    "${USER_NODE_BASH_LOGIN}"
+      touch    "${USER_JAISOCX_EXPRESS_LOGIN}"
       touch    "${USER_NPX_BASH_LOGIN}"
       touch    "${USER_NPM_BASH_LOGIN}"
       touch    "${USER_PNPM_BASH_LOGIN}"
@@ -704,6 +759,9 @@ fi
 
       echo    -e "${bash_login_content}" >> "${USER_NODE_BASH_LOGIN}"
       cat        "${templates}/profile"  >> "${USER_NODE_BASH_LOGIN}"
+
+      echo    -e "${bash_login_content}" >> "${USER_JAISOCX_EXPRESS_LOGIN}"
+      cat        "${templates}/profile"  >> "${USER_JAISOCX_EXPRESS_LOGIN}"
 
       echo    -e "${bash_login_content}" >> "${USER_NPX_BASH_LOGIN}"
       cat        "${templates}/profile"  >> "${USER_NPX_BASH_LOGIN}"
@@ -734,6 +792,7 @@ fi
         chown -R "${USER_SUDIER_NAME}:${GROUP_SUDIER_NAME}"       "/home/${USER_SUDIER_NAME}"
       fi
       chown -R "${USER_NODE_NAME}:${GROUP_NODE_NAME}"       "/home/${USER_NODE_NAME}"
+      chown -R "${USER_JAISOCX_EXPRESS_NAME}:${GROUP_NODE_NAME}"  "/home/${USER_JAISOCX_EXPRESS_NAME}"
       chown -R "${USER_NPX_NAME}:${GROUP_NODE_NAME}"        "/home/${USER_NPX_NAME}"
       chown -R "${USER_NPM_NAME}:${GROUP_NODE_NAME}"        "/home/${USER_NPM_NAME}"
       chown -R "${USER_PNPM_NAME}:${GROUP_NODE_NAME}"       "/home/${USER_PNPM_NAME}"
@@ -742,15 +801,16 @@ fi
       chown -R "${USER_READER_NAME}:${GROUP_READER_NAME}"   "/home/${USER_READER_NAME}"
 
       if [[ ( "${ADD_SUDIERS}" == "true" ) ]]; then
-        chmod 700   "${USER_SUDIER_BASH_LOGIN}"
+        chmod 500   "${USER_SUDIER_BASH_LOGIN}"
       fi
-      chmod 700   "${USER_NODE_BASH_LOGIN}"
-      chmod 700   "${USER_NPX_BASH_LOGIN}"
-      chmod 700   "${USER_NPM_BASH_LOGIN}"
-      chmod 700   "${USER_PNPM_BASH_LOGIN}"
-      chmod 700   "${USER_YARN_BASH_LOGIN}"
-      chmod 700   "${USER_BASH_LOGIN}"
-      chmod 700   "${USER_READER_BASH_LOGIN}"
+      chmod 500   "${USER_NODE_BASH_LOGIN}"
+      chmod 500   "${USER_JAISOCX_EXPRESS_LOGIN}"
+      chmod 500   "${USER_NPX_BASH_LOGIN}"
+      chmod 500   "${USER_NPM_BASH_LOGIN}"
+      chmod 500   "${USER_PNPM_BASH_LOGIN}"
+      chmod 500   "${USER_YARN_BASH_LOGIN}"
+      chmod 500   "${USER_BASH_LOGIN}"
+      chmod 500   "${USER_READER_BASH_LOGIN}"
 
       touch "${bash_login_written_marker}"
       marker_bash_login_written="$YES"
@@ -892,14 +952,14 @@ fi
               if [ -e "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder/node_modules" ]; then
                 rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder/node_modules"
 
-                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/cdn/node_cdn_installs/node_modules"
+                rm -r -f "${IN_DOCKER_WORKSPACE_VOLUME}/cdn_sites/node_cdn_installs/node_modules"
               fi
 
             fi
 
             sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder"; npm i "
 
-            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/cdn/node_cdn_installs"; npm i --install-strategy=hoisted --omit=dev "
+            sudo -u ${USER_NAME} /bin/bash -c ". /home/${USER_NAME}/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/cdn_sites/node_cdn_installs"; npm i --install-strategy=hoisted --omit=dev "
         fi
 
         echo -e "node_modules install finish. \n"
@@ -1021,6 +1081,30 @@ fi
 
 
 
+if [[ "${start_jaisocx_express}" == "true" ]]; then
+
+  echo -e "\n  Jaisocx Express Secure starts ... \n"
+
+  if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
+          sudo -u ${USER_JAISOCX_EXPRESS_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; yarn jaisocx_express &"
+          # yarn jaisocx_express &
+
+        elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
+          sudo -u ${USER_JAISOCX_EXPRESS_NAME} /bin/bash -c "pnpm --version"
+          # pnpm --version
+
+        else
+          sudo -u ${USER_JAISOCX_EXPRESS_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; node ./src/JaisocxExpress.js &"
+          # sudo -u ${USER_JAISOCX_EXPRESS_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run jaisocx_express &"
+          # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run jaisocx_express &
+
+  fi
+
+  # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start  # @explained &: Start in background every process to be able to start also other processes, every with the ampersand sing
+fi
+
+
+
 if [[ "${start_express_secure}" == "true" ]]; then
 
   echo -e "\n  Express Framework Secure starts ... \n"
@@ -1034,7 +1118,9 @@ if [[ "${start_express_secure}" == "true" ]]; then
           # pnpm --version
 
         else
-          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
+          sudo -u ${USER_NODE_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; node ./src/secure_server.js &"
+          # sudo -u ${USER_NODE_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
+          # sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run secure_start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run secure_start &
 
   fi
@@ -1057,7 +1143,9 @@ if [[ "${start_express_flat}" == "true" ]]; then
             # pnpm --version
 
         else
-          sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
+          sudo -u ${USER_NODE_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; node ./src/server.js &"
+          # sudo -u ${USER_NODE_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
+          # sudo -u ${USER_NAME} /bin/bash -c ". ~/.bashrc; cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express"; npm run start &"
           # npm --prefix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/express" run start
   fi
 fi

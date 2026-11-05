@@ -1,11 +1,19 @@
 
-127.0.0.1	localhost
-255.255.255.255	broadcasthost
-::1             localhost
+127.0.0.1	        localhost
+255.255.255.255	  broadcasthost
+::1               localhost
 
 
 
-127.0.0.1      local.basetasks.site
-::1            local.basetasks.site
+127.0.0.1         local.basetasks.site
+::1               local.basetasks.site
+
+127.0.0.1         cdn.local.basetasks.site
+::1               cdn.local.basetasks.site
+
+127.0.0.1         cdn-local.basetasks.site
+::1               cdn-local.basetasks.site
+
+
 
 

@@ -1,16 +1,15 @@
 
-`Docker for a Site`
-
-![workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg](./workspace/cdn/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+`Docker for a Site` Jaisocx &#8482; &#169;
 
 
-![workspace/cdn/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn/software_labels/Prince/software_tm_label_prince.svg)
-![workspace/cdn/software_labels/php/software_tm_label_php.svg](./workspace/cdn/software_labels/php/software_tm_label_php.svg)
-![workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./workspace/cdn/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
-![workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg](./workspace/cdn/software_labels/Node/software_tm_label_nodejs_2.svg)
-![workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg](workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+![workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg)
+![workspace/cdn_sites/software_labels/php/software_tm_label_php.svg](./workspace/cdn_sites/software_labels/php/software_tm_label_php.svg)
+![workspace/cdn_sites/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./workspace/cdn_sites/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
+![workspace/cdn_sites/software_labels/Node/software_tm_label_nodejs_2.svg](./workspace/cdn_sites/software_labels/Node/software_tm_label_nodejs_2.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 [software_labels preview](./README_software_labels.md)
 
@@ -18,7 +17,7 @@
 
 ---
 
-  >  🗓  **Updated**:  🌾  Autumn 2026, Wed. 07 Oct. 17:20:50 GMT
+  >  🗓  **Updated**:  🌾  Autumn 2026  |  AD 2026 Oct 07 17:20:50.000 GMT_24h
 
 
 
@@ -98,12 +97,12 @@
 
 **Old page of year AD 2012. Old MS FrontPage color themes**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/ICE_Cube_2012_gummy.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/ICE_Cube_2012_gummy.html)
 
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png)
 
 
 
@@ -114,9 +113,9 @@
 
 **Sites Tools BuildData.json**
 
-🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/build_data.html)
+🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/build_data.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/build_data.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/BuildData_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/BuildData_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png)
 
 
 
@@ -125,9 +124,9 @@
 
 **Lock Viewer**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/lock_viewer.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/lock_viewer.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/lock_viewer.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png)
 
 
 
@@ -135,9 +134,9 @@
 
 ### Tests for fonts saving up network
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/fonts_os_installed_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/fonts_os_installed_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/fonts_os_installed_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Fonts_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Fonts_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png)
 
 
 
@@ -148,9 +147,9 @@
 
 **pair of icons**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/template_clean_start__icons.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/template_clean_start__icons.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/template_clean_start__icons.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png)
 
 
 
@@ -158,9 +157,9 @@
 
 **more icons**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/unicode_icons.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/unicode_icons.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/unicode_icons.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png)
 
 
 
@@ -172,9 +171,9 @@
 
 **tb thought for rendering js data**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_table_imaged_orderby_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_table_imaged_orderby_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Tb_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/Tb_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png)
 
 
 
@@ -182,9 +181,9 @@
 
 **Css code snippet**
 
-  🌐  [https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html](https://local.basetasks.site:8447/cdn/html_examples_sites_tools/css_code_snippet_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_code_snippet_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_code_snippet_preview.html)
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png)
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png)
 
 
 
@@ -203,7 +202,7 @@
 
   The last instruction "Yarn install", could work, if was set up on Host OS.
 
-  After yarn install, the `.html` examples in `workspace/cdn/html_examples_sites_tools` 
+  After yarn install, the `.html` examples in `workspace/cdn_sites/html_examples_sites_tools` 
   might render in browsers, before docker services set up.
 
 
@@ -410,12 +409,11 @@
 
 
 
+---
 
 
 
-
-
-**Friendly greetings**
+Have a nice day, 
 
 Jaisocx Inc. Software Architect I.P.
 

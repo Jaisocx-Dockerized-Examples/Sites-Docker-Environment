@@ -1,5 +1,7 @@
 
-`Network`
+
+`Docker for a Site` Jaisocx &#8482; &#169;
+
 
 # in docker server listen ip address
 
@@ -31,7 +33,17 @@
   You can also configure the Docker daemon or user-defined bridge networks to use 127.0.0.1 
   as the default binding address for published ports, 
   and makes all published ports accessible only from the host by default.
-  
+
+
+
+
+
+---
+
+
+Have a nice day, 
+
+Jaisocx Inc. Software Architect Illia Polianskyi
 
 
 

@@ -1,0 +1,53 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main .top {
+    background-image: url("img/city/1024x768/1024x768_1x.webp");
+    background-position: top 0;
+    background-size: cover;
+  }
+  .main .advantages {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .main .advantages .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .main .advantages .container h2 {
+    padding: 0 20px 0 20px !important;
+  }
+  .main .advantages .container .adv_holder {
+    flex-direction: row !important;
+  }
+  .main .advantages .container .adv_holder .adv {
+    padding: 0 20px 0 20px !important;
+    margin: 0 !important;
+    width: 33.333% !important;
+    box-sizing: border-box;
+  }
+  .main .advantages .container .adv_holder .adv:nth-child(3n+1):after, .main .advantages .container .adv_holder .adv:nth-child(3n+2):after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    min-height: 160px;
+    height: 70%;
+    max-height: 70%;
+    width: 1px;
+    box-sizing: border-box;
+    border-right: 1px solid #C1C1C1;
+  }
+  .main .advantages .container .adv_holder .adv p {
+    margin: 0;
+  }
+  .main .advantages .container .adv_holder .adv h3 {
+    padding-top: 0;
+  }
+  section.contact_form {
+    max-width: 748px !important;
+    width: 748px !important;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=index-laptop.css.map */

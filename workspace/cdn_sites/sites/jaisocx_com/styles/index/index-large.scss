@@ -1,0 +1,34 @@
+@import "./../vars-global/vars-global";
+
+@media only screen and (min-width: 1201px) {
+  .header {
+    .container {
+      max-width: $content-large-width !important;
+      width: $content-large-width !important;
+      margin: 0 auto;
+    }
+  }
+  section {
+    .container {
+      width: $content-large-width;
+    }
+  }
+
+  .main {
+    .advantages {
+      .container {
+        width: ($content-large-width + 60px) !important;
+      }
+    }
+    .contact_form {
+      max-width: $content-large-width !important;
+      width: $content-large-width !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 0 auto;
+      .container {
+        max-width: 100%;
+      }
+    }
+  }
+}
