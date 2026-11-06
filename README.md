@@ -319,7 +319,7 @@
   - Workspace VOLUME same .env bash variable
 
 
-![workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png](./workspace/readme/readme_sites_docker/r_docker/r_dc_images/r_dc_yml_images/console_line_docker/console_line_docker_720.png)
+![workspace/readme/img_readme_docker/img_dc_command_line/console_line_docker_720.png](./workspace/readme/img_readme_docker/img_dc_command_line/console_line_docker_720.png)
 
 
 ## B. Workarounds improve quality and easen work day
