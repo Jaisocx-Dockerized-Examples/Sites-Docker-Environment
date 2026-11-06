@@ -29,42 +29,76 @@
 
 ## TLS Cert. Express Framework example by Jaisocx
 
-  > I could set the paths of private key and ssl cert from .env.dynamic like in settings of node-http,
-  > with 3rd partie's dependency like @jaisocx/command-line for ENV variables from .env.dynamic in
-  > GitHub project Jaisocx-Tools/TypescriptEnvironment under docker:
+  >   **why no .envs read automated in the JaisocxExpress.js**: 
+  >   💡  why we like docker for deploys, the images, built by hardcoded numbers of software and other variables, 
+  >       having known the images' numbers)). 
   > 
-  > ssl_cert_path="/opt/jaisocx/ ... /2026_2027_bundle_for_node_basetasks_site.crt"
+  > I could set the paths of private key and tls cert from `env_dc_dinamique/.env_ts` 
+  > like in other settings for node-http,
+  > with the 3rd partie's dependency to express, 
+  > our `@jaisocx/command-line` in the GitHub project **Jaisocx-Tools/jaisocx_sites_tools**:
+  > 
+  > `ssl_cert_path="/opt/jaisocx/ ... /2026_2027_bundle_for_node_basetasks_site.crt"`
   >
   > However I shall keep for now this Express Framework setup without 3rd parties dependencies 
   > for example transparency, and promise to think later on,
-  > like, whether in this example as js package needed 2nd similar .env.dynamic, but for Express, 
-  > like in TypescriptEnvironment for node-http one level folder up))
+  > like, 
+  >  
+  > 1. how would that work normally, 
+  > having `nodejs` installed under the host OS on the harddrive, under `nvm` or a newer similar.
   > 
-  > If with other deps, then it's not easy to understand,
-  > whether one can code having installed what set of deps.
-  > The dep required for now still remains very clean:
+  > Having called the `package.json` **script**, 
+  > both, once by Host OS nodejs install,
+  > and once another time, from within the docker,
+  > like a normal programmer having a day not known, 
+  > whether in the project for where, with the docker or no))
   > 
-  > "express": "~5.1.0"
+  > You see, in the workspace, the `node_modules` folder is on the harddrive,
+  > **both** for the **Host OS**, and, like the mounted volume, for the **Docker**.
+  >
+  > 2. and, whether in this example as a js package needed a 2nd similar dinamique .env,
+  > but, for the Express, 
+  > requiring then for the best practice the env reader install to node_modules,
+  > no hardcopy.
+  > 
+  > If the example has in the package.json other 3rd partie's libraries to express, 
+  > then it ain't easy to know, whether one can code having installed what set of deps.
+  > The dep required for now, still, remains very clean:
+  > 
+  >  ✅  "express": "~5.1.0"
 
 
 
-**Installed** SSL Cert for **Express** in `secure_server.js` location:
-`workspace/ts/express/src/secure_server.js`
-after Line 215
+  **Installed** the TLS Cert for **Express** in `secure_server.js` location:
+  `workspace/ts/express/src/secure_server.js`
+  after Line `295`.
+  
+  in the `JaisocxExpress.js` remained like in `secure_server.js` 
+  since **the JaisocxExpress** needs time to learn what where, 
+  moreover the https, ain't too easy)) Line Nr. `1_462`.
 
 ```js
   // workspace/ts/express/src/secure_server.js
-  // Line Nr.: 215
-  // ...
   
-215:  https
-216:    .createServer (
-217:      {
-218:        key:  fs.readFileSync( ' ... /2026_2027_basetasks_site.key' ),
-219:        cert: fs.readFileSync( ' ... /2026_2027_bundle_for_node_basetasks_site.crt' ),
-220:      },
-221:      app
-222:    ).listen( https_port );
+  // Settings variables Line Nr.: 17
+ 17:  const https_port = 9443;
+ 18:  const domain = 'local.basetasks.site';
+  
+  // Line Nr.: 295
+  // ...
+295:  https
+296:    .createServer (
+297:      {
+298:        key:  fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key' ),
+299:        cert: fs.readFileSync( '/opt/jaisocx/sites_docker_environment/workspace/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
+300:      },
+301:      app
+302:    ).listen( https_port, () => {
+303:  
+304:      console.log(`Secure(https) Express Framework Server started at https://${domain}:${https_port}`);
+305:  
+306:    }
+307:  );
 ```
 
 
