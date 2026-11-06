@@ -39,7 +39,7 @@
 
   2.2. Free for use, installed, with published installation bash scripts, valid til December 2026 **Signed Wildcard SSL Certificate** for 95.00 USD for any subdomain of the Domain name **basetasks.site**, paid from my money cost sum ( bound abos and payments inclusive ) above 400 USD.
 
-  ![../img_readme_docker/img_dc_https_certs/ssl_certs_commands_720.png](../img_readme_docker/img_dc_https_certs/ssl_certs_commands_720.png)
+  ![../img_readme_docker/img_dc_https_certs/https_certs_commands_720.png](../img_readme_docker/img_dc_https_certs/https_certs_commands_720.png)
 
 
 
