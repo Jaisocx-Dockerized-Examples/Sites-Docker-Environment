@@ -58,15 +58,17 @@
 
   > `start, stop, restart, status, restartus))`
 
-![workspace/readme/img_readme_a4dc/page_in_browser_logoipsum.jpg](./workspace/readme/img_readme_a4dc/page_in_browser_logoipsum.jpg)
+![../img_readme_a4dc/page_in_browser_logoipsum.jpg](../img_readme_a4dc/page_in_browser_logoipsum.jpg)
 
-![workspace/readme/img_readme_a4dc/doc_in_browser_logoipsum.jpg](./workspace/readme/img_readme_a4dc/doc_in_browser_logoipsum.jpg)
+![../img_readme_a4dc/doc_in_browser_logoipsum.jpg](../img_readme_a4dc/doc_in_browser_logoipsum.jpg)
 
-![workspace/readme/img_readme_a4dc/page_in_browser_music.jpg](./workspace/readme/img_readme_a4dc/page_in_browser_music.jpg)
+![../img_readme_a4dc/page_in_browser_music.jpg](../img_readme_a4dc/page_in_browser_music.jpg)
 
-![workspace/readme/img_readme_a4dc/doc_in_browser_music.jpg](./workspace/readme/img_readme_a4dc/doc_in_browser_music.jpg)
+![../img_readme_a4dc/doc_in_browser_music.jpg](../img_readme_a4dc/doc_in_browser_music.jpg)
+
 
 ---
+
 
 
 
@@ -153,8 +155,6 @@
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect I.P.
+Have a nice day, Jaisocx Inc. Software Architect I.P.
 
 

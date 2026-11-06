@@ -39,7 +39,7 @@
 
   2.2. Free for use, installed, with published installation bash scripts, valid til December 2026 **Signed Wildcard SSL Certificate** for 95.00 USD for any subdomain of the Domain name **basetasks.site**, paid from my money cost sum ( bound abos and payments inclusive ) above 400 USD.
 
-  ![../commands/commands_images/ssl_certs_commands_720.png](../commands/commands_images/ssl_certs_commands_720.png)
+  ![../img_readme_docker/img_dc_https_certs/ssl_certs_commands_720.png](../img_readme_docker/img_dc_https_certs/ssl_certs_commands_720.png)
 
 
 
@@ -114,6 +114,7 @@ networks:
 
   2.9. The option to set the **fine-grained security confs** with the **allowed to connect clients** of the local docker network, by their IP address and port number, like in **php-fpm**: docker_compose/PHP/docker/conf/php83/**php-fpm.d/pool_workspace.conf**: ```listen.allowed_clients="${JAISOCX_HTTP_IPv6},${JAISOCX_HTTP_IPv4}"```. And, for sure, of greate use for Databases confs. 
   > When You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
+
 
 ---
 
