@@ -60,7 +60,7 @@
 
 
 ## News
-  > **News**: [workspace/readme/readme_ts_env/md/ts_env_news.md](./workspace/readme/readme_ts_env/md/ts_env_news.md)
+  > **News**: [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
   -  🗓  26 April 2026 **Sites Tools updated**
 
 ---
@@ -68,18 +68,18 @@
 
 
 ##  📚 READMEs
-  > **TS Environment Docs**:  📚  [workspace/readme/readme_ts_env/md/README.md](./workspace/readme/readme_ts_env/md/README.md)
+  > **TS Environment Docs**:  📚  [workspace/readme/readme_ts/README.md](./workspace/readme/readme_ts/README.md)
 
 
-  - **Aim Of The SetUp**:  📙  [workspace/readme/readme_ts_env/md/ts_env_aim_of_the_setup.md](./workspace/readme/readme_ts_env/md/ts_env_aim_of_the_setup.md)
+  - **Aim Of The SetUp**:  📙  [workspace/readme/readme_ts/ts_env_aim_of_the_setup.md](./workspace/readme/readme_ts/ts_env_aim_of_the_setup.md)
 
   - **TLS**:  📙  [cmd/https_keys/README.md](./cmd/https_keys/README.md)
 
   - **Express Node Framework**:  📙  [workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - **Features**:  📙  [workspace/readme/readme_ts_env/md/ts_env_features.md](./workspace/readme/readme_ts_env/md/ts_env_features.md)
+  - **Features**:  📙  [workspace/readme/readme_ts/ts_env_features.md](./workspace/readme/readme_ts/ts_env_features.md)
 
-  - **INSTALL**:  📙  [workspace/readme/readme_ts_env/md/ts_env_install.md](./workspace/readme/readme_ts_env/md/ts_env_install.md)
+  - **INSTALL**:  📙  [workspace/readme/readme_ts/ts_env_install.md](./workspace/readme/readme_ts/ts_env_install.md)
 
 
 ---
@@ -88,9 +88,7 @@
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect I.P.
+Have a nice day, Jaisocx Inc. Software Architect I.P.
 
 
 

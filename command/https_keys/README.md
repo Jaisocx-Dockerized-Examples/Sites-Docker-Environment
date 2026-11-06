@@ -11,7 +11,7 @@
 [HOME Docker for a Site Typescript Environment](../../README_typescript_environment.md)
 
 
-[HOME Typescript Environment](../../workspace/readme/readme_ts_env/md/README.md)
+[HOME Typescript Environment](../../workspace/readme/readme_ts/README.md)
 
 
 

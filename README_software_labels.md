@@ -101,9 +101,7 @@
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect I.P.
+Have a nice day, Jaisocx Inc. Software Architect I.P.
 
 
 

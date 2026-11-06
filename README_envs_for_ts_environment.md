@@ -546,9 +546,7 @@ PHP_COMPOSER_IPv4="172.20.253.228"
 
 
 
-Have a nice day,
-
-Jaisocx Inc. Software Architect I.P.
+Have a nice day, Jaisocx Inc. Software Architect I.P.
 
 
 

@@ -49,7 +49,7 @@
 
 
 
-- ✅ [**Alpine**](./docker_compose/Alpine/README.md).
+- ✅ [**Alpine**](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md).
 
 
 
@@ -59,7 +59,7 @@
 
 > Refinements in the current February 2026 review after 3 months release before.
 
-- ✅ [**Ideas, Why Coded What**](./workspace/readme/readme_sites_docker/r_docker/README_Ideas_why_coded_what.md).
+- ✅ [**Ideas, Why Coded What**](./workspace/readme/readme_docker/README_Ideas_why_coded_what.md).
 
 - ✅ **Newer Workaround for Docker Compose**.
 
@@ -67,7 +67,7 @@
 
 - ✅ **B. Workarounds improve quality and easen work day**.
 
-- ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Code_Snippets.md).
+- ✅ **C.** [**Code snippets for reuse by copy-paste**](./workspace/readme/readme_docker/README_Dockerfile_n_Entrypoint_Code_Snippets.md).
 
 - ✅ **D.** [**Typescript Environment**](./README_typescript_environment.md).
 
@@ -75,15 +75,15 @@
 
 
 
-1. ✅ [**Network**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
+1. ✅ [**Network**](./workspace/readme/readme_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
 
-2. ✅ [**Users**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
+2. ✅ [**Users**](./workspace/readme/readme_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
 
 3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
 
 4. ✅ **Tarballs** for reuse on reinstall.
 
-5. ✅ [**Docker Env Theories**](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Env.md).
+5. ✅ [**Docker Env Theories**](./workspace/readme/readme_docker/README_envs_for_Docker_Compose.md).
 
 
 
@@ -269,7 +269,7 @@
   - Why **Docker**
   - When Docker, why **Alpine**
   - Why **bash** 
-  - Why **sudo** ( see [**Users** => 4.](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md) )
+  - Why **sudo** ( see [**Users** => 4.](./workspace/readme/readme_docker/README_Docker_Users.md) )
 
 ## Newer Workaround for Docker Compose
   > Just one Service, for Sites, added to network with internet and has open port(s): **jaisocx_dc_opened_one_for_browsers_network**
@@ -381,7 +381,7 @@
 
 
 ### 2.2. Secure in deployment
-  > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./workspace/readme/readme_sites_docker/r_docker/README_Docker_Users.md) )
+  > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./workspace/readme/readme_docker/README_Docker_Users.md) )
 
   Once docker service deployed to production server machine,
   after logging inn,
@@ -413,9 +413,7 @@
 
 
 
-Have a nice day, 
-
-Jaisocx Inc. Software Architect I.P.
+Have a nice day, Jaisocx Inc. Software Architect I.P.
 
 
 

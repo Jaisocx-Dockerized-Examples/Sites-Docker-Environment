@@ -38,7 +38,7 @@
 
   - **TLS**: [📙 cmd/https_keys/README.md](../../../../cmd/https_keys/README.md)
 
-  - **Express Node Framework**: [📙  workspace/ts/readme_ts_env/express/README.md](../../express/README.md)
+  - **Express Node Framework**: [📙  workspace/ts/express/README.md](../../ts/express/README.md)
 
   - **Features**: [📙  ts_env_features.md](./ts_env_features.md)
 
