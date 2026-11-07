@@ -60,22 +60,26 @@
 
 
 ## News
-  > **News**: [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
-  -  🗓  26 April 2026 **Sites Tools updated**
+
+  >  **News**: [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **JaisocxExpress** (http/1.1): [📙  workspace/readme/readme_ts/ts_env_JaisocxExpress.md](./workspace/readme/readme_ts/ts_env_JaisocxExpress.md)
+
 
 ---
 
 
 
 ##  📚 READMEs
+
   > **TS Environment Docs**:  📚  [workspace/readme/readme_ts/README.md](./workspace/readme/readme_ts/README.md)
 
 
   - **Aim Of The SetUp**:  📙  [workspace/readme/readme_ts/ts_env_aim_of_the_setup.md](./workspace/readme/readme_ts/ts_env_aim_of_the_setup.md)
 
-  - **TLS**:  📙  [cmd/https_keys/README.md](./cmd/https_keys/README.md)
+  - **TLS**:  📙  [command/https_keys/README.md](./command/https_keys/README.md)
 
-  - **Express Node Framework**:  📙  [workspace/ts/express/README.md](./workspace/ts/express/README.md)
+  - **Express Node Framework**:  📙  [workspace/readme/readme_ts/ts_env_Express_examples.md](./workspace/readme/readme_ts/ts_env_Express_examples.md)
 
   - **Features**:  📙  [workspace/readme/readme_ts/ts_env_features.md](./workspace/readme/readme_ts/ts_env_features.md)
 

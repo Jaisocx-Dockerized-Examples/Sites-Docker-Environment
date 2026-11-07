@@ -34,7 +34,7 @@
 
   > just a constant for a dinamique url in pair of minutes coding.
   > 
-  >  💡  url, art, data, content_type
+  >  💡  url, art:( text | json | file ), data
 
 
 
@@ -118,6 +118,11 @@
     "data":   "  <block>\n    <h1>Hello World!</h1>\n    </block>\n  "
 }
 
+```
+
+
+
+```json
 
 "html_templates": {
     "clean_start_html_template": {

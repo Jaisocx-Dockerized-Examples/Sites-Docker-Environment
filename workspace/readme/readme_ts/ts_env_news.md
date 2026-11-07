@@ -20,17 +20,21 @@
 
 
 # NEWS
-  > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
+
+  >  🗓  **Updated**:  AD 2026  🌾 Autumn, Nov 05 20:30:10.000 GMT_24h
 
 
 ---
 
+  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **JaisocxExpress** (http/1.1): [📙  ts_env_JaisocxExpress.md](./ts_env_JaisocxExpress.md)
 
-  - 🗓 26 April 2026 **Sites Tools updated**
+  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **Readme on Express** (http/1.1), the Server-side Nodejs Sites Framework: [📙  ts_env_Express_examples.md](./ts_env_Express_examples.md)
 
-  - 🗓 21 April 2026 **README about Deployments and README's**: workarounds, tips and tricks: [📙 readme/md/ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
+  -  🗓  AD 2026  🌷  Spring, April 26  **Sites Tools updated**
 
-  - 🗓 18 April 2026 **Software_Labels Preview**: [📙 cdn_sites/images/software_labels/README.md](./../../../cdn_sites/software_labels/README.md)
+  -  🗓  AD 2026  🌷  Spring, April 21  **README about Deployments and README's**: workarounds, tips and tricks: [📙 readme/md/ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
+
+  -  🗓  AD 2026  🌷  Spring, April 18  **Software_Labels Preview**: [📙 cdn_sites/images/software_labels/README.md](./../../../cdn_sites/software_labels/README.md)
 
 
 
