@@ -25,7 +25,7 @@
 
           <alias art="file"
                  url="/favicon.ico"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/favicons/Icon_Jaisocx.ico"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/favicon/Icon_Jaisocx.ico"
                  cache="cache"
           />
 
@@ -43,12 +43,17 @@
                  list="true"
                  each-folder-content-file-name="root.html" />
 
+
+          <!-- after install to node_modules in workspace/cdn_node_installs via yarn or npm, pnpm -->
+          <!--
           <alias art="folder"
                  url="/jaisocx/"
                  path="/opt/jaisocx/sites_docker_environment/workspace/cdn_node_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
+          -->
+
 
           <alias art="folder"
                  url="/php/"
@@ -59,25 +64,27 @@
 
           <alias art="folder"
                  url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/html_a4dc/letter_first/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/dc_a4dc_html/letter_first/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/html_a4dc/LetterTemplate/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/dc_a4dc_html/LetterTemplate/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
-<!--          git: Jaisocx Sites Tools, needs git clone first. -->
-<!--          <alias art="folder"-->
-<!--                 url="/sites_tools/"-->
-<!--                 path="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/"-->
-<!--                 cache="update"-->
-<!--                 list="true"-->
-<!--                 each-folder-content-file-name="root.html" />-->
+          <!-- git: Jaisocx Sites Tools, needs git clone first in workspace/ts/cloned_repos -->
+          <!--
+          <alias art="folder"
+                 url="/sites_tools/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sites_tools/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
+          -->
 
         </domain>
 
@@ -100,28 +107,33 @@
 
           <alias art="folder"
                  url="/cdn_sites/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
+
+          <!-- after install to node_modules in workspace/cdn_node_installs via yarn or npm, pnpm -->
+          <!--
           <alias art="folder"
                  url="/jaisocx/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_sites/node_cdn_installs/node_modules/@jaisocx/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/cdn_node_installs/node_modules/@jaisocx/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
+          -->
+
 
           <alias art="folder"
                  url="/Letters/letter_first/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/html_a4dc/letter_first/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/dc_a4dc_html/letter_first/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
           <alias art="folder"
                  url="/Letters/LetterTemplate/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/html_a4dc/LetterTemplate/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/dc_a4dc_html/LetterTemplate/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
