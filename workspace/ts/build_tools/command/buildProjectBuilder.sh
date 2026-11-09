@@ -1,19 +1,18 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-tsServicePathInDockerVolume="$1"
-
-# cd "${tsServicePathInDockerVolume}/build_tools/ProjectBuilder"
 
 export NODE_OPTIONS="--no-warnings"
 
-npx eslint --config "${tsServicePathInDockerVolume}/eslint.config.js" --fix "${tsServicePathInDockerVolume}/build_tools/ProjectBuilder/src/**/*.ts"
+npx eslint --config "${IN_DOCKER_WORKSPACE_VOLUME}/ts/eslint.config.js" --fix "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder/src/**/*.ts"
 
 
 
-cd "${tsServicePathInDockerVolume}/build_tools/ProjectBuilder"
+cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts/build_tools/ProjectBuilder"
 
 npx tsc -p "./tsconfig.ESNext.overrides.json"
 
 npx tsc -p "./tsconfig.CommonJS.overrides.json"
+
+
 
 

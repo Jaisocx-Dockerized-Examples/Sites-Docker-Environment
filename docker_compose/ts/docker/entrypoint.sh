@@ -634,6 +634,7 @@ fi
         "PHP_FPM_IPv6"
         "TIME_ZONE"
         "WORKSPACE_NAME"
+        "TS_CONF_VERSION"
         "GROUP_NODE_NAME"
         "USER_NODE_NAME"
         "USER_NODE_HOME"
