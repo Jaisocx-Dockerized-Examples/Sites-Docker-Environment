@@ -18,7 +18,10 @@
 /build
 /env_backups
 /dockerfiles_backups
+
 /security
+/**/security
+
 /INSTALL_copy_env_examples.sh
 /SETUP_Jaisocx_SitesTools.sh
 /setup_Jaisocx_SitesTools.sh
@@ -27,6 +30,10 @@
 # -- SENSITIVE DATA, CREDENTIALS AND ENV VARIABLES --
 /cmd/security
 /cmd/.env
+
+/command/security
+/command/.env
+
 /.env
 /.env_all_args
 /.env_beyond_yml
@@ -206,9 +213,9 @@
 
 
 # vendor by composer
-/workspace/php/php_packages/src/
-/workspace/php/php_packages/composer.json
-/workspace/php/php_packages/composer.lock
+/workspace/dc_php/php_packages/src/
+/workspace/dc_php/php_packages/composer.json
+/workspace/dc_php/php_packages/composer.lock
 
 /workspace/ts/cloned_repos/composer.json
 /workspace/ts/cloned_repos/composer.lock
