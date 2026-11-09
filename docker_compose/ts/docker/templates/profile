@@ -6,3 +6,9 @@ PS1='\n\s_\v    docker ${WORKSPACE_NAME} ts \u ${TYPING_PROMPT_SYMBOL}'
 . "${IN_DOCKER_WORKSPACE_VOLUME}/env_dc_dinamique/.env_ts"
 
 
+
+# cd ~ && pwd
+# cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts" && pwd
+cd "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/${node_https_sites_tools_publish_rel_folder}/" && pwd && ls -la .
+
+

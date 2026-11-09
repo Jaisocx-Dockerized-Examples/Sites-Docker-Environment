@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NPMLIB_EXAMPLE_HTML_FILENAME="index.preview.html"
+NPMLIB_EXAMPLE_HTML_FILENAME="index_preview.html"
 
 
 

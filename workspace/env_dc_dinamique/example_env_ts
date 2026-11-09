@@ -81,9 +81,3 @@ start_express_flat=true
 express_publish_port=3000
 
 
-
-# cd ~ && pwd
-cd "${IN_DOCKER_WORKSPACE_VOLUME}/ts" && pwd
-# cd "${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/" && pwd && ls -la .
-
-
