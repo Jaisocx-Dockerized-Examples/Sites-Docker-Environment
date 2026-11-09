@@ -33,7 +33,7 @@ fi
 
 
 
-jsInvokePath="${projectPath}/cmd/base/js_invoke.sh"
+jsInvokePath="${projectPath}/commandbase/js_invoke.sh"
 
 # echo "jsInvokePath: ${jsInvokePath}"
 

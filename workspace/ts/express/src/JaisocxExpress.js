@@ -20,8 +20,8 @@ const textEncoder = ( new TextEncoder() );
 const jaisocxExpressOpts = {
   "https_port": 9445,
   "allowed_hosts": [
+      "express.basetasks.site:9445",
       "local.basetasks.site:9445",
-      "cdn.local.basetasks.site:9445",
       "cdn-local.basetasks.site:9445"
   ],
   "workspace": "/opt/jaisocx/sites_docker_environment/workspace",
@@ -29,7 +29,7 @@ const jaisocxExpressOpts = {
       "/cdn_sites/": "/cdn_sites/",
       "/cdn_data/": "/cdn_data/",
       "/jaisocx/": "/cdn_node_installs/node_modules/@jaisocx/",
-      "/sites_tools/cdn_sites/": "/ts/cloned_repos/jaisocx_sitestools/cdn_sites/",
+      "/sites_tools/cdn/": "/ts/cloned_repos/jaisocx_sitestools/cdn/",
       "/sites_tools/examples/": "/ts/cloned_repos/jaisocx_sitestools/examples/"
   },
   "mime_types": {

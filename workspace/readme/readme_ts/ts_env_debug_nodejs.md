@@ -32,11 +32,11 @@
   not published for yarn or npm for now, since no need to import in other javascript code.
 
   | 📖️  **Library**  | `@jaisocx/jsc_console_js_invoke` | 🏷️  **ver.**: `1.0.3` |
-  
+
   | 🗓  **Updated**  | 🌼 Summer 2026 | `Satturday, the 13th of June, 21:59:51 UTC 2026` |
-  
+
   | 📐  **Size**     | 🗂 Folder: 33.9 KB | 📦 Tarball: 9.3 KB | 📋 .js: 5 KB |
-  
+
   | ⚡  **JS Engine** | 🌐 Browser: ❌ no | 🧭 Express: ❌ no | 🖥️ Console: ✅ yes |
 
 ---
@@ -68,7 +68,7 @@ Also, in `${TypescriptEnvironment}/cmd` folder, there we have `.sh` scripts, the
   ```bash
     ### You need custom script for package @jaisocx/css-importer
     ### Invokes in console like this:
-    ./cmd/cssImporter.sh  --debug
+    ./commandcssImporter.sh  --debug
   ```
 
 Try, You'll see later how convinient to run commands, prestored in `.sh` scripts with all command line args, no retyping in console, but saved in `.sh` script.
@@ -77,7 +77,7 @@ Try, You'll see later how convinient to run commands, prestored in `.sh` scripts
 
 ## Calls flow
 
-1. **bash** `cmd/cssImporter.sh`
+1. **bash** `commandcssImporter.sh`
 
 2. **bash** `command/base/js_invoke.sh`
 
@@ -142,14 +142,14 @@ and the **node library** `@jaisocx/command-line`.
 
 ### 2. Invoke in console
 
-3. **write bash script** calling this new custom `.ts` script ( transpiled to `.js` in folder `transpiled/ESNext/` ) **like in the example**: `./cmd/cssImporter.sh`
+3. **write bash script** calling this new custom `.ts` script ( transpiled to `.js` in folder `transpiled/ESNext/` ) **like in the example**: `./commandcssImporter.sh`
 
 4. **invoke** like this in **local terminal**.
    The good thing is, You are sure, this new custom `.js` is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**:
 
   ```bash
-  
-    ./cmd/cssImporter.sh --debug
+
+    ./commandcssImporter.sh --debug
   ```
 
 
@@ -166,13 +166,13 @@ and the **node library** `@jaisocx/command-line`.
 
 
   ```bash
-  
-    ./cmd/cssImporter.sh --debug
+
+    ./commandcssImporter.sh --debug
   ```
 
 
 
-**./cmd/cssImporter.sh**
+**./commandcssImporter.sh**
 
 The example is thought for copy and save as other **bash** script in the same folder `./cmd`,
 hardcoding there other command line args, for calling another `.js` file.
@@ -182,20 +182,20 @@ however nearly same like in ProjectBuilder's `ts` code,
 on the imported to `node_modules/@jaisocx/css-importer`,
 available in typescript code,
 the typescript package `@jaisocx/css-importer`:
-`cmd/cssImporter.sh`
+`commandcssImporter.sh`
 
 
 
   ```bash
-    
+
     ### TypescriptEnvironment
-    ### ./cmd/cssImporter.sh
-    
+    ### ./commandcssImporter.sh
+
     ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/
-    ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/cmd/cssImporter.sh
-    
+    ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/commandcssImporter.sh
+
     ### Line 55:
-    
+
       "${jsInvokePath}" "$commandLineArgs" \
         --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
         --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
@@ -204,7 +204,7 @@ the typescript package `@jaisocx/css-importer`:
             --sitesToolPath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2" \
             --cssFilePath="MediaAndStyles/CssCleanStart_2_main_Webpack.css" \
             --cssTargetFilePath="MediaAndStyles/CssCleanStart_2_543_resolved.css"
-    
+
   ```
 
 
@@ -219,7 +219,7 @@ where the first example for `@jaisocx/css-importer` resides:
 `src/invokeCssImporter.ts`.
 
 The script `invokeCssImporter.ts` implements free logic for tasks using `@jaisocx/css-importer` package,
-and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `cmd/cssImporter.sh`
+and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `commandcssImporter.sh`
 
 
 
@@ -335,7 +335,7 @@ Repos for js libs are thought for `.js`, not for `.sh` command line scripts.
 **launch.json**
 
   ```bash
-    
+
     cp -a  "./.vscode/example_launch_json"  "./.vscode/launch.json"
   ```
 

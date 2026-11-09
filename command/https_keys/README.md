@@ -18,14 +18,14 @@
 # SSL Command Line
 
   for SSL Certificates to secure site.
-  
-  
+
+
   **Installed Wildcard SSL** for [basetasks.site]() served by **Jaisocx**
-  
+
   ![PopupSiteSecured_Jaisocx](./readme_images/PopupSiteSecured_Jaisocx_600.png)
-  
+
   **Installed Wildcard SSL** for [basetasks.site]() served by **Node** and **Express Framework**
-  
+
   ![PopupSiteSecured_Node_https](./readme_images/PopupSiteSecured_Node_https_600.png)
 
 
@@ -35,7 +35,7 @@
 ## 1. For what
 
 ---
-  
+
   For **security of data transport** in Inet,
   since 2010-ies the published sites
   are sent to browsers **encrypted** with **SSL** technology.
@@ -43,13 +43,13 @@
 
 
 ## 2. What is in this package
-  
+
   For our new domain **basetasks.site** with the Wildcard Certificate for year 2026.
-  
+
   2.1. **JKS** for **Jaisocx Sites Server** `2026_2027_basetasks_site.jks`
-  
+
   2.2. **Bundle.crt** for **NodeJS HTTPS** and **Express Framework** `bundle_for_node_https_basetasks_site.crt`
-  
+
   2.3. Two **scripts** for two **SSL tasks**:
 
     2.3.1. Produce Private Key and CSR
@@ -65,7 +65,7 @@
   Two command line shell scripts, written in bash programming language in this library solve 2 tasks for the SSL:
 
   2.3.1. When **ordering new SSL Cert**, produces:
-  
+
     2.3.1.1. Private Key
     2.3.1.2. CSR (Certificate Sign Request)
 
@@ -83,7 +83,7 @@
   The script produces new **Private Key** and **CSR** (Certificate Sign Request).
 
 
-  **Example script** location: `cmd/https_keys/Step1_CertificateRequestIssue/a_step1_scripts`
+  **Example script** location: `commandhttps_keys/Step1_CertificateRequestIssue/a_step1_scripts`
 
   `Example_gen_private_key_with_certificate_request.sh`
 
@@ -91,7 +91,7 @@
 
   **Example folder structure** for the **CSR** with **Private Key**
 
-  `cmd/https_keys/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
+  `commandhttps_keys/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
 
 
 
@@ -115,9 +115,9 @@
 Script:
 
 ```bash
-  
+
   #!/usr/bin/env bash
-  
+
   # Define your domain name
   DOMAIN="<domain name>"
   COUNTRY_CODE="<2 chars Country code>"
@@ -125,12 +125,12 @@ Script:
   CITY_NAME="<City name>"
   COMPANY_NAME="<Company name>"
   ORGANIZATION_DEPT="<Department name>"
-  
-  
-  
+
+
+
   # Generate a private key
   openssl genpkey -algorithm RSA -out "${DOMAIN}.key" -pkeyopt rsa_keygen_bits:2048
-  
+
   # Generate a CSR for a wildcard certificate
   openssl req -new -key "${DOMAIN}.key" -out "${DOMAIN}.csr" -subj "/C=${COUNTRY_CODE}/ST=${STATE_CODE}/L=${CITY_NAME}/O=${COMPANY_NAME}/OU=${ORGANIZATION_DEPT}/CN=*.${DOMAIN}"
 
@@ -141,14 +141,14 @@ Script:
 ## 2.3.2. After **have obtained new SSL** certificates from a Provider
 
   2.3.2.1. `<domain_name>.jks` (Java Key Store file) for **Jaisocx** Sites Server Secure HTTPS Edpoints
-  
+
   2.3.2.2. `bundle.crt` for both, **Node** and **Express Framework**, Secure HTTPS Edpoints
 
 
 
   ### 2.3.2.3. Example scripts in the folder
 
-  `cmd/https_keys/Step2_JavaKeyStore/a_step2_scripts/Example_step2_cert_gen_scripts/2026_2027_Example_jks_gen.sh`
+  `commandhttps_keys/Step2_JavaKeyStore/a_step2_scripts/Example_step2_cert_gen_scripts/2026_2027_Example_jks_gen.sh`
 
 
 ```fs
@@ -186,11 +186,11 @@ Script:
         jks-alias="basetasks.site"
         jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
         publish-charset="UTF-8" src-charset="UTF-8">
-  
+
       ...
       ...
       </domain>
-    
+
       <domain
         name="local.basetasks.site"
         jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
@@ -198,7 +198,7 @@ Script:
         jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
         document-root="/opt/jaisocx/sites_docker_environment/workspace/php"
         publish-charset="UTF-8" src-charset="UTF-8">
-  
+
         ...
         ...
       </domain>
@@ -210,26 +210,26 @@ Script:
 
 ### 3.2. Installed SSL for Node with Express
 
-  Installed `bundle.crt` for both, 
-    **Node** 
-    and **Express Framework** 
+  Installed `bundle.crt` for both,
+    **Node**
+    and **Express Framework**
     Secured HTTPS Endpoints.
 
   **Bundle.crt and Private Key** location:
     `workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site`
 
-  3.2.1. **Installed** for **Node https** in `package.json` location: 
+  3.2.1. **Installed** for **Node https** in `package.json` location:
     `workspace/ts/package.json`
 
   3.2.2. **Installed** for **Express** in `secure_server.js` location:
-    `workspace/ts/express/src/secure_server.js` 
+    `workspace/ts/express/src/secure_server.js`
     after Line 215
 
 ```js
   // workspace/ts/express/src/secure_server.js
   // Line Nr.: 215
   // ...
-  
+
 215:  https
 216:    .createServer (
 217:      {

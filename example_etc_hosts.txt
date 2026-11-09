@@ -16,4 +16,18 @@
 
 
 
+127.0.0.1         node.basetasks.site
+::1               node.basetasks.site
+
+127.0.0.1         express.basetasks.site
+::1               express.basetasks.site
+
+
+# Jaisocx for A4dc
+127.0.0.1         dck.basetasks.site
+::1               dck.basetasks.site
+
+127.0.0.1         opendck.basetasks.site
+::1               opendck.basetasks.site
+
 

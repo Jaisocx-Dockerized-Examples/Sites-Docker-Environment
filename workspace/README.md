@@ -10,10 +10,12 @@
 [HOME Docker for a Site](../README.md)
 
 
+
 # Workspace, the multiple mounted volume
 
-  >  💡  my advise, **never publish** on https endpoint the entire workspace.
+  >  ✨  ung fröid om schaffe. fröit öis ou ))
 
+  >  💡  my advise, **never publish** on https endpoint the entire workspace.
 
   >  💡  For  🔒  protection via login credentials,
   >        You might set basic, digital or jwt authentication for a folder on Your Sites Server.

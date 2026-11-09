@@ -2,12 +2,12 @@
 
   . "./.env"
   . "./.env_beyond_yml"
-  . "./cmd/.env_a4dc"
-  . "./cmd/security/.https_auth_creds"
-  . "./cmd/security/.owner_pwd"
-  user_pwd="$( cat "./cmd/security/.user_pwd")"
+  . "./command.env_a4dc"
+  . "./commandsecurity/.https_auth_creds"
+  . "./commandsecurity/.owner_pwd"
+  user_pwd="$( cat "./commandsecurity/.user_pwd")"
   gen_path="gen/${doc_name}${letter_name}.pdf"
-  func_contents="$(cat "./cmd/a4dc_func.sh")"
+  func_contents="$(cat "./commanda4dc_func.sh")"
 
   script_sources="
       . \"/home/${USER_A4DC_NAME}/.bashrc\"

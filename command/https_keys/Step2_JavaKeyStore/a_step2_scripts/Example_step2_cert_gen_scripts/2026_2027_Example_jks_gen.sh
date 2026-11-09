@@ -15,7 +15,7 @@ JKS_PASSWORD=<change-pwd>
 
 
 
-SSL_CERT_FOLDER="<absolute path of folder cmd/ssl>"
+SSL_CERT_FOLDER="<absolute path of folder commandssl>"
 
 CSR_N_PKEY_FOLDER="${SSL_CERT_FOLDER}/Step1_CertificateRequestIssue/b_produced_csr_with_private_key/Basetasks_site_csr_n_pkey/2026_2027_Basetasks_site_csr_n_pkey"
 OBTAINED_SSL_CERT_FOLDER="${SSL_CERT_FOLDER}/Step2_JavaKeyStore/A_SSL_Certs/Basetasks_site_SSL_Certs/2026_2027_STAR_basetasks_site"

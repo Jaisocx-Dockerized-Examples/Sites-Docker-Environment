@@ -70,7 +70,7 @@
 
   # the command line tool ProjectBuilder.ts is best to invoke in the dockerized node service,
 
-  jsInvokePath="${projectPath}/cmd/base/js_invoke.sh"
+  jsInvokePath="${projectPath}/commandbase/js_invoke.sh"
 
   if [[ ! -e "${jsInvokePath}" ]]; then
     echo "Error: calling this script not in the root of this project."

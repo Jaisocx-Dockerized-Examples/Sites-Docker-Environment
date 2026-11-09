@@ -136,6 +136,7 @@ services:
       - "${EXPRESS_SECURE_PORT}:${EXPRESS_SECURE_PORT}"
       - "${EXPRESS_PORT}:${EXPRESS_PORT}"
       - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"
+      - "${NODE_HTTPS_SITES_TOOLS_PORT}:${NODE_HTTPS_SITES_TOOLS_PORT}"
       - "${NODE_HTTP_FLAT_PORT}:${NODE_HTTP_FLAT_PORT}"
       - "${NODE_DEBUG_PORT}:${NODE_DEBUG_PORT}"
       #; Port of installed Jaisocx Sites Tools to workspace/ts/cloned_repos

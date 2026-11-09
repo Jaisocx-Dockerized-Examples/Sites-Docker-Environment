@@ -20,7 +20,7 @@ WHETHER_DEV_MODE="true"
 # -- VOLUMES --
 WORKSPACE_VOLUME="./workspace"
 IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace"
-TYPESCRIPT_PACKAGES="ts/cloned_repos/jaisocx_sitestools"
+TYPESCRIPT_PACKAGES="ts/cloned_repos/jaisocx_sites_tools"
 
 # -- DOMAINS --
 DOMAIN_NAME="basetasks.site"
@@ -164,6 +164,7 @@ PHP_XDEBUG_FLAT_PORT=9050
 # NODE_HTTPS_PORT=443
 NODE_HTTP_FLAT_PORT=8085
 NODE_HTTPS_PORT=8445
+NODE_HTTPS_SITES_TOOLS_PORT=8449
 ### EXPRESS_PORT is in js hardcoded
 JAISOCX_EXPRESS_PORT=9445
 EXPRESS_SECURE_PORT=9443

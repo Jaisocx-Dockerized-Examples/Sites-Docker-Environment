@@ -56,8 +56,8 @@
 
 
           <alias art="folder"
-                 url="/php/"
-                 path="/opt/jaisocx/sites_docker_environment/workspace/php/"
+                 url="/dc_php/"
+                 path="/opt/jaisocx/sites_docker_environment/workspace/dc_php/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />

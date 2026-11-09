@@ -214,21 +214,21 @@
 
 
 
-  #; README a4dc security in folder "./cmd/security"
-  if [ ! -e "${this_folder}/cmd/security" ]; then
-    mkdir -p "${this_folder}/cmd/security"
-    touch "${this_folder}/cmd/security/README.md"
+  #; README a4dc security in folder "./commandsecurity"
+  if [ ! -e "${this_folder}/commandsecurity" ]; then
+    mkdir -p "${this_folder}/commandsecurity"
+    touch "${this_folder}/commandsecurity/README.md"
 
-    echo -e "# A4DC Security\n\n" >> "${this_folder}/cmd/security/README.md"
-    echo -e "Passwords examples reside in folder `./cmd/example_a4dc_security` \n\n" >> "${this_folder}/cmd/security/README.md"
-    echo -e "\n\n" >> "${this_folder}/cmd/security/README.md"
+    echo -e "# A4DC Security\n\n" >> "${this_folder}/commandsecurity/README.md"
+    echo -e "Passwords examples reside in folder `./commandexample_a4dc_security` \n\n" >> "${this_folder}/commandsecurity/README.md"
+    echo -e "\n\n" >> "${this_folder}/commandsecurity/README.md"
 
-    chmod -R 740 "${this_folder}/cmd/security"
+    chmod -R 740 "${this_folder}/commandsecurity"
   fi
 
 
   #; copies passwords example files in the example_a4dc_security folder
-  a4dc_security_folder_example="cmd/example_a4dc_security"
+  a4dc_security_folder_example="commandexample_a4dc_security"
   a4dc_pwds=(
     ".owner_pwd"
     ".user_pwd"
@@ -527,7 +527,7 @@
 
 
 #; php libraries: composer.json from examples
-  composer_installs_folder="workspace/php/php_packages"
+  composer_installs_folder="workspace/dc_php/php_packages"
   composer_json=(
     "composer.json"
     "composer.lock"
@@ -566,10 +566,10 @@
 #; installs to cdn php libraries from inet
 #;   if composer installed on Host OS
 #;   or, may install later in "php_composer" dockerized php service.
-  # cd "${this_folder}/workspace/php/objdata_example"
+  # cd "${this_folder}/workspace/dc_php/objdata_example"
   # composer install
 
-  # cd "${this_folder}/workspace/php/php_packages"
+  # cd "${this_folder}/workspace/dc_php/php_packages"
   # composer install
 
 

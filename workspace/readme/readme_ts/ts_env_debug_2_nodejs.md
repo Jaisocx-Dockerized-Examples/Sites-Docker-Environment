@@ -61,7 +61,7 @@
   ```bash
     ### You need custom script for package @jaisocx/css-importer
     ### Invokes in console like this:
-    ./cmd/cssImporter.sh  --debug
+    ./commandcssImporter.sh  --debug
   ```
 
   Try, You'll see later how convinient to run commands, prestored in `.sh` scripts with all command line args, no retyping in console, but saved in `.sh` script.
@@ -70,7 +70,7 @@
 
 ## Calls flow
 
-  1. **bash** `cmd/cssImporter.sh`
+  1. **bash** `commandcssImporter.sh`
 
   2. **bash** `command/base/js_invoke.sh`
 
@@ -121,28 +121,28 @@
 
 ### 1. Writing a custom script to invoke in console.
 
-  1. **write** in **console/JsInvoke** custom **typescript** code 
-     in a `.ts` file in folder `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/src/` 
+  1. **write** in **console/JsInvoke** custom **typescript** code
+     in a `.ts` file in folder `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/src/`
      like in example: `invokeCssImporter.ts`
 
   2. **transpile** on demand with ProjectBuilder.
 
-  > since 2025 node invokes both, javascript and typescript, 
-  > and in this project typescript via node didn't test yet. 
+  > since 2025 node invokes both, javascript and typescript,
+  > and in this project typescript via node didn't test yet.
   > We still shall support legacy, very good for deploy and Your sites user experience multiplatform Long term suppport (LTS).
 
 
 
 ### 2. Invoke in console
 
-  3. **write bash script** calling this new custom `.ts` script ( transpiled to `.js` in folder `transpiled/ESNext/` ) **like in the example**: `./cmd/cssImporter.sh`
+  3. **write bash script** calling this new custom `.ts` script ( transpiled to `.js` in folder `transpiled/ESNext/` ) **like in the example**: `./commandcssImporter.sh`
 
   4. **invoke** like this in **local terminal**.
         The good thing is, You are sure, this new custom `.js` is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**:
 
   ```bash
-  
-    ./cmd/cssImporter.sh  --debug
+
+    ./commandcssImporter.sh  --debug
   ```
 
 
@@ -159,36 +159,36 @@
 
 
   ```bash
-  
-    ./cmd/cssImporter.sh  --debug
+
+    ./commandcssImporter.sh  --debug
   ```
 
 
 
-**./cmd/cssImporter.sh**
+**./commandcssImporter.sh**
 
   The example is thought for copy and save as other **bash** script in the same folder `./cmd`,
   hardcoding there other command line args, for calling another `.js` file.
-  
+
   The reusable via copy/paste working `bash` example to invoke a custom bash script,
   however nearly same like in ProjectBuilder's `ts` code,
   on the imported to `node_modules/@jaisocx/css-importer`,
   available in typescript code,
   the typescript package `@jaisocx/css-importer`:
-  `cmd/cssImporter.sh`
+  `commandcssImporter.sh`
 
 
 
   ```bash
-    
+
     ### TypescriptEnvironment
-    ### ./cmd/cssImporter.sh
-    
+    ### ./commandcssImporter.sh
+
     ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/
-    ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/cmd/cssImporter.sh
-    
+    ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/commandcssImporter.sh
+
     ### Line 55:
-    
+
       "${jsInvokePath}" "$commandLineArgs" \
         --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
         --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
@@ -197,23 +197,23 @@
             --sitesToolPath="ts/cloned_repos/jaisocx_sitestools/libraries/sites_tools/css_tools/CssCleanStart_2" \
             --cssFilePath="MediaAndStyles/CssCleanStart_2_main_Webpack.css" \
             --cssTargetFilePath="MediaAndStyles/CssCleanStart_2_543_resolved.css"
-    
+
   ```
-  
+
 
 
 ## Bash example explained
-  
+
   Let's imagine, the task was to write and to invoke a custom `.js` file
   for test or debug purposes of `.js` package `@jaisocx/css-importer`.
-  
+
   For console scripts, I started folder **JsInvoke** `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke`,
   where the first example for `@jaisocx/css-importer` resides:
   `src/invokeCssImporter.ts`.
-  
+
   The script `invokeCssImporter.ts` implements free logic for tasks using `@jaisocx/css-importer` package,
-  and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `cmd/cssImporter.sh`
-  
+  and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `commandcssImporter.sh`
+
 
 
 ## Base scripts and libraries
@@ -222,7 +222,7 @@
 
   There is the base script in command line shell scripting language `bash`
   to invoke a `.js` file the nice way.
-  
+
   **js_invoke** `command/base/js_invoke.sh`
 
 
@@ -239,7 +239,7 @@
 
 
 ## Structure
-  
+
   ```ls
   📚 JsInvoke
       🗂 node_modules/
@@ -287,16 +287,16 @@
 
   **Microsoft Visual Studio Code** supports the most of known OS like `Microsoft Windows`, `Linux` ( Linux Ubuntu, Linux under Microsoft Windows WSL ), Apple Macintosh OS `MacOS`.
 
-  **Do like this**: In `package.json`, in the json property "scripts", You may set a **bash script, invoking node cli**, 
-  like the example json code snippet below. 
-  In VSCode in opened for view `package.json`, 
-  mouse over json object property name `"scripts"."start"` shows command option "debug". 
+  **Do like this**: In `package.json`, in the json property "scripts", You may set a **bash script, invoking node cli**,
+  like the example json code snippet below.
+  In VSCode in opened for view `package.json`,
+  mouse over json object property name `"scripts"."start"` shows command option "debug".
   Debug works really like a charm, without no having had need of plugins install in addition.
 
   **Path in the Jaisocx Typescript Environment project**: `workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/package.json`
 
   **Runs | Debugs "invokeCssImporter.js" via node cli** in this `package.json` Line 17
-  
+
   ```json
     1:  {
           ...
@@ -313,11 +313,11 @@
 
 
 
-  I didn't try to set a custom `.sh` script in the `package.json` "scripts"."start", 
+  I didn't try to set a custom `.sh` script in the `package.json` "scripts"."start",
   neither know for now, how then to notice where our central `cmd` folder for bash `.sh` scripts in this project)).
 
-  Just invokes on `node` cli in `package.json` "scripts" are well seen 
-  in repos for `js` libs, like `yarn` or `npm`. 
+  Just invokes on `node` cli in `package.json` "scripts" are well seen
+  in repos for `js` libs, like `yarn` or `npm`.
   Repos for js libs are thought for `.js`, not for `.sh` command line scripts.
 
 
@@ -330,7 +330,7 @@
   Microsoft Visual Studio Code debug conf **launch.json**
 
   ```bash
-    
+
     cp -a  "./.vscode/example_launch_json"  "./.vscode/launch.json"
   ```
 
@@ -360,17 +360,17 @@
 
 
 
-  For the well-known software pattern Client-Server there were code examples since 90-ieths, 
-  and debug could be written, for several IDE's, 
-  several programming languages, 
+  For the well-known software pattern Client-Server there were code examples since 90-ieths,
+  and debug could be written, for several IDE's,
+  several programming languages,
   several variants of starting a program for debug.
 
-  In both configs, debug client and debug server, 
+  In both configs, debug client and debug server,
   was typed the same port number of the debug server.
 
   However, since there are many programming languages with debug,
   IDE addons for a programming language ain't always servers.
-  
+
   For example, IDE addon for php XDebug - the server, for nodejs - a client.
 
   A client may connect to a server under docker,
@@ -387,10 +387,10 @@
 
 #### Docker ports workaround No.1, php XDebug
 
-  If we didn't know, 
+  If we didn't know,
   and have set in all docker confs debug port open,
-  but, in php (in php conf under docker xdebug.ini port 9005, 
-  to connect to IDE XDebug addon server), 
+  but, in php (in php conf under docker xdebug.ini port 9005,
+  to connect to IDE XDebug addon server),
   the IDE addon for php XDebug tries to start a server on port 9005,
   but this port was open by docker, thought docker was server,
   and the IDE addon for php XDebug couldn't start and stops by exception:
@@ -402,9 +402,9 @@
   Node debug server starts under docker,
   as a js script starts by node invoked in console with --inspect-brk=0.0.0.0:9229 option,
   and if docker port for nodejs debug 9229 wasn't open in config,
-  the IDE addon for nodejs debug couldn't connect as a client 
+  the IDE addon for nodejs debug couldn't connect as a client
   to node debug server under docker on port 9229.
-  
+
 
 
 #### Why under Docker well
@@ -415,7 +415,7 @@
   The **Jaisocx Typescript Environment** Project was started **under Docker**
   for architecturing later the finer control about:
 
-  - **Known OS and Command Line Shell**, like for now `Alpine ver. 3.22.2`, knew that **with Bash**, not just sh, 
+  - **Known OS and Command Line Shell**, like for now `Alpine ver. 3.22.2`, knew that **with Bash**, not just sh,
      known Users Groups and Users' Names and IDs, also whether with sudier users' group.
 
   - **Known set of software packages**, installed for NodeJS and Typescript on Your Computer,
@@ -427,7 +427,7 @@
 
 
 ### 3.D) Client or server: in debug time, the server-side scripts interpreting languages under docker
-  >   💡  both two confs, IDE's debugging addon, and under docker scripting language interpreting engine, 
+  >   💡  both two confs, IDE's debugging addon, and under docker scripting language interpreting engine,
   >          set in debug configurations the same debug server port number.
   >          Then, no one knows, whether the IDE registers the port, or under docker the scripts interpreting engine registeres the port.
   >          For example, php-fpm server-client debug scheme the one way, and node the other, (client-server).
@@ -438,10 +438,10 @@
 
   IDE works under Host OS, and scripts interpreting language engine works under docker.
 
-  Docker in the docker-compose.yml opens a port, docker starts and reserves the port number. 
+  Docker in the docker-compose.yml opens a port, docker starts and reserves the port number.
   IDE's addon on debug start, may not start a debug server, since the port is busy by docker.
 
-  Otherwise, if no port opened in docker-compose.yml, the IDE debug addon like a client, 
+  Otherwise, if no port opened in docker-compose.yml, the IDE debug addon like a client,
   may not connect to a server under docker, since the port isn't open.
 
 
@@ -462,13 +462,13 @@
 
   **php-fpm: NO debug port in docker-compose.yml**
 
-  Other server-side programming language, **php**, [php-fpm], doesn't. **No**, the under docker **php xdebug** module doesn't, 
-  **but** the **XDebug addon in IDE** under **Host OS**, starts debugging server for php-fpm, 
-  and reserves port for `php-fpm` xdebug IDE addon's server. 
-  Then, the **docker** config for **php-fpm** **may not** open the **port of xdebug** server, 
-  **otherwise** the xdebug addon in IDE **under Host OS may not start**, 
+  Other server-side programming language, **php**, [php-fpm], doesn't. **No**, the under docker **php xdebug** module doesn't,
+  **but** the **XDebug addon in IDE** under **Host OS**, starts debugging server for php-fpm,
+  and reserves port for `php-fpm` xdebug IDE addon's server.
+  Then, the **docker** config for **php-fpm** **may not** open the **port of xdebug** server,
+  **otherwise** the xdebug addon in IDE **under Host OS may not start**,
   the port is busy, that the IDE's debug server tries to reserve on start.
-  
+
 
 
 ### 3.E) Theory of a server under docker
@@ -479,15 +479,15 @@
   since a server acts like a **central data exchange unit** in the **inet**,
   is the **ID-number** of a **server on a computer** in the inet, in addition to the **ip address** ( ID-number of the computer in the inet ).
 
-  Under every OS architecture, a server on start always reserves one own port number til works, 
+  Under every OS architecture, a server on start always reserves one own port number til works,
   and no other servers may not start under the same port number.
 
 
 
   A server under docker, has to open the port for connections from clients, these aren't under docker in the same docker network.
-  
+
   Then, the docker reserves this port, and other servers may not start under the port.
-  
+
   1. **hardcoded port number, not a bash variable from .env file**
 
   **Dockerfile**
@@ -564,10 +564,10 @@
 
 
 
-  Node invokes a server-side script in terminal, and for debugging, 
+  Node invokes a server-side script in terminal, and for debugging,
   the node starts under docker the listening server having a tcp port ( 9229 ) registered.
-  
-  IDEs node debug addon connects to the node under docker by IP address and port number 
+
+  IDEs node debug addon connects to the node under docker by IP address and port number
   to the dockerized node service  as a network client.
 
 ---

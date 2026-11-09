@@ -1,13 +1,5 @@
 FROM alpine_sites:3.23.2
 
-# README: ${Sites Docker Environment}/docker_compose/Alpine/README.md
-#   alpine_sites:3.23.2 didn't publish on Dockerhub,
-#   just set the name for Alpine in this project
-#   via command line like this:
-# docker image tag ... "alpine_sites:3.23.2"
-
-
-
 # ---------------------
 # -- local variables available in entrypoint bash script entrypoint.sh --
 #    entrypoint bash script runs,
@@ -122,26 +114,51 @@ ENV USER_HOME="/home/${USER_NAME}"
 
 
 
-# Expose the application's port
+#; -----------------------------------------------
+#; PORTS Dockerfile
+#; -----------------------------------------------
 
 # http
+# ----------------
 # EXPOSE 80
 
 # https
+# ----------------
 # EXPOSE 443
 
-# Express framework
+
+
+# Express http
+# ----------------
 EXPOSE 3000
+
+# Express https
+# ----------------
 EXPOSE 9443
+
+# Jaiocx Express
+# ----------------
 EXPOSE 9445
 
-# static node-http
+
+
+# node-http ${workspace}/cdn_sites
+# ----------------
 EXPOSE 8085
+
+# node-https ${workspace}/cdn_sites
+# ----------------
 EXPOSE 8445
+
+# node-https ${workspace}/workspace/ts/cloned_repos/jaisocx_sites_tools/libraries
+# ----------------
 EXPOSE 8449
 
+
 # debug
+#; ----------------
 EXPOSE 9229
+
 
 
 # EXPOSE $A_EXPRESS_PORT

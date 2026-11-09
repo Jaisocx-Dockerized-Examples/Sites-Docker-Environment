@@ -9,14 +9,14 @@
   if [[ "${fodlerName}" == "tsvm" ]]; then
     projectPath="$(realpath "${thisPath}/../..")"
   else
-    echo "Exits ... try to invoke from the root as ./cmd/tsvm//activate_node.sh"
+    echo "Exits ... try to invoke from the root as ./commandtsvm//activate_node.sh"
     exit 1
   fi
 
   set -a
   source "${projectPath}/.env"
 
-  commandToRun="${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/cmd/tsvm/in_docker_install_node.sh"
+  commandToRun="${IN_DOCKER_WORKSPACE_VOLUME}/build_tools/commandtsvm/in_docker_install_node.sh"
   docker compose exec ts bash -c "${commandToRun}"
 
 

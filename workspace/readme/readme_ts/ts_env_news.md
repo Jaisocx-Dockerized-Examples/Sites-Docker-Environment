@@ -50,7 +50,7 @@ copy **http-conf.example.xml** to **http-conf.xml**
 
   cd "./docker/Jaisocx_SitesServer/conf"
   cp "http-conf.example.xml" "http-conf.xml"
-  
+
 ```
 
 
@@ -114,7 +114,7 @@ docker compose up ts -d
 
 ### 2. TLS Command line
 
-  [📙 ./cmd/https_keys/README.md](./../../cmd/https_keys/README.md)
+  [📙 ./commandhttps_keys/README.md](./../../commandhttps_keys/README.md)
 
 
 
@@ -157,7 +157,7 @@ installed to `node_modules`.
 ```bash
     ### You need custom script for package @jaisocx/css-importer
     ### Invokes in console like this:
-$_ ./cmd/cssImporter.sh --debug
+$_ ./commandcssImporter.sh --debug
 ```
 
 #### The documentation, linked in README.md:
@@ -177,23 +177,23 @@ The same link on local install:
 
 For now in reconstruction, I appologize.
 
-Promised to align the few preview .html pages accordingly. 
+Promised to align the few preview .html pages accordingly.
 
 The reconstruction aimed to apply for all sites tools the normal previews already available for @jaisocx/css-table,
 prove and code review of base packages like css-importer where bugs were found,
 review of unused numbers of hardcopies of deps installed for every package preview several times,
 bugfixes in ESlint plugin for code formatting.
 
-I dropped all examples first 
-and was occupied with the code review and refactoring 
+I dropped all examples first
+and was occupied with the code review and refactoring
 in order to enable somehow normal previews for packages installed to node_modules.
 
 for now I guess most of sites tools available with yarn add or npm i remained as pair of weeks before.
 
 1. in the bash script "./setup_Jaisocx_SitesTools.sh" fast added several calls to install node_modules for the preview after have cloned Jaisocx_SitesTools
 
-2. TypeScript development enabled with just One single dockerized service "ts" 
-     where NodeJS is installed, 
+2. TypeScript development enabled with just One single dockerized service "ts"
+     where NodeJS is installed,
      along with flat http and secured https endpoints examples,
      and the Express http endpoint example for coding backend tasks in JavaScript or TypeScript both.
      The thing is, for Typescript Node docker service is needed first.
@@ -219,7 +219,7 @@ for now I guess most of sites tools available with yarn add or npm i remained as
 
 
 
-### 3. new doc on URLs theory. 
+### 3. new doc on URLs theory.
 
 Of great use for Webpack and @jaisocx/css-importer
 
@@ -238,7 +238,7 @@ Of great use for Webpack and @jaisocx/css-importer
 
 ### 1. Sites Tools Preview Command Line Tool
 
-The new bash script to install with npm 
+The new bash script to install with npm
 and preview in browser a sites tool's index.preview.html
 
 #### Read docs
@@ -253,7 +253,7 @@ and preview in browser a sites tool's index.preview.html
 You need to change the path where to install a sites tool, the last arg `"/home/user/projects/preview"`
 
 ```bash
-./cmd/install_and_view_sites_tool.sh "@jaisocx/css-table-ordered" "latest" "/home/user/projects/preview"
+./commandinstall_and_view_sites_tool.sh "@jaisocx/css-table-ordered" "latest" "/home/user/projects/preview"
 ```
 
 

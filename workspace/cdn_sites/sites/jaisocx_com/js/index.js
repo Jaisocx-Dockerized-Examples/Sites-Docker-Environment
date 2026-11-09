@@ -18,7 +18,7 @@ function contactFormSend() {
 
     console.log(formElementsIds);
 
-    fetch('/php/send-form.php', {
+    fetch('/dc_php/send-form.php', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset="utf-8"',
@@ -153,7 +153,7 @@ function historyToggleIconInit() {
 }
 
 function sendUserStatistics(type) {
-    fetch('/php/save-user-statistics.php/?type=' + type)
+    fetch('/dc_php/save-user-statistics.php/?type=' + type)
         .then(resp => {
             console.log(resp);
         });
