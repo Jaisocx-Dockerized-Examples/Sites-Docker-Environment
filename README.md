@@ -140,7 +140,7 @@
 
 **Old page of year AD 2012. Old MS FrontPage color themes**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/ICE_Cube_2012_gummy.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn_sites/ICE_Cube_2012_gummy.html)
 
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png)
@@ -156,7 +156,7 @@
 
 **Sites Tools BuildData.json**
 
-🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/build_data.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/build_data.html)
+🌐  [https://local.basetasks.site:8447/cdn_sites/json_user_friendly_view__build_data.html](https://local.basetasks.site:8447/cdn_sites/json_user_friendly_view__build_data.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png)
 
@@ -167,7 +167,7 @@
 
 **Lock Viewer**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/lock_viewer.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/lock_viewer.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/spa__lock_viewer.html](https://local.basetasks.site:8447/cdn_sites/spa__lock_viewer.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png)
 
@@ -177,7 +177,7 @@
 
 ### Tests for fonts saving up network
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/fonts_os_installed_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/fonts_os_installed_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/spa__fonts_os_installed.html](https://local.basetasks.site:8447/cdn_sites/spa__fonts_os_installed.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png)
 
@@ -190,7 +190,7 @@
 
 **pair of icons**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/template_clean_start__icons.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/template_clean_start__icons.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/unicode_icons__clean_start.html](https://local.basetasks.site:8447/cdn_sites/unicode_icons__clean_start.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png)
 
@@ -200,7 +200,7 @@
 
 **more icons**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/unicode_icons.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/unicode_icons.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/unicode_icons__all.html](https://local.basetasks.site:8447/cdn_sites/unicode_icons__all.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png)
 
@@ -214,7 +214,7 @@
 
 **tb thought for rendering js data**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_table_imaged_orderby_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn_sites/css_table_imaged_orderby_preview.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png)
 
@@ -224,7 +224,7 @@
 
 **Css code snippet**
 
-  🌐  [https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_code_snippet_preview.html](https://local.basetasks.site:8447/cdn_sites/html_examples_sites_tools/css_code_snippet_preview.html)
+  🌐  [https://local.basetasks.site:8447/cdn_sites/css__code_snippet.html](https://local.basetasks.site:8447/cdn_sites/css__code_snippet.html)
 
 ![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png)
 
