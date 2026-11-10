@@ -15,41 +15,83 @@
 
   **HOME**
 
+  >  🗓   ✨  `e-book multiple updates`  🌾  Autumn 2026  |  AD 2026 Nov 10 10:20:50.000 GMT_24h
+
+  >  ✨  Для овладения знаниями в полном объеме и в совершенство. Учим Паверпоинт и макрос Снежинка.
+
+
 ---
 
-  >  🗓  **Updated**:  🌾  Autumn 2026  |  AD 2026 Oct 07 17:20:50.000 GMT_24h
+  >  ⛔  **Warning November 2026!!! don't update, first do backup!!!**
+
+  -  ❌   **git pull**  `.env's and configs lost unattended, database data lost`
+
+  -  ❌  **changing git branches**  `.env's and configs lost unattended, on docker restart database data lost`
+
+  -  ❌  **INSTALL_copy_env_examples.sh**  `.env's and configs lost unattended, on docker restart database data lost`
+
+  -  ❌  **npm i or npm upgrade**  `configs lost unattended ( package.lock.json ), js bibs from node_modules lost`
+
+  -  ❌  **yarn add, install or update**  `configs lost unattended ( yarn.lock ), js bibs from node_modules lost`
+
+  -  ❌  **composer install or update**  `configs lost unattended ( composer.lock ), php bibs from vendor lost`
+
+  -  ❌  **pip install or update**  `configs lost unattended, py bibs from venv lost`
+
+  -  😀  And if Java? Und denn, scho, Java ...
 
 
-
----
-
-  ⛔  **Warning October 2026!!! don't update, first do backup!!! all project data could get lost, changed several configurations**.
-
-  > for js developers, first learned docker and databases
-
-  ⛔  **Warning Project Sync** ".env's Lost Unattended" after **git pull**.
-
-  ⛔  **Warning Project Sync** "Database Lost Unattended" if **Docker conf was updated**.
-
-  **Before** every `git pull` to **update** this project,
-  even without checking whether Docker settings were changed,
-  first do **MySQL db dump** and db dump **backup**,
-  since this project is with a dockerized MYSQL DATABASE Instance.
+  >   the warning was thought for js developers, first learned docker and databases
+  >
+  >   all project **data could get lost**:  ⛔  changed several configurations
+  > 
+  >  💡  **Before** every `git pull` to **update** this project,
+  >  even without checking whether Docker settings were changed,
+  >  first do backups:
   
-  **Databases** under Docker **recreate a fresh and clean db instance**,
-  when some Docker config file was changed,
-  and after `git pull && docker compose restart`, too.
+  -  💡  **.env(s) copies**
+
+  -  💡  **secrets or passwords copies**
+
+  -  💡  **Your own programs copies** of gitignored or uncommitted folders, for example, if coded in node_modules
+
+  -  💡  **MySQL db dump** and db dump **backup**
+
+  >  ⛔  **Databases** under Docker **recreate a fresh and clean db instance**,
+  >  when some  ❌  Docker config file was changed,
+  >  and after `git pull && docker compose restart`, too.
+  
+
+---
+
+
+  >  **News**:  ✨  `e-book multiple updates` [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
+
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book fine-tuning` **Alpine**:  📙  [workspace/readme/readme_alpine/README_Alpine_fine_tuning.md](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book security` **Security**:  📙  [workspace/readme/readme_docker/dc_cdn_protected_data.md](./workspace/readme/readme_docker/dc_cdn_protected_data.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **JaisocxExpress** (http/1.1):  📙  [workspace/readme/readme_ts/ts_env_JaisocxExpress.md](./workspace/readme/readme_ts/ts_env_JaisocxExpress.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **SitesTools examples on cdn in the Workspace**:  📙  [workspace/cdn_sites/README.md](./workspace/cdn_sites/README.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  **Workspace update**:  📙  [workspace/README.md](./workspace/README.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book learn` **Debug nodejs**:  📙  [workspace/readme/readme_ts/ts_env_debug_nodejs.md](./workspace/readme/readme_ts/ts_env_debug_nodejs.md)
+
 
 ---
 
 
 
 # Docker for a Site
->  💡  For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
+
+  >  💡  For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`.
 
 
 
-- ✅ [**Alpine**](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md).
+  -  ✅ [**Alpine**](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md).
 
 
 
@@ -93,6 +135,7 @@
 
 ## Sites Tools under Sites Docker
 
+  >  ⛔  Links don't do, Local deploy links Jaisocx `.env(s)`, `Dockerfile:EXPOSE` port `8447`, local domain in `/etc/hosts`
 
 
 **Old page of year AD 2012. Old MS FrontPage color themes**

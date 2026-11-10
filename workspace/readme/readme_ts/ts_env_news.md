@@ -21,24 +21,65 @@
 
 # NEWS
 
-  >  🗓  **Updated**:  AD 2026  🌾 Autumn, Nov 05 20:30:10.000 GMT_24h
+  >  **News**:  ✨  `e-book multiple updates` 
+  >   
+  >  🗓  **Updated**:  AD 2026  🌾 Autumn, Nov 10 10:20:50.000 GMT_24h
 
 
----
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book fine-tuning` **Alpine**:  📙  [../readme_alpine/README_Alpine_fine_tuning.md](../readme_alpine/README_Alpine_fine_tuning.md)
 
-  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **JaisocxExpress** (http/1.1): [📙  ts_env_JaisocxExpress.md](./ts_env_JaisocxExpress.md)
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book security` **Security**:  📙  [../readme_docker/dc_cdn_protected_data.md](../readme_docker/dc_cdn_protected_data.md)
 
-  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **Readme on Express** (http/1.1), the Server-side Nodejs Sites Framework: [📙  ts_env_Express_examples.md](./ts_env_Express_examples.md)
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **JaisocxExpress** (http/1.1):  📙  [../readme_ts/ts_env_JaisocxExpress.md](../readme_ts/ts_env_JaisocxExpress.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book learn` **Readme on Express** (http/1.1), the Server-side Nodejs Sites Framework: [📙  ts_env_Express_examples.md](./ts_env_Express_examples.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **SitesTools examples on cdn in the Workspace**:  📙  [../../cdn_sites/README.md](../../cdn_sites/README.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  **Workspace update**:  📙  [../../README.md](../../README.md)
+
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book learn` **Debug nodejs**:  📙  [../readme_ts/ts_env_debug_nodejs.md](../readme_ts/ts_env_debug_nodejs.md)
 
   -  🗓  AD 2026  🌷  Spring, April 26  **Sites Tools updated**
 
   -  🗓  AD 2026  🌷  Spring, April 21  **README about Deployments and README's**: workarounds, tips and tricks: [📙 readme/md/ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
 
-  -  🗓  AD 2026  🌷  Spring, April 18  **Software_Labels Preview**: [📙 cdn_sites/images/software_labels/README.md](./../../../cdn_sites/software_labels/README.md)
+  -  🗓  AD 2026  🌷  Spring, April 18  **Software_Labels Preview**: [📙 cdn_sites/images/software_labels/README.md](../../../cdn_sites/software_labels/README.md)
 
 
 
 ---
+
+
+
+
+## News:  🗓  AD 2026 November 10
+  
+  >  **News**:  ✨  `e-book multiple updates` [../readme_ts/ts_env_news.md](../readme_ts/ts_env_news.md)
+  >
+  >  🗓  **Updated**:  AD 2026  🌾 Autumn, Nov 10 10:20:50.000 GMT_24h
+
+  
+  -  🗓  `e-book fine-tuning` **Alpine**:  📙  [../readme_alpine/README_Alpine_fine_tuning.md](../readme_alpine/README_Alpine_fine_tuning.md)
+  
+  
+  -  🗓  `e-book security` **Security**:  📙  [../readme_docker/dc_cdn_protected_data.md](../readme_docker/dc_cdn_protected_data.md)
+  
+  
+  -  🗓  `new soft` **JaisocxExpress** (http/1.1):  📙  [../readme_ts/ts_env_JaisocxExpress.md](../readme_ts/ts_env_JaisocxExpress.md)
+  
+  
+  -  🗓  `new soft` **SitesTools examples on cdn in the Workspace**:  📙  [../../cdn_sites/README.md](../../cdn_sites/README.md)
+  
+  
+  -  🗓  **Workspace update**:  📙  [../../README.md](../../README.md)
+  
+  
+  -  🗓  `e-book learn` **Debug nodejs**:  📙  [../readme_ts/ts_env_debug_nodejs.md](../readme_ts/ts_env_debug_nodejs.md)
+  
+
+
+
 
 ## News: 🗓 30th of January 2026
 
@@ -114,7 +155,7 @@ docker compose up ts -d
 
 ### 2. TLS Command line
 
-  [📙 ./commandhttps_keys/README.md](./../../commandhttps_keys/README.md)
+  [📙 ./commandhttps_keys/README.md](../../commandhttps_keys/README.md)
 
 
 
@@ -168,7 +209,7 @@ GitHub link:
 [console/JsInvoke/README.md](https://github.com/Jaisocx-Tools/ts/cloned_repos/jaisocx_sitestools/tree/main/console/JsInvoke/README.md)
 
 The same link on local install:
-[console/JsInvoke/README.md](./../../workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/README.md)
+[console/JsInvoke/README.md](../../workspace/ts/cloned_repos/jaisocx_sitestools/console/JsInvoke/README.md)
 
 
 

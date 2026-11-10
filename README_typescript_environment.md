@@ -24,7 +24,7 @@
 
 ---
 
-  >  🗓  **Updated**:  🌼  Summer 2026  |  `AD 2026 Jul 02 16:20:00.100 GMT_24h`
+  >  🗓  **Updated**:  2026 🌾 Autumn, `Nov 10 10:20:50.000 GMT_24h`
 
 
 
@@ -46,6 +46,7 @@
 
 
 ## Aim Of The SetUp
+
   >  💡 The configured workspace, templates and examples, for sites tools in typescript or javascript
 
 
@@ -61,9 +62,23 @@
 
 ## News
 
-  >  **News**: [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
+  >  **News**:  ✨  `e-book multiple updates` [workspace/readme/readme_ts/ts_env_news.md](./workspace/readme/readme_ts/ts_env_news.md)
 
-  -  🗓  AD 2026  🌾  Autumn, Nov 05  ✨  **JaisocxExpress** (http/1.1): [📙  workspace/readme/readme_ts/ts_env_JaisocxExpress.md](./workspace/readme/readme_ts/ts_env_JaisocxExpress.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book fine-tuning` **Alpine**:  📙  [workspace/readme/readme_alpine/README_Alpine_fine_tuning.md](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book security` **Security**:  📙  [workspace/readme/readme_docker/dc_cdn_protected_data.md](./workspace/readme/readme_docker/dc_cdn_protected_data.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **JaisocxExpress** (http/1.1):  📙  [workspace/readme/readme_ts/ts_env_JaisocxExpress.md](./workspace/readme/readme_ts/ts_env_JaisocxExpress.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **SitesTools examples on cdn in the Workspace**:  📙  [workspace/cdn_sites/README.md](./workspace/cdn_sites/README.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  **Workspace update**:  📙  [workspace/README.md](./workspace/README.md)
+
+-  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book learn` **Debug nodejs**:  📙  [workspace/readme/readme_ts/ts_env_debug_nodejs.md](./workspace/readme/readme_ts/ts_env_debug_nodejs.md)
+
+
+
 
 
 ---
