@@ -6,7 +6,7 @@
       "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start",
       "name": "clean_start",
       "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
-      "build": true,
+      "build": false,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": [],
@@ -42,7 +42,7 @@
       "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start_tiny",
       "name": "clean_start_tiny",
       "update-published": "AD_2026.10.16 TI_17:40:10.500 TZ_GMT_24h",
-      "build": true,
+      "build": false,
       "build-simple-enable": false,
       "dependencies": [],
       "build-files": [],
@@ -177,7 +177,7 @@
       "path": "libraries/base_packs/text/parsers/TokensParser",
       "name": "tokens-parser",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -229,6 +229,28 @@
       ]
     },
     {
+      "path": "libraries/base_packs/text/trimmers/Trimmer",
+      "name": "trimmer",
+      "update-published": "Sat Sep  6 04:14:24 CEST 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "trimmer/Trimmer.js"
+      ]
+    },
+    {
+      "path": "libraries/base_packs/text/trimmers/OptimizedTrimmer",
+      "name": "optimized_trimmer",
+      "update-published": "Sat Sep  6 04:14:24 CEST 2025",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "optimized_trimmer/OptimizedTrimmer.js"
+      ]
+    },
+    {
       "path": "libraries/base_packs/CssHtml",
       "name": "css-html",
       "update-published": "Wed Oct  1 01:37:16 CEST 2025",
@@ -255,7 +277,7 @@
       "path": "libraries/base_packs/FileWriter",
       "name": "file-writer",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -269,7 +291,7 @@
       "path": "libraries/base_packs/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {

@@ -658,6 +658,12 @@ fi
         "IN_DOCKER_WORKSPACE_VOLUME"
         "PATH"
         "TYPESCRIPT_PACKAGES"
+        "TSVM_JSC_HOME"
+        "TSVM_JSC_TMP"
+        "TSVM_JSC_SYMLINKS"
+        "TSVM_JSC_COMMANDS"
+        "TSVM_JSC_INSTALLATION_SH"
+        "TSVM_JSC_RUN_SH"
       )
 
 
