@@ -1,0 +1,402 @@
+
+`Docker for a Site` Jaisocx &#8482; &#169;
+
+
+![workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg](workspace/cdn_sites/software_labels/docker/software_tm_label_docker_29_4_3.svg)
+![workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg](./workspace/cdn_sites/software_labels/Prince/software_tm_label_prince.svg)
+![workspace/cdn_sites/software_labels/php/software_tm_label_php.svg](./workspace/cdn_sites/software_labels/php/software_tm_label_php.svg)
+![workspace/cdn_sites/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./workspace/cdn_sites/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
+![workspace/cdn_sites/software_labels/Node/software_tm_label_nodejs_2.svg](./workspace/cdn_sites/software_labels/Node/software_tm_label_nodejs_2.svg)
+![workspace/cdn_sites/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./workspace/cdn_sites/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+
+
+
+[HOME](./README.md)
+
+
+
+🗓   🌾  Autumn 2026   📙  [News](./workspace/readme/readme_ts/ts_env_news.md)  ✨  `e-book multiple updates, new soft  JaisocxExpress`   |  🗓  Year Anno Domini (AD) 2026 Nov 12 02:16:42.200_000 GMT_24h
+
+
+
+# Docker for a Site
+
+  >  💡  For a **Site**, several **Docker** services by **Alpine** Image with `.env`, `Dockerfile`, `ENTRYPOINT`, services configurations like `http-conf.xml` and `php-fpm.conf`. Workarounds, tips and tricks.
+
+  >  ✨  Для овладения знаниями в полном объеме и в совершенство. Учим Паверпоинт и макрос Снежинка.
+
+---
+
+  >  ⛔  **Warning November 2026!!! don't update, first do backup!!!**
+
+  -  ❌   **git pull**  `.env's and configs lost unattended, database data lost` [read more...](./README_advise_on_updates.md)
+
+
+---
+
+
+
+## Refined all
+
+-  ✅  [Alpine](./workspace/readme/readme_alpine/README_Alpine_fine_tuning.md) one image, bash for console, Workspace VOLUME same .env variable
+
+-  ✅  [Ideas, Why Coded What](./workspace/readme/readme_docker/README_Ideas_why_coded_what.md).
+
+-  ✅  **Newer Workaround for Docker Compose**.
+
+-  ✅  **A. Aligned All Services**.
+
+-  ✅  **B. Workarounds improve quality and easen work day**.
+
+-  ✅  **C.** [Code snippets for reuse by copy-paste](./workspace/readme/readme_docker/README_Dockerfile_n_Entrypoint_Code_Snippets.md).
+
+-  ✅  **D.** [Typescript Environment](./README_typescript_environment.md).
+
+-  ✅  **E.** [A4DC](./README_a4dc.md).
+
+
+
+1. ✅ [Network](./workspace/readme/readme_docker/README_Docker_Networks.md), firewall, ports, ip, domain names, ssl, https.
+
+2. ✅ [Users](./workspace/readme/readme_docker/README_Docker_Users.md), groups, name, id, password, privilegs.
+
+3. ✅ **Envs**, docker-compose.yml, Dockerfile, ENTRYPOINT, php-fpm confs.
+
+4. ✅ **Tarballs** for reuse on reinstall.
+
+5. ✅ [Docker Env Theories](./workspace/readme/readme_docker/README_envs_for_Docker_Compose.md).
+
+
+
+
+
+
+
+## Sites Tools under Sites Docker
+
+  >  ⛔  Links don't do, Local deploy links Jaisocx `.env(s)`, `Dockerfile:EXPOSE` port `8447`, local domain in `/etc/hosts`
+
+
+**Old page of year AD 2012. Old MS FrontPage color themes**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/ICE_Cube_2012_gummy.html](https://local.basetasks.site:8447/cdn_sites/ICE_Cube_2012_gummy.html)
+
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_orange_740.png)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/ICE_Cube2012_aqua_740.png)
+
+
+
+
+
+## Sites Tools of Greate Use
+
+
+**Sites Tools BuildData.json**
+
+🌐  [https://local.basetasks.site:8447/cdn_sites/json_user_friendly_view__build_data.html](https://local.basetasks.site:8447/cdn_sites/json_user_friendly_view__build_data.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/BuildData_740.png)
+
+
+
+
+
+
+**Lock Viewer**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/spa__lock_viewer.html](https://local.basetasks.site:8447/cdn_sites/spa__lock_viewer.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/LockViewer_740.png)
+
+
+
+
+
+### Tests for fonts saving up network
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/spa__fonts_os_installed.html](https://local.basetasks.site:8447/cdn_sites/spa__fonts_os_installed.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Fonts_740.png)
+
+
+
+
+
+### Unicode symbols
+
+
+**pair of icons**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/unicode_icons__clean_start.html](https://local.basetasks.site:8447/cdn_sites/unicode_icons__clean_start.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_740.png)
+
+
+
+
+
+**more icons**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/unicode_icons__all.html](https://local.basetasks.site:8447/cdn_sites/unicode_icons__all.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/UnicodeIcons_2_740.png)
+
+
+
+
+
+
+
+### Pair of sites tools on cdn
+
+**tb thought for rendering js data**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/css_table_imaged_orderby_preview.html](https://local.basetasks.site:8447/cdn_sites/css_table_imaged_orderby_preview.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/Tb_740.png)
+
+
+
+
+
+**Css code snippet**
+
+  🌐  [https://local.basetasks.site:8447/cdn_sites/css__code_snippet.html](https://local.basetasks.site:8447/cdn_sites/css__code_snippet.html)
+
+![workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png](./workspace/readme/img_readme_docker/img_sites_tools_examples/iloveimg-resized_740/CssCodeSnippet_740.png)
+
+
+
+
+
+
+
+## Set Up
+  >  💡  Advanced docker network settings, mightn't allocate IP addresses, just to encomment and to set `driver: bridge`.
+
+### 1. INSTALL.sh .envs from example_envs
+
+  ```bash
+    ./INSTALL_copy_env_examples.sh
+  ```
+
+  The last instruction "Yarn install", could work, if was set up on Host OS.
+
+  After yarn install, the `.html` examples in `workspace/cdn_sites/html_examples_sites_tools` 
+  might render in browsers, before docker services set up.
+
+
+
+### 2. Advanced Docker Network Set Up
+
+  If the network couldn't be created, it's just to encomment and to set `driver: bridge` in `docker-compose.yml`.
+
+  Then, the command line shell instruction might tell the `subnet` and `IP ranges`, when the network was created.
+
+  After IP addresses in .env were set in available IP ranges, 
+  just to `docker network rm` the network, set driver: ipvlan,
+  then the advanced conf for docker network might secure Your docker services,
+  by known IP addresses.
+
+
+### Docker Networks
+
+  ```bash
+    docker network ls
+    
+    NETWORK ID     NAME                                                    DRIVER    SCOPE
+    ...
+    abc.......99   jaisocx_dc_a4dc_h523_inte.................._network     bridge    local
+    ...
+  ```
+
+
+### Network IP range
+  >  💡  saves to: `docker_network_conf_07_jul_10__tmp.json`
+
+  ```bash
+    conf_name="_07_jul_10_" && \
+    network_name="jaisocx_dc_a4dc_h523_internal_connected_all_network" && \
+    network_id="$(docker network ls | grep "${network_name}" | cut -d' ' -f1)" && \
+    docker network inspect --format json "${network_id}" > "docker_network_conf${conf_name}_tmp.json"
+  ```
+
+
+
+### Network in docker-compose.yml
+
+  ```yml
+    10:  jaisocx_dc_internal_connected_all_network:
+    11:    name: "${INTERNAL_CONNECTED_ALL_NETWORK_NAME}"
+    12:    driver: bridge
+    13:    # driver: ipvlan
+    14:    # enable_ipv6: false
+    15:    # external: false
+    16:    # internal: true
+    17:    # attachable: false
+    18:    # ipam:
+    19:    #   config:
+    20:    #     - subnet: "${SUBNET_IPv4}"
+    21:    #       ip_range: "${IP_RANGE_IPv4}"
+    22:    #     - subnet: "${SUBNET_IPv6}"
+    23:    #       ip_range: "${IP_RANGE_IPv6}"
+  ```
+
+
+
+## Ideas, Why coded what
+
+  - Why **Docker**
+  - When Docker, why **Alpine**
+  - Why **bash** 
+  - Why **sudo** ( see [**Users** => 4.](./workspace/readme/readme_docker/README_Docker_Users.md) )
+
+## Newer Workaround for Docker Compose
+  > Just one Service, for Sites, added to network with internet and has open port(s): **jaisocx_dc_opened_one_for_browsers_network**
+
+  > But, another mode with the open network added to every docker service ( **jaisocx_dc_opened_for_inet_installs_network** ), is needed for inet installs.
+
+  > Several docker services by same context ( `docker_compose/PHP/docker` ) in same time ( both **php_composer** and **php_fpm** ) don't do.
+
+
+  ✅ 2 services for **php-fpm**
+  
+  - **php_composer** with XDebug for engineering
+  - **php_fpm** for production
+  
+  In order to install **3rd parties php libs** to `vendor` folder, one service **php_composer** with **XDebug**, **has open network** for inet intsalls.
+  
+  The other, **php_fpm**, remains encommented.
+
+  In **production**, after having installed 3rd parties libs to `vendor` folder by **composer**, the deployd volume keeps `vendor`, and many sites ( if no requests by php in internet ), work in local Docker Network, and without XDebug.
+  
+  In production, php serves by **php_fpm**.
+  
+  The open network, ( **jaisocx_dc_opened_for_inet_installs_network** ), needs to be **encommented**, either, for the new workaround `Just One Service has open Network`.
+
+  **docker compose build**
+
+
+
+### Envs for Jaisocx with php-fpm
+  **Jaisocx** Line 30: `docker_compose/Jaisocx_SitesServer/http/etc/server.properties` | php.fpm.host=phpfpm.basetasks.site:9020
+
+  **php** Line 34: `docker-compose.yml` | file: "./docker_compose/PHP/.env_php_fpm"
+
+  **php** Line 35 encommented: `docker-compose.yml` | # file: "./docker_compose/PHP/.env_php_composer"
+
+  **php** Line 21: `.env` | PHP_FPM_DOMAIN_NAME="phpfpm.basetasks.site"
+
+  **php** Line 10: `docker_compose/PHP/.env_php_fpm` | PHP_FPM_FLAT_PORT=9020
+
+
+
+
+## A. Aligned All Services
+
+  - Alpine one image
+  - bash for console
+  - Workspace VOLUME same .env bash variable
+
+
+![workspace/readme/img_readme_docker/img_dc_command_line/console_line_docker_720.png](./workspace/readme/img_readme_docker/img_dc_command_line/console_line_docker_720.png)
+
+
+## B. Workarounds improve quality and easen work day
+  > knowledge, control and transparency
+
+  1. Fine-grained filesystem structure for the **Docker Context** for `Dockerfile` and **Mounted Volumes** for `Workspace`.
+
+  2. `ENTRYPOINT` saves USER's **bash profile** with env variables exports and **bash template inclusion**.
+
+  3. **Markers** for `ENTRYPOINT` code blocks **run once the first time**.
+
+
+
+## C. Code snippets for reuse by copy-paste
+  > Examples of use like code snippets for reuse by copy-paste.
+
+  1. `.env` **bash variables** for `docker-compose.yml`, `Dockerfile`, `ENTRYPOINT`
+
+  2. **dynamic bash variables** in `${workspace}/env_dc_dinamique/.env*`, renew on `docker (re)start`, take effect in `if` expressions in `ENTRYPOINT`.
+
+  3. `docker-compose.yml`
+
+  4. `Dockerfile` and `ENTRYPOINT`
+
+
+
+## 1. Network
+
+### Aim of the Setup
+  > Fine tuning 
+  
+  - ✅ Firewall
+  - ✅ ports
+  - ✅ ip
+  - ✅ domain names
+  - ✅ ssl
+  - ✅ https
+  - ✅ Services' network confs
+  - ✅ Signed Wildcard SSL Certificate for any subdomain of **basetasks.site**.
+  - ✅ Local and Open Docker Networks
+  - ✅ The option to set the **fine-grained security confs** like `allowed_clients`, for sure, of greate use for Databases confs. 
+  > 💡 If, or when, You or System Admin change or add a network for a service, or add another open network, still, the single allowed client's IP has effect, and the first time at once NO data compromizing because of unintended open port doesn't occur.
+
+
+
+## 2. Users
+  
+### 💡 Aim of the Setup
+  > For fine-tuning of privilegs to services on filesystem resources.
+
+
+
+### 2.1. Easy in development
+
+  - Known **Volume's Owner** `user:group`.
+
+  - Known Docker **Service's Owner** `user:group`.
+
+
+
+### 2.2. Secure in deployment
+  > This was one of the aims, but was not done 100%. (Explained in [**Users** => 3, 4.](./workspace/readme/readme_docker/README_Docker_Users.md) )
+
+  Once docker service deployed to production server machine,
+  after logging inn,
+  **the Docker service OS' user**:
+  - **isn't the Super Admin**,
+  - **can not install or remove software**,
+  - neither **can not change filesystem privilegs** on filesystem resources, these the user doesn't owe.
+  
+
+
+## 3. Envs
+  > The workarounds does with a single or several .env files
+
+  - ✅ .env ( shared for all services ) **build time**.
+  - ✅ .env ( for a docker service ) **build time**, in context folder of a service, for `ENTRYPOINT`, not in `Dockerfile`.
+  - ✅ .env ( shared for all services, dynamic ) in [VOLUME], **start time**.
+  - ✅ User's **hashed password** example in .env USER's block.
+  - ✅ Service's software turns due to **dynamic .env** boolean variables ( XDebug for php-fpm ).
+  - ✅ Entrypoint prints to console due to **dynamic .env** boolean variable `WHETHER_IN_DEV_MODE`.
+
+
+
+## 4. Tarballs
+  >  💡  saves programs installations, loaded from inet for the next docker builds.
+
+
+
+---
+
+
+
+Have a nice day, Jaisocx Inc. Software Architect I.P.
+
+
+
+

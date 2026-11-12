@@ -28,7 +28,7 @@
 
   -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book fine-tuning` **Alpine**:  📙  [../readme_alpine/README_Alpine_fine_tuning.md](../readme_alpine/README_Alpine_fine_tuning.md)
 
-  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book security` **Security**:  📙  [../readme_docker/dc_cdn_protected_data.md](../readme_docker/dc_cdn_protected_data.md)
+  -  🗓  AD 2026  🌾  Autumn, Nov 10  `e-book security` **cdn protected data**:  📙  [../readme_docker/dc_cdn_protected_data.md](../readme_docker/dc_cdn_protected_data.md)
 
   -  🗓  AD 2026  🌾  Autumn, Nov 10  `new soft` **JaisocxExpress** (http/1.1):  📙  [../readme_ts/ts_env_JaisocxExpress.md](../readme_ts/ts_env_JaisocxExpress.md)
 
