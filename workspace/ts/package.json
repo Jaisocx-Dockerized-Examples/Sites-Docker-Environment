@@ -1,8 +1,8 @@
 {
-  "author": "ILLIA POLIANSKYI, Jaisocx Company",
-  "name": "@jaisocx/ts-tools",
+  "author": "ILLIA POLIANSKYI, Jaisocx Inc.",
+  "name": "@jaisocx/ts_tools",
   "version": "2.1.2",
-  "description": "The Root catalog of the project, with central config files, package.json devDependencies and node_modules catalog, keeping central devDependencies files hard copies.",
+  "description": "Central conf files, package.json, node_modules for the entire typescript in the workspace",
   "keywords": [],
   "files": [
     "transpiled/CommonJS",
@@ -25,10 +25,8 @@
     "sites_tools_https": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts\" && pwd; NODE_OPTIONS=--openssl-legacy-provider; export NODE_OPTIONS;  node ./node_modules/http-server/bin/http-server -U -d -S -C \"${ssl_cert_path}\" -K \"${private_key_path}\" -p \"${node_https_sites_tools_publish_port}\" \"${IN_DOCKER_WORKSPACE_VOLUME}/${TYPESCRIPT_PACKAGES}/${node_https_sites_tools_publish_rel_folder}\""
   },
   "dependencies": {
-    "@types/node": "^25.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.55.0",
-    "eslint": "9.0.0",
-    "http-server": "14.1.1",
-    "typescript": "5.9.3"
+    "@types/node": "^26.6.6",
+    "http-server": "^14.1.1",
+    "typescript": "^7.0.2"
   }
 }

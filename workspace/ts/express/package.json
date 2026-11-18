@@ -8,6 +8,6 @@
     "start": ". ~/.bashrc; cd \"${IN_DOCKER_WORKSPACE_VOLUME}/ts/express\"; node ./src/server.js"
   },
   "dependencies": {
-    "express": "~5.1.0"
+    "express": "~5.3.0"
   }
 }

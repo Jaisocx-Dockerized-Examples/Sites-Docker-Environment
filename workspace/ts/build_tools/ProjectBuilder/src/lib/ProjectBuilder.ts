@@ -1,6 +1,12 @@
 import { execSync } from "child_process";
-import * as fs from "node:fs";
-import * as path from "node:path";
+import path from "node:path";
+import fs from "node:fs";
+
+// import { Buffer } from "node:buffer";
+// import { Stats } from "node:fs";
+import { FileHandle } from "node:fs/promises";
+import { TextDecoder, TextEncoder } from "node:util";
+
 import JSON5 from "json5";
 import { IDependency } from "./types.js";
 import { CssImporter } from "@jaisocx/css-importer";
@@ -9,6 +15,9 @@ import { CssImporter } from "@jaisocx/css-importer";
 
 export class ProjectBuilder {
   isLocalDevelopment: number;
+
+  textEncoder: TextEncoder;
+  textDecoder: TextDecoder;
 
   cssImporters: CssImporter[];
 
@@ -31,6 +40,8 @@ export class ProjectBuilder {
 
   constructor() {
     this.isLocalDevelopment = 1;
+    this.textEncoder = ( new TextEncoder() );
+    this.textDecoder = ( new TextDecoder() );
 
     this.cssImporters = new Array() as CssImporter[];
 
@@ -205,7 +216,7 @@ export class ProjectBuilder {
     let timeStamp: any = (new Date()).toISOString();
 
     console.log("\n\n\n===============================");
-    console.log(`${timeStamp} MODULE ${packageJson.name}`);
+    console.log(`Jaisocx Project Builder: [${timeStamp} ]MODULE ${packageJson.name}]`);
     console.log("===============================\n");
 
     let packagePath: any = path.resolve(
@@ -219,7 +230,7 @@ export class ProjectBuilder {
 
     if ( withCssImporter === true ) {
       timeStamp = (new Date()).toISOString();
-      console.log(`${timeStamp} Package [ ${packageJson.name} ]: packing css`);
+      console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [packing css]`);
       this.cssImporterRun (
         cssImporterConf,
         packagePath
@@ -233,7 +244,7 @@ export class ProjectBuilder {
 
     // install or link npm dependencies
     timeStamp = (new Date()).toISOString();
-    console.log(`${timeStamp} Package [ ${packageJson.name} ]: Calling npm dependencies install`);
+    console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [Calling npm dependencies install]`);
     this.installPackageDependencies(
       packageJson,
       packagePath
@@ -241,22 +252,25 @@ export class ProjectBuilder {
 
 
     // console output list of files in the package src catalog
-    this.runCommandLine(
+    this.command(
       packagePath,
       "ls -lahrts src"
     );
 
     if ( dataJson["prettify-typescript"] === true ) {
       timeStamp = (new Date()).toISOString();
-      console.log(`${timeStamp} Package [ ${packageJson.name} ]: Prettifying with Eslint TypeScript code in ${packagePath}`);
-      this.prettifyWithEslint(
-        packagePath,
-        `${packagePath}/src/**/*.ts`
-      );
+
+      console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [Prettifying TypeScript code] [Path (${packagePath})]`);
+
+      // this.prettifyWithEslint (
+      //  packagePath,
+      //  `${packagePath}/src/**/*.ts`
+      // );
+
     }
 
     timeStamp = (new Date()).toISOString();
-    console.log(`${timeStamp} Package [ ${packageJson.name} ]: ESNext Transpiling TypeScript code in ${packagePath}`);
+    console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [ESNext Transpiling TypeScript code] [Path (${packagePath})]`);
 
 
     // transpile modern node version compatible
@@ -268,7 +282,7 @@ export class ProjectBuilder {
     );
 
     timeStamp = (new Date()).toISOString();
-    console.log(`${timeStamp} Package [ ${packageJson.name} ]: CommonjS Transpiling TypeScript code in ${packagePath}`);
+    console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [CommonjS Transpiling TypeScript code] [Path (${packagePath})]`);
 
 
     // transpile legacy node versions compatible
@@ -283,8 +297,8 @@ export class ProjectBuilder {
     // link this package for usage in local development in other .ts files
     if (this.getIsLocalDevelopment()) {
       timeStamp = (new Date()).toISOString();
-      console.log(`${timeStamp} Package [ ${packageJson.name} ]: npm link package ${packageJson.name} for local usage with other`);
-      this.runCommandLine(
+      console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [npm link package ${packageJson.name} for local usage with other]`);
+      this.command(
         packagePath,
         "npm link"
       );
@@ -294,8 +308,8 @@ export class ProjectBuilder {
     // building simple .js files to use in example.hml via <script src="...js"
     if ( packageJson["build-simple-enable"] === true ) {
       timeStamp = (new Date()).toISOString();
-      console.log(`${timeStamp} Package [ ${packageJson.name} ]: building simple .js for usage in .html in script tag as src`);
-      this.buildSimple(
+      console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [building simple .js for usage in .html in script tag as src]`);
+      this.buildSimple (
         packageJson,
         packagePath
       );
@@ -317,10 +331,10 @@ export class ProjectBuilder {
     const dependencies: IDependency[]|null = packageJson["dependencies"];
 
     if (dependencies && dependencies.length > 0) {
-      console.log(`Package [ ${packageJson.name} ]: Installing npm dependencies at ${packagePath}...`);
+      console.log(`Package [ ${packageJson.name} ]: Installing npm dependencies at ${packagePath}...]`);
 
       if (this.getIsLocalDevelopment()) {
-        console.log(`Package [ ${packageJson.name} ]: Local dev mode npm link method chosen`);
+        console.log(`Package [ ${packageJson.name} ]: Local dev mode npm link method chosen]`);
 
         const localDependenciesNames: any[] = [];
 
@@ -330,8 +344,8 @@ export class ProjectBuilder {
             localDependency.path
           );
 
-          console.log(`cd && npm link in catalog: [ ${dependencyCatalogPath} ]`);
-          this.runCommandLine(
+          console.log(`cd && npm link in catalog: [ ${dependencyCatalogPath} ]]`);
+          this.command(
             dependencyCatalogPath,
             `cd "${dependencyCatalogPath}" && npm link`
           );
@@ -340,14 +354,14 @@ export class ProjectBuilder {
 
         const packagesToLinkJoined: any = localDependenciesNames.join(" ");
         const npmLinkCommand: any = `cd "${packagePath}" && npm link ${packagesToLinkJoined}`;
-        console.log(`${npmLinkCommand}`);
-        this.runCommandLine(
+        console.log(`${npmLinkCommand}]`);
+        this.command(
           packagePath,
           npmLinkCommand
         );
 
       } else {
-        console.log(`Package [ ${packageJson.name} ]: npm install from npm registry`);
+        console.log(`Package [ ${packageJson.name} ]: npm install from npm registry]`);
 
 
         //for (dependencyName of dependencies) {
@@ -356,16 +370,16 @@ export class ProjectBuilder {
         //}
       }
     } else {
-      console.log(`Package [ ${packageJson.name} ]: No dependencies were set in BuildData.json`);
+      console.log(`Package [ ${packageJson.name} ]: No dependencies were set in BuildData.json]`);
     }
   }
 
 
 
-  buildSimple(
+  async buildSimple (
     packageJson: any,
     packagePath: any
-  ): void {
+  ): Promise<number> {
 
     //let buildFileName: any = '';
     let buildCatalogPath: any = "";
@@ -379,18 +393,18 @@ export class ProjectBuilder {
     const buildFiles: any[]|undefined = packageJson["build-files"];
 
     if (!buildFiles || (0 === buildFiles.length)) {
-      throw new Error(`Package [ ${packageJson.name} ]: You forgot to set "build-files" array, You wish to provide for Simple Build!`);
+      throw new Error(`Package [ ${packageJson.name} ]: You forgot to set "build-files" array, You wish to provide for Simple Build!]`);
     }
 
     buildCatalogPath    = packagePath + "/" + this.buildEsmCatalogName;
 
     if (false === fs.existsSync(buildCatalogPath)) {
-      throw new Error(`Package [ ${packageJson.name} ]: build catalog not found: ${buildCatalogPath}`);
+      throw new Error(`Package [ ${packageJson.name} ]: build catalog not found: ${buildCatalogPath}]`);
     }
     buildSimpleCatalogPath = packagePath + "/" + this.buildSimpleCatalogName;
 
     if (false === fs.existsSync(buildSimpleCatalogPath)) {
-      this.runCommandLine(
+      this.command(
         packagePath,
         `mkdir -p "${buildSimpleCatalogPath}"`
       );
@@ -401,7 +415,7 @@ export class ProjectBuilder {
       const buildSimpleFilePath: any  = buildSimpleCatalogPath + "/" + buildFileName;
 
       if (true === fs.existsSync(buildSimpleFilePath)) {
-        this.runCommandLine(
+        this.command(
           packagePath,
           `rm "${buildSimpleFilePath}"`
         );
@@ -410,24 +424,165 @@ export class ProjectBuilder {
       const fileSimplePathDir: any = path.parse(buildSimpleFilePath).dir;
 
       if (false === fs.existsSync(fileSimplePathDir) ) {
-        this.runCommandLine(
+        this.command(
           packagePath,
           `mkdir -p "${fileSimplePathDir}"`
         );
       }
 
-      this.runCommandLine(
-        packagePath,
-        `cp "${buildFilePath}" "${buildSimpleFilePath}"`
+
+      let fileTranspiledBitsBuf: Uint8Array = fs.readFileSync( buildFilePath );
+
+      let findIndexOpts: any = {
+        "tokens": [
+            "\n",
+            "export class "
+        ],
+        "bbTokens": [],
+        "firstByte": 13,
+        "lookupBbuf": fileTranspiledBitsBuf
+      };
+
+      findIndexOpts.bbTokens = findIndexOpts.map (
+          ( ci_token: string ) => {
+              let locci_bbToken: Uint8Array = this.textEncoder.encode( ci_token );
+              return locci_bbToken;
+          }
       );
+      findIndexOpts.firstByte = findIndexOpts.bbTokens[0][0];
+
+      let classExportIndexOf: number = fileTranspiledBitsBuf.findIndex (
+          (
+              inci_tokenByte: number,
+              inci_index: number,
+              // @ts-ignore
+              inci_payload: Uint8Array<ArrayBufferLike>
+          ): boolean => {
+              // @ts-ignore
+              let locci_tokenFirstByte: number = this.firstByte;
+
+              // @ts-ignore
+              let locci_firstTokenEquals: boolean = ( inci_tokenByte === locci_tokenFirstByte );
+
+              if ( locci_firstTokenEquals === false ) {
+                return false;
+              }
 
 
-      // @ts-ignore
-      this.prettifyWithEslint(
-        packagePath,
-        `${this.buildSimpleCatalogName}/${buildFileName}`
-      );
+              // @ts-ignore
+              let locci_tokenBuf: Uint8Array = this.bbTokens[1];
+              let locci_tokenLen: number = locci_tokenBuf.length;
+
+              // @ts-ignore
+              let locci_lookupBuf: Uint8Array = this.lookupBbuf;
+              let locci_lookupSubarray: Uint8Array = locci_lookupBuf.subarray (
+                  ( inci_index + 1 ),
+                  ( inci_index + 1 + locci_tokenLen ),
+              );
+
+
+              /* let locci_tokenAsText: string = ( new TextDecoder() ).decode (
+                  locci_tokenBuf
+              );
+              let locci_lookupSubarrayAsText: string = ( new TextDecoder() ).decode (
+                  locci_lookupSubarray
+              ); */
+
+
+              let locci_tokenFound: boolean = locci_tokenBuf.every (
+                  (
+                      inciB_Byte: number,
+                      inciB_index: number
+                  ): boolean => {
+                      let locci_byteEquals: boolean = ( inciB_Byte === locci_lookupSubarray[ inciB_index ] );
+                      return locci_byteEquals;
+                  }
+              );
+
+
+              return locci_tokenFound;
+          },
+          findIndexOpts
+        );
+
+
+
+        let isFilewriteError: boolean = false;
+        try {
+            fs.writeFileSync (
+                buildSimpleFilePath,
+                ""
+            );
+        } catch ( errFileWrite ) {
+            isFilewriteError = true;
+            console.log( errFileWrite );
+        }
+
+        if ( isFilewriteError === true ) {
+            throw new Error( "Couldn't write file" );
+        }
+
+
+
+        let loc_fileHandle: FileHandle|null = null;
+        const fileAddOpenMode: string = "a";
+        // const fileAddNReadOpenMode: string = "a+";
+        let isFileHandleOpenError: boolean = false;
+
+        try {
+            loc_fileHandle = await fs.promises.open (
+                buildSimpleFilePath,
+                fileAddOpenMode
+            );
+        } catch ( errFileOpen ) {
+            isFileHandleOpenError = true;
+            console.log ( errFileOpen );
+        }
+
+        if ( isFileHandleOpenError === true ) {
+            try {
+                // @ts-ignore
+                await loc_fileHandle.close();
+            } catch ( errFileHanldeClose ) {
+                console.log ( errFileHanldeClose );
+            }
+
+            throw new Error( "Couldn't open file handle" );
+        }
+
+
+
+        isFilewriteError = false;
+        try {
+            // @ts-ignore
+            let loc_fwrite: { bytesWritten: number, buffer: Uint8Array<ArrayBufferLike> } = await loc_fileHandle.write (
+                fileTranspiledBitsBuf,
+                1,
+                ( fileTranspiledBitsBuf.byteLength - ( classExportIndexOf + 1 ) ),
+                classExportIndexOf
+            );
+            console.log ( loc_fwrite );
+
+        } catch ( errWrite ) {
+            isFilewriteError = true;
+            console.log ( errWrite );
+        }
+
+        try {
+            // @ts-ignore
+            await loc_fileHandle.close();
+        } catch ( errFileHanldeClose ) {
+            console.log ( errFileHanldeClose );
+        }
+
+        if ( isFilewriteError === true ) {
+            throw new Error( "Simple build file couldn't be written." );
+        }
+
     }
+
+
+    return 1;
   }
 
 
@@ -461,7 +616,7 @@ export class ProjectBuilder {
         confNodeCss.cssTargetFilePath
       ) )
       .build().then( ( result: number ) => {
-        console.log(`css importer built ${packagePath}: ${result}`);
+        console.log(`css importer built ${packagePath}: ${result}]`);
       });
 
     this.cssImporters.push( cssImporter );
@@ -476,7 +631,7 @@ export class ProjectBuilder {
     const consoleCommand: any = `cd "${tsconfigCatalogPath}" && tsc -p "${tsconfigFileName}"`;
 
 
-    return this.runCommandLine(
+    return this.command(
       tsconfigCatalogPath,
       consoleCommand
     );
@@ -493,13 +648,13 @@ export class ProjectBuilder {
     const compilerOptions: any = tsconfig["compilerOptions"];
 
     if (!compilerOptions) {
-      throw new Error(`Typescript config file has no compilerOptions, or was not found at: ${tsconfigPath}`);
+      throw new Error(`Typescript config file has no compilerOptions, or was not found at: ${tsconfigPath}]`);
     }
     const transpileOptions: any[] = [];
 
     for (let compilerOptonName in compilerOptions) {
       const compilerOptionValue: any = compilerOptions[compilerOptonName];
-      transpileOptions.push(`--${compilerOptonName} ${compilerOptionValue}`);
+      transpileOptions.push(`--${compilerOptonName} ${compilerOptionValue}]`);
     }
 
     const filesAndCatalogsList: any[] = fs.readdirSync(
@@ -532,7 +687,7 @@ export class ProjectBuilder {
     // const packagePathRelative = packagePath.replace(
     //   `${this.absolutePathToProjectRoot}/`,
     //   "");
-    //const filesListJoinedString: any = `${packagePathRelative}/src/` + filesList.join(` ${packagePathRelative}/src/`);
+    //const filesListJoinedString: any = `${packagePathRelative}/src/` + filesList.join(` ${packagePathRelative}/src/]`);
     const filesListJoinedString: any = "src/" + filesList.join(" src/");
     const transpileOptionsString: any = transpileOptions.join(" ");
 
@@ -541,30 +696,31 @@ export class ProjectBuilder {
     const transpileCommand: any = `cd "${packagePath}" && npx tsc ${filesListJoinedString} ${transpileOptionsString}`;
 
 
-    return this.runCommandLine(
+    return this.command(
       `${packagePath}`,
       transpileCommand
     );
   }
 
 
-
-  (
+  /**
+  prettifyWithEslint (
     packagePath: any,
     pathToPrettify: any
   ): any {
     const consoleCommand: any = `cd "${packagePath}" && npx eslint --fix "${pathToPrettify}"`;
 
 
-    return this.runCommandLine(
+    return this.command(
       packagePath,
       consoleCommand
     );
   }
+  */
 
 
 
-  runCommandLine(
+  command (
     configCatalogPath: any,
     consoleCommand: any
   ): any {
@@ -591,8 +747,8 @@ export class ProjectBuilder {
       shell: "bash"
 
 
-      //shell: '/usr/bin/env bash',
-      //env: { ...process.env, PATH: (process.env.PATH + ':/usr/local/bin:/usr/bin:/bin') }
+      // shell: '/bin/bash',
+      // env: { ...process.env, PATH: (process.env.PATH + ':/usr/local/bin:/usr/bin:/bin') }
     };
   }
 

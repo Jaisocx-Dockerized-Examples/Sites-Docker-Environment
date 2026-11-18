@@ -1,20 +1,27 @@
 {
-  "extends": "./../../tsconfig.ESNext.json",
+  "extends": "../../tsconfig.ESNext.json",
   "compilerOptions": {
+    "paths": {
+      "node_modules": ["../../node_modules"],
+      "tsconfig.json": ["../../tsconfig.ESNext.json"]
+    },
+    "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
+    "declarationDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
     "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext",
-    "declarationDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext"
+    "types": [ "/opt/jaisocx/sites_docker_environment/workspace/ts/node_modules/@types/node/" ]
   },
   "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
     "src/*.ts",
     "src/*.tsx",
-    "src/**/*.ts",  // Include TypeScript files from the source directory
-    "src/**/*.tsx",  // Include React JSX files if necessary
-    "typings/**/*.d.ts"  // Optionally include any additional declaration files
+    "typings/**/*.d.ts"
   ],
   "exclude": [
-    "node_modules",  // Exclude dependencies from being compiled
-    "transpiled",  // Exclude the output directory from compilation
-    "**/*.spec.ts",  // Exclude test files from compilation (if applicable)
+    "cloned_repos",
+    "node_modules",
+    "transpiled",
+    "**/*.spec.ts",
     "**/*.test.ts",
     "**/*.md"
   ]

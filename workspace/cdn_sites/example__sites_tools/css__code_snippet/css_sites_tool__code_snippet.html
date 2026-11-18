@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" class="jaisocx page clean_start sites_tools theme_fonts_a theme_blue">
+<head>
+
+  <!--# FAVICON -->
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="../css__clean_start_2026__zero/favicon/Icon_Jaisocx.ico"
+  />
+
+  <title> Clean Start Zero </title>
+
+
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+
+
+  <style name="clean_start_zero_just_html">
+
+    .clean_start.lime {
+
+      --clean_start--all_tags--color:                      black;
+      --clean_start--anchor--color:                        navy;
+
+
+      --clean_start--site--background:                     #eafeee;
+      --clean_start--body_tag--background:                 unset;
+
+      --clean_start--scrollbar-thumb--background-color:    lime;
+      --clean_start--scrollbar-track--background-color:    #eafdfa;
+      --clean_start--scrollbar--color:                     lime #eafdfa;
+    }
+
+    .clean_start {
+
+      --clean_start--rem:      24px;
+
+      --clean_start--all_tags--font-size:                  0.9rem;
+      --clean_start--all_tags--line-height:                1.2rem;
+      --clean_start--all_tags--letter-spacing:             0;
+    }
+
+  </style>
+
+
+
+  <style name="page_styles">
+
+    .page.clean_start.theme_lime {
+
+      --page--site--background:                            #eafeee;
+
+      --page--block_top--border-bottom:                    0.62rem solid #bfb;
+      --page--block_top--background:                       #aea;
+
+      --page--block_content--background:                   #fdfdfd;
+
+      --page--block_bottom--color:                         #efe;
+      --page--block_bottom--background:                    darkgreen;
+    }
+
+    .page.clean_start {
+
+      --page--h1--padding:                                 0.14rem 0.6rem 0.14rem 0.6rem;
+
+      --page--block_top--padding:                          1.4rem 3rem 1rem 3rem;
+      --page--block_content--padding:                      5.5rem 3rem 30rem 3rem;
+      --page--block_bottom--padding:                       1rem 3rem 1.95rem 3rem;
+
+      --page--block_content--width:                        70%;
+    }
+
+  </style>
+
+
+
+  <style name="theme_turn_on_buttons">
+
+    .clean_start  themebuttons {
+      margin:                                              0 0 0 2rem;
+    }
+
+    .clean_start  themebuttons button {
+      color:                                               var(--clean_start--anchor--color, green);
+      background:                                          unset;
+    }
+
+    .clean_start  .current::after {
+      content: "";
+      position:                                            absolute;
+      bottom:                                             -0.3rem;
+      left:                                                0;
+      width:                                               80%;
+      height:                                              0;
+      max-height:                                          0;
+      overflow-y:                                           hidden;
+      border-bottom-width:                                 0.14rem;
+      border-bottom-style:                                 solid;
+      border-bottom-color:                                 var(--clean_start--anchor--color, green);
+    }
+
+  </style>
+
+
+
+  <style name="colour_themes__clean_start_n_page_n_code_snippet">
+
+    .page.clean_start.sites_tools.theme_lime,
+    .page.clean_start.sites_tools.theme_lime .CodeSnippetHolder {
+
+      --clean_start--site--background:                     #eafeee;
+      --clean_start--body_tag--background:                 unset;
+
+      --clean_start--scrollbar-thumb--background-color:    lime;
+      --clean_start--scrollbar-track--background-color:    #eafdfa;
+      --clean_start--scrollbar--color:                     lime #eafdfa;
+
+      --code_snippet--scrollbar-thumb--background-color:   lime;
+      --code_snippet--scrollbar-track--background-color:   #eafdfa;
+      --code_snippet--scrollbar--color:                    lime #eafdfa;
+
+
+
+      --clean_start--all_tags--color:                      black;
+      --clean_start--anchor--color:                        #f2fef0;
+
+      --page--h1--color:                                   darkgreen;
+      --page--h1--background:                              #bfb;
+      --page--h1--border:                                  3px solid lime;
+
+      --page--site--background:                            #eafeee;
+
+      --page--block_top--border-bottom:                    0.62rem solid #bfb;
+      --page--block_top--background:                       #aea;
+
+      --page--block_content--background:                   #fdfdfd;
+
+      --page--block_bottom--color:                         #efe;
+      --page--block_bottom--background:                    darkgreen;
+
+    }
+
+
+
+    .page.clean_start.sites_tools.theme_blue,
+    .page.clean_start.sites_tools.theme_blue .CodeSnippetHolder {
+
+      --clean_start--site--background:                     #f0f4fe;
+      --clean_start--body_tag--background:                 unset;
+
+      --clean_start--scrollbar-thumb--background-color:    blue;
+      --clean_start--scrollbar-track--background-color:    #f0f4fe;
+      --clean_start--scrollbar--color:                     blue #f0f4fe;
+
+      --code_snippet--scrollbar-thumb--background-color:   blue;
+      --code_snippet--scrollbar-track--background-color:   #f0f4fe;
+      --code_snippet--scrollbar--color:                    blue #f0f4fe;
+
+
+
+      --clean_start--all_tags--color:                      black;
+      --clean_start--anchor--color:                        #a3eefa;
+
+      --page--h1--color:                                   navy;
+      --page--h1--background:                              #c0eefe;
+      --page--h1--border:                                  3px solid #30aefa;
+
+      --page--block_top--border-bottom:                    0.62rem solid #9aeefe;
+      --page--block_top--background:                       blue;
+
+      --page--site--background:                            #f0f4fe;
+      --page--block_content--background:                   #fdfdfd;
+
+      --page--block_bottom--color:                         #bbe0fe;
+      --page--block_bottom--background:                    darkblue;
+
+    }
+
+
+
+    .page.clean_start.sites_tools.theme_rosa,
+    .page.clean_start.sites_tools.theme_rosa .CodeSnippetHolder {
+
+      --clean_start--scrollbar-thumb--background-color:    #fefefe;
+      --clean_start--scrollbar-track--background-color:    #feb1e0;
+      --clean_start--scrollbar--color:                     #fefefe #feb1e0;
+
+      --code_snippet--scrollbar-thumb--background-color:   #fefefe;
+      --code_snippet--scrollbar-track--background-color:   #feb1e0;
+      --code_snippet--scrollbar--color:                    #fefefe #feb1e0;
+
+      --clean_start--all_tags--color:                      black;
+      --clean_start--anchor--color:                        #fef2f5;
+
+      --page--h1--color:                                   #fefaca;
+      --page--h1--background:                              #feb5ee;
+      --page--h1--border:                                  1px solid magenta;
+
+      --page--block_top--background:                       #feb5ee;
+      --page--block_top--border-bottom:                    0.62rem solid #fadcf2;
+
+      --clean_start--site--background:                     #faf0f5;
+      --page--site--background:                            #fef0f5;
+      --page--block_content--background:                   #fdfdfd;
+
+
+      --page--block_bottom--color:                         #fef0f4;
+      --page--block_bottom--background:                    #ea3090;
+
+      --clean_start--body_tag--background:                 unset;
+
+    }
+
+  </style>
+
+
+
+  <style name="css_code_snippet_overrides">
+
+    .page.clean_start.sites_tools {
+      --code_snippet_lines_numbers--20:                    "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a";
+      --code_snippet_lines_numbers:                        var(--code_snippet_lines_numbers--20);
+      --code_snippet_lines_qty:                            20;
+    }
+
+    .page.clean_start.sites_tools .CodeSnippetHolder#codesnippet-scrolls {
+      /*   when a .css is loaded with hardcoded lines numbers in code_snippet_lines_numbers--99.css
+             on path MediaAndStyles/lines-numbers-variables/code_snippet_lines_numbers--99.css
+      */
+
+      --code_snippet_lines_numbers:                        var(--code_snippet_lines_numbers--99);
+      --code_snippet_lines_qty:                            20;
+    }
+
+
+    .page.clean_start.sites_tools {
+
+      --code_snippet--position:                            relative;
+      --code_snippet--box-sizing:                          border-box;
+      --code_snippet--margin:                              0 0 2rem 0;
+      --code_snippet--font-family:                         var(--clean_start--monospace--font-family, Courier);
+      --code_snippet--line-height:                         0.97rem;
+      --code_snippet--font-size:                           0.8rem;
+      --code_snippet--text-align:                          left;
+      --code_snippet--min-height:                          unset;
+      --code_snippet--max-height:                          unset;
+      --code_snippet--height:                              auto;
+      --code_snippet--min-width:                           unset;
+      --code_snippet--max-width:                           unset;
+      --code_snippet--width:                               100%;
+      /* --code_snippet--border:                              2px solid lime; */
+      --code_snippet--border-radius:                       1rem;
+      /* --code_snippet--color:                               black; */
+      /* --code_snippet--background:                          #fdfdfd; */
+      --code_snippet--overflow-x:                           auto;
+      --code_snippet--overflow-y:                           auto;
+    }
+
+
+
+    /* in calculated props */
+    .sites_tools {
+
+      --code_snippet--padding-top:                         1rem;
+      --code_snippet--padding-left:                        1rem;
+      --code_snippet--padding-right:                       1rem;
+      --code_snippet--padding-bottom:                      1rem;
+
+      --code_snippet_numbers--padding-left:                0;
+      --code_snippet_numbers--padding-right:               1rem;
+
+      --code_snippet--line-height:                         0.92rem;
+
+      --code_snippet_numbers--width:                       3rem;
+    }
+
+
+
+    .page.clean_start.sites_tools code.CodeSnippetHolder#scrolling-codesnippet {
+
+      --code_snippet_lines_numbers:                        var(--code_snippet_lines_numbers--99);
+      --code_snippet_lines_qty:                            24;
+
+
+      /* calculated */
+      --code_snippet--padding-top:                         2rem;
+      --code_snippet--padding-left:                        2.4rem;
+      --code_snippet--padding-right:                       0.1rem;
+      --code_snippet--padding-bottom:                      0.01rem;
+
+      --code_snippet_numbers--padding-left:                0;
+      --code_snippet_numbers--padding-right:               1rem;
+
+      --code_snippet--line-height:                         0.92rem;
+
+      --code_snippet_numbers--width:                       5rem;
+
+
+
+
+
+      --code_snippet--min-height:                          unset;
+      --code_snippet--max-height:                          unset;
+      --code_snippet--height:                              16rem;
+
+      --code_snippet--width:                               100%;
+
+
+
+      --code_snippet--block_tags--display:                 block;
+
+
+
+      /* for the theme scrollable */
+      --code_snippet--position:                            relative;
+      --code_snippet_numbers--position:                    sticky;
+      --code_snippet_area--position:                       absolute;
+      --code_snippet_rightcolumn--position:                sticky;
+
+      --code_snippet--overflow-x:                           auto;
+      --code_snippet--overflow-y:                           auto;
+
+      /* --code_snippet_holder--overflow-x:                 auto;
+      --code_snippet_holder--overflow-y:                    auto; */
+
+      --code_snippet_numbers--overflow-x:                   hidden;
+      --code_snippet_numbers--overflow-y:                   hidden;
+
+      --code_snippet_rightcolumn--overflow-x:               hidden;
+      --code_snippet_rightcolumn--overflow-y:               hidden;
+
+      --code_snippet_area--overflow-x:                      visible;
+      --code_snippet_area--overflow-y:                      hidden;
+    }
+
+
+
+    .page.clean_start.sites_tools code.CodeSnippetHolder#codesnippet {
+
+      --code_snippet_lines_numbers:                        var(--code_snippet_lines_numbers--99);
+      --code_snippet_lines_qty:                            20;
+
+
+      /* calculated */
+      --code_snippet--padding-top:                         2rem;
+      --code_snippet--padding-left:                        2.4rem;
+      --code_snippet--padding-right:                       0.1rem;
+      --code_snippet--padding-bottom:                      0.01rem;
+
+      --code_snippet_numbers--padding-left:                0;
+      --code_snippet_numbers--padding-right:               1rem;
+
+      --code_snippet--line-height:                         0.92rem;
+
+      --code_snippet_numbers--width:                       5rem;
+
+
+
+
+
+      --code_snippet--min-height:                          2rem;
+      --code_snippet--max-height:                          unset;
+      --code_snippet--height:                              auto;
+
+      --code_snippet--width:                               100%;
+
+
+
+      --code_snippet--block_tags--display:                 block;
+
+
+
+      /* for the theme scrollable */
+      --code_snippet--position:                            relative;
+      --code_snippet_numbers--position:                    sticky;
+      --code_snippet_area--position:                       relative;
+      --code_snippet_rightcolumn--position:                absolute;
+
+      --code_snippet--overflow-x:                           auto;
+      --code_snippet--overflow-y:                           hidden;
+
+      /* --code_snippet_holder--overflow-x:                 auto;
+      --code_snippet_holder--overflow-y:                    hidden; */
+
+      --code_snippet_numbers--overflow-x:                   hidden;
+      --code_snippet_numbers--overflow-y:                   hidden;
+
+      --code_snippet_rightcolumn--overflow-x:               hidden;
+      --code_snippet_rightcolumn--overflow-y:               hidden;
+
+      --code_snippet_holder--background:                   var(--code_snippet_numbers--background);
+
+      --code_snippet_area--overflow-x:                      visible;
+      --code_snippet_area--overflow-y:                      visible;
+    }
+
+
+
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .page.clean_start.sites_tools  code.CodeSnippetHolder {
+        --code_snippet--width:                             100%;
+      }
+
+    }
+
+  </style>
+
+
+
+
+  <!--# Clean start zero condensed -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="../css__clean_start_2026__zero/MediaAndStyles/clean_start_zero__condensed.css"
+  />
+
+  <!--# Clean start page -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="../css__clean_start_2026__zero/MediaAndStyles/clean_start__page.css"
+  />
+
+
+
+
+  <!--# STYLES CssCodeSnippet and theme_base -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/lines-numbers-variables/code_snippet_lines_numbers--99.css"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/css_sites_tool__code_snippet.css"
+  />
+
+</head>
+<body>
+<site>
+<page>
+
+  <block class="block_top">
+
+    <h1>  @jaisocx/css_code_snippet  ®  </h1>
+
+    <ThemeButtons>
+      <button id="button-turn-on-base" data-theme="theme_lime" class="current"> lime | </button>
+      <button id="button-turn-on-daymode" data-theme="theme_blue"> blue | </button>
+      <button id="button-turn-on-nightmode" data-theme="theme_rosa"> rosa </button>
+    </ThemeButtons>
+
+  </block>
+  <!--  @Finish .block_top -->
+
+
+
+
+  <block class="block_content">
+
+    <h2> texts </h2>
+
+    <block>
+
+<!--
+
+      <code id="scrolling-codesnippet" class="CodeSnippetHolder">
+        <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+        </pre>
+      </code>
+-->
+
+
+      <code id="codesnippet" class="CodeSnippetHolder">
+        <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+        </pre>
+      </code>
+
+    </block>
+
+  </block>
+  <!--  @Finish .block_content -->
+
+
+
+
+  <block class="block_bottom">
+
+    <ul>
+      <li><text>  Sites Tools  </text></li>
+      <li><text>  Jaisocx &#8482; &#169;  </text></li>
+    </ul>
+
+  </block>
+  <!--  @Finish .block_bottom -->
+
+</page>
+</site>
+</body>
+
+
+
+<script>
+
+  let themeCssClassKeyword = "theme";
+
+  let currentButtonNodeClicked = null;
+
+  let cssClassesNames = [
+    "jaisocx",
+    "page",
+    "clean_start",
+    "sites_tools",
+    "theme_fonts_a"
+  ];
+
+
+
+  /** @method htmlThemeClassnameHandle
+  *  @returns theme classname in the HtmlTag <html class="theme_...">
+  */
+  function htmlThemeClassnameHandle (
+    in_keyword_theme,
+    to_remove
+  ) {
+
+    const loc_themeCssClassKeyword = in_keyword_theme;
+    let loc_htmlNodeClassnames = ( new Array() );
+
+
+    const htmlNode = document.getElementsByTagName("html")[0];
+    const loc_htmlNodeClassList = htmlNode.classList;
+    if ( loc_htmlNodeClassList ) {
+      loc_htmlNodeClassnames = loc_htmlNodeClassList.map ( ci_cssClassName => ci_cssClassName );
+    }
+
+
+    let loc_htmlThemeCssClassname = "";
+
+    loc_htmlNodeClassnames.forEach (
+      ( ci_cssClassName ) => {
+        let ci_found = ci_cssClassName.startsWith( loc_themeCssClassKeyword );
+
+        if ( ci_found ) {
+          loc_htmlThemeCssClassname = ci_cssClassName;
+        }
+
+        if ( ci_found && to_remove ) {
+          htmlNodeClassList.remove ( ci_cssClassName );
+        }
+      }
+    );
+
+
+    return loc_htmlThemeCssClassname;
+  }
+
+
+
+  function getCurrentThemeButton (
+    in_querySelector
+  ) {
+
+    let loc_HtmlDocNodes = ( new Array() );
+    let loc_init_HtmlDocNodes = false;
+
+    loc_HtmlDocNodes = document.getElementsByTagName("HTML");
+    loc_init_HtmlDocNodes = ( loc_HtmlDocNodes instanceof( NodeList ) === true );
+
+
+    let loc_htmlNode = ( new Object() );
+    let loc_init_htmlNode = false;
+
+    if ( loc_init_HtmlDocNodes && loc_HtmlDocNodes.length !== 0 ) {
+      loc_htmlNode = loc_HtmlDocNodes[0];
+      loc_init_htmlNode = ( loc_htmlNode instanceof( HTMLElement ) === true );
+    }
+
+
+    let loc_currentButton = ( new Object() );
+    let loc_init_currentButton = false;
+    if ( loc_init_htmlNode === true ) {
+      loc_currentButton = loc_htmlNode.querySelector ( in_querySelector );
+      loc_init_currentButton = ( loc_currentButton instanceof( HTMLElement ) === true );
+    }
+
+
+    let loc_retval = ( loc_init_currentButton === true );
+    if ( loc_init_currentButton === true ) {
+      loc_retval = loc_currentButton;
+    }
+
+
+    return loc_currentButton;
+  }
+
+
+
+  function currentThemeButtonHandle (
+    in_HtmlDocElem,
+    in_themedHtmlElemsQuerySelectors,
+    in_datasetKeywordTheme,
+    in_querySelector,
+    to_remove
+  ) {
+
+    let loc_currentButton = getCurrentThemeButton( in_querySelector );
+    let loc_init_currentButton = ( loc_currentButton !== false );
+    let loc_dataset_currentButton = ( new Object() );
+    let loc_init_dataset_currentButton = false;
+
+
+    if ( to_remove && loc_init_currentButton && loc_currentButton.classList ) {
+      loc_currentButton.classList.remove( "current" );
+    }
+
+
+    let loc_Theme = ( new Object() );
+
+
+    if ( loc_init_currentButton ) {
+      loc_dataset_currentButton = buttonNodeClicked.dataset;
+    }
+    loc_init_dataset_currentButton = ( loc_dataset_currentButton instanceof( ( DOMStringMap ) === true );
+
+
+    if ( loc_init_dataset_currentButton === true ) {
+      loc_Theme = loc_dataset_currentButton[ in_datasetKeywordTheme ];
+    }
+
+
+    if ( ( loc_Theme === undefined ) || ( loc_Theme.length === 0 ) ) {
+      return "";
+    }
+
+
+
+
+
+    let loc_numberThemedNodes = in_themedHtmlElemsQuerySelectors.length;
+
+    if ( loc_numberThemedNodes === 0 ) {
+      return loc_Theme;
+    }
+
+
+
+    let locFun_setThemeClassname = function (
+      loc_HtmlDocElem,
+      ci_querySelector
+    ) {
+      let loc_ci_node = loc_HtmlDocElem.querySelector( ci_querySelector );
+      let loc_ci_classname = ( new Object() );
+      let loc_ci_classlist = ( new Object() );
+      let loc_ci_init_classlist = false;
+
+      if ( loc_ci_node ) {
+        loc_ci_classname = loc_ci_node.className;
+        loc_ci_init_classname = ( loc_ci_classname && ( loc_ci_classname.length !== 0 ) );
+
+      }
+
+      if ( loc_ci_init_classname ) {
+        loc_ci_classlist = loc_ci_node.classList.add( loc_Theme );
+      }
+    };
+
+
+    if ( loc_numberThemedNodes === 1 ) {
+
+      locFun_setThemeClassname (
+        in_HtmlDocElem,
+        in_themedHtmlElemsQuerySelectors[ 0 ]
+      );
+
+      return loc_Theme;
+    }
+
+
+
+    in_themedHtmlElemsQuerySelectors.forEach (
+      ( ci_ci_selector ) => {
+
+        locFun_setThemeClassname (
+          in_HtmlDocElem,
+          ci_ci_selector
+        );
+
+      }
+    );
+
+
+    return loc_Theme;
+  }
+
+
+
+  function onloadTurnOnTheme () {
+
+    const htmlNode = document.getElementsByTagName("html")[0];
+    const htmlNodeClassList = htmlNode.classList;
+
+    if ( currentButtonNodeClicked instanceof( Object ) === false ) {
+      currentButtonNodeClicked = htmlNode.querySelector( "themebuttons .current");
+    }
+
+    if ( currentButtonNodeClicked ) {
+      currentButtonNodeClicked.classList.remove( "current" );
+    }
+
+  }
+
+
+
+  // declaring the function, this is used in the event handler of the theme turning button when clicked on this button.
+  function turnOnTheme ( buttonNodeClicked ) {
+
+    const htmlNode = document.getElementsByTagName("html")[0];
+    const htmlNodeClassList = htmlNode.classList;
+
+
+
+    if ( currentButtonNodeClicked instanceof( Object ) === false ) {
+      currentButtonNodeClicked = htmlNode.querySelector( "themebuttons .current");
+    }
+
+    if ( currentButtonNodeClicked ) {
+      currentButtonNodeClicked.classList.remove( "current" );
+    }
+
+
+
+    const themeCssClassPrefix = "theme";
+
+    htmlNodeClassList.forEach (
+      (cssClassName) => {
+        if ( cssClassesNames.includes( cssClassName ) ) {
+          return;
+        }
+
+        if ( cssClassName.startsWith( themeCssClassPrefix ) === true ) {
+          htmlNodeClassList.remove( cssClassName );
+        }
+      }
+    );
+
+    const themeName = buttonNodeClicked.dataset.theme;
+    if ( themeName && ( themeName.length !== 0 ) ) {
+      htmlNode.classList.add( themeName );
+    }
+
+    currentButtonNodeClicked = buttonNodeClicked;
+    currentButtonNodeClicked.classList.add( "current" );
+
+  }
+
+
+
+  // declaring the function, this adds to buttons the event handler to turn on the theme.
+  // this function is invoked when the site loads in the browser,
+  // in the event handler for the event DOMContentLoaded
+  function addThemeButtonsEventHandlers() {
+
+    const buttonsIDs = [
+      "button-turn-on-base",
+      "button-turn-on-daymode",
+      "button-turn-on-nightmode"
+    ];
+
+    for ( let buttonId of buttonsIDs ) {
+
+      let buttonNode = document.getElementById( buttonId );
+
+      buttonNode.addEventListener (
+        "click",
+        (evt) => {
+          let buttonNodeClicked = evt.target;
+          turnOnTheme ( buttonNodeClicked );
+        }
+      );
+
+    }
+  }
+
+
+
+  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // adding to buttons the event handler to turn on the theme.
+    addThemeButtonsEventHandlers();
+
+  });
+
+</script>
+
+</html>
+
+
+
+

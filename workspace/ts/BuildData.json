@@ -1,6 +1,6 @@
 {
   "npm-registry-name": "@jaisocx",
-  "prettify-typescript": true,
+  "prettify-typescript": false,
   "packages": [
     {
       "path": "libraries/sites_tools/css_tools/css_clean_start/clean_start",

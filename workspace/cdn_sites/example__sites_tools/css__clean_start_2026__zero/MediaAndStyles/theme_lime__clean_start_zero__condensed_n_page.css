@@ -1,0 +1,41 @@
+
+.clean_start.lime {
+
+  --clean_start--rem:      16px;
+
+  --clean_start--all_tags--font-size:      0.9rem;
+  --clean_start--all_tags--line-height:    1.2rem;
+  --clean_start--all_tags--letter-spacing: 0;
+  --clean_start--all_tags--color:          black;
+
+  --clean_start--site--background:         darkgreen;
+  --clean_start--body_tag--background:     darkgreen;
+
+  --clean_start--scrollbar-thumb--background-color:   lime;
+  --clean_start--scrollbar-track--background-color:   #eafdfa;
+  --clean_start--scrollbar--color:                    lime #eafdfa;
+
+  --clean_start--site--box-sizing:         border-box;
+  --clean_start--all_tags--box-sizing:     border-box;
+}
+
+.page.clean_start.lime {
+
+  --page--site--background:                #eafeee;
+
+  --page--h1--padding:                     0.14rem 0.6rem 0.14rem 0.6rem;
+
+  --page--block_top--padding:              1.4rem 3rem 1rem 3rem;
+  --page--block_top--border-bottom:        0.62rem solid #bfb;
+  --page--block_top--background:           #aea;
+
+  --page--block_content--padding:          5.5rem 3rem 30rem 3rem;
+  --page--block_content--background:       #fdfdfd;
+  --page--block_content--width:            70%;
+
+  --page--block_bottom--padding:           1rem 3rem 0.55rem 3rem;
+  --page--block_bottom--color:             #efe;
+  --page--block_bottom--background:        darkgreen;
+}
+
+

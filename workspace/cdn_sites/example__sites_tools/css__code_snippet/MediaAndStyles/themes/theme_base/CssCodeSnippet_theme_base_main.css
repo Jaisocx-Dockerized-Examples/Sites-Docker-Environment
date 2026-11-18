@@ -64,4 +64,37 @@
   /* column theme Colors variables */
   --code_snippet__column_numbers__text-color: lime;
   --code_snippet__column_numbers__background-color: #efe;
+
+  --code_snippet--scrollbar-thumb--background-color:   lime;
+  --code_snippet--scrollbar-track--background-color:   #efe;
+  --code_snippet--scrollbar--color:                    lime #efe;
 }
+
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .CodeSnippetHolder::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  .CodeSnippetHolder::-webkit-scrollbar-thumb {
+    background-color: var(--code_snippet--scrollbar-thumb--background-color);
+  }
+
+  .CodeSnippetHolder::-webkit-scrollbar-track {
+    background-color: var(--code_snippet--scrollbar-track--background-color);
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .CodeSnippetHolder {
+    scrollbar-color: var(--code_snippet--scrollbar--color);
+    scrollbar-width: thin;
+  }
+}
+
+

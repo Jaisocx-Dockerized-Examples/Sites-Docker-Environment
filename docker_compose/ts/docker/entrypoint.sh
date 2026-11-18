@@ -621,11 +621,15 @@ fi
 
       PATH="${NODEJS_HOME}/${tarball_name}/bin:${PATH}"
 
+      HOSTNAME="${FORBROWSER_NODE_DOMAIN_NAME}"
+
 
 
       ### env bash variables being later declared in bash BASH_LOGIN
       vars_of_bash_login=(
         "JAISOCX_DOMAIN_NAME"
+        "FORBROWSER_NODE_DOMAIN_NAME"
+        "HOSTNAME"
         "JAISOCX_HTTP_IPv4"
         "JAISOCX_HTTP_IPv6"
         "JAISOCX_HTTPS_PORT"
