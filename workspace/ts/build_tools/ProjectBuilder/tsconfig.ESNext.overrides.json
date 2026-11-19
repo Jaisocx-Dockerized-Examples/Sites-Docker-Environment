@@ -5,9 +5,9 @@
       "node_modules": ["../../node_modules"],
       "tsconfig.json": ["../../tsconfig.ESNext.json"]
     },
-    "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
+    "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/src/",
     "declarationDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
-    "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext",
+    "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/ESNext/",
     "types": [ "/opt/jaisocx/sites_docker_environment/workspace/ts/node_modules/@types/node/" ]
   },
   "include": [

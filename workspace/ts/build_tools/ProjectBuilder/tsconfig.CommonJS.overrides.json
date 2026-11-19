@@ -5,9 +5,9 @@
       "node_modules": ["../../node_modules"],
       "tsconfig.json": ["../../tsconfig.CommonJS.json"]
     },
-    "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
+    "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/src/",
     "declarationDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/",
-    "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/CommonJS",
+    "outDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/transpiled/CommonJS/",
     "types": [ "/opt/jaisocx/sites_docker_environment/workspace/ts/node_modules/@types/node/" ]
   },
   "include": [

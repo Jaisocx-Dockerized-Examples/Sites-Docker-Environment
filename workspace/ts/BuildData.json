@@ -174,10 +174,22 @@
       "build-files": []
     },
     {
+      "path": "libraries/base_packs/text/lookup/OptimizedLookup",
+      "name": "optimized_lookup",
+      "since": "Thu Nov 19 02:02:01 CET 2026",
+      "update-published": "no",
+      "build": false,
+      "build-simple-enable": true,
+      "dependencies": [],
+      "build-files": [
+        "optimized_lookup/JaisocxOptimizedLookup.js"
+      ]
+    },
+    {
       "path": "libraries/base_packs/text/parsers/TokensParser",
       "name": "tokens-parser",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": true,
+      "build": false,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -274,10 +286,10 @@
       ]
     },
     {
-      "path": "libraries/base_packs/FileWriter",
+      "path": "libraries/base_packs/fs/FileWriter",
       "name": "file-writer",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": true,
+      "build": false,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -291,7 +303,7 @@
       "path": "libraries/base_packs/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": true,
+      "build": false,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -933,7 +945,7 @@
       "path": "libraries/base_packs/patterns/EngineAndDataRecords",
       "name": "engine-and-data-records",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [

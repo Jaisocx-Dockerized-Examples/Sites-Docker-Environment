@@ -1,28 +1,20 @@
-import { execSync } from "child_process";
-import path from "node:path";
-import fs from "node:fs";
-import { TextDecoder, TextEncoder } from "node:util";
-import JSON5 from "json5";
-import { CssImporter } from "@jaisocx/css-importer";
-export class ProjectBuilder {
-    isLocalDevelopment;
-    textEncoder;
-    textDecoder;
-    cssImporters;
-    absolutePathToProjectRoot;
-    relativePathFromRootTsConfigCatalogPath;
-    absolutePathFromRootTsConfigCatalogPath;
-    relativePathFromRootLintCatalog;
-    absolutePathFromRootLintCatalog;
-    relativePathFromRootWww;
-    absolutePathFromRootWww;
-    buildCjsCatalogName;
-    buildEsmCatalogName;
-    buildSimpleCatalogName;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProjectBuilder = void 0;
+const child_process_1 = require("child_process");
+const node_path_1 = __importDefault(require("node:path"));
+const node_fs_1 = __importDefault(require("node:fs"));
+const node_util_1 = require("node:util");
+const json5_1 = __importDefault(require("json5"));
+const css_importer_1 = require("@jaisocx/css-importer");
+class ProjectBuilder {
     constructor() {
         this.isLocalDevelopment = 1;
-        this.textEncoder = (new TextEncoder());
-        this.textDecoder = (new TextDecoder());
+        this.textEncoder = (new node_util_1.TextEncoder());
+        this.textDecoder = (new node_util_1.TextDecoder());
         this.cssImporters = new Array();
         this.absolutePathToProjectRoot = "";
         this.relativePathFromRootTsConfigCatalogPath = "";
@@ -51,7 +43,7 @@ export class ProjectBuilder {
             throw new Error("The Absolute Path to Project root is not specified!!!");
         }
         // @ts-ignore
-        this[propertyName] = path.resolve(this.absolutePathToProjectRoot + "/" + relativePath);
+        this[propertyName] = node_path_1.default.resolve(this.absolutePathToProjectRoot + "/" + relativePath);
         return this;
     }
     setRelativePathFromRootTsConfigCatalogPath(relativePath) {
@@ -104,15 +96,15 @@ export class ProjectBuilder {
     buildPackage(packageJson, dataJson) {
         let timeStamp = (new Date()).toISOString();
         console.log("\n\n\n===============================");
-        console.log(`Jaisocx Project Builder: [${timeStamp} ]MODULE ${packageJson.name}]`);
+        console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})]`);
         console.log("===============================\n");
-        let packagePath = path.resolve(this.absolutePathFromRootWww, packageJson.path);
+        let packagePath = node_path_1.default.resolve(this.absolutePathFromRootWww, packageJson.path);
         let cssImporterConf = packageJson["css-importer"];
         let withCssImporter = ((cssImporterConf !== undefined) && (cssImporterConf.build === true));
         let justWithCssImporter = ((packageJson.build === false) && (withCssImporter === true));
         if (withCssImporter === true) {
             timeStamp = (new Date()).toISOString();
-            console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [packing css]`);
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (packing css)]`);
             this.cssImporterRun(cssImporterConf, packagePath);
         }
         if (justWithCssImporter === true) {
@@ -120,26 +112,26 @@ export class ProjectBuilder {
         }
         // install or link npm dependencies
         timeStamp = (new Date()).toISOString();
-        console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [Calling npm dependencies install]`);
+        console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (Calling npm dependencies install)]`);
         this.installPackageDependencies(packageJson, packagePath);
         // console output list of files in the package src catalog
         this.command(packagePath, "ls -lahrts src");
         if (dataJson["prettify-typescript"] === true) {
             timeStamp = (new Date()).toISOString();
-            console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [Prettifying TypeScript code] [Path (${packagePath})]`);
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (Prettifying TypeScript code)] [Path (${packagePath})]`);
             // this.prettifyWithEslint (
             //  packagePath,
             //  `${packagePath}/src/**/*.ts`
             // );
         }
         timeStamp = (new Date()).toISOString();
-        console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [ESNext Transpiling TypeScript code] [Path (${packagePath})]`);
+        console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (ESNext Transpiling TypeScript code)] [Path (${packagePath})]`);
         // transpile modern node version compatible
         const tsconfigESNextName = "tsconfig.ESNext.json";
         const tsconfigESNextPath = `${this.absolutePathToProjectRoot}/${tsconfigESNextName}`;
         this.transpileTypescriptSourcesWithPath(packagePath, tsconfigESNextPath);
         timeStamp = (new Date()).toISOString();
-        console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [CommonjS Transpiling TypeScript code] [Path (${packagePath})]`);
+        console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (CommonjS Transpiling TypeScript code)] [Path (${packagePath})]`);
         // transpile legacy node versions compatible
         const tsconfigCommonJSName = "tsconfig.CommonJS.json";
         const tsconfigCommonJSPath = `${this.absolutePathToProjectRoot}/${tsconfigCommonJSName}`;
@@ -147,39 +139,47 @@ export class ProjectBuilder {
         // link this package for usage in local development in other .ts files
         if (this.getIsLocalDevelopment()) {
             timeStamp = (new Date()).toISOString();
-            console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [npm link package ${packageJson.name} for local usage with other]`);
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (npm link package ${packageJson.name} for local usage with other)]`);
             this.command(packagePath, "npm link");
         }
         // building simple .js files to use in example.hml via <script src="...js"
         if (packageJson["build-simple-enable"] === true) {
             timeStamp = (new Date()).toISOString();
-            console.log(`Jaisocx Project Builder: [${timeStamp}]  [Package (${packageJson.name})] [building simple .js for usage in .html in script tag as src]`);
-            this.buildSimple(packageJson, packagePath);
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (building simple .js for usage in .html in script tag as src)]`);
+            this.buildSimple(packageJson, packagePath).then((n) => {
+                console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${dataJson["npm-registry-name"]}/${packageJson.name})] [Action (Simple .js finish)]`);
+                return n;
+            });
         }
         return 2;
     }
     installPackageDependencies(packageJson, packagePath) {
         let dependencyCatalogPath = "";
         let localDependency = null;
+        let timeStamp = "";
         const dependencies = packageJson["dependencies"];
         if (dependencies && dependencies.length > 0) {
-            console.log(`Package [ ${packageJson.name} ]: Installing npm dependencies at ${packagePath}...]`);
+            timeStamp = (new Date()).toISOString();
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Action (Installing npm dependencies)] [Path (${packagePath}...)]`);
             if (this.getIsLocalDevelopment()) {
-                console.log(`Package [ ${packageJson.name} ]: Local dev mode npm link method chosen]`);
+                timeStamp = (new Date()).toISOString();
+                console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Action (Local dev mode npm link method chosen)]`);
                 const localDependenciesNames = [];
                 for (localDependency of dependencies) {
-                    dependencyCatalogPath = path.resolve(this.absolutePathFromRootWww, localDependency.path);
-                    console.log(`cd && npm link in catalog: [ ${dependencyCatalogPath} ]]`);
-                    this.command(dependencyCatalogPath, `cd "${dependencyCatalogPath}" && npm link`);
+                    dependencyCatalogPath = node_path_1.default.resolve(this.absolutePathFromRootWww, localDependency.path);
+                    timeStamp = (new Date()).toISOString();
+                    console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Action (cd; npm link in catalog)] [Path (${dependencyCatalogPath})]`);
+                    this.command(dependencyCatalogPath, `cd "${dependencyCatalogPath}"; npm link`);
                     localDependenciesNames.push(localDependency.name);
                 }
                 const packagesToLinkJoined = localDependenciesNames.join(" ");
-                const npmLinkCommand = `cd "${packagePath}" && npm link ${packagesToLinkJoined}`;
+                const npmLinkCommand = `cd "${packagePath}"; npm link ${packagesToLinkJoined}`;
                 console.log(`${npmLinkCommand}]`);
                 this.command(packagePath, npmLinkCommand);
             }
             else {
-                console.log(`Package [ ${packageJson.name} ]: npm install from npm registry]`);
+                timeStamp = (new Date()).toISOString();
+                console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [No Action (npm install from npm registry)]`);
                 //for (dependencyName of dependencies) {
                 //dependencyCatalogPath = rootPath + dependencyCatalogPath;
                 //execSync('npm run build', { cwd: packagePath, stdio: 'inherit', , shell: '/usr/bin/env bash' }); // Run the build command
@@ -187,7 +187,8 @@ export class ProjectBuilder {
             }
         }
         else {
-            console.log(`Package [ ${packageJson.name} ]: No dependencies were set in BuildData.json]`);
+            timeStamp = (new Date()).toISOString();
+            console.log(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Info (No dependencies were set in BuildData.json)]`);
         }
     }
     async buildSimple(packageJson, packagePath) {
@@ -197,28 +198,31 @@ export class ProjectBuilder {
         let buildSimpleCatalogPath = "";
         //let buildSimpleFilePath: any = '';
         const buildFiles = packageJson["build-files"];
+        let timeStamp = "";
         if (!buildFiles || (0 === buildFiles.length)) {
-            throw new Error(`Package [ ${packageJson.name} ]: You forgot to set "build-files" array, You wish to provide for Simple Build!]`);
+            timeStamp = (new Date()).toISOString();
+            throw new Error(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Errpr (no "build-files" array found for building Simple)]`);
         }
         buildCatalogPath = packagePath + "/" + this.buildEsmCatalogName;
-        if (false === fs.existsSync(buildCatalogPath)) {
-            throw new Error(`Package [ ${packageJson.name} ]: build catalog not found: ${buildCatalogPath}]`);
+        if (false === node_fs_1.default.existsSync(buildCatalogPath)) {
+            timeStamp = (new Date()).toISOString();
+            throw new Error(`Jaisocx Project Builder [${timeStamp}] [Package (${packageJson.name})] [Errpr (no build catalog found: ${buildCatalogPath})]`);
         }
         buildSimpleCatalogPath = packagePath + "/" + this.buildSimpleCatalogName;
-        if (false === fs.existsSync(buildSimpleCatalogPath)) {
+        if (false === node_fs_1.default.existsSync(buildSimpleCatalogPath)) {
             this.command(packagePath, `mkdir -p "${buildSimpleCatalogPath}"`);
         }
         for (const buildFileName of buildFiles) {
             const buildFilePath = buildCatalogPath + "/" + buildFileName;
             const buildSimpleFilePath = buildSimpleCatalogPath + "/" + buildFileName;
-            if (true === fs.existsSync(buildSimpleFilePath)) {
+            if (true === node_fs_1.default.existsSync(buildSimpleFilePath)) {
                 this.command(packagePath, `rm "${buildSimpleFilePath}"`);
             }
-            const fileSimplePathDir = path.parse(buildSimpleFilePath).dir;
-            if (false === fs.existsSync(fileSimplePathDir)) {
+            const fileSimplePathDir = node_path_1.default.parse(buildSimpleFilePath).dir;
+            if (false === node_fs_1.default.existsSync(fileSimplePathDir)) {
                 this.command(packagePath, `mkdir -p "${fileSimplePathDir}"`);
             }
-            let fileTranspiledBitsBuf = fs.readFileSync(buildFilePath);
+            let fileTranspiledBitsBuf = node_fs_1.default.readFileSync(buildFilePath);
             let findIndexOpts = {
                 "tokens": [
                     "\n",
@@ -228,7 +232,7 @@ export class ProjectBuilder {
                 "firstByte": 13,
                 "lookupBbuf": fileTranspiledBitsBuf
             };
-            findIndexOpts.bbTokens = findIndexOpts.map((ci_token) => {
+            findIndexOpts.bbTokens = findIndexOpts.tokens.map((ci_token) => {
                 let locci_bbToken = this.textEncoder.encode(ci_token);
                 return locci_bbToken;
             });
@@ -248,7 +252,7 @@ export class ProjectBuilder {
                 let locci_tokenLen = locci_tokenBuf.length;
                 // @ts-ignore
                 let locci_lookupBuf = this.lookupBbuf;
-                let locci_lookupSubarray = locci_lookupBuf.subarray((inci_index + 1), (inci_index + 1 + locci_tokenLen));
+                let locci_lookupSubarray = locci_lookupBuf.subarray((inci_index + 1), (inci_index + locci_tokenLen));
                 /* let locci_tokenAsText: string = ( new TextDecoder() ).decode (
                     locci_tokenBuf
                 );
@@ -263,7 +267,7 @@ export class ProjectBuilder {
             }, findIndexOpts);
             let isFilewriteError = false;
             try {
-                fs.writeFileSync(buildSimpleFilePath, "");
+                node_fs_1.default.writeFileSync(buildSimpleFilePath, "");
             }
             catch (errFileWrite) {
                 isFilewriteError = true;
@@ -277,7 +281,7 @@ export class ProjectBuilder {
             // const fileAddNReadOpenMode: string = "a+";
             let isFileHandleOpenError = false;
             try {
-                loc_fileHandle = await fs.promises.open(buildSimpleFilePath, fileAddOpenMode);
+                loc_fileHandle = await node_fs_1.default.promises.open(buildSimpleFilePath, fileAddOpenMode);
             }
             catch (errFileOpen) {
                 isFileHandleOpenError = true;
@@ -296,7 +300,7 @@ export class ProjectBuilder {
             isFilewriteError = false;
             try {
                 // @ts-ignore
-                let loc_fwrite = await loc_fileHandle.write(fileTranspiledBitsBuf, 1, (fileTranspiledBitsBuf.byteLength - (classExportIndexOf + 1)), classExportIndexOf);
+                let loc_fwrite = await loc_fileHandle.write(fileTranspiledBitsBuf, 0, (fileTranspiledBitsBuf.byteLength - classExportIndexOf - 1), classExportIndexOf);
                 console.log(loc_fwrite);
             }
             catch (errWrite) {
@@ -326,14 +330,14 @@ export class ProjectBuilder {
         //   confNodeCss,
         //   packagePath
         // );
-        let cssImporter = new CssImporter();
+        let cssImporter = new css_importer_1.CssImporter();
         cssImporter
             .setDebug(false)
             .setPackagePath(packagePath)
-            .setCssFilePath(path.resolve(packagePath, confNodeCss.cssFilePath))
-            .setCssTargetFilePath(path.resolve(packagePath, confNodeCss.cssTargetFilePath))
+            .setCssFilePath(node_path_1.default.resolve(packagePath, confNodeCss.cssFilePath))
+            .setCssTargetFilePath(node_path_1.default.resolve(packagePath, confNodeCss.cssTargetFilePath))
             .build().then((result) => {
-            console.log(`css importer built ${packagePath}: ${result}]`);
+            console.log(`css importer built ${packagePath}: ${result}`);
         });
         this.cssImporters.push(cssImporter);
     }
@@ -342,18 +346,26 @@ export class ProjectBuilder {
         return this.command(tsconfigCatalogPath, consoleCommand);
     }
     transpileTypescriptSourcesWithPath(packagePath, tsconfigPath) {
-        const tsconfigJson = fs.readFileSync(tsconfigPath);
-        const tsconfig = JSON5.parse(tsconfigJson);
+        const tsconfigJson = node_fs_1.default.readFileSync(tsconfigPath);
+        const tsconfig = json5_1.default.parse(tsconfigJson);
         const compilerOptions = tsconfig["compilerOptions"];
         if (!compilerOptions) {
-            throw new Error(`Typescript config file has no compilerOptions, or was not found at: ${tsconfigPath}]`);
+            throw new Error(`Typescript config file has no compilerOptions, or was not found at: ${tsconfigPath}`);
         }
         const transpileOptions = [];
-        for (let compilerOptonName in compilerOptions) {
-            const compilerOptionValue = compilerOptions[compilerOptonName];
-            transpileOptions.push(`--${compilerOptonName} ${compilerOptionValue}]`);
+        for (let compilerOptionName in compilerOptions) {
+            let tsConfigOptionValue = compilerOptions[compilerOptionName];
+            let compilerOptionValue = "";
+            if (Array.isArray(tsConfigOptionValue) === true) {
+                tsConfigOptionValue = compilerOptions[compilerOptionName].join(", ");
+            }
+            else {
+                tsConfigOptionValue = compilerOptions[compilerOptionName];
+            }
+            compilerOptionValue = ['"', tsConfigOptionValue, '"'].join("");
+            transpileOptions.push(`--${compilerOptionName} ${compilerOptionValue}`);
         }
-        const filesAndCatalogsList = fs.readdirSync(`${packagePath}/src`, { recursive: true });
+        const filesAndCatalogsList = node_fs_1.default.readdirSync(`${packagePath}/src`, { recursive: true });
         if (!filesAndCatalogsList || filesAndCatalogsList.length === 0) {
             return null;
         }
@@ -365,37 +377,24 @@ export class ProjectBuilder {
                 return isTypescript;
             }
             const absPath = `${packagePath}/src/${filePath}`;
-            let isFiltered = fs.lstatSync(absPath).isFile();
+            let isFiltered = node_fs_1.default.lstatSync(absPath).isFile();
             return isFiltered;
         });
         // const packagePathRelative = packagePath.replace(
         //   `${this.absolutePathToProjectRoot}/`,
         //   "");
-        //const filesListJoinedString: any = `${packagePathRelative}/src/` + filesList.join(` ${packagePathRelative}/src/]`);
-        const filesListJoinedString = "src/" + filesList.join(" src/");
+        //const filesListJoinedString: any = `${packagePathRelative}/src/` + filesList.join(` ${packagePathRelative}/src/`);
+        const filesListJoinedString = "\"./src/" + filesList.join("\" \"./src/") + "\"";
         const transpileOptionsString = transpileOptions.join(" ");
         // cd packagePath ensures usage of package.json installed deps for this exact subpackage.
-        const transpileCommand = `cd "${packagePath}" && npx tsc ${filesListJoinedString} ${transpileOptionsString}`;
+        const transpileCommand = `cd "${packagePath}"; npx tsc ${filesListJoinedString} ${transpileOptionsString}`;
+        console.log({ transpileCommand });
         return this.command(`${packagePath}`, transpileCommand);
     }
-    /**
-    prettifyWithEslint (
-      packagePath: any,
-      pathToPrettify: any
-    ): any {
-      const consoleCommand: any = `cd "${packagePath}" && npx eslint --fix "${pathToPrettify}"`;
-  
-  
-      return this.command(
-        packagePath,
-        consoleCommand
-      );
-    }
-    */
     command(configCatalogPath, consoleCommand) {
         let result = null;
         try {
-            result = execSync(consoleCommand, this.getSpawnSyncPayload(configCatalogPath));
+            result = (0, child_process_1.execSync)(consoleCommand, this.getSpawnSyncPayload(configCatalogPath));
         }
         catch (e) {
             result = e;
@@ -412,4 +411,5 @@ export class ProjectBuilder {
         };
     }
 }
+exports.ProjectBuilder = ProjectBuilder;
 //# sourceMappingURL=ProjectBuilder.js.map
