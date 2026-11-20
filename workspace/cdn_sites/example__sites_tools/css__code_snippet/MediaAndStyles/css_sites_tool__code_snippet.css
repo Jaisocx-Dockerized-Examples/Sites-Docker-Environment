@@ -125,8 +125,8 @@
   --code_snippet--all_tags--width:                      auto;
   --code_snippet--all_tags--padding:                    0 0 0 0;
   --code_snippet--all_tags--margin:                     0 0 0 0;
-  --code_snippet--all_tags--overflow-x:                  hidden;
-  --code_snippet--all_tags--overflow-x:                  hidden;
+  --code_snippet--all_tags--overflow-x:                 hidden;
+  --code_snippet--all_tags--overflow-y:                 hidden;
 
   --code_snippet_holder--position:                      var(--code_snippet--position);
   --code_snippet_holder--padding:                       0 0 0 0;
@@ -145,8 +145,8 @@
   --code_snippet_holder--border-radius:                 var(--code_snippet--border-radius);
   --code_snippet_holder--color:                         var(--code_snippet--color);
   --code_snippet_holder--background:                    var(--code_snippet--background);
-  --code_snippet_holder--overflow-x:                     var(--code_snippet--overflow-x);
-  --code_snippet_holder--overflow-y:                     var(--code_snippet--overflow-y);
+  --code_snippet_holder--overflow-x:                    var(--code_snippet--overflow-x);
+  --code_snippet_holder--overflow-y:                    var(--code_snippet--overflow-y);
 
   --code_snippet_rightcolumn--content:                  '$';
   --code_snippet_rightcolumn--position:                 absolute;
@@ -207,8 +207,8 @@
   --code_snippet_area--width:                           auto;
   --code_snippet_area--color:                           var(--code_snippet--color);
   --code_snippet_area--background:                      var(--code_snippet--background);
-  --code_snippet_area--overflow-x:                       visible;
-  --code_snippet_area--overflow-y:                       hidden;
+  --code_snippet_area--overflow-x:                      visible;
+  --code_snippet_area--overflow-y:                      hidden;
 }
 
 
@@ -385,8 +385,8 @@
   padding:               var(--code_snippet--all_tags--padding, 0 0 0 0 );
   margin:                var(--code_snippet--all_tags--margin, 0 0 0 0 );
 
-  overflow-x:             var(--code_snippet--all_tags--overflow-x, hidden );
-  overflow-y:             var(--code_snippet--all_tags--overflow-y, hidden );
+  overflow-x:            var(--code_snippet--all_tags--overflow-x, hidden );
+  overflow-y:            var(--code_snippet--all_tags--overflow-y, hidden );
 }
 
 .sites_tools .CodeSnippetHolder,
@@ -438,8 +438,8 @@
   --code_snippet_area--max-height:      calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
   --code_snippet_area--height:          calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
 
-  --code_snippet_numbers--top: var(--code_snippet--padding-top);
-  --code_snippet_numbers--left: 0;
+  --code_snippet_numbers--top:          var(--code_snippet--padding-top);
+  --code_snippet_numbers--left:         0;
 
   --code_snippet_holder--padding:       0 0 0 0;
   --code_snippet_numbers--padding:      0 var(--code_snippet_numbers--padding-right) 0 var(--code_snippet_numbers--padding-left);
@@ -479,9 +479,11 @@
   color:                var(--code_snippet_holder--color, black );
   background:           var(--code_snippet_holder--background, #fdfdfd );
 
-  overflow-x:            var(--code_snippet_holder--overflow-x, auto );
-  overflow-y:            var(--code_snippet_holder--overflow-y, auto );
+  overflow-x:           var(--code_snippet_holder--overflow-x, auto );
+  overflow-y:           var(--code_snippet_holder--overflow-y, auto );
 }
+
+
 
 .sites_tools .CodeSnippetHolder pre.CodeSnippetArea::after {
   content:              var(--code_snippet_rightcolumn--content, '$' );
@@ -509,13 +511,15 @@
   color:                var(--code_snippet_rightcolumn--color, black );
   background:           var(--code_snippet_rightcolumn--background, #fdfdfd );
 
-  float:                 left;
+  float:                left;
 
-  overflow-x:            var(--code_snippet_rightcolumn--overflow-x, hidden );
-  overflow-y:            var(--code_snippet_rightcolumn--overflow-y, hidden );
+  overflow-x:           var(--code_snippet_rightcolumn--overflow-x, hidden );
+  overflow-y:           var(--code_snippet_rightcolumn--overflow-y, hidden );
 
   z-index:              var(--code_snippet_rightcolumn--z-index, 999 );
 }
+
+
 
 .sites_tools .CodeSnippetHolder pre.CodeSnippetArea::before {
   content:              var(--code_snippet_lines_numbers, "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a" );
@@ -544,13 +548,15 @@
   background:           var(--code_snippet_numbers--background, #fdfdfd );
 
   white-space:          var(--code_snippet_numbers--white-space, pre );
-  float:                 left;
+  float:                left;
 
-  overflow-x:            var(--code_snippet_numbers--overflow-x, hidden );
-  overflow-y:            var(--code_snippet_numbers--overflow-y, hidden );
+  overflow-x:           var(--code_snippet_numbers--overflow-x, hidden );
+  overflow-y:           var(--code_snippet_numbers--overflow-y, hidden );
 
   z-index:              var(--code_snippet_numbers--z-index, 9999 );
 }
+
+
 
 .sites_tools .CodeSnippetHolder pre.CodeSnippetArea {
   position:             var(--code_snippet_area--position, absolute );
@@ -566,7 +572,7 @@
   text-align:           var(--code_snippet_area--text-align, left );
 
   white-space:          pre;
-  float: left;
+  float:                left;
 
   min-height:           var(--code_snippet_area--min-height, 100% );
   max-height:           var(--code_snippet_area--max-height, unset );
@@ -579,8 +585,8 @@
   color:                var(--code_snippet_area--color, black );
   background:           var(--code_snippet_area--background, #fdfdfd );
 
-  overflow-x:            var(--code_snippet_area--overflow-x, visible );
-  overflow-y:            var(--code_snippet_area--overflow-y, hidden );
+  overflow-x:           var(--code_snippet_area--overflow-x, visible );
+  overflow-y:           var(--code_snippet_area--overflow-y, hidden );
 }
 
 

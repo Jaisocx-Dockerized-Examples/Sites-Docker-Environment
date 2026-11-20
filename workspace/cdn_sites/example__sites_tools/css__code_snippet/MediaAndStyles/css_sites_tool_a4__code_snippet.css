@@ -1,0 +1,588 @@
+
+/* in calculated props */
+.sites_tools {
+  --code_snippet_lines_qty:                       20;
+
+  --code_snippet--padding-top:                    2rem;
+  --code_snippet--padding-left:                   2rem;
+  --code_snippet--padding-right:                  1rem;
+  --code_snippet--padding-bottom:                 0;
+
+  --code_snippet_numbers--padding-left:           0;
+  --code_snippet_numbers--padding-right:          1rem;
+
+  --code_snippet--line-height:                    1.2rem;
+
+  --code_snippet_numbers--width:                  5rem;
+}
+
+.sites_tools {
+  --code_snippet_lines_numbers--20:               "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a";
+  --code_snippet_lines_numbers:                   var(--code_snippet_lines_numbers--20);
+  --code_snippet_lines_qty:                       20;
+}
+
+.sites_tools {
+
+  --code_snippet--position:                      relative;
+  --code_snippet--box-sizing:                    border-box;
+  --code_snippet--margin:                        0 0 0 0;
+  --code_snippet--font-family:                   Courier;
+  --code_snippet--line-height:                   1.2rem;
+  --code_snippet--font-size:                     0.9rem;
+  --code_snippet--text-align:                    left;
+  --code_snippet--min-height:                    unset;
+  --code_snippet--max-height:                    unset;
+  --code_snippet--height:                        auto;
+  --code_snippet--min-width:                     unset;
+  --code_snippet--max-width:                     unset;
+  --code_snippet--width:                         auto;
+  --code_snippet--border:                        2px solid lime;
+  --code_snippet--border-radius:                 1rem;
+  --code_snippet--color:                         black;
+  --code_snippet--background:                    #fdfdfd;
+  --code_snippet--overflow-x:                     hidden;
+  --code_snippet--overflow-y:                     hidden;
+
+}
+
+
+
+.sites_tools.theme_lime ,
+.sites_tools .CodeSnippetHolder.lime {
+  --code_snippet--border:                         2px solid lime;
+  --code_snippet--color:                          darkgreen;
+  --code_snippet--background:                     #fff;
+
+  --code_snippet_numbers--color:                  lime;
+  --code_snippet_numbers--background:             #efe;
+
+  --code_snippet--scrollbar-thumb--background-color:   lime;
+  --code_snippet--scrollbar-track--background-color:   #eafdfa;
+  --code_snippet--scrollbar--color:                    lime #eafdfa;
+}
+
+.sites_tools.theme_blue ,
+.sites_tools .CodeSnippetHolder.blue {
+  --code_snippet--border:                         2px solid cornsilk;
+  --code_snippet--color:                          darkblue;
+  --code_snippet--background:                     #fffffa;
+
+  --code_snippet_numbers--color:                  #09f;
+  --code_snippet_numbers--background:             #cef;
+
+  --code_snippet--scrollbar-thumb--background-color:   blue;
+  --code_snippet--scrollbar-track--background-color:   #f0f4fe;
+  --code_snippet--scrollbar--color:                    blue #f0f4fe;
+}
+
+.sites_tools.theme_rosa ,
+.sites_tools .CodeSnippetHolder.rosa {
+  --code_snippet--border:                         2px solid #fcc;
+  --code_snippet--color:                          #e9c;
+  --code_snippet--background:                     #fdfdfd;
+
+  --code_snippet_numbers--color:                  #fe70ea;
+  --code_snippet_numbers--background:             #fef2fa;
+
+  --code_snippet--scrollbar-thumb--background-color:    #fefefe;
+  --code_snippet--scrollbar-track--background-color:    #feb1e0;
+  --code_snippet--scrollbar--color:                     #fefefe #feb1e0;
+}
+
+
+
+
+
+/* set code_snippet variables */
+/* -- all variables -- */
+.sites_tools {
+  --code_snippet_lines_numbers--20:                     "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a";
+  --code_snippet_lines_numbers:                         var(--code_snippet_lines_numbers--20);
+  --code_snippet_lines_qty:                             20;
+
+  --code_snippet--scrollbar--color:                     lime #e0fde0;
+  --code_snippet--scrollbar-thumb--background-color:    lime;
+  --code_snippet--scrollbar-track--background-color:    #e0fde0;
+  --code_snippet--scrollbar--size:                      thin;
+  --code_snippet--scrollbar--height:                    0.4rem;
+  --code_snippet--scrollbar--width:                     0.4rem;
+
+  --code_snippet--block_tags--display:                  block;
+  --code_snippet--all_tags--display:                    inline-block;
+
+  --code_snippet--all_tags--position:                   relative;
+  --code_snippet--all_tags--box-sizing:                 var(--code_snippet--box-sizing);
+  --code_snippet--all_tags--font-family:                var(--code_snippet--font-family);
+  --code_snippet--all_tags--line-height:                var(--code_snippet--font-size);
+  --code_snippet--all_tags--font-size:                  var(--code_snippet--font-size);
+  --code_snippet--all_tags--text-align:                 var(--code_snippet--text-align);
+  --code_snippet--all_tags--min-height:                 unset;
+  --code_snippet--all_tags--max-height:                 unset;
+  --code_snippet--all_tags--height:                     auto;
+  --code_snippet--all_tags--min-width:                  unset;
+  --code_snippet--all_tags--max-width:                  unset;
+  --code_snippet--all_tags--width:                      auto;
+  --code_snippet--all_tags--padding:                    0 0 0 0;
+  --code_snippet--all_tags--margin:                     0 0 0 0;
+  --code_snippet--all_tags--overflow-x:                  hidden;
+  --code_snippet--all_tags--overflow-x:                  hidden;
+
+  --code_snippet_holder--position:                      var(--code_snippet--position);
+  --code_snippet_holder--padding:                       0 0 0 0;
+  --code_snippet_holder--margin:                        var(--code_snippet--margin);
+  --code_snippet_holder--font-family:                   var(--code_snippet--font-family);
+  --code_snippet_holder--line-height:                   var(--code_snippet--font-size);
+  --code_snippet_holder--font-size:                     var(--code_snippet--font-size);
+  --code_snippet_holder--text-align:                    var(--code_snippet--text-align);
+  --code_snippet_holder--min-height:                    var(--code_snippet--min-height);
+  --code_snippet_holder--max-height:                    var(--code_snippet--max-height);
+  --code_snippet_holder--height:                        var(--code_snippet--height);
+  --code_snippet_holder--min-width:                     var(--code_snippet--min-width);
+  --code_snippet_holder--max-width:                     var(--code_snippet--max-width);
+  --code_snippet_holder--width:                         var(--code_snippet--width);
+  --code_snippet_holder--border:                        var(--code_snippet--border);
+  --code_snippet_holder--border-radius:                 var(--code_snippet--border-radius);
+  --code_snippet_holder--color:                         var(--code_snippet--color);
+  --code_snippet_holder--background:                    var(--code_snippet--background);
+  --code_snippet_holder--overflow-x:                     var(--code_snippet--overflow-x);
+  --code_snippet_holder--overflow-y:                     var(--code_snippet--overflow-y);
+
+  --code_snippet_rightcolumn--content:                  '$';
+  --code_snippet_rightcolumn--position:                 absolute;
+  --code_snippet_rightcolumn--top:                      0;
+  --code_snippet_rightcolumn--right:                    0;
+  --code_snippet_rightcolumn--padding:                  0 0 0 0;
+  --code_snippet_rightcolumn--font-family:              Arial;
+  --code_snippet_rightcolumn--line-height:              var(--code_snippet--line-height);
+  --code_snippet_rightcolumn--font-size:                var(--code_snippet--font-size);
+  --code_snippet_rightcolumn--text-align:               center;
+  --code_snippet_rightcolumn--min-height:               100%;
+  --code_snippet_rightcolumn--max-height:               unset;
+  --code_snippet_rightcolumn--height:                   auto;
+  --code_snippet_rightcolumn--min-width:                auto;
+  --code_snippet_rightcolumn--max-width:                unset;
+  --code_snippet_rightcolumn--width:                    auto;
+  --code_snippet_rightcolumn--color:                    var(--code_snippet--color);
+  --code_snippet_rightcolumn--background:               var(--code_snippet--background);
+  --code_snippet_rightcolumn--overflow-x:                hidden;
+  --code_snippet_rightcolumn--overflow-y:                hidden;
+  --code_snippet_rightcolumn--z-index:                  999;
+
+  --code_snippet_numbers--position:                     relative;
+  --code_snippet_numbers--top:                          0;
+  --code_snippet_numbers--left:                         0;
+  --code_snippet_numbers--padding:                      0 0 0 0;
+  --code_snippet_numbers--font-family:                  var(--code_snippet--font-family);
+  --code_snippet_numbers--line-height:                  var(--code_snippet--line-height);
+  --code_snippet_numbers--font-size:                    var(--code_snippet--font-size);
+  --code_snippet_numbers--text-align:                   right;
+  --code_snippet_numbers--min-height:                   unset;
+  --code_snippet_numbers--max-height:                   unset;
+  --code_snippet_numbers--height:                       auto;
+  --code_snippet_numbers--min-width:                    unset;
+  --code_snippet_numbers--max-width:                    unset;
+  --code_snippet_numbers--width:                        auto;
+  --code_snippet_numbers--color:                        var(--code_snippet--color);
+  --code_snippet_numbers--background:                   var(--code_snippet--background);
+  --code_snippet_numbers--white-space:                  pre;
+  --code_snippet_numbers--float:                         left;
+  --code_snippet_numbers--overflow-x:                    hidden;
+  --code_snippet_numbers--overflow-y:                    hidden;
+  --code_snippet_numbers--z-index:                      9999;
+
+  --code_snippet_area--position:                        relative;
+  --code_snippet_area--top:                             0;
+  --code_snippet_area--left:                            0;
+  --code_snippet_area--padding:                         0 0 0 0;
+  --code_snippet_area--font-family:                     var(--code_snippet--font-family);
+  --code_snippet_area--line-height:                     var(--code_snippet--line-height);
+  --code_snippet_area--font-size:                       var(--code_snippet--font-size);
+  --code_snippet_area--text-align:                      var(--code_snippet--text-align);
+  --code_snippet_area--min-height:                      100%;
+  --code_snippet_area--max-height:                      unset;
+  --code_snippet_area--height:                          auto;
+  --code_snippet_area--min-width:                       unset;
+  --code_snippet_area--max-width:                       unset;
+  --code_snippet_area--width:                           auto;
+  --code_snippet_area--color:                           var(--code_snippet--color);
+  --code_snippet_area--background:                      var(--code_snippet--background);
+  --code_snippet_area--overflow-x:                       visible;
+  --code_snippet_area--overflow-y:                       hidden;
+}
+
+
+
+
+
+/*
+.sites_tools {
+
+  --code_snippet_lines_numbers--20:                     "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a";
+  --code_snippet_lines_numbers:                         var(--code_snippet_lines_numbers--20);
+  --code_snippet_lines_qty:                             20;
+
+  --code_snippet--scrollbar--color:                     lime #e0fde0;
+  --code_snippet--scrollbar-thumb--background-color:    lime;
+  --code_snippet--scrollbar-track--background-color:    #e0fde0;
+  --code_snippet--scrollbar--size:                      thin;
+  --code_snippet--scrollbar--height:                    0.4rem;
+  --code_snippet--scrollbar--width:                     0.4rem;
+
+  --code_snippet--block_tags--display:                  block;
+  --code_snippet--all_tags--display:                    inline-block;
+
+  --code_snippet--all_tags--position:                   relative;
+  --code_snippet--all_tags--box-sizing:                 border-box;
+  --code_snippet--all_tags--font-family:                Courier;
+  --code_snippet--all_tags--line-height:                0.9rem;
+  --code_snippet--all_tags--font-size:                  0.9rem;
+  --code_snippet--all_tags--text-align:                 left;
+  --code_snippet--all_tags--min-height:                 unset;
+  --code_snippet--all_tags--max-height:                 unset;
+  --code_snippet--all_tags--height:                     auto;
+  --code_snippet--all_tags--min-width:                  unset;
+  --code_snippet--all_tags--max-width:                  unset;
+  --code_snippet--all_tags--width:                      auto;
+  --code_snippet--all_tags--padding:                    0 0 0 0;
+  --code_snippet--all_tags--margin:                     0 0 0 0;
+  --code_snippet--all_tags--overflow-x:                  hidden;
+  --code_snippet--all_tags--overflow-x:                  hidden;
+
+  --code_snippet_holder--position:                      relative;
+  --code_snippet_holder--padding:                       0 0 0 0;
+  --code_snippet_holder--margin:                        0 0 0 0;
+  --code_snippet_holder--font-family:                   Courier;
+  --code_snippet_holder--line-height:                   1.2rem;
+  --code_snippet_holder--font-size:                     0.9rem;
+  --code_snippet_holder--text-align:                    right;
+  --code_snippet_holder--min-height:                    unset;
+  --code_snippet_holder--max-height:                    unset;
+  --code_snippet_holder--height:                        auto;
+  --code_snippet_holder--min-width:                     unset;
+  --code_snippet_holder--max-width:                     unset;
+  --code_snippet_holder--width:                         auto;
+  --code_snippet_holder--border:                        1px solid #dddddd;
+  --code_snippet_holder--border-radius:                 0;
+  --code_snippet_holder--color:                         black;
+  --code_snippet_holder--background:                    #fdfdfd;
+  --code_snippet_holder--overflow-x:                     hidden;
+  --code_snippet_holder--overflow-y:                     hidden;
+
+  --code_snippet_rightcolumn--content:                  '$';
+  --code_snippet_rightcolumn--position:                 absolute;
+  --code_snippet_rightcolumn--top:                      0;
+  --code_snippet_rightcolumn--right:                    0;
+  --code_snippet_rightcolumn--padding:                  0 0 0 0;
+  --code_snippet_rightcolumn--font-family:              Arial;
+  --code_snippet_rightcolumn--line-height:              1.2rem;
+  --code_snippet_rightcolumn--font-size:                0.9rem;
+  --code_snippet_rightcolumn--text-align:               center;
+  --code_snippet_rightcolumn--min-height:               100%;
+  --code_snippet_rightcolumn--max-height:               unset;
+  --code_snippet_rightcolumn--height:                   100%;
+  --code_snippet_rightcolumn--min-width:                auto;
+  --code_snippet_rightcolumn--max-width:                unset;
+  --code_snippet_rightcolumn--width:                    auto;
+  --code_snippet_rightcolumn--color:                    black;
+  --code_snippet_rightcolumn--background:               #fdfdfd;
+  --code_snippet_rightcolumn--z-index:                  999;
+
+  --code_snippet_numbers--position:                     relative;
+  --code_snippet_numbers--top:                          0;
+  --code_snippet_numbers--left:                         0;
+  --code_snippet_numbers--padding:                      0 0 0 0;
+  --code_snippet_numbers--font-family:                  Courier;
+  --code_snippet_numbers--line-height:                  1.2rem;
+  --code_snippet_numbers--font-size:                    0.9rem;
+  --code_snippet_numbers--text-align:                   right;
+  --code_snippet_numbers--min-height:                   100%;
+  --code_snippet_numbers--max-height:                   unset;
+  --code_snippet_numbers--height:                       100%;
+  --code_snippet_numbers--min-width:                    auto;
+  --code_snippet_numbers--max-width:                    unset;
+  --code_snippet_numbers--width:                        auto;
+  --code_snippet_numbers--color:                        black;
+  --code_snippet_numbers--background:                   #fdfdfd;
+  --code_snippet_numbers--white-space:                  pre;
+  --code_snippet_numbers--float:                         left;
+  --code_snippet_numbers--overflow-x:                    hidden;
+  --code_snippet_numbers--overflow-y:                    hidden;
+  --code_snippet_numbers--z-index:                      9999;
+
+  --code_snippet_area--position:                        relative;
+  --code_snippet_area--top:                             0;
+  --code_snippet_area--left:                            0;
+  --code_snippet_area--padding:                         0 0 0 0;
+  --code_snippet_area--font-family:                     Courier;
+  --code_snippet_area--line-height:                     1.2rem;
+  --code_snippet_area--font-size:                       0.9rem;
+  --code_snippet_area--text-align:                      left;
+  --code_snippet_area--min-height:                      100%;
+  --code_snippet_area--max-height:                      unset;
+  --code_snippet_area--height:                          100%;
+  --code_snippet_area--min-width:                       auto;
+  --code_snippet_area--max-width:                       unset;
+  --code_snippet_area--width:                           auto;
+  --code_snippet_area--color:                           black;
+  --code_snippet_area--background:                      #fdfdfd;
+  --code_snippet_area--overflow-x:                       auto;
+  --code_snippet_area--overflow-y:                       hidden;
+
+}
+*/
+
+
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .sites_tools .CodeSnippetHolder::-webkit-scrollbar {
+    width:               var(--code_snippet--scrollbar--width, 0.4rem );
+    height:              var(--code_snippet--scrollbar--height, 0.4rem );
+  }
+
+  .sites_tools .CodeSnippetHolder::-webkit-scrollbar-thumb {
+    background-color:    var(--code_snippet--scrollbar-thumb--background-color, lime );
+  }
+
+  .sites_tools .CodeSnippetHolder::-webkit-scrollbar-track {
+    background-color:    var(--code_snippet--scrollbar-track--background-color, #e0fde0 );
+  }
+
+}
+
+@supports (scrollbar-color: auto) {
+  .sites_tools .CodeSnippetHolder {
+    scrollbar-color:     var(--code_snippet--scrollbar--color, lime #e0fde0 );
+    scrollbar-width:     var(--code_snippet--scrollbar--size, thin );
+  }
+}
+
+
+
+
+
+.CodeSnippetHolder * {
+  position:              var(--code_snippet--all_tags--position, relative );
+  display:               var(--code_snippet--all_tags--display, inline-block );
+  box-sizing:            var(--code_snippet--all_tags--box-sizing, border-box );
+
+  font-family:           var(--code_snippet--all_tags--font-family, Courier );
+  line-height:           var(--code_snippet--all_tags--line-height, 0.9rem );
+  font-size:             var(--code_snippet--all_tags--font-size, 0.9rem );
+  text-align:            var(--code_snippet--all_tags--text-align, left );
+
+  min-height:            var(--code_snippet--all_tags--min-height, unset );
+  max-height:            var(--code_snippet--all_tags--max-height, unset );
+  height:                var(--code_snippet--all_tags--height, auto );
+
+  min-width:             var(--code_snippet--all_tags--min-width, unset );
+  max-width:             var(--code_snippet--all_tags--max-width, unset );
+  width:                 var(--code_snippet--all_tags--width, auto );
+
+  padding:               var(--code_snippet--all_tags--padding, 0 0 0 0 );
+  margin:                var(--code_snippet--all_tags--margin, 0 0 0 0 );
+
+  overflow-x:             var(--code_snippet--all_tags--overflow-x, hidden );
+  overflow-y:             var(--code_snippet--all_tags--overflow-y, hidden );
+}
+
+.sites_tools .CodeSnippetHolder,
+.sites_tools .CodeSnippetHolder::after,
+.sites_tools .CodeSnippetHolder::before,
+.sites_tools .CodeSnippetHolder pre.CodeSnippetArea {
+  display:               var(--code_snippet--block_tags--display, block );
+}
+
+
+
+/* set props: --code_snippet-- */
+.sites_tools .CodeSnippe10tHolder.outer {
+  /**  in calculations:
+    --code_snippet_lines_qty
+    --code_snippet--padding-*
+    --code_snippet--line-height
+    --code_snippet_numbers--width:        5rem;
+  */
+  /* automated calculations for width and height */
+  --code_snippet_holder--max-height:    var(--code_snippet_holder--height, unset);
+
+  --code_snippet_area--max-height:      calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
+  --code_snippet_area--height:          calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
+
+  --code_snippet_holder--padding:       0 0 0 0;
+  --code_snippet_numbers--padding:      var(--code_snippet--padding-top) var(--code_snippet_numbers--padding-right) var(--code_snippet--padding-bottom) var(--code_snippet_numbers--padding-left);
+  --code_snippet_area--padding:         var(--code_snippet--padding-top) var(--code_snippet--padding-right) var(--code_snippet--padding-bottom) var(--code_snippet--padding-left);
+
+  --code_snippet_numbers--max-height:   calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top));
+  --code_snippet_numbers--height:       calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top));
+
+  --code_snippet_area--left:            var(--code_snippet_numbers--width);
+}
+
+
+
+/* set props: --code_snippet-- */
+.sites_tools .CodeSnippetHolder {
+  /**  in calculations:
+    --code_snippet_lines_qty
+    --code_snippet--padding-*
+    --code_snippet--line-height
+    --code_snippet_numbers--width:        5rem;
+  */
+  /* automated calculations for width and height */
+  --code_snippet_holder--max-height:    var(--code_snippet_holder--height, unset);
+
+  --code_snippet_area--max-height:      calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
+  --code_snippet_area--height:          calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top) + var(--code_snippet--padding-bottom));
+
+  --code_snippet_numbers--top: var(--code_snippet--padding-top);
+  --code_snippet_numbers--left: 0;
+
+  --code_snippet_holder--padding:       0 0 0 0;
+  --code_snippet_numbers--padding:      0 var(--code_snippet_numbers--padding-right) 0 var(--code_snippet_numbers--padding-left);
+  --code_snippet_area--padding:         var(--code_snippet--padding-top) 0 0 0;
+  --code_snippet_area--top:             0;
+  --code_snippet_area--left:            0;
+
+  --code_snippet_numbers--max-height:   calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top));
+  --code_snippet_numbers--height:       calc(var(--code_snippet--line-height) * var(--code_snippet_lines_qty) + var(--code_snippet--padding-top));
+
+}
+
+
+
+.sites_tools .CodeSnippetHolder {
+  position:             var(--code_snippet_holder--position, relative );
+
+  padding:              var(--code_snippet_holder--padding, 0 0 0 0 );
+  margin:               var(--code_snippet_holder--margin, 0 0 0 0 );
+
+  font-family:          var(--code_snippet_holder--font-family, Courier );
+  line-height:          var(--code_snippet_holder--line-height, 1.2rem );
+  font-size:            var(--code_snippet_holder--font-size, 0.9rem );
+  text-align:           var(--code_snippet_holder--text-align, right );
+
+  min-height:           var(--code_snippet_holder--min-height, unset );
+  max-height:           var(--code_snippet_holder--max-height, unset );
+  height:               var(--code_snippet_holder--height, auto );
+
+  min-width:            var(--code_snippet_holder--min-width, unset );
+  max-width:            var(--code_snippet_holder--max-width, unset );
+  width:                var(--code_snippet_holder--width, auto );
+
+  border:               var(--code_snippet_holder--border, 1px solid #dddddd );
+  border-radius:        var(--code_snippet_holder--border-radius, 0 );
+
+  color:                var(--code_snippet_holder--color, black );
+  background:           var(--code_snippet_holder--background, #fdfdfd );
+
+  overflow-x:            var(--code_snippet_holder--overflow-x, auto );
+  overflow-y:            var(--code_snippet_holder--overflow-y, auto );
+}
+
+.sites_tools .CodeSnippetHolder pre.CodeSnippetArea::after {
+  content:              var(--code_snippet_rightcolumn--content, '$' );
+
+  position:             var(--code_snippet_rightcolumn--position, sticky );
+
+  top:                  var(--code_snippet_rightcolumn--top, 0 );
+  right:                var(--code_snippet_rightcolumn--right, 0 );
+
+  padding:              var(--code_snippet_rightcolumn--padding, 0 0 0 0 );
+
+  font-family:          var(--code_snippet_rightcolumn--font-family, Arial );
+  line-height:          var(--code_snippet_rightcolumn--line-height, 1.2rem );
+  font-size:            var(--code_snippet_rightcolumn--font-size, 0.9rem );
+  text-align:           var(--code_snippet_rightcolumn--text-align, center );
+
+  min-height:           var(--code_snippet_rightcolumn--min-height, 100% );
+  max-height:           var(--code_snippet_rightcolumn--max-height, unset );
+  height:               var(--code_snippet_rightcolumn--height, auto );
+
+  min-width:            var(--code_snippet_rightcolumn--min-width, auto );
+  max-width:            var(--code_snippet_rightcolumn--max-width, unset );
+  width:                var(--code_snippet_rightcolumn--width, auto );
+
+  color:                var(--code_snippet_rightcolumn--color, black );
+  background:           var(--code_snippet_rightcolumn--background, #fdfdfd );
+
+  float:                 left;
+
+  overflow-x:            var(--code_snippet_rightcolumn--overflow-x, hidden );
+  overflow-y:            var(--code_snippet_rightcolumn--overflow-y, hidden );
+
+  z-index:              var(--code_snippet_rightcolumn--z-index, 999 );
+}
+
+.sites_tools .CodeSnippetHolder pre.CodeSnippetArea::before {
+  content:              var(--code_snippet_lines_numbers, "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a\0031\0031\00a\0031\0032\00a\0031\0033\00a\0031\0034\00a\0031\0035\00a\0031\0036\00a\0031\0037\00a\0031\0038\00a\0031\0039\00a\0032\0030\00a" );
+
+  position:             var(--code_snippet_numbers--position, sticky );
+
+  top:                  var(--code_snippet_numbers--top, 0 );
+  left:                 var(--code_snippet_numbers--left, 0 );
+
+  padding:              var(--code_snippet_numbers--padding, 0 0 0 0 );
+
+  font-family:          var(--code_snippet_numbers--font-family, Courier );
+  line-height:          var(--code_snippet_numbers--line-height, 1.2rem );
+  font-size:            var(--code_snippet_numbers--font-size, 0.9rem );
+  text-align:           var(--code_snippet_numbers--text-align, right );
+
+  min-height:           var(--code_snippet_numbers--min-height, unset );
+  max-height:           var(--code_snippet_numbers--max-height, unset );
+  height:               var(--code_snippet_numbers--height, auto );
+
+  min-width:            var(--code_snippet_numbers--min-width, unset );
+  max-width:            var(--code_snippet_numbers--max-width, unset );
+  width:                var(--code_snippet_numbers--width, auto );
+
+  color:                var(--code_snippet_numbers--color, black );
+  background:           var(--code_snippet_numbers--background, #fdfdfd );
+
+  white-space:          var(--code_snippet_numbers--white-space, pre );
+  float:                 left;
+
+  overflow-x:            var(--code_snippet_numbers--overflow-x, hidden );
+  overflow-y:            var(--code_snippet_numbers--overflow-y, hidden );
+
+  z-index:              var(--code_snippet_numbers--z-index, 9999 );
+}
+
+.sites_tools .CodeSnippetHolder pre.CodeSnippetArea {
+  position:             var(--code_snippet_area--position, absolute );
+
+  top:                  var(--code_snippet_area--top, 0 );
+  left:                 var(--code_snippet_area--left, 0 );
+
+  padding:              var(--code_snippet_area--padding, 0 0 0 0 );
+
+  font-family:          var(--code_snippet_area--font-family, Courier );
+  line-height:          var(--code_snippet_area--line-height, 1.2rem );
+  font-size:            var(--code_snippet_area--font-size, 0.9rem );
+  text-align:           var(--code_snippet_area--text-align, left );
+
+  white-space:          pre;
+  float: left;
+
+  min-height:           var(--code_snippet_area--min-height, 100% );
+  max-height:           var(--code_snippet_area--max-height, unset );
+  height:               var(--code_snippet_area--height, auto );
+
+  min-width:            var(--code_snippet_area--min-width, auto );
+  max-width:            var(--code_snippet_area--max-width, unset );
+  width:                var(--code_snippet_area--width, auto );
+
+  color:                var(--code_snippet_area--color, black );
+  background:           var(--code_snippet_area--background, #fdfdfd );
+
+  overflow-x:            var(--code_snippet_area--overflow-x, visible );
+  overflow-y:            var(--code_snippet_area--overflow-y, hidden );
+}
+
+
+
+

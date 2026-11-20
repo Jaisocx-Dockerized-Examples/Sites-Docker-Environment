@@ -19,15 +19,10 @@
     "tsconfig.ESNext.overrides.json"
   ],
   "scripts": {
-    "watch": "tsc -w -p ./tsconfig.ESNext.overrides.json"
+    "watch": "npx tsc -w -p ./tsconfig.ESNext.overrides.json"
   },
   "dependencies": {
     "@jaisocx/css-importer": "^1.4.1",
-    "@jaisocx/eslint-plugins": "^1.3.2",
-    "@jaisocx/file-writer": "^1.2.2",
-    "json5": "^2.2.3"
-  },
-  "devDependencies": {
-    "@types/json5": "^0.0.30"
+    "@jaisocx/file-writer": "^1.2.2"
   }
 }

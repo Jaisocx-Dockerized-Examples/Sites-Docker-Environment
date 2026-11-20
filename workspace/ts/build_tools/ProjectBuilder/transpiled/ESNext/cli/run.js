@@ -1,5 +1,5 @@
-import * as fs from "node:fs";
-import * as path from "node:path";
+import fs from "node:fs";
+import path from "node:path";
 import { ProjectBuilder } from "../lib/ProjectBuilder.js";
 const argv = process.argv.slice(2);
 // Get command-line arguments starting from index 2

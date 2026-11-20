@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.ESNext.json",
   "compilerOptions": {
     "paths": {
-      "node_modules": ["../../node_modules"],
+      "node_modules": ["../../node_modules/", "./node_modules/"],
       "tsconfig.json": ["../../tsconfig.ESNext.json"]
     },
     "rootDir": "/opt/jaisocx/sites_docker_environment/workspace/ts/build_tools/ProjectBuilder/src/",

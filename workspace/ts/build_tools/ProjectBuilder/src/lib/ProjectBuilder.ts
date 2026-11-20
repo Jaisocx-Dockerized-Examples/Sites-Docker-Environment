@@ -2,12 +2,9 @@ import { execSync } from "child_process";
 import path from "node:path";
 import fs from "node:fs";
 
-// import { Buffer } from "node:buffer";
-// import { Stats } from "node:fs";
 import { FileHandle } from "node:fs/promises";
 import { TextDecoder, TextEncoder } from "node:util";
 
-import JSON5 from "json5";
 import { IDependency } from "./types.js";
 import { CssImporter } from "@jaisocx/css-importer";
 
@@ -496,13 +493,6 @@ export class ProjectBuilder {
               );
 
 
-              /* let locci_tokenAsText: string = ( new TextDecoder() ).decode (
-                  locci_tokenBuf
-              );
-              let locci_lookupSubarrayAsText: string = ( new TextDecoder() ).decode (
-                  locci_lookupSubarray
-              ); */
-
 
               let locci_tokenFound: boolean = locci_tokenBuf.every (
                   (
@@ -655,7 +645,7 @@ export class ProjectBuilder {
     tsconfigPath: any
   ): any {
     const tsconfigJson: any = fs.readFileSync(tsconfigPath);
-    const tsconfig: any = JSON5.parse(tsconfigJson);
+    const tsconfig: any = JSON.parse(tsconfigJson);
     const compilerOptions: any = tsconfig["compilerOptions"];
 
     if (!compilerOptions) {

@@ -8,7 +8,6 @@ const child_process_1 = require("child_process");
 const node_path_1 = __importDefault(require("node:path"));
 const node_fs_1 = __importDefault(require("node:fs"));
 const node_util_1 = require("node:util");
-const json5_1 = __importDefault(require("json5"));
 const css_importer_1 = require("@jaisocx/css-importer");
 class ProjectBuilder {
     constructor() {
@@ -253,12 +252,6 @@ class ProjectBuilder {
                 // @ts-ignore
                 let locci_lookupBuf = this.lookupBbuf;
                 let locci_lookupSubarray = locci_lookupBuf.subarray((inci_index + 1), (inci_index + locci_tokenLen));
-                /* let locci_tokenAsText: string = ( new TextDecoder() ).decode (
-                    locci_tokenBuf
-                );
-                let locci_lookupSubarrayAsText: string = ( new TextDecoder() ).decode (
-                    locci_lookupSubarray
-                ); */
                 let locci_tokenFound = locci_tokenBuf.every((inciB_Byte, inciB_index) => {
                     let locci_byteEquals = (inciB_Byte === locci_lookupSubarray[inciB_index]);
                     return locci_byteEquals;
@@ -347,7 +340,7 @@ class ProjectBuilder {
     }
     transpileTypescriptSourcesWithPath(packagePath, tsconfigPath) {
         const tsconfigJson = node_fs_1.default.readFileSync(tsconfigPath);
-        const tsconfig = json5_1.default.parse(tsconfigJson);
+        const tsconfig = JSON.parse(tsconfigJson);
         const compilerOptions = tsconfig["compilerOptions"];
         if (!compilerOptions) {
             throw new Error(`Typescript config file has no compilerOptions, or was not found at: ${tsconfigPath}`);

@@ -4,20 +4,20 @@
     "module": "commonjs",
     "lib": [ "es2023", "DOM" ],
     "types": [ "/opt/jaisocx/sites_docker_environment/workspace/ts/node_modules/@types/node/" ],
-    "strict": true,  // Enforce strict type-checking
-    "esModuleInterop": true,  // Allow default imports from modules with no default export
-    "skipLibCheck": true,  // Skip type checking of declaration files for faster builds
-    "forceConsistentCasingInFileNames": true,  // Ensure consistent file name casing across the project
-    "allowJs": true,  // Allow JavaScript files in your TypeScript project
-    "checkJs": false,  // Don't check JS files for type errors (can be turned on if needed)
-    "outDir": "./transpiled/CommonJS",  // Output directory for transpiled files
-    "declaration": true,  // Generate .d.ts declaration files for type definitions
-    "declarationMap": true,  // Generate declaration maps (helps IDEs and tools like VS Code)
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "./transpiled/CommonJS",
+    "declaration": true,
+    "declarationMap": true,
     "declarationDir": "./",
     "emitDeclarationOnly": false,
-    "sourceMap": true,  // Enable source maps for debugging
-    "jsx": "react",  // If using React, else change to "react-jsx" or omit this if you're not using React
-    "skipDefaultLibCheck": true,  // Skip checking the default lib files
+    "sourceMap": true,
+    "jsx": "react",
+    "skipDefaultLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
@@ -32,9 +32,9 @@
     "cloned_repos",
     "express",
     "build_tools",
-    "transpiled",  // Exclude the output directory from compilation
-    "node_modules",  // Exclude dependencies from being compiled
-    "**/*.spec.ts",  // Exclude test files from compilation (if applicable)
+    "transpiled",
+    "node_modules",
+    "**/*.spec.ts",
     "**/*.test.ts",
     "**/*.md"
   ]
