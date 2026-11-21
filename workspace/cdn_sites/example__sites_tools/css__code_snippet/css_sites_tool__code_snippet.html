@@ -341,8 +341,8 @@
 
 
 
-    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
-    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+    /* @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait) */
+    @media only screen and (min-width: 2px) and (max-width: 767px) {
 
       .page.clean_start.sites_tools  code.CodeSnippetHolder {
         --code_snippet--width:                             100%;
@@ -375,19 +375,19 @@
 
 
   <!--# STYLES CssCodeSnippet and theme_base -->
-  <link
+ <!--  <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="MediaAndStyles/lines-numbers-variables/code_snippet_lines_numbers--99.css"
-  />
+  /> -->
 
-  <link
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="MediaAndStyles/css_sites_tool__code_snippet.css"
-  />
+  /> -->
 
 </head>
 <body>
@@ -399,7 +399,7 @@
     <h1>  @jaisocx/css_code_snippet  ®  </h1>
 
     <ThemeButtons>
-      <button id="button-turn-on-base" data-theme="theme_lime" class="current"> lime | </button>
+      <button id="button-turn-on-base" data-theme="theme_lime"> lime | </button>
       <button id="button-turn-on-daymode" data-theme="theme_blue"> blue | </button>
       <button id="button-turn-on-nightmode" data-theme="theme_rosa"> rosa </button>
     </ThemeButtons>
@@ -416,7 +416,7 @@
 
     <block>
 
-      <code id="scrolling-codesnippet" class="CodeSnippetHolder">
+      <!-- <code id="scrolling-codesnippet" class="CodeSnippetHolder">
         <pre class="CodeSnippetArea">
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
@@ -448,7 +448,7 @@ describe('AppComponent', () => {
   });
 });
         </pre>
-      </code>
+      </code> -->
 
     </block>
 
@@ -474,13 +474,13 @@ describe('AppComponent', () => {
 
 
 
+<script src="./scripts/JaisocxThemeButtons_Constants.js"></script>
+<script src="./scripts/JaisocxThemeButtons.js"></script>
+
 <script>
 
     let g_keywordTheme = "theme";
     let g_keywordCurrent = "current";
-    let currentButtonNodeClicked = null;
-
-
 
     let g_HtmlClasses = [
       "jaisocx",
@@ -491,430 +491,76 @@ describe('AppComponent', () => {
     ];
 
     let g_buttonIDs = [
-        "button-turn-on-base",
-        "button-turn-on-daymode",
-        "button-turn-on-nightmode"
+      "button-turn-on-base",
+      "button-turn-on-daymode",
+      "button-turn-on-nightmode"
     ];
 
 
 
-  // @done
-  /** @class for Constants */
-  class ThemeConstants {
-      #THEME_TURN_ON_PRIORITY__HTML_CLASS_THEME = '';
-      #THEME_TURN_ON_PRIORITY__BUTTON_CLASS_CURRENT = '';
+    function onload_ThemeAndEvents() {
 
-      constructor() {
-          this.#THEME_TURN_ON_PRIORITY__HTML_CLASS_THEME = 'priority__html_class_theme';
-          this.#THEME_TURN_ON_PRIORITY__BUTTON_CLASS_CURRENT = 'priority__button_class_current';
-      }
+      let loc_Cls_JaisocxThemeButtons = ( new JaisocxThemeButtons() );
 
-      /** @getter "" */
-      static THEME_TURN_ON_PRIORITY__HTML_CLASS_THEME() {
-          return this.#THEME_TURN_ON_PRIORITY__HTML_CLASS_THEME;
-      }
-
-      /** @getter "" */
-      static THEME_TURN_ON_PRIORITY__BUTTON_CLASS_CURRENT() {
-          return this.#THEME_TURN_ON_PRIORITY__BUTTON_CLASS_CURRENT;
-      }
-  }
-
-
-
-  // @done
-  function getHtmlTag() {
-
-      let loc_HtmlDocNodes = ( new Array() );
-      let loc_htmlNode = ( new Object() );
-
-      let loc_init_HtmlDocNodes = false;
-      let loc_init_htmlNode = false;
-
-
-      loc_HtmlDocNodes = document.getElementsByTagName("HTML");
-      loc_init_HtmlDocNodes = ( loc_HtmlDocNodes instanceof( NodeList ) === true );
-
-      if ( loc_init_HtmlDocNodes && loc_HtmlDocNodes.length !== 0 ) {
-          loc_htmlNode = loc_HtmlDocNodes[0];
-          loc_init_htmlNode = ( loc_htmlNode instanceof( HTMLElement ) === true );
-      }
-
-
-      if ( loc_init_htmlNode === false ) {
-         return undefined;
-      }
-
-      return loc_htmlNode;
-  }
-
-
-
-  // @done
-  function getHtmlTagClasslist (
-      in_HtmlTag,
-      in_HtmlTagClassArray
-  ) {
-      let loc_HtmlTagClassArray = in_HtmlTagClassArray;
-      let loc_htmlTag = in_HtmlTag;
-      if ( ! loc_htmlTag ) {
-          console.log( "Error. No html tag found" );
-          return undefined;
-          // throw new Error("No html tag found");
-      }
-
-
-      let loc_htmlTagClassList = ( new Array() );
-      let loc_init_htmlTagClassList = false;
-
-      let loc_HtmlTagClassname = loc_htmlTag.className;
-      if ( loc_HtmlTagClassname && ( loc_HtmlTagClassname.length !== 0 ) ) {
-          loc_htmlTagClassList = loc_htmlTag.classList;
-          loc_init_htmlTagClassList = ( loc_htmlTagClassList instanceof ( DOMTokenList ) === true );
-      }
-
-      if ( ( loc_init_htmlTagClassList === false ) && ( loc_HtmlTagClassArray.length === 0 ) ) {
-          console.error("ClassList was undefined, No class list created the HtmlTag ClassArray wasn't set");
-          return undefined;
-      }
-
-
-
-      if ( loc_init_htmlTagClassList === false ) {
-          loc_htmlTag.className = loc_HtmlTagClassArray.join( " " );
-      }
-
-      loc_htmlTagClassList = loc_htmlTag.classList;
-      loc_init_htmlTagClassList = ( loc_htmlTagClassList instanceof ( DOMTokenList ) === true );
-
-      if ( loc_init_htmlTagClassList === false ) {
-          console.error("ClassList was undefined, No class list created the HtmlTag ClassArray wasn't set");
-          return undefined;
-      }
-
-
-      return loc_htmlTagClassList;
-  }
-
-
-
-  // @done
-  function getThemeButtons (
-      in_buttonIDs
-  ) {
-
-      let loc_buttonIDs = in_buttonIDs;
-      let loc_buttonsIdLen = loc_buttonIDs.length;
-      let loc_Buttons = ( new Array( loc_buttonsIdLen ) );
-      let loc_counter = 0;
-      let loc_buttons_found = false;
-
-      for ( let buttonId of loc_buttonIDs ) {
-
-          let buttonNode = document.getElementById( buttonId );
-
-          if ( buttonNode instanceof ( HTMLElement ) === true ) {
-              loc_Buttons[ loc_counter ] = buttonNode;
-              loc_counter++;
-          }
-
-      }
-
-      loc_buttons_found = ( loc_counter !== 0 );
-      if ( loc_buttons_found === false ) {
-          console.log( "Error. No buttons found." );
-          return undefined;
-      }
-
-
-
-      let ret_btns = loc_Buttons;
-      if ( loc_counter !== loc_buttonsIdLen ) {
-          ret_btns = loc_Buttons
-              .slice( 0, (loc_counter - 1) );
-      }
-
-      return ret_btns;
-  }
-
-
-
-  // @done
-  function getCurrentThemeButton (
-      in_buttonIDs,
-      keywordCurrent
-  ) {
-      let loc_buttonIDs = in_buttonIDs;
-      let loc_keywordCurrent = keywordCurrent;
-      let loc_Buttons = getThemeButtons ( loc_buttonIDs );
-      let loc_init_button = false;
-      let ret_btn = ( new Object() );
-
-      ci_marker_btns: for ( let ci_button of loc_Buttons ) {
-
-          let loc_className = ci_button.className;
-
-          if ( loc_className && ( loc_className.length !== 0 ) ) {
-              loc_init_button = (
-                  ( loc_className === loc_keywordCurrent )
-                  || ( ci_button.classList.contains ( loc_keywordCurrent ) === true )
+          // if the call encommented,
+          //   the html tag classname for the theme turns the look and feel for the page.
+          loc_Cls_JaisocxThemeButtons
+              .turnOnTheme_HtmlTagTheme_byMode (
+                  JaisocxThemeButtons_Constants.THEME_TURN_ON_PRIORITY__THEME(),
+                  "theme_rosa",
+                  g_keywordTheme, g_keywordCurrent, g_HtmlClasses, g_buttonIDs
               );
-          }
 
-          if ( loc_init_button === true ) {
-              ret_btn = ci_button;
+          // adding to buttons the event handler to turn on the theme.
+          loc_Cls_JaisocxThemeButtons
+              .addThemeButtonsEventHandlers ( g_keywordTheme, g_keywordCurrent, g_HtmlClasses, g_buttonIDs );
 
-              break ci_marker_btns;
-          }
 
-      }
+          return 1;
+    }
 
 
-      if ( loc_init_button === false ) {
-          console.log ( "Error. No loc_init_button found." );
-          return undefined;
-      }
 
-      return ret_btn;
-  }
+    // @sence in this example of the same method call,
+    //   the variables examples seen very fine.
+    function onload_JustAddsEvents() {
 
+        let loc_Cls_JaisocxThemeButtons = ( new JaisocxThemeButtons() );
 
+        // adding to buttons the event handler to turn on the theme.
+        loc_Cls_JaisocxThemeButtons
+            .addThemeButtonsEventHandlers (
+                "theme",
+                "current",
+                [
+                    "jaisocx",
+                    "page",
+                    "clean_start",
+                    "sites_tools",
+                    "theme_fonts_a"
+                ],
+                [
+                    "button-turn-on-base",
+                    "button-turn-on-daymode",
+                    "button-turn-on-nightmode"
+                ]
+            );
 
-  // @done
-  function cleanupButtonCurrentTheme (
-      in_button,
-      keywordCurrent
-  ) {
-      let loc_button = in_button;
-      let loc_keywordCurrent = keywordCurrent;
 
-      if ( loc_button === undefined ) {
-          console.log( "No current button for the classname current cleanup." );
-          return false;
-      }
+        return 1;
+    }
 
 
-      loc_button.classList.remove ( loc_keywordCurrent );
 
-      return true;
-  }
-
-
-
-  // @done
-  function setHtmlTagThemeClassname (
-      in_HtmlTag,
-      in_HtmlTagClassList,
-      in_classTheme
-  ) {
-      let loc_HtmlTag = in_HtmlTag;
-      let loc_HtmlTagClassList = in_HtmlTagClassList;
-      let loc_classTheme = in_classTheme;
-
-      if ( loc_HtmlTagClassList === undefined ) {
-        loc_HtmlTag.className = loc_classTheme;
-        return true;
-      }
-
-      loc_HtmlTagClassList.add ( loc_classTheme );
-      return true;
-  }
-
-
-
-  // @done
-  function cleanupHtmlTagCurrentThemes (
-      in_HtmlTagClassList,
-      keywordTheme
-  ) {
-      let loc_HtmlTagClassList = in_HtmlTagClassList;
-      let loc_keywordTheme = keywordTheme;
-
-      if ( loc_HtmlTagClassList === undefined ) {
-          console.log( "Error." );
-          return 0;
-      }
-
-
-
-      let loc_classesToCleanup = ( new Array() );
-
-      loc_classesToCleanup = loc_HtmlTagClassList
-          .filter (
-              ( cia_HtmlTagClassName ) => {
-                  let ci_classStartsByKeywordTheme = cia_HtmlTagClassName.startsWith ( loc_keywordTheme );
-                  return ci_classStartsByKeywordTheme;
-              }
-          );
-
-      if ( ( loc_classesToCleanup === undefined ) || ( loc_classesToCleanup.length === 0 ) ) {
-          return 0;
-      }
-
-      loc_classesToCleanup
-          .forEach (
-              ( cib_HtmlTagClassName ) => {
-                  loc_HtmlTagClassList.remove( cib_HtmlTagClassName );
-              }
-          );
-
-      let ret_val = loc_classesToCleanup.length;
-
-      return ret_val;
-  }
-
-
-
-  // @done
-  function getThemeByButtonDataset (
-      in_buttonNode,
-      keywordTheme
-  ) {
-      let loc_buttonNode = in_buttonNode;
-      let loc_keywordTheme = keywordTheme;
-
-      let loc_buttonDataset = loc_buttonNode.dataset;
-      if ( loc_buttonDataset === undefined ) {
-          console.log( "Error. data-theme=\"theme_...\" wasn't set on the clicked button" );
-          return "";
-      }
-
-      let loc_ThemeByButtonDataset = loc_buttonNode.dataset[ loc_keywordTheme ];
-      if ( loc_ThemeByButtonDataset === undefined ) {
-          console.log( "Error. data-theme=\"theme_...\" wasn't set on the clicked button" );
-          return "";
-      }
-
-
-      return loc_ThemeByButtonDataset;
-  }
-
-
-
-  // @done
-  function turnOnTheme (
-      in_Theme,
-      keywordTheme,
-      in_HtmlTagClassArray
-  ) {
-      let loc_Theme = in_Theme;
-      let loc_keywordTheme = keywordTheme;
-      let loc_HtmlTagClassArray = in_HtmlTagClassArray;
-
-
-      let loc_HtmlTag = getHtmlTag();
-
-      let loc_HtmlTagClassList = getHtmlTagClasslist (
-          loc_HtmlTag,
-          loc_HtmlTagClassArray
-      );
-
-      cleanupHtmlTagCurrentThemes (
-          loc_HtmlTagClassList,
-          loc_keywordTheme
-      );
-
-      setHtmlTagThemeClassname (
-          loc_HtmlTag,
-          loc_HtmlTagClassList,
-          loc_Theme
-      );
-
-      return true;
-  }
-
-
-
-  // declaring the function, this adds to buttons the event handler to turn on the theme.
-  // this function is invoked when the site loads in the browser,
-  // in the event handler for the event DOMContentLoaded
-  function addThemeButtonsEventHandlers (
-      in_buttonIDs,
-      keywordTheme,
-      keywordCurrent,
-      in_HtmlTagClassArray
-  ) {
-
-      let loc_buttonIDs = in_buttonIDs;
-      let loc_keywordTheme = keywordTheme;
-      let loc_keywordCurrent = keywordCurrent;
-      let loc_HtmlTagClassArray = in_HtmlTagClassArray;
-
-      let loc_themeButtons = getThemeButtons ( loc_buttonIDs );
-
-      loc_themeButtons
-          .forEach (
-              ( ci_themeButton ) => {
-
-                  ci_themeButton.addEventListener (
-                      "click",
-                      (evt) => {
-
-                          let loc_buttonNodeClicked = evt.target;
-
-                          let loc_Theme = getThemeByButtonDataset (
-                              loc_buttonNodeClicked,
-                              loc_keywordTheme
-                          );
-
-                          let loc_currentButton = getCurrentThemeButton (
-                               loc_buttonIDs,
-                               loc_keywordCurrent
-                          );
-
-                          cleanupButtonCurrentTheme (
-                              loc_currentButton,
-                              loc_keywordCurrent
-                          );
-
-                          turnOnTheme (
-                              loc_Theme,
-                              loc_keywordTheme,
-                              loc_HtmlTagClassArray
-                          );
-
-                          let loc_buttonClassList = loc_buttonNodeClicked.classList;
-                          let loc_init_ButtonClassList = ( loc_buttonClassList instanceof( DOMTokenList ) === true );
-
-                          if ( loc_init_ButtonClassList === true ) {
-                              loc_buttonClassList.add ( loc_keywordCurrent );
-                          } else {
-                              loc_buttonNodeClicked.className = loc_Theme;
-                          }
-
-                      }
-                  );
-
-              }
-          );
-
-      return 1;
-  }
-
-
-
-  function onload() {
-
-      // if the call encommented,
-      //   the html tag classname for the theme turns the look and feel for the page.
-      /* onloadTurnOnTheme (
-          ThemeConstants.THEME_TURN_ON_PRIORITY__HTML_CLASS_THEME()
-      ); */
-
-      // adding to buttons the event handler to turn on the theme.
-      addThemeButtonsEventHandlers ( g_buttonIDs, g_keywordTheme, g_keywordCurrent, g_HtmlClasses );
-
-      return true;
-  }
-
-
-
-  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
+    // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
   document.addEventListener ( 'DOMContentLoaded', () => {
       // the idea to keep the DOM event handlers thin.
-      // Theme.onload();
+      // JaisocxThemeButtons.onload();
       console.log( "Browser's tab event DOMContentLoaded ..." );
-      onload();
+
+      // onload_ThemeAndEvents();
+      onload_JustAddsEvents();
+
       console.log( "Browser's tab event DOMContentLoaded. The Javascript method called." );
   });
 
