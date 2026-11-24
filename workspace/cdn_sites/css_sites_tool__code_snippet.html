@@ -47,7 +47,7 @@
     }
 
     /* .page.clean_start.sites_tools site page *,
-    .page.clean_start.sites_tools site page .CodeSnippetHolder#scrolling-codesnippet.scrolls * {
+    .page.clean_start.sites_tools site page .CodeSnippetHolder.scrolls.twenty_lines * {
         border: 0.3px solid magenta;
     } */
 
@@ -116,8 +116,7 @@
 
   <style name="colour_themes__clean_start_n_page_n_code_snippet">
 
-    .page.clean_start.sites_tools.theme_lime,
-    .page.clean_start.sites_tools .CodeSnippetHolder.theme_lime {
+    .page.clean_start.sites_tools.theme_lime {
 
       --clean_start--site--background:                     #eafeee;
       --clean_start--body_tag--background:                 unset;
@@ -125,12 +124,6 @@
       --clean_start--scrollbar-thumb--background-color:    lime;
       --clean_start--scrollbar-track--background-color:    #eafdfa;
       --clean_start--scrollbar--color:                     lime #eafdfa;
-
-      --code_snippet--scrollbar-thumb--background-color:   lime;
-      --code_snippet--scrollbar-track--background-color:   #eafdfa;
-      --code_snippet--scrollbar--color:                    lime #eafdfa;
-
-
 
       --clean_start--all_tags--color:                      black;
       --clean_start--anchor--color:                        #f2fef0;
@@ -153,8 +146,7 @@
 
 
 
-    .page.clean_start.sites_tools.theme_blue,
-    .page.clean_start.sites_tools .CodeSnippetHolder.theme_blue {
+    .page.clean_start.sites_tools.theme_blue {
 
       --clean_start--site--background:                     #f0f4fe;
       --clean_start--body_tag--background:                 unset;
@@ -162,12 +154,6 @@
       --clean_start--scrollbar-thumb--background-color:    blue;
       --clean_start--scrollbar-track--background-color:    #f0f4fe;
       --clean_start--scrollbar--color:                     blue #f0f4fe;
-
-      --code_snippet--scrollbar-thumb--background-color:   blue;
-      --code_snippet--scrollbar-track--background-color:   #f0f4fe;
-      --code_snippet--scrollbar--color:                    blue #f0f4fe;
-
-
 
       --clean_start--all_tags--color:                      black;
       --clean_start--anchor--color:                        #a3eefa;
@@ -189,16 +175,11 @@
 
 
 
-    .page.clean_start.sites_tools.theme_rosa,
-    .page.clean_start.sites_tools .CodeSnippetHolder.theme_rosa {
+    .page.clean_start.sites_tools.theme_rosa {
 
       --clean_start--scrollbar-thumb--background-color:    #fefefe;
       --clean_start--scrollbar-track--background-color:    #feb1e0;
       --clean_start--scrollbar--color:                     #fefefe #feb1e0;
-
-      --code_snippet--scrollbar-thumb--background-color:   #fefefe;
-      --code_snippet--scrollbar-track--background-color:   #feb1e0;
-      --code_snippet--scrollbar--color:                    #fefefe #feb1e0;
 
       --clean_start--all_tags--color:                      black;
       --clean_start--anchor--color:                        #fef2f5;
@@ -228,7 +209,7 @@
 
   <style name="css_code_snippet_overrides">
 
-    .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+    .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
       /*   when a .css is loaded with hardcoded lines numbers in code_snippet_lines_numbers--99.css
              on path MediaAndStyles/lines-numbers-variables/code_snippet_lines_numbers--99.css
       */
@@ -238,8 +219,11 @@
     }
 
 
+    .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines.theming {
+        --code_snippet--width:                             100%;
+    }
 
-    .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+    .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
 
       /* calculated */
       --code_snippet--padding-top:                         2rem;
@@ -259,7 +243,7 @@
       --code_snippet--max-height:                          16rem;
       --code_snippet--height:                              16rem;
 
-      --code_snippet--width:                               30rem;
+      --code_snippet--width:                               30%;
       --code_snippet_numbers--width:                       5rem;
 
 
@@ -299,7 +283,7 @@
 
     @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
 
-        .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+        .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
             --code_snippet_lines_qty:                          30;
 
             --code_snippet--line-height:                       1.0rem;
@@ -332,7 +316,7 @@
     }
 
     @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
-        .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+        .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
             --code_snippet--line-height:                       1.20rem;
             --code_snippet--font-size:                         0.92rem;
 
@@ -347,7 +331,7 @@
     }
 
     @media only screen and (min-width: 481px) and (max-width: 1080px) and (min-height: 5px) and (max-height: 2800px) and (orientation: portrait) {
-        .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+        .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
             --code_snippet--line-height:                       1.20rem;
             --code_snippet--font-size:                         0.92rem;
 
@@ -357,7 +341,7 @@
     }
 
     @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
-        .page.clean_start.sites_tools .CodeSnippetHolder#scrolling-codesnippet.scrolls {
+        .page.clean_start.sites_tools .CodeSnippetHolder.scrolls.twenty_lines {
             --code_snippet_lines_qty:                          30;
 
             --code_snippet--line-height:                       1.20rem;
@@ -446,7 +430,117 @@
 
         <block>
 
-          <block id="scrolling-codesnippet" class="CodeSnippetHolder scrolls">
+          <block id="scrolling-codesnippet" class="CodeSnippetHolder scrolls twenty_lines theming">
+            <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+            </pre>
+          </block>
+
+        </block>
+
+
+
+        <block style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 10rem 0 0 0;">
+
+          <block class="CodeSnippetHolder scrolls twenty_lines theme_lime">
+            <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+            </pre>
+          </block>
+
+
+          <block class="CodeSnippetHolder scrolls twenty_lines theme_blue">
+            <pre class="CodeSnippetArea">
+import { TestBed } from '@angular/core/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have the 'angular' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('angular');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
+  });
+});
+            </pre>
+          </block>
+
+
+          <block class="CodeSnippetHolder scrolls twenty_lines theme_rosa">
             <pre class="CodeSnippetArea">
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';

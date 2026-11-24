@@ -50,7 +50,7 @@
 
 
 
-.sites_tools.theme_lime .CodeSnippetHolder,
+.sites_tools.theme_lime .CodeSnippetHolder.theming,
 .sites_tools .CodeSnippetHolder.theme_lime {
   --code_snippet--border:                         2px solid lime;
   --code_snippet--color:                          darkgreen;
@@ -66,7 +66,7 @@
   --code_snippet--scrollbar--color:                    lime #eafdfa;
 }
 
-.sites_tools.theme_blue .CodeSnippetHolder,
+.sites_tools.theme_blue .CodeSnippetHolder.theming,
 .sites_tools .CodeSnippetHolder.theme_blue {
   --code_snippet--border:                         2px solid cornsilk;
   --code_snippet--color:                          darkblue;
@@ -82,7 +82,7 @@
   --code_snippet--scrollbar--color:                    blue #f0f4fe;
 }
 
-.sites_tools.theme_rosa .CodeSnippetHolder,
+.sites_tools.theme_rosa .CodeSnippetHolder.theming,
 .sites_tools .CodeSnippetHolder.theme_rosa {
   --code_snippet--border:                         2px solid #fcc;
   --code_snippet--color:                          #e9c;
