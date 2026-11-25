@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="jaisocx page clean_start">
+<head>
+
+  <!--# FAVICON -->
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/Icon_Jaisocx.ico"
+  />
+
+  <title> Sites Docker Environment </title>
+
+
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <style name="clean_start_zero_just_html">
+
+    .jaisocx.clean_start {
+
+      --clean_start--rem:      16px;
+
+      --clean_start--all_tags--font-size:      0.9rem;
+      --clean_start--all_tags--line-height:    1.2rem;
+      --clean_start--all_tags--letter-spacing: 0;
+      --clean_start--all_tags--color:          black;
+
+      --clean_start--site--background:         darkgreen;
+      --clean_start--body_tag--background:     darkgreen;
+
+      --clean_start--scrollbar-thumb--background-color:   lime;
+      --clean_start--scrollbar-track--background-color:   #eafdfa;
+      --clean_start--scrollbar--color:                    lime #eafdfa;
+
+      --clean_start--site--box-sizing:         border-box;
+      --clean_start--all_tags--box-sizing:     border-box;
+    }
+
+
+
+    .clean_start, .clean_start.theme_fonts_a {
+                                                      /* microsoft, ios, linux, android */
+      --clean_start--sans--font-family:                 "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+      --clean_start--serif--font-family:                "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+      --clean_start--monospace--font-family:            "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+      --clean_start--handwrite--font-family:            "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+    }
+    .clean_start {
+      --clean_start--all_tags--font-family:    var(--clean_start--sans--font-family, "Arial");
+    }
+
+
+
+    /* this style sets rem size for the html page. 1rem = 16px */
+    html.clean_start {
+      font-size:               var(--clean_start--rem, 16px);
+    }
+    .clean_start * {
+      position: relative; padding: 0 0 0 0; margin: 0 0 0 0;
+
+      font-family:             var(--clean_start--all_tags--font-family, Arial);
+      font-size:               var(--clean_start--all_tags--font-size,   0.9rem);
+      line-height:             var(--clean_start--all_tags--line-height, 1.2rem);
+      letter-spacing:          var(--clean_start--all_tags--letter-spacing, 0);
+
+      line-break: strict; word-wrap: normal; word-break: normal; border-width: 0;
+      min-height: 0; max-height: unset; height: auto;
+      min-width: 0; max-width: 100%; width: auto;
+      overflow-x: visible; overflow-y: visible;
+    }
+
+
+
+    /* @start  clean_start  display style */
+    html.clean_start { display: block; }
+    .clean_start * {
+      display:                 var(--clean_start--all_tags--display, inline-block);
+    }
+    .clean_start body { display: block; }
+    .clean_start site {
+      display:                 var(--clean_start--site--display, block);
+    }
+    .clean_start canvas .clean_start fieldset,
+    .clean_start nav, .clean_start ol, .clean_start ul, .clean_start aside,
+    .clean_start p, .clean_start pre, .clean_start div,
+    .clean_start video {
+      display:                 var(--clean_start--block_tags--display, block);
+    }
+    /* @finish  clean_start  display style */
+
+
+
+    html.clean_start {
+      position: static; box-sizing: border-box; top: 0; padding: 0 0 0 0; margin: 0 0 0 0;
+      min-height: 100vh; max-height: unset; height: auto;
+      min-width: 100%; max-width: 100%; width: 100%;
+      overflow-x: hidden;
+    }
+    .clean_start head, .clean_start head *,
+    .clean_start style, .clean_start script {
+      display: block; visibility: hidden; overflow-x: hidden; overflow-y: hidden;
+      min-height: unset; max-height: 0; height: 0; min-width: unset; max-width: 0; width: 0;
+    }
+    .clean_start body {
+      position: relative; box-sizing: border-box; top: 0; padding: 0 0 0 0; margin: 0 0 0 0; display: block;
+      min-height: 100vh; max-height: unset; height: auto;
+      min-width: 100%; max-width: 100%; width: 100%;
+      overflow-x: hidden; overflow-y: auto;
+
+      font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+      background:              var(--clean_start--body_tag--background, #eefdf4);
+    }
+    .clean_start site {
+      padding: 0 0 0 0; margin: 0 0 0 0;
+      min-height: 100vh; max-height: unset; height: auto;
+      min-width: unset; max-width: 100%; width: 100%;
+      overflow-x: hidden; overflow-y: visible;
+
+      font-size:               var(--clean_start--all_tags--font-size, 0.9rem);
+      box-sizing:              var(--clean_start--site--box-sizing, border-box);
+      color:                   var(--clean_start--all_tags--color, black);
+      background:              var(--clean_start--site--background, #fdfdfd);
+    }
+    .clean_start site * {
+      box-sizing:              var(--clean_start--all_tags--box-sizing, border-box);
+    }
+
+
+
+    /* @start  clean_start  scrollbar styles */
+    @supports selector(::-webkit-scrollbar) {
+      .clean_start::-webkit-scrollbar,
+      .clean_start *::-webkit-scrollbar {
+        width:                 var(--clean_start--scrollbar--size, 0.4rem);
+        height:                var(--clean_start--scrollbar--size, 0.4rem);
+      }
+      .clean_start::-webkit-scrollbar-thumb,
+      .clean_start *::-webkit-scrollbar-thumb {
+        background-color:      var(--clean_start--scrollbar-thumb--background-color, lime);
+      }
+      .clean_start::-webkit-scrollbar-track,
+      .clean_start *::-webkit-scrollbar-track {
+        background-color:      var(--clean_start--scrollbar-track--background-color, #eafdfa);
+      }
+    }
+
+    .clean_start {
+      --clean_start--scrollbar--color:    var(--clean_start--scrollbar-thumb--background-color, lime)  var(--clean_start--scrollbar-track--background-color, #eafdfa);
+    }
+
+    @supports (scrollbar-color: auto) {
+      .clean_start, .clean_start * {
+        scrollbar-width:       var(--clean_start--scrollbar--width, thin);
+        scrollbar-color:       var(--clean_start--scrollbar--color, lime #eafdfa);
+      }
+    }
+    /* @finish  clean_start  scrollbar styles */
+
+
+
+    .clean_start page,
+    .clean_start block,
+    .clean_start text-lines-block {
+      display:                    var(--clean_start--block_tags--display, block);
+    }
+
+
+
+    .clean_start a {
+      color:                      darkgreen;
+    }
+    .clean_start a:hover {
+      color:                      green;
+    }
+
+    .clean_start pre, .clean_start pre *, .clean_start code, .clean_start code * {
+      font-family:                var(--clean_start--monospace--font-family);
+    }
+
+  </style>
+
+
+
+  <style name="page_styles">
+
+    .jaisocx.page.clean_start {
+      --page--site--background: #eafeee;
+
+      --page--h1--padding: 0.14rem 0.6rem 0.14rem 0.6rem;
+
+      --page--block_top--padding: 1.4rem 3rem 1rem 3rem;
+      --page--block_top--border-bottom: 0.62rem solid #bfb;
+      --page--block_top--background: #aea;
+
+      --page--block_content--padding: 5.5rem 3rem 30rem 3rem;
+      --page--block_content--background: #fdfdfd;
+      --page--block_content--width: 70%;
+
+      --page--block_bottom--padding: 1rem 3rem 0.55rem 3rem;
+      --page--block_bottom--color: #efe;
+      --page--block_bottom--background: darkgreen;
+    }
+
+
+
+    .page.clean_start h1 {
+      padding:                    var(--page--h1--padding, 0.14rem 0.6rem 0.14rem 0.6rem);
+      font-size:                  0.79rem;
+      line-height:                0.79rem;
+      font-weight:                400;
+      margin:                     0 0 0 0;
+      color:                      darkgreen;
+      background:                 #bfb;
+      border:                     2px solid lime;
+      border-radius:              0.5rem;
+    }
+
+    .page.clean_start site {
+      background: var(--page--site--background, #eafeee);
+    }
+
+    .page.clean_start page {
+      min-height: 100vh;
+      height: 100vh;
+    }
+
+    .page.clean_start .block_top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      padding: var(--page--block_top--padding, 1.4rem 3rem 1rem 3rem);
+      text-align: right;
+
+      border-bottom: var(--page--block_top--border-bottom, 0.62rem solid #bfb);
+
+      background: var(--page--block_top--background, #aea);
+
+      z-index: 9000;
+    }
+
+    .page.clean_start .block_top h1,
+    .page.clean_start .block_top nav {
+      display: inline-block;
+      margin: 0 0 0 1rem;
+    }
+
+    .page.clean_start .block_content {
+
+      padding: var(--page--block_content--padding, 5.5rem 3rem 30rem 3rem);
+      margin: 0 auto 0 auto;
+      background: var(--page--block_content--background, #fdfdfd);
+
+      min-height: 100vh;
+
+      width: var(--page--block_content--width, 70%);
+
+      z-index: 99;
+    }
+
+    .page.clean_start .block_bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+      padding: var(--page--block_bottom--padding, 1rem 3rem 0.55rem 3rem);
+      text-align: right;
+      color: var(--page--block_bottom--color, #efe);
+      background: var(--page--block_bottom--background, darkgreen);
+
+      z-index: 9999;
+    }
+
+
+
+    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
+      .page.clean_start {
+        --page--h1--padding: 0.12rem 0.32rem 0.14rem 0.32rem;
+
+        --page--block_top--padding: 0.44rem 0.83rem 0.64rem 0.83rem;
+        --page--block_content--padding: 6.2rem 1rem 9rem 1rem;
+        --page--block_bottom--padding: 0.4rem 0.83rem 1.2rem 0.83rem;
+
+        --page--block_content--width: 92%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
+      .page.clean_start {
+        --page--block_top--padding: 1.4rem 1.4rem 1rem 1.4rem;
+        --page--block_content--padding: 7rem 1rem 22rem 1rem;
+        --page--block_bottom--padding: 1rem 1.4rem 1.4rem 1.4rem;
+
+        --page--block_content--width: 92%;
+      }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1080px) and (min-height: 5px) and (max-height: 2800px) and (orientation: portrait) {
+      .page.clean_start {
+        --page--block_top--padding: 1.4rem 3rem 1rem 3rem;
+        --page--block_content--padding: 7rem 3rem 30rem 3rem;
+        --page--block_bottom--padding: 1rem 3rem 1.95rem 3rem;
+
+        --page--block_content--width: 80%;
+      }
+    }
+
+    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
+      .page.clean_start {
+        --page--block_top--padding: 1.4rem 2.4rem 1rem 2.4rem;
+        --page--block_content--padding: 5.5rem 1rem 10.4rem 1rem;
+        --page--block_bottom--padding: 0.64rem 2.4rem 1.4rem 2.4rem;
+
+        --page--block_content--width: 92%;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+<site>
+<page>
+
+  <block class="block_top">
+    <h1>  Jaisocx Sites Docker Environment  ®  </h1>
+
+    <nav>
+      <ul>
+        <li><a href="javascript: void(0);">  nav 1  |  </a></li>
+        <li><a href="javascript: void(0);">  nav 2  |  </a></li>
+        <li><a href="javascript: void(0);">  nav 3  |  </a></li>
+      </ul>
+    </nav>
+  </block>
+
+
+
+  <block class="block_content">
+
+    <h2> Cdn in the Workspace. </h2>
+
+
+    <block>
+      <p>  💡  my advise, never publish on https endpoint the entire workspace. </p>
+      <p>  💡  For  🔒  protection via login credentials, You might set basic, digital or jwt authentication for a folder on Your Sites Server. </p>
+      <p>  |  🗓  Updated  |  🌾  Autumn 2026 | `AD 2026_Oct_22 16:20:10.900 GMT_24h` |  </p>
+    </block>
+
+
+
+    <h3>  ✅  Cdn </h3>
+
+    <block>
+      <pre>
+        📚  💻  workspace/
+          🗂  🌐  cdn_sites/
+          🗂  🌐  favicon/
+          🗂  🌐  images/
+          🗂  🌐  font-files/
+          🗂  🌐  styles/
+          🗂  🌐  javascript/
+      </pre>
+    </block>
+
+
+    <block class="font_override font_sans">
+
+      <p>
+        <text>
+          In the `/cdn_sites/` folder the best way never save `data` folders,
+          since `/cdn_sites/data/` would also publish without protection by authentication.
+        </text>
+      </p>
+
+    </block>
+
+  </block>
+
+
+
+
+
+
+
+  <block class="block_bottom">
+
+    <ul>
+      <li><text>  Sites Tools  </text></li>
+      <li><text>  Jaisocx &#8482; &#169;  </text></li>
+    </ul>
+
+  </block>
+
+</page>
+</site>
+</body>
+</html>
+
+
+
+
