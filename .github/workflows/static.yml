@@ -27,7 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: alpine-3.23
+    runs-on: windows-2025
     steps:
       - name: Checkout
         uses: actions/checkout@v4
